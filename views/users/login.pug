@@ -1,0 +1,11 @@
+extends ../layouts/layout
+
+block content
+  h2 Account Login
+  form(method='POST' action='/users/login')
+    label(for='username') Username
+    input(type='text' name='username' placeholder='Username')
+    label(for='password') Password
+    input(type='password' name='password' placeholder='Password')
+    button(type='submit') Submit
+  a(href='/users/auth/facebook') Facebook Login

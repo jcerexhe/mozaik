@@ -1,0 +1,44 @@
+{
+  "name": "mozaik",
+  "version": "1.0.0",
+  "description": "Mozaik website created by Switch Maven",
+  "main": "app.js",
+  "engines": {
+    "node": "8.1.2"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Switch Maven",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.1",
+    "es6-promisify": "^5.0.0",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "md5": "^2.2.1",
+    "moment": "^2.18.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-mongodb-errors": "0.0.2",
+    "nodemon": "^1.11.0",
+    "passport": "*",
+    "passport-facebook": "^2.1.1",
+    "passport-http": "*",
+    "passport-local": "*",
+    "passport-local-mongoose": "^4.0.0",
+    "pug": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

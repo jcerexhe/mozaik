@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Mozaik
+  body
+    ul
+      if user
+        li
+          a(href='/') Dashboard
+        li
+          a(href='/users/logout') Logout
+      else
+        li
+          a(href='/users/login') Login
+        li
+          a(href='/users/register') Register
+    h3 Mozaik
+    if locals.flashes
+      - const categories = Object.keys(locals.flashes)
+      each category in categories
+        each message in flashes[category]
+          div(class=`alert-${ category }`)!= h.dump(message)
+
+    block content
