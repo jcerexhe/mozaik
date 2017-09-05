@@ -66,8 +66,9 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75,13 +76,45 @@
 
 __webpack_require__(2);
 
+__webpack_require__(9);
+
 /***/ }),
-/* 1 */,
-/* 2 */
+
+/***/ 2:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = window.onload = function () {
+  var menu = document.getElementById('menu');
+  var navbar = document.getElementById('nav');
+  var isClear = navbar.classList.contains('clear');
+  document.getElementById('open-menu').onclick = function (e) {
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      if (!isClear) navbar.classList.add('clear');
+      this.classList.add('open');
+    } else {
+      menu.classList.add('hidden');
+      if (!isClear) navbar.classList.remove('clear');
+      this.classList.remove('open');
+    }
+  };
+};
+
 /***/ })
-/******/ ]);
+
+/******/ });
 //# sourceMappingURL=App.bundle.js.map
