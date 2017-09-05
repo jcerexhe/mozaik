@@ -8,6 +8,10 @@ mongoose.connection.on('error', (err) => {
 
 // import all of our models
 require('./models/User');
+require('./models/School');
+require('./models/Course');
+require('./models/Artwork');
+require('./models/Alumni');
 
 const express = require('express');
 const session = require('express-session');

@@ -10,6 +10,7 @@ const schoolSchema = new Schema({
     trim: true,
     required: 'Please supply a name for your school.'
   },
+  slug: String,
   website: {
     type: String,
     trim: true,
@@ -32,8 +33,8 @@ const schoolSchema = new Schema({
   scholarship: {
     type: String,
     trim: true
-  }
-  location: [{
+  },
+  locations: [{
     type: {
       type: String
     },
@@ -52,6 +53,15 @@ const schoolSchema = new Schema({
     required: 'Please provide a logo of your school.'
   },
   video: String
+});
+
+schoolSchema.pre('save', async function(next) {
+  if (!this.isModified('name')) {
+    next();
+    return;
+  }
+  this.slug = slug(this.name);
+  next();
 });
 
 schoolSchema.virtual('alumni', {
@@ -79,7 +89,7 @@ function autopopulate(next) {
   next();
 }
 
-storeSchema.pre('find', autopopulate);
-storeSchema.pre('findOne', autopopulate);
+schoolSchema.pre('find', autopopulate);
+schoolSchema.pre('findOne', autopopulate);
 
 module.exports = mongoose.model('School', schoolSchema);

@@ -20,10 +20,19 @@ const userSchema = new Schema({
     required: 'Please supply a name',
     trim: true
   },
-  facebookId: String,
-  facebookToken: String,
+  // Uncomment if using Facebook OAuth
+  // facebookId: String,
+  // facebookToken: String,
   resetPasswordToken: String,
   resetPasswordExpires: Date,
+  favouritedCourses: [{
+    type: mongoose.Schema.ObjectId,
+    ref: 'Course',
+  }],
+  likedArtwork: [{
+    type: mongoose.Schema.ObjectId,
+    ref: 'Artwork'
+  }]
 });
 
 userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });
