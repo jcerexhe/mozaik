@@ -7,7 +7,11 @@
     "node": "8.1.2"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node ./app.js",
+    "watch": "nodemon ./app.js --ignore public/",
+    "dev": "concurrently 'npm run watch' 'npm run assets' --names 'App,Assets' --prefix name",
+    "assets": "webpack -w --display-max-modules 0",
+    "sample": "node ./data/load-sample-data.js"
   },
   "author": "Switch Maven",
   "license": "ISC",
@@ -28,7 +32,6 @@
     "mongodb": "*",
     "mongoose": "*",
     "mongoose-mongodb-errors": "0.0.2",
-    "nodemon": "^1.11.0",
     "passport": "*",
     "passport-facebook": "^2.1.1",
     "passport-http": "*",
@@ -37,8 +40,20 @@
     "pug": "^2.0.0-rc.2"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.24.0",
+    "concurrently": "^3.4.0",
+    "css-loader": "^0.27.3",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.1.3",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.2.1"
   }
 }

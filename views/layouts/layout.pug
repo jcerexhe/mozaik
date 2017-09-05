@@ -3,6 +3,8 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title Mozaik
+    block stylesheets
+      link(rel='stylesheet' href='/dist/style.css?rand='+Math.random())
   body
     ul
       if user
@@ -23,3 +25,6 @@ html(lang="en")
           div(class=`alert-${ category }`)!= h.dump(message)
 
     block content
+
+    block javascripts
+      script(src="/dist/App.bundle.js?rand="+Math.random())
