@@ -24,9 +24,6 @@ const schoolSchema = new Schema({
     required: 'Please supply an overview of your school.'
   },
   price: {
-    type: {
-      type: String
-    },
     lower: Number,
     upper: Number
   },
@@ -37,6 +34,7 @@ const schoolSchema = new Schema({
   locations: [{
     type: {
       type: String
+      default: 'Point'
     },
     coordinates: [{
       type: Number,
@@ -76,7 +74,7 @@ schoolSchema.virtual('courses', {
   foreignField: 'school'
 });
 
-schoolSchema.virtual('artwork', {
+schoolSchema.virtual('artworks', {
   ref: 'Artwork',
   localField: '_id',
   foreignField: 'school'
@@ -85,7 +83,7 @@ schoolSchema.virtual('artwork', {
 function autopopulate(next) {
   this.populate('alumni');
   this.populate('courses');
-  this.populate('artwork');
+  this.populate('artworks');
   next();
 }
 
