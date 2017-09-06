@@ -6,7 +6,7 @@ const validator = require('validator');
 const artworkSchema = new Schema({
   image: {
     type: String,
-    required: 'Please provide an iamge of the artwork.'
+    required: 'Please provide an image of the artwork.'
   },
   name: {
     type: String,

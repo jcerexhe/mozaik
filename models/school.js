@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 const validator = require('validator');
+const slug = require('slugs');
 
 const schoolSchema = new Schema({
   name: {
@@ -33,7 +34,7 @@ const schoolSchema = new Schema({
   },
   locations: [{
     type: {
-      type: String
+      type: String,
       default: 'Point'
     },
     coordinates: [{

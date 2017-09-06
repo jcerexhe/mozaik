@@ -29,3 +29,5 @@ const courseSchema = new Schema({
     required: 'You must supply a school!'
   }
 });
+
+module.exports = mongoose.model('Course', courseSchema);
