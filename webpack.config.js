@@ -15,10 +15,15 @@ const autoprefixer = require('autoprefixer');
 // This is our JavaScript rule that specifies what to do with .js files
 const javascript = {
   test: /\.(js)$/, // see how we match anything that ends in `.js`? Cool
-  use: [{
-    loader: 'babel-loader',
-    options: { presets: ['es2015'] } // this is one way of passing options
-  }],
+  loader: 'babel-loader',
+  exclude: /node_modules/,
+  query: {
+    presets: ['es2015', 'react']
+  }
+  // use: [{
+    // loader: 'babel-loader',
+    // options: { presets: ['es2015', 'react'] } // this is one way of passing options
+  // }],
 };
 
 /*
@@ -50,7 +55,8 @@ const uglify = new webpack.optimize.UglifyJsPlugin({ // eslint-disable-line
 const config = {
   entry: {
     // we only have 1 entry, but I've set it up for multiple in the future
-    App: './public/javascripts/mozaik-app.js'
+    App: './public/javascripts/mozaik-app.js',
+    Search: './public/javascripts/search.js'
   },
   // we're using sourcemaps and here is where we specify which kind of sourcemap to use
   devtool: 'source-map',
