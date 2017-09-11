@@ -14,11 +14,11 @@ const autoprefixer = require('autoprefixer');
 
 // This is our JavaScript rule that specifies what to do with .js files
 const javascript = {
-  test: /\.(js)$/, // see how we match anything that ends in `.js`? Cool
+  test: /\.(js|jsx)$/, // see how we match anything that ends in `.js`? Cool
   loader: 'babel-loader',
   exclude: /node_modules/,
   query: {
-    presets: ['es2015', 'react']
+    presets: ['es2015', 'react', 'stage-2']
   }
   // use: [{
     // loader: 'babel-loader',
@@ -77,7 +77,7 @@ const config = {
   plugins: [
     // here is where we tell it to output our css to a separate file
     new ExtractTextPlugin('style.css'),
-    uglify
+    uglify,
   ]
 };
 // webpack is cranky about some packages using a soon to be deprecated API. shhhhhhh

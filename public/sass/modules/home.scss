@@ -1,0 +1,151 @@
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  z-index: 40;
+}
+.home-slider {
+  margin-bottom: 0px !important;
+}
+.slide {
+  width: 100vw !important;
+  height: calc(100vh - 100px) !important;
+  padding-top: 100px;
+}
+.slider-dots {
+  margin-top: -251px;
+}
+.scroll-search {
+  margin-top: 31px;
+  position: absolute;
+  z-index: 60;
+  width: 100%;
+}
+.slider-dots > .slick-dots {
+  bottom: initial;
+}
+.slick-dots li {
+  height: 0px !important;
+  width: 100px !important;
+}
+.slick-dots li .dot {
+    font-size: 0 !important;
+    border: 3px solid $white !important;
+    padding: 0px !important;
+    height: 0px;
+}
+.slick-dots li.slick-active .dot {
+  border: 3px solid $orange !important;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $white;
+  margin-left: auto;
+  margin-right: auto;
+}
+#search {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  margin-top: -200px;
+  z-index: 50;
+  overflow: hidden;
+}
+#search:before {
+  content: ' ';
+  background-color: $white;
+  width: calc(100% + 400px);
+  margin-left: -200px;
+  // greater hight > smaller triange = greater width
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: 110;
+  transform: skewX(45deg);
+}
+.search-content {
+  position: absolute;
+  width: 100%;
+  z-index: 111;
+
+  h2 {
+    margin: 0px;
+    font-size: 100px;
+  }
+  .search-criteria {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .search-category {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .interest-areas, .interest-disciplines {
+    border: 1px solid $grey;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .interest-areas > h2, .interest-disciplines > h2 {
+    font-size: 30px;
+    margin-top: -30px;
+    background-color: $white;
+    display: inline-block;
+    padding: 0px 15px;
+    text-transform: uppercase;
+  }
+  .interest-disciplines {
+    padding: 15px;
+  }
+  .interest-countries {
+    background-color: $grey;
+    padding: 5px;
+  }
+  .interest-countries > h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+  .interest-countries > .search-buttons {
+    margin: 0px;
+  }
+  .search-buttons li {
+    display: inline-block;
+    list-style: none;
+  }
+  .search-buttons {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+  }
+  .search-button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $grey;
+  }
+  .search-button.white {
+    background-color: $white;
+  }
+  .search-button:focus {
+    border: none;
+    outline: none;
+  }
+  .seach-button:hover, .search-button.active {
+    background-color: $orange;
+    color: $white;
+  }
+}
+.search-blue-background {
+  width: 100%;
+  height: 600px;
+  background-color: $blue;
+}

@@ -62,10 +62,11 @@ html(lang='en')
       each category in categories
         each message in flashes[category]
           div(class=`alert-${ category }`)!= h.dump(message)
-    #search-container
 
     block content
 
+    // TODO footer
+
     block javascripts
+      script(src="https://code.jquery.com/jquery-3.2.1.min.js")
       script(src='/dist/App.bundle.js?rand='+Math.random())
-      script(src='/dist/Search.bundle.js')

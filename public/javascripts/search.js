@@ -1,19 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import components
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return <div>what</div>;
-  }
-}
+import Search from './components/search/index';
 
 ReactDOM.render(
-  <App />
+  <Search />
   , document.getElementById('search-container')
 )

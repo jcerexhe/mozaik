@@ -2,3 +2,12 @@
 @import './modules/navbar';
 @import './modules/alerts';
 @import './modules/helpers';
+@import './modules/home';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+}

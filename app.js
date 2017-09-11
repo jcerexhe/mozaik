@@ -77,8 +77,10 @@ app.use((req, res, next) => {
 // Routes
 const index = require('./routes/index');
 const users = require('./routes/users');
+const api = require('./routes/api');
 app.use('/', index);
 app.use('/users', users);
+app.use('/api', api);
 
 // If that above routes didnt work, we 404 them and forward to error handler
 app.use(errorHandlers.notFound);

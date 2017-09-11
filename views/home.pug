@@ -1,0 +1,31 @@
+extends layouts/layout
+
+append stylesheets
+  link(rel='stylesheet' href='/slick/slick.css')
+  link(rel='stylesheet' href='/slick/slick-theme.css')
+
+block content
+  .home-hero
+    .home-slider
+      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
+        h1 Mozaik Creative
+        p Deciding what to study is tricky. We'll help you find the right course in the creative industry.
+      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
+      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
+    .slider-dots
+    .scroll-search
+      .arrow-down
+  #search-container
+append javascripts
+  script(src='/dist/Search.bundle.js?rand='+Math.random())
+  script(src='/slick/slick.min.js')
+  script.
+    $('.home-slider').slick({
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      appendDots: $('.slider-dots'),
+      customPaging: function(slider, i) {
+        return "<div class='dot' />"
+      }
+    });
