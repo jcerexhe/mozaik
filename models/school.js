@@ -43,7 +43,11 @@ const schoolSchema = new Schema({
     }],
     address: {
       type: String,
-      required: 'You must supply an address!'
+      required: 'Please supply the address of your school.'
+    },
+    country: {
+      type: String,
+      required: 'Please supply the country your school is in.'
     }
   }],
   delivery: [String],

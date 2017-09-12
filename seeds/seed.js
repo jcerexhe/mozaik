@@ -39,6 +39,7 @@ for (var i = 0; i < 5; i++) {
           faker.address.longitude()
         ],
         "type":"Point"
+        // TODO add countries
       }
     ],
     "logo": "rxhzswv9zxzwsuwe25hb"
@@ -48,12 +49,13 @@ schools.forEach((school) => {
   // populate courses
   for (var i = 0; i < 7; i++) {
     courses.push(new Course({
-      "name": faker.commerce.productName,
+      "name": faker.commerce.productName(),
       "description": faker.lorem.paragraph(),
       "price": faker.random.number(),
       "length": "1 year",
       "image": "rxhzswv9zxzwsuwe25hb",
       "school": school._id
+      // TODO add disciplines
     }));
   }
   // populate artworks

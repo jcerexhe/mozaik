@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SearchButton from './searchButton.js';
+import SearchButton from './searchButton.jsx';
+import SearchLink from './searchLink.jsx';
 import _ from 'lodash';
 
 export default class Search extends Component {
@@ -12,18 +13,25 @@ export default class Search extends Component {
         interestDisciplines: ['all areas'],
         interestCountries: ['all areas']
       },
-      categories: [],
+      categories: [''],
       search: ''
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state);
+  componentWillMount() {
+    this.props.getResults({ ...this.state });
+  }
+
+  shouldComponentUpdate(_nextProps, nextState) {
+    if (_.eq(this.state, nextState))
+      return true;
+    this.props.getResults({ ...nextState });
+    return false;
   }
 
   updateDiscipline(area, val) {
     const { discipline } = this.state;
-    var interests = this.state.discipline[area];
+    let interests = this.state.discipline[area];
     if (val === 'all areas') {
       this.setState({
         discipline: {
@@ -48,17 +56,151 @@ export default class Search extends Component {
     });
   }
 
-  render() {
-    const { searchCategory, discipline, categories, search } = this.state;
+  updateCategories(val) {
+    let { categories } = this.state;
+    if (categories.includes(val))
+      _.remove(categories, (c) => { return c.indexOf(val) != -1 });
+    else
+      categories.push(val);
+    this.setState({
+      categories: [...categories]
+    });
+  }
+
+  // TODO own components
+  renderDiscipline() {
+    const { discipline } = this.state;
     const interestAreas = ['all areas', 'digital media', 'visual comms', 'film/tv/audio', 'design', 'photography', 'performing arts', 'built environment', 'arts', 'fashion', 'business for creatives'];
     const disciplines = ['all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas'];
     const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
+    return (
+      <div id='search-discipline'>
+        <div className='interest-areas'>
+          <h2>What areas interest you?</h2>
+          <ul className='search-buttons'>
+            { _.map(interestAreas, (area) => {
+              const active = discipline.interestAreas.includes(area);
+              return (
+                <li key={ Math.random() }>
+                  <SearchButton val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestAreas', val) } />
+                </li>
+              );
+            }) }
+          </ul>
+        </div>
+        <div className='interest-disciplines'>
+          <h2>Do these disciplines interest you?</h2>
+          <ul className='search-buttons'>
+            { _.map(disciplines, (area) => {
+              // TODO put actual disciplines
+              const active = discipline.interestDisciplines.includes(area);
+              return (
+                <li key={ Math.random() }>
+                  <SearchButton val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestDisciplines', val) } />
+                </li>
+              );
+            }) }
+          </ul>
+          <div className='interest-countries'>
+            <h3>What country?</h3>
+            <ul className='search-buttons'>
+              { _.map(countries, (area) => {
+                const active = discipline.interestCountries.includes(area);
+                return (
+                  <li key={ Math.random() }>
+                    <SearchButton classes={ ['white'] } val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestCountries', val) } />
+                  </li>
+                );
+              }) }
+            </ul>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  renderCategories() {
+    const { categories } = this.state;
+    const education = ['High School / Enlisted', 'College Graduate / Officer'];
+    const careers = ['Healthcare', 'Law Professional', 'Ministry Professional'];
+    const asvab = ['Administrative', 'Electronics', 'General', 'Mechanical'];
+    return (
+      <div id='search-categories'>
+        <div className='interest-areas'>
+          <h2>What areas interest you?</h2>
+          <div className='interest-categories'>
+            <div className='category'>
+              <h3>Education</h3>
+              <ul className='search-links'>
+                { _.map(education, (val, i) => {
+                  return (
+                    <li key={ Math.random() }>
+                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
+                    </li>
+                  );
+                }) }
+              </ul>
+            </div>
+            <div className='category'>
+              <h3>Professional careers</h3>
+              <ul className='search-links'>
+                { _.map(careers, (val, i) => {
+                  return (
+                    <li key={ Math.random() }>
+                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
+                    </li>
+                  );
+                }) }
+              </ul>
+            </div>
+            <div className='category'>
+              <h3>ASVAB Categories</h3>
+              <ul className='search-links'>
+                { _.map(asvab, (val, i) => {
+                  return (
+                    <li key={ Math.random() }>
+                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
+                    </li>
+                  );
+                }) }
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  renderSearch() {
+    const { search } = this.state;
+    return (
+      <div id='search-search'>
+        <div className='interest-areas'>
+          <h2>What areas interest you?</h2>
+          <div className='search-input'>
+            <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  render() {
+    const { searchCategory, discipline, categories, search } = this.state;
+    let rendered = <div />;
+    switch (searchCategory) {
+      case "discipline": rendered = this.renderDiscipline();
+        break;
+      case 'categories': rendered = this.renderCategories();
+        break;
+      case 'search': rendered = this.renderSearch();
+        break;
+    }
     return (
       <div>
         <div id="search">
           <div className='search-content'>
             <h2>quick search</h2>
-            <p>{ searchCategory }</p>
             <div className='search-criteria'>
               <div className='search-category'>
                 <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
@@ -68,45 +210,7 @@ export default class Search extends Component {
                 <span onClick={ () => this.setState({ searchCategory: 'search' }) }
                   className={ searchCategory === 'search' ? 'active' : '' }>search</span>
               </div>
-              <div id='search-discipline'>
-                <div className='interest-areas'>
-                  <h2>What areas interest you?</h2>
-                  <ul className='search-buttons'>
-                    { _.map(interestAreas, (area) => {
-                      return (
-                        <li>
-                          <SearchButton val={ area } active={ discipline.interestAreas.includes(area) } onClick={ (val) => this.updateDiscipline('interestAreas', val) } />
-                        </li>
-                      );
-                    }) }
-                  </ul>
-                </div>
-                <div className='interest-disciplines'>
-                  <h2>Do these disciplines interest you?</h2>
-                  <ul className='search-buttons'>
-                    { _.map(disciplines, (area) => {
-                      // TODO put actual disciplines
-                      return (
-                        <li>
-                          <SearchButton val={ area } active={ discipline.interestDisciplines.includes(area) } onClick={ (val) => this.updateDiscipline('interestDisciplines', val) } />
-                        </li>
-                      );
-                    }) }
-                  </ul>
-                  <div className='interest-countries'>
-                    <h3>What country?</h3>
-                    <ul className='search-buttons'>
-                      { _.map(countries, (area) => {
-                        return (
-                          <li>
-                            <SearchButton bg="white" val={ area } active={ discipline.interestCountries.includes(area) } onClick={ (val) => this.updateDiscipline('interestCountries', val) } />
-                          </li>
-                        );
-                      }) }
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              { rendered }
             </div>
           </div>
         </div>

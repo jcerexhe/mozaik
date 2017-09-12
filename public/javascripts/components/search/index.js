@@ -16,18 +16,6 @@ export default class App extends Component {
     };
   }
 
-  componentWillMount() {
-    axios.get('/api/courses').then((result) => {
-      if (result.data.error) {
-        error();
-        return;
-      }
-      this.setState({ results: result.data });
-    }).catch((err) => {
-      error();
-    });
-  }
-
   error() {
     this.setState({
       error: {
@@ -35,6 +23,18 @@ export default class App extends Component {
         message: 'Could not fetch results. Please try again.'
       }
     })
+  }
+
+  getResults(params) {
+    axios.get('/api/courses', { params }).then((result) => {
+      if (result.data.error) {
+        this.error();
+        return;
+      }
+      this.setState({ results: result.data });
+    }).catch((err) => {
+      this.error();
+    });
   }
 
   updateResults(res, err) {
@@ -45,10 +45,7 @@ export default class App extends Component {
     const { results, loading, error } = this.state;
     return (
       <div>
-        <Search updateResults={ (res, err) => this.setState({
-          results: res,
-          error: err
-        }) } />
+        <Search getResults={ (params) => this.getResults(params) } />
       </div>
     );
   }
