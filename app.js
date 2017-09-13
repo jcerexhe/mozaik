@@ -25,10 +25,22 @@ const flash = require('connect-flash');
 const expressValidator = require('express-validator');
 const helpers = require('./helpers');
 const errorHandlers = require('./handlers/errorHandlers');
+const cloudinary = require('cloudinary');
+const reactEngine = require('react-engine');
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
+const engine = reactEngine.server.create({});
+
 require('./handlers/passport');
 
 // Init app
 const app = express();
+
+app.engine('.jsx', engine);
 
 // Setup view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -65,6 +77,7 @@ app.use((req, res, next) => {
   res.locals.flashes = req.flash();
   res.locals.user = req.user || null;
   res.locals.currentPath = req.path;
+  res.locals.cloudinary = cloudinary;
   next();
 });
 

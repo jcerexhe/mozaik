@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Search from './search.jsx';
-// import Results from './results';
+import Results from './results.jsx';
 import axios from 'axios';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {
       results: [],
       loading: true,
@@ -26,12 +27,13 @@ export default class App extends Component {
   }
 
   getResults(params) {
+    this.setState({ loading: true })
     axios.get('/api/courses', { params }).then((result) => {
       if (result.data.error) {
         this.error();
         return;
       }
-      this.setState({ results: result.data });
+      this.setState({ results: result.data, loading: false });
     }).catch((err) => {
       this.error();
     });
@@ -46,8 +48,8 @@ export default class App extends Component {
     return (
       <div>
         <Search getResults={ (params) => this.getResults(params) } />
+        <Results results={ results } loading={ loading } error={ error } />
       </div>
     );
   }
 }
-// <Results results={ results } loading={ loading } error={ error } />

@@ -22,7 +22,7 @@ exports.courses = (req, res) => {
     default:
       q = Course.find();
   }
-  q.then((courses) => {
+  q.limit(6).then((courses) => {
     res.json(courses);
   }).catch(() => {
     res.json({

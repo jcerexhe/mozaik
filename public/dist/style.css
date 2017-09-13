@@ -361,6 +361,33 @@
   height: 600px;
   background-color: #003366; }
 
+#results .search-results {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px; }
+
+#results .search-results > li {
+  display: inline-block;
+  width: 33.3%; }
+
+#results .search-result {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+#results .search-result::before {
+  content: ' ';
+  display: block;
+  padding-top: 83.3%; }
+
+#results .search-result > span {
+  position: absolute;
+  top: auto;
+  left: 2rem;
+  bottom: 2rem;
+  right: 2rem; }
+
 html, body {
   height: 100%; }
 
