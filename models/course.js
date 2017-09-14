@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
+const slug = require('slugs');
+const _ = require('lodash');
 
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
+const School = mongoose.model('School');
 
 const courseSchema = new Schema({
   name: {
@@ -29,6 +31,25 @@ const courseSchema = new Schema({
     ref: 'School',
     required: 'You must supply a school!',
   },
+  slug: String,
+});
+
+courseSchema.pre('save', async function (next) {
+  if (!this.isModified('name')) {
+    next();
+    return;
+  }
+  this.slug = slug(this.name);
+  const school = await School.findOne({ _id: this.school });
+  const slugs = _.map(school.courses, (c) => {
+    return c.slug;
+  });
+  const slugRegEx = new RegExp(`^(${this.slug})((-[0-9]*$)?)$`, 'i');
+  _.remove(slugs, (s) => { return !s.match(slugRegEx) });
+  if (slugs.length) {
+    this.slug = `${this.slug}-${slugs.length + 1}`;
+  }
+  next();
 });
 
 module.exports = mongoose.model('Course', courseSchema);

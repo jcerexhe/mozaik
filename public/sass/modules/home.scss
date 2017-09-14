@@ -213,6 +213,8 @@
   .search-results > li {
     display: inline-block;
     width: 33.3%;
+    vertical-align: top;
+    position: relative;
   }
   .search-result {
     display: block;
@@ -231,5 +233,14 @@
     left: 2rem;
     bottom: 2rem;
     right: 2rem;
+    z-index: 10;
+  }
+  .search-result > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
   }
 }

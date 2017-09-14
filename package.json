@@ -34,6 +34,7 @@
     "moment": "^2.18.1",
     "mongodb": "*",
     "mongoose": "*",
+    "mongoose-autopopulate": "^0.6.0",
     "mongoose-mongodb-errors": "0.0.2",
     "passport": "*",
     "passport-facebook": "^2.1.1",

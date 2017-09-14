@@ -29,7 +29,8 @@ exports.courses = (req, res) => {
     default:
       q = Course.find();
   }
-  q.limit(6).then((courses) => {
+  // TODO allow user to change limit
+  q.populate('school', 'slug').limit(6).then((courses) => {
     _.map(courses, (c) => {
       c.image = cloudinary.url(c.image+'.jpg');
       return c;

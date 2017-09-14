@@ -33,13 +33,13 @@ for (var i = 0; i < 5; i++) {
     "scholarship": faker.lorem.sentence(),
     "locations": [
       {
-        "address": faker.address.streetAddress,
+        "address": faker.address.streetAddress(),
         "coordinates":[
           faker.address.latitude(),
           faker.address.longitude()
         ],
-        "type":"Point"
-        // TODO add countries
+        "type":"Point",
+        "countries": [faker.address.country()]
       }
     ],
     "logo": "rxhzswv9zxzwsuwe25hb"
