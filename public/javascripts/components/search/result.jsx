@@ -3,7 +3,8 @@ import React from 'react';
 const Result = (props) => {
   return (
     <a className='search-result' href="#">
-      <span>test</span>
+      <span>{ props.result.name }</span>
+      <img src={ props.result.image } alt={ props.result.name } />
     </a>
   );
 }

@@ -1,6 +1,13 @@
 const mongoose = require('mongoose');
+const cloudinary = require('cloudinary');
+const _ = require('lodash');
 
 const Course = mongoose.model('Course');
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
 
 exports.courses = (req, res) => {
   const data = req.query;
@@ -13,7 +20,7 @@ exports.courses = (req, res) => {
       q = Course.find();
       break;
     case 'search': {
-      const regex = new RegExp(`.*${data.search}.*`, 'i');
+      const regex = new RegExp(`.*${ data.search }.*`, 'i');
       q = Course.find({
         $or: [{ name: regex }, { description: regex }],
       });
@@ -23,6 +30,10 @@ exports.courses = (req, res) => {
       q = Course.find();
   }
   q.limit(6).then((courses) => {
+    _.map(courses, (c) => {
+      c.image = cloudinary.url(c.image+'.jpg');
+      return c;
+    });
     res.json(courses);
   }).catch(() => {
     res.json({
