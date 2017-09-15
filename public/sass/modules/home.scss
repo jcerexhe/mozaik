@@ -243,4 +243,12 @@
     height: 100%;
     z-index: 5;
   }
+  .load-more-results {
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .load-more-results > span {
+    cursor: pointer;
+  }
 }

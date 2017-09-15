@@ -6,7 +6,7 @@ const Course = mongoose.model('Course');
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 exports.courses = (req, res) => {
@@ -20,7 +20,7 @@ exports.courses = (req, res) => {
       q = Course.find();
       break;
     case 'search': {
-      const regex = new RegExp(`.*${ data.search }.*`, 'i');
+      const regex = new RegExp(`.*${data.search}.*`, 'i');
       q = Course.find({
         $or: [{ name: regex }, { description: regex }],
       });
@@ -30,9 +30,10 @@ exports.courses = (req, res) => {
       q = Course.find();
   }
   // TODO allow user to change limit
-  q.populate('school', 'slug').limit(6).then((courses) => {
+  const limit = Number.parseInt(data.limit, 10);
+  q.populate('school', 'slug').limit(limit).then((courses) => {
     _.map(courses, (c) => {
-      c.image = cloudinary.url(c.image+'.jpg');
+      c.image = cloudinary.url(`${c.image}.jpg`);
       return c;
     });
     res.json(courses);

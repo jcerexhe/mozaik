@@ -22,7 +22,10 @@ export default class Search extends Component {
     this.props.getResults({ ...this.state });
   }
 
-  shouldComponentUpdate(_nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps.limit, this.props.limit);
+    if (nextProps.limit > this.props.limit)
+      this.props.getResults({ ...this.state });
     if (_.eq(this.state, nextState))
       return true;
     this.props.getResults({ ...nextState });
@@ -71,6 +74,7 @@ export default class Search extends Component {
   renderDiscipline() {
     const { discipline } = this.state;
     const interestAreas = ['all areas', 'digital media', 'visual comms', 'film/tv/audio', 'design', 'photography', 'performing arts', 'built environment', 'arts', 'fashion', 'business for creatives'];
+    // TODO put actual disciplines
     const disciplines = ['all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas'];
     const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
     return (
@@ -92,7 +96,6 @@ export default class Search extends Component {
           <h2>Do these disciplines interest you?</h2>
           <ul className='search-buttons'>
             { _.map(disciplines, (area) => {
-              // TODO put actual disciplines
               const active = discipline.interestDisciplines.includes(area);
               return (
                 <li key={ Math.random() }>

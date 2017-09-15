@@ -12,7 +12,8 @@ export default class App extends Component {
       error: {
         exists: false,
         message: ''
-      }
+      },
+      limit: 6,
     };
   }
 
@@ -25,8 +26,24 @@ export default class App extends Component {
     })
   }
 
+  resetLimit() {
+    this.setState({
+      limit: 6,
+    });
+  }
+
+  updateLimit() {
+    const { limit } = this.state;
+    console.log(limit);
+    this.setState({
+      limit: limit + 6,
+    });
+  }
+
   getResults(params) {
-    this.setState({ loading: true })
+    this.setState({ loading: true });
+    const { limit } = this.state;
+    params = { ...params, limit };
     axios.get('/api/courses', { params }).then((result) => {
       if (result.data.error) {
         this.error();
@@ -43,11 +60,11 @@ export default class App extends Component {
   }
 
   render() {
-    const { results, loading, error } = this.state;
+    const { results, loading, error, limit } = this.state;
     return (
       <div>
-        <Search getResults={ (params) => this.getResults(params) } />
-        <Results results={ results } loading={ loading } error={ error } />
+        <Search getResults={ (params) => this.getResults(params) } limit={ limit }/>
+        <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ results } loading={ loading } error={ error } />
       </div>
     );
   }

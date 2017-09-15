@@ -16,7 +16,7 @@ export default class Search extends Component {
   }
 
   render() {
-    const { results, loading, errors } = this.props;
+    const { results, loading, errors, getMoreResults, limit } = this.props;
     return loading ? <p>loading</p> : (
       <div id='results'>
         <ul className='search-results'>
@@ -28,6 +28,11 @@ export default class Search extends Component {
             );
           }) }
         </ul>
+        { limit > results.length ? <div /> : (
+          <div className='load-more-results'>
+            <span onClick={ () => getMoreResults() }>+ load more results</span>
+          </div>
+        ) }
       </div>
     );
   }

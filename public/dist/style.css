@@ -399,6 +399,14 @@
   height: 100%;
   z-index: 5; }
 
+#results .load-more-results {
+  padding: 15px 0px;
+  text-align: center;
+  text-transform: uppercase; }
+
+#results .load-more-results > span {
+  cursor: pointer; }
+
 html, body {
   height: 100%; }
 
