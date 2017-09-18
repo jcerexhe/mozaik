@@ -3,7 +3,6 @@ const reactHelper = require('react-helper');
 
 const School = mongoose.model('School');
 const Search = reactHelper.renderComponent('SearchApp');
-console.log(Search);
 
 exports.home = (req, res) => {
   res.render('home', { Search });

@@ -23,7 +23,6 @@ export default class Search extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(nextProps.limit, this.props.limit);
     if (nextProps.limit > this.props.limit)
       this.props.getResults({ ...this.state });
     if (_.eq(this.state, nextState))

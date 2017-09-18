@@ -34,7 +34,6 @@ export default class SearchApp extends Component {
 
   updateLimit() {
     const { limit } = this.state;
-    console.log(limit);
     this.setState({
       limit: limit + 6,
     });
