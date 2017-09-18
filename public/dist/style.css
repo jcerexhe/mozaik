@@ -490,6 +490,24 @@
   font-size: 14px;
   margin-top: 5px; }
 
+.school-heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 50px 0px;
+  background-color: #EEE; }
+  .school-heading .school-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-heading .school-info > img {
+    max-width: 100px;
+    height: auto; }
+
 html, body {
   height: 100%; }
 
