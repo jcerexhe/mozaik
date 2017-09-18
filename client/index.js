@@ -1,4 +1,4 @@
-const reactHelper = require('react-helper');
-const search = require('../public/javascripts/components/search/index.jsx');
+import reactHelper from 'react-helper';
+import SearchApp from './components/search/index.jsx';
 
-reactHelper.register({ search });
+reactHelper.register({ SearchApp });

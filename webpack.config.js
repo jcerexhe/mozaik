@@ -52,7 +52,7 @@ const config = {
   entry: {
     // we only have 1 entry, but I've set it up for multiple in the future
     App: './public/javascripts/mozaik-app.js',
-    react-helper: './client/index.js',
+    reactHelper: './client/index.js',
   },
   // we're using sourcemaps and here is where we specify which kind of sourcemap to use
   devtool: 'source-map',

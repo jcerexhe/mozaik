@@ -15,7 +15,7 @@ block content
     .slider-dots
     .scroll-search
       .arrow-down
-  != search
+  !=Search
   //- #search-container
     // This is the react component Search
     // It is located in public/javascripts/components/search
@@ -30,7 +30,7 @@ block content
     // TODO insert enquiry form; hubspot?
 
 append javascripts
-  script(src='/dist/Search.bundle.js?rand='+Math.random())
+  //- script(src='/dist/Search.bundle.js?rand='+Math.random())
   script(src='/slick/slick.min.js')
   script.
     $('.home-slider').slick({
