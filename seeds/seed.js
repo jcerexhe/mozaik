@@ -16,68 +16,304 @@ var courses = [];
 var artworks = [];
 var alumni = [];
 
-for (var i = 0; i < 5; i++) {
-  // populate schools
-  schools.push(new School({
-    "name": faker.company.companyName(),
-    "website": faker.internet.url(),
-    "disciplines": [
-      "Graphic Design",
-      "Animation"
-    ],
-    "overview": faker.lorem.paragraph(),
-    "price": {
-      "upper": faker.random.number(),
-      "lower": faker.random.number()
+let _ait = new School({
+  "name": "Academy of Information Technology (AIT)",
+  "website": "http://www.ait.edu.au",
+  "disciplines": [
+    "Digital Media",
+    "Animation",
+    "2D Animation",
+    "3D Design",
+    "Games Design",
+    "Game Development",
+    "Design",
+    "Film / TV / Audio",
+    "Digital Design",
+    "Graphic Design"
+  ],
+  "overview": "Founded in 1999, AIT is locaeted in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
+  "price": [{
+    "type": "Domestic students",
+    "upper": 50400,
+    "lower": 16800
+  }, {
+    "type": "International students",
+    "upper": 52800,
+    "lower": 17600
+  }],
+  "scholarship": "initiAIT Scholarship (new students): AUD 8,000<br>Creative Minds Scholarship (continuing students): 50% off a term",
+  "locationDescription": "AIT is located in Sydney and Melbourne - city centre areas. AIT also offers online delivery of selected courses.",
+  "locations": [
+    {
+      "address": "7 Kelly St, Ultimo, NSW 2007",
+      "coordinates": {
+        "lat": -33.8819586,
+        "lon": 151.19523779999997
+      },
+      "type":"Point",
+      "country": "Australia"
     },
-    "scholarship": faker.lorem.sentence(),
-    "locations": [
+    {
+      "address": "13/120 Spencer St, Melbourne VIC 3000",
+      "coordinates": {
+        "lat": -37.8182122,
+        "lon": 144.95430220000003
+      },
+      "type": "Point",
+      "country": "Australia"
+    }
+  ],
+  "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
+  "facilities": [
+    "Entrance_hall_Melb_pqy418",
+    "File_000_mpbswu",
+    "Library_Melb_yjr2x5",
+    "Orange_Agora_Sydney_p7em6v",
+    "Stduent_Lounge1_Melb_oz7pgu"
+  ],
+  "delivery": [
+    "On Campus",
+    "Online"
+  ],
+  "logo": "AIT_logo_f4lg8p",
+  // TODO file size was too large
+  // "video": ""
+  // TODO error uploading pdf
+  // "courseGuide": ""
+});
+let _aitAlumni = [
+  new Alumni({
+    // TODO get alumni photos
+    "photo": "",
+    "name": "PJ SVOBODA",
+    "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "school": _ait._id
+  }),
+  new Alumni({
+    // TODO get alumni photos
+    "photo": "",
+    "name": "ALEX HOLDER",
+    "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "school": _ait._id
+  }),
+  new Alumni({
+    // TODO get alumni photos
+    "photo": "",
+    "name": "TOMAS CURDA",
+    "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "school": _ait._id
+  })
+];
+let _aitCourses = [
+  new Course({
+    "name": "Bachelor of Interactive Media",
+    "description": "In this degree you will gain multi-disciplined and hands-on experience that is underpinned by theoretical knowledge. Whether you want to merge animation with traditional film making or give smooth motion to immersive games, this course will give you a solid grounding and broad skill sets designed to increase options in industry employment.",
+    "campus": [
+      "Sydney",
+      "Melbourne"
+    ],
+    "disciplines": [
+      "2D Animation",
+      "3D Design",
+      "Film",
+      "Game Design"
+    ],
+    "length": "3 years | 2 years accelerated",
+    "price": [
       {
-        "address": faker.address.streetAddress(),
-        "coordinates":[
-          faker.address.latitude(),
-          faker.address.longitude()
-        ],
-        "type":"Point",
-        "countries": [faker.address.country()]
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 50400
+      },
+      {
+        "type": "International students",
+        "fees": 52800
       }
     ],
-    "logo": "rxhzswv9zxzwsuwe25hb"
-  }));
-}
-schools.forEach((school) => {
-  // populate courses
-  for (var i = 0; i < 7; i++) {
-    courses.push(new Course({
-      "name": faker.commerce.productName(),
-      "description": faker.lorem.paragraph(),
-      "price": faker.random.number(),
-      "length": "1 year",
-      "image": "rxhzswv9zxzwsuwe25hb",
-      "school": school._id
-      // TODO add disciplines
-    }));
-  }
-  // populate artworks
-  for (var i = 0; i < 13; i++) {
-    artworks.push(new Artwork({
-      "image": "rxhzswv9zxzwsuwe25hb",
-      "name": faker.finance.accountName(),
-      "artist": faker.name.findName(),
-      "course": "Bachelor of Awesome",
-      "school": school._id
-    }));
-  }
-  // populate alumni
-  for (var i = 0; i < 3; i++) {
-    alumni.push(new Alumni({
-      "photo": "rxhzswv9zxzwsuwe25hb",
-      "name": faker.name.findName(),
-      "blurb": faker.lorem.sentences(),
-      "school": school._id
-    }));
-  }
-});
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  }),
+  new Course({
+    "name": "Diploma of Interactive Media",
+    "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
+    "campus": [
+      "Sydney",
+      "Melbourne"
+    ],
+    "length": "1 year",
+    "price": [
+      {
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 16800
+      },
+      {
+        "type": "International students",
+        "fees": 17600
+      }
+    ],
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  }),
+  new Course({
+    "name": "Bachelor of Digital Design",
+    "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms. From product packaging and brand design to interactive app design, data visualization and title design for film, your design career starts now.",
+    "campus": [
+      "Sydney",
+      "Melbourne"
+    ],
+    "disciplines": [
+      "Design Principles",
+      "Digital Images",
+      "Web Interface",
+      "Motion Graphics",
+      "Branding for Products"
+    ],
+    "length": "3 years | 2 years accelerated",
+    "price": [
+      {
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 50400
+      },
+      {
+        "type": "International students",
+        "fees": 52800
+      }
+    ],
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  }),
+  new Course({
+    "name": "Diploma of Interactive Media",
+    "description": "This higher education Diploma teaches the basic principles of design, combining hands on education with design thinking. This course is also offered online.",
+    "campus": [
+      "Sydney",
+      "Melbourne",
+      "Online"
+    ],
+    "disciplines": [
+    ],
+    "length": "1 year",
+    "price": [
+      {
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 16800
+      },
+      {
+        "type": "International students",
+        "fees": 17600
+      }
+    ],
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  }),
+  new Course({
+    "name": "Bachelor of Information Technology",
+    "description": "Learn the skills required to design, build and publish iOS and Android mobile apps or your own sites and graduate with a portfolio of work.",
+    "campus": [
+      "Sydney",
+      "Melbourne"
+    ],
+    "disciplines": [
+      "Mobile Apps Development",
+      "Game Programming",
+      "AR",
+      "UX / UI",
+      "Artificial Intelligence"
+    ],
+    "length": "3 years | 2 years accelerated | Bootcamp 6 months",
+    "price": [
+      {
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 50400
+      },
+      {
+        "type": "International students",
+        "fees": 52800
+      }
+    ],
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  }),
+  new Course({
+    "name": "Diploma of Information Technology",
+    "description": "This Diploma gives you a solid grounding in the basics of developing content for mobile platforms and the web. Design, build and publish iOS and Android mobile apps and graduate with a portfolio of work.",
+    "campus": [
+      "Sydney",
+      "Melbourne",
+      "Online"
+    ],
+    "disciplines": [
+    ],
+    "length": "1 year",
+    "price": [
+      {
+        "type": "Domestic students (FEE-HELP approved)",
+        "fees": 16800
+      },
+      {
+        "type": "International students",
+        "fees": 17600
+      }
+    ],
+    // TODO get course photos
+    "image": "",
+    "school": _ait._id
+  })
+]
+let _aitArtwork = [
+  new Artwork({
+    "image": "Zombie1_kekb6z",
+    "name": "Zombie",
+    "artist": "Peejay Svoboda",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "New_dimensions_pandora_5625_km28wx",
+    "name": "New Dimensions",
+    "artist": "Alfredo Vallejo",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "Mobile_game1_yqofud",
+    "name": "Mobile Game",
+    "artist": "Effendy Setiady",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "Gnomon_in_Forest_a7oery",
+    "name": "Gnomon in Forest",
+    "artist": "Glen Reiner",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "Elephant_rwr5dh",
+    "name": "Elephant",
+    "artist": "Marine Lucinne Daniele Ecuyer",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "Bulldog_ibzm8c",
+    "name": "Bulldog",
+    "artist": "Nardo Conforti",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "Broken_wq5yve",
+    "name": "Broken",
+    "artist": "Duc Viet Dang",
+    "school": _ait._id
+  }),
+  new Artwork({
+    "image": "AIT_Pandora_Room-Berat_Akdemir_iy91td",
+    "name": "AIT Pandorra Room",
+    "artist": "Berat Akdemir",
+    "school": _ait._id
+  })
+];
 async.series([
   function(callback) {
     console.log('deleting data');
@@ -96,99 +332,22 @@ async.series([
   },
   function(callback) {
     // save schools
-    console.log('populating schools');
-    async.eachSeries(schools, (school, schoolSavedCb) => {
-      school.save().then(() => {
-        schoolSavedCb();
+    console.log('saving ait course');
+    async.eachSeries([_ait].concat(_aitAlumni).concat(_aitCourses).concat(_aitArtwork), (aitItem, aitItemSavedCb) => {
+      aitItem.save().then(() => {
+        aitItemSavedCb();
       }).catch((err) => {
         console.log(err);
-        schoolSavedCb();
+        aitItemSavedCb();
       });
     }, (err) => {
       if(err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING SCHOOLS');
+      callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
     });
   },
-  function(callback) {
-    // save courses
-    console.log('populating courses');
-    async.eachSeries(courses, (course, courseCb) => {
-      course.save().then(() => {
-        courseCb();
-      }).catch((err) => {
-        console.log(err);
-        courseCb();
-      });
-    }, (err) => {
-      if (err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING COURSES');
-    });
-  },
-  function(callback) {
-    // save artwork
-    console.log('populating artworks');
-    async.eachSeries(artworks, (artwork, artworkCb) => {
-      artwork.save().then(() => {
-        artworkCb();
-      }).catch((err) => {
-        console.log(err);
-        artworkCb();
-      });
-    }, (err) => {
-      if (err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING ARTWORKS');
-    });
-  },
-  function(callback) {
-    // save alumni
-    console.log('populating alumni');
-    async.eachSeries(alumni, (alumni, alumniCb) => {
-      alumni.save().then(() => {
-        alumniCb();
-      }).catch((err) => {
-        console.log(err);
-        alumniCb();
-      });
-    }, (err) => {
-      if (err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING ALUMNI');
-    });
-  }
 ], function(err, results) {
   if (err) console.log(err);
   else console.log(results);
   console.log("finishing up");
   process.exit(0);
 });
-
-
-// var courses = [];
-// schools.forEach(function(school) {
-  // for (var i = 0; i < 7; i++) {
-    // courses.push({
-      // "name": faker.commerce.productName,
-      // "description": faker.lorem.paragraph(),
-      // "price": faker.random.number(),
-      // "length": "1 year",
-      // "image": "rxhzswv9zxzwsuwe25hb.jpg",
-      // "school": school._id
-    // });
-  // }
-// });
-// // const schools = JSON.parse(fs.readFileSync(__dirname + '/schools.json', 'utf-8'));
-// // const courses = JSON.parse(fs.readFileSync(__dirname + '/courses.json', 'utf-8'));
-// // const artworks = JSON.parse(fs.readFileSync(__dirname + '/artworks.json', 'utf-8'));
-// // const alumni = JSON.parse(fs.readFileSync(__dirname + '/alumni.json', 'utf-8'));
-
-// try {
-  // School.insertMany(schools);
-  // // await Course.insertMany(courses);
-  // // await Artwork.insertMany(artworks);
-  // // await Alumni.insertMany(alumni);
-  // console.log('👍👍👍👍👍👍👍👍 Done!');
-  // process.exit();
-// } catch(e) {
-  // console.log('\n👎👎👎👎👎👎👎👎 Error!');
-  // console.log(e);
-  // process.exit();
-// }

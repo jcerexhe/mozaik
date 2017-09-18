@@ -17,11 +17,19 @@ const courseSchema = new Schema({
     trim: true,
     required: 'Please provide a short description of the course.',
   },
-  price: Number,
+  campus: [String],
+  disciplines: [String],
   length: {
     type: String,
     trim: true,
   },
+  price: Number,
+  price: [{
+    type: {
+      type: String,
+    },
+    fees: Number,
+  }],
   image: {
     type: String,
     required: 'Please provide an image for the course.',

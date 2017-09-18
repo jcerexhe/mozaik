@@ -1,9 +1,15 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const slug = require('slugs');
+const cloudinary = require('cloudinary');
 
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
 
 const schoolSchema = new Schema({
   name: {
@@ -25,32 +31,44 @@ const schoolSchema = new Schema({
     trim: true,
     required: 'Please supply an overview of your school.',
   },
-  price: {
+  price: [{
+    type: {
+      type: String,
+    },
     lower: Number,
     upper: Number,
-  },
+  }],
   scholarship: {
     type: String,
     trim: true,
   },
+  locationDescription: String,
   locations: [{
     type: {
       type: String,
       default: 'Point',
     },
-    coordinates: [{
-      type: Number,
-      required: 'You must supply coordinates!',
-    }],
+    coordinates: {
+      lat: {
+        type: Number,
+        required: 'Please supply a latitude.',
+      },
+      lon: {
+        type: Number,
+        required: 'Please supply a longitude.',
+      },
+    },
     address: {
       type: String,
       required: 'Please supply the address of your school.',
     },
-    countries: [{
+    country: {
       type: String,
       required: 'Please supply the country your school is in.',
-    }],
+    },
   }],
+  facilitiesDescription: String,
+  facilitiesImages: [String],
   delivery: [String],
   logo: {
     type: String,
@@ -95,5 +113,10 @@ function autopopulate(next) {
 
 schoolSchema.pre('find', autopopulate);
 schoolSchema.pre('findOne', autopopulate);
+
+schoolSchema.post('findOne', async function (school) {
+  school.logo = cloudinary.url(`${school.logo}.jpg`);
+  return school;
+});
 
 module.exports = mongoose.model('School', schoolSchema);

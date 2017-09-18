@@ -63,7 +63,8 @@ html(lang='en')
         each message in flashes[category]
           div(class=`alert-${ category }`)!= h.dump(message)
 
-    block content
+    div(class=(currentPath === '/' ? '' : 'content'))
+      block content
 
     // TODO footer
 

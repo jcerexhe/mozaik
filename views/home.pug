@@ -16,6 +16,18 @@ block content
     .scroll-search
       .arrow-down
   #search-container
+    // This is the react component Search
+    // It is located in public/javascripts/components/search
+    // Loaded from public/dist/Search.bundle.js
+  .extended-search
+    h2 don't see exactly what you're looking for?
+    // TODO add search page
+    a(href='/search') refine and filter here
+  .enquiry-form
+    h3 get the inside scoop
+    p Sign up with your email address to receive news and updates.
+    // TODO insert enquiry form; hubspot?
+
 append javascripts
   script(src='/dist/Search.bundle.js?rand='+Math.random())
   script(src='/slick/slick.min.js')
