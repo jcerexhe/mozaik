@@ -183,3 +183,29 @@
     width: 180px;
   }
 }
+
+// footer
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: $blue;
+  color: $white;
+}
+.footer > .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+.footer > .links > ul {
+  list-style: none;
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

@@ -14,29 +14,6 @@
     height: auto;
   }
 }
-.artworks {
-  max-height: 900px;
-  overflow: hidden;
-}
-.artwork-slides {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  column-count: 3;
-  column-gap: 0px;
-  line-height: 0;
-}
-.artwork-slides > li {
-  list-style: none;
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-.artwork-image {
-  max-width: 100%;
-  height: auto;
-}
 .school-courses-link {
   padding: 20px 0px;
   display: flex;

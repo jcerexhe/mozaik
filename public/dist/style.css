@@ -168,6 +168,34 @@
   to {
     width: 180px; } }
 
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 200px;
+  background-color: #003366;
+  color: #FFF; }
+
+.footer > .links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: top;
+      align-items: top; }
+
+.footer > .links > ul {
+  list-style: none; }
+  .footer > .links > ul h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .footer > .links > ul a {
+    color: #FFF;
+    text-decoration: none; }
+
 .hidden {
   display: none; }
 
@@ -265,6 +293,62 @@
   border-top: 20px solid #FFF;
   margin-left: auto;
   margin-right: auto; }
+
+.extended-search {
+  background-color: #EE6F2E;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase; }
+
+.extended-search > a {
+  color: #FFF;
+  padding: 5px;
+  border: 1px solid #FFF;
+  text-decoration: none; }
+
+.enquiry-form {
+  text-align: center;
+  background-color: #EEE;
+  padding: 30px 0px; }
+
+.enquiry-form > h3 {
+  text-transform: uppercase;
+  margin-bottom: 0px; }
+
+.enquiry-form > p {
+  font-size: 14px;
+  margin-top: 5px; }
+
+.school-heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 50px 0px;
+  background-color: #EEE; }
+  .school-heading .school-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-heading .school-info > img {
+    max-width: 100px;
+    height: auto; }
+
+.school-courses-link {
+  padding: 20px 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
 
 #search {
   position: absolute;
@@ -463,51 +547,6 @@
 #results .load-more-results > span {
   cursor: pointer; }
 
-.extended-search {
-  background-color: #EE6F2E;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  color: #FFF;
-  text-align: center;
-  text-transform: uppercase; }
-
-.extended-search > a {
-  color: #FFF;
-  padding: 5px;
-  border: 1px solid #FFF;
-  text-decoration: none; }
-
-.enquiry-form {
-  text-align: center;
-  background-color: #EEE;
-  padding: 30px 0px; }
-
-.enquiry-form > h3 {
-  text-transform: uppercase;
-  margin-bottom: 0px; }
-
-.enquiry-form > p {
-  font-size: 14px;
-  margin-top: 5px; }
-
-.school-heading {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 50px 0px;
-  background-color: #EEE; }
-  .school-heading .school-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-  .school-heading .school-info > img {
-    max-width: 100px;
-    height: auto; }
-
 .artworks {
   max-height: 900px;
   overflow: hidden; }
@@ -530,17 +569,6 @@
 .artwork-image {
   max-width: 100%;
   height: auto; }
-
-.school-courses-link {
-  padding: 20px 0px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
 
 html, body {
   height: 100%; }

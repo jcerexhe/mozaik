@@ -1,9 +1,13 @@
 @import './modules/base';
-@import './modules/navbar';
+@import './modules/navigation';
 @import './modules/alerts';
 @import './modules/helpers';
 @import './modules/home';
 @import './modules/schools';
+
+// Styles for react components
+@import './modules/searchComponent';
+@import './modules/artworkComponent';
 
 html, body {
   height: 100%;
