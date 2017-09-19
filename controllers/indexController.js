@@ -4,8 +4,9 @@ const reactHelper = require('react-helper');
 const School = mongoose.model('School');
 
 exports.home = (req, res) => {
+  const Hero = reactHelper.renderComponent('HeroApp');
   const Search = reactHelper.renderComponent('SearchApp');
-  res.render('home', { Search });
+  res.render('home', { Hero, Search });
 };
 
 exports.getSchool = async (req, res, next) => {
@@ -30,7 +31,9 @@ exports.schoolDetails = (req, res) => {
   // choose number of images to show: 20
   const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks.slice(0, 20) });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
-  res.render('schoolDetails', { school, Lightbox, CampusMaps });
+  const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
+  const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
+  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni });
 };
 
 exports.schoolCourses = (req, res) => {

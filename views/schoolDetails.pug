@@ -4,7 +4,7 @@ block content
   .school-heading
     .school-info
       img(src=school.logo)
-      h1= school.name
+      h1=school.name
     .school-link
       .video-link
         a(href='#') play video
@@ -14,9 +14,23 @@ block content
         a(href=school.website target='_blank') visit website
   .school-details
     h2 overview
-    p= school.overview
-  !=Lightbox
+    p=school.overview
+    !=Lightbox
   .school-locations
     h2 locations
     p=school.locationDescription
     !=CampusMaps
+  .facilities
+    h2 facilities
+    p=school.facilitiesDescription
+    !=Facilities
+  .alumni
+    h2 alumni
+    !=Alumni
+  .final-links
+    a(href='#') enquiry
+    a(href='#') apply
+
+append stylesheets
+  link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
+  link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")

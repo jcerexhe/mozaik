@@ -66,7 +66,7 @@ let _ait = new School({
     }
   ],
   "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
-  "facilities": [
+  "facilitiesImages": [
     "Entrance_hall_Melb_pqy418",
     "File_000_mpbswu",
     "Library_Melb_yjr2x5",

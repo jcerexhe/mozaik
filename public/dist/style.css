@@ -551,7 +551,6 @@
   cursor: pointer; }
 
 .artworks {
-  max-height: 900px;
   overflow: hidden; }
 
 .artwork-slides {

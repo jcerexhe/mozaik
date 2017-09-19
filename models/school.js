@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const slug = require('slugs');
 const cloudinary = require('cloudinary');
+const _ = require('lodash');
 
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
@@ -120,6 +121,9 @@ schoolSchema.pre('findOne', autopopulate);
 
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}.jpg`);
+  school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
+    return cloudinary.url(`${img}.jpg`);
+  });
   return school;
 });
 
