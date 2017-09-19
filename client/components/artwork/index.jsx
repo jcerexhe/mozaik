@@ -56,18 +56,20 @@ export default class ArtworkApp extends Component {
   render() {
     const { images } = this.state;
     return (
-      <div className='artwork-container'>
-        { this.renderLightbox() }
-        <ul className='artwork-slides'>
-          { _.map(images, (img, index) => {
-            return (
-              <li onClick={ () => this.openLightbox(index) }>
-                <Artwork src={ img.src } />
-              </li>
-            );
-          }) }
-        </ul>
+      <div className='artworks'>
+        <div className='artwork-container'>
+          { this.renderLightbox() }
+          <ul className='artwork-slides'>
+            { _.map(images, (img, index) => {
+              return (
+                <li onClick={ () => this.openLightbox(index) }>
+                  <Artwork src={ img.src } />
+                </li>
+              );
+            }) }
+          </ul>
+        </div>
       </div>
-    );;
+    );
   }
 }
