@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #003366; }
+  background-color: #0C2A3E; }
 
 #nav.clear {
   background-color: transparent; }
@@ -29,14 +29,14 @@
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #FFF;
+  border: 1px solid #FFFFFF;
   padding: 7px;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 12px; }
 
 .navbar .discover > a:hover {
-  background-color: #FFF;
-  color: #003366; }
+  background-color: #FFFFFF;
+  color: #0C2A3E; }
 
 .navbar .logo > a {
   -ms-flex-positive: 2;
@@ -44,7 +44,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 35px; }
 
 .navbar .links {
@@ -73,7 +73,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #FFF;
+  background: #FFFFFF;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -115,7 +115,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #000000;
   background-image: url("http://www.pngmart.com/files/3/Ballet-PNG-HD.png");
   background-repeat: no-repeat;
   background-position: left;
@@ -135,13 +135,13 @@
 
 .menu-content h3 {
   text-transform: uppercase;
-  color: #FFF; }
+  color: #FFFFFF; }
 
 .menu-content ul {
   list-style: none;
   padding-left: 0px !important;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center; }
 
 .menu-content ul > li {
@@ -150,12 +150,12 @@
   width: 180px; }
 
 .menu-content ul > li > a {
-  color: #FFF;
+  color: #FFFFFF;
   text-decoration: none;
   padding-bottom: 2px; }
 
 .menu-content ul > li > a:hover ~ .border {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #FFFFFF;
   animation-duration: 1s;
   animation-name: menuItem;
   margin-bottom: -1px;
@@ -179,8 +179,8 @@
   -ms-flex-align: center;
       align-items: center;
   height: 200px;
-  background-color: #003366;
-  color: #FFF; }
+  background-color: #0C2A3E;
+  color: #FFFFFF; }
 
 .footer > .links {
   display: -ms-flexbox;
@@ -196,7 +196,7 @@
     text-transform: uppercase;
     margin-bottom: 5px; }
   .footer > .links > ul a {
-    color: #FFF;
+    color: #FFFFFF;
     text-decoration: none; }
 
 .hidden {
@@ -281,39 +281,39 @@
 
 .slick-dots li .dot {
   font-size: 0 !important;
-  border: 3px solid #FFF !important;
+  border: 3px solid #FFFFFF !important;
   padding: 0px !important;
   height: 0px; }
 
 .slick-dots li.slick-active .dot {
-  border: 3px solid #EE6F2E !important; }
+  border: 3px solid #EF7D30 !important; }
 
 .arrow-down {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #FFF;
+  border-top: 20px solid #FFFFFF;
   margin-left: auto;
   margin-right: auto; }
 
 .extended-search {
-  background-color: #EE6F2E;
+  background-color: #EF7D30;
   padding-top: 20px;
   padding-bottom: 30px;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase; }
 
 .extended-search > a {
-  color: #FFF;
+  color: #FFFFFF;
   padding: 5px;
-  border: 1px solid #FFF;
+  border: 1px solid #FFFFFF;
   text-decoration: none; }
 
 .enquiry-form {
   text-align: center;
-  background-color: #EEE;
+  background-color: #F4F6F8;
   padding: 30px 0px; }
 
 .enquiry-form > h3 {
@@ -332,7 +332,7 @@
   -ms-flex-align: center;
       align-items: center;
   padding: 50px 0px;
-  background-color: #EEE; }
+  background-color: #F4F6F8; }
   .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
@@ -363,7 +363,7 @@
 
 #search:before {
   content: ' ';
-  background-color: #FFF;
+  background-color: #FFFFFF;
   width: calc(100% + 400px);
   margin-left: -200px;
   height: 100%;
@@ -399,20 +399,20 @@
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly; }
   .search-content .interest-areas, .search-content .interest-disciplines {
-    border: 1px solid #EEE;
+    border: 1px solid #F4F6F8;
     margin-top: 50px;
     text-align: center; }
   .search-content .interest-areas > h2, .search-content .interest-disciplines > h2 {
     font-size: 30px;
     margin-top: -30px;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     display: inline-block;
     padding: 0px 15px;
     text-transform: uppercase; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     padding: 0px 15px 15px 15px; }
   .search-content .interest-countries {
-    background-color: #EEE;
+    background-color: #F4F6F8;
     padding: 5px; }
   .search-content .interest-countries > h3 {
     font-size: 20px;
@@ -433,23 +433,23 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #EEE; }
+    background-color: #F4F6F8; }
   .search-content .search-button.white {
-    background-color: #FFF; }
+    background-color: #FFFFFF; }
   .search-content .search-button:focus {
     border: none;
     outline: none; }
   .search-content .seach-button:hover, .search-content .search-button.active {
-    background-color: #EE6F2E;
-    color: #FFF; }
+    background-color: #EF7D30;
+    color: #FFFFFF; }
   .search-content .interest-categories {
     margin-top: 50px;
-    background-color: #003366;
+    background-color: #0C2A3E;
     display: -ms-flexbox;
     display: flex;
     text-align: left; }
   .search-content .interest-categories h3 {
-    color: #EEE;
+    color: #F4F6F8;
     text-transform: uppercase; }
   .search-content .interest-categories > .category {
     -ms-flex: 1;
@@ -465,18 +465,18 @@
   .search-content .search-links > li::first-letter {
     text-transform: uppercase; }
   .search-content .search-link {
-    color: #EEE;
+    color: #F4F6F8;
     cursor: pointer;
     display: block;
     text-transform: lowercase; }
   .search-content .search-link.active {
-    color: #EE6F2E; }
+    color: #EF7D30; }
   .search-content .search-input {
     margin-top: 100px;
     margin-bottom: 75px; }
   .search-content .search-input > input {
     width: 80%;
-    color: #000;
+    color: #082A3E;
     border: none;
     border-bottom: 1px solid lightgrey;
     padding: 10px 10px 5px 10px;
@@ -485,16 +485,16 @@
   .search-content .search-input > input:focus {
     outline: none; }
   .search-content .search-input > input::-webkit-input-placeholder {
-    color: #EEE; }
+    color: #F4F6F8; }
   .search-content .search-input > input:-ms-input-placeholder {
-    color: #EEE; }
+    color: #F4F6F8; }
   .search-content .search-input > input::placeholder {
-    color: #EEE; }
+    color: #F4F6F8; }
 
 .search-blue-background {
   width: 100%;
   height: 600px;
-  background-color: #003366; }
+  background-color: #0C2A3E; }
 
 .no-results {
   display: -ms-flexbox;
