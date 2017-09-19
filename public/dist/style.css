@@ -168,6 +168,9 @@
   to {
     width: 180px; } }
 
+.content {
+  margin-top: 100px; }
+
 .footer {
   display: -ms-flexbox;
   display: flex;
@@ -199,8 +202,8 @@
 .hidden {
   display: none; }
 
-.content {
-  margin-top: 100px; }
+.overflow-hidden {
+  overflow: hidden; }
 
 .sk-cube-grid {
   width: 40px;
