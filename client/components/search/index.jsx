@@ -3,7 +3,7 @@ import Search from './search.jsx';
 import Results from './results.jsx';
 import axios from 'axios';
 
-export default class App extends Component {
+export default class SearchApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +34,6 @@ export default class App extends Component {
 
   updateLimit() {
     const { limit } = this.state;
-    console.log(limit);
     this.setState({
       limit: limit + 6,
     });

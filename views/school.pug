@@ -8,3 +8,7 @@ block content
     .school-link
       a(href=`/school/${school.slug}/details`) View School
   .artworks
+    !=Lightbox
+  .school-courses-link
+    p= `${school.name} has ${school.courses.length} courses in aaa, bbb, ccc`
+    a(href=`/school/${school.slug}/courses`) View Courses
