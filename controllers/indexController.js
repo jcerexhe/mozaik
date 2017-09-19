@@ -8,21 +8,27 @@ exports.home = (req, res) => {
   res.render('home', { Search });
 };
 
-exports.school = (req, res) => {
-  School.findOne({ slug: req.params.schoolSlug }).then((school) => {
-    if (school) {
-      const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks });
-      res.render('school', { school, Lightbox });
-    } else {
-      res.redirect('/');
-    }
-  }).catch((_err) => {
+exports.getSchool = async (req, res, next) => {
+  const school = await School.findOne({ slug: req.params.schoolSlug });
+  if (!school) {
+    // set flash messages
     res.redirect('/');
-  });
+  } else {
+    res.locals.school = school;
+    next();
+  }
+};
+
+exports.school = (req, res) => {
+  const school = res.locals.school;
+  const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks });
+  res.render('school', { school, Lightbox });
 };
 
 exports.schoolDetails = (req, res) => {
-  res.redirect('/');
+  const school = res.locals.school;
+  const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks.slice(0, 6) });
+  res.render('schoolDetails', { school, Lightbox });
 };
 
 exports.schoolCourses = (req, res) => {
