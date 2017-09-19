@@ -53,7 +53,7 @@ const schoolSchema = new Schema({
         type: Number,
         required: 'Please supply a latitude.',
       },
-      lon: {
+      lng: {
         type: Number,
         required: 'Please supply a longitude.',
       },
@@ -66,6 +66,10 @@ const schoolSchema = new Schema({
       type: String,
       required: 'Please supply the country your school is in.',
     },
+    campus: {
+      type: String,
+      required: 'Please supply a name for this campus.'
+    }
   }],
   facilitiesDescription: String,
   facilitiesImages: [String],

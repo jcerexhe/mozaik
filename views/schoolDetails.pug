@@ -1,4 +1,22 @@
 extends layouts/layout
 
 block content
-  p= school.name
+  .school-heading
+    .school-info
+      img(src=school.logo)
+      h1= school.name
+    .school-link
+      .video-link
+        a(href='#') play video
+      .other-links
+        a(href='#') enquiry
+        a(href='#') apply
+        a(href=school.website target='_blank') visit website
+  .school-details
+    h2 overview
+    p= school.overview
+  !=Lightbox
+  .school-locations
+    h2 locations
+    p=school.locationDescription
+    !=CampusMaps

@@ -27,10 +27,13 @@ exports.school = (req, res) => {
 
 exports.schoolDetails = (req, res) => {
   const school = res.locals.school;
-  const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks.slice(0, 6) });
-  res.render('schoolDetails', { school, Lightbox });
+  // choose number of images to show: 20
+  const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks.slice(0, 20) });
+  const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
+  res.render('schoolDetails', { school, Lightbox, CampusMaps });
 };
 
 exports.schoolCourses = (req, res) => {
   res.redirect('/');
 };
+

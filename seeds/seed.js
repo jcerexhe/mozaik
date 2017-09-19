@@ -48,19 +48,21 @@ let _ait = new School({
       "address": "7 Kelly St, Ultimo, NSW 2007",
       "coordinates": {
         "lat": -33.8819586,
-        "lon": 151.19523779999997
+        "lng": 151.19523779999997
       },
       "type":"Point",
-      "country": "Australia"
+      "country": "Australia",
+      "campus": "Sydney"
     },
     {
       "address": "13/120 Spencer St, Melbourne VIC 3000",
       "coordinates": {
         "lat": -37.8182122,
-        "lon": 144.95430220000003
+        "lng": 144.95430220000003
       },
       "type": "Point",
-      "country": "Australia"
+      "country": "Australia",
+      "campus": "Melbourne"
     }
   ],
   "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
