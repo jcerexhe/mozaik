@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 import Slick from 'react-slick';
+import Slide from './slide.jsx';
+import _ from 'lodash';
 
 export default class HeroApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentSlide: 0,
+      slides: [
+        {
+          heading: 'Mozaik Creative',
+          text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
+          background: 'http://via.placeholder.com/350x150'
+        },
+        {
+          background: 'http://via.placeholder.com/350x150'
+        },
+        {
+          background: 'http://via.placeholder.com/350x150'
+        }
+      ],
+      settings: {
+        className: 'home-slider',
+        autoplay: true,
+        arrows: false,
+        afterChange: (i) => this.setState({ currentSlide: i })
+      }
     };
   }
 
@@ -18,34 +39,28 @@ export default class HeroApp extends Component {
   }
 
   render() {
-    const { currentSlide } = this.state;
-    const settings = {
-      className: 'home-slider',
-      autoplay: true,
-      arrows: false,
-      afterChange: (i) => this.setState({ currentSlide: i })
-    };
+    const { currentSlide, slides, settings } = this.state;
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>
-          <div className='slide'>
-            <h1>Mozaik Creative</h1>
-            <p>Deciding what to study is tricky. We'll help you find the right course in the creative industry.</p>
-          </div>
-          <div className='slide' />
-          <div className='slide' />
+          { _.map(slides, (slide) => {
+            return (
+              <div className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
+                <h1>{ slide.heading }</h1>
+                <p>{ slide.text }</p>
+              </div>
+            );
+          }) }
         </Slick>
         <div className='slider-dots'>
           <ul className='slick-dots'>
-            <li className={ currentSlide == 0 ? 'slick-active' : ''}>
-              <div className='dot' onClick={ () => this.changeSlide(0) }/>
-            </li>
-            <li className={ currentSlide == 1 ? 'slick-active' : ''}>
-              <div className='dot' onClick={ () => this.changeSlide(1) }/>
-            </li>
-            <li className={ currentSlide == 2 ? 'slick-active' : ''}>
-              <div className='dot' onClick={ () => this.changeSlide(2) }/>
-            </li>
+            { _.map(slides, (slide, i) => {
+              return (
+                <li className={ currentSlide == i ? 'slick-active' : '' }>
+                  <div className='dot' onClick={ () => this.changeSlide(i) } />
+                </li>
+              );
+            }) }
           </ul>
         </div>
         <div className='scroll-search'>
