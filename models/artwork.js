@@ -38,14 +38,20 @@ const artworkSchema = new Schema({
     ref: 'School',
     required: 'You must supply a school!',
   },
+}, {
+  toObject: {
+    virtuals: true,
+  },
+  toJSON: {
+    virtuals: true,
+  },
 });
 
-// Load artworks after find
-artworkSchema.post('find', (artworks) => {
-  return _.map(artworks, (artwork) => {
-    artwork.image = cloudinary.url(`${artwork.image}.jpg`);
-    return artwork;
-  });
+artworkSchema.virtual('images').get(function() {
+  return {
+    thumb: cloudinary.url(`${this.image}.jpg`, { gravity: 'auto', crop: 'fill', height: 800, width: 800 }),
+    src: cloudinary.url(`${this.image}.jpg`),
+  };
 });
 
 module.exports = mongoose.model('Artwork', artworkSchema);

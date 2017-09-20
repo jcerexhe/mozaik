@@ -5,9 +5,11 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
+    console.log(props.artworks);
     const images = _.map(props.artworks, (artwork) => {
       return {
-        src: artwork.image,
+        src: artwork.images.src,
+        thumb: artwork.images.thumb,
         title: artwork.name,
         description: artwork.artist
       };
@@ -63,7 +65,7 @@ export default class ArtworkApp extends Component {
             { _.map(images, (img, index) => {
               return (
                 <li onClick={ () => this.openLightbox(index) }>
-                  <Artwork src={ img.src } />
+                  <Artwork src={ img.thumb } />
                 </li>
               );
             }) }
