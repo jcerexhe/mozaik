@@ -6,16 +6,7 @@ append stylesheets
 
 block content
   // TODO hero component
-  .home-hero
-    .home-slider
-      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
-        h1 Mozaik Creative
-        p Deciding what to study is tricky. We'll help you find the right course in the creative industry.
-      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
-      .slide(style='background-image: url(http://via.placeholder.com/350x150);')
-    .slider-dots
-    .scroll-search
-      .arrow-down
+  !=Hero
   !=Search
   .extended-search
     h2 don't see exactly what you're looking for?
@@ -27,14 +18,3 @@ block content
     // TODO insert enquiry form; hubspot?
 
 append javascripts
-  script(src='/slick/slick.min.js')
-  script.
-    $('.home-slider').slick({
-      autoplay: true,
-      arrows: false,
-      dots: true,
-      appendDots: $('.slider-dots'),
-      customPaging: function(slider, i) {
-        return "<div class='dot' />"
-      }
-    });

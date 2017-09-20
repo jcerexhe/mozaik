@@ -250,53 +250,6 @@
   35% {
     transform: scale3D(0, 0, 1); } }
 
-.home-hero {
-  width: 100vw;
-  height: 100vh;
-  z-index: 40; }
-
-.home-slider {
-  margin-bottom: 0px !important; }
-
-.slide {
-  width: 100vw !important;
-  height: calc(100vh - 100px) !important;
-  padding-top: 100px; }
-
-.slider-dots {
-  margin-top: -251px; }
-
-.scroll-search {
-  margin-top: 31px;
-  position: absolute;
-  z-index: 60;
-  width: 100%; }
-
-.slider-dots > .slick-dots {
-  bottom: initial; }
-
-.slick-dots li {
-  height: 0px !important;
-  width: 100px !important; }
-
-.slick-dots li .dot {
-  font-size: 0 !important;
-  border: 3px solid #FFFFFF !important;
-  padding: 0px !important;
-  height: 0px; }
-
-.slick-dots li.slick-active .dot {
-  border: 3px solid #EF7D30 !important; }
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #FFFFFF;
-  margin-left: auto;
-  margin-right: auto; }
-
 .extended-search {
   background-color: #EF7D30;
   padding-top: 20px;
@@ -352,6 +305,56 @@
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
+
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  z-index: 40; }
+
+.home-slider {
+  margin-bottom: 0px !important; }
+
+.slide {
+  width: 100vw !important;
+  height: calc(100vh - 100px) !important;
+  padding-top: 100px; }
+
+.slider-dots {
+  margin-top: -251px; }
+
+.scroll-search {
+  margin-top: 31px;
+  position: absolute;
+  z-index: 60;
+  width: 100%; }
+
+.slider-dots > .slick-dots {
+  bottom: initial; }
+
+.slick-dots li {
+  height: 0px !important;
+  width: 100px !important; }
+
+.slick-dots li .dot {
+  font-size: 0 !important;
+  border: 3px solid #FFFFFF !important;
+  padding: 0px !important;
+  height: 0px; }
+
+.slick-dots li.slick-active .dot {
+  border: 3px solid #EF7D30 !important; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFFFFF;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slide {
+  background-image: url(http://via.placeholder.com/350x150); }
 
 #search {
   position: absolute;
