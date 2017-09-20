@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(/fonts/bebas_neue/bebas_neue.otf); }
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url(/fonts/montserrat/montserrat-regular.otf); }
+
+@font-face {
+  font-family: 'Montserrat Extra Bold';
+  src: url(/fonts/montserrat/montserrat-extraBold.otf); }
+
+@font-face {
+  font-family: 'Montserrat Hairline';
+  src: url(/fonts/montserrat/montserrat-hairline.otf); }
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url(/fonts/montserrat/montserrat-light.otf); }
+
+@font-face {
+  font-family: 'Montserrat Semi Bold';
+  src: url(/fonts/montserrat/montserrat-semiBold.otf); }
+
+@font-face {
+  font-family: 'Montserrat Ultra Light';
+  src: url(/fonts/montserrat/montserrat-ultraLight.otf); }
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url(/fonts/montserrat/montserrat-black.otf); }
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(/fonts/montserrat/montserrat-bold.otf); }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bebas Neue'; }
+
+html, body {
+  font-family: 'Montserrat Light'; }
+
 #nav {
   position: absolute;
   width: 100vw;
