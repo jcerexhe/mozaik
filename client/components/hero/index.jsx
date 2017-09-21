@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slick from 'react-slick';
-import Slide from './slide.jsx';
 import _ from 'lodash';
 
 export default class HeroApp extends Component {
