@@ -15,6 +15,33 @@
   width: 100%;
   height: auto;
   cursor: pointer;
+  position: relative;
+}
+.artwork-slides > li {
+  p, h4 {
+    position: absolute;
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    opacity: 0;
+  }
+  p {
+    margin-top: 30px;
+  }
+  h4 {
+    bottom: 50%;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+}
+.artwork-slides > li:hover {
+  img {
+    opacity: 0.15;
+  }
+  p, h4 {
+    opacity: 1;
+  }
 }
 .artwork-image {
   max-width: 100%;

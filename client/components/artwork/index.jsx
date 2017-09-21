@@ -107,6 +107,8 @@ export default class ArtworkApp extends Component {
             { _.map(images, (img, index) => {
               return (
                 <li onClick={ () => this.openLightbox(index) }>
+                  <p>{ img.artist }</p>
+                  <h4>{ img.title }</h4>
                   <Artwork src={ img.thumb } />
                 </li>
               );
