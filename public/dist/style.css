@@ -420,13 +420,22 @@ html, body {
   width: 100%;
   z-index: 111; }
   .search-content h2 {
+    color: #EAEEF0;
     margin: 0px;
-    font-size: 100px; }
+    font-size: 10vw;
+    line-height: 0.6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: calc(100% - 200px);
+    font-family: 'Montserrat Black';
+    text-transform: uppercase; }
   .search-content .search-criteria {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 75px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -444,7 +453,7 @@ html, body {
     border: 1px solid #F4F6F8;
     margin-top: 50px;
     text-align: center; }
-  .search-content .interest-areas > h2, .search-content .interest-disciplines > h2 {
+  .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
     font-size: 30px;
     margin-top: -30px;
     background-color: #FFFFFF;
@@ -456,7 +465,7 @@ html, body {
   .search-content .interest-countries {
     background-color: #F4F6F8;
     padding: 5px; }
-  .search-content .interest-countries > h3 {
+  .search-content .interest-countries > h4 {
     font-size: 20px;
     text-transform: uppercase;
     margin: 0px; }
@@ -490,7 +499,7 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     text-align: left; }
-  .search-content .interest-categories h3 {
+  .search-content .interest-categories h4 {
     color: #F4F6F8;
     text-transform: uppercase; }
   .search-content .interest-categories > .category {

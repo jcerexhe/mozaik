@@ -79,7 +79,7 @@ export default class Search extends Component {
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
-          <h2>What areas interest you?</h2>
+          <h3>What areas interest you?</h3>
           <ul className='search-buttons'>
             { _.map(interestAreas, (area) => {
               const active = discipline.interestAreas.includes(area);
@@ -92,7 +92,7 @@ export default class Search extends Component {
           </ul>
         </div>
         <div className='interest-disciplines'>
-          <h2>Do these disciplines interest you?</h2>
+          <h3>Do these disciplines interest you?</h3>
           <ul className='search-buttons'>
             { _.map(disciplines, (area) => {
               const active = discipline.interestDisciplines.includes(area);
@@ -104,7 +104,7 @@ export default class Search extends Component {
             }) }
           </ul>
           <div className='interest-countries'>
-            <h3>What country?</h3>
+            <h4>What country?</h4>
             <ul className='search-buttons'>
               { _.map(countries, (area) => {
                 const active = discipline.interestCountries.includes(area);
@@ -129,10 +129,10 @@ export default class Search extends Component {
     return (
       <div id='search-categories'>
         <div className='interest-areas'>
-          <h2>What areas interest you?</h2>
+          <h3>What areas interest you?</h3>
           <div className='interest-categories'>
             <div className='category'>
-              <h3>Education</h3>
+              <h4>Education</h4>
               <ul className='search-links'>
                 { _.map(education, (val, i) => {
                   return (
@@ -144,7 +144,7 @@ export default class Search extends Component {
               </ul>
             </div>
             <div className='category'>
-              <h3>Professional careers</h3>
+              <h4>Professional careers</h4>
               <ul className='search-links'>
                 { _.map(careers, (val, i) => {
                   return (
@@ -156,7 +156,7 @@ export default class Search extends Component {
               </ul>
             </div>
             <div className='category'>
-              <h3>ASVAB Categories</h3>
+              <h4>ASVAB Categories</h4>
               <ul className='search-links'>
                 { _.map(asvab, (val, i) => {
                   return (
@@ -178,7 +178,7 @@ export default class Search extends Component {
     return (
       <div id='search-search'>
         <div className='interest-areas'>
-          <h2>What areas interest you?</h2>
+          <h3>What areas interest you?</h3>
           <div className='search-input'>
             <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
           </div>
@@ -202,7 +202,20 @@ export default class Search extends Component {
       <div>
         <div id="search">
           <div className='search-content'>
-            <h2>quick search</h2>
+            <h2>
+              <span>q</span>
+              <span>u</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span> </span>
+              <span>s</span>
+              <span>e</span>
+              <span>a</span>
+              <span>r</span>
+              <span>c</span>
+              <span>h</span>
+            </h2>
             <div className='search-criteria'>
               <div className='search-category'>
                 <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
