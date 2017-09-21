@@ -99,6 +99,8 @@ html(lang='en')
         p some social links
 
     block javascripts
-      script(src='https://code.jquery.com/jquery-3.2.1.min.js')
       script(src='/dist/App.bundle.js?rand='+Math.random())
       script(src='/dist/reactHelper.bundle.js')
+      script(src='/dist/smooth-scroll.min.js')
+      script.
+        var scroll = new SmoothScroll('.scroll-search-link');

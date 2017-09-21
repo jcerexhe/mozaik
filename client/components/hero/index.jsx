@@ -63,7 +63,9 @@ export default class HeroApp extends Component {
           </ul>
         </div>
         <div className='scroll-search'>
-          <div className='arrow-down' />
+          <a className='scroll-search-link' href='#search'>
+            <img src='/images/white-arrow-down.png' alt='arrow-down' />
+          </a>
         </div>
       </div>
     );

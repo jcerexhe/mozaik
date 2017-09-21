@@ -362,13 +362,17 @@ html, body {
   padding-top: 100px; }
 
 .slider-dots {
-  margin-top: -251px; }
+  margin-top: -275px; }
 
 .scroll-search {
   margin-top: 31px;
   position: absolute;
   z-index: 60;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+
+.scroll-search-link > img {
+  width: 50px; }
 
 .slider-dots > .slick-dots {
   bottom: initial; }
@@ -385,15 +389,6 @@ html, body {
 
 .slick-dots li.slick-active .dot {
   border: 3px solid #EF7D30 !important; }
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #FFFFFF;
-  margin-left: auto;
-  margin-right: auto; }
 
 #search {
   position: absolute;
