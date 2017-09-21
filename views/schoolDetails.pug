@@ -13,20 +13,49 @@ block content
         a(href='#') apply
         a(href=school.website target='_blank') visit website
   .school-details
-    h2 overview
-    p=school.overview
-    !=Lightbox
+    .overview
+      h2 overview
+      p=school.overview
+    .fees-scholarships
+      h3 fees scholarship
+      h4 price range
+      ul
+        each price in school.prices
+          li
+            =`${price.type}:`
+            br
+            =`AUD ${price.lower} - AUD ${price.upper}`
+      h4 scholarship
+      ul
+        each scholarship in school.scholarships
+          li=scholarship
+      .campuses
+        h3 campus locations
+        ul
+          each loc in school.locations
+            li=loc.campus
+      .delivery
+        h3 delivery
+        ul
+          each delivery in school.delivery
+            li=delivery
+    .study-areas
+      h3 study areas
+      ul
+        each area in school.disciplines
+          li=area
+  !=Lightbox
   .school-locations
     h2 locations
     p=school.locationDescription
-    !=CampusMaps
-  .facilities
+  !=CampusMaps
+  .school-facilities
     h2 facilities
     p=school.facilitiesDescription
     !=Facilities
   .alumni
     h2 alumni
-    !=Alumni
+  !=Alumni
   .final-links
     a(href='#') enquiry
     a(href='#') apply

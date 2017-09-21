@@ -15,7 +15,7 @@ School
     "Graphic Design"
   ],
   "overview": "Founded in 1999, AIT is locaeted in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
-  "price": [{
+  "prices": [{
     "type": "Domestic students",
     "upper": 50400,
     "lower": 16800
@@ -24,7 +24,7 @@ School
     "upper": 52800,
     "lower": 17600
   }],
-  "scholarship": "initiAIT Scholarship (new students): AUD 8,000<br>Creative Minds Scholarship (continuing students): 50% off a term",
+  "scholarships": ["initiAIT Scholarship (new students): AUD 8,000","Creative Minds Scholarship (continuing students): 50% off a term"],
   "locationDescription": "AIT is located in Sydney and Melbourne - city centre areas. AIT also offers online delivery of selected courses.",
   "locations": [
     {

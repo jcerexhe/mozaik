@@ -32,17 +32,17 @@ const schoolSchema = new Schema({
     trim: true,
     required: 'Please supply an overview of your school.',
   },
-  price: [{
+  prices: [{
     type: {
       type: String,
     },
     lower: Number,
     upper: Number,
   }],
-  scholarship: {
+  scholarships: [{
     type: String,
     trim: true,
-  },
+  }],
   locationDescription: String,
   locations: [{
     type: {

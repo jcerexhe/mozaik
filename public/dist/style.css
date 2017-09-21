@@ -327,13 +327,17 @@ html, body {
   -ms-flex-align: center;
       align-items: center;
   padding: 50px 0px;
-  background-color: #F4F6F8; }
+  background-color: #F4F6F8;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
   .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
   .school-heading .school-info > img {
+    margin-right: 20px;
     max-width: 100px;
     height: auto; }
 
@@ -347,6 +351,79 @@ html, body {
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
+
+.school-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0px; }
+  .school-details h2 {
+    font-size: 45px;
+    margin: 0px; }
+  .school-details h3 {
+    margin-bottom: 0px;
+    font-size: 18px; }
+  .school-details h4 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 13px; }
+  .school-details p {
+    margin-top: 0px;
+    font-size: 15px; }
+  .school-details li, .school-details p {
+    font-family: 'Montserrat Ultra Light'; }
+  .school-details .overview {
+    width: 50%;
+    padding-right: 15px; }
+  .school-details .fees-scholarships, .school-details .study-areas {
+    width: 25%;
+    border-left: 1px solid #E4E9EC;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .school-details .fees-scholarships ul, .school-details .study-areas ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+    .school-details .fees-scholarships ul > li, .school-details .study-areas ul > li {
+      padding-top: 5px; }
+  .school-details .fees-scholarships {
+    font-size: 10px; }
+    .school-details .fees-scholarships .campuses, .school-details .fees-scholarships .delivery {
+      width: 45%;
+      display: inline-block; }
+    .school-details .fees-scholarships .campuses {
+      margin-right: 5%; }
+  .school-details .study-areas > ul > li {
+    padding-top: 10px;
+    font-size: 11px; }
+
+.school-locations {
+  text-align: center; }
+  .school-locations h2 {
+    font-size: 45px;
+    margin-bottom: 0px; }
+  .school-locations p {
+    width: 40%;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    font-family: 'Montserrat Ultra Light'; }
+
+.school-facilities {
+  padding: 25px;
+  background-color: #F4F6F8;
+  text-align: center; }
+  .school-facilities h2 {
+    font-size: 45px;
+    margin-bottom: 0px; }
+  .school-facilities p {
+    width: 40%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-family: 'Montserrat Ultra Light'; }
 
 .home-hero {
   width: 100vw;
@@ -649,6 +726,34 @@ html, body {
 
 #lightboxBackdrop img {
   max-height: calc(100vh - 150px) !important; }
+
+.campus-container {
+  background-color: #F4F6F8; }
+  .campus-container .campus-buttons {
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase; }
+  .campus-container .campus-buttons a {
+    padding: 0px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat Semi Bold'; }
+  .campus-container .campus-buttons a.active {
+    text-decoration: underline; }
+  .campus-container .campus-buttons a:not(:last-child) {
+    border-right: 1px solid #082A3E; }
+
+.facilities-slider {
+  width: 60%;
+  margin: 0px auto; }
+  .facilities-slider .slick-arrow:before {
+    display: none; }
+  .facilities-slider .slick-arrow {
+    width: 75px !important;
+    height: 75px !important; }
+  .facilities-slider .slick-next {
+    right: -100px !important; }
+  .facilities-slider .slick-prev {
+    left: -100px !important; }
 
 html, body {
   height: 100%; }

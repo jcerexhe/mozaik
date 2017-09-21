@@ -4,12 +4,16 @@
   align-items: center;
   padding: 50px 0px;
   background-color: $grey;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 
   .school-info {
     display: flex;
     align-items: center;
   }
   .school-info > img {
+    margin-right: 20px;
     max-width: 100px;
     height: auto;
   }
@@ -21,3 +25,98 @@
   justify-content: space-around;
   align-items: center;
 }
+
+
+// School Details Page
+.school-details {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0px;
+
+  h2 {
+    font-size: 45px;
+    margin: 0px;
+  }
+  h3 {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  h4 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  p {
+    margin-top: 0px;
+    font-size: 15px;
+  }
+  li, p {
+    font-family: 'Montserrat Ultra Light';
+  }
+  .overview {
+    width: 50%;
+    padding-right: 15px;
+  }
+  .fees-scholarships, .study-areas {
+    width: 25%;
+    border-left: 1px solid $dark-grey;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    ul > li {
+      padding-top: 5px;
+    }
+  }
+  .fees-scholarships {
+    font-size: 10px;
+
+    .campuses, .delivery {
+      width: 45%;
+      display: inline-block;
+    }
+    .campuses {
+      margin-right: 5%;
+    }
+  }
+  .study-areas > ul > li {
+    padding-top: 10px;
+    font-size: 11px;
+  }
+}
+.school-locations {
+  text-align: center;
+  h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+  p {
+    width: 40%;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    font-family: 'Montserrat Ultra Light';
+  }
+}
+.school-facilities {
+  padding: 25px;
+  background-color: $grey;
+  text-align: center;
+  h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+  p {
+    width: 40%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-family: 'Montserrat Ultra Light';
+  }
+}
+

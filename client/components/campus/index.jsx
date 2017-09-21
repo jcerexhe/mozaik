@@ -27,13 +27,15 @@ export default class CampusApp extends Component {
     const { campuses, activeCampus } = this.state;
     return (
       <div className='campus-container'>
-        { _.map(campuses, (campus) => {
-          return (
-            <a className='campus' onClick={ () => this.setCampus(campus) }>
-              { campus.campus }
-            </a>
-          );
-        }) }
+        <div className='campus-buttons'>
+          { _.map(campuses, (campus) => {
+            return (
+              <a className={ 'campus' + (activeCampus == campus ? ' active' : '') } onClick={ () => this.setCampus(campus) }>
+                { campus.campus }
+              </a>
+            );
+          }) }
+        </div>
         <Map
           coords={ activeCampus.coordinates }
           containerElement={
