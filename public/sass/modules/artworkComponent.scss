@@ -20,3 +20,12 @@
   max-width: 100%;
   height: auto;
 }
+.lightbox-social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -30px;
+}
+#lightboxBackdrop img {
+  max-height: calc(100vh - 150px) !important;
+}

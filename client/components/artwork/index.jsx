@@ -5,19 +5,42 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
-    console.log(props.artworks);
     const images = _.map(props.artworks, (artwork) => {
       return {
         src: artwork.images.src,
         thumb: artwork.images.thumb,
         title: artwork.name,
-        description: artwork.artist
+        artist: artwork.artist
       };
     });
     this.state = {
       images: images,
       isOpen: false,
       currentImage: 0,
+      currentTitle: images[0].title,
+      currentArtist: images[0].artist,
+      styles: {
+        container: {
+          background: 'rgba(255, 255, 255, 0.95)',
+          padding: '0px'
+        },
+        image: {
+          maxHeight: 'calc(100vh - 150px) !important'
+        },
+        close: {
+          position: 'fixed',
+          top: '25px',
+          right: '25px',
+          fill: '#000000',
+        },
+        arrow: {
+          backgroundColor: 'transparent',
+          fill: '#000000',
+        },
+        thumbnail__active: {
+          boxShadow: '0 0 0 2px #000000'
+        }
+      },
     };
   }
 
@@ -26,15 +49,28 @@ export default class ArtworkApp extends Component {
   }
 
   onClickPrev() {
-    this.setState({ currentImage: this.state.currentImage - 1 });
+    const { images, currentImage } = this.state;
+    const nextImage = images[currentImage - 1];
+    this.setState({
+      currentImage: currentImage - 1,
+      currentTitle: nextImage.title,
+      currentArtist: nextImage.artist
+    });
   }
 
   onClickNext() {
-    this.setState({ currentImage: this.state.currentImage + 1 });
+    const { images, currentImage } = this.state;
+    const nextImage = images[currentImage + 1];
+    this.setState({
+      currentImage: currentImage + 1,
+      currentTitle: nextImage.title,
+      currentArtist: nextImage.artist
+    });
   }
 
   renderLightbox() {
-    const { images, isOpen, currentImage } = this.state;
+    const { images, isOpen, currentImage, styles, currentTitle, currentArtist } = this.state;
+    console.log(currentTitle, currentArtist);
     return (
       <Lightbox
         images={ images }
@@ -43,15 +79,21 @@ export default class ArtworkApp extends Component {
         onClickPrev={ () => this.onClickPrev() }
         onClickNext={ () => this.onClickNext() }
         onClose={ () => this.closeLightbox() }
-        showThumbnails={ true }
-        currentImage={ currentImage } />
+        currentImage={ currentImage }
+        showImageCount={ false }
+        theme={ styles }
+        customControls={ [<p>{ currentTitle }</p>,<p>{ currentArtist }</p>,<p className='lightbox-social'>social</p>] } />
     );
   }
 
   openLightbox(currentImage) {
+    const { images } = this.state;
+    const nextImage = images[currentImage];
     this.setState({
       isOpen: true,
-      currentImage
+      currentImage,
+      currentTitle: nextImage.title,
+      currentArtist: nextImage.artist
     })
   }
 
