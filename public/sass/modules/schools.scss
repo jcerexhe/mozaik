@@ -1,9 +1,11 @@
+.school-heading-container {
+  background-color: $grey;
+}
 .school-heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 50px 0px;
-  background-color: $grey;
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;

@@ -1,17 +1,18 @@
 extends layouts/layout
 
 block content
-  .school-heading
-    .school-info
-      img(src=school.logo)
-      h1=school.name
-    .school-link
-      .video-link
-        a(href='#') play video
-      .other-links
-        a(href='#') enquiry
-        a(href='#') apply
-        a(href=school.website target='_blank') visit website
+  .school-heading-container
+    .school-heading
+      .school-info
+        img(src=school.logo)
+        h1=school.name
+      .school-link
+        .video-link
+          a(href='#') play video
+        .other-links
+          a(href='#') enquiry
+          a(href='#') apply
+          a(href=school.website target='_blank') visit website
   .school-details
     .overview
       h2 overview
