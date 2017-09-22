@@ -5,18 +5,20 @@ block content
     .school-heading
       .school-info
         img(src=school.logo)
-        h1=school.name
-      .school-link
+        h1.school-name=school.name
+      .school-details-links
         .video-link
           a(href='#') play video
         .other-links
-          a(href='#') enquiry
-          a(href='#') apply
-          a(href=school.website target='_blank') visit website
+          a.btn(href='#') enquiry
+          a.btn(href='#') apply
+          a.btn(href=school.website target='_blank') visit website
   .school-details
     .overview
       h2 overview
       p=school.overview
+      a.btn(href=`/school/${school.slug}/courses`) view all courses
+      a.btn(href=school.courseGuide) course guide
     .fees-scholarships
       h3 fees scholarship
       h4 price range

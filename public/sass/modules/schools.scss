@@ -19,6 +19,9 @@
     max-width: 100px;
     height: auto;
   }
+  .school-name {
+    font-family: 'Montserrat Ultra Light';
+  }
 }
 .school-courses-link {
   padding: 20px 0px;
@@ -30,6 +33,21 @@
 
 
 // School Details Page
+.school-details-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .video-link {
+    margin-right: 40px;
+  }
+  .other-links > a {
+    display: block;
+    margin: 10px 0px;
+    width: 70px;
+    text-align: center;
+  }
+}
 .school-details {
   display: flex;
   justify-content: space-around;
@@ -61,6 +79,11 @@
   .overview {
     width: 50%;
     padding-right: 15px;
+  }
+  .overview > a {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
   }
   .fees-scholarships, .study-areas {
     width: 25%;
@@ -127,6 +150,5 @@
   text-align: center;
 }
 .final-links > a {
-  width: 100px;
   margin: 0px 10px;
 }

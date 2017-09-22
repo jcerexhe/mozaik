@@ -256,6 +256,7 @@ html, body {
 
 .btn {
   border: 1px solid #082A3E;
+  width: 100px;
   padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
@@ -358,6 +359,8 @@ html, body {
     margin-right: 20px;
     max-width: 100px;
     height: auto; }
+  .school-heading .school-name {
+    font-family: 'Montserrat Ultra Light'; }
 
 .school-courses-link {
   padding: 20px 0px;
@@ -369,6 +372,21 @@ html, body {
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
+
+.school-details-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .school-details-links .video-link {
+    margin-right: 40px; }
+  .school-details-links .other-links > a {
+    display: block;
+    margin: 10px 0px;
+    width: 70px;
+    text-align: center; }
 
 .school-details {
   display: -ms-flexbox;
@@ -397,6 +415,10 @@ html, body {
   .school-details .overview {
     width: 50%;
     padding-right: 15px; }
+  .school-details .overview > a {
+    display: block;
+    margin: 10px 0px;
+    text-align: center; }
   .school-details .fees-scholarships, .school-details .study-areas {
     width: 25%;
     border-left: 1px solid #E4E9EC;
@@ -451,7 +473,6 @@ html, body {
   text-align: center; }
 
 .final-links > a {
-  width: 100px;
   margin: 0px 10px; }
 
 .home-hero {
