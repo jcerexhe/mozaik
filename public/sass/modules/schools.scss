@@ -121,3 +121,12 @@
   font-size: 45px;
   margin-bottom: 0px;
 }
+.final-links {
+  padding: 25px;
+  background-color: $dark-grey;
+  text-align: center;
+}
+.final-links > a {
+  width: 100px;
+  margin: 0px 10px;
+}

@@ -11,6 +11,15 @@
   max-width: 100%;
   height: auto;
 }
+.btn {
+  border: 1px solid $black;
+  padding: 5px 20px 3px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  color: $black;
+}
 
 // Loading animation
 // http://tobiasahlin.com/spinkit/
