@@ -247,6 +247,13 @@ html, body {
 .overflow-hidden {
   overflow: hidden; }
 
+.img-circle {
+  border-radius: 50%; }
+
+.img-resp {
+  max-width: 100%;
+  height: auto; }
+
 .sk-cube-grid {
   width: 40px;
   height: 40px;
@@ -405,9 +412,6 @@ html, body {
 
 .school-locations {
   text-align: center; }
-  .school-locations h2 {
-    font-size: 45px;
-    margin-bottom: 0px; }
   .school-locations p {
     width: 40%;
     margin: 0px auto;
@@ -418,14 +422,19 @@ html, body {
   padding: 25px;
   background-color: #F4F6F8;
   text-align: center; }
-  .school-facilities h2 {
-    font-size: 45px;
-    margin-bottom: 0px; }
   .school-facilities p {
     width: 40%;
     margin: 10px auto;
     margin-bottom: 50px;
     font-family: 'Montserrat Ultra Light'; }
+
+.school-alumni {
+  padding: 25px;
+  text-align: center; }
+
+.school-details-subheading {
+  font-size: 45px;
+  margin-bottom: 0px; }
 
 .home-hero {
   width: 100vw;
@@ -755,6 +764,31 @@ html, body {
   .facilities-slider .slick-next {
     right: -100px !important; }
   .facilities-slider .slick-prev {
+    left: -100px !important; }
+
+.alumni-slider {
+  width: 60%;
+  margin: 0px auto; }
+  .alumni-slider .alumni-slide-content {
+    margin: 10px;
+    padding: 20px;
+    text-align: left; }
+  .alumni-slider .alumni-slide-content > h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0px; }
+  .alumni-slider .alumni-slide-content > p {
+    font-family: 'Montserrat Ultra Light';
+    margin-top: 5px;
+    margin-bottom: 0px; }
+  .alumni-slider .slick-arrow:before {
+    display: none; }
+  .alumni-slider .slick-arrow {
+    width: 75px !important;
+    height: 75px !important; }
+  .alumni-slider .slick-next {
+    right: -100px !important; }
+  .alumni-slider .slick-prev {
     left: -100px !important; }
 
 html, body {

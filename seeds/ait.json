@@ -1,292 +1,274 @@
-School
 {
-  "name": "Academy of Information Technology (AIT)",
-  "website": "http://www.ait.edu.au",
-  "disciplines": [
-    "Digital Media",
-    "Animation",
-    "2D Animation",
-    "3D Design",
-    "Games Design",
-    "Game Development",
-    "Design",
-    "Film / TV / Audio",
-    "Digital Design",
-    "Graphic Design"
-  ],
-  "overview": "Founded in 1999, AIT is locaeted in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
-  "prices": [{
-    "type": "Domestic students",
-    "upper": 50400,
-    "lower": 16800
-  }, {
-    "type": "International students",
-    "upper": 52800,
-    "lower": 17600
-  }],
-  "scholarships": ["initiAIT Scholarship (new students): AUD 8,000","Creative Minds Scholarship (continuing students): 50% off a term"],
-  "locationDescription": "AIT is located in Sydney and Melbourne - city centre areas. AIT also offers online delivery of selected courses.",
-  "locations": [
-    {
-      "address": "7 Kelly St, Ultimo, NSW 2007",
-      "coordinates": {
-        "lat": -33.8819586,
-        "lng": 151.19523779999997
+  "school": {
+    "name": "Academy of Information Technology (AIT)",
+    "website": "http://www.ait.edu.au",
+    "disciplines": [
+      "Digital Media",
+      "Animation",
+      "2D Animation",
+      "3D Design",
+      "Games Design",
+      "Game Development",
+      "Design",
+      "Film / TV / Audio",
+      "Digital Design",
+      "Graphic Design"
+    ],
+    "overview": "Founded in 1999, AIT is locaeted in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
+    "prices": [{
+      "type": "Domestic students",
+      "upper": 50400,
+      "lower": 16800
+    }, {
+      "type": "International students",
+      "upper": 52800,
+      "lower": 17600
+    }],
+    "scholarships": ["initiAIT Scholarship (new students): AUD 8,000","Creative Minds Scholarship (continuing students): 50% off a term"],
+    "locationDescription": "AIT is located in Sydney and Melbourne - city centre areas. AIT also offers online delivery of selected courses.",
+    "locations": [
+      {
+        "address": "7 Kelly St, Ultimo, NSW 2007",
+        "coordinates": {
+          "lat": -33.8819586,
+          "lng": 151.19523779999997
+        },
+        "type":"Point",
+        "country": "Australia",
+        "campus": "Sydney"
       },
-      "type":"Point",
-      "country": "Australia",
-      "campus": "Sydney"
+      {
+        "address": "13/120 Spencer St, Melbourne VIC 3000",
+        "coordinates": {
+          "lat": -37.8182122,
+          "lng": 144.95430220000003
+        },
+        "type": "Point",
+        "country": "Australia",
+        "campus": "Melbourne"
+      }
+    ],
+    "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
+    "facilitiesImages": [
+      "Entrance_hall_Melb_pqy418",
+      "File_000_mpbswu",
+      "Library_Melb_yjr2x5",
+      "Orange_Agora_Sydney_p7em6v",
+      "Stduent_Lounge1_Melb_oz7pgu"
+    ],
+    "delivery": [
+      "On Campus",
+      "Online"
+    ],
+    "logo": "AIT_logo_f4lg8p",
+    "video": "",
+    "courseGuide": ""
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Interactive Media",
+      "description": "In this degree you will gain multi-disciplined and hands-on experience that is underpinned by theoretical knowledge. Whether you want to merge animation with traditional film making or give smooth motion to immersive games, this course will give you a solid grounding and broad skill sets designed to increase options in industry employment.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "disciplines": [
+        "2D Animation",
+        "3D Design",
+        "Film",
+        "Game Design"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "image": "sample"
     },
     {
-      "address": "13/120 Spencer St, Melbourne VIC 3000",
-      "coordinates": {
-        "lat": -37.8182122,
-        "lng": 144.95430220000003
-      },
-      "type": "Point",
-      "country": "Australia",
-      "campus": "Melbourne"
-    }
-  ],
-  "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
-  "facilitiesImages": [
-    "Entrance_hall_Melb_pqy418",
-    "File_000_mpbswu",
-    "Library_Melb_yjr2x5",
-    "Orange_Agora_Sydney_p7em6v",
-    "Stduent_Lounge1_Melb_oz7pgu"
-  ],
-  "delivery": [
-    "On Campus",
-    "Online"
-  ],
-  "logo": "AIT_logo_f4lg8p",
-  // TODO file size was too large
-  // "video": ""
-  // TODO error uploading pdf
-  // "courseGuide": ""
-}
-
-Alumni
-{
-  // TODO get alumni photos
-  "photo": "",
-  "name": "PJ SVOBODA",
-  "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-}
-{
-  // TODO get alumni photos
-  "photo": "",
-  "name": "ALEX HOLDER",
-  "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-}
-{
-  // TODO get alumni photos
-  "photo": "",
-  "name": "TOMAS CURDA",
-  "blurb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-}
-
-Courses
-{
-  "name": "Bachelor of Interactive Media",
-  "description": "In this degree you will gain multi-disciplined and hands-on experience that is underpinned by theoretical knowledge. Whether you want to merge animation with traditional film making or give smooth motion to immersive games, this course will give you a solid grounding and broad skill sets designed to increase options in industry employment.",
-  "campus": [
-    "Sydney",
-    "Melbourne"
-  ],
-  "disciplines": [
-    "2D Animation",
-    "3D Design",
-    "Film",
-    "Game Design"
-  ],
-  "length": "3 years | 2 years accelerated",
-  "price": [
-    {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 50400
+      "name": "Diploma of Interactive Media",
+      "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "1 year",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 16800
+        },
+        {
+          "type": "International students",
+          "fees": 17600
+        }
+      ],
+      "image": "sample"
     },
     {
-      "type": "International students",
-      "fees": 52800
-    }
-  ],
-  // TODO get course photos
-  "image": ""
-}
-{
-  "name": "Diploma of Interactive Media",
-  "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
-  "campus": [
-    "Sydney",
-    "Melbourne"
-  ],
-  "length": "1 year",
-  "price": [
-    {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 16800
+      "name": "Bachelor of Digital Design",
+      "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms. From product packaging and brand design to interactive app design, data visualization and title design for film, your design career starts now.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "disciplines": [
+        "Design Principles",
+        "Digital Images",
+        "Web Interface",
+        "Motion Graphics",
+        "Branding for Products"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "image": "sample"
     },
     {
-      "type": "International students",
-      "fees": 17600
-    }
-  ],
-  // TODO get course photos
-  "image": ""
-}
-{
-  "name": "Bachelor of Digital Design",
-  "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms. From product packaging and brand design to interactive app design, data visualization and title design for film, your design career starts now.",
-  "campus": [
-    "Sydney",
-    "Melbourne"
-  ],
-  "disciplines": [
-    "Design Principles",
-    "Digital Images",
-    "Web Interface",
-    "Motion Graphics",
-    "Branding for Products"
-  ],
-  "length": "3 years | 2 years accelerated",
-  "price": [
-    {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 50400
+      "name": "Diploma of Interactive Media",
+      "description": "This higher education Diploma teaches the basic principles of design, combining hands on education with design thinking. This course is also offered online.",
+      "campus": [
+        "Sydney",
+        "Melbourne",
+        "Online"
+      ],
+      "disciplines": [
+      ],
+      "length": "1 year",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 16800
+        },
+        {
+          "type": "International students",
+          "fees": 17600
+        }
+      ],
+      "image": "sample"
     },
     {
-      "type": "International students",
-      "fees": 52800
-    }
-  ],
-  // TODO get course photos
-  "image": ""
-}
-{
-  "name": "Diploma of Interactive Media",
-  "description": "This higher education Diploma teaches the basic principles of design, combining hands on education with design thinking. This course is also offered online.",
-  "campus": [
-    "Sydney",
-    "Melbourne",
-    "Online"
-  ],
-  "disciplines": [
-  ],
-  "length": "1 year",
-  "price": [
-    {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 16800
+      "name": "Bachelor of Information Technology",
+      "description": "Learn the skills required to design, build and publish iOS and Android mobile apps or your own sites and graduate with a portfolio of work.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "disciplines": [
+        "Mobile Apps Development",
+        "Game Programming",
+        "AR",
+        "UX / UI",
+        "Artificial Intelligence"
+      ],
+      "length": "3 years | 2 years accelerated | Bootcamp 6 months",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "image": "sample"
     },
     {
-      "type": "International students",
-      "fees": 17600
+      "name": "Diploma of Information Technology",
+      "description": "This Diploma gives you a solid grounding in the basics of developing content for mobile platforms and the web. Design, build and publish iOS and Android mobile apps and graduate with a portfolio of work.",
+      "campus": [
+        "Sydney",
+        "Melbourne",
+        "Online"
+      ],
+      "disciplines": [
+      ],
+      "length": "1 year",
+      "price": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 16800
+        },
+        {
+          "type": "International students",
+          "fees": 17600
+        }
+      ],
+      "image": "sample"
     }
   ],
-  // TODO get course photos
-  "image": ""
-}
-{
-  "name": "Bachelor of Information Technology",
-  "description": "Learn the skills required to design, build and publish iOS and Android mobile apps or your own sites and graduate with a portfolio of work.",
-  "campus": [
-    "Sydney",
-    "Melbourne"
-  ],
-  "disciplines": [
-    "Mobile Apps Development",
-    "Game Programming",
-    "AR",
-    "UX / UI",
-    "Artificial Intelligence"
-  ],
-  "length": "3 years | 2 years accelerated | Bootcamp 6 months",
-  "price": [
+  "artworks": [
     {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 50400
+      "image": "Zombie1_kekb6z",
+      "name": "Zombie",
+      "artist": "Peejay Svoboda"
     },
     {
-      "type": "International students",
-      "fees": 52800
-    }
-  ],
-  // TODO get course photos
-  "image": ""
-}
-{
-  "name": "Diploma of Information Technology",
-  "description": "This Diploma gives you a solid grounding in the basics of developing content for mobile platforms and the web. Design, build and publish iOS and Android mobile apps and graduate with a portfolio of work.",
-  "campus": [
-    "Sydney",
-    "Melbourne",
-    "Online"
-  ],
-  "disciplines": [
-  ],
-  "length": "1 year",
-  "price": [
-    {
-      "type": "Domestic students (FEE-HELP approved)",
-      "fees": 16800
+      "image": "New_dimensions_pandora_5625_km28wx",
+      "name": "New Dimensions",
+      "artist": "Alfredo Vallejo"
     },
     {
-      "type": "International students",
-      "fees": 17600
+      "image": "Mobile_game1_yqofud",
+      "name": "Mobile Game",
+      "artist": "Effendy Setiady"
+    },
+    {
+      "image": "Gnomon_in_Forest_a7oery",
+      "name": "Gnomon in Forest",
+      "artist": "Glen Reiner"
+    },
+    {
+      "image": "Elephant_rwr5dh",
+      "name": "Elephant",
+      "artist": "Marine Lucinne Daniele Ecuyer"
+    },
+    {
+      "image": "Bulldog_ibzm8c",
+      "name": "Bulldog",
+      "artist": "Nardo Conforti"
+    },
+    {
+      "image": "Broken_wq5yve",
+      "name": "Broken",
+      "artist": "Duc Viet Dang"
+    },
+    {
+      "image": "AIT_Pandora_Room-Berat_Akdemir_iy91td",
+      "name": "AIT Pandorra Room",
+      "artist": "Berat Akdemir"
     }
   ],
-  // TODO get course photos
-  "image": ""
-}
-
-artwork
-{
-  "image": "Zombie1_kekb6z",
-  "name": "Zombie",
-  "artist": "Peejay Svoboda",
-  "school": _ait._id
-}
-{
-  "image": "New_dimensions_pandora_5625_km28wx",
-  "name": "New Dimensions",
-  "artist": "Alfredo Vallejo",
-  "school": _ait._id
-}
-{
-  "image": "Mobile_game1_yqofud",
-  "name": "Mobile Game",
-  "artist": "Effendy Setiady",
-  "school": _ait._id
-}
-{
-  "image": "Gnomon_in_Forest_a7oery",
-  "name": "Gnomon in Forest",
-  "artist": "Glen Reiner",
-  "school": _ait._id
-}
-{
-  "image": "Elephant_rwr5dh",
-  "name": "Elephant",
-  "artist": "Marine Lucinne Daniele Ecuyer",
-  "school": _ait._id
-}
-{
-  "image": "Bulldog_ibzm8c",
-  "name": "Bulldog",
-  "artist": "Nardo Conforti",
-  "school": _ait._id
-}
-{
-  "image": "Broken_wq5yve",
-  "name": "Broken",
-  "artist": "Duc Viet Dang",
-  "school": _ait._id
-}
-{
-  "image": "AIT_Pandora_Room-Berat_Akdemir_iy91td",
-  "name": "AIT Pandorra Room",
-  "artist": "Berat Akdemir",
-  "school": _ait._id
+  "alumni": [
+    {
+      "photo": "sample",
+      "name": "PJ SVOBODA",
+      "blurb": "xxxxxx xxxxxxx xxxxxxxxxx xxxxxx xxxx xxxxxxx xx"
+    },
+    {
+      "photo": "sample",
+      "name": "ALEX HOLDER",
+      "blurb": "xxx xxxxx xxxxxxxxx xxx xxx xxxxx xxxxxxx xxxxxxx"
+    },
+    {
+      "photo": "sample",
+      "name": "TOMAS CURDA",
+      "blurb": "xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxxxxxxx xxxxxx"
+    }
+  ]
 }

@@ -47,16 +47,16 @@ block content
           li=area
   !=Lightbox
   .school-locations
-    h2 locations
+    h2.school-details-subheading locations
     p=school.locationDescription
-  !=CampusMaps
+    !=CampusMaps
   .school-facilities
-    h2 facilities
+    h2.school-details-subheading facilities
     p=school.facilitiesDescription
     !=Facilities
-  .alumni
-    h2 alumni
-  !=Alumni
+  .school-alumni
+    h2.school-details-subheading alumni
+    !=Alumni
   .final-links
     a(href='#') enquiry
     a(href='#') apply

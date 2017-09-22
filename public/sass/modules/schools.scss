@@ -95,10 +95,6 @@
 }
 .school-locations {
   text-align: center;
-  h2 {
-    font-size: 45px;
-    margin-bottom: 0px;
-  }
   p {
     width: 40%;
     margin: 0px auto;
@@ -110,10 +106,6 @@
   padding: 25px;
   background-color: $grey;
   text-align: center;
-  h2 {
-    font-size: 45px;
-    margin-bottom: 0px;
-  }
   p {
     width: 40%;
     margin: 10px auto;
@@ -121,4 +113,11 @@
     font-family: 'Montserrat Ultra Light';
   }
 }
-
+.school-alumni {
+  padding: 25px;
+  text-align: center;
+}
+.school-details-subheading {
+  font-size: 45px;
+  margin-bottom: 0px;
+}

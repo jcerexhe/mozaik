@@ -1,10 +1,17 @@
 .hidden {
   display: none;
 }
-
 .overflow-hidden {
   overflow: hidden;
 }
+.img-circle {
+  border-radius: 50%;
+}
+.img-resp {
+  max-width: 100%;
+  height: auto;
+}
+
 // Loading animation
 // http://tobiasahlin.com/spinkit/
 .sk-cube-grid {

@@ -1,0 +1,33 @@
+.alumni-slider {
+  width: 60%;
+  margin: 0px auto;
+
+  .alumni-slide-content {
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+  }
+  .alumni-slide-content > h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .alumni-slide-content > p {
+    font-family: 'Montserrat Ultra Light';
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .slick-arrow:before {
+    display: none;
+  }
+  .slick-arrow {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .slick-next {
+    right: -100px !important;
+  }
+  .slick-prev {
+    left: -100px !important;
+  }
+}
