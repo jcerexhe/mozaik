@@ -1,4 +1,5 @@
 import reactHelper from 'react-helper';
+import MenuApp from './components/menu/index.jsx';
 import HeroApp from './components/hero/index.jsx';
 import SearchApp from './components/search/index.jsx';
 import ArtworkApp from './components/artwork/index.jsx';
@@ -7,6 +8,7 @@ import FacilitiesApp from './components/facilities/index.jsx';
 import AlumniApp from './components/alumni/index.jsx';
 import CoursesApp from './components/courses/index.jsx';
 
+reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
 reactHelper.register({ SearchApp });
 reactHelper.register({ ArtworkApp });

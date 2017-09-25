@@ -26,6 +26,7 @@ const expressValidator = require('express-validator');
 const helpers = require('./helpers');
 const errorHandlers = require('./handlers/errorHandlers');
 const cloudinary = require('cloudinary');
+const reactHelper = require('react-helper');
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -69,6 +70,8 @@ app.use(passport.session());
 app.use(flash());
 
 app.use((req, res, next) => {
+  const menu = reactHelper.renderComponent('MenuApp', { currentPath: req.path });
+  res.locals.menu = menu;
   res.locals.h = helpers;
   res.locals.flashes = req.flash();
   res.locals.user = req.user || null;

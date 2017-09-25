@@ -8,55 +8,8 @@ html(lang='en')
       link(rel='stylesheet' href='/dist/style.css?rand='+Math.random())
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDBDdJp6QvUCwioKrVs-42b8l8kOVqGqNY')
   body
-    #nav(class=(currentPath === '/' ? 'clear' : ''))
-        .navbar
-          .discover
-            a(href='#') discover
-          .logo
-            a(href='/') mozaik
-          .links
-            a(href='#') profile
-            a(href='#') search
-            #open-menu
-              span
-              span
-              span
-              span
-    #menu.hidden
-      .menu-content
-        ul
-          h3.menu-heading for students
-          li
-            a(href='#') discover
-            .border
-          li
-            a(href='#') study areas
-            .border
-          li
-            a(href='#') education
-            .border
-          li
-            a(href='#') sign up
-            .border
-        ul
-          h3 for schools
-          li
-            a(href='#') why mozaik?
-            .border
-          li
-            a(href='#') education agent
-            .border
-          li
-            a(href='#') sign up
-            .border
-        ul
-          h3 about mozaik
-          li
-            a(href='#') who is mozaik
-            .border
-          li
-            a(href='#') contact us
-            .border
+    // React component for menu
+    !=menu
 
     if locals.flashes
       - const categories = Object.keys(locals.flashes)
