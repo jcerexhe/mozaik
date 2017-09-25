@@ -7,6 +7,7 @@ import CampusApp from './components/campus/index.jsx';
 import FacilitiesApp from './components/facilities/index.jsx';
 import AlumniApp from './components/alumni/index.jsx';
 import CoursesApp from './components/courses/index.jsx';
+import DiscoverApp from './components/discover/index.jsx';
 
 reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
@@ -16,3 +17,4 @@ reactHelper.register({ CampusApp });
 reactHelper.register({ FacilitiesApp });
 reactHelper.register({ AlumniApp });
 reactHelper.register({ CoursesApp });
+reactHelper.register({ DiscoverApp });

@@ -43,3 +43,7 @@ exports.schoolCourses = (req, res) => {
   res.render('schoolCourses', { school, Courses });
 };
 
+exports.discover = (req, res) => {
+  const Discover = reactHelper.renderComponent('DiscoverApp');
+  res.render('discover', { Discover });
+}

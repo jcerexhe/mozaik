@@ -17,5 +17,6 @@ router.get('/school/:schoolSlug/courses',
   catchErrors(indexController.getSchool),
   indexController.schoolCourses,
 );
+router.get('/discover', indexController.discover);
 
 module.exports = router;
