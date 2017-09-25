@@ -99,6 +99,15 @@
 }
 
 // Menu styles
+.ReactModal__Overlay {
+  z-index: 99;
+}
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+.sliding-menu-pane > .slide-pane__header {
+  display: none;
+}
 #menu {
   position: absolute;
   z-index: 99;

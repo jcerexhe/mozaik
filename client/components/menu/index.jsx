@@ -1,14 +1,72 @@
 import React, { Component } from 'react';
 import SlidingPane from 'react-sliding-pane';
+import _ from 'lodash';
+import MenuLink from './menuLink.jsx';
 
 export default class MenuApp extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      menuOpen: false,
+      menu: [
+        {
+          heading: 'for students',
+          links: [
+            {
+              url: '#',
+              val: 'discover'
+            },
+            {
+              url: '#',
+              val: 'study areas'
+            },
+            {
+              url: '#',
+              val: 'education'
+            },
+            {
+              url: '#',
+              val: 'sign up'
+            }
+          ]
+        },
+        {
+          heading: 'for schools',
+          links: [
+            {
+              url: '#',
+              val: 'why mozaik'
+            },
+            {
+              url: '#',
+              val: 'education agent'
+            },
+            {
+              url: '#',
+              val: 'sign up'
+            }
+          ]
+        },
+        {
+          heading: 'about mozaik',
+          links: [
+            {
+              url: '#',
+              val: 'who is mozaik'
+            },
+            {
+              url: '#',
+              val: 'contact us'
+            }
+          ]
+        }
+      ]
+    };
   }
 
   render() {
     const { currentPath } = this.props;
+    const { menuOpen, menu } = this.state;
     return (
       <div>
         <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
@@ -22,7 +80,9 @@ export default class MenuApp extends Component {
             <div className='links'>
               <a href='#'>profile</a>
               <a href='#'>search</a>
-              <div id='open-menu'>
+              <div id='open-menu'
+                onClick={ () => this.setState({ menuOpen: !menuOpen }) }
+                className={ menuOpen ? 'open' : '' }>
                 <span />
                 <span />
                 <span />
@@ -31,55 +91,32 @@ export default class MenuApp extends Component {
             </div>
           </div>
         </div>
-        <div id='menu' className='hidden'>
-          <div className='menu-content'>
-            <ul>
-              <h3 className='menu-heading'>for students</h3>
-              <li>
-                <a href='#'>discover</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>study areas</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>education</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>sign up</a>
-                <div className='border' />
-              </li>
-            </ul>
-            <ul>
-              <h3>for schools</h3>
-              <li>
-                <a href='#'>why mozaik</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>education agent</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>sign up</a>
-                <div className='border' />
-              </li>
-            </ul>
-            <ul>
-              <h3>about mozaik</h3>
-              <li>
-                <a href='#'>who is mozaik</a>
-                <div className='border' />
-              </li>
-              <li>
-                <a href='#'>contact us</a>
-                <div className='border' />
-              </li>
-            </ul>
+        <SlidingPane
+          isOpen={ menuOpen }
+          onRequestClosed={ () => this.setState({ menuOpen: false }) }
+          width='100%'
+          className='sliding-menu-pane'
+        >
+          <div id='menu'>
+            <div className='menu-content'>
+              { _.map(menu, (subMenu) => {
+                return (
+                  <ul>
+                    <h3>{ subMenu.heading }</h3>
+                    { _.map(subMenu.links, (link) => {
+                      return (
+                        <li>
+                          <a href={ link.url }>{ link.val }</a>
+                          <div className='border' />
+                        </li>
+                      );
+                    }) }
+                  </ul>
+                );
+              }) }
+            </div>
           </div>
-        </div>
+        </SlidingPane>
       </div>
     );
   }
