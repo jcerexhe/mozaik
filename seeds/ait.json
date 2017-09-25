@@ -79,7 +79,7 @@
         "Game Design"
       ],
       "length": "3 years | 2 years accelerated",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 50400
@@ -99,7 +99,7 @@
         "Melbourne"
       ],
       "length": "1 year",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 16800
@@ -126,7 +126,7 @@
         "Branding for Products"
       ],
       "length": "3 years | 2 years accelerated",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 50400
@@ -149,7 +149,7 @@
       "disciplines": [
       ],
       "length": "1 year",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 16800
@@ -176,7 +176,7 @@
         "Artificial Intelligence"
       ],
       "length": "3 years | 2 years accelerated | Bootcamp 6 months",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 50400
@@ -199,7 +199,7 @@
       "disciplines": [
       ],
       "length": "1 year",
-      "price": [
+      "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 16800

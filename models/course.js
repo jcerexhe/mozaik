@@ -1,10 +1,16 @@
 const mongoose = require('mongoose');
 const slug = require('slugs');
 const _ = require('lodash');
+const cloudinary = require('cloudinary');
 
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 const School = mongoose.model('School');
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+})
 
 const courseSchema = new Schema({
   name: {
@@ -23,8 +29,7 @@ const courseSchema = new Schema({
     type: String,
     trim: true,
   },
-  price: Number,
-  price: [{
+  prices: [{
     type: {
       type: String,
     },
@@ -58,6 +63,13 @@ courseSchema.pre('save', async function (next) {
     this.slug = `${this.slug}-${slugs.length + 1}`;
   }
   next();
+});
+
+courseSchema.post('find', (courses) => {
+  return _.map(courses, (course) => {
+    course.image = cloudinary.url(`${course.image}.jpg`, { gravity: 'auto', crop: 'fill', height: 310, width: 470 })
+    return course;
+  });
 });
 
 module.exports = mongoose.model('Course', courseSchema);

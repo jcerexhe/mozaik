@@ -76,34 +76,6 @@
   .interest-countries > .search-buttons {
     margin: 0px;
   }
-  .search-buttons li {
-    display: inline-block;
-    list-style: none;
-  }
-  .search-buttons {
-    list-style: none;
-    text-align: center;
-    padding: 0px;
-  }
-  .search-button {
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: $grey;
-  }
-  .search-button.white {
-    background-color: $white;
-  }
-  .search-button:focus {
-    border: none;
-    outline: none;
-  }
-  .seach-button:hover, .search-button.active {
-    background-color: $orange;
-    color: $white;
-  }
   .interest-categories {
     margin-top: 50px;
     background-color: $blue;

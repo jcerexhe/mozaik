@@ -1,0 +1,79 @@
+.course-filter-container {
+  padding: 25px;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+
+  .course-filter {
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid $dark-grey;
+    margin-right: 10px;
+    padding-right: 40px;
+  }
+  .course-filter > h2 {
+    font-size: 40px;
+    margin: 0px;
+    margin-right: 10px;
+  }
+  .course-filter > .filter-buttons {
+    text-align: left;
+  }
+  .refine-button {
+    padding: 10px;
+  }
+}
+.course-card-container {
+  border-top: 1px solid $dark-grey;
+}
+.course-card {
+  display: flex;
+  align-items: top;
+  width: 80%;
+  margin: 50px auto;
+}
+.course-card-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-card-left > .course-buttons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-buttons > .btn {
+  margin-top: 10px;
+  width: 50px;
+}
+.course-card-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.course-card-right > h3 {
+  font-size: 25px;
+  margin: 5px 2%;
+}
+.course-card-right > .course-info {
+  border: 2px solid $dark-grey;
+  width: calc(98% - 4px);
+  padding-left: 12%;
+  margin-left: -10%;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.course-info-bit {
+  display: flex;
+}
+.info-bit-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+}

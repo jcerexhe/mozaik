@@ -22,6 +22,7 @@ exports.getSchool = async (req, res, next) => {
 
 exports.school = (req, res) => {
   const school = res.locals.school;
+  // TODO only pass valid information as props: pass id -> api call get data
   const Lightbox = reactHelper.renderComponent('ArtworkApp', { artworks: school.artworks });
   res.render('school', { school, Lightbox });
 };
@@ -37,6 +38,8 @@ exports.schoolDetails = (req, res) => {
 };
 
 exports.schoolCourses = (req, res) => {
-  res.redirect('/');
+  const school = res.locals.school;
+  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses });
+  res.render('schoolCourses', { school, Courses });
 };
 

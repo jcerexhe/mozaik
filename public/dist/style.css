@@ -254,6 +254,12 @@ html, body {
   max-width: 100%;
   height: auto; }
 
+.bold {
+  font-family: 'Montserrat Bold'; }
+
+.caps {
+  text-transform: uppercase; }
+
 .btn {
   border: 1px solid #082A3E;
   width: 100px;
@@ -262,7 +268,38 @@ html, body {
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Bebas Neue';
-  color: #082A3E; }
+  color: #082A3E;
+  text-align: center;
+  cursor: pointer; }
+
+.filter-btn {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #F4F6F8; }
+
+.filter-btn.white {
+  background-color: #FFFFFF; }
+
+.filter-btn:focus {
+  border: none;
+  outline: none; }
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #EF7D30;
+  color: #FFFFFF; }
+
+.filter-buttons li {
+  display: inline-block;
+  list-style: none; }
+
+.filter-buttons {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px; }
 
 .sk-cube-grid {
   width: 40px;
@@ -347,7 +384,7 @@ html, body {
   -ms-flex-align: center;
       align-items: center;
   padding: 50px 0px;
-  max-width: 80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto; }
   .school-heading .school-info {
@@ -393,7 +430,7 @@ html, body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  max-width: 80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px; }
@@ -413,14 +450,13 @@ html, body {
   .school-details li, .school-details p {
     font-family: 'Montserrat Ultra Light'; }
   .school-details .overview {
-    width: 50%;
+    width: 60%;
     padding-right: 15px; }
   .school-details .overview > a {
     display: block;
     margin: 10px 0px;
     text-align: center; }
   .school-details .fees-scholarships, .school-details .study-areas {
-    width: 25%;
     border-left: 1px solid #E4E9EC;
     padding-left: 15px;
     padding-right: 15px; }
@@ -431,12 +467,15 @@ html, body {
     .school-details .fees-scholarships ul > li, .school-details .study-areas ul > li {
       padding-top: 5px; }
   .school-details .fees-scholarships {
-    font-size: 10px; }
+    font-size: 10px;
+    width: 30%; }
     .school-details .fees-scholarships .campuses, .school-details .fees-scholarships .delivery {
       width: 45%;
       display: inline-block; }
     .school-details .fees-scholarships .campuses {
       margin-right: 5%; }
+  .school-details .study-areas {
+    width: 10%; }
   .school-details .study-areas > ul > li {
     padding-top: 10px;
     font-size: 11px; }
@@ -593,28 +632,6 @@ html, body {
     margin: 0px; }
   .search-content .interest-countries > .search-buttons {
     margin: 0px; }
-  .search-content .search-buttons li {
-    display: inline-block;
-    list-style: none; }
-  .search-content .search-buttons {
-    list-style: none;
-    text-align: center;
-    padding: 0px; }
-  .search-content .search-button {
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #F4F6F8; }
-  .search-content .search-button.white {
-    background-color: #FFFFFF; }
-  .search-content .search-button:focus {
-    border: none;
-    outline: none; }
-  .search-content .seach-button:hover, .search-content .search-button.active {
-    background-color: #EF7D30;
-    color: #FFFFFF; }
   .search-content .interest-categories {
     margin-top: 50px;
     background-color: #0C2A3E;
@@ -829,6 +846,100 @@ html, body {
     right: -100px !important; }
   .alumni-slider .slick-prev {
     left: -100px !important; }
+
+.course-filter-container {
+  padding: 25px;
+  width: 80%;
+  margin: 0px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .course-filter-container .course-filter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border-right: 1px solid #E4E9EC;
+    margin-right: 10px;
+    padding-right: 40px; }
+  .course-filter-container .course-filter > h2 {
+    font-size: 40px;
+    margin: 0px;
+    margin-right: 10px; }
+  .course-filter-container .course-filter > .filter-buttons {
+    text-align: left; }
+  .course-filter-container .refine-button {
+    padding: 10px; }
+
+.course-card-container {
+  border-top: 1px solid #E4E9EC; }
+
+.course-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  width: 80%;
+  margin: 50px auto; }
+
+.course-card-left {
+  width: 30%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.course-card-left > .course-buttons {
+  width: 70%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.course-buttons > .btn {
+  margin-top: 10px;
+  width: 50px; }
+
+.course-card-right {
+  width: 70%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.course-card-right > h3 {
+  font-size: 25px;
+  margin: 5px 2%; }
+
+.course-card-right > .course-info {
+  border: 2px solid #E4E9EC;
+  width: calc(98% - 4px);
+  padding-left: 12%;
+  margin-left: -10%;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 12px;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.course-info-bit {
+  display: -ms-flexbox;
+  display: flex; }
+
+.info-bit-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 3px; }
 
 html, body {
   height: 100%; }

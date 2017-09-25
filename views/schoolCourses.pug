@@ -1,0 +1,11 @@
+extends layouts/layout
+
+block content
+  .school-heading-container
+    .school-heading
+      .school-info
+        img(src=school.logo)
+        h1= school.name
+      .school-link
+        a(href=`/school/${school.slug}/details`) View School
+  !=Courses

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SearchButton from './searchButton.jsx';
-import SearchLink from './searchLink.jsx';
 import _ from 'lodash';
+import Filter from '../shared/filter.jsx';
+import SearchLink from './searchLink.jsx';
 
 export default class Search extends Component {
   constructor(props) {
@@ -80,41 +80,26 @@ export default class Search extends Component {
       <div id='search-discipline'>
         <div className='interest-areas'>
           <h3>What areas interest you?</h3>
-          <ul className='search-buttons'>
-            { _.map(interestAreas, (area) => {
-              const active = discipline.interestAreas.includes(area);
-              return (
-                <li key={ Math.random() }>
-                  <SearchButton val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestAreas', val) } />
-                </li>
-              );
-            }) }
-          </ul>
+          <Filter
+            filterItems={ interestAreas }
+            activeItems={ discipline.interestAreas }
+            onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+          />
         </div>
         <div className='interest-disciplines'>
           <h3>Do these disciplines interest you?</h3>
-          <ul className='search-buttons'>
-            { _.map(disciplines, (area) => {
-              const active = discipline.interestDisciplines.includes(area);
-              return (
-                <li key={ Math.random() }>
-                  <SearchButton val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestDisciplines', val) } />
-                </li>
-              );
-            }) }
-          </ul>
+          <Filter
+            filterItems={ disciplines }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+          />
           <div className='interest-countries'>
             <h4>What country?</h4>
-            <ul className='search-buttons'>
-              { _.map(countries, (area) => {
-                const active = discipline.interestCountries.includes(area);
-                return (
-                  <li key={ Math.random() }>
-                    <SearchButton classes={ ['white'] } val={ area } active={ active } onClick={ (val) => this.updateDiscipline('interestCountries', val) } />
-                  </li>
-                );
-              }) }
-            </ul>
+            <Filter
+              filterItems={ countries }
+              activeItems={ discipline.interestCountries }
+              onClick={ (val) => this.updateDiscipline('interestCountries', val) }
+            />
           </div>
         </div>
       </div>

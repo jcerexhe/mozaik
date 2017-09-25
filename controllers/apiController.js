@@ -32,10 +32,6 @@ exports.courses = (req, res) => {
   // TODO allow user to change limit
   const limit = Number.parseInt(data.limit, 10);
   q.populate('school', 'slug').limit(limit).then((courses) => {
-    _.map(courses, (c) => {
-      c.image = cloudinary.url(`${c.image}.jpg`);
-      return c;
-    });
     res.json(courses);
   }).catch(() => {
     res.json({

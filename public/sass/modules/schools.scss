@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px 0px;
-  max-width: 80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 
@@ -51,7 +51,7 @@
 .school-details {
   display: flex;
   justify-content: space-around;
-  max-width: 80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px;
@@ -77,7 +77,7 @@
     font-family: 'Montserrat Ultra Light';
   }
   .overview {
-    width: 50%;
+    width: 60%;
     padding-right: 15px;
   }
   .overview > a {
@@ -86,7 +86,6 @@
     text-align: center;
   }
   .fees-scholarships, .study-areas {
-    width: 25%;
     border-left: 1px solid $dark-grey;
     padding-left: 15px;
     padding-right: 15px;
@@ -102,6 +101,7 @@
   }
   .fees-scholarships {
     font-size: 10px;
+    width: 30%;
 
     .campuses, .delivery {
       width: 45%;
@@ -110,6 +110,9 @@
     .campuses {
       margin-right: 5%;
     }
+  }
+  .study-areas {
+    width: 10%;
   }
   .study-areas > ul > li {
     padding-top: 10px;
