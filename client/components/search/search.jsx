@@ -204,11 +204,11 @@ export default class Search extends Component {
             <div className='search-criteria'>
               <div className='search-category'>
                 <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
-                  className={ searchCategory === 'discipline' ? 'active' : '' }>discipline</span>
+                  className={ 'list-btn' + (searchCategory === 'discipline' ? ' active' : '') } />
                 <span onClick={ () => this.setState({ searchCategory: 'categories' }) }
-                  className={ searchCategory === 'categories' ? 'active' : '' }>categories</span>
+                  className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
                 <span onClick={ () => this.setState({ searchCategory: 'search' }) }
-                  className={ searchCategory === 'search' ? 'active' : '' }>search</span>
+                  className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
               </div>
               { rendered }
             </div>

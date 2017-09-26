@@ -48,7 +48,8 @@ export default class SearchApp extends Component {
         this.error();
         return;
       }
-      this.setState({ results: result.data, loading: false });
+      this.setState({ results: result.data });
+      setTimeout(() => this.setState({ loading: false }), 1800);
     }).catch((err) => {
       this.error();
     });

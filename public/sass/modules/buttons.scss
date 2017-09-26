@@ -1,0 +1,84 @@
+.btn {
+  border: 1px solid $black;
+  width: 100px;
+  padding: 5px 20px 3px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  color: $black;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-btn {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: $grey;
+}
+.filter-btn.white {
+  background-color: $white;
+}
+.filter-btn:focus {
+  border: none;
+  outline: none;
+}
+.filter-btn:hover, .filter-btn.active {
+  background-color: $orange;
+  color: $white;
+}
+.filter-buttons li {
+  display: inline-block;
+  list-style: none;
+}
+.filter-buttons {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.list-btn {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/list-off.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.list-btn.active {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/list-select.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.refine-btn {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/refine-off.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.refine-btn.active {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/refine-select.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.search-btn {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/search-off.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.search-btn.active {
+  width: 60px;
+  height: 41px;
+  background-image: url(/images/buttons/search-select.png);
+  background-size: cover;
+  cursor: pointer;
+}
