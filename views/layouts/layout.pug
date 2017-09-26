@@ -50,7 +50,21 @@ html(lang='en')
             a(href='#') Contact Us
       .social
         // TODO
-        p some social links
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-facebook.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-youtube.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-instagram.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-snapchat.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-pinterest.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-twitter.png')
+        a(href='#')
+          img.img-resp(src='/images/social-icons/sm-linked-in.png')
+        p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik creative  |  site design by bloq`
 
     block javascripts
       script(src='/dist/App.bundle.js?rand='+Math.random())

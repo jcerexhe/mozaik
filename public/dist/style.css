@@ -66,10 +66,23 @@ html, body {
   list-style: none; }
   .footer > .links > ul h4 {
     text-transform: uppercase;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-size: 20px; }
   .footer > .links > ul a {
     color: #FFFFFF;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 12px; }
+
+.footer > .social a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px; }
+
+.footer > .social .copyright {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'Montserrat Ultra Light'; }
 
 .hidden {
   display: none; }
