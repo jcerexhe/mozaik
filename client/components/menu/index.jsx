@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SlidingPane from 'react-sliding-pane';
 import _ from 'lodash';
-import MenuLink from './menuLink.jsx';
 
 export default class MenuApp extends Component {
   constructor(props) {

@@ -1,0 +1,35 @@
+.discover-column-container {
+  height: calc(100vh - 100px);
+  width: 200px;
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  background-color: white;
+}
+.discover-column {
+  padding: 20px;
+}
+.discover-column a {
+  text-decoration: none;
+  color: $black;
+}
+.discover-column h2 {
+  margin-top: 0px;
+  font-size: 36px;
+  text-align: center;
+}
+.discover-column > h3 {
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+.discover-checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.discover-checkboxes > label {
+  font-size: 10px;
+  margin: 2px 0px;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
