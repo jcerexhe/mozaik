@@ -377,8 +377,8 @@ input[type=text]::placeholder {
 .school-heading {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
   padding: 50px 0px;

@@ -6,6 +6,9 @@ block content
       .school-info
         img(src=school.logo)
         h1= school.name
-      .school-link
-        a(href=`/school/${school.slug}/details`) View School
+      .school-details-links
+        .other-links
+          a.btn(href='#') enquiry
+          a.btn(href='#') apply
+          a.btn(href=school.website target='_blank') visit website
   !=Courses
