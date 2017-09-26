@@ -40,6 +40,18 @@
 
   .video-link {
     margin-right: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .video-link img {
+    margin: 0px 15px;
+  }
+  .video-link a {
+    text-decoration: none;
+  }
+  .video-link span {
+    font-size: 11px;
+    color: $black;
   }
   .other-links > a {
     display: block;

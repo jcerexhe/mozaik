@@ -238,6 +238,12 @@ html, body {
   filter: brightness(0) invert(1);
   cursor: pointer; }
 
+.icon {
+  width: 47px;
+  height: 53px;
+  margin: 0px 15px;
+  cursor: pointer; }
+
 .control {
   font-size: 18px;
   position: relative;
@@ -410,7 +416,16 @@ input[type=text]::placeholder {
   -ms-flex-align: center;
       align-items: center; }
   .school-details-links .video-link {
-    margin-right: 40px; }
+    margin-right: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+  .school-details-links .video-link img {
+    margin: 0px 15px; }
+  .school-details-links .video-link a {
+    text-decoration: none; }
+  .school-details-links .video-link span {
+    font-size: 11px;
+    color: #082A3E; }
   .school-details-links .other-links > a {
     display: block;
     margin: 10px 0px;
