@@ -41,7 +41,7 @@ html, body {
   font-family: 'Montserrat Light'; }
 
 .content {
-  margin-top: 100px; }
+  margin-top: -100px; }
 
 .footer {
   display: -ms-flexbox;
