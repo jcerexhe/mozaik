@@ -396,6 +396,19 @@ input[type=text]::placeholder {
     height: auto; }
   .school-heading .school-name {
     font-family: 'Montserrat Ultra Light'; }
+  .school-heading .school-link > a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-heading .school-link img {
+    margin: 0px; }
+  .school-heading .school-link span {
+    padding: 7px 15px 3px 15px;
+    background-color: #082A3E;
+    color: #E4E9EC;
+    text-decoration: none;
+    font-family: 'Bebas Neue'; }
 
 .school-courses-link {
   padding: 20px 0px;

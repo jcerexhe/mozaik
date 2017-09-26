@@ -7,7 +7,9 @@ block content
         img(src=school.logo)
         h1= school.name
       .school-link
-        a(href=`/school/${school.slug}/details`) View School
+        a(href=`/school/${school.slug}/details`)
+          img.icon(src='/images/icons/mozaik-icons-7.png')
+          span View School
   !=Lightbox
   .school-courses-link
     p= `${school.name} has ${school.courses.length} courses in aaa, bbb, ccc`
