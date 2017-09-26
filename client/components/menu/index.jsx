@@ -12,61 +12,44 @@ export default class MenuApp extends Component {
         {
           heading: 'for students',
           links: [
-            {
-              url: '#',
-              val: 'discover'
-            },
-            {
-              url: '#',
-              val: 'study areas'
-            },
-            {
-              url: '#',
-              val: 'education'
-            },
-            {
-              url: '#',
-              val: 'sign up'
-            }
+            { url: '#', val: 'discover' },
+            { url: '#', val: 'study areas' },
+            { url: '#', val: 'education' },
+            { url: '#', val: 'sign up' }
           ]
         },
         {
           heading: 'for schools',
           links: [
-            {
-              url: '#',
-              val: 'why mozaik'
-            },
-            {
-              url: '#',
-              val: 'education agent'
-            },
-            {
-              url: '#',
-              val: 'sign up'
-            }
+            { url: '#', val: 'why mozaik' },
+            { url: '#', val: 'education agent' },
+            { url: '#', val: 'sign up' }
           ]
         },
         {
           heading: 'about mozaik',
           links: [
-            {
-              url: '#',
-              val: 'who is mozaik'
-            },
-            {
-              url: '#',
-              val: 'contact us'
-            }
+            { url: '#', val: 'who is mozaik' },
+            { url: '#', val: 'contact us' }
           ]
         }
       ]
     };
   }
 
+  updateMenu() {
+    const { menuOpen } = this.state;
+    this.setState({ menuOpen: !menuOpen });
+    const navbar = document.getElementById('nav');
+    const isClear = navbar.classList.contains('clear');
+    if (!isClear) navbar.classList.add('clear');
+    else navbar.classList.remove('clear');
+  }
+
   render() {
     const { currentPath } = this.props;
     const { menuOpen, menu } = this.state;
+    // TODO menu compnent & navbar component
     return (
       <div>
         <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
@@ -81,7 +64,7 @@ export default class MenuApp extends Component {
               <a href='#'>profile</a>
               <a href='#'>search</a>
               <div id='open-menu'
-                onClick={ () => this.setState({ menuOpen: !menuOpen }) }
+                onClick={ () => this.updateMenu() }
                 className={ menuOpen ? 'open' : '' }>
                 <span />
                 <span />
