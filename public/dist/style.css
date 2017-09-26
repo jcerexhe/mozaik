@@ -231,6 +231,13 @@ html, body {
   background-size: cover;
   cursor: pointer; }
 
+.icon-white {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  filter: brightness(0) invert(1);
+  cursor: pointer; }
+
 .control {
   font-size: 18px;
   position: relative;
@@ -502,6 +509,7 @@ input[type=text]::placeholder {
 #nav {
   position: absolute;
   width: 100vw;
+  height: 100px;
   top: 0;
   left: 0;
   z-index: 100;
@@ -518,7 +526,9 @@ input[type=text]::placeholder {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  z-index: 102;
+  position: relative; }
 
 .navbar > .discover, .navbar > .links {
   width: 25%; }
@@ -610,7 +620,7 @@ input[type=text]::placeholder {
   left: 50%; }
 
 .ReactModal__Overlay {
-  z-index: 99; }
+  z-index: 101; }
 
 .ReactModal__Body--open {
   overflow: hidden; }
@@ -620,7 +630,7 @@ input[type=text]::placeholder {
 
 #menu {
   position: absolute;
-  z-index: 99;
+  z-index: 101;
   top: 0;
   left: 0;
   width: 100vw;

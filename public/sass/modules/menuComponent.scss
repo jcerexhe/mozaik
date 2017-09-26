@@ -1,6 +1,7 @@
 #nav {
   position: absolute;
   width: 100vw;
+  height: 100px;
   top: 0;
   left: 0;
   z-index: 100;
@@ -15,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 102;
+  position: relative;
 }
 .navbar > .discover, .navbar > .links {
   width: 25%;
@@ -100,7 +103,7 @@
 
 // Menu styles
 .ReactModal__Overlay {
-  z-index: 99;
+  z-index: 101;
 }
 .ReactModal__Body--open {
   overflow: hidden;
@@ -110,7 +113,7 @@
 }
 #menu {
   position: absolute;
-  z-index: 99;
+  z-index: 101;
   top: 0;
   left: 0;
   width: 100vw;

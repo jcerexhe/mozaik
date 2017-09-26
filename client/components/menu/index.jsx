@@ -39,10 +39,6 @@ export default class MenuApp extends Component {
   updateMenu() {
     const { menuOpen } = this.state;
     this.setState({ menuOpen: !menuOpen });
-    const navbar = document.getElementById('nav');
-    const isClear = navbar.classList.contains('clear');
-    if (!isClear) navbar.classList.add('clear');
-    else navbar.classList.remove('clear');
   }
 
   render() {
@@ -51,27 +47,31 @@ export default class MenuApp extends Component {
     // TODO menu compnent & navbar component
     return (
       <div>
-        <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
-          <div className='navbar'>
-            <div className='discover'>
-              <a href='#'>discover</a>
-            </div>
-            <div className='logo'>
-              <a href='/'>mozaik</a>
-            </div>
-            <div className='links'>
-              <a href='#'>profile</a>
-              <a href='#'>search</a>
-              <div id='open-menu'
-                onClick={ () => this.updateMenu() }
-                className={ menuOpen ? 'open' : '' }>
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
+        <div className='navbar'>
+          <div className='discover'>
+            <a href='#'>discover</a>
+          </div>
+          <div className='logo'>
+            <a href='/'>mozaik</a>
+          </div>
+          <div className='links'>
+            <a href='#'>
+              <img className='icon-white' src='/images/icons/mozaik-icons-6.png' />
+            </a>
+            <a>
+              <img className='icon-white' src='/images/icons/mozaik-icons-5.png' />
+            </a>
+            <div id='open-menu'
+              onClick={ () => this.updateMenu() }
+              className={ menuOpen ? 'open' : '' }>
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
           </div>
+        </div>
+        <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
         </div>
         <SlidingPane
           isOpen={ menuOpen }
