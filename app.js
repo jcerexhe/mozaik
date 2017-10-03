@@ -7,11 +7,11 @@ mongoose.connection.on('error', (err) => {
 });
 
 // import all of our models
-require('./models/User');
-require('./models/School');
-require('./models/Course');
-require('./models/Artwork');
-require('./models/Alumni');
+require('./models/user.js');
+require('./models/school.js');
+require('./models/course.js');
+require('./models/artwork.js');
+require('./models/alumni.js');
 
 const express = require('express');
 const session = require('express-session');
