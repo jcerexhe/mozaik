@@ -1,5 +1,4 @@
 // const fs = require('fs');
-const faker = require('faker');
 const async = require('async');
 const fs = require('fs');
 const _ = require('lodash');
