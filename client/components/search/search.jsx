@@ -6,6 +6,15 @@ import SearchLink from './searchLink.jsx';
 export default class Search extends Component {
   constructor(props) {
     super(props);
+    const digMedia = ["Animation", "3D Design", "AR/VR", "Computer Graphics", "Data Visualisation", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Multimedia", "Transmedia", "Visual Effects (VFX)", "Web Design"];
+    const visComm = ["Advertising Design", "Communication Design", "Design", "Digital Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Photomedia", "Typography", "Visual Arts", "Visual Communication", "Web Design", "3D Printing"];
+    const fineArts = ["Fine Arts", "2D Art", "3D Art", "Arts", "Ceramics", "Drawing", "Illustration", "Jewellery Design", "Painting", "Sculpture", "Glass Design", "Wood Design", "Studio Art", "Indigenous Art", "Metalsmithing", "Gemmology"];
+    const filmTvAudio = ["Animation", "Audio", "Film", "TV", "Screen Production", "Cinematography", "Directing", "Editing", "Filmmaking", "Music", "Post Production", "Producing", "Production Design", "Screen Media", "Screen Performance", "Screenwriting", "Sound Design", "Special Effects (SFX)", "Visual Effects (VFX)", "Radio", "Documentary"];
+    const perfArts = ["Acting", "Classical Performance", "Contemporary Performance ", "Dance", "Drama", "Music Performance", "Jazz ", "Music Composition", "Performing Arts", "Production", "Playwriting", "Staging", "Theatre", "Costume Design", "Live Production"]
+    const design = ["Colour Design", "Costume Design", "Design", "Digital Design", "Fashion Design", "Design", "Games Design", "Graphic Design", "Industrial Design", "Interior Design", "Merchandising", "Product Design", "Sound Design", "Special Effects", "Textile Design", "Visual Communications", "Web Design"];
+    const photog = ["Photography", "Photography Design", "Art Photography", "Commercial Photography", "Fashion Photography", "Documentary Photography", "Digital Imaging", "Photojournalism", "Photomedia", "Visual Communication"];
+    const builtEnv = ["Architecture", "Built Environment", "Landscape Architecture", "Urban Design", "Interior Design", "Interior Decoration", "Interior Architecture", "Spatial Design", "Styling", "Building Design", "Digital Architecture"];
+    const busCreat = ["Creative Leadership", "Finance for Creative Industries", "Marketing for Entertainment Business", "Screen Business", "Fashion Business", "Branded Managment", "Stage Management", "Music Business", "Live Production", "Arts Management", "Visual Merchandising", "Design Thinking", "Event Management"];
     this.state = {
       searchCategory: 'discipline', // options: [discipline, categories, search]
       discipline: {
@@ -14,26 +23,48 @@ export default class Search extends Component {
         interestCountries: ['all areas']
       },
       categories: [''],
-      search: ''
+      search: '',
+      areas: {
+        'Digital Media': digMedia,
+        'Visual Communication': visComm,
+        'Fine Arts': fineArts,
+        'Film / TV / Audio': filmTvAudio,
+        'Performing Arts': perfArts,
+        'Design': design,
+        'Photography': photog,
+        'Built Environment': builtEnv,
+        'Business for Creatives': busCreat
+      }
     };
   }
 
   componentWillMount() {
-    this.props.getResults({ ...this.state });
+    this.props.getResults(this.props.limit, { ...this.state });
   }
 
   shouldComponentUpdate(nextProps, nextState) {
     if (nextProps.limit > this.props.limit)
-      this.props.getResults({ ...this.state });
+      this.props.getResults(nextProps.limit, { ...this.state });
+    if(_.eq(this.props, nextProps))
+      this.props.getResults(6, { ...nextState });
     if (_.eq(this.state, nextState))
       return true;
-    this.props.getResults({ ...nextState });
     return false;
   }
 
   updateDiscipline(area, val) {
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
+    if (area === 'interestAreas') {
+      this.setState({
+        discipline: {
+          ...discipline,
+          [area]: [val],
+          interestDisciplines: ['all areas']
+        }
+      })
+      return;
+    }
     if (val === 'all areas') {
       this.setState({
         discipline: {
@@ -71,17 +102,14 @@ export default class Search extends Component {
 
   // TODO own components
   renderDiscipline() {
-    const { discipline } = this.state;
-    const interestAreas = ['all areas', 'digital media', 'visual comms', 'film/tv/audio', 'design', 'photography', 'performing arts', 'built environment', 'arts', 'fashion', 'business for creatives'];
-    // TODO put actual disciplines
-    const disciplines = ['all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas', 'all areas'];
+    const { discipline, areas } = this.state;
     const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
           <h3>What areas interest you?</h3>
           <Filter
-            filterItems={ interestAreas }
+            filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
             activeItems={ discipline.interestAreas }
             onClick={ (val) => this.updateDiscipline('interestAreas', val) }
           />
@@ -89,7 +117,7 @@ export default class Search extends Component {
         <div className='interest-disciplines'>
           <h3>Do these disciplines interest you?</h3>
           <Filter
-            filterItems={ disciplines }
+            filterItems={ ['all areas'].concat(_.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }))) }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
           />
@@ -107,51 +135,28 @@ export default class Search extends Component {
   }
 
   renderCategories() {
-    const { categories } = this.state;
-    const education = ['High School / Enlisted', 'College Graduate / Officer'];
-    const careers = ['Healthcare', 'Law Professional', 'Ministry Professional'];
-    const asvab = ['Administrative', 'Electronics', 'General', 'Mechanical'];
+    const { categories, areas } = this.state;
     return (
       <div id='search-categories'>
         <div className='interest-areas'>
           <h3>What areas interest you?</h3>
           <div className='interest-categories'>
-            <div className='category'>
-              <h4>Education</h4>
-              <ul className='search-links'>
-                { _.map(education, (val, i) => {
-                  return (
-                    <li key={ Math.random() }>
-                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
-                    </li>
-                  );
-                }) }
-              </ul>
-            </div>
-            <div className='category'>
-              <h4>Professional careers</h4>
-              <ul className='search-links'>
-                { _.map(careers, (val, i) => {
-                  return (
-                    <li key={ Math.random() }>
-                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
-                    </li>
-                  );
-                }) }
-              </ul>
-            </div>
-            <div className='category'>
-              <h4>ASVAB Categories</h4>
-              <ul className='search-links'>
-                { _.map(asvab, (val, i) => {
-                  return (
-                    <li key={ Math.random() }>
-                      <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
-                    </li>
-                  );
-                }) }
-              </ul>
-            </div>
+            { _.map(areas, (vals, cat) => {
+              return (
+                <div className='category' key={ cat }>
+                  <h4>{ cat }</h4>
+                  <ul className='search-links'>
+                    { _.map(vals, (val) => {
+                      return (
+                        <li key={ val }>
+                          <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
+                        </li>
+                      );
+                    }) }
+                  </ul>
+                </div>
+              );
+            }) }
           </div>
         </div>
       </div>
@@ -185,7 +190,7 @@ export default class Search extends Component {
     }
     return (
       <div>
-        <div id="search">
+        <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
             <h2>
               <span>q</span>
@@ -214,7 +219,7 @@ export default class Search extends Component {
             </div>
           </div>
         </div>
-        <div className='search-blue-background' />
+        <div className={'search-blue-background' + (searchCategory === 'categories' ? ' taller-search' : '')} />
       </div>
     );
   }

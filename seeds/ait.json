@@ -72,13 +72,8 @@
         "Sydney",
         "Melbourne"
       ],
-      "disciplines": [
-        "2D Animation",
-        "3D Design",
-        "Film",
-        "Game Design"
-      ],
       "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
@@ -89,16 +84,231 @@
           "fees": 52800
         }
       ],
-      "image": "sample"
+      "specialisations": [
+        "2D Animation",
+        "3D Design",
+        "Film",
+        "Game Design"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Animation",
+        "2D Animation",
+        "3D Design",
+        "VFX",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Film",
+        "TV",
+        "Screen Media",
+        "Game Design",
+        "Multimedia",
+        "Digital Design",
+        "Web Design",
+        "Digital Imaging",
+        "Interactive Media",
+        "Interactive Games",
+        "Transmedia"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
     },
     {
-      "name": "Diploma of Interactive Media",
+      "name": "Bachelor of Interactive Media - 2D Animation",
+      "description": "2D animation extend beyond the staples of Disney and childhood heroes. Japanese anime and manga are global phenomenons and 2D content is used in many industries, including advertising, video games, web promotion and brand creation.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "3 years | 2 year accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "specialisations": [
+        "2D/3D Animation",
+        "Motion Graphics",
+        "Creative Drawing",
+        "Digital Images and Audio"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Animation",
+        "2D Animation",
+        "3D Design",
+        "VFX",
+        "Motion Graphics",
+        "Computer Graphics",
+        "Digital Imaging",
+        "Concept Artist"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "Bachelor of Interactive Media - 3D Design",
+      "description": "This course ensures students have a solid grounding in 3D modelling and animation techniques. It introduces students to the 3D workflow or ‘pipeline’, a variety of SW and associated skills like lighting and texturing so that you can create content for the exciting industries of AR/VR, VFX and Virtual 3D worlds",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "specialisations": [
+        "3D Modelling",
+        "2D/3D Animation",
+        "Decoding Media",
+        "Concept Art",
+        "VFX",
+        "Motion Capture"
+      ],
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Animation",
+        "2D Animation",
+        "3D Design",
+        "VFX",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Game Design",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "3D Printing",
+        "Product Design",
+        "Concept Artist",
+        "Decoding Media"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "BACHELOR OF INTERACTIVE MEDIA - FILM & VIDEO",
+      "description": "In this course you will receive a foundation in revolutionary digital media processes as well as traditional film theory - a highly sought after combination in the industry.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "specialisations": [
+        "Cinematography",
+        "Screen Production",
+        "Directing",
+        "Editing",
+        "Documentary",
+        "VFX"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Animation",
+        "VFX",
+        "SFX",
+        "Motion Graphics",
+        "Film",
+        "TV",
+        "Screen Media",
+        "Cinematography",
+        "Directing",
+        "Editing",
+        "Post Production",
+        "Producing",
+        "Production Design",
+        "Screen Production",
+        "Screen Media",
+        "Broadcasting",
+        "Digital Video",
+        "Sound Design",
+        "Screen Performance",
+        "Screenwriting",
+        "Documentary",
+        "Camera Operator",
+        "Transmedia"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "BACHELOR OF INTERACTIVE MEDIA - GAME DESIGN",
+      "description": "Developed in consultation with industry experts, this course covers the latest in design theory as well as hands-on skills that cover the broad process of game design including audio, video, film, graphics, animation, storytelling and programming.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "specialisations": [
+        "3D Design",
+        "2D Interactivity",
+        "Virtual Worlds",
+        "Game Development",
+        "Game Assets"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "3D Design",
+        "VFX",
+        "Motion Graphics",
+        "AR/VR",
+        "Screen Media",
+        "Game Design",
+        "Computer Graphics",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "Data Visualisation",
+        "Games and Interactivity",
+        "Games Assets",
+        "Game Development",
+        "Virtual Worlds",
+        "2D Interactivity"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "DIPLOMA OF INTERACTIVE MEDIA",
       "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
       "campus": [
         "Sydney",
         "Melbourne"
       ],
       "length": "1 year",
+      "intakes": "January | March | May | July | August | October",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
@@ -109,46 +319,90 @@
           "fees": 17600
         }
       ],
-      "image": "sample"
+      "specialisations": [
+        "Pathway to second year of the Bachelor of Interactive Media"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Animation",
+        "2D Animation",
+        "3D Design",
+        "VFX",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Film",
+        "TV",
+        "Screen Media",
+        "Game Design",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "Interactive Media",
+        "Interactive Games",
+        "Transmedia"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
     },
     {
-      "name": "Bachelor of Digital Design",
-      "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms. From product packaging and brand design to interactive app design, data visualization and title design for film, your design career starts now.",
+      "name": "BACHELOR OF DIGITAL DESIGN",
+      "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms: from product packaging and brand design to interactive app design, data visualization and title design for film. Hone your design skills and learn how to translate content into visual form for effective communication and arm yourself with a portfolio to establish a career in the growing design industry",
       "campus": [
         "Sydney",
         "Melbourne"
       ],
-      "disciplines": [
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "specialisations": [
         "Design Principles",
         "Digital Images",
         "Web Interface",
         "Motion Graphics",
+        "Typography",
         "Branding for Products"
       ],
-      "length": "3 years | 2 years accelerated",
-      "prices": [
-        {
-          "type": "Domestic students (FEE-HELP approved)",
-          "fees": 50400
-        },
-        {
-          "type": "International students",
-          "fees": 52800
-        }
+      "disciplines": [
+        "Digital Design",
+        "2D Animation",
+        "3D Design",
+        "Motion Graphics",
+        "Game Design",
+        "Multimedia",
+        "Digital Media",
+        "Digital Imaging",
+        "Digital images",
+        "Computer Graphics",
+        "Graphic Design",
+        "Illustration",
+        "Typography",
+        "Photography",
+        "Web Design",
+        "Web Interface",
+        "3D Printing",
+        "Packaging"
       ],
-      "image": "sample"
+      "image": "Gnomon_in_Forest_a7oery"
     },
     {
-      "name": "Diploma of Interactive Media",
-      "description": "This higher education Diploma teaches the basic principles of design, combining hands on education with design thinking. This course is also offered online.",
+      "name": "DIPLOMA OF DIGITAL DESIGN",
+      "description": "This courses teaches the basic principles of design and prepare you for a career in the design industry, branding of products, web interface or even imagery for interactive game worlds.",
       "campus": [
         "Sydney",
         "Melbourne",
         "Online"
       ],
-      "disciplines": [
-      ],
       "length": "1 year",
+      "intakes": "January | March | May | July | August | October",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
@@ -159,23 +413,42 @@
           "fees": 17600
         }
       ],
-      "image": "sample"
+      "specialisations": [
+        "Design Principles",
+        "Interface",
+        "Creative Drawing",
+        "Typography",
+        "Pathway to second year of the Bachelor of Digital Design"
+      ],
+      "disciplines": [
+        "Digital Design",
+        "Multimedia",
+        "Digital Media",
+        "Digital Imaging",
+        "Digital images",
+        "Computer Graphics",
+        "Graphic Design",
+        "Illustration",
+        "Typography",
+        "Photography",
+        "Web Design",
+        "Web Interface",
+        "3D Printing",
+        "Packaging and Branding",
+        "Concept Artist",
+        "Creative Drawing"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
     },
     {
-      "name": "Bachelor of Information Technology",
-      "description": "Learn the skills required to design, build and publish iOS and Android mobile apps or your own sites and graduate with a portfolio of work.",
+      "name": "BACHELOR OF INFORMATION TECHNOLOGY - MOBILE APPS DEVELOPMENT",
+      "description": "This course allows you to design, build and publish iOS and Android mobile apps from scratch and graduate with a portfolio of work.",
       "campus": [
         "Sydney",
         "Melbourne"
       ],
-      "disciplines": [
-        "Mobile Apps Development",
-        "Game Programming",
-        "AR",
-        "UX / UI",
-        "Artificial Intelligence"
-      ],
-      "length": "3 years | 2 years accelerated | Bootcamp 6 months",
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
@@ -186,19 +459,77 @@
           "fees": 52800
         }
       ],
-      "image": "sample"
-    },
-    {
-      "name": "Diploma of Information Technology",
-      "description": "This Diploma gives you a solid grounding in the basics of developing content for mobile platforms and the web. Design, build and publish iOS and Android mobile apps and graduate with a portfolio of work.",
-      "campus": [
-        "Sydney",
-        "Melbourne",
-        "Online"
+      "specialisations": [
+        "Mobile Apps Development",
+        "Foundation Networks",
+        "Cross-Platform Apps",
+        "Digital Project Management"
       ],
       "disciplines": [
+        "Multimedia",
+        "Digital Media",
+        "Web Design",
+        "Mobile Design",
+        "Mobile Application",
+        "Mobile Development",
+        "Web Interface",
+        "Packaging and Branding",
+        "Digital Project Management",
+        "Cross-Platform Apps"
       ],
-      "length": "1 year",
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "BACHELOR OF INFORMATION TECHNOLOGY - GAME PROGRAMMING",
+      "description": "This course will provide you with a foundation in the core IT disciplines including database systems, networking, systems designs as well as professional practice. You will hone your skills in game engine programming and learn the principles to develop games using VR/AR, AI platforms.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "3 years | 2 years accelerated",
+      "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 50400
+        },
+        {
+          "type": "International students",
+          "fees": 52800
+        }
+      ],
+      "specialisations": [
+        "Game Engine Programming",
+        "Interface Design (UX/UI)",
+        "Artificial Intelligence",
+        "AR",
+        "Game Development"
+      ],
+      "disciplines": [
+        "Game Programming",
+        "UX/UI",
+        "Artificial Intelligence",
+        "Multimedia",
+        "Digital Media",
+        "Game Design",
+        "Game Development",
+        "Mobile Application",
+        "Mobile Development",
+        "AR/VR",
+        "Digital Project Management",
+        "Cross-Platform Apps"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
+    },
+    {
+      "name": "DIPLOMA OF INFORMATION TECHNOLOGY",
+      "description": "This Diploma gives you a solid grounding in the basics of IT with plenty of practical experience in programming, software engineering and web development. You will also gain valuable exposure to interactive media techniques and multimedia skills.",
+      "campus": [
+        "Sydney",
+        "Melbourne"
+      ],
+      "length": "1 year | Bootcamp 6 months",
+      "intakes": "January | March | May | July | August | October",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
@@ -209,7 +540,29 @@
           "fees": 17600
         }
       ],
-      "image": "sample"
+      "specialisations": [
+        "Intro to Web",
+        "Foundation Programming",
+        "Information Systems",
+        "Pathway to second year of the Bachelor of Information Technology"
+      ],
+      "disciplines": [
+        "Game Programming",
+        "UX/UI",
+        "Artificial Intelligence",
+        "Multimedia",
+        "Digital Media",
+        "Game Design",
+        "Game Development",
+        "Mobile Application",
+        "Mobile Development",
+        "AR/VR",
+        "Digital Project Management",
+        "Cross-Platform Apps",
+        "Web Interface",
+        "Information Systems"
+      ],
+      "image": "Gnomon_in_Forest_a7oery"
     }
   ],
   "artworks": [
@@ -256,19 +609,25 @@
   ],
   "alumni": [
     {
-      "photo": "sample",
-      "name": "PJ SVOBODA",
-      "blurb": "xxxxxx xxxxxxx xxxxxxxxxx xxxxxx xxxx xxxxxxx xx"
+      "photo": "PeeJay_Svoboda_amn4fd",
+      "name": "Peter J “Peejay” Svobooda",
+      "course": "Bachelor of Interactive Media - Film & Video",
+      "profession": "Cinematographer and Designer",
+      "credits": "Kenya 2016, Maasai Mara, APDG Chris Seagers Interview, PJ won numerous films/design awards at AIT"
     },
     {
-      "photo": "sample",
-      "name": "ALEX HOLDER",
-      "blurb": "xxx xxxxx xxxxxxxxx xxx xxx xxxxx xxxxxxx xxxxxxx"
+      "photo": "Alex_Holder_sxcxnr",
+      "name": "Alex Holder",
+      "course": "",
+      "profession": "",
+      "credits": ""
     },
     {
-      "photo": "sample",
-      "name": "TOMAS CURDA",
-      "blurb": "xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxxxxxxx xxxxxx"
+      "photo": "Tomas_Curda_qxeizr",
+      "name": "Tomas Curda",
+      "course": "",
+      "profession": "",
+      "credits": ""
     }
   ]
 }

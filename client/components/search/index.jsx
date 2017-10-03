@@ -27,6 +27,7 @@ export default class SearchApp extends Component {
   }
 
   resetLimit() {
+    console.log('reset');
     this.setState({
       limit: 6,
     });
@@ -39,9 +40,8 @@ export default class SearchApp extends Component {
     });
   }
 
-  getResults(params) {
-    this.setState({ loading: true });
-    const { limit } = this.state;
+  getResults(limit, params) {
+    this.setState({ limit, loading: true });
     params = { ...params, limit };
     axios.get('/api/courses', { params }).then((result) => {
       if (result.data.error) {
@@ -64,7 +64,7 @@ export default class SearchApp extends Component {
     // TODO modify url with query params and default search with said params on load
     return (
       <div>
-        <Search getResults={ (params) => this.getResults(params) } limit={ limit }/>
+        <Search getResults={ (params) => this.getResults(params) } limit={ limit } resetLimit={ () => this.resetLimit() }/>
         <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ results } loading={ loading } error={ error } />
       </div>
     );

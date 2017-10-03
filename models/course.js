@@ -24,6 +24,7 @@ const courseSchema = new Schema({
     required: 'Please provide a short description of the course.',
   },
   campus: [String],
+  specialisations: [String],
   disciplines: [String],
   length: {
     type: String,
@@ -39,6 +40,7 @@ const courseSchema = new Schema({
     type: String,
     required: 'Please provide an image for the course.',
   },
+  intakes: String,
   school: {
     type: mongoose.Schema.ObjectId,
     ref: 'School',

@@ -21,10 +21,17 @@ const alumniSchema = new Schema({
     trim: true,
     required: 'Please provide the name of the alumni.',
   },
-  blurb: {
+  profession: {
     type: String,
     trim: true,
-    required: 'Please provide a short blurb about the alumni.',
+  },
+  credits: {
+    type: String,
+    trim: true,
+  },
+  course: {
+    type: String,
+    trim: true,
   },
   school: {
     type: mongoose.Schema.ObjectId,
