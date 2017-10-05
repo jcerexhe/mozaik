@@ -9,35 +9,53 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-exports.courses = (req, res) => {
+exports.courses = async (req, res) => {
   const data = req.query;
   const limit = Number.parseInt(data.limit, 10);
   let q;
+  let courses;
   switch (data.searchCategory) {
     case 'discipline':
-      // const area = data.discipline.interestAreas[0];
-      // const { interestDisciplines, interestCountries } = data.discipline;
-      // q = Course.find(({
-        // $and: [
-          // { disciplines: area },
-          // { disciplines: interestDisciplines },
-        // ],
-      // }));
-      // q.populate('school').then((foundCourses1) => {
-        // foundCourses1.find({
-          // school: {
-            // locations: {
-              // $elemMatch: { country: interestCountries },
-            // },
-          // },
-        // }).then((foundCourses2) => {
-          // courses = foundCourses2;
-        // });
-      // });
-      q = Course.find();
+      const disc = JSON.parse(data.discipline);
+      const area = disc.interestAreas[0];
+      const { interestDisciplines, interestCountries } = disc;
+      const targets = [];
+      if (area !== 'all areas') {
+        targets.push({ disciplines: { $all: [area] } });
+      }
+      if (!interestDisciplines.includes('all areas')) {
+        targets.push({ disciplines: { $all: interestDisciplines } });
+      }
+      switch (targets.length) {
+        case 0:
+          q = Course.find();
+          break;
+        case 1:
+          q = Course.find(targets[0]);
+          break;
+        default:
+          q = Course.find({ $and: targets });
+      }
+      const foundCourses = await q.populate('school', ['slug', 'locations']);
+      if (interestCountries.includes('all areas')) {
+        courses = foundCourses;
+      } else {
+        courses = _.filter(foundCourses, (course) => {
+          const courseCountries = _.reduce(course.school.locations, (loc) => {
+            return loc.country;
+          }, []);
+          return _.intersection(interestCountries, courseCountries).length > 0;
+        });
+      }
       break;
     case 'categories':
-      q = Course.find();
+      const categories = data.categories;
+      if (categories) {
+        q = Course.find({ disciplines: { $in: categories } });
+      } else {
+        q = Course.find();
+      }
+      courses = await q.populate('school', 'slug');
       break;
     case 'search': {
       const regex = new RegExp(`.*${data.search}.*`, 'i');
@@ -46,21 +64,23 @@ exports.courses = (req, res) => {
         $or: [
           { name: regex },
           { description: regex },
-          { disciplines: split },
-          { specialisations: split },
+          { disciplines: { $in: split } },
+          { specialisations: { $in: split } },
         ],
       });
+      courses = await q.populate('school', 'slug');
       break;
     }
     default:
       q = Course.find();
   }
   // TODO allow user to change limit
-  q.populate('school', 'slug').limit(limit).then((courses) => {
-    res.json(courses);
-  }).catch(() => {
-    res.json({
-      error: true,
-    });
-  });
+  res.json(courses.slice(0, limit));
+  // q.populate('school', 'slug').limit(limit).then((courses) => {
+    // res.json(courses);
+  // }).catch(() => {
+    // res.json({
+      // error: true,
+    // });
+  // });
 };

@@ -22,7 +22,7 @@ export default class Search extends Component {
         interestDisciplines: ['all areas'],
         interestCountries: ['all areas']
       },
-      categories: [''],
+      categories: [],
       search: '',
       areas: {
         'Digital Media': digMedia,
@@ -107,6 +107,11 @@ export default class Search extends Component {
   renderDiscipline() {
     const { discipline, areas } = this.state;
     const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
+    let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
+    console.log(interestDisciplines.length);
+    if (interestDisciplines.length === 0) {
+      interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
+    }
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
@@ -120,7 +125,7 @@ export default class Search extends Component {
         <div className='interest-disciplines'>
           <h3>Do these disciplines interest you?</h3>
           <Filter
-            filterItems={ ['all areas'].concat(_.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : v.slice(0, 2)) }))) }
+            filterItems={ ['all areas'].concat(interestDisciplines) }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
           />
