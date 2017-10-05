@@ -18,6 +18,18 @@ If using Facebook OAuth for users you will also need:
 * FBSECRET=` set to project secret id `
 * FBCALLBACK='http://localhost:7777/users/auth/facebook/callback'
 
+Clone the project locally
+`$ git clone git@github.com:switch-maven/mozaik.git`
+Install NPM dependencies
+`$ npm install`
+Run MongoDB locally with 
+`$ mongod`
+Add local seed data
+`$ node seeds/seed.js`
+
 ## Run development environment
 
-To start the development environment simply run ` 'npm start' `
+Run MongoDB locally with 
+`$ mongod`
+To start the development environment run 
+`$ npm run dev`
