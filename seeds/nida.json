@@ -1,0 +1,83 @@
+{
+  "school": {
+    "name": "NATIONAL INSTITUTE OF DRAMATIC ART (NIDA)",
+    "website": "https://www.nida.edu.au/",
+    "disciplines": [
+      "Performing Arts", "Film/TV/Audio", "Fine Arts", "Acting", "Directing", "Writing/Playwriting", "Design", "Costume", "Voice", "Staging", "Cultural Leadership"
+    ],
+    "overview": "Since 1958, NIDA has educated students in performance and production for theatre, film and television. NIDA is a powerhouse for the development of Australia’s creative and cultural sector, their sought-after alumni are working all over the world on stage, on screen, behind the scenes and leading major events and organisations.",
+    "prices": [
+      {
+      "type": "Domestice students",
+      "upper": 42834,
+      "lower": 12500
+      },
+      {
+      "type": "International students",
+      "upper": 93060,
+      "lower": 42682
+      }
+    ],
+    "scholarships": ["Bursaries that assist living cost: AUD 1,500 - 4,000 annually"],
+    "locationDescription": "NIDA’s main campus is located in Kensington, Sydney, Australia (10 minutes from the CBD)",
+    "locations": [
+      {
+        "address": "215 Anzac Parade, Kensington NSW 2033",
+        "coordinates": {
+          "lat": -33.9156698,
+          "lng": 151.22526019999998
+        },
+        "type":"Point",
+        "country": "Australia",
+        "campus": "Sydney"
+      }
+    ],
+    "facilitiesDescription": "NIDA is made up of a range of state-of-the-art rehearsal and performance venues including five theatres: Parade Theatre,  The Playhouse, Studio Theatre, the Space and the Atrium. The NIDA campus includes rehearsal rooms, multimedia and computer-aided design (CAD) studios, a sound stage, a lighting studio, production workshops, audio-visual facilities, and the Reg Grundy Studio film and television training and production facility.",
+    "facilitiesImages": [
+      "Atrium-banner-1_lwlgch", "BFA-Acting-course-842x324-3_xjaolt", "BFA-Costume-course-842x324-1_iqnjry", "BFA-Costume-course-842x324-2_ybg7cx", "BFA-Design-for-Performance-course-842x324-1_g997w9", "BFA-Design-for-Performance-course-842x324-2_m8ilhc", "BFA-Design-for-Performance-course-842x324-4_d8sktm", "BFA-Staging-course-842x324-3_ajdayq", "BFA-Staging-course-842x324-4_mh56p4", "BFA-Technical-Theatre-Stage-Management-course-842x324-2_kdubx6", "Costume_yhn3oj", "Diploma-Live-Production-course-842x324-3_w1ohqi", "Diploma-Musical-Theatre-course-842x324-2_aovp3s", "MFA-Design-for-performance-course-842x324-3_iyqbdh", "MFA-Directing-course-842x324-2_n65tnp", "MFA-Writing-for-performance-course-842x324-4_uentrb", "nancy-fairfax-1_vu8bvi", "NIDA_facade_dbrmib", "NIDA_facade2_nyu6zu", "NIDA_facade3_ncvosz", "NNF_qofqe9", "parade-studio-1_mpuswz", "Parade-Theatre-banner_zidacx", "playhouse1_2_ulo8fu", "playhouse3_2_zyeqli", "PT-Venue-Atrium7_zwdbjn", "PT-Venue-Parade-Theatre_2_fphoqy", "PT-Venue-Parade-Theatre2_2_o3euzq", "PTVenues-Atrium2_oxtwld", "PTVenues-Atrium7_zxtvsy", "Reception-Room-2_2_obkbma", "Rehearsal-room2_flyuo5", "Rob-Kelly-Space_2_phwzh5", "Studio-room3_ghc6jl", "Voice-6_wspb12"
+    ],
+    "delivery": [
+      "On Campus"
+    ],
+    "logo": "NIDA-logo_isnvfo",
+    "video": "",
+    "courseGuide": ""
+  },
+  "courses": [
+    {
+      "name": "",
+      "description": "",
+      "campus": [
+      ],
+      "length": "",
+      "intakes": "",
+      "prices": [
+        {
+          "type": "",
+          "fees": 
+        }
+      ],
+      "specialisations": [
+      ],
+      "disciplines": [
+      ],
+      "image": ""
+    }
+  ],
+  "artworks": [
+    {
+      "image": "",
+      "name": "",
+      "artist": ""
+    }
+  ],
+  "alumni": [
+    {
+      "photo": "",
+      "name": "",
+      "course": "",
+      "profession": "",
+      "credits": ""
+    }
+  ]
+}
