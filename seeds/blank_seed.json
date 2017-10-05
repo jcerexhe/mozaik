@@ -1,0 +1,73 @@
+{
+  "school": {
+    "name": "",
+    "website": "",
+    "disciplines": [
+    ],
+    "overview": "",
+    "prices": [{
+      "type": "",
+      "upper": ,
+      "lower": 
+    }],
+    "scholarships": [""],
+    "locationDescription": "",
+    "locations": [
+      {
+        "address": "",
+        "coordinates": {
+          "lat": ,
+          "lng": 
+        },
+        "type":"Point",
+        "country": "",
+        "campus": ""
+      }
+    ],
+    "facilitiesDescription": "",
+    "facilitiesImages": [
+    ],
+    "delivery": [
+    ],
+    "logo": "",
+    "video": "",
+    "courseGuide": ""
+  },
+  "courses": [
+    {
+      "name": "",
+      "description": "",
+      "campus": [
+      ],
+      "length": "",
+      "intakes": "",
+      "prices": [
+        {
+          "type": "",
+          "fees": 
+        }
+      ],
+      "specialisations": [
+      ],
+      "disciplines": [
+      ],
+      "image": ""
+    }
+  ],
+  "artworks": [
+    {
+      "image": "",
+      "name": "",
+      "artist": ""
+    }
+  ],
+  "alumni": [
+    {
+      "photo": "",
+      "name": "",
+      "course": "",
+      "profession": "",
+      "credits": ""
+    }
+  ]
+}
