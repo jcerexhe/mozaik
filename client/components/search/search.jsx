@@ -39,14 +39,17 @@ export default class Search extends Component {
   }
 
   componentWillMount() {
-    this.props.getResults(this.props.limit, { ...this.state });
+    this.props.getResults({ ...this.state, limit: this.props.limit });
+    // this.props.getResults(this.props.limit, this.state);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
     if (nextProps.limit > this.props.limit)
-      this.props.getResults(nextProps.limit, { ...this.state });
+      this.props.getResults({ ...this.state, limit: nextProps.limit });
+      // this.props.getResults(nextProps.limit, { ...this.state });
     if(_.eq(this.props, nextProps))
-      this.props.getResults(6, { ...nextState });
+      this.props.getResults({ ...nextState, limit: 6 });
+      // this.props.getResults(6, { ...nextState });
     if (_.eq(this.state, nextState))
       return true;
     return false;
@@ -117,7 +120,7 @@ export default class Search extends Component {
         <div className='interest-disciplines'>
           <h3>Do these disciplines interest you?</h3>
           <Filter
-            filterItems={ ['all areas'].concat(_.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }))) }
+            filterItems={ ['all areas'].concat(_.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : v.slice(0, 2)) }))) }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
           />
