@@ -20,10 +20,13 @@ If using Facebook OAuth for users you will also need:
 
 Clone the project locally
 `$ git clone git@github.com:switch-maven/mozaik.git`
+
 Install NPM dependencies
 `$ npm install`
+
 Run MongoDB locally with 
 `$ mongod`
+
 Add local seed data
 `$ node seeds/seed.js`
 
@@ -31,5 +34,6 @@ Add local seed data
 
 Run MongoDB locally with 
 `$ mongod`
+
 To start the development environment run 
 `$ npm run dev`
