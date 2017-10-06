@@ -12,7 +12,7 @@ const Filter = (props) => {
       { _.map(filterItems, (item, i) => {
         const active = activeItems.includes(item);
         return (
-          <li key={ i }>
+          <li key={ item }>
             <FilterButton val={ item } active={ active } onClick={ (val) => onClick(val) } />
           </li>
         );

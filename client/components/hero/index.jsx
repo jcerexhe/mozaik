@@ -44,7 +44,7 @@ export default class HeroApp extends Component {
         <Slick ref='slider' { ...settings }>
           { _.map(slides, (slide) => {
             return (
-              <div className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
+              <div key={ slide.heading } className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
                 <h1>{ slide.heading }</h1>
                 <p>{ slide.text }</p>
               </div>
@@ -55,7 +55,7 @@ export default class HeroApp extends Component {
           <ul className='slick-dots'>
             { _.map(slides, (slide, i) => {
               return (
-                <li className={ currentSlide == i ? 'slick-active' : '' }>
+                <li key={ Math.random() } className={ currentSlide == i ? 'slick-active' : '' }>
                   <div className='dot' onClick={ () => this.changeSlide(i) } />
                 </li>
               );

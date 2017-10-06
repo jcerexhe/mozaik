@@ -108,7 +108,6 @@ export default class Search extends Component {
     const { discipline, areas } = this.state;
     const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
     let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
-    console.log(interestDisciplines.length);
     if (interestDisciplines.length === 0) {
       interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
     }
@@ -156,7 +155,7 @@ export default class Search extends Component {
                   <ul className='search-links'>
                     { _.map(vals, (val) => {
                       return (
-                        <li key={ val }>
+                        <li key={ val+Math.random() }>
                           <SearchLink val={ val } active={ categories.includes(val) } onClick={ (val) => this.updateCategories(val) } />
                         </li>
                       );
