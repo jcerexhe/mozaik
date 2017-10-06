@@ -13,6 +13,8 @@ const Artwork = require('../models/artwork');
 const Alumni = require('../models/alumni');
 
 const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
+const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
+const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
 
 const _ait = new School(ait.school);
 const _aitAlumni = _.map(ait.alumni, (alum) => {
@@ -31,6 +33,40 @@ const _aitArtwork = _.map(ait.artworks, (artwork) => {
   return _artwork;
 });
 
+const _nida = new School(nida.school);
+const _nidaAlumni = _.map(nida.alumni, (alum) => {
+  let _alum = new Alumni(alum);
+  _alum.school = _nida._id;
+  return _alum;
+});
+const _nidaCourses = _.map(nida.courses, (course) => {
+  let _course = new Course(course);
+  _course.school = _nida._id;
+  return _course;
+});
+const _nidaArtwork = _.map(nida.artworks, (artwork) => {
+  let _artwork = new Artwork(artwork);
+  _artwork.school = _nida._id;
+  return _artwork;
+});
+
+const _aftrs = new School(aftrs.school);
+const _aftrsAlumni = _.map(aftrs.alumni, (alum) => {
+  let _alum = new Alumni(alum);
+  _alum.school = _aftrs._id;
+  return _alum;
+});
+const _aftrsCourses = _.map(aftrs.courses, (course) => {
+  let _course = new Course(course);
+  _course.school = _aftrs._id;
+  return _course;
+});
+const _aftrsArtwork = _.map(aftrs.artworks, (artwork) => {
+  let _artwork = new Artwork(artwork);
+  _artwork.school = _aftrs._id;
+  return _artwork;
+});
+
 async.series([
   function(callback) {
     console.log('deleting data');
@@ -44,7 +80,7 @@ async.series([
       })
     }, (err) => {
       if(err) console.log(err);
-      callback(null, 'SUCESS - FINISHED DELETING DATA');
+      callback(null, 'SUCCESS - FINISHED DELETING DATA');
     });
   },
   function(callback) {
@@ -60,6 +96,36 @@ async.series([
     }, (err) => {
       if(err) console.log(err);
       callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
+    });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving nida course');
+    async.eachSeries([_nida].concat(_nidaAlumni).concat(_nidaCourses).concat(_nidaArtwork), (nidaItem, nidaItemSavedCb) => {
+      nidaItem.save().then(() => {
+        nidaItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        nidaItemSavedCb();
+      });
+    }, (err) => {
+      if(err) console.log(err);
+      callback(null, 'SUCCESS - FINISHED SEEDING NIDA DATA');
+    });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving aftrs course');
+    async.eachSeries([_aftrs].concat(_aftrsAlumni).concat(_aftrsCourses).concat(_aftrsArtwork), (aftrsItem, aftrsItemSavedCb) => {
+      aftrsItem.save().then(() => {
+        aftrsItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        aftrsItemSavedCb();
+      });
+    }, (err) => {
+      if(err) console.log(err);
+      callback(null, 'SUCCESS - FINISHED SEEDING AFTRS DATA');
     });
   },
 ], function(err, results) {
