@@ -1,0 +1,1469 @@
+{
+  "school": {
+    "name": "Australian Film Television and Radio School (AFTRS)",
+    "website": "http://www.aftrs.edu.au/",
+    "disciplines": [
+      "Film/TV",
+      "Radio",
+      "Animation & Visual Effects",
+      "Cinematography",
+      "Directing",
+      "Editing",
+      "Producing",
+      "Screen Business",
+      "Screen Design",
+      "Screen Music",
+      "Screenwriting",
+      "Sound"
+    ],
+    "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. Their purpose is to empower Australian talent to shape and share their stories with the world by delivering future-focused, industry-relevant education and research. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
+    "prices": [{
+      "type": "Domestic students",
+      "upper": 49440,
+      "lower": 3900
+    }],
+    "scholarships": [
+      "Virgin Australia Scholarship (outside NSW) : AUD 20,000",
+      "ABC Selwyn Speight Scholarship (Radio): AUD 14,500 ",
+      "SBS Bilingual Radio Scholarship: Full tuition cost",
+      "Equity Scholarships: AUD 5,000 - AUD 12,500",
+      "Foxtel Diversity Screenwriting Scholarship: AUD 20,000",
+      "Indigenous Scholarships: $500 - $25,000"
+    ],
+    "locationDescription": "AFTRS is located in Sydney.",
+    "locations": [
+      {
+        "address": "The Entertainment Quarter, Building, 130 Bent St, Moore Park NSW 2021",
+        "coordinates": {
+          "lat": -33.894571,
+          "lng": 151.228433
+        },
+        "type":"Point",
+        "country": "Australia",
+        "campus": "Sydney"
+      }
+    ],
+    "facilitiesDescription": "AFTRS has state-of-the art production facilities, located in the Entertainment Quarter, Moore Park (next to Fox Studios Australia).",
+    "facilitiesImages": [
+      "AFTRS/facilities/Inside_AFTRS",
+      "AFTRS/facilities/Front_signage0",
+      "AFTRS/facilities/AFTRS_Sound",
+      "AFTRS/facilities/Front_signage2",
+      "AFTRS/facilities/AFTRS_studio_2",
+      "AFTRS/facilities/library-aftrs",
+      "AFTRS/facilities/AFTRS_Campus_Props",
+      "AFTRS/facilities/AFTRS_screens",
+      "AFTRS/facilities/AFTRS_Studio",
+      "AFTRS/facilities/AFTRS_front_building",
+      "AFTRS/facilities/AFTRS_Campus_Theatre"
+    ],
+    "delivery": [
+      "On Campus",
+      "Online"
+    ],
+    "logo": "AFTRS/AFTRS_logos",
+    "video": "",
+    "courseGuide": ""
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Arts: Production",
+      "description": "The course is designed for people with a passion for storytelling and a commitment to a career in the screen industries. We’re eager to work with students from a diverse range of backgrounds who are imaginative, collaborative and keen to develop their voice as Australian screen storytellers.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 39888
+        }
+      ],
+      "specialisations": [
+        "Story",
+        "Image",
+        "Sound",
+        "Character & Performance",
+        "Rhythm & Juxtaposition",
+        "Screen Business"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Radio",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Directing",
+        "Editing",
+        "Filmmaking",
+        "Post Production",
+        "Producing",
+        "Production Design",
+        "Screen Media",
+        "Screen Performance",
+        "Screenwriting",
+        "Sound Design",
+        "SFX",
+        "VFX",
+        "Documentary",
+        "Camera Operator",
+        "Set Designer",
+        "Script Editor",
+        "DOP",
+        "Broadcasting",
+        "Cinematic Storytelling",
+        "Character Performance",
+        "Multimedia",
+        "Transmedia",
+        "Screen Business"
+      ],
+      "image": "AFTRS/courses/B_Arts_Screen_Prod"
+    },
+    {
+      "name": "Master of Arts Screen",
+      "description": "This two year full time course is a hands-on transformative learning experience designed to enable the future creative leaders into head of department positions. The course, available in 10 disciplines, offers shared subjects, deep discipline learning and cross-disciplinary projects.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Animation",
+        "Cinematography",
+        "Directing",
+        "Documentary",
+        "Editing",
+        "Producing",
+        "Production Design",
+        "Music",
+        "Screenwriting",
+        "Sound"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Radio",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Directing",
+        "Editing",
+        "Filmmaking",
+        "Post Production",
+        "Producing",
+        "Production Design",
+        "Screen Media",
+        "Screen Performance",
+        "Screenwriting",
+        "Sound Design",
+        "Music",
+        "SFX",
+        "VFX",
+        "Documentary",
+        "Camera Operator",
+        "Set Designer",
+        "Script Editor",
+        "DOP",
+        "Broadcasting",
+        "Storytelling",
+        "Character Performance",
+        "Multimedia",
+        "Transmedia",
+        "3D Design",
+        "AR/VR",
+        "Computer Graphics",
+        "Digital Media",
+        "Music Composition",
+        "Production",
+        "Costume Design"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Producing"
+    },
+    {
+      "name": "Master of Arts Screen: Animation",
+      "description": "AFTRS offers a unique individualised industry based training program where animation students are able to focus on high-end digital storytelling skills whilst working in partnership with producers, screenwriters, cinematographers, production designers, editors, sound designers and musicians to create world-class graduate films.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "VFX",
+        "3D Animation"
+      ],
+      "disciplines": [
+        "Film",
+        "Animation",
+        "2D Animation",
+        "3D Animation",
+        "Screen Production",
+        "VFX",
+        "Cinematic Storytelling",
+        "Multimedia",
+        "Transmedia",
+        "Computer Graphics",
+        "Digital Media"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Animation"
+    },
+    {
+      "name": "Advanced Diploma in 3D - Animation and VFX",
+      "description": "This course demystifies the digital VFX process by introducing you to 3D animation principles. and techniques. You will be using industry tools Maya (3D animation), Nuke and After Effects (compositing).",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Art of VFX",
+        "Compositing",
+        "Computer Graphics",
+        "2D Matte Painting"
+      ],
+      "disciplines": [
+        "Film",
+        "Animation",
+        "2D Animation",
+        "3D Animation",
+        "Screen Production",
+        "VFX",
+        "Cinematic Storytelling",
+        "Multimedia",
+        "Transmedia",
+        "Computer Graphics",
+        "Digital Media",
+        "Matte Painting",
+        "Compositing"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_VFX"
+    },
+    {
+      "name": "Master of Arts Screen: Cinematography",
+      "description": "Cinematographers are at the centre of visual storytelling for the screen. It is their close collaboration with the director and designer that brings a story alive. In this course you will undertake deep craft learning through small group mentoring, seminars and collaborative practice.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Visual Expression"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Camera Operator",
+        "Director of Photography",
+        "DOP",
+        "Visual Storytelling",
+        "Cinematic Storytelling",
+        "Visual Expression",
+        "Photography",
+        "Documentary Photography",
+        "Moving Image",
+        "Gaffer",
+        "Grip",
+        "Steadicam Operator"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Cinematography"
+    },
+    {
+      "name": "Diploma in Camera",
+      "description": "Learn the craft of cinematography. Develop your ability to confidently capture quality picture and sound across a range of shooting requirements. In this course, you will develop the skillset to become an adaptive storyteller; one who can create stories for different formats, genres and contexts.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Framing",
+        "Lighting"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Cinematography",
+        "Camera Operator",
+        "Director of Photography",
+        "DOP",
+        "Visual Storytelling",
+        "Cinematic Storytelling",
+        "Visual Expression",
+        "Photography",
+        "Documentary Photography",
+        "Moving Image",
+        "Camera Assistant",
+        "Clapper",
+        "Framing",
+        "Lighting",
+        "Gaffer",
+        "Grip",
+        "Steadicam Operator"
+      ],
+      "image": "AFTRS/courses/Dipl_in_Camera"
+    },
+    {
+      "name": "Diploma in Colour Grading",
+      "description": "Gain the skills to interpret and apply colour grading requirements to achieve an intended cinematic look. Through this course, you will develop the fundamental skill set of a colourist to manipulate colour and contrast to bring about desired effects on story and narrative.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Grading Principles",
+        "Grading Practice",
+        "Creative Grading"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Cinematography",
+        "Camera Operator",
+        "Director of Photography",
+        "DOP",
+        "Visual Storytelling",
+        "Visual Expression",
+        "Photography",
+        "Colour Grading"
+      ],
+      "image": "AFTRS/courses/Dipl_in_Colour_Grading"
+    },
+    {
+      "name": "Graduate Certificate Screen: Cinematography",
+      "description": "This course will enhance your creative and technical skills in a practice-based learning environment. You will explore the visual storytelling principles of cinematography and apply this learning across different story forms, including drama and documentary.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Cinematography Practice",
+        "Visual Expression"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Cinematography",
+        "Camera Operator",
+        "Director of Photography",
+        "DOP",
+        "Visual Storytelling",
+        "Cinematic Storytelling",
+        "Visual Expression",
+        "Photography",
+        "Documentary Photography",
+        "Moving Image",
+        "Gaffer",
+        "Grip",
+        "Steadicam Operator"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Cinematography"
+    },
+    {
+      "name": "Master of Arts Screen: Directing",
+      "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The iam of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Directorial Vision",
+        "Research and Development",
+        "Screen Language"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Animation",
+        "Screen Production",
+        "Directing",
+        "Filmmaking",
+        "Cinematography",
+        "Screen Performance",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Character Performance",
+        "Screen Language",
+        "2nd AD",
+        "3rd AD"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Directing"
+    },
+    {
+      "name": "Graduate Certificate Screen: Directing",
+      "description": "This course will enhance your creative and technical skills in a practice-based learning environment. You will gain insight into three key facets of directing - storytelling structures, cinematic principles and performance. And you will explore how these are used to engage audiences effectively.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Storytelling Structures",
+        "Cinematic Principles",
+        "Performance"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Animation",
+        "Screen Production",
+        "Directing",
+        "Filmmaking",
+        "Screen Performance",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Character Performance",
+        "Screen Language",
+        "2nd AD",
+        "3rd AD"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Directing"
+    },
+    {
+      "name": "Master of Arts Screen: Documentary",
+      "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. Your will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Directorial Vision"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Directing",
+        "Filmmaking",
+        "Documentary",
+        "Screen Language"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Documentary"
+    },
+    {
+      "name": "Graduate Certificate Screen: Documentary",
+      "description": "Empower yourself to develop and express your ideas as a documentary maker. From the commencement of this course, you will devise a multi platform strategy for a major project, ultimately pitching your idea to a real world industry panel.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Documentary",
+        "Collaborative Practice"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Directing",
+        "Filmmaking",
+        "Documentary",
+        "Screen Language"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Documentary"
+    },
+    {
+      "name": "Master of Arts Screen: Editing",
+      "description": "This course provides you with the opportunity to learn by deep immersion in the craft of editing. Participating in an intensive cycle of creative tasks, you will build on your storytelling intuition, develop the technical know-how to realise your interpretation of a film, TV show or documentary and begin the journey to becoming an applied artist.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Continuity",
+        "Coverage",
+        "Temp Music and Sound"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Editing",
+        "Filmmaking",
+        "Post Production",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Continuity",
+        "Coverage",
+        "Sound Editing"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Editing"
+    },
+    {
+      "name": "Diploma in Editing: Avid",
+      "description": "Develop the creative and technical editing skills to confidently and efficiently use the industry standard, non-linear editing software, Avid Media Composer. You will gain a clear understanding of editing principles and how picture and sound editing contribute to cinematic storytelling.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Sound Editing",
+        "Avid Composer"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Editing",
+        "Filmmaking",
+        "Post Production",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Continuity",
+        "Coverage",
+        "Sound Editing"
+      ],
+      "image": "AFTRS/courses/Dipl_Editing-Avid"
+    },
+    {
+      "name": "Advanced Diploma in Editing: Reality Television",
+      "description": "You will deepen your understanding of editing principles, and build the skill and knowledge required to edit in this format. Plus, you will practice the skill of applying storytelling principles to edit unscripted, on screen events.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Factual Form Storytelling",
+        "Technical Editing"
+      ],
+      "disciplines": [
+        "TV",
+        "Editing",
+        "Post Production",
+        "Documentary",
+        "Coverage",
+        "Sound Editing",
+        "Factual Form"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_Editing-_Reality_TV"
+    },
+    {
+      "name": "Graduate Certificate Screen: Editing",
+      "description": "In a practice-based learning environment, you will develop a grasp of the filmmaking process, a command of the craft and the conceptual vocabulary necessary to communicate an editor’s vision.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Non-linear Editing",
+        "Collaborative Practice"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Editing",
+        "Filmmaking",
+        "Post Production",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Continuity",
+        "Coverage",
+        "Sound Editing"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Editing"
+    },
+    {
+      "name": "Master of Arts Screen: Producing",
+      "description": "Producing is about stories and the innovative and challenging ways in which they can be brought to the screen. In this intensive course, encompassing theoretical, practical, and strategic considerations in creative producing, you will hone your skills and sharpen your instincts in the development, financing, production and marketing of story ideas.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Story Development",
+        "Leadership and Strategy",
+        "Entrepreneurship"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Filmmaking",
+        "Producing",
+        "Screen Media",
+        "Cinematic Storytelling",
+        "Production",
+        "Screen Business",
+        "Creative Leadership",
+        "Finance for Creatives",
+        "Distribution",
+        "Executive Producer",
+        "Associate Producer",
+        "Creative Producer",
+        "Production Management",
+        "Media Production",
+        "Audience Engagement",
+        "Screen Management"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Producing"
+    },
+    {
+      "name": "Graduate Certificate Screen: Creative Producing",
+      "description": "Discover your storytelling voice as a creative producer and deepen your professional knowledge, skills and practices to produce narrative drama for film, television and multiplatform delivery.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Story Structure",
+        "Intellectual Property",
+        "Finance Plans",
+        "Marketing and Audience"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Filmmaking",
+        "Producing",
+        "Screen Media",
+        "Cinematic Storytelling",
+        "Production",
+        "Screen Business",
+        "Creative Leadership",
+        "Finance for Creatives",
+        "Distribution",
+        "Executive Producer",
+        "Associate Producer",
+        "Creative Producer",
+        "Marketing and Audience"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Creative_Producing"
+    },
+    {
+      "name": "Master of Arts Screen: Production Design",
+      "description": "This course offers you the opportunity to collaborate as a creative storyteller with your colleague practitioners.  You will be a member of a creative team and pursue your own artistic identity and explore new platforms and technologies involving production design concepts.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Digital Visualisation"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Production Design",
+        "Set Designer",
+        "Cinematic Storytelling",
+        "Costume Design",
+        "Digital Visualisation",
+        "Concept Artist",
+        "Art Director",
+        "Make up Artist",
+        "Set Decorator",
+        "Media Arts"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Production_Design"
+    },
+    {
+      "name": "Diploma in Screen Design",
+      "description": "In this course you will identify key creative challenges in a script and develop design solutions, learning how to communicate visual concepts and ideas in a practical, collaborative context. Plus, you will be given the opportunity to explore basic visual effects.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Design Principles",
+        "Design Skills",
+        "Design Practices"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Production Design",
+        "Set Designer",
+        "Cinematic Storytelling",
+        "Costume Design",
+        "Digital Visualisation",
+        "Concept Artist",
+        "Art Director",
+        "Make up Artist",
+        "Set Decorator",
+        "Media Arts"
+      ],
+      "image": "AFTRS/courses/Dipl_Screen_Design"
+    },
+    {
+      "name": "Master of Arts Screen: Screenwriting",
+      "description": "Do you aspire to be part of the next wave of Australian screenwriters? Are you seeking to emerge as an authentic and versatile storyteller who is able to have a distinctive a voice in the rapidly evolving media landscape? In this course you will explore screenwriting through practice-based learning across a variety of screen platforms.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Screen Culture"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Playwriting",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Screenwriting"
+    },
+    {
+      "name": "Advanced Diploma in Screenwriting: Feature Film",
+      "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-length drama.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Understanding Story",
+        "Crafting Story",
+        "Visual Language"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_SW-_Feature_Film"
+    },
+    {
+      "name": "Advanced Diploma in Screenwriting: Series Television",
+      "description": "Working in a simulated writer’s room, you will consolidate your understanding of genre conventions and collaborative writing skills while you hone your practice through continuous practice, reviewing and refining. All this while strengthening your television series concept.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Creative Writing",
+        "Genre, Format and Development"
+      ],
+      "disciplines": [
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Screen Culture",
+        "Crafting Story",
+        "Creative Writing"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_SW-_TV_Series"
+    },
+    {
+      "name": "Advanced Diploma in Script Editing and Development",
+      "description": "Through practice, you will hone your analytical, communication and collaborative skills and you will learn to mediate between the creative intentions of the writer and the requirements of a production and its stakeholders.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Screenwriting Principles",
+        "Script Development",
+        "Script Editing"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_Script_Editing___Dvlp"
+    },
+    {
+      "name": "Graduate Certificate Screen: Screenwriting",
+      "description": "Be inspired to create engaging stories for film and TV and develop the creative talent and analytical skills required by professional screenwriters and writer/directors.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Storytelling Principles", 
+        "Incubator",
+        "Collaborative Practice"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Screenwriting"
+    },
+    {
+      "name": "Master of Arts Screen: Music",
+      "description": "In this course, you will be given the opportunity to examine how to apply varied styles of music to screen narratives. You will discover how music works with images, plot, editing, dialogue and other onscreen and soundtrack elements to create meaning and affect the audience.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Screen Culture"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Music",
+        "Music Composition",
+        "Screen Culture",
+        "Music Production",
+        "Music Video",
+        "Digital Audio",
+        "Electronic Sound",
+        "Screen Music",
+        "Music Performance",
+        "Creative Music Technology",
+        "Musicology",
+        "Composition and Music Technology",
+        "Music Technologies"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Music"
+    },
+    {
+      "name": "Graduate Certificate Screen: Music",
+      "description": "Discover your voice as a storyteller by applying your composition skills towards scoring music for the screen. Deepen your professional knowledge, skills and practices in screen music.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12360
+        }
+      ],
+      "specialisations": [
+        "Screen Music Practice",
+        "Composition Workshop",
+        "Music Technologies"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Music",
+        "Music Composition",
+        "Screen Culture",
+        "Music Production",
+        "Music Video",
+        "Digital Audio",
+        "Electronic Sound",
+        "Screen Music",
+        "Music Performance",
+        "Creative Music Technology",
+        "Musicology",
+        "Composition and Music Technology",
+        "Music Technologies"
+      ],
+      "image": "AFTRS/courses/Grad_Cert_Screen-_Music"
+    },
+    {
+      "name": "Master of Arts Screen: Sound",
+      "description": "In this course, you will explore sound as a medium. You will investigate the ways in which sound can be produced, edited and manipulated with the image to engage and inform, as well as to communicate with and create an emotional response in an audience.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Sound Production and Design"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Sound",
+        "Sound Design",
+        "Audio Recordist",
+        "Boom Operator",
+        "Recording Mixer",
+        "Audio",
+        "Audio Engineering",
+        "Audio Production",
+        "Sound Technologies",
+        "Sound Production",
+        "Digital Audio",
+        "Electronic Sound"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Sound"
+    },
+    {
+      "name": "Advanced Diploma in Production Sound",
+      "description": "Take your passion for production sound to the next level by gaining a strong set of craft skills in order to enter the film, television or media industry as a sound recordist and mixer, boom operator, sound assistant, or content creator.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Production Sound Principles",
+        "Production Sound Skills",
+        "Internship"
+      ],
+      "disciplines": [
+        "Film",
+        "TV",
+        "Screen Production",
+        "Sound",
+        "Sound Design",
+        "Audio Recordist",
+        "Boom Operator",
+        "Recording Mixer",
+        "Audio",
+        "Audio Engineering",
+        "Audio Production",
+        "Sound Technologies",
+        "Sound Production",
+        "Digital Audio",
+        "Electronic Sound"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_Prod_Sound"
+    },
+    {
+      "name": "Diploma in Digital Content: Radio",
+      "description": "This course gives you both technical and creative skills to produce content to connect with a variety of audiences. Manage digital content and integrate with on-air. Learn from great digital content strategists.",
+      "campus": [
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Editorial and Digital Journalism",
+        "Audio and Visual Content",
+        "Project Management"
+      ],
+      "disciplines": [
+        "Radio",
+        "Broadcasting",
+        "Digital Journalism",
+        "Radio Operator",
+        "Radio Producer",
+        "Recording Mixer",
+        "Audio",
+        "Audio Production"
+      ],
+      "image": "AFTRS/courses/Dipl_Digital_Content-_Radio"
+    },
+    {
+      "name": "Advanced Diploma in Radio Essentials",
+      "description": "In this course you will develop your ability to create and deliver content for radio and other digital platforms. This course covers operating the studio, creating a station sound, recording and editing audio, announcing and presentation and digital content for online and social media.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Studio Operation and Panelling",
+        "Audio Production",
+        "Announcing and Presentation"
+      ],
+      "disciplines": [
+        "Radio",
+        "Broadcasting",
+        "Digital Journalism",
+        "Radio Operator",
+        "Radio Producer",
+        "Recording Mixer",
+        "Audio",
+        "Audio Production",
+        "Studio Operation",
+        "Panelling"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_Radio_Essentials"
+    },
+    {
+      "name": "Graduate Diploma in Radio",
+      "description": "The course is designed specifically to meet the needs of the Australian radio industry and is firmly based in practical craft development. Course is structured around research and analysis of broadcast, online and multiplatform theory and current practices and trends in radio and multiplatform broadcasting.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "1 year",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 24720
+        }
+      ],
+      "specialisations": [
+        "Advanced Concepts of Radio",
+        "Reach and Relevance",
+        "Innovative Business of Radio"
+      ],
+      "disciplines": [
+        "Radio",
+        "Broadcasting",
+        "Digital Journalism",
+        "Radio Operator",
+        "Radio Producer",
+        "Recording Mixer",
+        "Audio",
+        "Audio Production",
+        "Studio Operation",
+        "Panelling"
+      ],
+      "image": "AFTRS/courses/Grad_Dipl_in_Radio"
+    },
+    {
+      "name": "Master of Arts Screen: Business & Leadership",
+      "description": "This course is a transformational program that provides students with the skills and knowledge to succeed and thrive as leaders in today’s fast-moving screen business environment.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "2 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 49440
+        }
+      ],
+      "specialisations": [
+        "Creative Leadership",
+        "Strategy and Finance",
+        "Entrepreneurship",
+        "Brand Management"
+      ],
+      "disciplines": [
+        "Screen Production",
+        "Producing",
+        "Screen Media",
+        "Cinematic Storytelling",
+        "Screen Business",
+        "Creative Leadership",
+        "Strategy and Finance",
+        "Entrepreneurship",
+        "Brand Management",
+        "Freelancing",
+        "Finance for Creative",
+        "dustries",
+        "Marketing for Entertainment Business",
+        "Fashion Business",
+        "Branded Management",
+        "Stage Management",
+        "Arts Management",
+        "Visual Merchandising",
+        "Design Thinking",
+        "Event Management",
+        "Strategic Planning",
+        "Business",
+        "Screen Management",
+        "Media Production",
+        "Audience Engagement",
+        "Social Media",
+        "Production Management"
+      ],
+      "image": "AFTRS/courses/Mast_Arts_Screen-_Bus_and_Leadership"
+    },
+    {
+      "name": "Diploma in Screen Business Management",
+      "description": "Build your skill set in a broad range of business fundamentals so that you can offer effective business solutions for production companies, screen content practitioners and independent producers.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Building a Business",
+        "Finance",
+        "Strategic Planning"
+      ],
+      "disciplines": [
+        "Screen Production",
+        "Producing",
+        "Screen Media",
+        "Screen Business",
+        "Creative Leadership",
+        "Strategy and Finance",
+        "Entrepreneurship",
+        "Brand Management",
+        "Freelancing",
+        "Finance for Creative",
+        "Industries",
+        "Marketing for Entertainment Business",
+        "Fashion Business",
+        "Branded Management",
+        "Stage Management",
+        "Arts Management",
+        "Visual Merchandising",
+        "Design Thinking",
+        "Event Management",
+        "Strategic Planning",
+        "Business",
+        "Screen Management",
+        "Media Production",
+        "Audience Engagement",
+        "Social Media",
+        "Production Management"
+      ],
+      "image": "AFTRS/courses/Dipl_Screen_Bus_Mgmt"
+    },
+    {
+      "name": "Diploma in Production Accounting",
+      "description": "In this course you will develop an understanding of the financial requirements and reconciliation of each stage of production. You will develop skills in payroll, accounts payable, petty cash, cost reporting and funding reporting as it relates to screen production.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Pre-Production Accounting",
+        "Production Accounting",
+        "Post-Production Accounting"
+      ],
+      "disciplines": [
+        "Production Accounting",
+        "Producing",
+        "Screen Business",
+        "Strategy and Finance",
+        "Entrepreneurship",
+        "Freelancing",
+        "Finance for Creative",
+        "Industries",
+        "Business",
+        "Screen Management",
+        "Production Management"
+      ],
+      "image": "AFTRS/courses/Dipl_Prod_Acct"
+    },
+    {
+      "name": "Diploma in Social Media: Content Creation & Distribution",
+      "description": "Hone your media production skills while you develop strategic planning methods to write, shoot, edit and deliver video content for distribution on social media platforms. Develop the knowhow to produce audience-focused and consistent content that supports a larger social media strategy.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "6 months (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 3900
+        }
+      ],
+      "specialisations": [
+        "Media Production",
+        "Strategic Audience Engagement",
+        "Social Video Business"
+      ],
+      "disciplines": [
+        "Screen Business",
+        "Distribution",
+        "Brand Management",
+        "Marketing for Entertainment Business",
+        "Branded Management",
+        "Visual Merchandising",
+        "Business",
+        "Media Production",
+        "Audience Engagement",
+        "Social Media",
+        "Production Management"
+      ],
+      "image": "AFTRS/courses/Dipl_Social_Media"
+    },
+    {
+      "name": "Advanced Diploma in Production Management",
+      "description": "Enhance your logistical, financial and management skills through this comprehensive course designed to provide you with the knowhow to fast-track your career progression to a production management position.",
+      "campus": [
+        "Sydney",
+        "Online"
+      ],
+      "length": "1 year (part-time)",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 7800
+        }
+      ],
+      "specialisations": [
+        "Production Management",
+        "The Evolving Production Landscape"
+      ],
+      "disciplines": [
+        "Screen Business",
+        "Distribution",
+        "Brand Management",
+        "Media Production",
+        "Production Management"
+      ],
+      "image": "AFTRS/courses/Adv_Dipl_Prod_Mgmt"
+    }
+  ],
+  "artworks": [
+    {
+      "image": "",
+      "name": "",
+      "artist": "",
+      "disciplines": [
+      ]
+    }
+  ],
+  "alumni": [
+    {
+      "photo": "",
+      "name": "",
+      "course": "",
+      "profession": "",
+      "credits": ""
+    }
+  ]
+}

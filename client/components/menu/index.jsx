@@ -49,7 +49,7 @@ export default class MenuApp extends Component {
       <div>
         <div className='navbar'>
           <div className='discover'>
-            <a href='#'>discover</a>
+            <a href='/discover'>discover</a>
           </div>
           <div className='logo'>
             <a href='/'>mozaik</a>
