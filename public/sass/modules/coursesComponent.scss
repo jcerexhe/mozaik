@@ -59,9 +59,10 @@
 }
 .course-card-right > .course-info {
   border: 2px solid $dark-grey;
-  width: calc(98% - 4px);
+  width: calc(98% - 9px);
   padding-left: 12%;
   margin-left: -10%;
+  padding-right: 5px;
   font-family: 'Montserrat Ultra Light';
   font-size: 12px;
   flex: 1;

@@ -1131,9 +1131,10 @@ input[type=text]::placeholder {
 
 .course-card-right > .course-info {
   border: 2px solid #E4E9EC;
-  width: calc(98% - 4px);
+  width: calc(98% - 9px);
   padding-left: 12%;
   margin-left: -10%;
+  padding-right: 5px;
   font-family: 'Montserrat Ultra Light';
   font-size: 12px;
   -ms-flex: 1;

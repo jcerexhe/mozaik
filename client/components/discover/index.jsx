@@ -56,7 +56,6 @@ export default class DiscoverApp extends Component {
   }
 
   updateSearchParam(key, val) {
-    console.log(val);
     this.setState({
       [key]: val
     })

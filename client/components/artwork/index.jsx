@@ -70,7 +70,6 @@ export default class ArtworkApp extends Component {
 
   renderLightbox() {
     const { images, isOpen, currentImage, styles, currentTitle, currentArtist } = this.state;
-    console.log(currentTitle, currentArtist);
     return (
       <Lightbox
         images={ images }
