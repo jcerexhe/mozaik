@@ -45,23 +45,606 @@
   },
   "courses": [
     {
-      "name": "",
-      "description": "",
-      "campus": [
-      ],
-      "length": "",
-      "intakes": "",
+      "name": "Bachelor of Fine Arts (Acting)",
+      "description": "This course equips students with the specific knowledge and skills to pursue careers as actors across the breadth of today’s arts and entertainment industries – in main stage and smaller independent theatre companies, radio, film, television and commercial arenas. Through practice-based learning, students develop technical skills in the disciplines of voice, movement, music and acting.",
+      "campus": ["Sydney"],
+      "length": "3 years",
+      "intakes": "February",
       "prices": [
         {
-          "type": "",
-          "fees": 
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
         }
       ],
       "specialisations": [
+        "Applied Theatre",
+        "Classical Theatre for the Contemporary Stage",
+        "Music Theatre",
+        "Physical Theatre"
       ],
       "disciplines": [
+        "Performing Arts",
+        "Film",
+        "TV",
+        "Radio",
+        "Fine Arts",
+        "Acting",
+        "Drama",
+        "Music Theatre",
+        "Classical Theatre",
+        "Voice",
+        "Charater Performance"
       ],
-      "image": ""
+      "image": "Bach_Acting_xp6owh"
+    },
+    {
+      "name": "Bachelor of Fine Arts (Costume)",
+      "description": "The Bachelor of Fine Arts (Costume) is an immersive, practice-based course offering education in costume construction, research and management.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
+        }
+      ],
+      "specialisations": [
+        "Costume Construction",
+        "Tailoring",
+        "Period Cutting",
+        "Costume Management",
+        "Millinery",
+        "Leatherwork"
+      ],
+      "disciplines": [
+        "Performing Arts",
+        "Film",
+        "TV",
+        "Theatre",
+        "Opera",
+        "Fine Arts",
+        "Costume Construction",
+        "Costume Management",
+        "Millinery",
+        "Leatherwork",
+        "Design",
+        "Costume Design",
+        "Textiles",
+        "Textile Technology",
+        "Theatre Costume",
+        "Patternmaking",
+        "Production Design"
+      ],
+      "image": "Bach_Costume_r01dds"
+    },
+    {
+      "name": "Bachelor of Fine Arts (Design for Performance)",
+      "description": "The course develops students in a comprehensive range of skills and knowledge through research and practical exercises in model-making, rendering, digital visualisation and fabrication, manual and computer-aided drafting and life drawing, as well as screen design, storyboarding, pre-visualisation and art direction for film and television.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
+        }
+      ],
+      "specialisations": [
+        "Sets",
+        "Props",
+        "Costumes",
+        "Lighting"
+      ],
+      "disciplines": [
+        "Digital Media",
+        "Film",
+        "TV",
+        "Theatre",
+        "Screen Design",
+        "Storyboarding",
+        "Pre-Visualisation",
+        "Art Direction",
+        "Model Making",
+        "Rendering",
+        "Digital Visualisation",
+        "Computer Aided Drawing (CAD)",
+        "Props",
+        "Costumes",
+        "Lighting"
+      ],
+      "image": "BFA-Design-for-Performance_ggx4eq"
+    },
+    {
+      "name": "Bachelor of Fine Arts (Properties and Objects)",
+      "description": "This course equips students for careers as artists and makers of properties, models and bespoke objects, as well as roles managing these fields in the arts and entertainment industries, including theatre, opera, dance, film, television, exhibitions and events.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
+        }
+      ],
+      "specialisations": [
+        "Metalwork",
+        "Sculpture",
+        "Woodwork",
+        "Scenic Art",
+        "Modelling",
+        "Jewellery",
+        "Puppetry",
+        "Graphics SW"
+      ],
+      "disciplines": [
+        "Fine Arts",
+        "Film",
+        "TV",
+        "Built Environment",
+        "Drawing",
+        "Metalwork",
+        "Woodwork",
+        "Leatherwork",
+        "Sculpture",
+        "Mould Making and Casting",
+        "Patternmaking",
+        "Scenic Art",
+        "Technical Drawing",
+        "Set Dressing",
+        "Model Making",
+        "Costume",
+        "Jewellery",
+        "Architectural Models",
+        "Puppetry",
+        "Computer-aided Design",
+        "3D Modelling",
+        "Opera",
+        "Events"
+      ],
+      "image": "BFA-Propsoerties_and_Objects_gozucj"
+    },
+    {
+      "name": "Bachelor of Fine Arts (Staging)",
+      "description": "The only set construction and supervision course of its kind offered in Australia, this internationally recognised course equips students to pursue careers as technical designers and managers, construction managers, set builders, staging technicians and mechanists in the arts and entertainment industries, including for theatre, opera, dance, film, television, music festivals and other live events.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
+        }
+      ],
+      "specialisations": [
+        "Stage Engineering",
+        "Stage Rigging and Automation",
+        "Risk and Project Management"
+      ],
+      "disciplines": [
+        "Built Environment",
+        "Theatre",
+        "Film",
+        "TV",
+        "Opera",
+        "Concerts",
+        "Music Festivals",
+        "Live Events",
+        "Set Builders",
+        "Set Construction",
+        "Technical Designers",
+        "Construction Managers",
+        "Stage Technicians",
+        "Mechanists",
+        "Stage Engineering",
+        "Stage Rigging and Automation",
+        "Risk and Project Management",
+        "Construction Technology",
+        "CAD",
+        "Interior Design",
+        "Interior Decoration",
+        "Interior Architecture",
+        "Spatial Design",
+        "Styling",
+        "Digital Architecture"
+      ],
+      "image": "BFA-Staging_s5uedt"
+    },
+    {
+      "name": "Bachelor of Fine Arts (Technical Theatre and Stage Management)",
+      "description": "The course focuses on innovative and effective ways to manage and integrate technical fields within live performance and event environments.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "3 years",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 42834
+        },
+        {
+          "type": "International students",
+          "fees": 93060
+        }
+      ],
+      "specialisations": [
+        "Stage Management",
+        "Lighting",
+        "Audio",
+        "Technical Drawing",
+        "Video for Live Performance",
+        "Event Management"
+      ],
+      "disciplines": [
+        "Built Environment",
+        "Theatre",
+        "Film",
+        "TV",
+        "Music Festivals",
+        "Live Events",
+        "Set Builders",
+        "Stage Technicians",
+        "Event Management",
+        "Lighting",
+        "Vieo for Live Performance",
+        "Live Production",
+        "Concerts",
+        "Events"
+      ],
+      "image": "BFA-Technical-Theatre-Stage-Management_ucm9mi"
+    },
+    {
+      "name": "Diploma of Screen and Media (Specialist Make-Up Services)",
+      "description": "This course prepares you for a range of roles in make-up, hair and special effects for theatre, film and television. The skills you will develop are transferable to a range of performance contexts, including theatre, dance, opera, concerts, events, film and television.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "7 months",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 16500
+        }
+      ],
+      "specialisations": [
+        "Make-Up",
+        "Hair",
+        "Special Effects (SFX)"
+      ],
+      "disciplines": [
+        "Make-Up",
+        "Special Effects (SFX)"
+        "Theatre",
+        "Film",
+        "TV",
+        "Performing Arts",
+        "Art Department",
+        "Production Design",
+        "Opera"
+      ],
+      "image": "VET_Diploma-Specialist-Makeup_zdjkc9"
+    },
+    {
+      "name": "Diploma of Musical Theatre",
+      "description": "This is an intensive year of practical study that will elevate you to become a ‘triple threat’– singer/dancer/actor. Through this course, you will develop the rigour and skill you need to get a foothold in musical theatre. The course is industry-driven, with content delivered by practising professionals and guest tutors from the performing arts industry.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "7 months",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 18000
+        }
+      ],
+      "specialisations": [
+        "Singing",
+        "Dancing",
+        "Acting"
+      ],
+      "disciplines": [
+        "Performing Arts",
+        "Singing",
+        "Dance",
+        "Acting"
+        "Vocal Studies",
+        "Music Theatre",
+        "Live Production",
+        "Musical Theatre"
+      ],
+      "image": "VET_Musical_Theatre_lweu3c"
+    },
+    {
+      "name": "Diploma of Live Production and Technical Services",
+      "description": "This course prepares you for technical roles in the live production industry, including theatre, dance, opera, concerts, functions, ceremonies and events. You will gain the skills and knowledge to implement lighting, sound and vision designs, to operate equipment, and to plan and conduct the bump-in and bump-out of productions.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "7 months",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 12500
+        }
+      ],
+      "specialisations": [
+        "Lighting",
+        "Sound",
+        "Vision Designs",
+        "Bump In - Bump Out"
+      ],
+      "disciplines": [
+        "Performing Arts",
+        "Lighting",
+        "Sound",
+        "Vision Designs"
+        "Theatre",
+        "Music Festival",
+        "Opera"
+      ],
+      "image": "VET_Live_Production_pogg9o"
+    },
+    {
+      "name": "Diploma of Stage and Screen Performance",
+      "description": "This is a foundation program that equips you with the skills you will need to perform in live and recorded works, and to collaborate with others in creating original works. You will explore the multiplicity of roles, technologies and methodologies that exist within the theatre, film, television and digital industries.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "7 months",
+      "intakes": "February",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 16000
+        }
+      ],
+      "specialisations": [
+        "Acting for Screen",
+        "Acting for Stage",
+        "Technology in Performance"
+      ],
+      "disciplines": [
+        "Acting for Screen",
+        "Acting for Stage",
+        "Technology in Performance",
+        "Performance Arts",
+        "Voice",
+        "Character Performance",
+        "Film",
+        "TV",
+        "Theatre"
+      ],
+      "image": "VET_Stages_and_Screen_qiwg5m"
+    },
+    {
+      "name": "Master of Fine Arts (Cultural Leadership)",
+      "description": "MFA (Cultural Leadership) is designed specifically for mid-career producers, directors and managers working full-time in the cultural sectors, the course is taught by senior cultural leaders working at a high level in the arts industry.",
+      "campus": [
+        "Blended: On Campus (Sydney) and Online"
+      ],
+      "length": "2.5 years (Part-time)",
+      "intakes": "January",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 30845
+        },
+        {
+          "type": "International students",
+          "fees": 42682
+        }
+      ],
+      "specialisations": [
+        "Cultural Transformation",
+        "Leadership and Governance",
+        "Cultural Policy",
+        "International Placement"
+      ],
+      "disciplines": [
+        "Business for Creatives",
+        "Cultural Transformation",
+        "Leadership and Governance",
+        "Cultural Policy",
+        "Creative Leadership",
+        "Arts Management",
+        "Creative Arts",
+        "Creative Producer",
+        "Audience Engagement"
+      ],
+      "image": "MFA-Cultural-Leadership_ibcnxa"
+    },
+    {
+      "name": "Master of Fine Arts (Design for Performance)",
+      "description": "This course offers creative professionals opportunities to explore new technologies, practices and ideas in design for the performing arts including theatre, opera, dance, film and television and live events. ",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "15 months",
+      "intakes": "January",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 30845
+        },
+        {
+          "type": "International students",
+          "fees": 42682
+        }
+      ],
+      "specialisations": [
+        "Set Designs",
+        "Costumes",
+        "Lighting",
+        "Dramaturgy"
+      ],
+      "disciplines": [
+        "Design",
+        "Production Design",
+        "Set Designs",
+        "Costumes",
+        "Lighting",
+        "Dramaturgy",
+        "Film",
+        "TV",
+        "Theatre",
+        "Live Production",
+        "Live Event",
+        "Opera",
+        "Arts Department",
+        "Post Production"
+      ],
+      "image": "MFA-Design-for-performance_rckfgc"
+    },
+    {
+      "name": "Master of Fine Arts (Directing)",
+      "description": "MFA (Directing) enables talented early career practitioners to master the directing process through training in production, the interpretation of text and the skills required to connect with a contemporary audience and challenging students to create and express their own artistic vision.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "15 months",
+      "intakes": "January",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 30845
+        },
+        {
+          "type": "International students",
+          "fees": 42682
+        }
+      ],
+      "specialisations": [
+        "Directing Practice and Techniques",
+        "Dramaturgy",
+        "Scenography"
+      ],
+      "disciplines": [
+        "Directing",
+        "Dramaturgy",
+        "Scenography",
+        "Film",
+        "TV",
+        "Animation",
+        "Screen Production",
+        "Filmmaking",
+        "Screen Performance",
+        "Documentary",
+        "Cinematic Storytelling",
+        "Character Performance",
+        "Screen Language",
+        "2nd AD",
+        "3rd AD"
+      ],
+      "image": "MFA-Directing_b1em1z"
+    },
+    {
+      "name": "Master of Fine Arts (Voice)",
+      "description": "This course provides specialised, conservatoire-based practice and pedagogy for actors, theatre directors, teachers of speech and drama, speech therapists or those wishing to develop a voice practice as a vocation.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "15 months",
+      "intakes": "January",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 30845
+        },
+        {
+          "type": "International students",
+          "fees": 42682
+        }
+      ],
+      "specialisations": [
+        "Vocal Practice and Pedagogy",
+        "Speech Science",
+        "International Placement"
+      ],
+      "disciplines": [
+        "Performing Arts",
+        "Speech Science",
+        "Voice",
+        "Vocal Practice",
+        "Theatre",
+        "Singing",
+        "Acting",
+        "Vocal Studies",
+        "Vocal Arts"
+      ],
+      "image": "Graduate_Voice_mmcjvz"
+    },
+    {
+      "name": "Master of Fine Arts (Writing for Performance)",
+      "description": "Students will have the opportunity to work in fields as diverse as film and digital media while writing their major work. Graduates of the course may be employed as playwrights and as writers for other performance genres, including film, television, radio and digital media.",
+      "campus": [
+        "Sydney"
+      ],
+      "length": "15 months",
+      "intakes": "January",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 30845
+        },
+        {
+          "type": "International students",
+          "fees": 42682
+        }
+      ],
+      "specialisations": [
+        "Writing with Purpose",
+        "Literature from any Genres",
+        "Creativity in Writing",
+        "Rhetoric"
+      ],
+      "disciplines": [
+        "Performing Arts",
+        "Creativity in Writing",
+        "Film",
+        "TV",
+        "Theatre",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Playwriting",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing"
+      ],
+      "image": "MFA-Writing-for-performance_idxcpw"
     }
   ],
   "artworks": [
@@ -73,11 +656,18 @@
   ],
   "alumni": [
     {
-      "photo": "",
-      "name": "",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "photo": "NIDA_alumni/Cate_Blanchett",
+      "name": "Cate Blanchett",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actor, Film Producer, Voice Acting",
+      "credits": "The Curious Case of Benjamin Button, The Lord of the Rings Trilogy, The Aviator, Elizabeth, Babel, Blue Jasmine"
+    },
+    {
+      "photo": "NIDA_alumni/Mel_Gibson",
+      "name": "Mel Gibson",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actor, Director, Filmmaker",
+      "credits": "Hacksaw Ridge, Braveheart, Lethal Weapon, Apocalypto, Mad Max, The Passion of Christ"
     }
   ]
 }
