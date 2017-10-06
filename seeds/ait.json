@@ -569,42 +569,67 @@
     {
       "image": "Zombie1_kekb6z",
       "name": "Zombie",
-      "artist": "Peejay Svoboda"
+      "artist": "Peejay Svoboda",
+      "disciplines": [
+        "Digital Media",
+        "Animation"
+      ]
     },
     {
       "image": "New_dimensions_pandora_5625_km28wx",
       "name": "New Dimensions",
-      "artist": "Alfredo Vallejo"
+      "artist": "Alfredo Vallejo",
+      "disciplines": [
+        "2D Animation"
+      ]
     },
     {
       "image": "Mobile_game1_yqofud",
       "name": "Mobile Game",
-      "artist": "Effendy Setiady"
+      "artist": "Effendy Setiady",
+      "disciplines": [
+        "3D Design"
+      ]
     },
     {
       "image": "Gnomon_in_Forest_a7oery",
       "name": "Gnomon in Forest",
-      "artist": "Glen Reiner"
+      "artist": "Glen Reiner",
+      "disciplines": [
+        "Games Design"
+      ]
     },
     {
       "image": "Elephant_rwr5dh",
       "name": "Elephant",
-      "artist": "Marine Lucinne Daniele Ecuyer"
+      "artist": "Marine Lucinne Daniele Ecuyer",
+      "disciplines": [
+        "Game Development"
+      ]
     },
     {
       "image": "Bulldog_ibzm8c",
       "name": "Bulldog",
-      "artist": "Nardo Conforti"
+      "artist": "Nardo Conforti",
+      "disciplines": [
+        "Game Development"
+      ]
     },
     {
       "image": "Broken_wq5yve",
       "name": "Broken",
-      "artist": "Duc Viet Dang"
+      "artist": "Duc Viet Dang",
+      "disciplines": [
+        "Game Development"
+      ]
     },
     {
       "image": "AIT_Pandora_Room-Berat_Akdemir_iy91td",
       "name": "AIT Pandorra Room",
-      "artist": "Berat Akdemir"
+      "artist": "Berat Akdemir",
+      "disciplines": [
+        "Game Development"
+      ]
     }
   ],
   "alumni": [

@@ -38,6 +38,7 @@ const artworkSchema = new Schema({
     ref: 'School',
     required: 'You must supply a school!',
   },
+  disciplines: [String],
 }, {
   toObject: {
     virtuals: true,

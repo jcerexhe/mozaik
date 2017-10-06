@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 import FilterButton from './filterButton.jsx';
 
-const Filter = (props) => {
-  const { filterItems, activeItems, onClick } = props;
-  const classes = _.reduce(props.classes, (str, cla) => {
-    return str + ` ${ cla } `
-  }, 'filter-buttons');
-  return (
-    <ul className={ classes }>
-      { _.map(filterItems, (item, i) => {
-        const active = activeItems.includes(item);
-        return (
-          <li key={ item }>
-            <FilterButton val={ item } active={ active } onClick={ (val) => onClick(val) } />
-          </li>
-        );
-      }) }
-    </ul>
-  );
-}
+export default class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-export default Filter;
+  render() {
+    const { filterItems, activeItems, onClick } = this.props;
+    const classes = _.reduce(this.props.classes, (str, cla) => {
+      return str + ` ${ cla } `
+    }, 'filter-buttons');
+    return (
+      <ul className={ classes }>
+        { _.map(filterItems, (item, i) => {
+          const active = activeItems.includes(item);
+          return (
+            <li key={ item }>
+              <FilterButton val={ item } active={ active } onClick={ (val) => onClick(val) } />
+            </li>
+          );
+        }) }
+      </ul>
+    );
+  }
+};

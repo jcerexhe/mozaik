@@ -48,8 +48,8 @@ export default class CoursesApp extends Component {
     const disciplineList = ['all areas', 'Digital Media', 'Visual Communication', 'Fine Arts', 'Film / TV / Audio', 'Performing Arts', 'Design', 'Photography', 'Built Environment', 'Business for Creatives' ];
     return (
       <div>
-        <div className='course-filter-container'>
-          <div className='course-filter'>
+        <div className='filter-container'>
+          <div className='filter'>
             <h2>disciplines</h2>
             <Filter
               filterItems={ disciplineList }

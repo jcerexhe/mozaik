@@ -1,20 +1,34 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
+import Filter from '../shared/filter.jsx';
 import Artwork from './artwork.jsx';
 
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
-    const images = _.map(props.artworks, (artwork) => {
+    const allImages = _.map(props.artworks, (artwork) => {
       return {
         src: artwork.images.src,
         thumb: artwork.images.thumb,
         title: artwork.name,
-        artist: artwork.artist
+        artist: artwork.artist,
+        disciplines: artwork.disciplines
       };
     });
+    let images;
+    let disciplines = ['all areas'];
+    if (props.course) {
+      images = _.filter(allImages, (img) => {
+        return _.intersect(img.disciplines, course.disciplines).length > 0;
+      });
+      disciplines.concat(course.disciplines);
+    } else {
+      images = allImages;
+    }
     this.state = {
-      images: images,
+      allImages,
+      images,
+      disciplines,
       isOpen: false,
       currentImage: 0,
       currentTitle: images[0].title,
@@ -96,23 +110,72 @@ export default class ArtworkApp extends Component {
     })
   }
 
+  updateDiscipline(val) {
+    let { disciplines } = this.state;
+    if (val === 'all areas') {
+      this.setState({ disciplines: ['all areas'] });
+      return;
+    }
+    _.remove(disciplines, (v) => { return v.indexOf('all areas') != -1 });
+    if (disciplines.includes(val))
+      _.remove(disciplines, (v) => { return v.indexOf(val) != -1 });
+    else
+      disciplines.push(val);
+    if (disciplines.length == 0)
+      disciplines.push('all areas');
+    this.setState({ disciplines: [...disciplines] });
+  }
+
+  refineImages() {
+    const {  artworks } = this.props;
+    const { disciplines, allImages } = this.state;
+    if (disciplines.includes('all areas')) {
+      this.setState({ images: allImages });
+      return;
+    }
+    const images = _.filter(allImages, (img) => {
+      return _.intersection(disciplines, img.disciplines).length > 0;
+    })
+    this.setState({ images });
+  }
+
   render() {
-    const { images } = this.state;
+    const { artworks } = this.props;
+    const { disciplines, images } = this.state;
+    console.log(disciplines);
+    const disciplineList = _.union(['all areas'], ...(_.map(artworks, (artwork) => {
+      return artwork.disciplines;
+    })));
     return (
-      <div className='artworks'>
-        <div className='artwork-container'>
-          { this.renderLightbox() }
-          <ul className='artwork-slides'>
-            { _.map(images, (img, index) => {
-              return (
-                <li onClick={ () => this.openLightbox(index) }>
-                  <p>{ img.artist }</p>
-                  <h4>{ img.title }</h4>
-                  <Artwork src={ img.thumb } />
-                </li>
-              );
-            }) }
-          </ul>
+      <div>
+        <div className='filter-container'>
+          <div className='filter'>
+            <h2>disciplines</h2>
+            <Filter
+              filterItems={ disciplineList }
+              activeItems={ disciplines }
+              onClick={ (val) => this.updateDiscipline(val) }
+            />
+          </div>
+          <div className='refine-button'>
+            <a className='btn' onClick={ () => this.refineImages() }>refine</a>
+          </div>
+        </div>
+        <div className='artworks'>
+          <div className='artwork-container'>
+            { this.renderLightbox() }
+            <ul className='artwork-slides'>
+              { _.map(images, (img, index) => {
+                return (
+                  <li onClick={ () => this.openLightbox(index) }>
+                    <p>{ img.artist }</p>
+                    <h4>{ img.title }</h4>
+                    <Artwork src={ img.thumb } />
+                  </li>
+                );
+              }) }
+            </ul>
+          </div>
         </div>
       </div>
     );

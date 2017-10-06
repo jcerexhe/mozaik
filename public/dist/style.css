@@ -1062,31 +1062,6 @@ input[type=text]::placeholder {
   .alumni-slider .slick-prev {
     left: -100px !important; }
 
-.course-filter-container {
-  padding: 25px;
-  width: 80%;
-  margin: 0px auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .course-filter-container .course-filter {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    border-right: 1px solid #E4E9EC;
-    margin-right: 10px;
-    padding-right: 40px; }
-  .course-filter-container .course-filter > h2 {
-    font-size: 40px;
-    margin: 0px;
-    margin-right: 10px; }
-  .course-filter-container .course-filter > .filter-buttons {
-    text-align: left; }
-  .course-filter-container .refine-button {
-    padding: 10px; }
-
 .course-card-container {
   border-top: 1px solid #E4E9EC; }
 
@@ -1194,6 +1169,31 @@ input[type=text]::placeholder {
   margin: 2px 0px;
   text-transform: uppercase;
   line-height: 1.8; }
+
+.filter-container {
+  padding: 25px;
+  width: 80%;
+  margin: 0px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .filter-container .filter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border-right: 1px solid #E4E9EC;
+    margin-right: 10px;
+    padding-right: 40px; }
+  .filter-container .filter > h2 {
+    font-size: 40px;
+    margin: 0px;
+    margin-right: 10px; }
+  .filter-container .filter > .filter-buttons {
+    text-align: left; }
+  .filter-container .refine-button {
+    padding: 10px; }
 
 html, body {
   height: 100%; }
