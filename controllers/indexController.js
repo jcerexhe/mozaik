@@ -37,7 +37,7 @@ exports.schoolArtwork = (req, res) => {
   const course = res.locals.courses;
   // TODO only pass valid information as props: pass id -> api call get data
   const Lightbox = reactHelper.renderComponent('ArtworkApp', { search: true, artworks: school.artworks, course });
-  res.render('school', { school, Lightbox });
+  res.render('schoolArtwork', { school, Lightbox });
 };
 
 exports.schoolDetails = (req, res) => {
