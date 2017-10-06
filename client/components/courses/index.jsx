@@ -45,9 +45,7 @@ export default class CoursesApp extends Component {
   render() {
     const { courses } = this.props;
     const { disciplines, activeCourses } = this.state;
-    const disciplineList = _.union(['all areas'], ...(_.map(courses, (course) => {
-      return course.disciplines;
-    })));
+    const disciplineList = ['all areas', 'Digital Media', 'Visual Communication', 'Fine Arts', 'Film / TV / Audio', 'Performing Arts', 'Design', 'Photography', 'Built Environment', 'Business for Creatives' ];
     return (
       <div>
         <div className='course-filter-container'>
