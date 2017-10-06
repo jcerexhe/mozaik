@@ -651,7 +651,9 @@
     {
       "image": "",
       "name": "",
-      "artist": ""
+      "artist": "",
+      "disciplines": [
+      ]
     }
   ],
   "alumni": [
