@@ -16,19 +16,25 @@ export default class ArtworkApp extends Component {
       };
     });
     let images;
-    let disciplines = ['all areas'];
+    let disciplines = [];
+    const disciplineList = _.union(['all areas'], ...(_.map(allImages, (img) => {
+      return img.disciplines;
+    })));
+    console.log(props);
     if (props.course) {
       images = _.filter(allImages, (img) => {
-        return _.intersect(img.disciplines, course.disciplines).length > 0;
+        return _.intersection(img.disciplines, props.course.disciplines).length > 0;
       });
-      disciplines.concat(course.disciplines);
+      disciplines = _.intersection(props.course.disciplines, disciplineList);
     } else {
       images = allImages;
     }
+    if (disciplines.length === 0) disciplines = ['all areas'];
     this.state = {
       allImages,
       images,
       disciplines,
+      disciplineList,
       isOpen: false,
       currentImage: 0,
       currentTitle: images[0].title,
@@ -141,11 +147,8 @@ export default class ArtworkApp extends Component {
 
   render() {
     const { artworks } = this.props;
-    const { disciplines, images } = this.state;
+    const { disciplineList, disciplines, images } = this.state;
     console.log(disciplines);
-    const disciplineList = _.union(['all areas'], ...(_.map(artworks, (artwork) => {
-      return artwork.disciplines;
-    })));
     return (
       <div>
         <div className='filter-container'>
