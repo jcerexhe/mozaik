@@ -947,6 +947,10 @@ input[type=text]::placeholder {
   height: 100%;
   z-index: 5; }
 
+#results .search-result > .logo {
+  width: 10%;
+  height: auto; }
+
 #results .load-more-results {
   padding: 15px 0px;
   text-align: center;

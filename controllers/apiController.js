@@ -36,7 +36,7 @@ exports.courses = async (req, res) => {
         default:
           q = Course.find({ $and: targets });
       }
-      const foundCourses = await q.populate('school', ['slug', 'locations']);
+      const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
       if (interestCountries.includes('all areas')) {
         courses = foundCourses;
       } else {
@@ -55,7 +55,7 @@ exports.courses = async (req, res) => {
       } else {
         q = Course.find();
       }
-      courses = await q.populate('school', 'slug');
+      courses = await q.populate('school', ['slug', 'logo']);
       break;
     case 'search': {
       const regex = new RegExp(`.*${data.search}.*`, 'i');
@@ -68,7 +68,7 @@ exports.courses = async (req, res) => {
           { specialisations: { $in: split } },
         ],
       });
-      courses = await q.populate('school', 'slug');
+      courses = await q.populate('school', ['slug', 'logo']);
       break;
     }
     default:

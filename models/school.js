@@ -119,6 +119,12 @@ function autopopulate(next) {
 schoolSchema.pre('find', autopopulate);
 schoolSchema.pre('findOne', autopopulate);
 
+schoolSchema.post('find', function (schools) {
+  return _.map(schools, (school) => {
+    school.logo = cloudinary.url(`${school.logo}.jpg`);
+    return school;
+  });
+});
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}.jpg`);
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
