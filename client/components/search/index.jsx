@@ -13,7 +13,7 @@ export default class SearchApp extends Component {
         exists: false,
         message: ''
       },
-      limit: 6,
+      limit: 30,
     };
   }
 
@@ -29,7 +29,7 @@ export default class SearchApp extends Component {
   resetLimit() {
     console.log('reset');
     this.setState({
-      limit: 6,
+      limit: 30,
     });
   }
 
