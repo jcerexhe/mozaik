@@ -10,9 +10,24 @@
   width: 100vw !important;
   height: calc(100vh - 100px) !important;
   padding-top: 100px;
+  background-size: cover;
+  background-position: 0 -200px;
 }
 .slider-dots {
   margin-top: -275px;
+}
+.slider-body {
+  padding: 0 40px;
+  color: $carnation;
+}
+.slider-body > h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  /* change this margin top */
+  margin-top: 15%;
+}
+.slider-body > p {
+  font-size: 1em;
 }
 .scroll-search {
   margin-top: 31px;
@@ -38,5 +53,5 @@
   height: 0px;
 }
 .slick-dots li.slick-active .dot {
-  border: 3px solid $orange !important;
+  border: 3px solid $carnation !important;
 }

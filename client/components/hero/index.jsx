@@ -11,18 +11,21 @@ export default class HeroApp extends Component {
         {
           heading: 'Mozaik Creative',
           text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
-          background: 'http://via.placeholder.com/350x150'
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350623/slider1-compressor_qgn31w.png'
         },
         {
-          background: 'http://via.placeholder.com/350x150'
+          heading: 'Mozaik Creative',
+          text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350623/slider1-compressor_qgn31w.png'
         },
         {
-          background: 'http://via.placeholder.com/350x150'
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350977/slider2-compressor_zd4ufr.png'
         }
       ],
       settings: {
         className: 'home-slider',
         autoplay: true,
+        autoplaySpeed: 2000,
         arrows: false,
         afterChange: (i) => this.setState({ currentSlide: i })
       }
@@ -42,11 +45,13 @@ export default class HeroApp extends Component {
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>
-          { _.map(slides, (slide) => {
+          { _.map(slides, (slide, i) => {
             return (
-              <div key={ slide.heading } className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
-                <h1>{ slide.heading }</h1>
-                <p>{ slide.text }</p>
+              <div key={ i } className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
+                <div className='slider-body'>
+                  <h1>{ slide.heading }</h1>
+                  <p>{ slide.text }</p>
+                </div>
               </div>
             );
           }) }
@@ -55,7 +60,7 @@ export default class HeroApp extends Component {
           <ul className='slick-dots'>
             { _.map(slides, (slide, i) => {
               return (
-                <li key={ Math.random() } className={ currentSlide == i ? 'slick-active' : '' }>
+                <li key={ i } className={ currentSlide == i ? 'slick-active' : '' }>
                   <div className='dot' onClick={ () => this.changeSlide(i) } />
                 </li>
               );

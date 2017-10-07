@@ -567,28 +567,30 @@
   ],
   "artworks": [
     {
-      "image": "Zombie1_kekb6z",
-      "name": "Zombie",
-      "artist": "Peejay Svoboda",
+      "image": "AIT/student_work/digital_design/Marine_Lucine_Dnielle_Ecuyer_Elephant",
+      "name": "Ecuyer Elephant",
+      "artist": "Marine Lucine Dnielle",
       "disciplines": [
-        "Digital Media",
-        "Animation"
+        "Design",
+        "Digital Design"
       ]
     },
     {
-      "image": "New_dimensions_pandora_5625_km28wx",
-      "name": "New Dimensions",
-      "artist": "Alfredo Vallejo",
+      "image": "AIT/student_work/digital_design/Nicole_Suet_Yi_Soo_No_Name",
+      "name": "No Name",
+      "artist": "Nicole Suet Yi Soo",
       "disciplines": [
-        "2D Animation"
+        "Design",
+        "Digital Design"
       ]
     },
     {
-      "image": "Mobile_game1_yqofud",
-      "name": "Mobile Game",
-      "artist": "Effendy Setiady",
+      "image": "AIT/student_work/digital_design/Jakub_Pramuk_Warrior",
+      "name": "Warrior",
+      "artist": "Jakub Pramuk",
       "disciplines": [
-        "3D Design"
+        "Design",
+        "Digital Design"
       ]
     },
     {
