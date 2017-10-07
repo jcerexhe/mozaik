@@ -1,5 +1,5 @@
 .extended-search {
-  background-color: $orange;
+  background-color: $carnation;
   padding-top: 20px;
   padding-bottom: 30px;
   color: $white;
@@ -22,20 +22,29 @@
 }
 .extended-search > a {
   color: $white;
-  padding: 5px;
-  border: 1px solid $white;
   text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  padding: 7px;
+  font-size: 12px;
+  cursor: pointer;
 }
 .enquiry-form {
   text-align: center;
-  background-color: $grey;
+  background-color: #181818;
   padding: 30px 0px;
+  color: white;
 }
 .enquiry-form > h3 {
   text-transform: uppercase;
   margin-bottom: 0px;
+  letter-spacing: 2px;
 }
 .enquiry-form > p {
   font-size: 14px;
   margin-top: 5px;
+}
+.enquiry-form > input {
+  padding: 5px 20px;
+  border-radius: 3px;
 }

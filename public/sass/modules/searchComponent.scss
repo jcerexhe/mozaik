@@ -11,7 +11,8 @@
 }
 #search:before {
   content: ' ';
-  background-color: $white;
+  /*background-color: $white;*/
+  background-color: #181818;
   width: calc(100% + 400px);
   margin-left: -200px;
   // greater hight > smaller triange = greater width
@@ -31,7 +32,8 @@
   z-index: 111;
 
   h2 {
-    color: #EAEEF0;
+    /*color: #EAEEF0;*/
+    color: #212121;
     margin: 0px;
     font-size: 10vw;
     line-height: 0.6;
@@ -56,14 +58,15 @@
     justify-content: space-evenly;
   }
   .interest-areas, .interest-disciplines {
-    border: 1px solid $grey;
+    /*border: 1px solid $grey;*/
     margin-top: 50px;
     text-align: center;
   }
   .interest-areas > h3, .interest-disciplines > h3 {
     font-size: 30px;
     margin-top: -30px;
-    background-color: $white;
+    /*background-color: $white;*/
+    color: $carnation;
     display: inline-block;
     padding: 0px 15px;
     text-transform: uppercase;
@@ -73,7 +76,8 @@
   }
   .interest-countries {
     background-color: $grey;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 30px;
   }
   .interest-countries > h4 {
     font-size: 20px;
@@ -143,7 +147,8 @@
 .search-blue-background {
   width: 100%;
   height: 600px;
-  background-color: $blue;
+  /*background-color: $blue;*/
+  background-color: $carnation;
 }
 .search-blue-background.taller-search {
   height: 1600px;
@@ -178,13 +183,30 @@
     display: block;
     padding-top: 83.3%;
   }
-  .search-result > span {
+  .search-result > span.course-name {
+    position: absolute;
+    top: auto;
+    left: 2rem;
+    bottom: 3.5rem;
+    right: 2rem;
+    z-index: 10;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 120%;
+    font-family: 'Montserrat Semi Bold';
+    color: $carnation;
+  }
+  .search-result > span.city {
     position: absolute;
     top: auto;
     left: 2rem;
     bottom: 2rem;
     right: 2rem;
     z-index: 10;
+    text-transform: uppercase;
+    color: #949494;
+    font-size: 120%;
+    font-family: 'Montserrat Light';
   }
   .search-result > img {
     position: absolute;
@@ -199,9 +221,12 @@
     height: auto;
   }
   .load-more-results {
-    padding: 15px 0px;
+    padding: 20px 0px;
     text-align: center;
     text-transform: uppercase;
+    background-color: #181818;
+    font-family: 'Bebas Neue';
+    color: white;
   }
   .load-more-results > span {
     cursor: pointer;

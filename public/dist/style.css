@@ -51,7 +51,7 @@ html, body {
   -ms-flex-align: center;
       align-items: center;
   height: 200px;
-  background-color: #0C2A3E;
+  background-color: #253336;
   color: #FFFFFF; }
 
 .footer > .links {
@@ -176,7 +176,7 @@ html, body {
   outline: none; }
 
 .filter-btn:hover, .filter-btn.active {
-  background-color: #EF7D30;
+  background-color: #EF6364;
   color: #FFFFFF; }
 
 .filter-buttons li {
@@ -201,7 +201,9 @@ html, body {
   height: 41px;
   background-image: url(/images/buttons/list-select.png);
   background-size: cover;
-  cursor: pointer; }
+  cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/ }
 
 .refine-btn {
   width: 60px;
@@ -215,7 +217,9 @@ html, body {
   height: 41px;
   background-image: url(/images/buttons/refine-select.png);
   background-size: cover;
-  cursor: pointer; }
+  cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/ }
 
 .search-btn {
   width: 60px;
@@ -229,7 +233,9 @@ html, body {
   height: 41px;
   background-image: url(/images/buttons/search-select.png);
   background-size: cover;
-  cursor: pointer; }
+  cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/ }
 
 .icon-white {
   width: 20px;
@@ -331,7 +337,7 @@ input[type=text]::placeholder {
   text-transform: capitalize; }
 
 .extended-search {
-  background-color: #EF7D30;
+  background-color: #EF6364;
   padding-top: 20px;
   padding-bottom: 30px;
   color: #FFFFFF;
@@ -354,22 +360,31 @@ input[type=text]::placeholder {
 
 .extended-search > a {
   color: #FFFFFF;
-  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
   border: 1px solid #FFFFFF;
-  text-decoration: none; }
+  padding: 7px;
+  font-size: 12px;
+  cursor: pointer; }
 
 .enquiry-form {
   text-align: center;
-  background-color: #F4F6F8;
-  padding: 30px 0px; }
+  background-color: #181818;
+  padding: 30px 0px;
+  color: white; }
 
 .enquiry-form > h3 {
   text-transform: uppercase;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  letter-spacing: 2px; }
 
 .enquiry-form > p {
   font-size: 14px;
   margin-top: 5px; }
+
+.enquiry-form > input {
+  padding: 5px 20px;
+  border-radius: 3px; }
 
 .school-heading-container {
   background-color: #F4F6F8; }
@@ -727,10 +742,25 @@ input[type=text]::placeholder {
 .slide {
   width: 100vw !important;
   height: calc(100vh - 100px) !important;
-  padding-top: 100px; }
+  padding-top: 100px;
+  background-size: cover;
+  background-position: 0 -200px; }
 
 .slider-dots {
   margin-top: -275px; }
+
+.slider-body {
+  padding: 0 40px;
+  color: #EF6364; }
+
+.slider-body > h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  /* change this margin top */
+  margin-top: 15%; }
+
+.slider-body > p {
+  font-size: 1em; }
 
 .scroll-search {
   margin-top: 31px;
@@ -756,7 +786,7 @@ input[type=text]::placeholder {
   height: 0px; }
 
 .slick-dots li.slick-active .dot {
-  border: 3px solid #EF7D30 !important; }
+  border: 3px solid #EF6364 !important; }
 
 #search {
   position: absolute;
@@ -771,7 +801,8 @@ input[type=text]::placeholder {
 
 #search:before {
   content: ' ';
-  background-color: #FFFFFF;
+  /*background-color: $white;*/
+  background-color: #181818;
   width: calc(100% + 400px);
   margin-left: -200px;
   height: 100%;
@@ -790,7 +821,8 @@ input[type=text]::placeholder {
   width: 100%;
   z-index: 111; }
   .search-content h2 {
-    color: #EAEEF0;
+    /*color: #EAEEF0;*/
+    color: #212121;
     margin: 0px;
     font-size: 10vw;
     line-height: 0.6;
@@ -820,13 +852,14 @@ input[type=text]::placeholder {
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly; }
   .search-content .interest-areas, .search-content .interest-disciplines {
-    border: 1px solid #F4F6F8;
+    /*border: 1px solid $grey;*/
     margin-top: 50px;
     text-align: center; }
   .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
     font-size: 30px;
     margin-top: -30px;
-    background-color: #FFFFFF;
+    /*background-color: $white;*/
+    color: #EF6364;
     display: inline-block;
     padding: 0px 15px;
     text-transform: uppercase; }
@@ -834,7 +867,8 @@ input[type=text]::placeholder {
     padding: 0px 15px 15px 15px; }
   .search-content .interest-countries {
     background-color: #F4F6F8;
-    padding: 5px; }
+    padding: 10px;
+    margin-top: 30px; }
   .search-content .interest-countries > h4 {
     font-size: 20px;
     text-transform: uppercase;
@@ -896,7 +930,8 @@ input[type=text]::placeholder {
 .search-blue-background {
   width: 100%;
   height: 600px;
-  background-color: #0C2A3E; }
+  /*background-color: $blue;*/
+  background-color: #EF6364; }
 
 .search-blue-background.taller-search {
   height: 1600px; }
@@ -931,13 +966,30 @@ input[type=text]::placeholder {
   display: block;
   padding-top: 83.3%; }
 
-#results .search-result > span {
+#results .search-result > span.course-name {
+  position: absolute;
+  top: auto;
+  left: 2rem;
+  bottom: 3.5rem;
+  right: 2rem;
+  z-index: 10;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 120%;
+  font-family: 'Montserrat Semi Bold';
+  color: #EF6364; }
+
+#results .search-result > span.city {
   position: absolute;
   top: auto;
   left: 2rem;
   bottom: 2rem;
   right: 2rem;
-  z-index: 10; }
+  z-index: 10;
+  text-transform: uppercase;
+  color: #949494;
+  font-size: 120%;
+  font-family: 'Montserrat Light'; }
 
 #results .search-result > img {
   position: absolute;
@@ -952,9 +1004,12 @@ input[type=text]::placeholder {
   height: auto; }
 
 #results .load-more-results {
-  padding: 15px 0px;
+  padding: 20px 0px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: #181818;
+  font-family: 'Bebas Neue';
+  color: white; }
 
 #results .load-more-results > span {
   cursor: pointer; }

@@ -26,7 +26,7 @@
   outline: none;
 }
 .filter-btn:hover, .filter-btn.active {
-  background-color: $orange;
+  background-color: $carnation;
   color: $white;
 }
 .filter-buttons li {
@@ -53,6 +53,8 @@
   background-image: url(/images/buttons/list-select.png);
   background-size: cover;
   cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/
 }
 .refine-btn {
   width: 60px;
@@ -67,6 +69,8 @@
   background-image: url(/images/buttons/refine-select.png);
   background-size: cover;
   cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/
 }
 .search-btn {
   width: 60px;
@@ -81,6 +85,8 @@
   background-image: url(/images/buttons/search-select.png);
   background-size: cover;
   cursor: pointer;
+  /*background-color: $carnation;
+  color: $carnation;*/
 }
 
 // Icon buttons
