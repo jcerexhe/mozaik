@@ -111,7 +111,7 @@
         "Interactive Games",
         "Transmedia"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Diploma_of_Interactive_Media"
     },
     {
       "name": "Bachelor of Interactive Media - 2D Animation",
@@ -149,7 +149,7 @@
         "Digital Imaging",
         "Concept Artist"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_Interactive_Media_2D_Animation"
     },
     {
       "name": "Bachelor of Interactive Media - 3D Design",
@@ -196,10 +196,10 @@
         "Concept Artist",
         "Decoding Media"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_Interactive_Media_3D_Design"
     },
     {
-      "name": "BACHELOR OF INTERACTIVE MEDIA - FILM & VIDEO",
+      "name": "Bachelor of Interactive Media - Film & Video",
       "description": "In this course you will receive a foundation in revolutionary digital media processes as well as traditional film theory - a highly sought after combination in the industry.",
       "campus": [
         "Sydney",
@@ -251,10 +251,10 @@
         "Camera Operator",
         "Transmedia"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_Interactive_Media_Film_and_Video"
     },
     {
-      "name": "BACHELOR OF INTERACTIVE MEDIA - GAME DESIGN",
+      "name": "Bachelor of Interactive Media - Game Design",
       "description": "Developed in consultation with industry experts, this course covers the latest in design theory as well as hands-on skills that cover the broad process of game design including audio, video, film, graphics, animation, storytelling and programming.",
       "campus": [
         "Sydney",
@@ -298,10 +298,10 @@
         "Virtual Worlds",
         "2D Interactivity"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_Interactive_Media_Game_Design"
     },
     {
-      "name": "DIPLOMA OF INTERACTIVE MEDIA",
+      "name": "Diploma of Interactive Media",
       "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
       "campus": [
         "Sydney",
@@ -342,10 +342,10 @@
         "Interactive Games",
         "Transmedia"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Diploma_of_Interactive_Media"
     },
     {
-      "name": "BACHELOR OF DIGITAL DESIGN",
+      "name": "Bachelor of Digital Design",
       "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms: from product packaging and brand design to interactive app design, data visualization and title design for film. Hone your design skills and learn how to translate content into visual form for effective communication and arm yourself with a portfolio to establish a career in the growing design industry",
       "campus": [
         "Sydney",
@@ -391,10 +391,10 @@
         "3D Printing",
         "Packaging"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Diploma_of_Digital_Design"
     },
     {
-      "name": "DIPLOMA OF DIGITAL DESIGN",
+      "name": "Diploma of Digital Design",
       "description": "This courses teaches the basic principles of design and prepare you for a career in the design industry, branding of products, web interface or even imagery for interactive game worlds.",
       "campus": [
         "Sydney",
@@ -438,10 +438,10 @@
         "Concept Artist",
         "Creative Drawing"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Diploma_of_Digital_Design"
     },
     {
-      "name": "BACHELOR OF INFORMATION TECHNOLOGY - MOBILE APPS DEVELOPMENT",
+      "name": "Bachelor of Information Technology - Mobile Apps Development",
       "description": "This course allows you to design, build and publish iOS and Android mobile apps from scratch and graduate with a portfolio of work.",
       "campus": [
         "Sydney",
@@ -477,10 +477,10 @@
         "Digital Project Management",
         "Cross-Platform Apps"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_IT_Mobile_App_Development"
     },
     {
-      "name": "BACHELOR OF INFORMATION TECHNOLOGY - GAME PROGRAMMING",
+      "name": "Bachelor of Information Technology - Game Programming",
       "description": "This course will provide you with a foundation in the core IT disciplines including database systems, networking, systems designs as well as professional practice. You will hone your skills in game engine programming and learn the principles to develop games using VR/AR, AI platforms.",
       "campus": [
         "Sydney",
@@ -519,10 +519,10 @@
         "Digital Project Management",
         "Cross-Platform Apps"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Bachelor_of_IT_Game_Programming"
     },
     {
-      "name": "DIPLOMA OF INFORMATION TECHNOLOGY",
+      "name": "Diploma of Information Technology",
       "description": "This Diploma gives you a solid grounding in the basics of IT with plenty of practical experience in programming, software engineering and web development. You will also gain valuable exposure to interactive media techniques and multimedia skills.",
       "campus": [
         "Sydney",
@@ -562,7 +562,7 @@
         "Web Interface",
         "Information Systems"
       ],
-      "image": "Gnomon_in_Forest_a7oery"
+      "image": "AIT/courses/Diploma_of_IT"
     }
   ],
   "artworks": [
