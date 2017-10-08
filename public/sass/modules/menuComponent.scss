@@ -50,6 +50,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  /* hide these extra icons for now on mobile */
+  @media only screen and (max-width: 768px) {
+    .icon-white {
+      display: none;
+    }
+  }
 }
 .navbar .links > a {
   margin: 0px 5px;

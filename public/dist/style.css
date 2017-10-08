@@ -397,9 +397,12 @@ input[type=text]::placeholder {
   -ms-flex-align: center;
       align-items: center;
   padding: 50px 0px;
-  width: 80%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .school-heading {
+      width: 80%; } }
   .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
@@ -607,7 +610,11 @@ input[type=text]::placeholder {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+  /* hide these extra icons for now on mobile */ }
+  @media only screen and (max-width: 768px) {
+    .navbar .links .icon-white {
+      display: none; } }
 
 .navbar .links > a {
   margin: 0px 5px; }
@@ -849,8 +856,14 @@ input[type=text]::placeholder {
   .search-content .search-category {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly; }
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .search-content .search-category .list-btn {
+      margin: 0 5px; }
+    .search-content .search-category .refine-btn {
+      margin: 0 5px; }
+    .search-content .search-category .search-btn {
+      margin: 0 5px; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     /*border: 1px solid $grey;*/
     margin-top: 50px;
@@ -951,9 +964,12 @@ input[type=text]::placeholder {
 
 #results .search-results > li {
   display: inline-block;
-  width: 33.3%;
+  width: 100%;
   vertical-align: top;
   position: relative; }
+  @media only screen and (min-width: 768px) {
+    #results .search-results > li {
+      width: 33.3%; } }
 
 #results .search-result {
   display: block;
@@ -1021,9 +1037,12 @@ input[type=text]::placeholder {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  column-count: 3;
+  column-count: 1;
   column-gap: 0px;
   line-height: 0; }
+  @media only screen and (min-width: 768px) {
+    .artwork-slides {
+      column-count: 3; } }
 
 .artwork-slides > li {
   list-style: none;
@@ -1230,29 +1249,32 @@ input[type=text]::placeholder {
   line-height: 1.8; }
 
 .filter-container {
-  padding: 25px;
-  width: 80%;
-  margin: 0px auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .filter-container .filter {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    border-right: 1px solid #E4E9EC;
-    margin-right: 10px;
-    padding-right: 40px; }
-  .filter-container .filter > h2 {
-    font-size: 40px;
-    margin: 0px;
-    margin-right: 10px; }
-  .filter-container .filter > .filter-buttons {
-    text-align: left; }
-  .filter-container .refine-button {
-    padding: 10px; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .filter-container {
+      padding: 25px;
+      width: 80%;
+      margin: 0px auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .filter-container .filter {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        border-right: 1px solid #E4E9EC;
+        margin-right: 10px;
+        padding-right: 40px; }
+      .filter-container .filter > h2 {
+        font-size: 40px;
+        margin: 0px;
+        margin-right: 10px; }
+      .filter-container .filter > .filter-buttons {
+        text-align: left; }
+      .filter-container .refine-button {
+        padding: 10px; } }
 
 html, body {
   height: 100%; }

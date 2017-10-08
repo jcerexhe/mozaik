@@ -55,7 +55,17 @@
   }
   .search-category {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    .list-btn {
+      margin: 0 5px;
+    }
+    .refine-btn {
+      margin: 0 5px;
+    }
+    .search-btn {
+      margin: 0 5px;
+    }
   }
   .interest-areas, .interest-disciplines {
     /*border: 1px solid $grey;*/
@@ -168,9 +178,12 @@
   }
   .search-results > li {
     display: inline-block;
-    width: 33.3%;
+    width: 100%;
     vertical-align: top;
     position: relative;
+    @media only screen and (min-width: 768px) {
+      width: 33.3%;
+    }
   }
   .search-result {
     display: block;
