@@ -572,7 +572,8 @@
       "artist": "Marine Lucine Dnielle",
       "disciplines": [
         "Design",
-        "Digital Design"
+        "Digital Design",
+        "Digital Media"
       ]
     },
     {
@@ -594,43 +595,283 @@
       ]
     },
     {
-      "image": "Gnomon_in_Forest_a7oery",
+      "image": "AIT/student_work/visual_communication/illustration/Glen_Reiner_Gnomon_in_Forest",
       "name": "Gnomon in Forest",
       "artist": "Glen Reiner",
       "disciplines": [
+        "Illustration",
+        "Visual Communication"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/illustration/Marine_Lucine_Dnielle_Ecuyer_Elephant",
+      "name": "Elephant",
+      "artist": "Marine Lucinne Daniele Ecuyer",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/illustration/Nardo_Conforti_Bulldog",
+      "name": "Bulldog",
+      "artist": "Nardo Conforti",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/photography/duc_viet_dang_Broken",
+      "name": "Broken",
+      "artist": "Duc Viet Dang",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication",
+        "Photography",
+        "Photography Design",
+        "Digital Imaging",
+        "Art Photography"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/visual_arts/Andrius_Maigys_No_Name",
+      "name": "No Name",
+      "artist": "Andrius Maigys",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication",
+        "Photography",
+        "Visual Arts",
+        "Digital Imaging",
+        "Art Photography",
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/illustration/PJ_Svoboda_Zombie",
+      "name": "Zombie",
+      "artist": "PJ Svoboda",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication"
+      ]
+    },
+    {
+      "image": "AIT/student_work/visual_communication/illustration/Berat_Akdemir_Pandora_Roomjpg",
+      "name": "Pandora Room",
+      "artist": "Berat Akdemir",
+      "disciplines": [
+        "Illustration",
+        "Visual Communication"
+      ]
+    },
+    {
+      "image": "AIT/student_work/photography/photography_design/Dylan_Cramp_No_Name",
+      "name": "No Name",
+      "artist": "Dylan Cramp",
+      "disciplines": [
+        "Photography",
+        "Photography Design",
+        "Digital Imaging",
+        "Commercial Photography",
+        "Art Photography"
+      ]
+    },
+    {
+      "image": "AIT/student_work/photography/photography_design/Davide_Riccitiello_No_Name",
+      "name": "No Name",
+      "artist": "Davide Riccitiello",
+      "disciplines": [
+        "Photography",
+        "Photography Design",
+        "Digital Imaging",
+        "Art Photography"
+      ]
+    },
+    {
+      "image": "AIT/student_work/photography/photography_design/Nicole_Soo_No_Name",
+      "name": "No Name",
+      "artist": "Nicole Soo",
+      "disciplines": [
+        "Photography",
+        "Photography Design",
+        "Digital Imaging",
+        "Art Photography"
+      ]
+    },
+    {
+      "image": "AIT/student_work/photography/photography_design/Tonia_Rifanni_No_Name",
+      "name": "No Name",
+      "artist": "Tonia Rifanni",
+      "disciplines": [
+        "Photography",
+        "Photography Design",
+        "Digital Imaging",
+        "Commercial Photography",
+        "Art Photography"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_media/games_design/Student_Team__Crime_Crew",
+      "name": "Crime Crew",
+      "artist": "Student Team",
+      "disciplines": [
+        "Digital Media",
         "Games Design"
       ]
     },
     {
-      "image": "Elephant_rwr5dh",
-      "name": "Elephant",
-      "artist": "Marine Lucinne Daniele Ecuyer",
+      "image": "AIT/student_work/digital_media/games_design/Andrei_Ardamil_No_Name",
+      "name": "No Name",
+      "artist": "Andrei Ardamil",
       "disciplines": [
-        "Game Development"
+        "Digital Media",
+        "Games Design"
       ]
     },
     {
-      "image": "Bulldog_ibzm8c",
-      "name": "Bulldog",
-      "artist": "Nardo Conforti",
+      "image": "AIT/student_work/digital_media/games_design/Student_Team_Sushi_Delicious",
+      "name": "Sushi Delicious",
+      "artist": "Student Team",
       "disciplines": [
-        "Game Development"
+        "Digital Media",
+        "Games Design"
       ]
     },
     {
-      "image": "Broken_wq5yve",
-      "name": "Broken",
-      "artist": "Duc Viet Dang",
+      "image": "AIT/student_work/digital_media/games_design/No_Name_GriMoire_",
+      "name": "GriMoire",
+      "artist": "No Name",
       "disciplines": [
-        "Game Development"
+        "Digital Media",
+        "Games Design"
       ]
     },
     {
-      "image": "AIT_Pandora_Room-Berat_Akdemir_iy91td",
-      "name": "AIT Pandorra Room",
-      "artist": "Berat Akdemir",
+      "image": "AIT/student_work/digital_design/Kimi_Nalanishi_No_Name2",
+      "name": "No Name2",
+      "artist": "Kimi Nalanishi",
       "disciplines": [
-        "Game Development"
+        "Digital Media",
+        "Digital Design",
+        "Digital Media"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Kimi_Nalanishi_No_Name",
+      "name": "No Name",
+      "artist": "Kimi Nalanishi",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design",
+        "Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Jakub_Pramuk_No_Name",
+      "name": "No Name",
+      "artist": "Jakub Pramuk",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name2",
+      "name": "No Name2",
+      "artist": "Clemence Deveau",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name1",
+      "name": "No Name1",
+      "artist": "Clemence Deveau",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name",
+      "name": "No Name",
+      "artist": "Clemence Deveau",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Darth_Maul_Skinny",
+      "name": "Darth Maul Skinny",
+      "artist": "No Name",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Daniel_Sponair_No_Name",
+      "name": "No Name",
+      "artist": "Daniel Sponair",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_design/Alfredo_Vallejo_New_dimensions_pandora",
+      "name": "New Dimensions Pandora",
+      "artist": "Alfredo Vallejo",
+      "disciplines": [
+        "Digital Media",
+        "Digital Design",
+        "Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_media/3d_design/No_Name_No_Name",
+      "name": "No Name",
+      "artist": "No Name",
+      "disciplines": [
+        "Digital Media",
+        "3D Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_media/3d_design/No_Name_Hogwarts",
+      "name": "Hogwarts",
+      "artist": "No Name",
+      "disciplines": [
+        "Digital Media",
+        "3D Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_media/3d_design/No_Name_Harley",
+      "name": "Harley",
+      "artist": "No Name",
+      "disciplines": [
+        "Digital Media",
+        "3D Design",
+        "Digital Design",
+        "Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "image": "AIT/student_work/digital_media/3d_design/Daniel_Humbert_3D_Car",
+      "name": "3D Car",
+      "artist": "Daniel Humbert",
+      "disciplines": [
+        "Digital Media",
+        "3D Design"
       ]
     }
   ],
