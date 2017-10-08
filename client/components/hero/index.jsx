@@ -3,6 +3,12 @@ import Slick from 'react-slick';
 import _ from 'lodash';
 import ReactModal from 'react-modal';
 
+const customStyles = {
+  overlay : {
+    backgroundColor: 'rgba(0,0,0,0.5)'
+  }
+};
+
 export default class HeroApp extends Component {
   constructor(props) {
     super(props);
@@ -63,6 +69,7 @@ export default class HeroApp extends Component {
                     isOpen={isOpen}
                     contentLabel="Modal"
                     onRequestClose={() => this.closeModal()}
+                    style={customStyles}
                   >
                     <h1>Modal Content</h1>
                     <p>Etc.</p>
