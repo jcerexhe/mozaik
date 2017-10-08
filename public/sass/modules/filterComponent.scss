@@ -1,26 +1,29 @@
 .filter-container {
-  padding: 25px;
-  width: 80%;
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-around;
-
-  .filter {
+  display: none;
+  @media only screen and (min-width: 768px) {
+    padding: 25px;
+    width: 80%;
+    margin: 0px auto;
     display: flex;
-    justify-content: space-between;
-    border-right: 1px solid $dark-grey;
-    margin-right: 10px;
-    padding-right: 40px;
-  }
-  .filter > h2 {
-    font-size: 40px;
-    margin: 0px;
-    margin-right: 10px;
-  }
-  .filter > .filter-buttons {
-    text-align: left;
-  }
-  .refine-button {
-    padding: 10px;
+    justify-content: space-around;
+
+    .filter {
+      display: flex;
+      justify-content: space-between;
+      border-right: 1px solid $dark-grey;
+      margin-right: 10px;
+      padding-right: 40px;
+    }
+    .filter > h2 {
+      font-size: 40px;
+      margin: 0px;
+      margin-right: 10px;
+    }
+    .filter > .filter-buttons {
+      text-align: left;
+    }
+    .refine-button {
+      padding: 10px;
+    }
   }
 }
