@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slick from 'react-slick';
 import _ from 'lodash';
+import ReactModal from 'react-modal';
 
 export default class HeroApp extends Component {
   constructor(props) {
@@ -24,11 +25,12 @@ export default class HeroApp extends Component {
       ],
       settings: {
         className: 'home-slider',
-        autoplay: true,
-        autoplaySpeed: 2000,
+        autoplay: false,
+        autoplaySpeed: 5000,
         arrows: false,
         afterChange: (i) => this.setState({ currentSlide: i })
-      }
+      },
+      isOpen: false
     };
   }
 
@@ -36,12 +38,20 @@ export default class HeroApp extends Component {
     this.refs.slider.slickGoTo(i);
   }
 
+  closeModal() {
+    this.setState({isOpen: false});
+  }
+
+  openModal() {
+    this.setState({isOpen: true});
+  }
+
   updateCurrentSlide(i) {
     this.setState({ currentSlide: i });
   }
 
   render() {
-    const { currentSlide, slides, settings } = this.state;
+    const { currentSlide, slides, settings, isOpen } = this.state;
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>
@@ -49,8 +59,17 @@ export default class HeroApp extends Component {
             return (
               <div key={ i } className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
                 <div className='slider-body'>
+                  <ReactModal
+                    isOpen={isOpen}
+                    contentLabel="Modal"
+                    onRequestClose={() => this.closeModal()}
+                  >
+                    <h1>Modal Content</h1>
+                    <p>Etc.</p>
+                  </ReactModal>
                   <h1>{ slide.heading }</h1>
                   <p>{ slide.text }</p>
+                  <button onClick={() => this.openModal()}>Video</button>
                 </div>
               </div>
             );

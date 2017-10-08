@@ -129,7 +129,7 @@ export default class Search extends Component {
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
           />
           <div className='interest-countries'>
-            <h4>Choose a country</h4>
+            <h3>Choose a country</h3>
             <Filter
               filterItems={ countries }
               activeItems={ discipline.interestCountries }
