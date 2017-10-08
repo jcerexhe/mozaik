@@ -101,7 +101,7 @@ export default class ArtworkApp extends Component {
         currentImage={ currentImage }
         showImageCount={ false }
         theme={ styles }
-        customControls={ [<p>{ currentTitle }</p>,<p>{ currentArtist }</p>,<p className='lightbox-social'>social</p>] } />
+        customControls={ [<p>{ currentTitle }</p>,<p>{ currentArtist }</p>,<p className='lightbox-social'></p>] } />
     );
   }
 
