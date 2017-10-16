@@ -58,16 +58,17 @@ export default class Search extends Component {
   updateDiscipline(area, val) {
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
-    if (area === 'interestAreas') {
-      this.setState({
-        discipline: {
-          ...discipline,
-          [area]: [val],
-          interestDisciplines: ['all areas']
-        }
-      })
-      return;
-    }
+    // This code makes only one area able to be active at a time
+    // if (area === 'interestAreas') {
+    //   this.setState({
+    //     discipline: {
+    //       ...discipline,
+    //       [area]: [val],
+    //       interestDisciplines: ['all areas']
+    //     }
+    //   })
+    //   return;
+    // }
     if (val === 'all areas') {
       this.setState({
         discipline: {
