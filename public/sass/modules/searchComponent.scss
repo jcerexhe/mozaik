@@ -129,7 +129,7 @@
     color: $grey;
     cursor: pointer;
     display: block;
-    text-transform: lowercase;
+    text-transform: capitalize;
   }
   .search-link.active {
     color: $orange;

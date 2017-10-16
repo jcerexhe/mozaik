@@ -917,7 +917,7 @@ input[type=text]::placeholder {
     color: #F4F6F8;
     cursor: pointer;
     display: block;
-    text-transform: lowercase; }
+    text-transform: capitalize; }
   .search-content .search-link.active {
     color: #EF7D30; }
   .search-content .search-input {
