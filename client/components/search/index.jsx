@@ -62,7 +62,7 @@ export default class SearchApp extends Component {
     const { results, loading, error, limit } = this.state;
     // TODO modify url with query params and default search with said params on load
     return (
-      <div>
+      <div id='search-section'>
         <Search getResults={ (params) => this.getResults(params) } limit={ limit } resetLimit={ () => this.resetLimit() }/>
         <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ results } loading={ loading } error={ error } />
       </div>

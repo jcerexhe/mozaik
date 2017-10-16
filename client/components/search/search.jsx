@@ -6,15 +6,15 @@ import SearchLink from './searchLink.jsx';
 export default class Search extends Component {
   constructor(props) {
     super(props);
-    const digMedia = ["Animation", "3D Design", "AR/VR", "Computer Graphics", "Data Visualisation", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Multimedia", "Transmedia", "Visual Effects (VFX)", "Web Design"];
-    const visComm = ["Advertising Design", "Communication Design", "Design", "Digital Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Photomedia", "Typography", "Visual Arts", "Visual Communication", "Web Design", "3D Printing"];
-    const fineArts = ["Fine Arts", "2D Art", "3D Art", "Arts", "Ceramics", "Drawing", "Illustration", "Jewellery Design", "Painting", "Sculpture", "Glass Design", "Wood Design", "Studio Art", "Indigenous Art", "Metalsmithing", "Gemmology"];
-    const filmTvAudio = ["Animation", "Audio", "Film", "TV", "Screen Production", "Cinematography", "Directing", "Editing", "Filmmaking", "Music", "Post Production", "Producing", "Production Design", "Screen Media", "Screen Performance", "Screenwriting", "Sound Design", "Special Effects (SFX)", "Visual Effects (VFX)", "Radio", "Documentary"];
-    const perfArts = ["Acting", "Classical Performance", "Contemporary Performance ", "Dance", "Drama", "Music Performance", "Jazz ", "Music Composition", "Performing Arts", "Production", "Playwriting", "Staging", "Theatre", "Costume Design", "Live Production"]
-    const design = ["Colour Design", "Costume Design", "Design", "Digital Design", "Fashion Design", "Design", "Games Design", "Graphic Design", "Industrial Design", "Interior Design", "Merchandising", "Product Design", "Sound Design", "Special Effects", "Textile Design", "Visual Communications", "Web Design"];
-    const photog = ["Photography", "Photography Design", "Art Photography", "Commercial Photography", "Fashion Photography", "Documentary Photography", "Digital Imaging", "Photojournalism", "Photomedia", "Visual Communication"];
-    const builtEnv = ["Architecture", "Built Environment", "Landscape Architecture", "Urban Design", "Interior Design", "Interior Decoration", "Interior Architecture", "Spatial Design", "Styling", "Building Design", "Digital Architecture"];
-    const busCreat = ["Creative Leadership", "Finance for Creative Industries", "Marketing for Entertainment Business", "Screen Business", "Fashion Business", "Branded Managment", "Stage Management", "Music Business", "Live Production", "Arts Management", "Visual Merchandising", "Design Thinking", "Event Management"];
+    const digMedia = ["2D/3D Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
+    const visComm = ["Advertising Design", "Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Typography", "Visual Arts", "Visual Communication", "Web Design"];
+    const fineArts = ["2D/3D Art", "Ceramics", "Drawing", "Fine Arts", "Glass Design", "Jewellery Design", "Metalsmithing", "Painting", "Sculpture", "Wood Design"];
+    const filmTvAudio = ["Cinematography", "Directing", "Editing", "Film/TV", "Music for Screen", "Producing", "Production Design", "Radio", "Screenwriting", "Sound Design"];
+    const perfArts = ["Acting", "Choreography", "Costume Design", "Dance", "Drama", "Live Production", "Music", "Performing Arts", "Playwriting", "Singing"]
+    const design = ["Colour Design", "Design", "Digital Design", "Fashion Design", "Games Design", "Graphic Design", "Industrial Design", "Interior Design", "Textile Design", "UX/UI"];
+    const photog = ["Art Photography", "Commercial Photography", "Digital Imaging", "Documentary Photography", "Fashion Photography", "Photography", "Photography Design", "Photojournalism", "Photomedia", "Visual Communication"];
+    const builtEnv = ["Architecture", "Building Design", "Built Environment", "Digital Architecture", "Interior Decoration", "Interior Design", "Spatial Design", "Staging", "Styling", "Urban Design"];
+    const busCreat = ["Arts Management", "Creative Leadership", "Event Management", "Fashion Business", "Finance for Creative Industries", "Live Production", "Marketing for Entertainment Business", "Music Business", "Screen Business", "Stage Management"];
     this.state = {
       searchCategory: 'discipline', // options: [discipline, categories, search]
       discipline: {
@@ -58,16 +58,17 @@ export default class Search extends Component {
   updateDiscipline(area, val) {
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
-    if (area === 'interestAreas') {
-      this.setState({
-        discipline: {
-          ...discipline,
-          [area]: [val],
-          interestDisciplines: ['all areas']
-        }
-      })
-      return;
-    }
+    // This code makes only one area able to be active at a time
+    // if (area === 'interestAreas') {
+    //   this.setState({
+    //     discipline: {
+    //       ...discipline,
+    //       [area]: [val],
+    //       interestDisciplines: ['all areas']
+    //     }
+    //   })
+    //   return;
+    // }
     if (val === 'all areas') {
       this.setState({
         discipline: {
