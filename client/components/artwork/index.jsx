@@ -20,7 +20,6 @@ export default class ArtworkApp extends Component {
     const disciplineList = _.union(['all areas'], ...(_.map(allImages, (img) => {
       return img.disciplines;
     })));
-    console.log(props);
     if (props.course) {
       images = _.filter(allImages, (img) => {
         return _.intersection(img.disciplines, props.course.disciplines).length > 0;
@@ -148,7 +147,6 @@ export default class ArtworkApp extends Component {
   render() {
     const { artworks } = this.props;
     const { disciplineList, disciplines, images } = this.state;
-    console.log(disciplines);
     return (
       <div>
         <div className='filter-container'>

@@ -27,7 +27,6 @@ export default class SearchApp extends Component {
   }
 
   resetLimit() {
-    console.log('reset');
     this.setState({
       limit: 30,
     });
@@ -41,7 +40,6 @@ export default class SearchApp extends Component {
   }
 
   getResults(params) {
-    console.log('params', params);
     this.setState({ limit: params.limit, loading: true });
     axios.get('/api/courses', { params }).then((result) => {
       if (result.data.error) {
