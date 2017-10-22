@@ -49,6 +49,8 @@ const courseSchema = new Schema({
   slug: String,
 });
 
+courseSchema.index({course: 1}, {collation: {locale: "en", strength: 2}});
+
 courseSchema.pre('save', async function (next) {
   if (!this.isModified('name')) {
     next();
