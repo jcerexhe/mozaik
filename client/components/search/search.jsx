@@ -6,7 +6,7 @@ import SearchLink from './searchLink.jsx';
 export default class Search extends Component {
   constructor(props) {
     super(props);
-    const digMedia = ["2D/3D Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
+    const digMedia = ["Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
     const visComm = ["Advertising Design", "Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Typography", "Visual Arts", "Visual Communication", "Web Design"];
     const fineArts = ["2D/3D Art", "Ceramics", "Drawing", "Fine Arts", "Glass Design", "Jewellery Design", "Metalsmithing", "Painting", "Sculpture", "Wood Design"];
     const filmTvAudio = ["Cinematography", "Directing", "Editing", "Film/TV", "Music for Screen", "Producing", "Production Design", "Radio", "Screenwriting", "Sound Design"];
@@ -44,11 +44,12 @@ export default class Search extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    console.log('nextState', nextState);
     if (nextProps.limit > this.props.limit)
       this.props.getResults({ ...this.state, limit: nextProps.limit });
       // this.props.getResults(nextProps.limit, { ...this.state });
     if(_.eq(this.props, nextProps))
-      this.props.getResults({ ...nextState, limit: 6 });
+      this.props.getResults({ ...nextState, limit: 30 });
       // this.props.getResults(6, { ...nextState });
     if (_.eq(this.state, nextState))
       return true;

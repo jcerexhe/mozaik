@@ -36,11 +36,12 @@ export default class SearchApp extends Component {
   updateLimit() {
     const { limit } = this.state;
     this.setState({
-      limit: limit + 6,
+      limit: limit + 30,
     });
   }
 
   getResults(params) {
+    console.log('params', params);
     this.setState({ limit: params.limit, loading: true });
     axios.get('/api/courses', { params }).then((result) => {
       if (result.data.error) {
@@ -48,7 +49,7 @@ export default class SearchApp extends Component {
         return;
       }
       this.setState({ results: result.data });
-      setTimeout(() => this.setState({ loading: false }), 1800);
+      setTimeout(() => this.setState({ loading: false }), 600);
     }).catch((err) => {
       this.error();
     });
