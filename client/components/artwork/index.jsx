@@ -130,22 +130,9 @@ export default class ArtworkApp extends Component {
       disciplines.push('all areas');
     this.setState({ disciplines: [...disciplines] });
 
+    // refine results
     const { artworks } = this.props;
     const { allImages } = this.state;
-    if (disciplines.includes('all areas')) {
-      this.setState({ images: allImages });
-      return;
-    }
-    const images = _.filter(allImages, (img) => {
-      return _.intersection(disciplines, img.disciplines).length > 0;
-    })
-    this.setState({ images });
-  }
-
-  refineImages() {
-    // had this btn <a className='btn' onClick={ () => this.refineImages() }>refine</a> but they should update onClick of filter btns. Refine btn should go to /discover
-    const { artworks } = this.props;
-    const { disciplines, allImages } = this.state;
     if (disciplines.includes('all areas')) {
       this.setState({ images: allImages });
       return;

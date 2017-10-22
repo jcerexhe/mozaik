@@ -28,20 +28,8 @@ export default class CoursesApp extends Component {
       disciplines.push('all areas');
     this.setState({ disciplines: [...disciplines] });
 
+    // refine results
     const { courses } = this.props;
-    if (disciplines.includes('all areas')) {
-      this.setState({ activeCourses: [...courses] });
-      return;
-    }
-    const activeCourses = _.filter(courses, (course) => {
-      return _.intersection(disciplines, course.disciplines).length > 0;
-    })
-    this.setState({ activeCourses });
-  }
-
-  refineCourses() {
-    const { courses } = this.props;
-    const { disciplines } = this.state;
     if (disciplines.includes('all areas')) {
       this.setState({ activeCourses: [...courses] });
       return;

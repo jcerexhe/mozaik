@@ -8,7 +8,8 @@
   position: relative;
 }
 .extended-search:before {
-  content: ' ';
+  /* uncomment below to add lattice overlay but btn will not work */
+  /*content: ' ';*/
   display: block;
   position: absolute;
   overflow: hidden;
