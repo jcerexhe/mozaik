@@ -27,6 +27,16 @@ export default class CoursesApp extends Component {
     if (disciplines.length == 0)
       disciplines.push('all areas');
     this.setState({ disciplines: [...disciplines] });
+
+    const { courses } = this.props;
+    if (disciplines.includes('all areas')) {
+      this.setState({ activeCourses: [...courses] });
+      return;
+    }
+    const activeCourses = _.filter(courses, (course) => {
+      return _.intersection(disciplines, course.disciplines).length > 0;
+    })
+    this.setState({ activeCourses });
   }
 
   refineCourses() {
@@ -58,7 +68,7 @@ export default class CoursesApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a className='btn' onClick={ () => this.refineCourses() }>refine</a>
+            <a href='/discover' className='btn'>refine</a>
           </div>
         </div>
         <div className='course-card-container'>

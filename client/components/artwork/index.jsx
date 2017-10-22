@@ -132,6 +132,7 @@ export default class ArtworkApp extends Component {
   }
 
   refineImages() {
+    // had this btn <a className='btn' onClick={ () => this.refineImages() }>refine</a> but they should update onClick of filter btns. Refine btn should go to /discover
     const {  artworks } = this.props;
     const { disciplines, allImages } = this.state;
     if (disciplines.includes('all areas')) {
@@ -159,7 +160,7 @@ export default class ArtworkApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a className='btn' onClick={ () => this.refineImages() }>refine</a>
+            <a href='/discover' className='btn'>refine</a>
           </div>
         </div>
         <div className='artworks'>
