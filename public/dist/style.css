@@ -949,6 +949,9 @@ input[type=text]::placeholder {
 .search-blue-background.taller-search {
   height: 1600px; }
 
+.results-container {
+  background-color: #181818; }
+
 .no-results {
   display: -ms-flexbox;
   display: flex;

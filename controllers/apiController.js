@@ -59,7 +59,9 @@ exports.courses = async (req, res) => {
       break;
     case 'search': {
       const regex = new RegExp(`.*${data.search}.*`, 'i');
-      const split = data.search.split(' ');
+      // Split - Capitalize then split into array by comma-separated values
+      // e.g. 'media, games design' => ['Media', 'Games Design']
+      const split = data.search.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
       q = Course.find({
         $or: [
           { name: regex },

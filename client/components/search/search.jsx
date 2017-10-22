@@ -49,7 +49,7 @@ export default class Search extends Component {
       this.props.getResults({ ...this.state, limit: nextProps.limit });
       // this.props.getResults(nextProps.limit, { ...this.state });
     if(_.eq(this.props, nextProps))
-      this.props.getResults({ ...nextState, limit: 6 });
+      this.props.getResults({ ...nextState, limit: 30 });
       // this.props.getResults(6, { ...nextState });
     if (_.eq(this.state, nextState))
       return true;
