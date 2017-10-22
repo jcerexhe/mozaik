@@ -14,7 +14,6 @@ exports.courses = async (req, res) => {
   const limit = Number.parseInt(data.limit, 10);
   let q;
   let courses;
-  console.log('data', data);
   switch (data.searchCategory) {
     case 'discipline':
       const disc = JSON.parse(data.discipline);
@@ -29,7 +28,6 @@ exports.courses = async (req, res) => {
       if (!interestDisciplines.includes('all areas')) {
         targets.push({ disciplines: { $all: interestDisciplines } });
       }
-      console.log('targets', targets);
       switch (targets.length) {
         case 0:
           q = Course.find();
