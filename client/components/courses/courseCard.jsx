@@ -6,7 +6,7 @@ const CourseCard = (props) => {
   const disciplines = ( course.disciplines.length > 0 ? (
     <p className='course-info-bit'>
       <span className='bold caps'>specialisations:</span>
-      <span className='info-bit-content'>{ course.disciplines.join(', ') }</span>
+      <span className='info-bit-content'>{ course.specialisations.join(', ') }</span>
     </p>
   ) : <div />);
   return (
@@ -23,7 +23,8 @@ const CourseCard = (props) => {
         <div className='course-info'>
           <p>{ course.description }</p>
           <div className='info-bits-container'>
-            <p className='course-info-bit'><span className='bold caps'>price: </span>
+            <p className='course-info-bit'>
+              <span className='bold caps'>price:</span>
               <span className='info-bit-content'>
                 { _.map(course.prices, (price, i) => {
                   return <span key={ i }>{ price.type }: AUD { price.fees }</span>;
@@ -33,6 +34,18 @@ const CourseCard = (props) => {
             <p className='course-info-bit'>
               <span className='bold caps'>length:</span>
               <span className='info-bit-content'>{ course.length }</span>
+            </p>
+            <p className='course-info-bit'>
+              <span className='bold caps'>campus:</span>
+              <span className='info-bit-content'>
+                { _.map(course.campus, (campus, i) => {
+                  return <span key={ i }>{ campus }</span>;
+                }) }
+              </span>
+            </p>
+            <p className='course-info-bit'>
+              <span className='bold caps'>intakes:</span>
+              <span className='info-bit-content'>{ course.intakes }</span>
             </p>
             { disciplines }
           </div>
