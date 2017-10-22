@@ -2,7 +2,6 @@ import React from 'react';
 
 const Result = (props) => {
   const { result } = props;
-  console.log(result.school);
   return (
     <a className='search-result' href={ '/school/'+result.school.slug+'/'+result.slug+'/artwork' }>
       <span className='course-name'>{ result.name }</span>

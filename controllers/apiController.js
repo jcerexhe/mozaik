@@ -17,11 +17,13 @@ exports.courses = async (req, res) => {
   switch (data.searchCategory) {
     case 'discipline':
       const disc = JSON.parse(data.discipline);
-      const area = disc.interestAreas[0];
+      const areas = disc.interestAreas;
       const { interestDisciplines, interestCountries } = disc;
       const targets = [];
-      if (area !== 'all areas') {
-        targets.push({ disciplines: { $all: [area] } });
+      if (areas[0] !== 'all areas') {
+        // areas is an array of selected areas
+        // $all finds a document with all of the els in array
+        targets.push({ disciplines: { $elemMatch:{$in: areas} } });
       }
       if (!interestDisciplines.includes('all areas')) {
         targets.push({ disciplines: { $all: interestDisciplines } });
@@ -34,7 +36,7 @@ exports.courses = async (req, res) => {
           q = Course.find(targets[0]);
           break;
         default:
-          q = Course.find({ $and: targets });
+          q = Course.find({ $all: targets });
       }
       const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
       if (interestCountries.includes('all areas')) {
