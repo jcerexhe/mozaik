@@ -67,11 +67,10 @@ exports.courses = async (req, res) => {
       q = Course.find({
         $or: [
           { name: regex },
-          { description: regex },
           { disciplines: { $in: split } },
           { specialisations: { $in: split } },
         ],
-      });
+      }).collation({locale: "en", strength: 2});
       courses = await q.populate('school', ['slug', 'logo']);
       break;
     }
