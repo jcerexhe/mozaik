@@ -161,7 +161,7 @@ export default class ArtworkApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a className='btn' onClick={ () => this.refineImages() }>refine</a>
+            <a href="/discover" className='btn' onClick={ () => this.refineImages() }>refine</a>
           </div>
         </div>
         <div className='artworks'>

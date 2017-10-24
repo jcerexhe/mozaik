@@ -58,7 +58,7 @@ export default class CoursesApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a className='btn' onClick={ () => this.refineCourses() }>refine</a>
+            <a href="/discover" className='btn' onClick={ () => this.refineCourses() }>refine</a>
           </div>
         </div>
         <div className='course-card-container'>
