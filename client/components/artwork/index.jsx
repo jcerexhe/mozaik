@@ -20,7 +20,6 @@ export default class ArtworkApp extends Component {
     const disciplineList = _.union(['all areas'], ...(_.map(allImages, (img) => {
       return img.disciplines;
     })));
-    console.log(props);
     if (props.course) {
       images = _.filter(allImages, (img) => {
         return _.intersection(img.disciplines, props.course.disciplines).length > 0;
@@ -130,11 +129,10 @@ export default class ArtworkApp extends Component {
     if (disciplines.length == 0)
       disciplines.push('all areas');
     this.setState({ disciplines: [...disciplines] });
-  }
 
-  refineImages() {
-    const {  artworks } = this.props;
-    const { disciplines, allImages } = this.state;
+    // refine results
+    const { artworks } = this.props;
+    const { allImages } = this.state;
     if (disciplines.includes('all areas')) {
       this.setState({ images: allImages });
       return;
@@ -148,7 +146,6 @@ export default class ArtworkApp extends Component {
   render() {
     const { artworks } = this.props;
     const { disciplineList, disciplines, images } = this.state;
-    console.log(disciplines);
     return (
       <div>
         <div className='filter-container'>
@@ -161,7 +158,7 @@ export default class ArtworkApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a href="/discover" className='btn' onClick={ () => this.refineImages() }>refine</a>
+            <a href='/discover' className='btn'>refine</a>
           </div>
         </div>
         <div className='artworks'>

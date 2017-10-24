@@ -164,6 +164,8 @@
   height: 1600px;
 }
 .results-container {
+  background-color: #181818;
+  color: white;
 }
 .no-results {
   display: flex;
@@ -244,4 +246,7 @@
   .load-more-results > span {
     cursor: pointer;
   }
+}
+#search-section {
+  background-color: #181818;
 }

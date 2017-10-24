@@ -17,11 +17,13 @@ exports.courses = async (req, res) => {
   switch (data.searchCategory) {
     case 'discipline':
       const disc = JSON.parse(data.discipline);
-      const area = disc.interestAreas[0];
+      const areas = disc.interestAreas;
       const { interestDisciplines, interestCountries } = disc;
       const targets = [];
-      if (area !== 'all areas') {
-        targets.push({ disciplines: { $all: [area] } });
+      if (areas[0] !== 'all areas') {
+        // areas is an array of selected areas
+        // $all finds a document with all of the els in array
+        targets.push({ disciplines: { $elemMatch:{$in: areas} } });
       }
       if (!interestDisciplines.includes('all areas')) {
         targets.push({ disciplines: { $all: interestDisciplines } });
@@ -34,7 +36,7 @@ exports.courses = async (req, res) => {
           q = Course.find(targets[0]);
           break;
         default:
-          q = Course.find({ $and: targets });
+          q = Course.find({ $all: targets });
       }
       const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
       if (interestCountries.includes('all areas')) {
@@ -59,15 +61,16 @@ exports.courses = async (req, res) => {
       break;
     case 'search': {
       const regex = new RegExp(`.*${data.search}.*`, 'i');
-      const split = data.search.split(' ');
+      // Split - Capitalize then split into array by comma-separated values
+      // e.g. 'media, games design' => ['Media', 'Games Design']
+      const split = data.search.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
       q = Course.find({
         $or: [
           { name: regex },
-          { description: regex },
           { disciplines: { $in: split } },
           { specialisations: { $in: split } },
         ],
-      });
+      }).collation({locale: "en", strength: 2});
       courses = await q.populate('school', ['slug', 'logo']);
       break;
     }

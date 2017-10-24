@@ -27,7 +27,6 @@ export default class SearchApp extends Component {
   }
 
   resetLimit() {
-    console.log('reset');
     this.setState({
       limit: 30,
     });
@@ -36,7 +35,7 @@ export default class SearchApp extends Component {
   updateLimit() {
     const { limit } = this.state;
     this.setState({
-      limit: limit + 6,
+      limit: limit + 30,
     });
   }
 
@@ -48,7 +47,7 @@ export default class SearchApp extends Component {
         return;
       }
       this.setState({ results: result.data });
-      setTimeout(() => this.setState({ loading: false }), 1800);
+      setTimeout(() => this.setState({ loading: false }), 600);
     }).catch((err) => {
       this.error();
     });
@@ -60,11 +59,30 @@ export default class SearchApp extends Component {
 
   render() {
     const { results, loading, error, limit } = this.state;
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+    const randomise_results = shuffle(results);
     // TODO modify url with query params and default search with said params on load
     return (
       <div id='search-section'>
         <Search getResults={ (params) => this.getResults(params) } limit={ limit } resetLimit={ () => this.resetLimit() }/>
-        <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ results } loading={ loading } error={ error } />
+        <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ randomise_results } loading={ loading } error={ error } />
       </div>
     );
   }

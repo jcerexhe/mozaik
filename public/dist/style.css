@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5 {
 html, body {
   font-family: 'Montserrat Light'; }
 
+/* homepage background */
+.content {
+  background-color: #181818; }
+
 .content {
   margin-top: -100px; }
 
@@ -346,7 +350,8 @@ input[type=text]::placeholder {
   position: relative; }
 
 .extended-search:before {
-  content: ' ';
+  /* uncomment below to add lattice overlay but btn will not work */
+  /*content: ' ';*/
   display: block;
   position: absolute;
   overflow: hidden;
@@ -949,6 +954,10 @@ input[type=text]::placeholder {
 .search-blue-background.taller-search {
   height: 1600px; }
 
+.results-container {
+  background-color: #181818;
+  color: white; }
+
 .no-results {
   display: -ms-flexbox;
   display: flex;
@@ -1029,6 +1038,9 @@ input[type=text]::placeholder {
 
 #results .load-more-results > span {
   cursor: pointer; }
+
+#search-section {
+  background-color: #181818; }
 
 .artworks {
   overflow: hidden; }
