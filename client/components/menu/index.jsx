@@ -58,7 +58,7 @@ export default class MenuApp extends Component {
             <a href='#'>
               <img className='icon-white' src='/images/icons/mozaik-icons-6.png' />
             </a>
-            <a>
+            <a href="/#search">
               <img className='icon-white' src='/images/icons/mozaik-icons-5.png' />
             </a>
             <div id='open-menu'
