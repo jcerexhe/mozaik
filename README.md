@@ -5,12 +5,12 @@
 You will first need to setup your local environment with the following variables:
 
 * NODE_ENV=development
-* MONGODB_URI=` set to your own local db `
+* MONGODB_URI=`set to your own local db`
 * SECRET=mozaik
-* KEY=` set to random 6 digit string `
+* KEY=`set to random 6 digit string`
 * CLOUDINARY_CLOUD_NAME=mozaik
-* CLOUDINARY_API_KEY=` cloudinary api key `
-* CLOUDINARY_API_SECRET=` cloudinary secret key `
+* CLOUDINARY_API_KEY=`cloudinary api key`
+* CLOUDINARY_API_SECRET=`cloudinary secret key`
 
 If using Facebook OAuth for users you will also need:
 
