@@ -52,7 +52,7 @@ exports.schoolDetails = (req, res) => {
 
 exports.schoolCourses = (req, res) => {
   const school = res.locals.school;
-  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses });
+  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines });
   res.render('schoolCourses', { school, Courses });
 };
 

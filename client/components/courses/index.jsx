@@ -43,7 +43,10 @@ export default class CoursesApp extends Component {
   render() {
     const { courses } = this.props;
     const { disciplines, activeCourses } = this.state;
-    const disciplineList = ['all areas', 'Digital Media', 'Visual Communication', 'Fine Arts', 'Film / TV / Audio', 'Performing Arts', 'Design', 'Photography', 'Built Environment', 'Business for Creatives' ];
+    let disciplineList = ['all areas'];
+    disciplineList.push(this.props.schoolDisciplines);
+    // Combine the 'all areas' array with the disciplineList array and flatten it to remove nesting
+    disciplineList = _.flatten(disciplineList);
     return (
       <div>
         <div className='filter-container'>
