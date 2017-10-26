@@ -14,7 +14,7 @@ const CourseCard = (props) => {
       <div className='course-card-left'>
         <img className='img-resp' src={ course.image } alt={ course.name } />
         <div className='course-buttons'>
-          <a className='btn' href='#'>enquiry</a>
+          <a className='btn' href='#'>enquire</a>
           <a className='btn' href='#'>apply</a>
         </div>
       </div>

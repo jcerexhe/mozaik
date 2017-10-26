@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: $blue;
+  background-color: $grey;
 }
 #nav.clear {
   background-color: transparent;
@@ -29,7 +29,8 @@
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid $white;
+  border: 1px solid $carnation;
+  border-radius: 8%;
   padding: 7px;
   color: $white;
   font-size: 12px;
@@ -44,7 +45,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
-  font-size: 35px;
+  font-size: 50px;
 }
 .navbar .links {
   display: flex;

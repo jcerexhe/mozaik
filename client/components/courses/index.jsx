@@ -55,10 +55,16 @@ export default class CoursesApp extends Component {
               onClick={ (val) => this.updateDiscipline(val) }
             />
           </div>
-          <div className='refine-button'>
+         <div className='apply-button'>
+            <a className='btn'>apply</a>
+          </div>
+        </div> 
+
+          {/*<div className='refine-button'>
             <a href='/discover' className='btn'>refine</a>
           </div>
-        </div>
+        </div>  comment out first as it is not included in the new design*/}
+        
         <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (

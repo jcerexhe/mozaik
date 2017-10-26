@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Gotham Book Regular';
+  src: url(/fonts/gotham/Gotham-BookRegular.otf); }
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(/fonts/gotham/Gotham-Bold.otf); }
+
+@font-face {
   font-family: 'Bebas Neue';
   src: url(/fonts/bebas_neue/bebas_neue.otf); }
 
@@ -34,11 +42,18 @@
   font-family: 'Montserrat Bold';
   src: url(/fonts/montserrat/montserrat-bold.otf); }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Bebas Neue'; }
+h1, h2, h3, h5 {
+  font-family: 'Gotham Bold';
+  color: #EF6364;
+  text-transform: uppercase; }
+
+h4 {
+  font-family: 'Gotham Bold';
+  color: #FFFFFF;
+  text-transform: uppercase; }
 
 html, body {
-  font-family: 'Montserrat Light'; }
+  font-family: 'Bebas Neue'; }
 
 /* homepage background */
 .content {
@@ -76,6 +91,9 @@ html, body {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 12px; }
+  .footer > .links > ul li {
+    color: #FFFFFF;
+    font-family: 'Gotham Book Regular'; }
 
 .footer > .social a {
   display: inline-block;
@@ -153,14 +171,15 @@ html, body {
     transform: scale3D(0, 0, 1); } }
 
 .btn {
-  border: 1px solid #082A3E;
+  border: 1px solid #EF6364;
+  border-radius: 8%;
   width: 100px;
   padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Bebas Neue';
-  color: #082A3E;
+  color: #FFFFFF;
   text-align: center;
   cursor: pointer; }
 
@@ -170,7 +189,7 @@ html, body {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #F4F6F8; }
+  background-color: #FFFFFF; }
 
 .filter-btn.white {
   background-color: #FFFFFF; }
@@ -392,7 +411,8 @@ input[type=text]::placeholder {
   border-radius: 3px; }
 
 .school-heading-container {
-  background-color: #F4F6F8; }
+  background-color: #181818;
+  width: 100vw; }
 
 .school-heading {
   display: -ms-flexbox;
@@ -533,7 +553,7 @@ input[type=text]::placeholder {
 
 .school-facilities {
   padding: 25px;
-  background-color: #F4F6F8;
+  background-color: #181818;
   text-align: center; }
   .school-facilities p {
     width: 40%;
@@ -564,7 +584,7 @@ input[type=text]::placeholder {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #0C2A3E; }
+  background-color: #181818; }
 
 #nav.clear {
   background-color: transparent; }
@@ -591,7 +611,8 @@ input[type=text]::placeholder {
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #EF6364;
+  border-radius: 8%;
   padding: 7px;
   color: #FFFFFF;
   font-size: 12px; }
@@ -607,7 +628,7 @@ input[type=text]::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 35px; }
+  font-size: 50px; }
 
 .navbar .links {
   display: -ms-flexbox;
@@ -884,7 +905,7 @@ input[type=text]::placeholder {
   .search-content .interest-areas, .search-content .interest-disciplines {
     padding: 0px 15px 15px 15px; }
   .search-content .interest-countries {
-    background-color: #F4F6F8;
+    background-color: #181818;
     padding: 10px;
     margin-top: 30px; }
   .search-content .interest-countries > h4 {
@@ -904,7 +925,7 @@ input[type=text]::placeholder {
         justify-content: space-around;
     text-align: left; }
   .search-content .interest-categories h4 {
-    color: #F4F6F8;
+    color: #181818;
     text-transform: uppercase; }
   .search-content .interest-categories > .category {
     margin: 10px;
@@ -919,7 +940,7 @@ input[type=text]::placeholder {
   .search-content .search-links > li::first-letter {
     text-transform: uppercase; }
   .search-content .search-link {
-    color: #F4F6F8;
+    color: #181818;
     cursor: pointer;
     display: block;
     text-transform: capitalize; }
@@ -939,11 +960,11 @@ input[type=text]::placeholder {
   .search-content .search-input > input:focus {
     outline: none; }
   .search-content .search-input > input::-webkit-input-placeholder {
-    color: #F4F6F8; }
+    color: #181818; }
   .search-content .search-input > input:-ms-input-placeholder {
-    color: #F4F6F8; }
+    color: #181818; }
   .search-content .search-input > input::placeholder {
-    color: #F4F6F8; }
+    color: #181818; }
 
 .search-blue-background {
   width: 100%;
@@ -1100,7 +1121,7 @@ input[type=text]::placeholder {
   max-height: calc(100vh - 150px) !important; }
 
 .campus-container {
-  background-color: #F4F6F8; }
+  background-color: #181818; }
   .campus-container .campus-buttons {
     padding: 25px;
     text-align: center;
@@ -1153,7 +1174,8 @@ input[type=text]::placeholder {
     left: -100px !important; }
 
 .course-card-container {
-  border-top: 1px solid #E4E9EC; }
+  border-top: 1px solid #E4E9EC;
+  background: #181818; }
 
 .course-card {
   display: -ms-flexbox;
@@ -1173,7 +1195,7 @@ input[type=text]::placeholder {
       justify-content: space-between; }
 
 .course-card-left > .course-buttons {
-  width: 70%;
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1195,13 +1217,15 @@ input[type=text]::placeholder {
   margin: 5px 2%; }
 
 .course-card-right > .course-info {
-  border: 2px solid #E4E9EC;
+  /*border: 2px solid $dark-grey;*/
   width: calc(98% - 9px);
-  padding-left: 12%;
-  margin-left: -10%;
+  padding-left: 2%;
+  margin-left: 0%;
   padding-right: 5px;
   font-family: 'Montserrat Ultra Light';
   font-size: 12px;
+  font: justify;
+  color: #FFFFFF;
   -ms-flex: 1;
       flex: 1;
   display: -ms-flexbox;
@@ -1270,7 +1294,8 @@ input[type=text]::placeholder {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+      background-color: #181818; }
       .filter-container .filter {
         display: -ms-flexbox;
         display: flex;
