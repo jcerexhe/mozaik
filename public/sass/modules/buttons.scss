@@ -1,12 +1,13 @@
 .btn {
-  border: 1px solid $black;
+  border: 1px solid $carnation;
+  border-radius: 8%;
   width: 100px;
   padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Bebas Neue';
-  color: $black;
+  color: $white;
   text-align: center;
   cursor: pointer;
 }
@@ -16,7 +17,7 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: $grey;
+  background-color: $white;
 }
 .filter-btn.white {
   background-color: $white;

@@ -18,9 +18,9 @@ export default class Search extends Component {
     this.state = {
       searchCategory: 'discipline', // options: [discipline, categories, search]
       discipline: {
-        interestAreas: ['all areas'],
-        interestDisciplines: ['all areas'],
-        interestCountries: ['all areas']
+        interestAreas: ['all areas', 'australia'],
+        interestDisciplines: ['all areas', 'australia'],
+        interestCountries: ['all areas', 'australia']
       },
       categories: [],
       search: '',
@@ -117,7 +117,7 @@ export default class Search extends Component {
         <div className='interest-areas'>
           <h3>What areas interest you?</h3>
           <Filter
-            filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
+            filterItems={ ['all areas', 'australia'].concat(_.map(areas, (v, k) => { return k })) }
             activeItems={ discipline.interestAreas }
             onClick={ (val) => this.updateDiscipline('interestAreas', val) }
           />

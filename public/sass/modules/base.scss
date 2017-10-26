@@ -1,10 +1,29 @@
 $black: #082A3E;
-$grey : #F4F6F8;
 $dark-grey: #E4E9EC;
 $white: #FFFFFF;
 $orange: #EF7D30;
 $blue: #0C2A3E;
 $carnation: #EF6364;
+$pink: #FF6D6D;
+$grey: #181818;
+$dark-green: #273234;
+
+
+
+
+
+@font-face {
+  font-family: 'Gotham Book Regular';
+  src: url(/fonts/gotham/Gotham-BookRegular.otf);
+
+}
+
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(/fonts/gotham/Gotham-Bold.otf);
+
+}
 
 @font-face {
   font-family: 'Bebas Neue';
@@ -43,12 +62,21 @@ $carnation: #EF6364;
   src: url(/fonts/montserrat/montserrat-bold.otf);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Bebas Neue';
+h1, h2, h3, h5 {
+  font-family: 'Gotham Bold';
+  color: $carnation;
+  text-transform: uppercase;
 }
 
+h4 {
+  font-family: 'Gotham Bold';
+  color: $white;
+  text-transform: uppercase;
+}
+
+
 html, body {
-  font-family: 'Montserrat Light';
+  font-family: 'Bebas Neue';
 }
 
 /* homepage background */

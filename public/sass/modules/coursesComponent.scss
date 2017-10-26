@@ -1,5 +1,6 @@
 .course-card-container {
   border-top: 1px solid $dark-grey;
+  background: $grey;
 }
 .course-card {
   display: flex;
@@ -14,7 +15,7 @@
   justify-content: space-between;
 }
 .course-card-left > .course-buttons {
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -32,13 +33,15 @@
   margin: 5px 2%;
 }
 .course-card-right > .course-info {
-  border: 2px solid $dark-grey;
+  /*border: 2px solid $dark-grey;*/
   width: calc(98% - 9px);
-  padding-left: 12%;
-  margin-left: -10%;
+  padding-left: 2%;
+  margin-left: 0%;
   padding-right: 5px;
   font-family: 'Montserrat Ultra Light';
   font-size: 12px;
+  font: justify;
+  color: $white;
   flex: 1;
   display: flex;
   justify-content: space-between;
