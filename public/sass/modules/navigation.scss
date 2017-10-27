@@ -36,6 +36,17 @@
   }
 
 }
+
+
+.footer > .social > .links > ul {
+  li {
+   color: $white;  
+   font-size: 12px;
+   font-family: 'Gotham Book Regular'
+   }
+}
+
+
 .footer > .social {
   a {
     display: inline-block;
@@ -49,3 +60,4 @@
     font-family: 'Montserrat Ultra Light';
   }
 }
+

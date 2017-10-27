@@ -95,6 +95,11 @@ html, body {
     color: #FFFFFF;
     font-family: 'Gotham Book Regular'; }
 
+.footer > .social > .links > ul li {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: 'Gotham Book Regular'; }
+
 .footer > .social a {
   display: inline-block;
   width: 25px;
@@ -120,7 +125,7 @@ html, body {
   height: auto; }
 
 .bold {
-  font-family: 'Montserrat Bold'; }
+  font-family: 'Gotham Bold'; }
 
 .caps {
   text-transform: uppercase; }
@@ -462,7 +467,11 @@ input[type=text]::placeholder {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  background-color: #181818; }
+
+.school-courses-link > p {
+  color: #FFFFFF; }
 
 .school-details-links {
   display: -ms-flexbox;
@@ -571,11 +580,12 @@ input[type=text]::placeholder {
 
 .final-links {
   padding: 25px;
-  background-color: #E4E9EC;
+  background-color: #EF6364;
   text-align: center; }
 
-.final-links > a {
-  margin: 0px 10px; }
+.final-links > .btn {
+  margin: 0px 10px;
+  border: 1px solid #082A3E; }
 
 #nav {
   position: absolute;
@@ -1289,8 +1299,7 @@ input[type=text]::placeholder {
   @media only screen and (min-width: 768px) {
     .filter-container {
       padding: 25px;
-      width: 80%;
-      margin: 0px auto;
+      width: 97%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
