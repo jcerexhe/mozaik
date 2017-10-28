@@ -1,3 +1,6 @@
+# Dist
+/public/dist/reactHelper.bundle.js
+
 # Logs
 logs
 *.log

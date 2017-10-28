@@ -59,13 +59,7 @@ export default class CoursesApp extends Component {
             <a className='btn'>apply</a>
           </div>
         </div> 
-
-          {/*<div className='refine-button'>
-            <a href='/discover' className='btn'>refine</a>
-          </div>
-        </div>  comment out first as it is not included in the new design*/}
-        
-        <div className='course-card-container'>
+            <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (
               <CourseCard course={ course } key={ i } />
