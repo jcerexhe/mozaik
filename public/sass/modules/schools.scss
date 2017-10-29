@@ -96,6 +96,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px;
+  background-color: $grey;
 
   h2 {
     font-size: 45px;
@@ -113,9 +114,11 @@
   p {
     margin-top: 0px;
     font-size: 15px;
+    color: $white;
   }
   li, p {
     font-family: 'Montserrat Ultra Light';
+    color: $white;
   }
   .overview {
     width: 60%;
@@ -162,27 +165,32 @@
 }
 .school-locations {
   text-align: center;
+  background-color: $grey;
+  padding: 25px;
   p {
     width: 40%;
     margin: 0px auto;
     margin-bottom: 25px;
     font-family: 'Montserrat Ultra Light';
+    color: $white;
   }
 }
 .school-facilities {
   padding: 25px;
-  background-color: $grey;
+  background-color: #3B3D3F;
   text-align: center;
   p {
     width: 40%;
     margin: 10px auto;
     margin-bottom: 50px;
     font-family: 'Montserrat Ultra Light';
+    color: $white;
   }
 }
 .school-alumni {
   padding: 25px;
   text-align: center;
+  background-color: $grey;
 }
 .school-details-subheading {
   font-size: 45px;

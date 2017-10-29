@@ -42,13 +42,10 @@ export default class DiscoverApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      certificate: false,
-      'advanced diploma': false,
       masters: false,
       diploma: false,
       bachelor: false,
-      phd: false,
-      priceRange: [0, 100],
+      priceRange: [0, 100000],
       university: '',
       state: '',
       country: ''
@@ -63,7 +60,7 @@ export default class DiscoverApp extends Component {
 
   render() {
     const { priceRange, university, state, country } = this.state;
-    const quals = ['certificate', 'advanced diploma', 'masters', 'diploma', 'bachelor', 'phd'];
+    const quals = ['diploma', 'bachelor', 'masters'];
     const inputs = ['university', 'state', 'country'];
     return (
       <div>
@@ -95,11 +92,11 @@ export default class DiscoverApp extends Component {
                 );
               }) }
             </div>
-            <h3>Price Range <span>(in aud$)</span></h3>
+            <h3>Price Range <span>(aud)</span></h3>
             <Range
-              defaultValue={ [0, 100] }
+              defaultValue={ [0, 100000] }
               min={ 0 }
-              max={ 100 }
+              max={ 100000 }
               value={ priceRange }
               allowCross={ false }
               onChange={ (val) => this.updateSearchParam('priceRange', val) }
@@ -107,7 +104,7 @@ export default class DiscoverApp extends Component {
               trackStyle={[trackStyle]}
               railStyle={ railStyle }
               dotStyle={ dotStyle }
-              marks={ { 0: <strong>$0</strong>, 100: <strong>$100</strong> } }
+              marks={ { 0: <strong>$0</strong>, 100000: <strong>$100,000</strong> } }
             />
             <h3>location</h3>
             { _.map(inputs, (inp) => {

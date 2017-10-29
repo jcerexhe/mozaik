@@ -147,7 +147,7 @@ export default class ArtworkApp extends Component {
     const { artworks } = this.props;
     const { disciplineList, disciplines, images } = this.state;
     return (
-      <div className='filter-bg'>
+      <div className='grey-bg'>
         <div className='filter-container'>
           <div className='filter'>
             <h2>disciplines</h2>
@@ -169,6 +169,7 @@ export default class ArtworkApp extends Component {
                 return (
                   <li onClick={ () => this.openLightbox(index) }>
                     <p>{ img.artist }</p>
+                    <p className='artwork-discipline'>{ img.disciplines[0] }</p>
                     <h4>{ img.title }</h4>
                     <Artwork src={ img.thumb } />
                   </li>

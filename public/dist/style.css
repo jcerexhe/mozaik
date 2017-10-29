@@ -532,7 +532,8 @@ input[type=text]::placeholder {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  background-color: #181818; }
   .school-details h2 {
     font-size: 45px;
     margin: 0px; }
@@ -545,9 +546,11 @@ input[type=text]::placeholder {
     font-size: 13px; }
   .school-details p {
     margin-top: 0px;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #FFFFFF; }
   .school-details li, .school-details p {
-    font-family: 'Montserrat Ultra Light'; }
+    font-family: 'Montserrat Ultra Light';
+    color: #FFFFFF; }
   .school-details .overview {
     width: 60%;
     padding-right: 15px; }
@@ -580,26 +583,31 @@ input[type=text]::placeholder {
     font-size: 11px; }
 
 .school-locations {
-  text-align: center; }
+  text-align: center;
+  background-color: #181818;
+  padding: 25px; }
   .school-locations p {
     width: 40%;
     margin: 0px auto;
     margin-bottom: 25px;
-    font-family: 'Montserrat Ultra Light'; }
+    font-family: 'Montserrat Ultra Light';
+    color: #FFFFFF; }
 
 .school-facilities {
   padding: 25px;
-  background-color: #181818;
+  background-color: #3B3D3F;
   text-align: center; }
   .school-facilities p {
     width: 40%;
     margin: 10px auto;
     margin-bottom: 50px;
-    font-family: 'Montserrat Ultra Light'; }
+    font-family: 'Montserrat Ultra Light';
+    color: #FFFFFF; }
 
 .school-alumni {
   padding: 25px;
-  text-align: center; }
+  text-align: center;
+  background-color: #181818; }
 
 .school-details-subheading {
   font-size: 45px;
@@ -1183,15 +1191,28 @@ input[type=text]::placeholder {
   text-align: center;
   left: 0;
   right: 0;
-  opacity: 0; }
+  opacity: 0;
+  color: #FF6D6D; }
 
 .artwork-slides > li p {
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-family: 'Gotham Bold';
+  text-transform: uppercase; }
 
 .artwork-slides > li h4 {
-  bottom: 50%;
-  font-size: 25px;
+  bottom: 40%;
+  font-size: 2em;
+  border-top: 1px solid #FF6D6D;
+  border-bottom: 1px solid #FF6D6D;
+  padding: 20px 0;
   letter-spacing: 1px; }
+
+.artwork-slides > li .artwork-discipline {
+  color: #FFFFFF;
+  margin-top: 60px;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 1em; }
 
 .artwork-slides > li:hover img {
   opacity: 0.15; }
@@ -1383,7 +1404,7 @@ input[type=text]::placeholder {
   text-transform: uppercase;
   line-height: 1.8; }
 
-.filter-bg {
+.grey-bg {
   background-color: #181818; }
 
 .filter-container {
