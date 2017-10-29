@@ -1,16 +1,38 @@
 extends layouts/layout
 
 block content
+  .nav-shadow
   .school-heading-container
     .school-heading
       .school-info
         img(src=school.logo)
         h1= school.name
-      .school-link
-        a(href=`/school/${school.slug}/details`)
-          img.icon(src='/images/icons/mozaik-icons-7.png')
-          span View School
+      .school-links.video-link
+        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
+        br
+        p(class="video-text") Play Video
+      .school-links
+        .school-link
+          a(href='#' class='btn btn-full-width')
+            span Enquire
+        .school-link
+          a(href='#' class='btn btn-full-width')
+            span Apply
+        .school-link
+          a(href=`/school/${school.slug}/details` class='btn btn-full-width')
+            span View School
   !=Lightbox
   .school-courses-link
     p= `${school.name} has ${school.courses.length} courses.`
     a.btn(href=`/school/${school.slug}/courses`) View Courses
+  .extended-search.school-footer
+    .school-footer-section
+      p Want to know more about AIT?
+      .school-link
+          a(href='#' class='btn btn-grey')
+            span View School
+    .school-footer-section
+      p For more details, download the course guide
+      .school-link
+          a(href='#' class='btn btn-grey')
+            span Course Guide
