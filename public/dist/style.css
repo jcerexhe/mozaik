@@ -179,7 +179,7 @@ html, body {
 
 .btn {
   border: 1px solid #FF6D6D;
-  border-radius: 8%;
+  border-radius: 7px;
   /* width was messing up certain btns, will need to investigate original reason for this config */
   /*width: 100px;*/
   padding: 5px 20px 3px 20px;
@@ -189,7 +189,12 @@ html, body {
   font-family: 'Bebas Neue';
   color: #FFFFFF;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 1px; }
+
+.btn-full-width {
+  width: 100%; }
 
 .filter-btn {
   padding: 10px;
@@ -267,6 +272,10 @@ html, body {
   cursor: pointer;
   /*background-color: $pink;
   color: $pink;*/ }
+
+.btn-grey {
+  border-color: #181818;
+  color: #181818; }
 
 .icon-white {
   width: 20px;
@@ -455,10 +464,13 @@ input[type=text]::placeholder {
         align-items: center; }
   .school-heading .school-info > img {
     margin-right: 20px;
-    max-width: 100px;
+    max-width: 150px;
     height: auto; }
   .school-heading .school-name {
     font-family: 'Montserrat Ultra Light'; }
+  .school-heading .school-link {
+    margin: 10px 0;
+    text-align: center; }
   .school-heading .school-link > a {
     display: -ms-flexbox;
     display: flex;
@@ -466,15 +478,16 @@ input[type=text]::placeholder {
         align-items: center; }
   .school-heading .school-link img {
     margin: 0px; }
-  .school-heading .school-link span {
-    padding: 7px 15px 3px 15px;
-    background-color: #082A3E;
-    color: #E4E9EC;
-    text-decoration: none;
-    font-family: 'Bebas Neue'; }
+  .school-heading .school-links {
+    text-align: center; }
+  .school-heading .video-link {
+    margin: 15px 30px;
+    width: 150px;
+    font-family: 'Bebas Neue';
+    color: #FFFFFF; }
 
 .school-courses-link {
-  padding: 20px 0px;
+  padding: 40px 0px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -486,7 +499,8 @@ input[type=text]::placeholder {
   background-color: #181818; }
 
 .school-courses-link > p {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-family: 'Gotham Bold'; }
 
 .school-details-links {
   display: -ms-flexbox;
@@ -601,6 +615,17 @@ input[type=text]::placeholder {
 .final-links > .btn {
   margin: 0px 10px;
   border: 1px solid #082A3E; }
+
+.school-footer {
+  display: -ms-flexbox;
+  display: flex; }
+  .school-footer .school-footer-section {
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+    .school-footer .school-footer-section p {
+      font-family: 'Gotham Bold'; }
+  .school-footer .school-footer-section:first-child {
+    border-right: 1px solid #E4E9EC; }
 
 #nav {
   position: absolute;
@@ -791,6 +816,13 @@ input[type=text]::placeholder {
     width: 20px; }
   to {
     width: 180px; } }
+
+/* nav-shadow not working yet */
+.nav-shadow {
+  height: 1px;
+  background-color: #181818;
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+  box-shadow: 0 4px 4px -2px #000000; }
 
 .home-hero {
   width: 100vw;
@@ -1346,12 +1378,19 @@ input[type=text]::placeholder {
   text-transform: uppercase;
   line-height: 1.8; }
 
+.filter-bg {
+  background-color: #181818; }
+
 .filter-container {
-  display: none; }
+  display: none;
+  padding: 50px 0px;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (min-width: 768px) {
     .filter-container {
-      padding: 25px;
-      width: 97%;
+      /*padding: 25px;*/
+      width: 80%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;

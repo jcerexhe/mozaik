@@ -147,7 +147,7 @@ export default class ArtworkApp extends Component {
     const { artworks } = this.props;
     const { disciplineList, disciplines, images } = this.state;
     return (
-      <div>
+      <div className='filter-bg'>
         <div className='filter-container'>
           <div className='filter'>
             <h2>disciplines</h2>
@@ -158,7 +158,7 @@ export default class ArtworkApp extends Component {
             />
           </div>
           <div className='refine-button'>
-            <a href='/discover' className='btn'>refine</a>
+            <a href='/discover' className='btn btn-full-width'>refine</a>
           </div>
         </div>
         <div className='artworks'>
