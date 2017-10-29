@@ -5,51 +5,56 @@ block content
     .school-heading
       .school-info
         img(src=school.logo)
-        h1.school-name=school.name
-      .school-details-links
-        .video-link
-          a(href='#')
-            img.icon(src='/images/icons/mozaik-icons-8.png')
-            br
-            span play video
-        .other-links
-          a.btn(href='#') enquiry
-          a.btn(href='#') apply
-          a.btn(href=school.website target='_blank') visit website
-  .school-details
-    .overview
-      h2 overview
-      p=school.overview
-      a.btn(href=`/school/${school.slug}/courses`) view all courses
-      a.btn(href=school.courseGuide) course guide
-    .fees-scholarships
-      h3 fees scholarship
-      h4 price range
-      ul
-        each price in school.prices
-          li
-            =`${price.type}:`
-            br
-            =`AUD ${price.lower} - AUD ${price.upper}`
-      h4 scholarship
-      ul
-        each scholarship in school.scholarships
-          li=scholarship
-      .campuses
-        h3 campus locations
+        h1= school.name
+      .school-links.video-link
+        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
+        br
+        p(class="video-text") Play Video
+      .school-links
+        .school-link
+          a(href='#' class='btn btn-full-width')
+            span Enquire
+        .school-link
+          a(href='#' class='btn btn-full-width')
+            span Apply
+        .school-link
+          a(href=school.website target='_blank' class='btn btn-full-width')
+            span Visit Website
+  .grey-bg
+    .school-details
+      .overview
+        h2 overview
+        p=school.overview
+        //- a.btn(href=`/school/${school.slug}/courses`) view all courses
+        //- a.btn(href=school.courseGuide) course guide
+      .fees-scholarships
+        h3 fees scholarship
+        h4 price range
         ul
-          each loc in school.locations
-            li=loc.campus
-      .delivery
-        h3 delivery
+          each price in school.prices
+            li
+              =`${price.type}:`
+              br
+              =`AUD ${price.lower} - AUD ${price.upper}`
+        h4 scholarship
         ul
-          each delivery in school.delivery
-            li=delivery
-    .study-areas
-      h3 study areas
-      ul
-        each area in school.disciplines
-          li=area
+          each scholarship in school.scholarships
+            li=scholarship
+        .campuses
+          h3 campus locations
+          ul
+            each loc in school.locations
+              li=loc.campus
+        .delivery
+          h3 delivery
+          ul
+            each delivery in school.delivery
+              li=delivery
+      .study-areas
+        h3 study areas
+        ul
+          each area in school.disciplines
+            li=area
   !=Lightbox
   .school-locations
     h2.school-details-subheading locations

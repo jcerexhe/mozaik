@@ -28,14 +28,27 @@
     left: 0;
     right: 0;
     opacity: 0;
+    color: $pink;
   }
   p {
     margin-top: 30px;
+    font-size: 1.2em;
+    font-family: 'Gotham Bold';
+    text-transform: uppercase;
   }
   h4 {
-    bottom: 50%;
-    font-size: 25px;
+    bottom: 40%;
+    font-size: 2em;
+    border-top: 1px solid $pink;
+    border-bottom: 1px solid $pink;
+    padding: 20px 0;
     letter-spacing: 1px;
+  }
+  .artwork-discipline {
+    color: $white;
+    margin-top: 60px;
+    font-family: 'Montserrat Ultra Light';
+    font-size: 1em;
   }
 }
 .artwork-slides > li:hover {
