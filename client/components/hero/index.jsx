@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import Slick from 'react-slick';
 import _ from 'lodash';
+import ReactModal from 'react-modal';
+
+const customStyles = {
+  overlay : {
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    border: 'none'
+  },
+  content : {
+    backgroundColor: '#181818',
+    border: 'none'
+  }
+};
 
 export default class HeroApp extends Component {
   constructor(props) {
@@ -31,7 +43,8 @@ export default class HeroApp extends Component {
         autoplaySpeed: 5000,
         arrows: false,
         afterChange: (i) => this.setState({ currentSlide: i })
-      }
+      },
+      isOpen: false
     };
   }
 
@@ -39,12 +52,20 @@ export default class HeroApp extends Component {
     this.refs.slider.slickGoTo(i);
   }
 
+  closeModal() {
+    this.setState({ isOpen: false });
+  }
+
+  openModal() {
+    this.setState({ isOpen: true });
+  }
+
   updateCurrentSlide(i) {
     this.setState({ currentSlide: i });
   }
 
   render() {
-    const { currentSlide, slides, settings } = this.state;
+    const { currentSlide, slides, settings, isOpen } = this.state;
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>
@@ -52,9 +73,17 @@ export default class HeroApp extends Component {
             return (
               <div key={ i } className='slide' style={{ backgroundImage: `url(${slide.background})` }}>
                 <div className='slider-body'>
+                  <ReactModal
+                    isOpen={isOpen}
+                    contentLabel="Modal"
+                    onRequestClose={() => this.closeModal()}
+                    style={customStyles}
+                  >
+                    <iframe width="100%" height="715" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
+                  </ReactModal>
                   <h1>{ slide.heading }</h1>
                   <p>{ slide.text }</p>
-                  { slide.video ? <div><i className="fa fa-play-circle-o fa-3x" aria-hidden="true"></i><br /><p className="video-text">Play Video</p></div> : <div /> }
+                  { slide.video ? <div><i onClick={() => this.openModal()} className="fa fa-play-circle-o fa-3x" aria-hidden="true"></i><br /><p onClick={() => this.openModal()} className="video-text">Play Video</p></div> : <div /> }
                 </div>
               </div>
             );
