@@ -48,7 +48,7 @@ export default class CoursesApp extends Component {
     // Combine the 'all areas' array with the disciplineList array and flatten it to remove nesting
     disciplineList = _.flatten(disciplineList);
     return (
-      <div>
+      <div className='filter-bg course-bg'>
         <div className='filter-container'>
           <div className='filter'>
             <h2>disciplines</h2>
@@ -58,8 +58,8 @@ export default class CoursesApp extends Component {
               onClick={ (val) => this.updateDiscipline(val) }
             />
           </div>
-         <div className='apply-button'>
-            <a className='btn'>apply</a>
+         <div className='refine-button'>
+            <a href='/discover' className='btn'>refine</a>
           </div>
         </div> 
             <div className='course-card-container'>

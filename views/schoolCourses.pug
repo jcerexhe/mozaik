@@ -6,14 +6,29 @@ block content
       .school-info
         img(src=school.logo)
         h1= school.name
-      .school-details-links
-        .video-link
-          a(href='#')
-            img.icon(src='/images/icons/mozaik-icons-8.png')
-            br
-            span play video
-        .other-links
-          a.btn(href='#') enquire
-          a.btn(href='#') apply
-          a.btn(href=school.website target='_blank') visit website
+      .school-links.video-link
+        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
+        br
+        p(class="video-text") Play Video
+      .school-links
+        .school-link
+          a(href='#' class='btn btn-full-width')
+            span Apply
+        .school-link
+          a(href=school.website target='_blank' class='btn btn-full-width')
+            span Visit Website
+        .school-link
+          a(href=`/school/${school.slug}/details` class='btn btn-full-width')
+            span View School
   !=Courses
+  .extended-search.school-footer
+    .school-footer-section
+      p Want to know more about AIT?
+      .school-link
+          a(href=`/school/${school.slug}/details` class='btn btn-grey')
+            span View School
+    .school-footer-section
+      p For more details, download the course guide
+      .school-link
+          a(href='#' class='btn btn-grey')
+            span Course Guide
