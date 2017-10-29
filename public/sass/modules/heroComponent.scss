@@ -6,6 +6,19 @@
 .home-slider {
   margin-bottom: 0px !important;
 }
+.fa-play-circle-o {
+  color: $pink;
+  margin-top: 0.2em;
+  font-size: 4em;
+  cursor: pointer;
+}
+.video-text {
+  margin-top: 5px;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 1.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 .slide {
   width: 100vw !important;
   height: calc(100vh - 100px) !important;
@@ -18,16 +31,23 @@
 }
 .slider-body {
   padding: 0 40px;
-  color: $carnation;
+  color: $pink;
 }
 .slider-body > h1 {
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .slider-body > p {
-  font-size: 1em;
+  font-size: 1.5em;
+  text-transform: none;
+  font-family: 'Montserrat Ultra Light';
+  margin-top: 10px;
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 40%;
+  }
 }
 .scroll-search {
   margin-top: 31px;
@@ -53,5 +73,5 @@
   height: 0px;
 }
 .slick-dots li.slick-active .dot {
-  border: 3px solid $carnation !important;
+  border: 3px solid $pink !important;
 }

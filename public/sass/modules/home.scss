@@ -1,5 +1,5 @@
 .extended-search {
-  background-color: $carnation;
+  background-color: $pink;
   padding-top: 20px;
   padding-bottom: 30px;
   color: $white;
@@ -25,10 +25,13 @@
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid $white;
-  padding: 7px;
-  font-size: 12px;
+  border: 1px solid $grey;
+  padding: 7px 10px;
   cursor: pointer;
+  background-color: $grey;
+  font-family: 'Bebas Neue';
+  font-size: 1.2em;
+  border-color: $grey;
 }
 .enquiry-form {
   text-align: center;
@@ -39,13 +42,22 @@
 .enquiry-form > h3 {
   text-transform: uppercase;
   margin-bottom: 0px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  color: $white;
 }
 .enquiry-form > p {
   font-size: 14px;
   margin-top: 5px;
+  color: $grey-text;
+  font-family: 'Montserrat Ultra Light';
 }
 .enquiry-form > input {
   padding: 5px 20px;
   border-radius: 3px;
+}
+.refine-header {
+  font-size: 1.9em;
+  color: white;
+  letter-spacing: 1px;
 }

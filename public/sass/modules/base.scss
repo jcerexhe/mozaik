@@ -3,12 +3,12 @@ $dark-grey: #E4E9EC;
 $white: #FFFFFF;
 $orange: #EF7D30;
 $blue: #0C2A3E;
-$carnation: #EF6364;
+$pink: #EF6364;
+/* latest */
 $pink: #FF6D6D;
 $grey: #181818;
 $dark-green: #273234;
-
-
+$grey-text: #949494;
 
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -57,7 +57,7 @@ $dark-green: #273234;
 
 h1, h2, h3, h5 {
   font-family: 'Gotham Bold';
-  color: $carnation;
+  color: $pink;
   text-transform: uppercase;
 }
 
@@ -74,5 +74,5 @@ html, body {
 
 /* homepage background */
 .content {
-  background-color: #181818;
+  background-color: $grey;
 }

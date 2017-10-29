@@ -29,15 +29,17 @@
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid $carnation;
-  border-radius: 8%;
-  padding: 7px;
-  color: $white;
-  font-size: 12px;
+  border: 1px solid $pink;
+  background-color: $pink;
+  border-radius: 6px;
+  padding: 5px 15px;
+  color: $black;
+  font-size: 1.3em;
+  letter-spacing: 1px;
 }
 .navbar .discover > a:hover {
-  background-color: $white;
-  color: $blue;
+  background-color: $grey;
+  color: $pink;
 }
 .navbar .logo > a {
   flex-grow: 2;
@@ -45,7 +47,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
-  font-size: 50px;
+  font-size: 4em;
 }
 .navbar .links {
   display: flex;
@@ -69,6 +71,7 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   opacity: 1;
+  margin-left: 15px;
 }
 #open-menu span {
   display: inline;
