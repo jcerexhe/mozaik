@@ -180,8 +180,6 @@ html, body {
 .btn {
   border: 1px solid #FF6D6D;
   border-radius: 7px;
-  /* width was messing up certain btns, will need to investigate original reason for this config */
-  /*width: 100px;*/
   padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
@@ -1291,13 +1289,17 @@ input[type=text]::placeholder {
 .course-card-left > .course-buttons {
   width: 100%;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  display: flex; }
 
 .course-buttons > .btn {
   margin-top: 10px;
-  width: 50px; }
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .course-buttons > .btn {
+    width: 50%; }
+  .course-buttons > .btn:first-child {
+    margin-right: 15px; } }
 
 .course-card-right {
   width: 70%;
@@ -1339,6 +1341,9 @@ input[type=text]::placeholder {
   -ms-flex-direction: column;
       flex-direction: column;
   margin-left: 3px; }
+
+.course-bg {
+  padding-bottom: 40px; }
 
 .discover-column-container {
   height: calc(100vh - 100px);
