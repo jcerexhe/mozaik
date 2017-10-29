@@ -1,12 +1,14 @@
 .btn {
-  border: 1px solid $black;
-  width: 100px;
+  border: 1px solid $pink;
+  border-radius: 8%;
+  /* width was messing up certain btns, will need to investigate original reason for this config */
+  /*width: 100px;*/
   padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Bebas Neue';
-  color: $black;
+  color: $white;
   text-align: center;
   cursor: pointer;
 }
@@ -16,7 +18,7 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: $grey;
+  background-color: $white;
 }
 .filter-btn.white {
   background-color: $white;
@@ -26,7 +28,7 @@
   outline: none;
 }
 .filter-btn:hover, .filter-btn.active {
-  background-color: $carnation;
+  background-color: $pink;
   color: $white;
 }
 .filter-buttons li {
@@ -53,8 +55,8 @@
   background-image: url(/images/buttons/list-select.png);
   background-size: cover;
   cursor: pointer;
-  /*background-color: $carnation;
-  color: $carnation;*/
+  /*background-color: $pink;
+  color: $pink;*/
 }
 .refine-btn {
   width: 60px;
@@ -69,8 +71,8 @@
   background-image: url(/images/buttons/refine-select.png);
   background-size: cover;
   cursor: pointer;
-  /*background-color: $carnation;
-  color: $carnation;*/
+  /*background-color: $pink;
+  color: $pink;*/
 }
 .search-btn {
   width: 60px;
@@ -85,8 +87,8 @@
   background-image: url(/images/buttons/search-select.png);
   background-size: cover;
   cursor: pointer;
-  /*background-color: $carnation;
-  color: $carnation;*/
+  /*background-color: $pink;
+  color: $pink;*/
 }
 
 // Icon buttons

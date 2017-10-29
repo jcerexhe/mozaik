@@ -7,8 +7,13 @@ block content
         img(src=school.logo)
         h1= school.name
       .school-details-links
+        .video-link
+          a(href='#')
+            img.icon(src='/images/icons/mozaik-icons-8.png')
+            br
+            span play video
         .other-links
-          a.btn(href='#') enquiry
+          a.btn(href='#') enquire
           a.btn(href='#') apply
           a.btn(href=school.website target='_blank') visit website
   !=Courses

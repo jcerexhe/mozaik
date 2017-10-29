@@ -5,6 +5,7 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Mozaik
     block stylesheets
+      link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
       link(rel='stylesheet' href='/dist/style.css?rand='+Math.random())
       link(rel='stylesheet' href='/dist/react-sliding-pane.css?rand='+Math.random())
     // TODO get api key
@@ -48,11 +49,15 @@ html(lang='en')
           li
             a(href='#') Who is Mozaik
           li
-            a(href='#') Contact Us
+            a(href='#') Contact Us  
       .social
         // TODO
+        //- .links
+        //-     ul 
+        //-       li Sign up to our Newsletter 
+
         a(href='#')
-          img.img-resp(src='/images/social-icons/sm-facebook.png')
+          img.img-resp(src='/images/social-icons/sm-facebook.png') 
         a(href='#')
           img.img-resp(src='/images/social-icons/sm-youtube.png')
         a(href='#')

@@ -1,5 +1,6 @@
 .school-heading-container {
   background-color: $grey;
+  width: 100vw;
 }
 .school-heading {
   display: flex;
@@ -46,6 +47,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color:$grey;
+}
+
+
+.school-courses-link > p{
+  color: $white;
 }
 
 
@@ -178,9 +185,10 @@
 }
 .final-links {
   padding: 25px;
-  background-color: $dark-grey;
+  background-color: $pink;
   text-align: center;
 }
-.final-links > a {
+.final-links > .btn{
   margin: 0px 10px;
+  border: 1px solid $black;
 }
