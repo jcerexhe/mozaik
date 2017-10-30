@@ -28,6 +28,7 @@ exports.courses = async (req, res) => {
       if (!interestDisciplines.includes('all areas')) {
         targets.push({ disciplines: { $all: interestDisciplines } });
       }
+
       switch (targets.length) {
         case 0:
           q = Course.find();
@@ -36,7 +37,7 @@ exports.courses = async (req, res) => {
           q = Course.find(targets[0]);
           break;
         default:
-          q = Course.find({ $all: targets });
+          q = Course.find(targets[1]);
       }
       const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
       if (interestCountries.includes('all areas')) {

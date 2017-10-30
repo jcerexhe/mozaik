@@ -56,6 +56,7 @@ export default class DiscoverApp extends Component {
     this.setState({
       [key]: val
     })
+    alert(this.state.masters);
   }
 
   render() {

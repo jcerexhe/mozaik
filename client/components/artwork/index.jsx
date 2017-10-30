@@ -11,6 +11,7 @@ export default class ArtworkApp extends Component {
         src: artwork.images.src,
         thumb: artwork.images.thumb,
         title: artwork.name,
+        likes: artwork.likes,
         artist: artwork.artist,
         disciplines: artwork.disciplines
       };
@@ -169,8 +170,10 @@ export default class ArtworkApp extends Component {
                 return (
                   <li onClick={ () => this.openLightbox(index) }>
                     <p>{ img.artist }</p>
+
                     <p className='artwork-discipline'>{ img.disciplines[0] }</p>
                     <h4>{ img.title }</h4>
+                    <p className='artwork-likes'>{ img.likes }</p>
                     <Artwork src={ img.thumb } />
                   </li>
                 );
