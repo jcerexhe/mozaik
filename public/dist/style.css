@@ -1006,7 +1006,7 @@ input[type=text]::placeholder {
     margin: 0px; }
   .search-content .interest-categories {
     margin-top: 50px;
-    background-color: #0C2A3E;
+    background-color: #FFFFFF;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1035,7 +1035,7 @@ input[type=text]::placeholder {
     display: block;
     text-transform: capitalize; }
   .search-content .search-link.active {
-    color: #EF7D30; }
+    color: #FF6D6D; }
   .search-content .search-input {
     margin-top: 100px;
     margin-bottom: 75px; }
