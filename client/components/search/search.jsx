@@ -226,6 +226,7 @@ export default class Search extends Component {
                   className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
               </div>
               { rendered }
+              <p className="results-found">{this.props.resultsAmount} results found</p>
             </div>
           </div>
         </div>

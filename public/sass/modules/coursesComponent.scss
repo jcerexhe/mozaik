@@ -51,7 +51,6 @@
   color: $white;
   flex: 1;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 .course-info-bit {
@@ -64,4 +63,14 @@
 }
 .course-bg {
   padding-bottom: 40px;
+}
+.info-bits-container {
+  display: flex;
+}
+.info-bits-section {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.card-icon {
+  float: right;
 }

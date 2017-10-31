@@ -41,7 +41,7 @@ export default class CoursesApp extends Component {
   }
 
   render() {
-    const { courses } = this.props;
+    const { courses, school } = this.props;
     const { disciplines, activeCourses } = this.state;
     let disciplineList = ['all areas'];
     disciplineList.push(this.props.schoolDisciplines);
@@ -65,7 +65,7 @@ export default class CoursesApp extends Component {
             <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (
-              <CourseCard course={ course } key={ i } />
+              <CourseCard course={ course } school={ school } key={ i } />
             )
           }) }
         </div>

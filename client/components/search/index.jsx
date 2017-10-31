@@ -8,12 +8,13 @@ export default class SearchApp extends Component {
     super(props);
     this.state = {
       results: [],
+      resultsAmount: 0,
       loading: true,
       error: {
         exists: false,
         message: ''
       },
-      limit: 30,
+      limit: 30
     };
   }
 
@@ -41,12 +42,12 @@ export default class SearchApp extends Component {
 
   getResults(params) {
     this.setState({ limit: params.limit, loading: true });
-    axios.get('/api/courses', { params }).then((result) => {
-      if (result.data.error) {
+    axios.get('/api/courses', { params }).then((response) => {
+      if (response.data.error) {
         this.error();
         return;
       }
-      this.setState({ results: result.data });
+      this.setState({ results: response.data.results, resultsAmount: response.data.resultsAmount });
       setTimeout(() => this.setState({ loading: false }), 600);
     }).catch((err) => {
       this.error();
@@ -58,7 +59,7 @@ export default class SearchApp extends Component {
   }
 
   render() {
-    const { results, loading, error, limit } = this.state;
+    const { results, resultsAmount, loading, error, limit } = this.state;
     function shuffle(array) {
       var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -81,7 +82,7 @@ export default class SearchApp extends Component {
     // TODO modify url with query params and default search with said params on load
     return (
       <div id='search-section'>
-        <Search getResults={ (params) => this.getResults(params) } limit={ limit } resetLimit={ () => this.resetLimit() }/>
+        <Search getResults={ (params) => this.getResults(params) } limit={ limit } resetLimit={ () => this.resetLimit() } resultsAmount={ resultsAmount } />
         <Results getMoreResults={ () => this.updateLimit() } limit={ limit } results={ randomise_results } loading={ loading } error={ error } />
       </div>
     );
