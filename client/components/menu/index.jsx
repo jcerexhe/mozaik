@@ -11,24 +11,25 @@ export default class MenuApp extends Component {
         {
           heading: 'for students',
           links: [
+            { url: '#', val: 'why mozaik?' },
             { url: '/discover', val: 'discover' },
             { url: '#', val: 'study areas' },
-            { url: '#', val: 'education' },
+            { url: '#', val: 'education agency' },
             { url: '#', val: 'sign up' }
           ]
         },
         {
           heading: 'for schools',
           links: [
-            { url: '#', val: 'why mozaik' },
-            { url: '#', val: 'education agent' },
+            { url: '#', val: 'why partner with mozaik' },
+            { url: '#', val: 'education agency' },
             { url: '#', val: 'sign up' }
           ]
         },
         {
           heading: 'about mozaik',
           links: [
-            { url: '#', val: 'who is mozaik' },
+            { url: '#', val: 'who is mozaik?' },
             { url: '#', val: 'contact us' }
           ]
         }
@@ -44,7 +45,6 @@ export default class MenuApp extends Component {
   render() {
     const { currentPath } = this.props;
     const { menuOpen, menu } = this.state;
-    // TODO menu compnent & navbar component
     return (
       <div>
         <div className='navbar'>

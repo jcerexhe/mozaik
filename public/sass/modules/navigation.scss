@@ -37,7 +37,6 @@
 
 }
 
-
 .footer > .social > .links > ul {
   li {
    color: $white;  
@@ -45,7 +44,6 @@
    font-family: 'Gotham Book Regular'
    }
 }
-
 
 .footer > .social {
   a {
@@ -62,3 +60,16 @@
   }
 }
 
+.input-newsletter {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid $white;
+  padding: 10px 5px;
+  color: $white;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+input.input-newsletter:focus{
+  outline: none;
+}

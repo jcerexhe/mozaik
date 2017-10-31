@@ -113,6 +113,18 @@ html, body {
   font-family: 'Montserrat Ultra Light';
   color: #949494; }
 
+.input-newsletter {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px 5px;
+  color: #FFFFFF;
+  width: 70%;
+  margin-bottom: 20px; }
+
+input.input-newsletter:focus {
+  outline: none; }
+
 .hidden {
   display: none; }
 
@@ -200,7 +212,8 @@ html, body {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  font-size: 10px; }
 
 .filter-btn.white {
   background-color: #FFFFFF; }
@@ -287,6 +300,14 @@ html, body {
   height: 53px;
   margin: 0px 15px;
   cursor: pointer; }
+
+.fa-heart, .fa-heart-o {
+  opacity: 0.7;
+  cursor: pointer;
+  color: #FF6D6D; }
+
+.fa-heart:hover, .fa-heart-o:hover {
+  opacity: 1; }
 
 .control {
   font-size: 18px;
@@ -454,7 +475,7 @@ input[type=text]::placeholder {
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .school-heading {
-      width: 80%; } }
+      width: 60%; } }
   .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
@@ -672,7 +693,7 @@ input[type=text]::placeholder {
   border-radius: 6px;
   padding: 5px 15px;
   color: #082A3E;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 1px; }
 
 .navbar .discover > a:hover {
@@ -686,7 +707,7 @@ input[type=text]::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 4em; }
+  font-size: 3.2em; }
 
 .navbar .links {
   display: -ms-flexbox;
@@ -771,7 +792,7 @@ input[type=text]::placeholder {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  background-image: url("http://www.pngmart.com/files/3/Ballet-PNG-HD.png");
+  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain; }
@@ -802,7 +823,8 @@ input[type=text]::placeholder {
 .menu-content ul > li {
   margin-top: 6px;
   margin-bottom: 4px;
-  width: 180px; }
+  width: 180px;
+  font-family: 'Gotham Book Regular'; }
 
 .menu-content ul > li > a {
   color: #FFFFFF;
@@ -835,6 +857,9 @@ input[type=text]::placeholder {
   height: 100vh;
   z-index: 40; }
 
+.hero-container {
+  height: 100vh; }
+
 .home-slider {
   margin-bottom: 0px !important; }
 
@@ -853,13 +878,13 @@ input[type=text]::placeholder {
 
 .slide {
   width: 100vw !important;
-  height: calc(100vh - 100px) !important;
+  height: calc(100vh + 300px) !important;
   padding-top: 100px;
   background-size: cover;
   background-position: 0 -200px; }
 
 .slider-dots {
-  margin-top: -275px; }
+  margin-top: -490px; }
 
 .slider-body {
   padding: 0 40px;
@@ -869,7 +894,11 @@ input[type=text]::placeholder {
   font-size: 4em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 10%; }
+  margin-top: 15%;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .slider-body > h1 {
+      width: 55%; } }
 
 .slider-body > p {
   font-size: 1.5em;
@@ -879,7 +908,7 @@ input[type=text]::placeholder {
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .slider-body > p {
-      width: 40%; } }
+      width: 45%; } }
 
 .scroll-search {
   margin-top: 31px;
@@ -910,10 +939,12 @@ input[type=text]::placeholder {
 #search {
   position: absolute;
   width: 100%;
-  height: 800px;
-  margin-top: -200px;
+  height: 850px;
+  /*margin-top: -200px;*/
   z-index: 50;
-  overflow: hidden; }
+  overflow: hidden;
+  /* gradient bg allows slider img to appear in top right */
+  background: linear-gradient(to right top, #FF6D6D, rgba(255, 0, 0, 0)); }
 
 #search.taller-search {
   height: 1800px; }
@@ -953,7 +984,7 @@ input[type=text]::placeholder {
     font-family: 'Montserrat Black';
     text-transform: uppercase; }
   .search-content .search-criteria {
-    width: 75%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
@@ -1059,7 +1090,6 @@ input[type=text]::placeholder {
 .search-blue-background {
   width: 100%;
   height: 600px;
-  /*background-color: $blue;*/
   background-color: #FF6D6D; }
 
 .search-blue-background.taller-search {
@@ -1067,7 +1097,8 @@ input[type=text]::placeholder {
 
 .results-container {
   background-color: #181818;
-  color: white; }
+  color: white;
+  margin-top: 250px; }
 
 .no-results {
   display: -ms-flexbox;
@@ -1144,7 +1175,7 @@ input[type=text]::placeholder {
   z-index: 5; }
 
 #results .search-result > .logo {
-  width: 15%;
+  width: 20%;
   height: auto; }
 
 #results .load-more-results {
@@ -1162,6 +1193,13 @@ input[type=text]::placeholder {
 
 #search-section {
   background-color: #181818; }
+
+.results-found {
+  color: #949494;
+  font-family: 'Montserrat Ultra Light';
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase; }
 
 .artworks {
   overflow: hidden; }
@@ -1347,8 +1385,6 @@ input[type=text]::placeholder {
       flex: 1;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   -ms-flex-direction: column;
       flex-direction: column; }
 
@@ -1365,6 +1401,19 @@ input[type=text]::placeholder {
 
 .course-bg {
   padding-bottom: 40px; }
+
+.info-bits-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.info-bits-section {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.card-icon {
+  float: right; }
 
 .discover-column-container {
   height: calc(100vh - 100px);
@@ -1416,7 +1465,7 @@ input[type=text]::placeholder {
   @media only screen and (min-width: 768px) {
     .filter-container {
       /*padding: 25px;*/
-      width: 80%;
+      width: 60%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;

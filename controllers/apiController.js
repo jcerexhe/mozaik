@@ -79,7 +79,7 @@ exports.courses = async (req, res) => {
       q = Course.find();
   }
   // TODO allow user to change limit
-  res.json(courses.slice(0, limit));
+  res.json({results: courses.slice(0, limit), resultsAmount: courses.length});
   // q.populate('school', 'slug').limit(limit).then((courses) => {
     // res.json(courses);
   // }).catch(() => {

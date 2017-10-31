@@ -19,8 +19,8 @@ block content
           a(href='#' class='btn btn-full-width')
             span Apply
         .school-link
-          a(href=`/school/${school.slug}/details` class='btn btn-full-width')
-            span View School
+          a(href=`${school.website}` class='btn btn-full-width')
+            span Visit Website
   !=Lightbox
   .school-courses-link
     p= `${school.name} has ${school.courses.length} courses.`
