@@ -14,7 +14,6 @@ const customStyles = {
     border: 'none',
     overflow: 'hidden',
     display: 'block'
-
   }
 };
 
@@ -33,7 +32,7 @@ export default class HeroApp extends Component {
         {
           heading: 'Let the student do the talking.',
           text: "Search for courses by comparing the work of students from creative schools.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350623/slider1-compressor_qgn31w.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1509676460/navis_reversed_kjt1o5.jpg',
           video: false
         },
         {
