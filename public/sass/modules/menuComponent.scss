@@ -34,7 +34,7 @@
   border-radius: 6px;
   padding: 5px 15px;
   color: $black;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 1px;
 }
 .navbar .discover > a:hover {
@@ -47,7 +47,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
-  font-size: 4em;
+  font-size: 3.2em;
 }
 .navbar .links {
   display: flex;
@@ -129,7 +129,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');
+  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -157,6 +157,7 @@
   margin-top: 6px;
   margin-bottom: 4px;
   width: 180px;
+  font-family: 'Gotham Book Regular';
 }
 .menu-content ul > li > a {
   color: $white;
