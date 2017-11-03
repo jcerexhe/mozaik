@@ -59,7 +59,7 @@ export default class CoursesApp extends Component {
             />
           </div>
          <div className='refine-button'>
-            <a href='/discover' className='btn'>refine</a>
+            <a href='/discover' className='btn btn-full-width'>refine</a>
           </div>
         </div> 
             <div className='course-card-container'>

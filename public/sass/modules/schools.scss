@@ -31,7 +31,7 @@
     text-align: center;
   }
   .school-link > a {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
   }
   .school-link img {
@@ -92,7 +92,7 @@
 .school-details {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px;
@@ -145,7 +145,7 @@
   }
   .fees-scholarships {
     font-size: 10px;
-    width: 30%;
+    width: 35%;
 
     .campuses, .delivery {
       width: 45%;
@@ -156,7 +156,7 @@
     }
   }
   .study-areas {
-    width: 10%;
+    width: 15%;
   }
   .study-areas > ul > li {
     padding-top: 10px;

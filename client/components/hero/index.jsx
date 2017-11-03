@@ -36,7 +36,7 @@ export default class HeroApp extends Component {
           video: false
         },
         {
-          heading: 'Personalised application support ',
+          heading: 'Personalised application support',
           text: "We can help you with the full application process. From enquiry to enrolment... and throughout your whole student journey.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350977/slider2-compressor_zd4ufr.png',
           video: false,
