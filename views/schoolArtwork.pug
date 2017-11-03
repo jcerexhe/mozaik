@@ -13,14 +13,11 @@ block content
         p(class="video-text") Play Video
       .school-links
         .school-link
-          a(href='#' class='btn btn-full-width')
-            span Enquire
+          a(href='#' class='btn btn-full-width') Enquire
         .school-link
-          a(href='#' class='btn btn-full-width')
-            span Apply
+          a(href='#' class='btn btn-full-width') Apply
         .school-link
-          a(href=`${school.website}` class='btn btn-full-width')
-            span Visit Website
+          a(href=school.website class='btn btn-full-width') Visit Website
   !=Lightbox
   .school-courses-link
     p= `${school.name} has ${school.courses.length} courses.`

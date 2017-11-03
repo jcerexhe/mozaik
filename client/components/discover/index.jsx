@@ -42,11 +42,16 @@ export default class DiscoverApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      masters: false,
+      certificate: false,
       diploma: false,
+      advancedDiploma: false,
       bachelor: false,
-      priceRange: [0, 100000],
-      university: '',
+      graduateCertificate: false,
+      graduateDiploma: false,
+      master: false,
+      phd: false,
+      priceRange: [0, 200000],
+      city: '',
       state: '',
       country: ''
     };
@@ -60,8 +65,8 @@ export default class DiscoverApp extends Component {
 
   render() {
     const { priceRange, university, state, country } = this.state;
-    const quals = ['diploma', 'bachelor', 'masters'];
-    const inputs = ['university', 'state', 'country'];
+    const quals = ['certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
+    const inputs = ['city', 'state', 'country'];
     return (
       <div>
         <Map
@@ -75,7 +80,6 @@ export default class DiscoverApp extends Component {
         />
         <div className='discover-column-container'>
           <div className='discover-column'>
-            <a href='/'><h2>mozaik</h2></a>
             <h3>qualification</h3>
             <div className='discover-checkboxes control-group'>
               { _.map(quals, (q, i) => {
@@ -94,9 +98,9 @@ export default class DiscoverApp extends Component {
             </div>
             <h3>Price Range <span>(aud)</span></h3>
             <Range
-              defaultValue={ [0, 100000] }
+              defaultValue={ [0, 200000] }
               min={ 0 }
-              max={ 100000 }
+              max={ 200000 }
               value={ priceRange }
               allowCross={ false }
               onChange={ (val) => this.updateSearchParam('priceRange', val) }
@@ -104,7 +108,7 @@ export default class DiscoverApp extends Component {
               trackStyle={[trackStyle]}
               railStyle={ railStyle }
               dotStyle={ dotStyle }
-              marks={ { 0: <strong>$0</strong>, 100000: <strong>$100,000</strong> } }
+              marks={ { 0: <strong>$0</strong>, 200000: <strong>$200,000+</strong> } }
             />
             <h3>location</h3>
             { _.map(inputs, (inp) => {
