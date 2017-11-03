@@ -37,17 +37,17 @@
   color: $pink;
 }
 .slider-body > h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 15%;
+  margin-top: 12%;
   width: 100%;
   @media only screen and (min-width: 768px) {
     width: 55%;
   }
 }
 .slider-body > p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-transform: none;
   font-family: 'Montserrat Ultra Light';
   margin-top: 10px;
