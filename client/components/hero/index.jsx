@@ -30,7 +30,7 @@ export default class HeroApp extends Component {
           video: true
         },
         {
-          heading: 'Let the student do the talking.',
+          heading: 'Let the student work do the talking.',
           text: "Search for courses by comparing the work of students from creative schools.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1509676460/navis_reversed_kjt1o5.jpg',
           video: false
