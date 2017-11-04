@@ -40,9 +40,8 @@
     "facilitiesDescription": "VFS consist of eight state-of-the-art campuses offer lots of workshop and production spaces, green screen room, film sets, studios, screening rooms, theatres, and 24/7 access to computer labs with industry-standard software.",
     "facilitiesImages": [
     ],
-    "delivery": [ "On Campus"
-    ],
-    "logo": "",
+    "delivery": [ "On Campus" ],
+    "logo": "VFS/VFS_logo",
     "video": "",
     "courseGuide": ""
   },
@@ -588,28 +587,28 @@
   ],
   "alumni": [
     {
-      "photo": "",
+      "photo": "VFS/alumni/Emily_Bett_Rickards",
       "name": "EMILY BETT RICKARDS",
       "course": "Acting Essentials Program",
       "profession": "Actress",
       "credits": "Known for portraying Felicity Smoak in the CW television series Arrow as well as its spinoff series The Flash, Vixen and Legends of Tomorrow"
     },
     {
-      "photo": "",
+      "photo": "VFS/alumni/Neil_Blomkamp",
       "name": "NEILL BLOMKAMP",
       "course": "3D Animation and Visual Effects",
       "profession": "Film director, film producer screenwriter, and animator.",
       "credits": "He’s known for directing District 9 and Elysium."
     },
     {
-      "photo": "",
+      "photo": "VFS/alumni/Sara_Canning",
       "name": "SARA CANNING",
       "course": "Acting for Film + Television",
       "profession": "Actress",
       "credits": "Known for co-starred on The CW television series The Vampire Diaries as Jenna Sommers and appeared in the 2009 feature film, Black Field."
     },
     {
-      "photo": "",
+      "photo": "VFS/alumni/Terri_Tatchell",
       "name": "TERRI TATCHELL",
       "course": "Writing for Film and Television",
       "profession": "Screenwriter",
