@@ -10,11 +10,12 @@
     padding: 0px 20px;
     cursor: pointer;
     font-family: 'Montserrat Semi Bold';
+    color: $white;
   }
   .campus-buttons a.active {
     text-decoration: underline;
   }
   .campus-buttons a:not(:last-child) {
-    border-right: 1px solid $black;
+    border-right: 1px solid $white;
   }
 }

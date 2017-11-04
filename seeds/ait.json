@@ -14,7 +14,7 @@
       "Digital Design",
       "Graphic Design"
     ],
-    "overview": "Founded in 1999, AIT is locaeted in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
+    "overview": "Founded in 1999, AIT is located in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
     "prices": [{
       "type": "Domestic students",
       "upper": 50400,
@@ -60,7 +60,7 @@
       "On Campus",
       "Online"
     ],
-    "logo": "AIT/AIT_logo_1_a8j5dx",
+    "logo": "AIT/AIT_logo_png",
     "video": "",
     "courseGuide": ""
   },
@@ -882,25 +882,67 @@
   ],
   "alumni": [
     {
-      "photo": "PeeJay_Svoboda_amn4fd",
+      "photo": "AIT/alumni/PeeJay_Svoboda",
       "name": "Peter J “Peejay” Svobooda",
       "course": "Bachelor of Interactive Media - Film & Video",
       "profession": "Cinematographer and Designer",
       "credits": "Kenya 2016, Maasai Mara, APDG Chris Seagers Interview, PJ won numerous films/design awards at AIT"
     },
     {
-      "photo": "Alex_Holder_sxcxnr",
-      "name": "Alex Holder",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "photo": "AIT/alumni/Liem_Nguyen",
+      "name": "Liem Nguyen",
+      "course": "Bachelor of Interactive Media",
+      "profession": "Matte Painter",
+      "credits": "Flying Bark Studios"
     },
     {
-      "photo": "Tomas_Curda_qxeizr",
-      "name": "Tomas Curda",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "photo": "AIT/alumni/Dominic_Dimech",
+      "name": "Dominic Dimech",
+      "course": "Bachelor of Interactive Media - Film & Video",
+      "profession": "Editor",
+      "credits": "Top of the Food Chain, Window Boy, through AIT’s Internship program Dominic found a job at Mindconsole."
+    },
+    {
+      "photo": "AIT/alumni/Priscilla_Firmansjah",
+      "name": "Priscilla Firmansjah",
+      "course": "Bachelor of Interactive Media",
+      "profession": "3D Modelling",
+      "credits": "Epiphany Games"
+    },
+    {
+      "photo": "AIT/alumni/Chanunya_Devapalin",
+      "name": "Chanunya Devapalin",
+      "course": "Bachelor Digital Design",
+      "profession": "Graphic Designer",
+      "credits": "The Style Agency & Brazen Adventure"
+    },
+    {
+      "photo": "AIT/alumni/Daniel_Scholfield",
+      "name": "Daniel Schofield",
+      "course": "Bachelor IT (Mobile App Development)",
+      "profession": "Game Developer",
+      "credits": "International Merit Awards (ICT Alliance), iAwards  - National UG Tertiary Prize (AITendance), Lion Hearts Studio"
+    },
+    {
+      "photo": "AIT/alumni/Luiz_Cavalier",
+      "name": "Luiz Cavalieri",
+      "course": "Bachelor IT (Mobile App Development)",
+      "profession": "UX Developer",
+      "credits": "iAwards  - National UG Tertiary Prize (AITendance), Adelphi Digital Consulting Group"
+    },
+    {
+      "photo": "AIT/alumni/Ke_Zhang",
+      "name": "Ke Zhang",
+      "course": "Bachelor IT (Mobile App Development)",
+      "profession": "App Developer",
+      "credits": "React Native Developer"
+    },
+    {
+      "photo": "AIT/alumni/Audrey_Svoboda",
+      "name": "Audrey Svoboda",
+      "course": "Bachelor of Interactive Media",
+      "profession": "Director, Editor",
+      "credits": "The Rawr Collective, Engine Room Production, Hackett Films"
     }
   ]
 }

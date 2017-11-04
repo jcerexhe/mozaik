@@ -6,7 +6,6 @@ import CourseCard from './courseCard.jsx';
 export default class CoursesApp extends Component {
   constructor(props) {
     super(props);
-    // TODO pass course id to props instead of all courses, fetch course data
     this.state = {
       disciplines: ['all areas'],
       activeCourses: props.courses

@@ -122,6 +122,7 @@ export default class Search extends Component {
             filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
             activeItems={ discipline.interestAreas }
             onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+            isHome={ true }
           />
         </div>
         <div className='interest-disciplines'>
@@ -130,6 +131,7 @@ export default class Search extends Component {
             filterItems={ ['all areas'].concat(interestDisciplines) }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
           />
         </div>
         <div className='interest-countries'>
@@ -138,6 +140,7 @@ export default class Search extends Component {
             filterItems={ countries }
             activeItems={ discipline.interestCountries }
             onClick={ (val) => this.updateDiscipline('interestCountries', val) }
+            isHome={ true }
           />
         </div>
       </div>

@@ -155,6 +155,7 @@ export default class ArtworkApp extends Component {
               filterItems={ disciplineList }
               activeItems={ disciplines }
               onClick={ (val) => this.updateDiscipline(val) }
+              isHome={ false }
             />
           </div>
           <div className='refine-button'>
