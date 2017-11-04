@@ -91,8 +91,6 @@ export default class Search extends Component {
         [area]: [...interests]
       }
     });
-
-
   }
 
   updateCategories(val) {
