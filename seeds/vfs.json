@@ -75,7 +75,7 @@
         "Voice Practice",
         "Audition"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Acting_Essentials"
     },
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
@@ -121,7 +121,53 @@
         "Green Screen"
         "Audition"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
+    },
+    {
+      "name": "ACTING FOR FILM + TELEVISION",
+      "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range. ",
+      "campus": ["Vancouver"
+      ],
+      "length": "12 months",
+      "intakes": "January | February | April | June | August | October",
+      "prices": [
+        {
+          "type": "Domestic students",
+          "fees": 20500
+        },
+        {
+          "type": "International students",
+          "fees": 30500
+        }
+      ],
+      "specialisations": [
+        "Acting",
+        "Voice"
+        "Improvisation",
+        "Movement"
+      ],
+      "disciplines": [
+        "Digital Media"
+        "Acting"
+        "Performance Art"
+        "Audition"
+        "Voice Techniques"
+        "Voice Coaching"
+        "Voice Acting"
+        "Movement"
+        "Text Analysis"
+        "TV"
+        "Film"
+        "Audio"
+        "Improvisation"
+        "Critical Sensibility"
+        "Sitcom"
+        "Drama"
+        "Motion Capture"
+        "Green Screen"
+        "Audition"
+      ],
+      "image": "VFS/course_pics/VFS_Acting_for_Film_Television"
     },
     {
       "name": "FILM PRODUCTION ",
@@ -178,7 +224,7 @@
         "Camera Operator",
         "Transmedia"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Film_Production"
     },
     {
       "name": "MAKEUP DESIGN FOR FILM + TELEVISION",
@@ -219,7 +265,7 @@
         "Sculpting"
       
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Makeup_Design_for_Film_Television"
     },
     {
       "name": "SOUND DESIGN FOR VISUAL MEDIA",
@@ -268,7 +314,7 @@
         "Digital Audio",
         "Electronic Sound",
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media"
     },
     {
       "name": "WRITING FOR FILM  + TELEVISION",
@@ -306,7 +352,7 @@
         "Crafting Story",
         "Creative Writing"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Writing_for_Film_and_Television"
     },
     {
       "name": "3D ANIMATION + VISUAL EFFECTS ",
@@ -358,7 +404,7 @@
         "Concept Artist",
         "Decoding Media"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_3D_Animation_Visual_Effects"
     },    
   {
       "name": "ANIMATION CONCEPT ART",
@@ -395,7 +441,7 @@
         "Concept Artist",
         "Visual Storytelling"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Animation_Concept_Art"
     },
     {
       "name": "CLASSICAL ANIMATION",
@@ -433,7 +479,7 @@
         "Digital Imaging",
         "Concept Artist"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Classical_Animation"
     },
     {
       "name": "DIGITAL DESIGN ",
@@ -484,7 +530,7 @@
         "Concept Artist",
         "Creative Drawing"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Digital_Design"
     },
         {
       "name": "GAME DESIGN",
@@ -527,7 +573,7 @@
         "Virtual Worlds",
         "2D Interactivity"
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Game_Design"
     },
     {
       "name": "PROGRAMMING FOR GAMES, WEB + MOBILE",
@@ -573,15 +619,130 @@
         "Digital Project Management",
         "Cross-Platform Apps",
       ],
-      "image": ""
+      "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile"
     },
   ],
   "artworks": [
     {
-      "image": "",
-      "name": "",
+      "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
+      "name": "Deadzone",
       "artist": "",
       "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Everyone",
+      "name": "Everyone",
+      "artist": "",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
+      "name": "It's Not A Diary It's A Movie",
+      "artist": "",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
+      "name": "Shortland Street",
+      "artist": "",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
+      "name": "Supernatural",
+      "artist": "",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
+      "name": "Final Perspective Vehicle",
+      "artist": "Fernanda Munoz",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
+      "name": "Character Variation Hero",
+      "artist": "Jiyeon Han",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca001_luccamedeiros_estabilishingshot_f",
+      "name": "Establishing Shot",
+      "artist": "Lucca Medeiros",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
+      "name": "Final Establishing Shot",
+      "artist": "Ana Karen Zamudio Soberanes",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/nataliyametlukh_colourconcept_f",
+      "name": "Colour Concept",
+      "artist": "Nataliya Metlukh",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
+      "name": "Beauty Fantasy Competition Makeup",
+      "artist": "",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
+      "name": "Character Prosthetic Makeup",
+      "artist": "",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup",
+      "name": "Human-Character Prosthetic Makeup",
+      "artist": "",
+      "disciplines": [
+        "Makeup",
+        "Design"
       ]
     }
   ],
