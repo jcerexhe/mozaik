@@ -28,7 +28,7 @@
     "locationDescription": "AIT is located in Sydney and Melbourne - city centre areas. AIT also offers online delivery of selected courses.",
     "locations": [
       {
-        "address": "7 Kelly St, Ultimo, NSW 2007",
+        "address": "7 Kelly St, Ultimo, NSW 2007, Australia",
         "coordinates": {
           "lat": -33.8819586,
           "lng": 151.19523779999997
@@ -38,7 +38,7 @@
         "campus": "Sydney"
       },
       {
-        "address": "13/120 Spencer St, Melbourne VIC 3000",
+        "address": "13/120 Spencer St, Melbourne VIC 3000, Australia",
         "coordinates": {
           "lat": -37.8182122,
           "lng": 144.95430220000003

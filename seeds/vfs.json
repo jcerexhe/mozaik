@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "Vancouver Film School  (VFS)",
-    "website": "",
+    "website": "https://vfs.edu/",
     "disciplines": [
       "Digital Media",
       "Animation",
@@ -27,7 +27,7 @@
 ],  "locationDescription": "VFS is located in the heart of Vancouver Downtown.",
     "locations": [
       {
-        "address": "Vancouver",
+        "address": "198 W Hastings St, Vancouver, BC V6B 1H2, Canada",
         "coordinates": {
           "lat": 49.2827,
           "lng": 123.1207
@@ -96,29 +96,29 @@
       ],
       "specialisations": [
         "Acting",
-        "Voice"
+        "Voice",
         "Improvisation",
         "Movement"
       ],
       "disciplines": [
-        "Digital Media"
-        "Acting"
-        "Performance Art"
-        "Audition"
-        "Voice Techniques"
-        "Voice Coaching"
-        "Voice Acting"
-        "Movement"
-        "Text Analysis"
-        "TV"
-        "Film"
-        "Audio"
-        "Improvisation"
-        "Critical Sensibility"
-        "Sitcom"
-        "Drama"
-        "Motion Capture"
-        "Green Screen"
+        "Digital Media",
+        "Acting",
+        "Performance Art",
+        "Audition",
+        "Voice Techniques",
+        "Voice Coaching",
+        "Voice Acting",
+        "Movement",
+        "Text Analysis",
+        "TV",
+        "Film",
+        "Audio",
+        "Improvisation",
+        "Critical Sensibility",
+        "Sitcom",
+        "Drama",
+        "Motion Capture",
+        "Green Screen",
         "Audition"
       ],
       "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
@@ -142,29 +142,29 @@
       ],
       "specialisations": [
         "Acting",
-        "Voice"
+        "Voice",
         "Improvisation",
         "Movement"
       ],
       "disciplines": [
-        "Digital Media"
-        "Acting"
-        "Performance Art"
-        "Audition"
-        "Voice Techniques"
-        "Voice Coaching"
-        "Voice Acting"
-        "Movement"
-        "Text Analysis"
-        "TV"
-        "Film"
-        "Audio"
-        "Improvisation"
-        "Critical Sensibility"
-        "Sitcom"
-        "Drama"
-        "Motion Capture"
-        "Green Screen"
+        "Digital Media",
+        "Acting",
+        "Performance Art",
+        "Audition",
+        "Voice Techniques",
+        "Voice Coaching",
+        "Voice Acting",
+        "Movement",
+        "Text Analysis",
+        "TV",
+        "Film",
+        "Audio",
+        "Improvisation",
+        "Critical Sensibility",
+        "Sitcom",
+        "Drama",
+        "Motion Capture",
+        "Green Screen",
         "Audition"
       ],
       "image": "VFS/course_pics/VFS_Acting_for_Film_Television"
@@ -247,7 +247,7 @@
         "Makeup",
         "Hairstyling",
         "3D Make Up techniques",
-        "Sculpting",
+        "Sculpting"
       ],
       "disciplines": [
         "Makeup",
@@ -263,7 +263,6 @@
         "Age Makeup",
         "3D Design",
         "Sculpting"
-      
       ],
       "image": "VFS/course_pics/VFS_Makeup_Design_for_Film_Television"
     },
@@ -288,7 +287,7 @@
         "Audio",
         "Pro Tools",
         "MAXMSP",
-        "Post Production",
+        "Post Production"
       ],
       "disciplines": [
         "Digital Media",
@@ -312,7 +311,7 @@
         "Sound Technologies",
         "Sound Production",
         "Digital Audio",
-        "Electronic Sound",
+        "Electronic Sound"
       ],
       "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media"
     },
@@ -617,10 +616,10 @@
         "Mobile Development",
         "AR/VR",
         "Digital Project Management",
-        "Cross-Platform Apps",
+        "Cross-Platform Apps"
       ],
       "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile"
-    },
+    }
   ],
   "artworks": [
     {

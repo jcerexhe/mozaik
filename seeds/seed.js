@@ -15,7 +15,7 @@ const Alumni = require('../models/alumni');
 const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
 const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
 const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
-const vfs = JSON.parse(fs.readFileSynch(__dirname + '/vfs.json', 'utf-8'));
+const vfs = JSON.parse(fs.readFileSync(__dirname + '/vfs.json', 'utf-8'));
 
 const _ait = new School(ait.school);
 const _aitAlumni = _.map(ait.alumni, (alum) => {
