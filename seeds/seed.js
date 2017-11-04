@@ -15,6 +15,7 @@ const Alumni = require('../models/alumni');
 const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
 const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
 const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
+const vfs = JSON.parse(fs.readFileSynch(__dirname + '/vfs.json', 'utf-8'));
 
 const _ait = new School(ait.school);
 const _aitAlumni = _.map(ait.alumni, (alum) => {
@@ -66,6 +67,24 @@ const _aftrsArtwork = _.map(aftrs.artworks, (artwork) => {
   _artwork.school = _aftrs._id;
   return _artwork;
 });
+
+const _vfs = new School(vfs.school);
+const _vfsAlumni = _.map(vfs.alumni, (alum) => {
+  let _alum = new Alumni(alum);
+  _alum.school = _vfs._id;
+  return _alum;
+});
+const _vfsCourses = _.map(vfs.courses, (course) => {
+  let _course = new Course(course);
+  _course.school = _vfs._id;
+  return _course;
+});
+const _vfsArtwork = _.map(vfs.artworks, (artwork) => {
+  let _artwork = new Artwork(artwork);
+  _artwork.school = _vfs._id;
+  return _artwork;
+});
+
 
 async.series([
   function(callback) {
@@ -127,6 +146,21 @@ async.series([
       if(err) console.log(err);
       callback(null, 'SUCCESS - FINISHED SEEDING AFTRS DATA');
     });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving vfs course');
+    async.eachSeries([_vfs].concat(_vfsAlumni).concat(_vfsCourses).concat(_vfsArtwork), (vfsItem, vfsItemSavedCb) =>  {
+      vfsItem.save().then(() => {
+        vfsItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        vfsItemSavedCb(); 
+      });
+   }, (err) => {
+     if(err) console.log(err);
+     callback(null, 'SUCCESS - FINISHED SEEDING VFS DATA');
+   });
   },
 ], function(err, results) {
   if (err) console.log(err);
