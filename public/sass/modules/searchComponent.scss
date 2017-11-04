@@ -1,7 +1,7 @@
 #search {
   position: absolute;
   width: 100%;
-  height: 850px;
+  height: 950px;
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
@@ -80,13 +80,14 @@
     border: 1px solid white;
   }
   .interest-areas > h3, .interest-disciplines > h3 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: -30px;
     background-color: $grey;
     color: $pink;
     display: inline-block;
     padding: 0px 15px;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
   .interest-areas, .interest-disciplines {
     padding: 0px 15px 15px 15px;
@@ -109,20 +110,23 @@
   }
   .interest-categories {
     margin-top: 50px;
-    background-color: $white;
+    background-color: $grey;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: left;
+    text-align: center;
   }
   .interest-categories h4 {
-    color: $grey;
+    color: $pink;
     text-transform: uppercase;
   }
   .interest-categories > .category {
-    margin: 10px;
-    margin-left: 15px;
+    /*margin: 5px;*/
+    /*margin-left: 15px;*/
+    padding: 10px;
     width: 17%;
+    /*border-left: 1px solid $pink;
+    border-right: 1px solid $pink;*/
   }
   .search-links {
     list-style: none;
@@ -136,7 +140,7 @@
     text-transform: uppercase;
   }
   .search-link {
-    color: $grey;
+    color: $white;
     cursor: pointer;
     display: block;
     text-transform: capitalize;
@@ -175,7 +179,7 @@
 .results-container {
   background-color: $grey;
   color: white;
-  margin-top: 250px;
+  margin-top: 350px;
 }
 .no-results {
   display: flex;
@@ -268,7 +272,7 @@
   }
 }
 #search-section {
-  background-color: #181818;
+  background-color: $grey;
 }
 .results-found {
   color: $grey-text;

@@ -207,7 +207,7 @@ input.input-newsletter:focus {
   width: 100%; }
 
 .filter-btn {
-  padding: 10px;
+  padding: 8px;
   margin: 5px;
   border: none;
   cursor: pointer;
@@ -484,15 +484,16 @@ input[type=text]::placeholder {
   .school-heading .school-info > img {
     margin-right: 20px;
     max-width: 150px;
-    height: auto; }
+    height: auto;
+    background-color: #181818;
+    /*background: none;*/ }
   .school-heading .school-name {
     font-family: 'Montserrat Ultra Light'; }
   .school-heading .school-link {
     margin: 10px 0;
     text-align: center; }
   .school-heading .school-link > a {
-    display: -ms-flexbox;
-    display: flex;
+    /*display: flex;*/
     -ms-flex-align: center;
         align-items: center; }
   .school-heading .school-link img {
@@ -550,7 +551,7 @@ input[type=text]::placeholder {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 80%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px;
@@ -591,14 +592,14 @@ input[type=text]::placeholder {
       padding-top: 5px; }
   .school-details .fees-scholarships {
     font-size: 10px;
-    width: 30%; }
+    width: 35%; }
     .school-details .fees-scholarships .campuses, .school-details .fees-scholarships .delivery {
       width: 45%;
       display: inline-block; }
     .school-details .fees-scholarships .campuses {
       margin-right: 5%; }
   .school-details .study-areas {
-    width: 10%; }
+    width: 15%; }
   .school-details .study-areas > ul > li {
     padding-top: 10px;
     font-size: 11px; }
@@ -891,17 +892,17 @@ input[type=text]::placeholder {
   color: #FF6D6D; }
 
 .slider-body > h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 15%;
+  margin-top: 12%;
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .slider-body > h1 {
       width: 55%; } }
 
 .slider-body > p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-transform: none;
   font-family: 'Montserrat Ultra Light';
   margin-top: 10px;
@@ -939,7 +940,7 @@ input[type=text]::placeholder {
 #search {
   position: absolute;
   width: 100%;
-  height: 850px;
+  height: 950px;
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
@@ -1013,13 +1014,14 @@ input[type=text]::placeholder {
   .search-content .interest-disciplines {
     border: 1px solid white; }
   .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: -30px;
     background-color: #181818;
     color: #FF6D6D;
     display: inline-block;
     padding: 0px 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 15px; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     padding: 0px 15px 15px 15px; }
   .search-content .interest-countries {
@@ -1037,21 +1039,24 @@ input[type=text]::placeholder {
     margin: 0px; }
   .search-content .interest-categories {
     margin-top: 50px;
-    background-color: #FFFFFF;
+    background-color: #181818;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    text-align: left; }
+    text-align: center; }
   .search-content .interest-categories h4 {
-    color: #181818;
+    color: #FF6D6D;
     text-transform: uppercase; }
   .search-content .interest-categories > .category {
-    margin: 10px;
-    margin-left: 15px;
-    width: 17%; }
+    /*margin: 5px;*/
+    /*margin-left: 15px;*/
+    padding: 10px;
+    width: 17%;
+    /*border-left: 1px solid $pink;
+    border-right: 1px solid $pink;*/ }
   .search-content .search-links {
     list-style: none;
     padding: 0px; }
@@ -1061,7 +1066,7 @@ input[type=text]::placeholder {
   .search-content .search-links > li::first-letter {
     text-transform: uppercase; }
   .search-content .search-link {
-    color: #181818;
+    color: #FFFFFF;
     cursor: pointer;
     display: block;
     text-transform: capitalize; }
@@ -1098,7 +1103,7 @@ input[type=text]::placeholder {
 .results-container {
   background-color: #181818;
   color: white;
-  margin-top: 250px; }
+  margin-top: 350px; }
 
 .no-results {
   display: -ms-flexbox;
@@ -1280,11 +1285,12 @@ input[type=text]::placeholder {
   .campus-container .campus-buttons a {
     padding: 0px 20px;
     cursor: pointer;
-    font-family: 'Montserrat Semi Bold'; }
+    font-family: 'Montserrat Semi Bold';
+    color: #FFFFFF; }
   .campus-container .campus-buttons a.active {
     text-decoration: underline; }
   .campus-container .campus-buttons a:not(:last-child) {
-    border-right: 1px solid #082A3E; }
+    border-right: 1px solid #FFFFFF; }
 
 .facilities-slider {
   width: 60%;
@@ -1313,7 +1319,9 @@ input[type=text]::placeholder {
   .alumni-slider .alumni-slide-content > p {
     font-family: 'Montserrat Ultra Light';
     margin-top: 5px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-size: 0.9em; }
   .alumni-slider .slick-arrow:before {
     display: none; }
   .alumni-slider .slick-arrow {
@@ -1468,14 +1476,12 @@ input[type=text]::placeholder {
       width: 60%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      /*justify-content: space-between;*/
       background-color: #181818; }
       .filter-container .filter {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        /*justify-content: space-between;*/
         border-right: 1px solid #E4E9EC;
         margin-right: 10px;
         padding-right: 40px; }
@@ -1484,9 +1490,11 @@ input[type=text]::placeholder {
         margin: 0px;
         margin-right: 10px; }
       .filter-container .filter > .filter-buttons {
-        text-align: left; }
+        text-align: left;
+        margin-top: 5px; }
       .filter-container .refine-button {
-        padding: 10px; } }
+        padding: 10px;
+        float: left; } }
 
 html, body {
   height: 100%; }

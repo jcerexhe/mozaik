@@ -29,7 +29,9 @@ export default class AlumniApp extends Component {
                 <div className='alumni-slide-content'>
                   <img className='img-circle img-resp' src={ alum.photo } alt={ alum.name } />
                   <h3>{ alum.name }</h3>
-                  <p>{ alum.blurb }</p>
+                  <p>Course: { alum.course }</p>
+                  <p>Profession: { alum.profession }</p>
+                  <p>Credits: { alum.credits }</p>
                 </div>
               </div>
             );

@@ -14,7 +14,6 @@ const customStyles = {
     border: 'none',
     overflow: 'hidden',
     display: 'block'
-
   }
 };
 
@@ -31,13 +30,13 @@ export default class HeroApp extends Component {
           video: true
         },
         {
-          heading: 'Let the student do the talking.',
+          heading: 'Let the student work do the talking.',
           text: "Search for courses by comparing the work of students from creative schools.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350623/slider1-compressor_qgn31w.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1509676460/navis_reversed_kjt1o5.jpg',
           video: false
         },
         {
-          heading: 'Personalised application support ',
+          heading: 'Personalised application support',
           text: "We can help you with the full application process. From enquiry to enrolment... and throughout your whole student journey.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350977/slider2-compressor_zd4ufr.png',
           video: false,
