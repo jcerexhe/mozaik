@@ -113,6 +113,18 @@ html, body {
   font-family: 'Montserrat Ultra Light';
   color: #949494; }
 
+.input-newsletter {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px 5px;
+  color: #FFFFFF;
+  width: 70%;
+  margin-bottom: 20px; }
+
+input.input-newsletter:focus {
+  outline: none; }
+
 .hidden {
   display: none; }
 
@@ -195,12 +207,13 @@ html, body {
   width: 100%; }
 
 .filter-btn {
-  padding: 10px;
+  padding: 8px;
   margin: 5px;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  font-size: 10px; }
 
 .filter-btn.white {
   background-color: #FFFFFF; }
@@ -287,6 +300,14 @@ html, body {
   height: 53px;
   margin: 0px 15px;
   cursor: pointer; }
+
+.fa-heart, .fa-heart-o {
+  opacity: 0.7;
+  cursor: pointer;
+  color: #FF6D6D; }
+
+.fa-heart:hover, .fa-heart-o:hover {
+  opacity: 1; }
 
 .control {
   font-size: 18px;
@@ -454,7 +475,7 @@ input[type=text]::placeholder {
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .school-heading {
-      width: 80%; } }
+      width: 60%; } }
   .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
@@ -463,15 +484,16 @@ input[type=text]::placeholder {
   .school-heading .school-info > img {
     margin-right: 20px;
     max-width: 150px;
-    height: auto; }
+    height: auto;
+    background-color: #181818;
+    /*background: none;*/ }
   .school-heading .school-name {
     font-family: 'Montserrat Ultra Light'; }
   .school-heading .school-link {
     margin: 10px 0;
     text-align: center; }
   .school-heading .school-link > a {
-    display: -ms-flexbox;
-    display: flex;
+    /*display: flex;*/
     -ms-flex-align: center;
         align-items: center; }
   .school-heading .school-link img {
@@ -529,7 +551,7 @@ input[type=text]::placeholder {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 80%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px;
@@ -570,14 +592,14 @@ input[type=text]::placeholder {
       padding-top: 5px; }
   .school-details .fees-scholarships {
     font-size: 10px;
-    width: 30%; }
+    width: 35%; }
     .school-details .fees-scholarships .campuses, .school-details .fees-scholarships .delivery {
       width: 45%;
       display: inline-block; }
     .school-details .fees-scholarships .campuses {
       margin-right: 5%; }
   .school-details .study-areas {
-    width: 10%; }
+    width: 15%; }
   .school-details .study-areas > ul > li {
     padding-top: 10px;
     font-size: 11px; }
@@ -672,7 +694,7 @@ input[type=text]::placeholder {
   border-radius: 6px;
   padding: 5px 15px;
   color: #082A3E;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 1px; }
 
 .navbar .discover > a:hover {
@@ -686,7 +708,7 @@ input[type=text]::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 4em; }
+  font-size: 3.2em; }
 
 .navbar .links {
   display: -ms-flexbox;
@@ -771,7 +793,7 @@ input[type=text]::placeholder {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  background-image: url("http://www.pngmart.com/files/3/Ballet-PNG-HD.png");
+  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain; }
@@ -802,7 +824,8 @@ input[type=text]::placeholder {
 .menu-content ul > li {
   margin-top: 6px;
   margin-bottom: 4px;
-  width: 180px; }
+  width: 180px;
+  font-family: 'Gotham Book Regular'; }
 
 .menu-content ul > li > a {
   color: #FFFFFF;
@@ -835,6 +858,9 @@ input[type=text]::placeholder {
   height: 100vh;
   z-index: 40; }
 
+.hero-container {
+  height: 100vh; }
+
 .home-slider {
   margin-bottom: 0px !important; }
 
@@ -853,33 +879,37 @@ input[type=text]::placeholder {
 
 .slide {
   width: 100vw !important;
-  height: calc(100vh - 100px) !important;
+  height: calc(100vh + 300px) !important;
   padding-top: 100px;
   background-size: cover;
   background-position: 0 -200px; }
 
 .slider-dots {
-  margin-top: -275px; }
+  margin-top: -490px; }
 
 .slider-body {
   padding: 0 40px;
   color: #FF6D6D; }
 
 .slider-body > h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 10%; }
+  margin-top: 12%;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .slider-body > h1 {
+      width: 55%; } }
 
 .slider-body > p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-transform: none;
   font-family: 'Montserrat Ultra Light';
   margin-top: 10px;
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .slider-body > p {
-      width: 40%; } }
+      width: 45%; } }
 
 .scroll-search {
   margin-top: 31px;
@@ -910,10 +940,12 @@ input[type=text]::placeholder {
 #search {
   position: absolute;
   width: 100%;
-  height: 800px;
-  margin-top: -200px;
+  height: 950px;
+  /*margin-top: -200px;*/
   z-index: 50;
-  overflow: hidden; }
+  overflow: hidden;
+  /* gradient bg allows slider img to appear in top right */
+  background: linear-gradient(to right top, #FF6D6D, rgba(255, 0, 0, 0)); }
 
 #search.taller-search {
   height: 1800px; }
@@ -953,7 +985,7 @@ input[type=text]::placeholder {
     font-family: 'Montserrat Black';
     text-transform: uppercase; }
   .search-content .search-criteria {
-    width: 75%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
@@ -982,13 +1014,14 @@ input[type=text]::placeholder {
   .search-content .interest-disciplines {
     border: 1px solid white; }
   .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: -30px;
     background-color: #181818;
     color: #FF6D6D;
     display: inline-block;
     padding: 0px 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 15px; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     padding: 0px 15px 15px 15px; }
   .search-content .interest-countries {
@@ -1006,21 +1039,24 @@ input[type=text]::placeholder {
     margin: 0px; }
   .search-content .interest-categories {
     margin-top: 50px;
-    background-color: #FFFFFF;
+    background-color: #181818;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    text-align: left; }
+    text-align: center; }
   .search-content .interest-categories h4 {
-    color: #181818;
+    color: #FF6D6D;
     text-transform: uppercase; }
   .search-content .interest-categories > .category {
-    margin: 10px;
-    margin-left: 15px;
-    width: 17%; }
+    /*margin: 5px;*/
+    /*margin-left: 15px;*/
+    padding: 10px;
+    width: 17%;
+    /*border-left: 1px solid $pink;
+    border-right: 1px solid $pink;*/ }
   .search-content .search-links {
     list-style: none;
     padding: 0px; }
@@ -1030,7 +1066,7 @@ input[type=text]::placeholder {
   .search-content .search-links > li::first-letter {
     text-transform: uppercase; }
   .search-content .search-link {
-    color: #181818;
+    color: #FFFFFF;
     cursor: pointer;
     display: block;
     text-transform: capitalize; }
@@ -1059,7 +1095,6 @@ input[type=text]::placeholder {
 .search-blue-background {
   width: 100%;
   height: 600px;
-  /*background-color: $blue;*/
   background-color: #FF6D6D; }
 
 .search-blue-background.taller-search {
@@ -1067,7 +1102,8 @@ input[type=text]::placeholder {
 
 .results-container {
   background-color: #181818;
-  color: white; }
+  color: white;
+  margin-top: 350px; }
 
 .no-results {
   display: -ms-flexbox;
@@ -1144,7 +1180,7 @@ input[type=text]::placeholder {
   z-index: 5; }
 
 #results .search-result > .logo {
-  width: 15%;
+  width: 20%;
   height: auto; }
 
 #results .load-more-results {
@@ -1162,6 +1198,13 @@ input[type=text]::placeholder {
 
 #search-section {
   background-color: #181818; }
+
+.results-found {
+  color: #949494;
+  font-family: 'Montserrat Ultra Light';
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase; }
 
 .artworks {
   overflow: hidden; }
@@ -1242,11 +1285,12 @@ input[type=text]::placeholder {
   .campus-container .campus-buttons a {
     padding: 0px 20px;
     cursor: pointer;
-    font-family: 'Montserrat Semi Bold'; }
+    font-family: 'Montserrat Semi Bold';
+    color: #FFFFFF; }
   .campus-container .campus-buttons a.active {
     text-decoration: underline; }
   .campus-container .campus-buttons a:not(:last-child) {
-    border-right: 1px solid #082A3E; }
+    border-right: 1px solid #FFFFFF; }
 
 .facilities-slider {
   width: 60%;
@@ -1275,7 +1319,9 @@ input[type=text]::placeholder {
   .alumni-slider .alumni-slide-content > p {
     font-family: 'Montserrat Ultra Light';
     margin-top: 5px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-size: 0.9em; }
   .alumni-slider .slick-arrow:before {
     display: none; }
   .alumni-slider .slick-arrow {
@@ -1347,8 +1393,6 @@ input[type=text]::placeholder {
       flex: 1;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   -ms-flex-direction: column;
       flex-direction: column; }
 
@@ -1365,6 +1409,19 @@ input[type=text]::placeholder {
 
 .course-bg {
   padding-bottom: 40px; }
+
+.info-bits-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.info-bits-section {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.card-icon {
+  float: right; }
 
 .discover-column-container {
   height: calc(100vh - 100px);
@@ -1416,17 +1473,15 @@ input[type=text]::placeholder {
   @media only screen and (min-width: 768px) {
     .filter-container {
       /*padding: 25px;*/
-      width: 80%;
+      width: 60%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      /*justify-content: space-between;*/
       background-color: #181818; }
       .filter-container .filter {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        /*justify-content: space-between;*/
         border-right: 1px solid #E4E9EC;
         margin-right: 10px;
         padding-right: 40px; }
@@ -1435,9 +1490,11 @@ input[type=text]::placeholder {
         margin: 0px;
         margin-right: 10px; }
       .filter-container .filter > .filter-buttons {
-        text-align: left; }
+        text-align: left;
+        margin-top: 5px; }
       .filter-container .refine-button {
-        padding: 10px; } }
+        padding: 10px;
+        float: left; } }
 
 html, body {
   height: 100%; }

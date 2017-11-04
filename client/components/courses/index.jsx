@@ -6,7 +6,6 @@ import CourseCard from './courseCard.jsx';
 export default class CoursesApp extends Component {
   constructor(props) {
     super(props);
-    // TODO pass course id to props instead of all courses, fetch course data
     this.state = {
       disciplines: ['all areas'],
       activeCourses: props.courses
@@ -41,7 +40,7 @@ export default class CoursesApp extends Component {
   }
 
   render() {
-    const { courses } = this.props;
+    const { courses, school } = this.props;
     const { disciplines, activeCourses } = this.state;
     let disciplineList = ['all areas'];
     disciplineList.push(this.props.schoolDisciplines);
@@ -59,13 +58,13 @@ export default class CoursesApp extends Component {
             />
           </div>
          <div className='refine-button'>
-            <a href='/discover' className='btn'>refine</a>
+            <a href='/discover' className='btn btn-full-width'>refine</a>
           </div>
         </div> 
             <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (
-              <CourseCard course={ course } key={ i } />
+              <CourseCard course={ course } school={ school } key={ i } />
             )
           }) }
         </div>

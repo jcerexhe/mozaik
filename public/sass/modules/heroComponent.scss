@@ -3,6 +3,9 @@
   height: 100vh;
   z-index: 40;
 }
+.hero-container {
+  height: 100vh;
+}
 .home-slider {
   margin-bottom: 0px !important;
 }
@@ -21,32 +24,36 @@
 }
 .slide {
   width: 100vw !important;
-  height: calc(100vh - 100px) !important;
+  height: calc(100vh + 300px) !important;
   padding-top: 100px;
   background-size: cover;
   background-position: 0 -200px;
 }
 .slider-dots {
-  margin-top: -275px;
+  margin-top: -490px;
 }
 .slider-body {
   padding: 0 40px;
   color: $pink;
 }
 .slider-body > h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 10%;
+  margin-top: 12%;
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 55%;
+  }
 }
 .slider-body > p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-transform: none;
   font-family: 'Montserrat Ultra Light';
   margin-top: 10px;
   width: 100%;
   @media only screen and (min-width: 768px) {
-    width: 40%;
+    width: 45%;
   }
 }
 .scroll-search {

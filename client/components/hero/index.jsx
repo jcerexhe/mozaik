@@ -14,7 +14,6 @@ const customStyles = {
     border: 'none',
     overflow: 'hidden',
     display: 'block'
-
   }
 };
 
@@ -31,14 +30,20 @@ export default class HeroApp extends Component {
           video: true
         },
         {
-          heading: 'Mozaik Creative.',
-          text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350623/slider1-compressor_qgn31w.png',
-          video: true
+          heading: 'Let the student work do the talking.',
+          text: "Search for courses by comparing the work of students from creative schools.",
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1509676460/navis_reversed_kjt1o5.jpg',
+          video: false
         },
         {
+          heading: 'Personalised application support',
+          text: "We can help you with the full application process. From enquiry to enrolment... and throughout your whole student journey.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1507350977/slider2-compressor_zd4ufr.png',
-          video: false
+          video: false,
+          cta: {
+            text: 'Learn More',
+            link: '#'
+          }
         }
       ],
       settings: {
@@ -88,6 +93,7 @@ export default class HeroApp extends Component {
                   <h1>{ slide.heading }</h1>
                   <p>{ slide.text }</p>
                   { slide.video ? <div><i onClick={() => this.openModal()} className="fa fa-play-circle-o fa-3x" aria-hidden="true"></i><br /><p onClick={() => this.openModal()} className="video-text">Play Video</p></div> : <div /> }
+                  { slide.cta ? <a href={slide.cta.link} className="btn">{slide.cta.text}</a> : '' }
                 </div>
               </div>
             );

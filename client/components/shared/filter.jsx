@@ -9,13 +9,16 @@ export default class Filter extends Component {
   }
 
   render() {
-    const { filterItems, activeItems, onClick } = this.props;
+    const { activeItems, onClick } = this.props;
+    let { filterItems } = this.props;
+    var smallerFilterList = filterItems.slice(0,4);
     const classes = _.reduce(this.props.classes, (str, cla) => {
       return str + ` ${ cla } `
     }, 'filter-buttons');
+
     return (
       <ul className={ classes }>
-        { _.map(filterItems, (item, i) => {
+        { _.map((this.props.isHome ? filterItems : smallerFilterList), (item, i) => {
           const active = activeItems.includes(item);
           return (
             <li key={ item }>

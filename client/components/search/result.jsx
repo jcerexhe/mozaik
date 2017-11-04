@@ -1,25 +1,5 @@
 import React from 'react';
-
-function likeCourse(name) {
-  let storageExists = localStorage.getItem('likedCourses')
-  if (storageExists !== null) {
-    let storage = localStorage.getItem('likedCourses')
-    storage = JSON.parse(storage)
-    if (storage.includes(name)) {
-      let i = storage.indexOf(name);
-      if (i != -1) {
-        storage.splice(i, 1);
-      }
-    } else {
-      storage = storage.concat(name)
-    }
-    localStorage.setItem('likedCourses', JSON.stringify(storage))
-  } else {
-    var newArray = ['test'];
-    newArray = newArray.concat(name)
-    localStorage.setItem('likedCourses', JSON.stringify(newArray))
-  }
-}
+import likeCourse from '../shared/likeCourse';
 
 const Result = (props) => {
   const { result } = props;
