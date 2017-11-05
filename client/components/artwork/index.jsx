@@ -164,7 +164,7 @@ export default class ArtworkApp extends Component {
         </div>
         <div className='artworks'>
           <div className='artwork-container'>
-            { this.renderLightbox() }
+          { artworks.length > 0 ? this.renderLightbox() : <div /> }
             <ul className='artwork-slides'>
               { _.map(images, (img, index) => {
                 return (

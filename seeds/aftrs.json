@@ -46,7 +46,7 @@
     "facilitiesDescription": "AFTRS has state-of-the art production facilities, located in the Entertainment Quarter, Moore Park (next to Fox Studios Australia).",
     "facilitiesImages": [
       "AFTRS/facilities/Inside_AFTRS",
-      "AFTRS/facilities/Front_signage0",
+      "AFTRS/facilities/Front_signage",
       "AFTRS/facilities/AFTRS_Sound",
       "AFTRS/facilities/Front_signage2",
       "AFTRS/facilities/AFTRS_studio_2",
@@ -1487,18 +1487,34 @@
   ],
   "artworks": [
     {
-      "image": "",
-      "name": "",
+      "image": "placeholder_lkdjum",
+      "name": "Sample",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "",
+      "artist": "Sample",
       "disciplines": [
       ]
     }
   ],
   "alumni": [
     {
-      "photo": "",
-      "name": "",
+      "photo": "placeholder_lkdjum",
+      "name": "Jane Campion",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "",
+      "profession": "",
+      "credits": ""
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Andrew Lesnie",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "",
+      "profession": "",
+      "credits": ""
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Alex Proyas",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
       "course": "",
       "profession": "",

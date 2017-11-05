@@ -708,10 +708,10 @@
   ],
   "artworks": [
     {
-      "image": "",
-      "name": "",
+      "image": "placeholder_lkdjum",
+      "name": "Sample",
       "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "",
+      "artist": "Sample",
       "disciplines": [
       ]
     }
@@ -732,6 +732,14 @@
       "course": "Bachelor of Film Arts (BFA)",
       "profession": "Actor, Director, Filmmaker",
       "credits": "Hacksaw Ridge, Braveheart, Lethal Weapon, Apocalypto, Mad Max, The Passion of Christ"
+    },
+    {
+      "photo": "NIDA_alumni/Hugo_Weaving",
+      "name": "Hugo Weaving",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "",
+      "profession": "",
+      "credits": ""
     }
   ]
 }
