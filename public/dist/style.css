@@ -857,6 +857,14 @@ input[type=text]::placeholder {
   /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
   box-shadow: 0 4px 4px -2px #000000; }
 
+.social-nav {
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  padding-top: 20px; }
+  .social-nav a {
+    margin: 2px; }
+
 .home-hero {
   width: 100vw;
   height: 100vh;

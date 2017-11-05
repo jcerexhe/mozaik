@@ -96,27 +96,27 @@ export default class MenuApp extends Component {
                   </ul>
                 );
               }) }
-              <div className="social">
+              <div className="social-nav">
                 <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
-                  <img className="img-resp(src='/images/social-icons/sm-facebook.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-facebook.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-youtube.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-youtube.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-instagram.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-instagram.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-snapchat.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-snapchat.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-pinterest.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-pinterest.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-twitter.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-twitter.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp(src='/images/social-icons/sm-linked-in.png')" />
+                  <img className="img-resp" src='/images/social-icons/sm-linked-in.png' />
                 </a>
               </div>
             </div>
