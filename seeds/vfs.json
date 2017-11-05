@@ -30,7 +30,7 @@
         "address": "198 W Hastings St, Vancouver, BC V6B 1H2, Canada",
         "coordinates": {
           "lat": 49.2827,
-          "lng": 123.1207
+          "lng": -123.1207
         },
         "type":"Point",
         "country": "Canada",
@@ -38,7 +38,21 @@
       }
     ],
     "facilitiesDescription": "VFS consist of eight state-of-the-art campuses offer lots of workshop and production spaces, green screen room, film sets, studios, screening rooms, theatres, and 24/7 access to computer labs with industry-standard software.",
-    "facilitiesImages": [
+    "facilitiesImages": [  
+      "VFS/school_gallery/VFS_Entrance",
+      "VFS/school_gallery/VFS_Hallway",
+      "VFS/school_gallery/VFS_vfx_class",
+      "VFS/school_gallery/VFS_Lecture_Room",
+      "VFS/school_gallery/VFS_Green_Screen_Room",
+      "VFS/school_gallery/VFS_Group_Presentation",
+      "VFS/school_gallery/VFS_VR_Set",
+      "VFS/school_gallery/VFS_Computer_lab",
+      "VFS/school_gallery/VFS_Computer_Lab_2",
+      "VFS/school_gallery/VFS_Computer_Lab_3",
+      "VFS/school_gallery/VFS_Computer_Lab_4",
+      "VFS/school_gallery/VFS_Computer_Lab_5",
+      "VFS/school_gallery/VFS_Computer_Lab_6",
+      "VFS/school_gallery/VFS_Computer_Lab_7"
     ],
     "delivery": [ "On Campus" ],
     "logo": "VFS/VFS_logo",
