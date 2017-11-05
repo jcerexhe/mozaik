@@ -20,6 +20,7 @@ const artworkSchema = new Schema({
     trim: true,
     required: "Please provide the artwork's name.",
   },
+  school_name: String,
   artist: {
     type: String,
     trim: true,

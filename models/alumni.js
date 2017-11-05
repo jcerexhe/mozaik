@@ -21,6 +21,7 @@ const alumniSchema = new Schema({
     trim: true,
     required: 'Please provide the name of the alumni.',
   },
+  school_name: String,
   profession: {
     type: String,
     trim: true,

@@ -68,6 +68,7 @@
   "courses": [
     {
       "name": "Bachelor of Arts: Production",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "The course is designed for people with a passion for storytelling and a commitment to a career in the screen industries. We’re eager to work with students from a diverse range of backgrounds who are imaginative, collaborative and keen to develop their voice as Australian screen storytellers.",
       "campus": [
         "Sydney"
@@ -123,6 +124,7 @@
     },
     {
       "name": "Master of Arts Screen",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This two year full time course is a hands-on transformative learning experience designed to enable the future creative leaders into head of department positions. The course, available in 10 disciplines, offers shared subjects, deep discipline learning and cross-disciplinary projects.",
       "campus": [
         "Sydney"
@@ -189,6 +191,7 @@
     },
     {
       "name": "Master of Arts Screen: Animation",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "AFTRS offers a unique individualised industry based training program where animation students are able to focus on high-end digital storytelling skills whilst working in partnership with producers, screenwriters, cinematographers, production designers, editors, sound designers and musicians to create world-class graduate films.",
       "campus": [
         "Sydney"
@@ -224,6 +227,7 @@
     },
     {
       "name": "Advanced Diploma in 3D - Animation and VFX",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course demystifies the digital VFX process by introducing you to 3D animation principles. and techniques. You will be using industry tools Maya (3D animation), Nuke and After Effects (compositing).",
       "campus": [
         "Sydney",
@@ -262,6 +266,7 @@
     },
     {
       "name": "Master of Arts Screen: Cinematography",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Cinematographers are at the centre of visual storytelling for the screen. It is their close collaboration with the director and designer that brings a story alive. In this course you will undertake deep craft learning through small group mentoring, seminars and collaborative practice.",
       "campus": [
         "Sydney"
@@ -302,6 +307,7 @@
     },
     {
       "name": "Diploma in Camera",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Learn the craft of cinematography. Develop your ability to confidently capture quality picture and sound across a range of shooting requirements. In this course, you will develop the skillset to become an adaptive storyteller; one who can create stories for different formats, genres and contexts.",
       "campus": [
         "Sydney",
@@ -345,6 +351,7 @@
     },
     {
       "name": "Diploma in Colour Grading",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Gain the skills to interpret and apply colour grading requirements to achieve an intended cinematic look. Through this course, you will develop the fundamental skill set of a colourist to manipulate colour and contrast to bring about desired effects on story and narrative.",
       "campus": [
         "Sydney",
@@ -379,6 +386,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Cinematography",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course will enhance your creative and technical skills in a practice-based learning environment. You will explore the visual storytelling principles of cinematography and apply this learning across different story forms, including drama and documentary.",
       "campus": [
         "Sydney"
@@ -418,6 +426,7 @@
     },
     {
       "name": "Master of Arts Screen: Directing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The iam of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
       "campus": [
         "Sydney"
@@ -456,6 +465,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Directing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course will enhance your creative and technical skills in a practice-based learning environment. You will gain insight into three key facets of directing - storytelling structures, cinematic principles and performance. And you will explore how these are used to engage audiences effectively.",
       "campus": [
         "Sydney"
@@ -492,6 +502,7 @@
     },
     {
       "name": "Master of Arts Screen: Documentary",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. Your will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
       "campus": [
         "Sydney"
@@ -522,6 +533,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Documentary",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Empower yourself to develop and express your ideas as a documentary maker. From the commencement of this course, you will devise a multi platform strategy for a major project, ultimately pitching your idea to a real world industry panel.",
       "campus": [
         "Sydney"
@@ -551,6 +563,7 @@
     },
     {
       "name": "Master of Arts Screen: Editing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course provides you with the opportunity to learn by deep immersion in the craft of editing. Participating in an intensive cycle of creative tasks, you will build on your storytelling intuition, develop the technical know-how to realise your interpretation of a film, TV show or documentary and begin the journey to becoming an applied artist.",
       "campus": [
         "Sydney"
@@ -585,6 +598,7 @@
     },
     {
       "name": "Diploma in Editing: Avid",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Develop the creative and technical editing skills to confidently and efficiently use the industry standard, non-linear editing software, Avid Media Composer. You will gain a clear understanding of editing principles and how picture and sound editing contribute to cinematic storytelling.",
       "campus": [
         "Sydney",
@@ -619,6 +633,7 @@
     },
     {
       "name": "Advanced Diploma in Editing: Reality Television",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "You will deepen your understanding of editing principles, and build the skill and knowledge required to edit in this format. Plus, you will practice the skill of applying storytelling principles to edit unscripted, on screen events.",
       "campus": [
         "Sydney",
@@ -649,6 +664,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Editing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In a practice-based learning environment, you will develop a grasp of the filmmaking process, a command of the craft and the conceptual vocabulary necessary to communicate an editor’s vision.",
       "campus": [
         "Sydney"
@@ -682,6 +698,7 @@
     },
     {
       "name": "Master of Arts Screen: Producing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Producing is about stories and the innovative and challenging ways in which they can be brought to the screen. In this intensive course, encompassing theoretical, practical, and strategic considerations in creative producing, you will hone your skills and sharpen your instincts in the development, financing, production and marketing of story ideas.",
       "campus": [
         "Sydney"
@@ -725,6 +742,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Creative Producing",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Discover your storytelling voice as a creative producer and deepen your professional knowledge, skills and practices to produce narrative drama for film, television and multiplatform delivery.",
       "campus": [
         "Sydney"
@@ -765,6 +783,7 @@
     },
     {
       "name": "Master of Arts Screen: Production Design",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course offers you the opportunity to collaborate as a creative storyteller with your colleague practitioners.  You will be a member of a creative team and pursue your own artistic identity and explore new platforms and technologies involving production design concepts.",
       "campus": [
         "Sydney"
@@ -800,6 +819,7 @@
     },
     {
       "name": "Diploma in Screen Design",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In this course you will identify key creative challenges in a script and develop design solutions, learning how to communicate visual concepts and ideas in a practical, collaborative context. Plus, you will be given the opportunity to explore basic visual effects.",
       "campus": [
         "Sydney",
@@ -836,6 +856,7 @@
     },
     {
       "name": "Master of Arts Screen: Screenwriting",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Do you aspire to be part of the next wave of Australian screenwriters? Are you seeking to emerge as an authentic and versatile storyteller who is able to have a distinctive a voice in the rapidly evolving media landscape? In this course you will explore screenwriting through practice-based learning across a variety of screen platforms.",
       "campus": [
         "Sydney"
@@ -870,6 +891,7 @@
     },
     {
       "name": "Advanced Diploma in Screenwriting: Feature Film",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-length drama.",
       "campus": [
         "Sydney",
@@ -904,6 +926,7 @@
     },
     {
       "name": "Advanced Diploma in Screenwriting: Series Television",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Working in a simulated writer’s room, you will consolidate your understanding of genre conventions and collaborative writing skills while you hone your practice through continuous practice, reviewing and refining. All this while strengthening your television series concept.",
       "campus": [
         "Sydney",
@@ -934,6 +957,7 @@
     },
     {
       "name": "Advanced Diploma in Script Editing and Development",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Through practice, you will hone your analytical, communication and collaborative skills and you will learn to mediate between the creative intentions of the writer and the requirements of a production and its stakeholders.",
       "campus": [
         "Sydney",
@@ -965,6 +989,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Screenwriting",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Be inspired to create engaging stories for film and TV and develop the creative talent and analytical skills required by professional screenwriters and writer/directors.",
       "campus": [
         "Sydney"
@@ -998,6 +1023,7 @@
     },
     {
       "name": "Master of Arts Screen: Music",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In this course, you will be given the opportunity to examine how to apply varied styles of music to screen narratives. You will discover how music works with images, plot, editing, dialogue and other onscreen and soundtrack elements to create meaning and affect the audience.",
       "campus": [
         "Sydney"
@@ -1037,6 +1063,7 @@
     },
     {
       "name": "Graduate Certificate Screen: Music",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Discover your voice as a storyteller by applying your composition skills towards scoring music for the screen. Deepen your professional knowledge, skills and practices in screen music.",
       "campus": [
         "Sydney"
@@ -1076,6 +1103,7 @@
     },
     {
       "name": "Master of Arts Screen: Sound",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In this course, you will explore sound as a medium. You will investigate the ways in which sound can be produced, edited and manipulated with the image to engage and inform, as well as to communicate with and create an emotional response in an audience.",
       "campus": [
         "Sydney"
@@ -1114,6 +1142,7 @@
     },
     {
       "name": "Advanced Diploma in Production Sound",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Take your passion for production sound to the next level by gaining a strong set of craft skills in order to enter the film, television or media industry as a sound recordist and mixer, boom operator, sound assistant, or content creator.",
       "campus": [
         "Sydney",
@@ -1153,6 +1182,7 @@
     },
     {
       "name": "Diploma in Digital Content: Radio",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course gives you both technical and creative skills to produce content to connect with a variety of audiences. Manage digital content and integrate with on-air. Learn from great digital content strategists.",
       "campus": [
         "Online"
@@ -1184,6 +1214,7 @@
     },
     {
       "name": "Advanced Diploma in Radio Essentials",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In this course you will develop your ability to create and deliver content for radio and other digital platforms. This course covers operating the studio, creating a station sound, recording and editing audio, announcing and presentation and digital content for online and social media.",
       "campus": [
         "Sydney"
@@ -1217,6 +1248,7 @@
     },
     {
       "name": "Graduate Diploma in Radio",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "The course is designed specifically to meet the needs of the Australian radio industry and is firmly based in practical craft development. Course is structured around research and analysis of broadcast, online and multiplatform theory and current practices and trends in radio and multiplatform broadcasting.",
       "campus": [
         "Sydney"
@@ -1250,6 +1282,7 @@
     },
     {
       "name": "Master of Arts Screen: Business & Leadership",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "This course is a transformational program that provides students with the skills and knowledge to succeed and thrive as leaders in today’s fast-moving screen business environment.",
       "campus": [
         "Sydney"
@@ -1301,6 +1334,7 @@
     },
     {
       "name": "Diploma in Screen Business Management",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Build your skill set in a broad range of business fundamentals so that you can offer effective business solutions for production companies, screen content practitioners and independent producers.",
       "campus": [
         "Sydney",
@@ -1351,6 +1385,7 @@
     },
     {
       "name": "Diploma in Production Accounting",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "In this course you will develop an understanding of the financial requirements and reconciliation of each stage of production. You will develop skills in payroll, accounts payable, petty cash, cost reporting and funding reporting as it relates to screen production.",
       "campus": [
         "Sydney",
@@ -1386,6 +1421,7 @@
     },
     {
       "name": "Diploma in Social Media: Content Creation & Distribution",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Hone your media production skills while you develop strategic planning methods to write, shoot, edit and deliver video content for distribution on social media platforms. Develop the knowhow to produce audience-focused and consistent content that supports a larger social media strategy.",
       "campus": [
         "Sydney",
@@ -1421,6 +1457,7 @@
     },
     {
       "name": "Advanced Diploma in Production Management",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "description": "Enhance your logistical, financial and management skills through this comprehensive course designed to provide you with the knowhow to fast-track your career progression to a production management position.",
       "campus": [
         "Sydney",
@@ -1452,6 +1489,7 @@
     {
       "image": "",
       "name": "",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "artist": "",
       "disciplines": [
       ]
@@ -1461,6 +1499,7 @@
     {
       "photo": "",
       "name": "",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
       "course": "",
       "profession": "",
       "credits": ""

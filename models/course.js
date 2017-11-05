@@ -18,6 +18,7 @@ const courseSchema = new Schema({
     trim: true,
     required: 'Please provide a name for the course.',
   },
+  school_name: String,
   description: {
     type: String,
     trim: true,

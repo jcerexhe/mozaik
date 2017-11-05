@@ -49,7 +49,7 @@ export default class HeroApp extends Component {
       settings: {
         className: 'home-slider',
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 12000,
         arrows: false,
         afterChange: (i) => this.setState({ currentSlide: i })
       },

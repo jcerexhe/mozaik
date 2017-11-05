@@ -9,10 +9,10 @@
       "Acting", 
       "Directing", 
       "Writing/Playwriting", 
-      "Design", 
-      "Costume", 
+      "Design",
+      "Costume",
       "Voice", 
-      "Staging", 
+      "Staging",
       "Cultural Leadership"
     ],
     "overview": "Since 1958, NIDA has educated students in performance and production for theatre, film and television. NIDA is a powerhouse for the development of Australia’s creative and cultural sector, their sought-after alumni are working all over the world on stage, on screen, behind the scenes and leading major events and organisations.",
@@ -44,7 +44,41 @@
     ],
     "facilitiesDescription": "NIDA is made up of a range of state-of-the-art rehearsal and performance venues including five theatres: Parade Theatre,  The Playhouse, Studio Theatre, the Space and the Atrium. The NIDA campus includes rehearsal rooms, multimedia and computer-aided design (CAD) studios, a sound stage, a lighting studio, production workshops, audio-visual facilities, and the Reg Grundy Studio film and television training and production facility.",
     "facilitiesImages": [
-      "Atrium-banner-1_lwlgch", "BFA-Acting-course-842x324-3_xjaolt", "BFA-Costume-course-842x324-1_iqnjry", "BFA-Costume-course-842x324-2_ybg7cx", "BFA-Design-for-Performance-course-842x324-1_g997w9", "BFA-Design-for-Performance-course-842x324-2_m8ilhc", "BFA-Design-for-Performance-course-842x324-4_d8sktm", "BFA-Staging-course-842x324-3_ajdayq", "BFA-Staging-course-842x324-4_mh56p4", "BFA-Technical-Theatre-Stage-Management-course-842x324-2_kdubx6", "Costume_yhn3oj", "Diploma-Live-Production-course-842x324-3_w1ohqi", "Diploma-Musical-Theatre-course-842x324-2_aovp3s", "MFA-Design-for-performance-course-842x324-3_iyqbdh", "MFA-Directing-course-842x324-2_n65tnp", "MFA-Writing-for-performance-course-842x324-4_uentrb", "nancy-fairfax-1_vu8bvi", "NIDA_facade_dbrmib", "NIDA_facade2_nyu6zu", "NIDA_facade3_ncvosz", "NNF_qofqe9", "parade-studio-1_mpuswz", "Parade-Theatre-banner_zidacx", "playhouse1_2_ulo8fu", "playhouse3_2_zyeqli", "PT-Venue-Atrium7_zwdbjn", "PT-Venue-Parade-Theatre_2_fphoqy", "PT-Venue-Parade-Theatre2_2_o3euzq", "PTVenues-Atrium2_oxtwld", "PTVenues-Atrium7_zxtvsy", "Reception-Room-2_2_obkbma", "Rehearsal-room2_flyuo5", "Rob-Kelly-Space_2_phwzh5", "Studio-room3_ghc6jl", "Voice-6_wspb12"
+      "Atrium-banner-1_lwlgch",
+      "BFA-Acting-course-842x324-3_xjaolt",
+      "BFA-Costume-course-842x324-1_iqnjry",
+      "BFA-Costume-course-842x324-2_ybg7cx",
+      "BFA-Design-for-Performance-course-842x324-1_g997w9",
+      "BFA-Design-for-Performance-course-842x324-2_m8ilhc",
+      "BFA-Design-for-Performance-course-842x324-4_d8sktm",
+      "BFA-Staging-course-842x324-3_ajdayq",
+      "BFA-Staging-course-842x324-4_mh56p4",
+      "BFA-Technical-Theatre-Stage-Management-course-842x324-2_kdubx6",
+      "Costume_yhn3oj",
+      "Diploma-Live-Production-course-842x324-3_w1ohqi",
+      "Diploma-Musical-Theatre-course-842x324-2_aovp3s",
+      "MFA-Design-for-performance-course-842x324-3_iyqbdh",
+      "MFA-Directing-course-842x324-2_n65tnp",
+      "MFA-Writing-for-performance-course-842x324-4_uentrb",
+      "nancy-fairfax-1_vu8bvi",
+      "NIDA_facade_dbrmib",
+      "NIDA_facade2_nyu6zu",
+      "NIDA_facade3_ncvosz",
+      "NNF_qofqe9",
+      "parade-studio-1_mpuswz",
+      "Parade-Theatre-banner_zidacx",
+      "playhouse1_2_ulo8fu",
+      "playhouse3_2_zyeqli",
+      "PT-Venue-Atrium7_zwdbjn",
+      "PT-Venue-Parade-Theatre_2_fphoqy",
+      "PT-Venue-Parade-Theatre2_2_o3euzq",
+      "PTVenues-Atrium2_oxtwld",
+      "PTVenues-Atrium7_zxtvsy",
+      "Reception-Room-2_2_obkbma",
+      "Rehearsal-room2_flyuo5",
+      "Rob-Kelly-Space_2_phwzh5",
+      "Studio-room3_ghc6jl",
+      "Voice-6_wspb12"
     ],
     "delivery": [
       "On Campus"
@@ -56,6 +90,7 @@
   "courses": [
     {
       "name": "Bachelor of Fine Arts (Acting)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course equips students with the specific knowledge and skills to pursue careers as actors across the breadth of today’s arts and entertainment industries – in main stage and smaller independent theatre companies, radio, film, television and commercial arenas. Through practice-based learning, students develop technical skills in the disciplines of voice, movement, music and acting.",
       "campus": ["Sydney"],
       "length": "3 years",
@@ -93,6 +128,7 @@
     },
     {
       "name": "Bachelor of Fine Arts (Costume)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "The Bachelor of Fine Arts (Costume) is an immersive, practice-based course offering education in costume construction, research and management.",
       "campus": [
         "Sydney"
@@ -140,6 +176,7 @@
     },
     {
       "name": "Bachelor of Fine Arts (Design for Performance)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "The course develops students in a comprehensive range of skills and knowledge through research and practical exercises in model-making, rendering, digital visualisation and fabrication, manual and computer-aided drafting and life drawing, as well as screen design, storyboarding, pre-visualisation and art direction for film and television.",
       "campus": [
         "Sydney"
@@ -183,6 +220,7 @@
     },
     {
       "name": "Bachelor of Fine Arts (Properties and Objects)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course equips students for careers as artists and makers of properties, models and bespoke objects, as well as roles managing these fields in the arts and entertainment industries, including theatre, opera, dance, film, television, exhibitions and events.",
       "campus": [
         "Sydney"
@@ -238,6 +276,7 @@
     },
     {
       "name": "Bachelor of Fine Arts (Staging)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "The only set construction and supervision course of its kind offered in Australia, this internationally recognised course equips students to pursue careers as technical designers and managers, construction managers, set builders, staging technicians and mechanists in the arts and entertainment industries, including for theatre, opera, dance, film, television, music festivals and other live events.",
       "campus": [
         "Sydney"
@@ -290,6 +329,7 @@
     },
     {
       "name": "Bachelor of Fine Arts (Technical Theatre and Stage Management)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "The course focuses on innovative and effective ways to manage and integrate technical fields within live performance and event environments.",
       "campus": [
         "Sydney"
@@ -334,6 +374,7 @@
     },
     {
       "name": "Diploma of Screen and Media (Specialist Make-Up Services)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course prepares you for a range of roles in make-up, hair and special effects for theatre, film and television. The skills you will develop are transferable to a range of performance contexts, including theatre, dance, opera, concerts, events, film and television.",
       "campus": [
         "Sydney"
@@ -366,6 +407,7 @@
     },
     {
       "name": "Diploma of Musical Theatre",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This is an intensive year of practical study that will elevate you to become a ‘triple threat’– singer/dancer/actor. Through this course, you will develop the rigour and skill you need to get a foothold in musical theatre. The course is industry-driven, with content delivered by practising professionals and guest tutors from the performing arts industry.",
       "campus": [
         "Sydney"
@@ -397,6 +439,7 @@
     },
     {
       "name": "Diploma of Live Production and Technical Services",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course prepares you for technical roles in the live production industry, including theatre, dance, opera, concerts, functions, ceremonies and events. You will gain the skills and knowledge to implement lighting, sound and vision designs, to operate equipment, and to plan and conduct the bump-in and bump-out of productions.",
       "campus": [
         "Sydney"
@@ -428,6 +471,7 @@
     },
     {
       "name": "Diploma of Stage and Screen Performance",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This is a foundation program that equips you with the skills you will need to perform in live and recorded works, and to collaborate with others in creating original works. You will explore the multiplicity of roles, technologies and methodologies that exist within the theatre, film, television and digital industries.",
       "campus": [
         "Sydney"
@@ -460,6 +504,7 @@
     },
     {
       "name": "Master of Fine Arts (Cultural Leadership)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "MFA (Cultural Leadership) is designed specifically for mid-career producers, directors and managers working full-time in the cultural sectors, the course is taught by senior cultural leaders working at a high level in the arts industry.",
       "campus": [
         "Blended: On Campus (Sydney) and Online"
@@ -497,6 +542,7 @@
     },
     {
       "name": "Master of Fine Arts (Design for Performance)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course offers creative professionals opportunities to explore new technologies, practices and ideas in design for the performing arts including theatre, opera, dance, film and television and live events. ",
       "campus": [
         "Sydney"
@@ -539,6 +585,7 @@
     },
     {
       "name": "Master of Fine Arts (Directing)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "MFA (Directing) enables talented early career practitioners to master the directing process through training in production, the interpretation of text and the skills required to connect with a contemporary audience and challenging students to create and express their own artistic vision.",
       "campus": [
         "Sydney"
@@ -581,6 +628,7 @@
     },
     {
       "name": "Master of Fine Arts (Voice)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course provides specialised, conservatoire-based practice and pedagogy for actors, theatre directors, teachers of speech and drama, speech therapists or those wishing to develop a voice practice as a vocation.",
       "campus": [
         "Sydney"
@@ -617,6 +665,7 @@
     },
     {
       "name": "Master of Fine Arts (Writing for Performance)",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "Students will have the opportunity to work in fields as diverse as film and digital media while writing their major work. Graduates of the course may be employed as playwrights and as writers for other performance genres, including film, television, radio and digital media.",
       "campus": [
         "Sydney"
@@ -661,6 +710,7 @@
     {
       "image": "",
       "name": "",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "artist": "",
       "disciplines": [
       ]
@@ -670,6 +720,7 @@
     {
       "photo": "NIDA_alumni/Cate_Blanchett",
       "name": "Cate Blanchett",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "course": "Bachelor of Film Arts (BFA)",
       "profession": "Actor, Film Producer, Voice Acting",
       "credits": "The Curious Case of Benjamin Button, The Lord of the Rings Trilogy, The Aviator, Elizabeth, Babel, Blue Jasmine"
@@ -677,6 +728,7 @@
     {
       "photo": "NIDA_alumni/Mel_Gibson",
       "name": "Mel Gibson",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
       "course": "Bachelor of Film Arts (BFA)",
       "profession": "Actor, Director, Filmmaker",
       "credits": "Hacksaw Ridge, Braveheart, Lethal Weapon, Apocalypto, Mad Max, The Passion of Christ"

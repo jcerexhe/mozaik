@@ -107,7 +107,7 @@ export default class Search extends Component {
   // TODO own components
   renderDiscipline() {
     const { discipline, areas } = this.state;
-    const countries = ['all areas', 'australia', 'canada', 'new zealand', 'singapore', 'usa'];
+    const countries = ['all areas', 'Australia', 'Canada', 'New Zealand', 'Singapore', 'USA'];
     let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
     if (interestDisciplines.length === 0) {
       interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
