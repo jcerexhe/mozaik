@@ -309,6 +309,9 @@ input.input-newsletter:focus {
 .fa-heart:hover, .fa-heart-o:hover {
   opacity: 1; }
 
+.btn-discover {
+  margin-top: 15px; }
+
 .control {
   font-size: 18px;
   position: relative;
@@ -557,7 +560,7 @@ input[type=text]::placeholder {
   padding: 50px 0px;
   background-color: #181818; }
   .school-details h2 {
-    font-size: 45px;
+    font-size: 30px;
     margin: 0px; }
   .school-details h3 {
     margin-bottom: 0px;
@@ -578,6 +581,7 @@ input[type=text]::placeholder {
     padding-right: 15px; }
   .school-details .overview > a {
     display: block;
+    width: 30%;
     margin: 10px 0px;
     text-align: center; }
   .school-details .fees-scholarships, .school-details .study-areas {
@@ -1486,9 +1490,8 @@ input[type=text]::placeholder {
         margin-right: 10px;
         padding-right: 40px; }
       .filter-container .filter > h2 {
-        font-size: 40px;
-        margin: 0px;
-        margin-right: 10px; }
+        font-size: 30px;
+        margin: 7px 10px 0 0; }
       .filter-container .filter > .filter-buttons {
         text-align: left;
         margin-top: 5px; }

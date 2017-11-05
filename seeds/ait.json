@@ -67,6 +67,7 @@
   "courses": [
     {
       "name": "Bachelor of Interactive Media",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "In this degree you will gain multi-disciplined and hands-on experience that is underpinned by theoretical knowledge. Whether you want to merge animation with traditional film making or give smooth motion to immersive games, this course will give you a solid grounding and broad skill sets designed to increase options in industry employment.",
       "campus": [
         "Sydney",
@@ -115,6 +116,7 @@
     },
     {
       "name": "Bachelor of Interactive Media - 2D Animation",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "2D animation extend beyond the staples of Disney and childhood heroes. Japanese anime and manga are global phenomenons and 2D content is used in many industries, including advertising, video games, web promotion and brand creation.",
       "campus": [
         "Sydney",
@@ -153,6 +155,7 @@
     },
     {
       "name": "Bachelor of Interactive Media - 3D Design",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This course ensures students have a solid grounding in 3D modelling and animation techniques. It introduces students to the 3D workflow or ‘pipeline’, a variety of SW and associated skills like lighting and texturing so that you can create content for the exciting industries of AR/VR, VFX and Virtual 3D worlds",
       "campus": [
         "Sydney",
@@ -200,6 +203,7 @@
     },
     {
       "name": "Bachelor of Interactive Media - Film & Video",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "In this course you will receive a foundation in revolutionary digital media processes as well as traditional film theory - a highly sought after combination in the industry.",
       "campus": [
         "Sydney",
@@ -255,6 +259,7 @@
     },
     {
       "name": "Bachelor of Interactive Media - Game Design",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "Developed in consultation with industry experts, this course covers the latest in design theory as well as hands-on skills that cover the broad process of game design including audio, video, film, graphics, animation, storytelling and programming.",
       "campus": [
         "Sydney",
@@ -302,6 +307,7 @@
     },
     {
       "name": "Diploma of Interactive Media",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This higher education Diploma offers a solid grounding in a balanced set of digital media subjects designed to kick start your career. With a focus on hands-on and practical subjects, you will learn the fundamentals of digital media.",
       "campus": [
         "Sydney",
@@ -346,6 +352,7 @@
     },
     {
       "name": "Bachelor of Digital Design",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This course will teach you how to visually communicate your ideas across multiple digital platforms: from product packaging and brand design to interactive app design, data visualization and title design for film. Hone your design skills and learn how to translate content into visual form for effective communication and arm yourself with a portfolio to establish a career in the growing design industry",
       "campus": [
         "Sydney",
@@ -400,6 +407,7 @@
     },
     {
       "name": "Diploma of Digital Design",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This courses teaches the basic principles of design and prepare you for a career in the design industry, branding of products, web interface or even imagery for interactive game worlds.",
       "campus": [
         "Sydney",
@@ -447,6 +455,7 @@
     },
     {
       "name": "Bachelor of Information Technology - Mobile Apps Development",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This course allows you to design, build and publish iOS and Android mobile apps from scratch and graduate with a portfolio of work.",
       "campus": [
         "Sydney",
@@ -486,6 +495,7 @@
     },
     {
       "name": "Bachelor of Information Technology - Game Programming",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This course will provide you with a foundation in the core IT disciplines including database systems, networking, systems designs as well as professional practice. You will hone your skills in game engine programming and learn the principles to develop games using VR/AR, AI platforms.",
       "campus": [
         "Sydney",
@@ -528,6 +538,7 @@
     },
     {
       "name": "Diploma of Information Technology",
+      "school_name": "Academy of Information Technology (AIT)",
       "description": "This Diploma gives you a solid grounding in the basics of IT with plenty of practical experience in programming, software engineering and web development. You will also gain valuable exposure to interactive media techniques and multimedia skills.",
       "campus": [
         "Sydney",
@@ -574,6 +585,7 @@
     {
       "image": "AIT/student_work/digital_design/Marine_Lucine_Dnielle_Ecuyer_Elephant",
       "name": "Ecuyer Elephant",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Marine Lucine Dnielle",
       "disciplines": [
         "Design",
@@ -584,6 +596,7 @@
     {
       "image": "AIT/student_work/digital_design/Nicole_Suet_Yi_Soo_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Nicole Suet Yi Soo",
       "disciplines": [
         "Design",
@@ -593,6 +606,7 @@
     {
       "image": "AIT/student_work/digital_design/Jakub_Pramuk_Warrior",
       "name": "Warrior",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Jakub Pramuk",
       "disciplines": [
         "Design",
@@ -601,6 +615,7 @@
     },
     {
       "image": "AIT/student_work/visual_communication/illustration/Glen_Reiner_Gnomon_in_Forest",
+      "school_name": "Academy of Information Technology (AIT)",
       "name": "Gnomon in Forest",
       "artist": "Glen Reiner",
       "disciplines": [
@@ -610,6 +625,7 @@
     },
     {
       "image": "AIT/student_work/visual_communication/illustration/Marine_Lucine_Dnielle_Ecuyer_Elephant",
+      "school_name": "Academy of Information Technology (AIT)",
       "name": "Elephant",
       "artist": "Marine Lucinne Daniele Ecuyer",
       "disciplines": [
@@ -620,6 +636,7 @@
     {
       "image": "AIT/student_work/visual_communication/illustration/Nardo_Conforti_Bulldog",
       "name": "Bulldog",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Nardo Conforti",
       "disciplines": [
         "Illustration",
@@ -629,6 +646,7 @@
     {
       "image": "AIT/student_work/visual_communication/photography/duc_viet_dang_Broken",
       "name": "Broken",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Duc Viet Dang",
       "disciplines": [
         "Illustration",
@@ -642,6 +660,7 @@
     {
       "image": "AIT/student_work/visual_communication/visual_arts/Andrius_Maigys_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Andrius Maigys",
       "disciplines": [
         "Illustration",
@@ -657,6 +676,7 @@
     {
       "image": "AIT/student_work/visual_communication/illustration/PJ_Svoboda_Zombie",
       "name": "Zombie",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "PJ Svoboda",
       "disciplines": [
         "Illustration",
@@ -665,6 +685,7 @@
     },
     {
       "image": "AIT/student_work/visual_communication/illustration/Berat_Akdemir_Pandora_Roomjpg",
+      "school_name": "Academy of Information Technology (AIT)",
       "name": "Pandora Room",
       "artist": "Berat Akdemir",
       "disciplines": [
@@ -675,6 +696,7 @@
     {
       "image": "AIT/student_work/photography/photography_design/Dylan_Cramp_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Dylan Cramp",
       "disciplines": [
         "Photography",
@@ -687,6 +709,7 @@
     {
       "image": "AIT/student_work/photography/photography_design/Davide_Riccitiello_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Davide Riccitiello",
       "disciplines": [
         "Photography",
@@ -698,6 +721,7 @@
     {
       "image": "AIT/student_work/photography/photography_design/Nicole_Soo_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Nicole Soo",
       "disciplines": [
         "Photography",
@@ -709,6 +733,7 @@
     {
       "image": "AIT/student_work/photography/photography_design/Tonia_Rifanni_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Tonia Rifanni",
       "disciplines": [
         "Photography",
@@ -721,6 +746,7 @@
     {
       "image": "AIT/student_work/digital_media/games_design/Student_Team__Crime_Crew",
       "name": "Crime Crew",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Student Team",
       "disciplines": [
         "Digital Media",
@@ -730,6 +756,7 @@
     {
       "image": "AIT/student_work/digital_media/games_design/Andrei_Ardamil_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Andrei Ardamil",
       "disciplines": [
         "Digital Media",
@@ -739,6 +766,7 @@
     {
       "image": "AIT/student_work/digital_media/games_design/Student_Team_Sushi_Delicious",
       "name": "Sushi Delicious",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Student Team",
       "disciplines": [
         "Digital Media",
@@ -748,6 +776,7 @@
     {
       "image": "AIT/student_work/digital_media/games_design/No_Name_GriMoire_",
       "name": "GriMoire",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "No Name",
       "disciplines": [
         "Digital Media",
@@ -757,6 +786,7 @@
     {
       "image": "AIT/student_work/digital_design/Kimi_Nalanishi_No_Name2",
       "name": "No Name2",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Kimi Nalanishi",
       "disciplines": [
         "Digital Media",
@@ -767,6 +797,7 @@
     {
       "image": "AIT/student_work/digital_design/Kimi_Nalanishi_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Kimi Nalanishi",
       "disciplines": [
         "Digital Media",
@@ -778,6 +809,7 @@
     {
       "image": "AIT/student_work/digital_design/Jakub_Pramuk_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Jakub Pramuk",
       "disciplines": [
         "Digital Media",
@@ -787,6 +819,7 @@
     {
       "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name2",
       "name": "No Name2",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Clemence Deveau",
       "disciplines": [
         "Digital Media",
@@ -796,6 +829,7 @@
     {
       "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name1",
       "name": "No Name1",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Clemence Deveau",
       "disciplines": [
         "Digital Media",
@@ -805,6 +839,7 @@
     {
       "image": "AIT/student_work/digital_design/Clemence_Deveau_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Clemence Deveau",
       "disciplines": [
         "Digital Media",
@@ -814,6 +849,7 @@
     {
       "image": "AIT/student_work/digital_design/Darth_Maul_Skinny",
       "name": "Darth Maul Skinny",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "No Name",
       "disciplines": [
         "Digital Media",
@@ -823,6 +859,7 @@
     {
       "image": "AIT/student_work/digital_design/Daniel_Sponair_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Daniel Sponair",
       "disciplines": [
         "Digital Media",
@@ -832,6 +869,7 @@
     {
       "image": "AIT/student_work/digital_design/Alfredo_Vallejo_New_dimensions_pandora",
       "name": "New Dimensions Pandora",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Alfredo Vallejo",
       "disciplines": [
         "Digital Media",
@@ -843,6 +881,7 @@
     {
       "image": "AIT/student_work/digital_media/3d_design/No_Name_No_Name",
       "name": "No Name",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "No Name",
       "disciplines": [
         "Digital Media",
@@ -852,6 +891,7 @@
     {
       "image": "AIT/student_work/digital_media/3d_design/No_Name_Hogwarts",
       "name": "Hogwarts",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "No Name",
       "disciplines": [
         "Digital Media",
@@ -861,6 +901,7 @@
     {
       "image": "AIT/student_work/digital_media/3d_design/No_Name_Harley",
       "name": "Harley",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "No Name",
       "disciplines": [
         "Digital Media",
@@ -873,6 +914,7 @@
     {
       "image": "AIT/student_work/digital_media/3d_design/Daniel_Humbert_3D_Car",
       "name": "3D Car",
+      "school_name": "Academy of Information Technology (AIT)",
       "artist": "Daniel Humbert",
       "disciplines": [
         "Digital Media",
@@ -884,6 +926,7 @@
     {
       "photo": "AIT/alumni/PeeJay_Svoboda",
       "name": "Peter J “Peejay” Svobooda",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor of Interactive Media - Film & Video",
       "profession": "Cinematographer and Designer",
       "credits": "Kenya 2016, Maasai Mara, APDG Chris Seagers Interview, PJ won numerous films/design awards at AIT"
@@ -891,6 +934,7 @@
     {
       "photo": "AIT/alumni/Liem_Nguyen",
       "name": "Liem Nguyen",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor of Interactive Media",
       "profession": "Matte Painter",
       "credits": "Flying Bark Studios"
@@ -898,6 +942,7 @@
     {
       "photo": "AIT/alumni/Dominic_Dimech",
       "name": "Dominic Dimech",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor of Interactive Media - Film & Video",
       "profession": "Editor",
       "credits": "Top of the Food Chain, Window Boy, through AIT’s Internship program Dominic found a job at Mindconsole."
@@ -905,6 +950,7 @@
     {
       "photo": "AIT/alumni/Priscilla_Firmansjah",
       "name": "Priscilla Firmansjah",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor of Interactive Media",
       "profession": "3D Modelling",
       "credits": "Epiphany Games"
@@ -912,6 +958,7 @@
     {
       "photo": "AIT/alumni/Chanunya_Devapalin",
       "name": "Chanunya Devapalin",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor Digital Design",
       "profession": "Graphic Designer",
       "credits": "The Style Agency & Brazen Adventure"
@@ -919,6 +966,7 @@
     {
       "photo": "AIT/alumni/Daniel_Scholfield",
       "name": "Daniel Schofield",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor IT (Mobile App Development)",
       "profession": "Game Developer",
       "credits": "International Merit Awards (ICT Alliance), iAwards  - National UG Tertiary Prize (AITendance), Lion Hearts Studio"
@@ -926,6 +974,7 @@
     {
       "photo": "AIT/alumni/Luiz_Cavalier",
       "name": "Luiz Cavalieri",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor IT (Mobile App Development)",
       "profession": "UX Developer",
       "credits": "iAwards  - National UG Tertiary Prize (AITendance), Adelphi Digital Consulting Group"
@@ -933,6 +982,7 @@
     {
       "photo": "AIT/alumni/Ke_Zhang",
       "name": "Ke Zhang",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor IT (Mobile App Development)",
       "profession": "App Developer",
       "credits": "React Native Developer"
@@ -940,6 +990,7 @@
     {
       "photo": "AIT/alumni/Audrey_Svoboda",
       "name": "Audrey Svoboda",
+      "school_name": "Academy of Information Technology (AIT)",
       "course": "Bachelor of Interactive Media",
       "profession": "Director, Editor",
       "credits": "The Rawr Collective, Engine Room Production, Hackett Films"

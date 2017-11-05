@@ -26,7 +26,7 @@ exports.courses = async (req, res) => {
         targets.push({ disciplines: { $elemMatch:{$in: areas} } });
       }
       if (!interestDisciplines.includes('all areas')) {
-        targets.push({ disciplines: { $all: interestDisciplines } });
+        targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
       }
 
       switch (targets.length) {
@@ -44,10 +44,11 @@ exports.courses = async (req, res) => {
         courses = foundCourses;
       } else {
         courses = _.filter(foundCourses, (course) => {
-          const courseCountries = _.reduce(course.school.locations, (loc) => {
-            return loc.country;
-          }, []);
-          return _.intersection(interestCountries, courseCountries).length > 0;
+          let locationsArray = course.school.locations.filter((location) => interestCountries.includes(location.country))
+          // if there are locations for this school that match the filters selected then put them in an array
+          if (locationsArray.length > 0) { return true }
+          // if any locations were put into the array for this course then add the course to the returned courses array
+          return false;
         });
       }
       break;
@@ -68,6 +69,7 @@ exports.courses = async (req, res) => {
       q = Course.find({
         $or: [
           { name: regex },
+          { school_name: regex },
           { disciplines: { $in: split } },
           { specialisations: { $in: split } },
         ],

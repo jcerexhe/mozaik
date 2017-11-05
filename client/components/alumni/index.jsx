@@ -15,7 +15,7 @@ export default class AlumniApp extends Component {
       autoplay: false,
       arrows: true,
       dots: false,
-      slidesToShow: (alumni.length >= 4 ? 4 : alumni.length),
+      slidesToShow: (alumni.length >= 3 ? 3 : alumni.length),
       slideToScroll: 1,
       nextArrow: RightArrow,
       prevArrow: LeftArrow,

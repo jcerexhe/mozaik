@@ -1,6 +1,6 @@
 {
   "school": {
-    "name": "Vancouver Film School  (VFS)",
+    "name": "Vancouver Film School (VFS)",
     "website": "https://vfs.edu/",
     "disciplines": [
       "Digital Media",
@@ -48,6 +48,7 @@
   "courses": [
     {
       "name": "ACTING ESSENTIAL",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will explore introduction to camera, improvisation, and audition, along with the essential actor’s building blocks of voice, movement, text analysis, and acting techniques. ",
       "campus": ["Vancouver"
       ],
@@ -79,6 +80,7 @@
     },
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work. ",
       "campus": ["Vancouver"
       ],
@@ -125,6 +127,7 @@
     },
     {
       "name": "ACTING FOR FILM + TELEVISION",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range. ",
       "campus": ["Vancouver"
       ],
@@ -171,6 +174,7 @@
     },
     {
       "name": "FILM PRODUCTION ",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will explore the possibilities of storytelling, giving you both the narrative craft and visual techniques necessary to bring a story to life on the screen. You will also expand your range of filmmaking techniques while you learn to work on larger sets and co-create with outside writers.",
       "campus": ["Vancouver"
       ],
@@ -228,6 +232,7 @@
     },
     {
       "name": "MAKEUP DESIGN FOR FILM + TELEVISION",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will learn the fundamentals of beauty makeup, while building a solid understanding of products, colour theory, and facial anatomy. You will recreate classic decade looks and adapt them for contemporary application.",
       "campus": ["Vancouver"
       ],
@@ -268,6 +273,7 @@
     },
     {
       "name": "SOUND DESIGN FOR VISUAL MEDIA",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will discover the current industry practices in audio, and familiarize yourself with the main audio tool of the industry, Pro Tools and the foundations of game audio. Explore more complex techniques and concepts in post-production audio and game audio. Gain an in-depth understanding of MAXMSP. Expand your post-production skills through sound editing and mixing, while taking frame rates and their practical implications into consideration. Enhance your game audio techniques using Wwise software. Practice large-scale mixing in a 5.1 re-recording theatre with an Avid ICON D-Control ES console.",
       "campus": ["Vancouver"
       ],
@@ -317,6 +323,7 @@
     },
     {
       "name": "WRITING FOR FILM  + TELEVISION",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will develop fundamental skills in visual storytelling, structure, character, format, genre as well as  your TV spec script, hone your dialogue skills, and start work on a series of comedy sketches.",
       "campus": ["Vancouver"
       ],
@@ -355,6 +362,7 @@
     },
     {
       "name": "3D ANIMATION + VISUAL EFFECTS ",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will gain experience with traditional arts, computer animation, and cinematic storytelling skills in a professional, studio environment. Advance your 2D and 3D animation skills as you start to delve into the art of Life Drawing. Complete courses in 3D lighting, texturing, and visual storytelling. Having completed, to deadline, all 3D pre-production requirements, get started on production of your project, maintaining a full production schedule under the guidance of your project supervisor.",
       "campus": ["Vancouver"
       ],
@@ -407,6 +415,7 @@
     },    
   {
       "name": "ANIMATION CONCEPT ART",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "Learn the fundamentals of translating words and ideas into compelling visual stories.",
       "campus": ["Vancouver"
       ],
@@ -444,6 +453,7 @@
     },
     {
       "name": "CLASSICAL ANIMATION",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "Create an attention-grabbing reel of animated work that showcases your classical animation techniques, storytelling skills, and grasp of modern digital tools. You will delve into the fundamentals of drawing, animation, and basic art direction.",
       "campus": ["Vancouver"
       ],
@@ -482,6 +492,7 @@
     },
     {
       "name": "DIGITAL DESIGN ",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "Understand fundamental design approaches, identify target audiences and leverage your understanding of current tools to tell simple, powerful stories.",
       "campus": ["Vancouver"
       ],
@@ -533,6 +544,7 @@
     },
         {
       "name": "GAME DESIGN",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will build on your game design foundation and start to create your own playable 2D game in Unity. Shift from theoretical to practical with hands-on work on detailed design documentation and front-end interfaces. Expand your role as a designer with online, multiplayer design.",
       "campus": ["Vancouver"
       ],
@@ -576,6 +588,7 @@
     },
     {
       "name": "PROGRAMMING FOR GAMES, WEB + MOBILE",
+      "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will learn fundamental theories, key concepts, and processes involved in creating high-quality games, web, and mobile projects. Work with 2D and 3D design tools and discover asset pipelines for large projects. You will also enhance your skill set by utilizing C++ programming language, Object Oriented Programming techniques, and mobile applications for the Apple iPad and iPhone. Create mobile apps and communicate with online networks and payment solution providers, using the Android platform and Java language. Encounter the key features of artificial intelligence in Unity and the building blocks that influence the gaming experience. Utilize Windows and OpenGL with C++ programming to create a simple game engine. Demonstrate knowledge in Winsock and the protocols TCP/IP and UDP. Create a cloud project that utilizes Amazon web services and synthesize all of your work in a professional-quality website showcase.",
       "campus": ["Vancouver"
       ],
@@ -625,6 +638,7 @@
     {
       "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
       "name": "Deadzone",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Acting",
@@ -634,6 +648,7 @@
     {
       "image": "VFS/student_work/Acting Essintials/VFS_Everyone",
       "name": "Everyone",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Acting",
@@ -643,6 +658,7 @@
     {
       "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
       "name": "It's Not A Diary It's A Movie",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Acting",
@@ -652,6 +668,7 @@
     {
       "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
       "name": "Shortland Street",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Acting",
@@ -661,6 +678,7 @@
     {
       "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
       "name": "Supernatural",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Acting",
@@ -670,6 +688,7 @@
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
       "name": "Final Perspective Vehicle",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "Fernanda Munoz",
       "disciplines": [
         "Animation",
@@ -680,6 +699,7 @@
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
       "name": "Character Variation Hero",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "Jiyeon Han",
       "disciplines": [
         "Animation",
@@ -690,6 +710,7 @@
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_luccamedeiros_estabilishingshot_f",
       "name": "Establishing Shot",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "Lucca Medeiros",
       "disciplines": [
         "Animation",
@@ -700,6 +721,7 @@
     {
       "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
       "name": "Final Establishing Shot",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "Ana Karen Zamudio Soberanes",
       "disciplines": [
         "Animation",
@@ -710,6 +732,7 @@
     {
       "image": "VFS/student_work/Animation Concept Art/nataliyametlukh_colourconcept_f",
       "name": "Colour Concept",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "Nataliya Metlukh",
       "disciplines": [
         "Animation",
@@ -720,6 +743,7 @@
     {
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
       "name": "Beauty Fantasy Competition Makeup",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Makeup",
@@ -729,6 +753,7 @@
     {
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
       "name": "Character Prosthetic Makeup",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Makeup",
@@ -738,6 +763,7 @@
     {
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup",
       "name": "Human-Character Prosthetic Makeup",
+      "school_name": "Vancouver Film School (VFS)",
       "artist": "",
       "disciplines": [
         "Makeup",
@@ -749,6 +775,7 @@
     {
       "photo": "VFS/alumni/Emily_Bett_Rickards",
       "name": "EMILY BETT RICKARDS",
+      "school_name": "Vancouver Film School (VFS)",
       "course": "Acting Essentials Program",
       "profession": "Actress",
       "credits": "Known for portraying Felicity Smoak in the CW television series Arrow as well as its spinoff series The Flash, Vixen and Legends of Tomorrow"
@@ -756,6 +783,7 @@
     {
       "photo": "VFS/alumni/Neil_Blomkamp",
       "name": "NEILL BLOMKAMP",
+      "school_name": "Vancouver Film School (VFS)",
       "course": "3D Animation and Visual Effects",
       "profession": "Film director, film producer screenwriter, and animator.",
       "credits": "He’s known for directing District 9 and Elysium."
@@ -763,6 +791,7 @@
     {
       "photo": "VFS/alumni/Sara_Canning",
       "name": "SARA CANNING",
+      "school_name": "Vancouver Film School (VFS)",
       "course": "Acting for Film + Television",
       "profession": "Actress",
       "credits": "Known for co-starred on The CW television series The Vampire Diaries as Jenna Sommers and appeared in the 2009 feature film, Black Field."
@@ -770,6 +799,7 @@
     {
       "photo": "VFS/alumni/Terri_Tatchell",
       "name": "TERRI TATCHELL",
+      "school_name": "Vancouver Film School (VFS)",
       "course": "Writing for Film and Television",
       "profession": "Screenwriter",
       "credits": "best known for co-writing the screenplay of District 9. Terri was nominated for Best Adapted Screenplay at the 82nd Academy Awards"

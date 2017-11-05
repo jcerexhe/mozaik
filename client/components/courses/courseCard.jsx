@@ -28,7 +28,7 @@ const CourseCard = (props) => {
         </div>
       </div>
       <div className='course-card-right'>
-        <h3>{ course.name } <a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'fa-2x card-icon'} aria-hidden="true"></i></a></h3>
+        <h3>{ course.name } <a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true"></i></a></h3>
         <div className='course-info'>
           <p>{ course.description }</p>
           <div className='info-bits-container'>

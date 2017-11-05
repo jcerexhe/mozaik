@@ -121,6 +121,9 @@ export default class DiscoverApp extends Component {
                 />
               );
             }) }
+            <center>
+              <a href="#" className="btn btn-discover">Submit</a>
+            </center>
           </div>
         </div>
       </div>

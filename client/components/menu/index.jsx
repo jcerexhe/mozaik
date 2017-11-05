@@ -96,6 +96,29 @@ export default class MenuApp extends Component {
                   </ul>
                 );
               }) }
+              <div className="social">
+                <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
+                  <img className="img-resp(src='/images/social-icons/sm-facebook.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-youtube.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-instagram.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-snapchat.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-pinterest.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-twitter.png')" />
+                </a>
+                <a href='#'>
+                  <img className="img-resp(src='/images/social-icons/sm-linked-in.png')" />
+                </a>
+              </div>
             </div>
           </div>
         </SlidingPane>
