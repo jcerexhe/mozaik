@@ -40,35 +40,24 @@ export default class Search extends Component {
 
   componentWillMount() {
     this.props.getResults({ ...this.state, limit: this.props.limit });
-    // this.props.getResults(this.props.limit, this.state);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    console.log('one1')
     if (nextProps.limit > this.props.limit)
       this.props.getResults({ ...this.state, limit: nextProps.limit });
-      // this.props.getResults(nextProps.limit, { ...this.state });
     if(_.eq(this.props, nextProps))
       this.props.getResults({ ...nextState, limit: 30 });
-      // this.props.getResults(6, { ...nextState });
     if (_.eq(this.state, nextState))
+      console.log('osame')
       return true;
+    console.log('222')
     return false;
   }
 
   updateDiscipline(area, val) {
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
-    // This code makes only one area able to be active at a time
-    // if (area === 'interestAreas') {
-    //   this.setState({
-    //     discipline: {
-    //       ...discipline,
-    //       [area]: [val],
-    //       interestDisciplines: ['all areas']
-    //     }
-    //   })
-    //   return;
-    // }
     if (val === 'all areas') {
       this.setState({
         discipline: {
@@ -94,6 +83,7 @@ export default class Search extends Component {
   }
 
   updateCategories(val) {
+    console.log('val', val)
     let { categories } = this.state;
     if (categories.includes(val))
       _.remove(categories, (c) => { return c.indexOf(val) != -1 });
@@ -104,7 +94,6 @@ export default class Search extends Component {
     });
   }
 
-  // TODO own components
   renderDiscipline() {
     const { discipline, areas } = this.state;
     const countries = ['all areas', 'Australia', 'Canada', 'New Zealand', 'Singapore', 'USA'];
@@ -147,6 +136,7 @@ export default class Search extends Component {
 
   renderCategories() {
     const { categories, areas } = this.state;
+    console.log('categories', categories)
     return (
       <div id='search-categories'>
         <div className='interest-areas'>
@@ -154,8 +144,13 @@ export default class Search extends Component {
           <div className='interest-categories'>
             { _.map(areas, (vals, cat) => {
               return (
-                <div className='category' key={ cat }>
-                  <h4>{ cat }</h4>
+                <div className='category' key={ cat + '_div' }>
+                  <h3
+                    className="category-heading"
+                    onClick={ () => this.updateCategories(cat) }
+                    key={ cat }>
+                    { cat }
+                  </h3>
                   <ul className='search-links'>
                     { _.map(vals, (val) => {
                       return (
