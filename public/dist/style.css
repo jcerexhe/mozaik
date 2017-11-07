@@ -43,10 +43,14 @@
   font-family: 'Montserrat Bold';
   src: url(/fonts/montserrat/montserrat-bold.otf); }
 
-h1, h2, h3, h5 {
+h1, h2, h5 {
   font-family: 'Gotham Bold';
   color: #FF6D6D;
   text-transform: uppercase; }
+
+h3 {
+  font-family: 'Gotham Bold';
+  color: #FF6D6D; }
 
 h4 {
   font-family: 'Gotham Bold';
@@ -246,7 +250,7 @@ input.input-newsletter:focus {
 .list-btn.active {
   width: 60px;
   height: 41px;
-  background-image: url(/images/buttons/list-select.png);
+  background-image: url(/images/buttons/list-button.png);
   background-size: cover;
   cursor: pointer;
   /*background-color: $pink;
@@ -262,7 +266,7 @@ input.input-newsletter:focus {
 .refine-btn.active {
   width: 60px;
   height: 41px;
-  background-image: url(/images/buttons/refine-select.png);
+  background-image: url(/images/buttons/refine-button.png);
   background-size: cover;
   cursor: pointer;
   /*background-color: $pink;
@@ -278,7 +282,7 @@ input.input-newsletter:focus {
 .search-btn.active {
   width: 60px;
   height: 41px;
-  background-image: url(/images/buttons/search-select.png);
+  background-image: url(/images/buttons/search-button.png);
   background-size: cover;
   cursor: pointer;
   /*background-color: $pink;
@@ -897,7 +901,8 @@ input[type=text]::placeholder {
   background-position: 0 -200px; }
 
 .slider-dots {
-  margin-top: -490px; }
+  margin-top: -490px;
+  margin-left: 3.7%; }
 
 .slider-body {
   padding: 0 40px;
@@ -934,7 +939,11 @@ input[type=text]::placeholder {
   width: 50px; }
 
 .slider-dots > .slick-dots {
-  bottom: initial; }
+  bottom: initial;
+  margin-top: -47px;
+  width: 100%;
+  left: 0;
+  height: 83px; }
 
 .slick-dots li {
   height: 0px !important;
@@ -942,12 +951,20 @@ input[type=text]::placeholder {
 
 .slick-dots li .dot {
   font-size: 0 !important;
-  border: 3px solid #FFFFFF !important;
+  /* border: 3px solid $white !important; */
+  background-color: #273234;
   padding: 0px !important;
-  height: 0px; }
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 30px; }
 
 .slick-dots li.slick-active .dot {
-  border: 3px solid #FF6D6D !important; }
+  /* border: 3px solid $pink !important; */
+  background-color: #FF6D6D;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; }
 
 #search {
   position: absolute;
@@ -1081,7 +1098,8 @@ input[type=text]::placeholder {
     color: #FFFFFF;
     cursor: pointer;
     display: block;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-family: 'Gotham Book Regular'; }
   .search-content .search-link.active {
     color: #FF6D6D; }
   .search-content .search-input {

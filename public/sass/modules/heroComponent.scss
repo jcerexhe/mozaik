@@ -31,6 +31,7 @@
 }
 .slider-dots {
   margin-top: -490px;
+  margin-left: 3.7%;
 }
 .slider-body {
   padding: 0 40px;
@@ -68,6 +69,11 @@
 }
 .slider-dots > .slick-dots {
   bottom: initial;
+  margin-top: -47px;
+  width: 100%;
+  left: 0;
+  height: 83px;
+
 }
 .slick-dots li {
   height: 0px !important;
@@ -75,10 +81,18 @@
 }
 .slick-dots li .dot {
   font-size: 0 !important;
-  border: 3px solid $white !important;
+  /* border: 3px solid $white !important; */
+  background-color: $dark-green;  
   padding: 0px !important;
-  height: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 30px;
 }
 .slick-dots li.slick-active .dot {
-  border: 3px solid $pink !important;
+  /* border: 3px solid $pink !important; */
+  background-color: $pink;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
