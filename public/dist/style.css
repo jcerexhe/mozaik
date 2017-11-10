@@ -64,6 +64,25 @@ html, body {
 .content {
   background-color: #181818; }
 
+.hbspt-form {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: aqua;
+  z-index: 100;
+  padding: 20px;
+  text-align: center;
+  background-color: #181818;
+  border: 1px solid #FF6D6D;
+  padding: 30px 20px;
+  color: white; }
+
+.enquiry-form {
+  text-align: center;
+  background-color: #181818;
+  padding: 30px 0px;
+  color: white; }
+
 .content {
   margin-top: -100px; }
 
@@ -687,12 +706,17 @@ input[type=text]::placeholder {
   z-index: 102;
   position: relative; }
 
-.navbar > .discover, .navbar > .links {
-  width: 25%; }
-
 .navbar > .logo {
-  width: 50%;
-  text-align: center; }
+  text-align: center;
+  /*border: 5px solid white;*/
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: inherit; }
+
+.navbar .logo img {
+  height: 90px;
+  padding: 10px 0px 0 80px; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -792,6 +816,9 @@ input[type=text]::placeholder {
 
 .sliding-menu-pane > .slide-pane__header {
   display: none; }
+
+.slide-pane__content {
+  width: 100%; }
 
 #menu {
   position: absolute;
@@ -940,7 +967,7 @@ input[type=text]::placeholder {
 
 .slider-dots > .slick-dots {
   bottom: initial;
-  margin-top: -47px;
+  margin-top: -7px;
   width: 100%;
   left: 0;
   height: 83px; }
@@ -954,16 +981,16 @@ input[type=text]::placeholder {
   /* border: 3px solid $white !important; */
   background-color: #273234;
   padding: 0px !important;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  margin-left: 30px; }
+  margin-left: 36px; }
 
 .slick-dots li.slick-active .dot {
   /* border: 3px solid $pink !important; */
   background-color: #FF6D6D;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%; }
 
 #search {

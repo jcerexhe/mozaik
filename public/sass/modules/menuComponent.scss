@@ -19,13 +19,19 @@
   z-index: 102;
   position: relative;
 }
-.navbar > .discover, .navbar > .links {
-  width: 25%;
-}
+
 .navbar > .logo {
-  width: 50%;
   text-align: center;
+  /*border: 5px solid white;*/
+  align-self: center;
+  height: inherit;
 }
+
+.navbar .logo img {
+   height: 90px;
+   padding: 10px 0px 0 80px;
+}
+
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
@@ -121,6 +127,12 @@
 .sliding-menu-pane > .slide-pane__header {
   display: none;
 }
+
+.slide-pane__content {
+    width: 100%;
+}
+
+
 #menu {
   position: absolute;
   z-index: 101;

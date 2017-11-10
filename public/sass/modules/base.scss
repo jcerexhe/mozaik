@@ -84,3 +84,20 @@ html, body {
 .content {
   background-color: $grey;
 }
+
+
+.hbspt-form {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: aqua;
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    background-color: $grey;
+    border: 1px solid $pink;
+    padding: 30px 20px;
+    color: white;
+}
+
+
