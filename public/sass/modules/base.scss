@@ -55,11 +55,19 @@ $grey-text: #949494;
   src: url(/fonts/montserrat/montserrat-bold.otf);
 }
 
-h1, h2, h3, h5 {
+h1, h2, h5 {
   font-family: 'Gotham Bold';
   color: $pink;
   text-transform: uppercase;
 }
+
+
+h3 {
+  font-family: 'Gotham Bold';
+  color: $pink;
+}
+
+
 
 h4 {
   font-family: 'Gotham Bold';

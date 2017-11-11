@@ -10,10 +10,13 @@ const Result = (props) => {
   } else {
     likedCourses = []
   }
+  let location = result.school.locations.map(location => {
+    return <div>{location.campus}, {location.country}</div>
+  })
   return (
     <a className='search-result' href={ '/school/'+result.school.slug+'/'+result.slug+'/artwork' }>
       <span className='course-name'>{ result.name }</span>
-      <span className='city'>Sydney, Australia</span>
+      <span className='city'>{ location[0] }</span>
       <img src={ result.image } alt={ result.name } />
       <img className='logo' src={ result.school.logo } alt='school logo' />
       <i onClick={() => likeCourse(result.name)} className={'fa ' + (likedCourses.includes(result.name) ? 'fa-heart ' : 'fa-heart-o ') + 'fa-2x'} aria-hidden="true"></i>
