@@ -52,7 +52,7 @@ export default class MenuApp extends Component {
             <a href='/#search'>discover</a>
           </div>
           <div className='logo'>
-            <a href='/'><img src="http://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
+            <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
           </div>
           <div className='links'>
             <a href='#'>
