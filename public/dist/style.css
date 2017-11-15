@@ -75,7 +75,17 @@ html, body {
   background-color: #181818;
   border: 1px solid #FF6D6D;
   padding: 30px 20px;
-  color: white; }
+  color: white;
+  display: none; }
+
+.hbspt-form button {
+  border: none;
+  background-color: #FF6D6D;
+  margin: 0;
+  padding: 5px;
+  right: 5px;
+  top: 5px;
+  position: absolute; }
 
 .content {
   margin-top: -100px; }
@@ -948,6 +958,15 @@ input[type=text]::placeholder {
   @media only screen and (min-width: 768px) {
     .slider-body > p {
       width: 45%; } }
+
+.modal-close-button {
+  text-align: center;
+  border: none;
+  background-color: #FF6D6D;
+  margin: 0;
+  right: 16px;
+  top: 5px;
+  position: absolute; }
 
 .scroll-search {
   margin-top: 31px;

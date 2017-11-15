@@ -26,7 +26,7 @@ export default class HeroApp extends Component {
         {
           heading: 'Mozaik Creative.',
           text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
-          background: 'http://res.cloudinary.com/mozaik/image/upload/v1510299557/Dancer_Inspire_ehn0lr.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1510299557/Dancer_Inspire_ehn0lr.png',
           video: true
         },
         {
@@ -38,7 +38,7 @@ export default class HeroApp extends Component {
         {
           heading: 'Personalised application support',
           text: "We can help you with the full application process. From enquiry to enrolment... and throughout your whole student journey.",
-          background: 'http://res.cloudinary.com/mozaik/image/upload/v1510303833/Guy_with_headphones_Apply1_fymqdo.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1510303833/Guy_with_headphones_Apply1_fymqdo.png',
           video: false,
           cta: {
             text: 'Learn More',
@@ -88,6 +88,9 @@ export default class HeroApp extends Component {
                     onRequestClose={() => this.closeModal()}
                     style={customStyles}
                   >
+                      <button className="modal-close-button" onClick={() => this.closeModal()} data-close aria-label="Close modal" type="button">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
                   </ReactModal>
                   <h1>{ slide.heading }</h1>
