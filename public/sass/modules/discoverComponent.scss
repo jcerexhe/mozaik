@@ -3,8 +3,9 @@
   width: 200px;
   position: absolute;
   left: 250px;
-  top: 100px;
+  top: 0px;
   background-color: white;
+  overflow: scroll;
 }
 .discover-column {
   padding: 20px;
@@ -32,4 +33,9 @@
   margin: 2px 0px;
   text-transform: uppercase;
   line-height: 1.8;
+}
+.map {
+  position: relative;
+
+
 }

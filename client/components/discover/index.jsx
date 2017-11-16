@@ -68,7 +68,7 @@ export default class DiscoverApp extends Component {
     const quals = ['certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
     const inputs = ['city', 'state', 'country'];
     return (
-      <div>
+      <div className="map">
         <Map
           coords={ {lat: -33.8688, lng: 151.2093} }
           containerElement={
