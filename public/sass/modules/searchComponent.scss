@@ -125,9 +125,17 @@
     /*margin-left: 15px;*/
     padding: 10px;
     width: 17%;
-    /*border-left: 1px solid $pink;
-    border-right: 1px solid $pink;*/
-  }
+    
+    /*border-left: 1px solid $pink;*/
+    border-right: 1px solid $pink;
+   }
+   .category:nth-child(5) {
+    border-right: none;
+   }
+   .category:last-child {
+     border-right: none;  
+    }
+
   .search-links {
     list-style: none;
     padding: 0px;

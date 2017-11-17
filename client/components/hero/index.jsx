@@ -26,7 +26,7 @@ export default class HeroApp extends Component {
         {
           heading: 'Mozaik Creative.',
           text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1510299557/Dancer_Inspire_ehn0lr.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1510898000/Dancer_Inspire_yasy7l.png',
           video: true
         },
         {
@@ -38,7 +38,7 @@ export default class HeroApp extends Component {
         {
           heading: 'Personalised application support',
           text: "We can help you with the full application process. From enquiry to enrolment... and throughout your whole student journey.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1510303833/Guy_with_headphones_Apply1_fymqdo.png',
+          background: 'http://res.cloudinary.com/mozaik/image/upload/v1510897063/Guy_with_headphones_Apply_dhhdkv.png',
           video: false,
           cta: {
             text: 'Learn More',
