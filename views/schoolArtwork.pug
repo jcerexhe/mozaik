@@ -13,9 +13,9 @@ block content
         p(class="video-text") Play Video
       .school-links
         .school-link
-          a(href='#' onclick="createForm()" class='btn btn-full-width') Enquire
+          a(href='#' onclick="eForm()" class='btn btn-full-width') Enquire
         .school-link
-          a(href='#' onclick="createForm()" class='btn btn-full-width') Apply
+          a(href='#' onclick="eForm()" class='btn btn-full-width') Apply
         .school-link
           a(href=school.website, target='_blank' class='btn btn-full-width') Visit Website
   !=Lightbox
@@ -24,24 +24,49 @@ block content
     a.btn(href=`/school/${school.slug}/courses`) View Courses
   .extended-search.school-footer
     .school-footer-section
-      p Want to know more about AIT?
+      p= `Want to know more about ${school.acro}?`
       .school-link
           a(href=`/school/${school.slug}/details` class='btn btn-grey')
             span View School
     .school-footer-section
       p For more details, download the course guide
       .school-link
-          a(href='#' class='btn btn-grey')
+          a(href='#' onclick="cForm()" class='btn btn-grey')
             span Course Guide
 
   // if lte IE 8
   script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2-legacy.js')
   script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2.js')
   script.
-    function createForm() {
-    hbspt.forms.create({
-    portalId: '2708822',
-    formId: '8e92d188-4259-4263-b5c8-3865663c6f4d'
-    });
-    }
+ 
+    var btn = document.createElement("button");
+    btn.innerHTML = '&times;';
+         
+     function eForm(){  
+       hbspt.forms.create({
+        portalId: '2708822',
+        formId: '8e92d188-4259-4263-b5c8-3865663c6f4d',
+         onFormReady: closeForm
+        });
+      };
+        
+    
+    function cForm() {
+      hbspt.forms.create({
+      portalId: '2708822',
+      formId: 'ade15aad-d63b-4d3f-a2ab-f418fe9c136f',
+      onFormReady: closeForm
+      });
+      
+    };
+      function closeForm() {
+      var form = document.getElementsByClassName("hbspt-form");
+      console.log(form[0]);
+      form[0].style.display = "block";
+      btn.addEventListener("click", function(){
+        form[0].style.display = "none";
+      });
+      form[0].appendChild(btn);
+    };
+
    

@@ -58,6 +58,15 @@
     width: 45%;
   }
 }
+.modal-close-button {
+  text-align: center;
+  border: none;
+  background-color: $pink;
+  margin: 0;
+  right: 16px;
+  top: 0px;
+  position: absolute;
+} 
 .scroll-search {
   margin-top: 31px;
   position: absolute;
@@ -97,4 +106,6 @@
   width: 30px;
   border-radius: 50%;
 }
+
+
 

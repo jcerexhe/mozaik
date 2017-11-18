@@ -19,6 +19,7 @@ const schoolSchema = new Schema({
     trim: true,
     required: 'Please supply a name for your school.',
   },
+  acro: String,
   slug: String,
   website: {
     type: String,

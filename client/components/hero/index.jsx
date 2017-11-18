@@ -88,6 +88,9 @@ export default class HeroApp extends Component {
                     onRequestClose={() => this.closeModal()}
                     style={customStyles}
                   >
+                      <button className="modal-close-button" onClick={() => this.closeModal()} data-close aria-label="Close modal" type="button">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
                   </ReactModal>
                   <h1>{ slide.heading }</h1>

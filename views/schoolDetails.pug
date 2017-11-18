@@ -12,10 +12,10 @@ block content
         p(class="video-text") Play Video
       .school-links
         .school-link
-          a(href='#' onclick="createForm()" class='btn btn-full-width')
+          a(href='#' onclick="eForm()" class='btn btn-full-width')
             span Enquire
         .school-link
-          a(href='#' onclick="createForm()" class='btn btn-full-width')
+          a(href='#' onclick="eForm()" class='btn btn-full-width')
             span Apply
         .school-link
           a(href=school.website, target='_blank' class='btn btn-full-width')
@@ -26,7 +26,7 @@ block content
         h2 overview
         p=school.overview
         a.btn(href=`/school/${school.slug}/courses`) view all courses
-        a.btn(href=school.courseGuide) course guide
+        a.btn(href='#' onclick="cForm()") course guide
       .fees-scholarships
         h3 fees scholarship
         h4 price range
@@ -68,9 +68,8 @@ block content
     h2.school-details-subheading alumni
     !=Alumni
   .final-links
-    a.btn(href='#' onclick="createForm()") enquire
-    a.btn(href='#' onclick="createForm()") apply
-
+    a.btn(href='#' onclick="eForm()") enquire
+    a.btn(href='#' onclick="eForm()") apply
 append stylesheets
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
@@ -79,10 +78,35 @@ append stylesheets
   script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2-legacy.js')
   script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2.js')
   script.
-    function createForm() {
-    hbspt.forms.create({
-    portalId: '2708822',
-    formId: '8e92d188-4259-4263-b5c8-3865663c6f4d'
-    });
-    
-    }
+ 
+    var btn = document.createElement("button");
+    btn.innerHTML = '&times;';
+         
+     function eForm(){  
+       hbspt.forms.create({
+        portalId: '2708822',
+        formId: '8e92d188-4259-4263-b5c8-3865663c6f4d',
+         onFormReady: closeForm
+        });
+      };
+
+     function cForm() {
+      hbspt.forms.create({
+      portalId: '2708822',
+      formId: 'ade15aad-d63b-4d3f-a2ab-f418fe9c136f',
+      onFormReady: closeForm
+      });
+      
+    }; 
+
+
+     function closeForm() {
+      var form = document.getElementsByClassName("hbspt-form");
+      console.log(form[0]);
+      form[0].style.display = "block";
+      btn.addEventListener("click", function(){
+        form[0].style.display = "none";
+      });
+      form[0].appendChild(btn);
+    };
+ 
