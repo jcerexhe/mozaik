@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "Australian Film Television and Radio School (AFTRS)",
-    "acro": "AFTRS",
+    "short_name": "AFTRS",
     "website": "http://www.aftrs.edu.au/",
     "disciplines": [
       "Film/TV",
