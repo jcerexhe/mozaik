@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "NATIONAL INSTITUTE OF DRAMATIC ART (NIDA)",
-    "acro": "NIDA",
+    "short_name": "NIDA",
     "website": "https://www.nida.edu.au/",
     "disciplines": [
       "Performing Arts", 

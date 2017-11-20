@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "Vancouver Film School (VFS)",
-    "acro": "VFS",
+    "short_name": "VFS",
     "website": "https://vfs.edu/",
     "disciplines": [
       "Digital Media",

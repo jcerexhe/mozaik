@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "Academy of Information Technology (AIT)",
-    "acro": "AIT",
+    "short_name": "AIT",
     "website": "http://www.ait.edu.au",
     "disciplines": [
       "Digital Media",

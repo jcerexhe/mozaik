@@ -1122,11 +1122,14 @@ input[type=text]::placeholder {
   .search-content .interest-categories > .category {
     /*margin: 5px;*/
     /*margin-left: 15px;*/
-    padding: 10px;
-    width: 17%;
+    padding: 10px 25px 0px 0px;
+    width: 25%;
+    margin-bottom: 5%;
     /*border-left: 1px solid $pink;*/
     border-right: 1px solid #FF6D6D; }
-  .search-content .category:nth-child(5) {
+  .search-content .category:nth-child(3) {
+    border-right: none; }
+  .search-content .category:nth-child(6) {
     border-right: none; }
   .search-content .category:last-child {
     border-right: none; }
@@ -1510,7 +1513,8 @@ input[type=text]::placeholder {
   overflow: scroll; }
 
 .discover-column {
-  padding: 20px; }
+  padding: 20px;
+  width: 170px; }
 
 .discover-column a {
   text-decoration: none;
@@ -1534,7 +1538,7 @@ input[type=text]::placeholder {
       justify-content: space-around; }
 
 .discover-checkboxes > label {
-  font-size: 10px;
+  font-size: 13px;
   margin: 2px 0px;
   text-transform: uppercase;
   line-height: 1.8; }
