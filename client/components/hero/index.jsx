@@ -24,7 +24,7 @@ export default class HeroApp extends Component {
       currentSlide: 0,
       slides: [
         {
-          heading: 'Mozaik Creative.',
+          heading: 'Mozaik Play.',
           text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1510898000/Dancer_Inspire_yasy7l.png',
           video: true
