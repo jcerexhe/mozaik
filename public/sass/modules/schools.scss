@@ -1,15 +1,20 @@
 .school-heading-container {
-  background-color: $grey;
-  width: 100vw;
+  /* background-color: $grey; */
+  background-color: blue;
+  width: 100%;
 }
 .school-heading {
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding: 50px 0px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -100px;
+  padding-top: 100px;
   width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
   @media only screen and (min-width: 768px) {
     width: 60%;
   }

@@ -47,7 +47,8 @@ exports.schoolDetails = (req, res) => {
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
   const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
-  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni });
+  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
+  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses });
 };
 
 exports.schoolCourses = (req, res) => {
