@@ -24,7 +24,7 @@ const Result = (props) => {
       // <img className='logo' src={ result.school.logo } alt='school logo' />
       // <i onClick={() => likeCourse(result.name)} className={'fa ' + (likedCourses.includes(result.name) ? 'fa-heart ' : 'fa-heart-o ') + 'fa-2x'} aria-hidden="true"></i>
     // </a>
-    <a className='search-result' href={ '/school/'+result.slug }>
+    <a className='search-result' href={ '/school/'+result.slug+'/details' }>
       <span className='course-name'>{ result.slug }</span>
     </a>
 
