@@ -1501,7 +1501,8 @@ input[type=text]::placeholder {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  color: #FFFFFF; }
 
 .course-card-left > .course-buttons {
   width: 100%;
@@ -1546,9 +1547,13 @@ input[type=text]::placeholder {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.course-info-bit {
-  display: -ms-flexbox;
-  display: flex; }
+.course-info-bit-right {
+  /*display: flex; */
+  text-align: right; }
+
+.course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
 
 .info-bit-content {
   display: -ms-flexbox;
