@@ -1491,7 +1491,8 @@ input[type=text]::placeholder {
   -ms-flex-align: top;
       align-items: top;
   width: 80%;
-  margin: 50px auto; }
+  margin: 50px auto;
+  position: relative; }
 
 .course-card-left {
   width: 30%;
@@ -1656,8 +1657,3 @@ body {
   margin: 0px; }
 
 /*# sourceMappingURL=style.css.map*/
-
-/*about us*/
-.aboutUs {
-  text-align: center;
-}
