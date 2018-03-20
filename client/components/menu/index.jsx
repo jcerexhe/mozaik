@@ -29,7 +29,7 @@ export default class MenuApp extends Component {
         {
           heading: 'about mozaik',
           links: [
-            { url: '#', val: 'who is mozaik?' },
+            { url: '/about', val: 'who is mozaik?' },
             { url: '#', val: 'contact us' }
           ]
         }

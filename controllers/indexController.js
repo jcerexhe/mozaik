@@ -60,4 +60,9 @@ exports.schoolCourses = (req, res) => {
 exports.discover = (req, res) => {
   const Discover = reactHelper.renderComponent('DiscoverApp');
   res.render('discover', { Discover });
+};
+
+exports.about = (req, res) => {
+  const About = reactHelper.renderComponent('AboutApp');
+  res.render('about', { About });
 }
