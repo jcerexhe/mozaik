@@ -60,20 +60,17 @@ export default class MenuApp extends Component {
                 <div id='open-menu'
                   onClick={ () => this.updateMenu() }
                   className={ menuOpen ? 'open' : '' }>
-                  <span />
-                  <span />
-                  <span />
-                  <span />
+                  <img className='icon-white' src='/images/menu/Menu_1.png' />
                 </div>
               </div>
               <div>
                 <a href="/#search">
-                  <img className='icon-white' src='/images/icons/mozaik-icons-5.png' />
+                  <img className='icon-white' src='/images/menu/Search_1.png' />
                 </a>
               </div>
               <div>
                 <a href='#'>
-                  <img className='icon-white' src='/images/icons/mozaik-icons-6.png' />
+                  <img className='icon-white' src='/images/menu/My_Account.png' />
                 </a> 
               </div>
             </div>    
