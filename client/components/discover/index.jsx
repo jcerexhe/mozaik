@@ -6,15 +6,15 @@ import _ from 'lodash';
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 const handleStyle = {
-  backgroundColor: '#000000',
+  backgroundColor: '#ffffff',
   border: 'none',
-  borderRadius: 0,
-  transform: 'rotate(45deg)',
-  width: '11px',
-  height: '11px'
+  //borderRadius: 0,
+  //transform: 'rotate(45deg)',
+  width: '10px',
+  height: '10px'
 };
 const trackStyle = {
-  backgroundColor: '#000000',
+  backgroundColor: '#ffffff',
   height: '1px'
 };
 const railStyle = {
@@ -22,8 +22,8 @@ const railStyle = {
 };
 const dotStyle = {
   bottom: '0px',
-  width: '7px',
-  height: '7px'
+  width: '11px',
+  height: '11px'
 };
 
 const Map = withGoogleMap(props => (
@@ -63,6 +63,7 @@ export default class DiscoverApp extends Component {
     })
   }
 
+
   render() {
     const { priceRange, university, state, country } = this.state;
     const quals = ['certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
@@ -80,7 +81,7 @@ export default class DiscoverApp extends Component {
         />
         <div className='discover-column-container'>
           <div className='discover-column'>
-            <h3>qualification</h3>
+            <h3>QUALIFICATION</h3>
             <div className='discover-checkboxes control-group'>
               { _.map(quals, (q, i) => {
                 return (
@@ -96,7 +97,7 @@ export default class DiscoverApp extends Component {
                 );
               }) }
             </div>
-            <h3>Price Range <span>(aud)</span></h3>
+            <h3>PRICE RANGE <span>(AUD)</span></h3>
             <Range
               defaultValue={ [0, 200000] }
               min={ 0 }
@@ -110,7 +111,7 @@ export default class DiscoverApp extends Component {
               dotStyle={ dotStyle }
               marks={ { 0: <strong>$0</strong>, 200000: <strong>$200,000+</strong> } }
             />
-            <h3>location</h3>
+            <h3>LOCATION</h3>
             { _.map(inputs, (inp) => {
               return (
                 <input
