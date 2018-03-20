@@ -6,7 +6,7 @@ export default class AboutApp extends Component {
 		return (
 		<div className='aboutUs'>
 			<p> About Us </p>
-		</div>	
+		</div>
 		);
 	}
 }
