@@ -13,7 +13,6 @@
   margin-top: -100px;
   padding-top: 100px;
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   @media only screen and (min-width: 768px) {
     width: 60%;
@@ -22,6 +21,10 @@
   .school-info {
     display: flex;
     align-items: center;
+  }
+
+  .school-info h1 {
+    text-align: center !important;
   }
   .school-info > img {
     margin-right: 20px;
@@ -49,7 +52,7 @@
   }
   .video-link {
     margin: 15px 30px;
-    width: 150px;
+   
     font-family: 'Bebas Neue';
     color: $white;
   }
@@ -68,6 +71,87 @@
   font-family: 'Gotham Bold';
 }
 
+// student work section
+.student-work{
+  height: 50vh;
+  background-color: red;
+}
+
+.student-work > p{
+  margin: 0;
+}
+
+.school-overview-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  h1{
+    margin: 0;
+  }
+  .school-logo{
+    width: 20%;
+  }
+  .school-overview{
+    width: 30%;
+    padding: 5px;
+  }
+  .school-fees{
+    width: 30%;
+    padding: 5px;
+  }
+  .school-links{
+    width: 20%;
+  }
+  .details-box{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: -170px;
+    padding-top: 40px;
+    height: 400px;
+  }
+}
+
+// study areas
+.study-areas{
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}
+
+//other section
+.other-section{
+  display: flex;
+  justify-content: space-between;
+
+  .locations{
+    width: 33.33%;
+    background-color: blue;
+  }
+  .facilities{
+    width: 33.33%;
+    background-color: red;
+  }
+  .alumni{
+    width: 33.33%;
+    background-color: blue;
+  }
+
+  .other-section-box{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+
+    h2{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
 // School Details Page
 .school-details-links {
   display: flex;
