@@ -4,22 +4,47 @@ block content
   .school-heading-container
     .school-heading
       .school-info
-        img(src=school.logo)
+        //- img(src=school.logo)
         h1= school.name
       .school-links.video-link
         i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
         br
         p(class="video-text") Play Video
-      .school-links
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Enquire
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Apply
-        .school-link
-          a(href=school.website, target='_blank' class='btn btn-full-width')
-            span Visit Website
+  .student-work
+    p hello world
+  .school-overview-container
+    .school-logo
+      h1 logo
+    .school-overview
+      .details-box
+        h2 overview
+        p=school.overview
+        h3 campuslocation
+        ul
+            each loc in school.locations
+              li=loc.campus
+        h3 delivery
+        ul
+            each delivery in school.delivery
+              li=delivery
+    .school-fees
+      .details-box
+        h2 fees scholarship
+        h4 price range
+        ul
+          each price in school.prices
+            li
+              =`${price.type}:`
+              br
+              =`AUD ${price.lower} - AUD ${price.upper}`
+        h4 scholarship
+        ul
+          each scholarship in school.scholarships
+            li=scholarship
+    .school-links
+      h1 buttons
+  .study-areas
+
   .grey-bg
     .school-details
       .overview
@@ -55,6 +80,17 @@ block content
         ul
           each area in school.disciplines
             li=area
+  !=Courses
+  .other-section
+    .locations
+      .other-section-box
+        h2 locations
+    .facilities
+      .other-section-box
+        h2 facilities
+    .alumni
+      .other-section-box
+        h2 alumni
   !=Lightbox
   .school-locations
     h2.school-details-subheading locations

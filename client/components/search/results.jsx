@@ -29,7 +29,8 @@ export default class Search extends Component {
         <ul className='search-results'>
           { _.map(results, (result) => {
             return (
-              <li key={ result.name+result.school.slug}>
+              // <li key={ result.name+result.school.slug}>
+              <li key={result.slug}>
                 <Result result={ result } />
               </li>
             );

@@ -64,7 +64,7 @@ export default class CoursesApp extends Component {
             <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (
-              <CourseCard course={ course } school={ school } key={ i } />
+              <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
             )
           }) }
         </div>

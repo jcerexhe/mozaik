@@ -3,9 +3,9 @@ import _ from 'lodash';
 import likeCourse from '../shared/likeCourse';
 
 const CourseCard = (props) => {
-  const { course, school } = props;
+  const { course, school, coursekey } = props;
   const disciplines = ( course.disciplines.length > 0 ? (
-    <p className='course-info-bit'>
+    <p className='course-info-bit-right'>
       <span className='bold caps'>specialisations:</span>
       <span className='info-bit-content'>{ course.specialisations.join(', ') }</span>
     </p>
@@ -18,26 +18,25 @@ const CourseCard = (props) => {
   } else {
     likedCourses = []
   }
+  let aligncourse;
+  if ((coursekey + 1)%2 == 0){
+    aligncourse={left: '50px'};
+  }else{
+    aligncourse={left: '-50px'};
+  }
   return (
-    <div className='course-card' id={ course.slug }>
-      <div className='course-card-left'>
-        <img className='img-resp' src={ course.image } alt={ course.name } />
-        <div className='course-buttons'>
-          <a className='btn' href='#'>enquire</a>
-          <a className='btn' href='#'>apply</a>
-        </div>
-      </div>
+    <div className='course-card' id={ course.slug } style={aligncourse}>
       <div className='course-card-right'>
         <h3>{ course.name } <a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true"></i></a></h3>
         <div className='course-info'>
           <p>{ course.description }</p>
           <div className='info-bits-container'>
             <div className='info-bits-section'>
-              <p className='course-info-bit'>
+              <p className='course-info-bit-left'>
                 <span className='bold caps'>length:</span>
                 <span className='info-bit-content'>{ course.length }</span>
               </p>
-              <p className='course-info-bit'>
+              <p className='course-info-bit-left'>
                 <span className='bold caps'>price:</span>
                 <span className='info-bit-content'>
                   { _.map(course.prices, (price, i) => {
@@ -48,7 +47,7 @@ const CourseCard = (props) => {
               { disciplines }
             </div>
             <div className='info-bits-section'>
-              <p className='course-info-bit'>
+              <p className='course-info-bit-left'>
                 <span className='bold caps'>campus:</span>
                 <span className='info-bit-content'>
                   <span>
@@ -62,11 +61,37 @@ const CourseCard = (props) => {
                   </span>
                 </span>
               </p>
-              <p className='course-info-bit'>
+              <p className='course-info-bit-left'>
                 <span className='bold caps'>intakes:</span>
                 <span className='info-bit-content'>{ course.intakes }</span>
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className='course-card-right'>
+        <h3><a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true"></i></a></h3>
+        <div className='course-info'>
+          <div className='info-bits-container'>
+            <div className='info-bits-section'>
+              <p className='course-info-bit-right'>
+                <span className='bold caps'>price</span>
+                <span className='info-bit-content'>
+                  { _.map(course.prices, (price, i) => {
+                    return <span key={ i }>{ price.type }: AUD { price.fees }</span>;
+                  }) }
+                </span>
+              </p>
+              { disciplines }
+              <p className='course-info-bit-right'>
+                <span className='bold caps'>intakes</span>
+                <span className='info-bit-content'>{ course.intakes }</span>
+              </p>
+            </div>
+          </div>
+          <div className='course-buttons'>
+            <a className='btn' href='#'>enquire {aligncourse.left} </a>
+            <a className='btn' href='#'>apply</a>
           </div>
         </div>
       </div>

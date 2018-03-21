@@ -11,7 +11,7 @@ export default class MenuApp extends Component {
         {
           heading: 'for students',
           links: [
-            { url: '#', val: 'why mozaik?' },
+            { url: '#', val: 'why mozaik play?' },
             { url: '/discover', val: 'discover' },
             { url: '#', val: 'study areas' },
             { url: '#', val: 'education agency' },
@@ -25,14 +25,14 @@ export default class MenuApp extends Component {
             { url: '#', val: 'education agency' },
             { url: '#', val: 'sign up' }
           ]
-        },
-        {
+        }
+        /*{
           heading: 'about mozaik',
           links: [
             { url: '#', val: 'who is mozaik?' },
             { url: '#', val: 'contact us' }
           ]
-        }
+        }*/
       ]
     };
   }
@@ -48,27 +48,32 @@ export default class MenuApp extends Component {
     return (
       <div>
         <div className='navbar'>
-          <div className='discover'>
-          { /*<a href='/#search'>discover</a> */}
-          </div>
+          {/*<div className='discover'>
+             <a href='/#search'>discover</a>
+          </div>*/}
           <div className='logo'>
             <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
           </div>
           <div className='links'>
-            <a href='#'>
-              <img className='icon-white' src='/images/icons/mozaik-icons-6.png' />
-            </a>
-            <a href="/#search">
-              <img className='icon-white' src='/images/icons/mozaik-icons-5.png' />
-            </a>
-            <div id='open-menu'
-              onClick={ () => this.updateMenu() }
-              className={ menuOpen ? 'open' : '' }>
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
+            <div className='row'>
+              <div>
+                <div id='open-menu'
+                  onClick={ () => this.updateMenu() }
+                  className={ menuOpen ? 'open' : '' }>
+                  <img className='icon-white' src='/images/menu/Menu_1.png' />
+                </div>
+              </div>
+              <div>
+                <a href="/#search">
+                  <img className='icon-white' src='/images/menu/Search_1.png' />
+                </a>
+              </div>
+              <div>
+                <a href='#'>
+                  <img className='icon-white' src='/images/menu/My_Account.png' />
+                </a> 
+              </div>
+            </div>    
           </div>
         </div>
         <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
