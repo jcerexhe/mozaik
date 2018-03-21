@@ -1483,7 +1483,7 @@ input[type=text]::placeholder {
 
 .course-card-container {
   border-top: 1px solid #E4E9EC;
-  background: #181818; }
+  background: #FFFFFF; }
 
 .course-card {
   display: -ms-flexbox;
@@ -1492,7 +1492,10 @@ input[type=text]::placeholder {
       align-items: top;
   width: 80%;
   margin: 50px auto;
-  position: relative; }
+  position: relative;
+  padding: 10px;
+  padding-top: 30px;
+  background: #181818; }
 
 .course-card-left {
   width: 30%;
@@ -1520,7 +1523,7 @@ input[type=text]::placeholder {
     margin-right: 15px; } }
 
 .course-card-right {
-  width: 70%;
+  width: 47.5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1555,6 +1558,10 @@ input[type=text]::placeholder {
   /*display: flex; */
   text-align: left; }
 
+.course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
+
 .info-bit-content {
   display: -ms-flexbox;
   display: flex;
@@ -1563,7 +1570,8 @@ input[type=text]::placeholder {
   margin-left: 3px; }
 
 .course-bg {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background: #FFFFFF; }
 
 .info-bits-container {
   display: -ms-flexbox;
@@ -1577,6 +1585,26 @@ input[type=text]::placeholder {
 
 .card-icon {
   float: right; }
+
+.course-buttons {
+  text-align: right; }
+  .course-buttons .btn {
+    background-color: #FF6D6D;
+    border-radius: 0;
+    border: 3px solid #FFFFFF;
+    width: 100px; }
+
+.likesection {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 5%; }
+  .likesection h3 {
+    margin: 0;
+    top: -20px;
+    position: relative;
+    left: 0; }
 
 .discover-column-container {
   height: calc(100vh - 100px);
