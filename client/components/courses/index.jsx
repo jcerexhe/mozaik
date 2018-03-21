@@ -47,8 +47,8 @@ export default class CoursesApp extends Component {
     // Combine the 'all areas' array with the disciplineList array and flatten it to remove nesting
     disciplineList = _.flatten(disciplineList);
     return (
-      <div className='grey-bg course-bg'>
-        <div className='filter-container'>
+      <div className='course-bg'>
+        { /* <div className='filter-container'>
           <div className='filter'>
             <h2>disciplines</h2>
             <Filter
@@ -60,11 +60,11 @@ export default class CoursesApp extends Component {
          <div className='refine-button'>
             <a href='/discover' className='btn btn-full-width'>refine</a>
           </div>
-        </div> 
+        </div>  */}
             <div className='course-card-container'>
           { _.map(activeCourses, (course, i) => {
             return (
-              <CourseCard course={ course } school={ school } key={ i } />
+              <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
             )
           }) }
         </div>

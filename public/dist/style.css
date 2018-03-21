@@ -44,12 +44,12 @@
   src: url(/fonts/montserrat/montserrat-bold.otf); }
 
 h1, h2, h5 {
-  font-family: 'Gotham Bold';
+  font-family: 'Bebas Neue';
   color: #FF6D6D;
   text-transform: uppercase; }
 
 h3 {
-  font-family: 'Gotham Bold';
+  font-family: 'Bebas Neue';
   color: #FF6D6D; }
 
 h4 {
@@ -58,7 +58,7 @@ h4 {
   text-transform: uppercase; }
 
 html, body {
-  font-family: 'Bebas Neue';
+  font-family: 'Helvetica';
   background-color: #181818; }
 
 /* homepage background */
@@ -339,7 +339,11 @@ input.input-newsletter:focus {
   opacity: 1; }
 
 .btn-discover {
-  margin-top: 15px; }
+  margin-top: 25px;
+  background-color: #FF6D6D;
+  border-radius: 0px;
+  border: 2px solid;
+  padding: 2px 20px 0px; }
 
 .control {
   font-size: 18px;
@@ -347,7 +351,8 @@ input.input-newsletter:focus {
   display: block;
   margin-bottom: 15px;
   padding-left: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
 .control input {
   position: absolute;
@@ -360,8 +365,8 @@ input.input-newsletter:focus {
   left: 0;
   width: 12px;
   height: 12px;
-  background: #ffffff;
-  border: 1px solid #000000; }
+  background: #000000;
+  border: 1px solid #FF6D6D; }
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
@@ -411,21 +416,26 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid #E4E9EC;
   padding: 3px;
-  width: 100%;
-  margin-top: 10px; }
+  width: 80%;
+  margin-top: 10px;
+  background-color: #000000;
+  color: #FFFFFF; }
 
 input[type=text]:focus, input[type=text]:active {
   outline: none;
   border-color: #082A3E; }
 
 input[type=text]::-webkit-input-placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 input[type=text]:-ms-input-placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 input[type=text]::placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 .extended-search {
   background-color: #FF6D6D;
@@ -570,9 +580,13 @@ input[type=text]::placeholder {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
   .school-overview-container h1 {
     margin: 0; }
+  .school-overview-container h2 {
+    font-size: 30pt;
+    text-align: center; }
   .school-overview-container .school-logo {
     width: 20%; }
   .school-overview-container .school-overview {
@@ -589,7 +603,24 @@ input[type=text]::placeholder {
     position: relative;
     top: -170px;
     padding-top: 40px;
-    height: 400px; }
+    padding-bottom: 20px;
+    height: 450px; }
+    .school-overview-container .details-box p {
+      padding: 0 30px;
+      padding-bottom: 20px; }
+    .school-overview-container .details-box h3 {
+      color: #000;
+      text-transform: uppercase;
+      font-size: 15pt;
+      margin: 0; }
+    .school-overview-container .details-box ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+    .school-overview-container .details-box ul > li {
+      padding: 0 30px;
+      padding-top: 5px;
+      padding-bottom: 20px; }
 
 .study-areas {
   width: 100%;
@@ -1487,7 +1518,7 @@ input[type=text]::placeholder {
 
 .course-card-container {
   border-top: 1px solid #E4E9EC;
-  background: #181818; }
+  background: #FFFFFF; }
 
 .course-card {
   display: -ms-flexbox;
@@ -1495,7 +1526,11 @@ input[type=text]::placeholder {
   -ms-flex-align: top;
       align-items: top;
   width: 80%;
-  margin: 50px auto; }
+  margin: 50px auto;
+  position: relative;
+  padding: 10px;
+  padding-top: 30px;
+  background: #181818; }
 
 .course-card-left {
   width: 30%;
@@ -1504,7 +1539,8 @@ input[type=text]::placeholder {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  color: #FFFFFF; }
 
 .course-card-left > .course-buttons {
   width: 100%;
@@ -1522,7 +1558,7 @@ input[type=text]::placeholder {
     margin-right: 15px; } }
 
 .course-card-right {
-  width: 70%;
+  width: 47.5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1549,9 +1585,17 @@ input[type=text]::placeholder {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.course-info-bit {
-  display: -ms-flexbox;
-  display: flex; }
+.course-info-bit-right {
+  /*display: flex; */
+  text-align: right; }
+
+.course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
+
+.course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
 
 .info-bit-content {
   display: -ms-flexbox;
@@ -1561,7 +1605,8 @@ input[type=text]::placeholder {
   margin-left: 3px; }
 
 .course-bg {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background: #FFFFFF; }
 
 .info-bits-container {
   display: -ms-flexbox;
@@ -1576,13 +1621,33 @@ input[type=text]::placeholder {
 .card-icon {
   float: right; }
 
+.course-buttons {
+  text-align: right; }
+  .course-buttons .btn {
+    background-color: #FF6D6D;
+    border-radius: 0;
+    border: 3px solid #FFFFFF;
+    width: 100px; }
+
+.likesection {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 5%; }
+  .likesection h3 {
+    margin: 0;
+    top: -20px;
+    position: relative;
+    left: 0; }
+
 .discover-column-container {
   height: calc(100vh - 100px);
   width: 20 0px;
   position: absolute;
   left: 250px;
   top: 0px;
-  background-color: white;
+  background-color: black;
   overflow: scroll; }
 
 .discover-column {
@@ -1591,7 +1656,7 @@ input[type=text]::placeholder {
 
 .discover-column a {
   text-decoration: none;
-  color: #082A3E; }
+  color: #FFFFFF; }
 
 .discover-column h2 {
   margin-top: 0px;
@@ -1600,7 +1665,8 @@ input[type=text]::placeholder {
 
 .discover-column > h3 {
   margin-top: 60px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  color: white; }
 
 .discover-checkboxes {
   display: -ms-flexbox;
@@ -1659,6 +1725,7 @@ html, body {
 body {
   margin: 0px; }
 
+
 /*# sourceMappingURL=style.css.map*/
 
 /*about us*/
@@ -1708,3 +1775,4 @@ body {
     font-family: 'Bebas Neue';
     color: #F76F70;
 }
+

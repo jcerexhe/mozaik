@@ -4,7 +4,7 @@
   position: absolute;
   left: 250px;
   top: 0px;
-  background-color: white;
+  background-color: black;
   overflow: scroll;
 }
 .discover-column {
@@ -13,7 +13,7 @@
 }
 .discover-column a {
   text-decoration: none;
-  color: $black;
+  color: $white;
 }
 .discover-column h2 {
   margin-top: 0px;
@@ -23,11 +23,13 @@
 .discover-column > h3 {
   margin-top: 60px;
   margin-bottom: 0px;
+  color: white;
 }
 .discover-checkboxes {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 .discover-checkboxes > label {
   font-size: 13px;
@@ -38,5 +40,9 @@
 .map {
   position: relative;
 
-
 }
+
+
+
+
+
