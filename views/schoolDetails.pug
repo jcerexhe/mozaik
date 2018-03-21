@@ -19,7 +19,7 @@ block content
       .details-box
         h2 overview
         p=school.overview
-        h3 campuslocation
+        h3 campus location
         ul
             each loc in school.locations
               li=loc.campus
@@ -30,14 +30,14 @@ block content
     .school-fees
       .details-box
         h2 fees scholarship
-        h4 price range
+        h3 price range
         ul
           each price in school.prices
             li
               =`${price.type}:`
               br
               =`AUD ${price.lower} - AUD ${price.upper}`
-        h4 scholarship
+        h3 scholarship
         ul
           each scholarship in school.scholarships
             li=scholarship
