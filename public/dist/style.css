@@ -317,9 +317,10 @@ input.input-newsletter:focus {
   color: #181818; }
 
 .icon-white {
-  width: 20px;
-  height: 20px;
-  margin: 0px 15px;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0px 0px 15px;
+  padding-top: 10px;
   filter: brightness(0) invert(1);
   cursor: pointer; }
 
@@ -820,7 +821,7 @@ input[type=text]::placeholder {
 
 .navbar .logo img {
   height: 90px;
-  padding: 10px 0px 0 80px; }
+  padding: 10px 0px 0 8px; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -861,7 +862,10 @@ input[type=text]::placeholder {
 .navbar .links > a {
   margin: 0px 5px; }
 
-#open-menu {
+.navbar .row {
+  margin-top: 150px;
+}
+/*#open-menu {
   width: 30px;
   height: 20px;
   position: relative;
@@ -910,7 +914,7 @@ input[type=text]::placeholder {
 #open-menu.open span:nth-child(4) {
   top: 18px;
   width: 0%;
-  left: 50%; }
+  left: 50%; }*/
 
 .ReactModal__Overlay {
   z-index: 101; }
@@ -1721,4 +1725,54 @@ html, body {
 body {
   margin: 0px; }
 
+
 /*# sourceMappingURL=style.css.map*/
+
+/*about us*/
+
+/*.static-about .about-us {
+    margin-top: 50px;
+    text-align: center; 
+    padding: 0px 15px 15px 15px;
+    border: 1px solid white;
+}
+  .static-about .about-us > h3 {
+    font-size: 28px;
+    margin-top: -30px;
+    background-color: #181818;
+    color: #181818;
+    display: inline-block;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px; 
+}*/
+.static-about {
+  width: 30%;
+  margin-top: -6%;
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
+
+.static-about .about-us {
+    margin-top: 50px;
+    text-align: center; 
+    padding: 0px 15px 15px 15px;
+    border: 5px solid white;
+}
+  .static-about .about-us >h3 {
+    font-size: 28px;
+    margin-top: -30px;
+    background-color: #181818;
+    color: #181818;
+    display: inline-block;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.static-about .about-us >p {
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    color: #F76F70;
+}
+
