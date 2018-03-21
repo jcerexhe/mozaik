@@ -338,7 +338,11 @@ input.input-newsletter:focus {
   opacity: 1; }
 
 .btn-discover {
-  margin-top: 15px; }
+  margin-top: 25px;
+  background-color: #FF6D6D;
+  border-radius: 0px;
+  border: 2px solid;
+  padding: 2px 20px 0px; }
 
 .control {
   font-size: 18px;
@@ -346,7 +350,8 @@ input.input-newsletter:focus {
   display: block;
   margin-bottom: 15px;
   padding-left: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
 .control input {
   position: absolute;
@@ -359,8 +364,8 @@ input.input-newsletter:focus {
   left: 0;
   width: 12px;
   height: 12px;
-  background: #ffffff;
-  border: 1px solid #000000; }
+  background: #000000;
+  border: 1px solid #FF6D6D; }
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
@@ -410,21 +415,26 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid #E4E9EC;
   padding: 3px;
-  width: 100%;
-  margin-top: 10px; }
+  width: 80%;
+  margin-top: 10px;
+  background-color: #000000;
+  color: #FFFFFF; }
 
 input[type=text]:focus, input[type=text]:active {
   outline: none;
   border-color: #082A3E; }
 
 input[type=text]::-webkit-input-placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 input[type=text]:-ms-input-placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 input[type=text]::placeholder {
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  color: #FFFFFF; }
 
 .extended-search {
   background-color: #FF6D6D;
@@ -1584,7 +1594,7 @@ input[type=text]::placeholder {
   position: absolute;
   left: 250px;
   top: 0px;
-  background-color: white;
+  background-color: black;
   overflow: scroll; }
 
 .discover-column {
@@ -1593,7 +1603,7 @@ input[type=text]::placeholder {
 
 .discover-column a {
   text-decoration: none;
-  color: #082A3E; }
+  color: #FFFFFF; }
 
 .discover-column h2 {
   margin-top: 0px;
@@ -1602,7 +1612,8 @@ input[type=text]::placeholder {
 
 .discover-column > h3 {
   margin-top: 60px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  color: white; }
 
 .discover-checkboxes {
   display: -ms-flexbox;
