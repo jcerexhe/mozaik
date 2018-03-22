@@ -987,10 +987,10 @@ input[type=text]::placeholder {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
-#open-menu.open span:nth-child(4) {
+open-menu.open span:nth-child(4) {
   top: 18px;
   width: 0%;
-  left: 50%; }*/
+  left: 50%;}*/
 
 .ReactModal__Overlay {
   z-index: 101; }
@@ -1800,76 +1800,3 @@ html, body {
 
 body {
   margin: 0px; }
-
-
-/*# sourceMappingURL=style.css.map*/
-
-/*about us*/
-
-/*.static-about .about-us {
-    margin-top: 50px;
-    text-align: center; 
-    padding: 0px 15px 15px 15px;
-    border: 1px solid white;
-}
-  .static-about .about-us > h3 {
-    font-size: 28px;
-    margin-top: -30px;
-    background-color: #181818;
-    color: #181818;
-    display: inline-block;
-    padding: 0px 15px;
-    text-transform: uppercase;
-    margin-bottom: 15px; 
-}*/
-.static-about {
-  width: 30%;
-  margin-top: -6%;
-  margin-left: 35%;
-  margin-bottom: 3%;
-}
-
-.static-about .about-us {
-    margin-top: 50px;
-    text-align: center; 
-    padding: 0px 15px 15px 15px;
-    border: 5px solid white;
-}
-  .static-about .about-us >h3 {
-    font-size: 28px;
-    margin-top: -30px;
-    background-color: #181818;
-    color: #181818;
-    display: inline-block;
-    padding: 0px 15px;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-}
-
-.static-about .about-us >p {
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    color: #F76F70;
-}
-
-.about-image {
-  background-color: red;
-  height: 60vh;
-}
-
-
-
-.about-us-container{
-  width: 60%;
-  left: 20%;
-  top: 55%;
-  background-color: white;
-  position: absolute;
-  height: 100%;
-}
-
-.part-footer >img {
-  width: 100%;
-  height: 100%;
-}
-
