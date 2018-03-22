@@ -937,6 +937,11 @@ input[type=text]::placeholder {
 .navbar .links > a {
   margin: 0px 5px; }
 
+
+.navbar .row {
+  margin-top: 150px;
+}
+
 #open-menu {
   width: 30px;
   height: 20px;
