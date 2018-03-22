@@ -18,8 +18,9 @@ export default class AboutApp extends Component {
 			<div className='about-us-container'>
 				<p>We love creativity. We embrace social. We are analytical. We are mobile.<br/>
 				We are global. We connect talent to creative school. We are Mozaik Play.</p>
-				<br/>
-				<br/>
+				<p>
+				<img src="/images/elements/Small-pink-line-agency-page.png" />
+				</p>
 				<p>Our head office is based in Sydney,Australia. Our team, however, is a global team who are all experts<br/>
 				in International education and are passionate about inspiring a generation of students to pursue a career<br/>
 				in the creative industries.<br/>
