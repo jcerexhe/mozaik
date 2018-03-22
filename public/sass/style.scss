@@ -6,6 +6,7 @@
 @import './modules/forms';
 @import './modules/home';
 @import './modules/schools';
+@import './modules/about';
 
 // Styles for react components
 @import './modules/menuComponent';
@@ -19,6 +20,7 @@
 @import './modules/discoverComponent';
 @import './modules/filterComponent';
 
+
 // Slick styles
 // TODO add slick styles via sass
 // @import './modules/slick';
@@ -26,9 +28,10 @@
 
 html, body {
   height: 100%;
-
 }
 
 body {
   margin: 0px;
 }
+
+

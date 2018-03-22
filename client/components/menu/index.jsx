@@ -56,13 +56,14 @@ export default class MenuApp extends Component {
             {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
           </div>
           <div className='links'>
-            <div className='row'>
-              <div>
-                <div id='open-menu'
+              <div id='open-menu'
                   onClick={ () => this.updateMenu() }
                   className={ menuOpen ? 'open' : '' }>
-                  <img className='icon-white' src='/images/menu/Menu_1.png' />
-                </div>
+                  {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                  <span />
+                  <span />
+                  <span />
+                  <span />
               </div>
               <div>
                 <a href="/#search">
@@ -73,8 +74,7 @@ export default class MenuApp extends Component {
                 <a href='#'>
                   <img className='icon-white' src='/images/menu/My_Account.png' />
                 </a> 
-              </div>
-            </div>    
+              </div>     
           </div>
         </div>
         <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>

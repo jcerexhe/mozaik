@@ -862,6 +862,70 @@ input[type=text]::placeholder {
   .school-footer .school-footer-section:first-child {
     border-right: 1px solid #E4E9EC; }
 
+.about-heading {
+  margin-bottom: 30px; }
+
+.about-heading .about-info {
+  text-align: center;
+  border: 10px solid white;
+  padding: 0px 15px 15px 15px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.about-heading .about-info .hidden-line {
+  font-size: 28px;
+  margin-top: -30px;
+  background-color: #181818;
+  color: #181818;
+  display: inline-block;
+  padding: 0px 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.about-title {
+  font-size: 40pt;
+  color: #F76F70; }
+
+.about-image {
+  background-color: red;
+  height: 80vh;
+  margin-bottom: 300px; }
+
+.about-us-container {
+  width: 70%;
+  left: 15%;
+  top: 70%;
+  position: absolute;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid white;
+  opacity: 0.6; }
+
+.about-us-container > p {
+  text-align: center;
+  margin-top: 5%; }
+
+.about-us-container > h1 {
+  padding-top: 70px;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  color: #F76F70; }
+
+.about-us-container > img {
+  margin-left: 325px; }
+
+.school-contact .inside-scoop {
+  width: 100%;
+  height: 450px;
+  background-image: url(/images/patterns/partoffooter.png);
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 15%; }
+
 #nav {
   position: absolute;
   width: 100%;
@@ -896,8 +960,8 @@ input[type=text]::placeholder {
   height: inherit; }
 
 .navbar .logo img {
-  height: 90px;
-  padding: 10px 0px 0 80px; }
+  height: 150px;
+  padding: 10px -2px 0px 80px; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -924,8 +988,11 @@ input[type=text]::placeholder {
   font-size: 3.2em; }
 
 .navbar .links {
+  margin-top: 200px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: end;
@@ -1076,6 +1143,19 @@ input[type=text]::placeholder {
   padding-top: 20px; }
   .social-nav a {
     margin: 2px; }
+
+.icon-white {
+  width: 20px;
+  height: 20px;
+  margin: 15px 0px 0px 15px;
+  filter: brightness(0) invert(1);
+  cursor: pointer; }
+
+.icon {
+  width: 47px;
+  height: 53px;
+  margin: 0px 15px;
+  cursor: pointer; }
 
 .home-hero {
   width: 100vw;
