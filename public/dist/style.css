@@ -44,12 +44,12 @@
   src: url(/fonts/montserrat/montserrat-bold.otf); }
 
 h1, h2, h5 {
-  font-family: 'Bebas Neue';
+  font-family: 'Gotham Bold';
   color: #FF6D6D;
   text-transform: uppercase; }
 
 h3 {
-  font-family: 'Bebas Neue';
+  font-family: 'Gotham Bold';
   color: #FF6D6D; }
 
 h4 {
@@ -58,8 +58,7 @@ h4 {
   text-transform: uppercase; }
 
 html, body {
-  font-family: 'Helvetica';
-  background-color: #181818; }
+  font-family: 'Bebas Neue'; }
 
 /* homepage background */
 .content {
@@ -317,10 +316,9 @@ input.input-newsletter:focus {
   color: #181818; }
 
 .icon-white {
-  width: 25px;
-  height: 25px;
-  margin: 5px 0px 0px 15px;
-  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
   filter: brightness(0) invert(1);
   cursor: pointer; }
 
@@ -339,11 +337,7 @@ input.input-newsletter:focus {
   opacity: 1; }
 
 .btn-discover {
-  margin-top: 25px;
-  background-color: #FF6D6D;
-  border-radius: 0px;
-  border: 2px solid;
-  padding: 2px 20px 0px; }
+  margin-top: 15px; }
 
 .control {
   font-size: 18px;
@@ -351,8 +345,7 @@ input.input-newsletter:focus {
   display: block;
   margin-bottom: 15px;
   padding-left: 20px;
-  cursor: pointer;
-  color: white; }
+  cursor: pointer; }
 
 .control input {
   position: absolute;
@@ -365,8 +358,8 @@ input.input-newsletter:focus {
   left: 0;
   width: 12px;
   height: 12px;
-  background: #000000;
-  border: 1px solid #FF6D6D; }
+  background: #ffffff;
+  border: 1px solid #000000; }
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
@@ -416,26 +409,21 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid #E4E9EC;
   padding: 3px;
-  width: 80%;
-  margin-top: 10px;
-  background-color: #000000;
-  color: #FFFFFF; }
+  width: 100%;
+  margin-top: 10px; }
 
 input[type=text]:focus, input[type=text]:active {
   outline: none;
   border-color: #082A3E; }
 
 input[type=text]::-webkit-input-placeholder {
-  text-transform: uppercase;
-  color: #FFFFFF; }
+  text-transform: capitalize; }
 
 input[type=text]:-ms-input-placeholder {
-  text-transform: uppercase;
-  color: #FFFFFF; }
+  text-transform: capitalize; }
 
 input[type=text]::placeholder {
-  text-transform: uppercase;
-  color: #FFFFFF; }
+  text-transform: capitalize; }
 
 .extended-search {
   background-color: #FF6D6D;
@@ -501,21 +489,20 @@ input[type=text]::placeholder {
   letter-spacing: 1px; }
 
 .school-heading-container {
-  /* background-color: $grey; */
-  background-color: blue;
-  width: 100%; }
+  background-color: #181818;
+  width: 100vw; }
 
 .school-heading {
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center; */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 50px 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -100px;
-  padding-top: 100px;
-  width: 100%;
-  box-sizing: border-box; }
+  width: 100%; }
   @media only screen and (min-width: 768px) {
     .school-heading {
       width: 60%; } }
@@ -524,12 +511,6 @@ input[type=text]::placeholder {
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-  .school-heading .school-info h1 {
-    text-align: center !important;
-    width: 100%;
-    font-size: 40pt;
-    font-family: 'Gotham Bold';
-    font-weight: bold; }
   .school-heading .school-info > img {
     margin-right: 20px;
     max-width: 150px;
@@ -551,6 +532,7 @@ input[type=text]::placeholder {
     text-align: center; }
   .school-heading .video-link {
     margin: 15px 30px;
+    width: 150px;
     font-family: 'Bebas Neue';
     color: #FFFFFF; }
 
@@ -569,164 +551,6 @@ input[type=text]::placeholder {
 .school-courses-link > p {
   color: #FFFFFF;
   font-family: 'Gotham Bold'; }
-
-.student-work {
-  height: 50vh;
-  background-color: red; }
-
-.student-work > p {
-  margin: 0; }
-
-.school-overview-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: top;
-      align-items: top;
-  height: 100vh;
-  text-align: center; }
-  .school-overview-container h1 {
-    margin: 0; }
-  .school-overview-container h2 {
-    font-size: 30pt;
-    text-align: center; }
-  .school-overview-container .school-logo {
-    width: 20%;
-    text-align: left; }
-    .school-overview-container .school-logo img {
-      width: 80%;
-      margin-top: 100px; }
-  .school-overview-container .school-overview {
-    width: 30%;
-    padding: 5px; }
-  .school-overview-container .school-fees {
-    width: 30%;
-    padding: 5px; }
-  .school-overview-container .school-links {
-    width: 20%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-top: 100px; }
-    .school-overview-container .school-links .school-link {
-      width: 50%;
-      margin-left: 20px; }
-    .school-overview-container .school-links .btn {
-      width: 100%;
-      margin-bottom: 15px;
-      border: 3px solid #FFFFFF;
-      border-radius: 0; }
-  .school-overview-container .details-box {
-    background-color: white;
-    width: 100%;
-    position: relative;
-    top: -70px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    height: 450px; }
-    .school-overview-container .details-box p {
-      padding: 0 30px;
-      padding-bottom: 20px; }
-    .school-overview-container .details-box h3 {
-      color: #000;
-      text-transform: uppercase;
-      font-size: 15pt;
-      margin: 0; }
-    .school-overview-container .details-box ul {
-      list-style: none;
-      margin: 0px;
-      padding: 0px; }
-    .school-overview-container .details-box ul > li {
-      padding: 0 30px;
-      padding-top: 5px;
-      padding-bottom: 20px; }
-
-.study-areas {
-  width: 100%;
-  height: 70vh;
-  background-color: #000;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-  .study-areas .area-box {
-    height: 60%;
-    width: 11.11%;
-    border: 1px solid #FFFFFF; }
-
-.other-section {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .other-section .locations {
-    width: 33.33%;
-    background-color: blue; }
-  .other-section .facilities {
-    width: 33.33%;
-    background-color: red; }
-  .other-section .alumni {
-    width: 33.33%;
-    background-color: blue; }
-  .other-section .other-section-box {
-    width: 100%;
-    height: 60vh;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-    .other-section .other-section-box h2 {
-      width: 100%;
-      text-align: center; }
-
-.school-contact .website {
-  width: 100%;
-  text-align: center;
-  height: 280px;
-  padding-top: 150px;
-  box-sizing: border-box; }
-  .school-contact .website a {
-    color: #FFFFFF;
-    font-family: 'Bebas Neue';
-    font-size: 40pt;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 100px; }
-
-.school-contact .inside-scoop {
-  width: 100%;
-  height: 450px;
-  background-image: url("/images/patterns/partoffooter.png");
-  background-size: 100% 100%;
-  background-position-y: 20%;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  text-align: center;
-  padding-top: 15%; }
-  .school-contact .inside-scoop h3 {
-    color: #FFFFFF;
-    background: #FF6D6D;
-    width: 15%;
-    height: 50px;
-    margin: 0 auto;
-    padding: 10px;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    line-height: 33px; }
-  .school-contact .inside-scoop input {
-    box-sizing: border-box;
-    border: 2px solid #FF6D6D;
-    width: 15%;
-    padding: 5px;
-    background: transparent;
-    margin-bottom: 5px; }
-  .school-contact .inside-scoop .btn {
-    border: 0;
-    color: #000;
-    background: #FFFFFF;
-    border-radius: 0; }
 
 .school-details-links {
   display: -ms-flexbox;
@@ -864,13 +688,12 @@ input[type=text]::placeholder {
 
 #nav {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   top: 0;
   left: 0;
   z-index: 100;
-  /* background-color: $grey; */
-  background-color: transparent; }
+  background-color: #181818; }
 
 #nav.clear {
   background-color: transparent; }
@@ -897,7 +720,7 @@ input[type=text]::placeholder {
 
 .navbar .logo img {
   height: 90px;
-  padding: 10px 0px 0 8px; }
+  padding: 10px 0px 0 80px; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -938,9 +761,6 @@ input[type=text]::placeholder {
 .navbar .links > a {
   margin: 0px 5px; }
 
-.navbar .row {
-  margin-top: 150px;
-}
 #open-menu {
   width: 30px;
   height: 20px;
@@ -987,7 +807,7 @@ input[type=text]::placeholder {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
-open-menu.open span:nth-child(4) {
+#open-menu.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%; }
@@ -1594,7 +1414,7 @@ open-menu.open span:nth-child(4) {
 
 .course-card-container {
   border-top: 1px solid #E4E9EC;
-  background: #FFFFFF; }
+  background: #181818; }
 
 .course-card {
   display: -ms-flexbox;
@@ -1602,11 +1422,7 @@ open-menu.open span:nth-child(4) {
   -ms-flex-align: top;
       align-items: top;
   width: 80%;
-  margin: 50px auto;
-  position: relative;
-  padding: 10px;
-  padding-top: 30px;
-  background: #181818; }
+  margin: 50px auto; }
 
 .course-card-left {
   width: 30%;
@@ -1615,8 +1431,7 @@ open-menu.open span:nth-child(4) {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between;
-  color: #FFFFFF; }
+      justify-content: space-between; }
 
 .course-card-left > .course-buttons {
   width: 100%;
@@ -1634,7 +1449,7 @@ open-menu.open span:nth-child(4) {
     margin-right: 15px; } }
 
 .course-card-right {
-  width: 47.5%;
+  width: 70%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1661,17 +1476,9 @@ open-menu.open span:nth-child(4) {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.course-info-bit-right {
-  /*display: flex; */
-  text-align: right; }
-
-.course-info-bit-left {
-  /*display: flex; */
-  text-align: left; }
-
-.course-info-bit-left {
-  /*display: flex; */
-  text-align: left; }
+.course-info-bit {
+  display: -ms-flexbox;
+  display: flex; }
 
 .info-bit-content {
   display: -ms-flexbox;
@@ -1681,8 +1488,7 @@ open-menu.open span:nth-child(4) {
   margin-left: 3px; }
 
 .course-bg {
-  padding-bottom: 40px;
-  background: #FFFFFF; }
+  padding-bottom: 40px; }
 
 .info-bits-container {
   display: -ms-flexbox;
@@ -1697,33 +1503,13 @@ open-menu.open span:nth-child(4) {
 .card-icon {
   float: right; }
 
-.course-buttons {
-  text-align: right; }
-  .course-buttons .btn {
-    background-color: #FF6D6D;
-    border-radius: 0;
-    border: 3px solid #FFFFFF;
-    width: 100px; }
-
-.likesection {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 5%; }
-  .likesection h3 {
-    margin: 0;
-    top: -20px;
-    position: relative;
-    left: 0; }
-
 .discover-column-container {
   height: calc(100vh - 100px);
   width: 20 0px;
   position: absolute;
   left: 250px;
   top: 0px;
-  background-color: black;
+  background-color: white;
   overflow: scroll; }
 
 .discover-column {
@@ -1732,7 +1518,7 @@ open-menu.open span:nth-child(4) {
 
 .discover-column a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #082A3E; }
 
 .discover-column h2 {
   margin-top: 0px;
@@ -1741,8 +1527,7 @@ open-menu.open span:nth-child(4) {
 
 .discover-column > h3 {
   margin-top: 60px;
-  margin-bottom: 0px;
-  color: white; }
+  margin-bottom: 0px; }
 
 .discover-checkboxes {
   display: -ms-flexbox;
@@ -1800,3 +1585,5 @@ html, body {
 
 body {
   margin: 0px; }
+
+/*# sourceMappingURL=style.css.map*/
