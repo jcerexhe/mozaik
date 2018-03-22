@@ -502,6 +502,7 @@ input[type=text]::placeholder {
 .school-heading-container {
   /* background-color: $grey; */
   background-color: blue;
+  background-size: cover;
   width: 100%; }
 
 .school-heading {
@@ -959,8 +960,8 @@ input[type=text]::placeholder {
   height: inherit; }
 
 .navbar .logo img {
-  height: 150px;
-  padding: 10px -2px 0px 80px; }
+  height: 90px;
+  padding: 10px 0px 0 80px; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -1004,12 +1005,6 @@ input[type=text]::placeholder {
 .navbar .links > a {
   margin: 0px 5px; }
 
-
-.navbar .row {
-  margin-top: 150px;
-}
-
-#open-menu {
   width: 30px;
   height: 20px;
   position: relative;
@@ -1550,6 +1545,67 @@ input[type=text]::placeholder {
 .category-heading {
   cursor: pointer; }
 
+.art-box-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 200%;
+  cursor: pointer; }
+
+.art-box-img:hover {
+  opacity: 0.8; }
+
+.artwork-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  background-color: blue;
+  height: 50vh; }
+  .artwork-container .art-box {
+    width: 33.33%;
+    border: 1px solid #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative; }
+    .artwork-container .art-box .art-box-1 {
+      border: 2px solid #fff;
+      height: 50%; }
+    .artwork-container .art-box .art-box-2 {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      border-left: 0;
+      background-position: center;
+      background-size: 100%; }
+    .artwork-container .art-box .art-box-2-diagonal {
+      border: 2px solid #fff;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      width: 40%;
+      height: 100%;
+      background-color: yellow;
+      z-index: 0;
+      position: absolute;
+      left: 34%;
+      -ms-transform: skew(-33deg);
+          transform: skew(-33deg);
+      background-position: center;
+      background-size: 200%; }
+    .artwork-container .art-box .art-box-3 {
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex; }
+      .artwork-container .art-box .art-box-3 .art-box-3-img {
+        border: 1px solid #fff;
+        width: 50%;
+        background-position: center;
+        background-size: 200%;
+        border: 2px solid #fff; }
+
 .artworks {
   overflow: hidden; }
 
@@ -1562,13 +1618,13 @@ input[type=text]::placeholder {
   line-height: 0; }
   @media only screen and (min-width: 768px) {
     .artwork-slides {
-      column-count: 3; } }
+      /* column-count: 3; */ } }
 
 .artwork-slides > li {
   list-style: none;
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   position: relative; }
 
@@ -1885,6 +1941,5 @@ html, body {
 body {
 
   margin: 0px; }
-
 
 /*# sourceMappingURL=style.css.map*/
