@@ -155,7 +155,7 @@
   justify-content: space-around;
   height: calc(100% - 100px);
   background-color: rgba(128, 128, 128, .6);
-  width: 50%;
+  width: 35%;
   margin: auto;
 }
 .menu-content h3 {
@@ -176,7 +176,7 @@
   font-family: 'Gotham Book Regular';
 }
 .menu-content ul > li > a {
-  color: $white;
+  color: $black;
   text-decoration: none;
   padding-bottom: 2px;
 }

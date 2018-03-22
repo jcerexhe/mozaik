@@ -1025,7 +1025,7 @@ input[type=text]::placeholder {
       justify-content: space-around;
   height: calc(100% - 100px);
   background-color: rgba(128, 128, 128, 0.6);
-  width: 50%;
+  width: 35%;
   margin: auto; }
 
 .menu-content h3 {
@@ -1046,7 +1046,7 @@ input[type=text]::placeholder {
   font-family: 'Gotham Book Regular'; }
 
 .menu-content ul > li > a {
-  color: #FFFFFF;
+  color: #082A3E;
   text-decoration: none;
   padding-bottom: 2px; }
 
