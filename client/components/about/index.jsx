@@ -16,10 +16,25 @@ export default class AboutApp extends Component {
 				<p>img src="#" </p>
 			</div>
 			<div className='about-us-container'>
-				<p>content </p>
+				<p>We love creativity. We embrace social. We are analytical. We are mobile.<br/>
+				We are global. We connect talent to creative school. We are Mozaik Play.</p>
+				<br/>
+				<br/>
+				<p>Our head office is based in Sydney,Australia. Our team, however, is a global team who are all experts<br/>
+				in International education and are passionate about inspiring a generation of students to pursue a career<br/>
+				in the creative industries.<br/>
+				Mozaik Play includes an Advisory Board-a group of industry experts who counsel us on how to best set<br/>
+				the strategic direction of the organisation.</p>
+				<h1>Say Hello</h1>
+				<img src="/images/buttons/Contact-us.png" />
 			</div>
-			<div className='part-footer'>
-				<img src="/images/footer/black-lines.png" />
+			<div className='school-contact'>
+				<div className='inside-scoop'>
+					<h3>GET THE INSIDE SCOOP</h3>
+					<input placeholder="Email Address" />
+					<br/>
+					<a className='btn' href="#"> Subscribe </a>
+				</div>
 			</div>
 
 
