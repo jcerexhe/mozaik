@@ -57,9 +57,11 @@
   font-size: 3.2em;
 }
 .navbar .links {
+  
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: flex-end;*/
   /* hide these extra icons for now on mobile */
   @media only screen and (max-width: 768px) {
     .icon-white {
@@ -70,6 +72,7 @@
 .navbar .links > a {
   margin: 0px 5px;
 }
+
 #open-menu {
   width: 30px;
   height: 20px;
@@ -117,7 +120,6 @@
   width: 0%;
   left: 50%;
 }
-
 
 // Menu styles
 .ReactModal__Overlay {
