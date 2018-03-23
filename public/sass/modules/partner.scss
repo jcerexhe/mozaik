@@ -36,12 +36,14 @@
 
 .partner-image {
   background-color: red;
-  height: 20vh;
+  height: 80vh;
   width: 100%;
+  position: absolute;
  }
 
 
 .partner-large-container{
+  margin-top: 10%;
   width: 70%;
   height: 40%;
   background-color: #ffffff;
@@ -57,6 +59,8 @@
 .partner-small-container{
  display:flex;
  flex-direction: row;
+ 
+ position: relative;
 }
 
 .square{
