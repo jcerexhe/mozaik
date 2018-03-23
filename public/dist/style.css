@@ -1091,10 +1091,10 @@ input[type=text]::placeholder {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100% - 100px);
+  height: calc(100% - 185px);
   background-color: rgba(128, 128, 128, 0.6);
-  width: 35%;
-  margin: auto; }
+  width: 25%;
+  margin: 125px auto 0px auto; }
 
 .menu-content h3 {
   text-transform: uppercase;
