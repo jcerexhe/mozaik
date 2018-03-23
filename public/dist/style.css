@@ -1076,7 +1076,7 @@ input[type=text]::placeholder {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  background-image: url("/images/menu/Agency_image.png");
+  background-image: url("https://res.cloudinary.com/mozaik/image/upload/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -1091,10 +1091,10 @@ input[type=text]::placeholder {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100% - 185px);
+  height: calc(100% - 100px);
   background-color: rgba(128, 128, 128, 0.6);
   width: 25%;
-  margin: 125px auto 0px auto; }
+  margin: 50px auto 0px auto; }
 
 .menu-content h3 {
   text-transform: uppercase;
