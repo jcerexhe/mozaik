@@ -37,8 +37,6 @@ export default class AboutApp extends Component {
 					<a className='btn' href="#"> Subscribe </a>
 				</div>
 			</div>
-
-
 		</div>
         	      
 		);

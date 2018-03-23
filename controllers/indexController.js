@@ -66,3 +66,8 @@ exports.about = (req, res) => {
   const About = reactHelper.renderComponent('AboutApp');
   res.render('about', { About });
 }
+
+exports.partner = (req, res) => {
+  const Partner = reactHelper.renderComponent('PartnerApp');
+  res.render('partner', { Partner });
+}
