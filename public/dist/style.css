@@ -1,3 +1,4 @@
+
 /* latest */
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -1226,10 +1227,10 @@ input[type=text]::placeholder {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
+  background-image: url("https://res.cloudinary.com/mozaik/image/upload/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain; }
+  background-position: center;
+  background-size: cover; }
 
 .menu-content {
   margin-top: 100px;
@@ -1241,17 +1242,20 @@ input[type=text]::placeholder {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100% - 100px); }
+  height: calc(100% - 100px);
+  background-color: rgba(128, 128, 128, 0.6);
+  width: 25%;
+  margin: 50px auto 0px auto; }
 
 .menu-content h3 {
   text-transform: uppercase;
-  color: #FFFFFF; }
+  color: #FF6D6D; }
 
 .menu-content ul {
   list-style: none;
   padding-left: 0px !important;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #082A3E;
   text-align: center; }
 
 .menu-content ul > li {
@@ -1261,7 +1265,7 @@ input[type=text]::placeholder {
   font-family: 'Gotham Book Regular'; }
 
 .menu-content ul > li > a {
-  color: #FFFFFF;
+  color: #082A3E;
   text-decoration: none;
   padding-bottom: 2px; }
 
@@ -2087,6 +2091,5 @@ html, body {
   height: 100%; }
 
 body {
-  margin: 0px; }
 
 /*# sourceMappingURL=style.css.map*/
