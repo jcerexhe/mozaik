@@ -9,6 +9,8 @@ import AlumniApp from './components/alumni/index.jsx';
 import CoursesApp from './components/courses/index.jsx';
 import DiscoverApp from './components/discover/index.jsx';
 import AboutApp from './components/about/index.jsx';
+import PartnerApp from './components/partner/index.jsx';
+
 
 reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
@@ -20,3 +22,4 @@ reactHelper.register({ AlumniApp });
 reactHelper.register({ CoursesApp });
 reactHelper.register({ DiscoverApp });
 reactHelper.register({ AboutApp });
+reactHelper.register({ PartnerApp });
