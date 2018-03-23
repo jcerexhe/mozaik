@@ -24,4 +24,5 @@ router.get('/school/:schoolSlug/courses',
 );
 router.get('/discover', indexController.discover);
 router.get('/about-us',indexController.about);
+router.get('/study-areas',indexController.studyAreas);
 module.exports = router;
