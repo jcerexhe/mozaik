@@ -502,6 +502,7 @@ input[type=text]::placeholder {
 .school-heading-container {
   /* background-color: $grey; */
   background-color: blue;
+  background-size: cover;
   width: 100%; }
 
 .school-heading {
@@ -552,6 +553,9 @@ input[type=text]::placeholder {
     margin: 15px 30px;
     font-family: 'Bebas Neue';
     color: #FFFFFF; }
+    .school-heading .video-link img {
+      width: 150px;
+      height: auto; }
 
 .school-courses-link {
   padding: 40px 0px;
@@ -584,7 +588,13 @@ input[type=text]::placeholder {
   -ms-flex-align: top;
       align-items: top;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .school-overview-container .scroll-down {
+    position: absolute;
+    bottom: -25px;
+    left: 46%;
+    width: 100px; }
   .school-overview-container h1 {
     margin: 0; }
   .school-overview-container h2 {
@@ -616,7 +626,8 @@ input[type=text]::placeholder {
       width: 100%;
       margin-bottom: 15px;
       border: 3px solid #FFFFFF;
-      border-radius: 0; }
+      border-radius: 0;
+      background: #000; }
   .school-overview-container .details-box {
     background-color: white;
     width: 100%;
@@ -624,10 +635,11 @@ input[type=text]::placeholder {
     top: -70px;
     padding-top: 40px;
     padding-bottom: 20px;
-    height: 450px; }
+    height: 550px; }
     .school-overview-container .details-box p {
       padding: 0 30px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      font-size: 15px; }
     .school-overview-container .details-box h3 {
       color: #000;
       text-transform: uppercase;
@@ -636,24 +648,47 @@ input[type=text]::placeholder {
     .school-overview-container .details-box ul {
       list-style: none;
       margin: 0px;
-      padding: 0px; }
+      padding: 0px;
+      padding-bottom: 20px; }
     .school-overview-container .details-box ul > li {
       padding: 0 30px;
       padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-bottom: 0px; }
 
-.study-areas {
+.study-areas-box h1 {
+  color: #313131;
+  margin: 0px;
+  font-size: 10vw;
+  line-height: 0.8;
+  font-family: 'Montserrat Black';
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.study-areas-box .study-areas {
   width: 100%;
-  height: 70vh;
+  height: 40vh;
   background-color: #000;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
-  .study-areas .area-box {
-    height: 60%;
+  .study-areas-box .study-areas .area-box {
+    height: 100%;
     width: 11.11%;
-    border: 1px solid #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    background-size: cover;
+    backgroun-position: 100% 150%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .study-areas-box .study-areas .area-box h3 {
+      color: #fff;
+      background: #000;
+      border: 2px solid #fff;
+      padding: 3px 10px;
+      margin: 0 auto; }
 
 .other-section {
   display: -ms-flexbox;
@@ -678,7 +713,11 @@ input[type=text]::placeholder {
         align-items: center; }
     .other-section .other-section-box h2 {
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 50px 0;
+      font-size: 30pt; }
 
 .school-contact .website {
   width: 100%;
@@ -1654,6 +1693,67 @@ input[type=text]::placeholder {
 .category-heading {
   cursor: pointer; }
 
+.art-box-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 200%;
+  cursor: pointer; }
+
+.art-box-img:hover {
+  opacity: 0.8; }
+
+.artwork-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  background-color: blue;
+  height: 50vh; }
+  .artwork-container .art-box {
+    width: 33.33%;
+    border: 1px solid #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative; }
+    .artwork-container .art-box .art-box-1 {
+      border: 2px solid #fff;
+      height: 50%; }
+    .artwork-container .art-box .art-box-2 {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      border-left: 0;
+      background-position: center;
+      background-size: 100%; }
+    .artwork-container .art-box .art-box-2-diagonal {
+      border: 2px solid #fff;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      width: 40%;
+      height: 100%;
+      background-color: yellow;
+      z-index: 0;
+      position: absolute;
+      left: 34%;
+      -ms-transform: skew(-33deg);
+          transform: skew(-33deg);
+      background-position: center;
+      background-size: 200%; }
+    .artwork-container .art-box .art-box-3 {
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex; }
+      .artwork-container .art-box .art-box-3 .art-box-3-img {
+        border: 1px solid #fff;
+        width: 50%;
+        background-position: center;
+        background-size: 200%;
+        border: 2px solid #fff; }
+
 .artworks {
   overflow: hidden; }
 
@@ -1666,13 +1766,13 @@ input[type=text]::placeholder {
   line-height: 0; }
   @media only screen and (min-width: 768px) {
     .artwork-slides {
-      column-count: 3; } }
+      /* column-count: 3; */ } }
 
 .artwork-slides > li {
   list-style: none;
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   position: relative; }
 
