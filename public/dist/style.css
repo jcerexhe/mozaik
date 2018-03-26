@@ -1,4 +1,3 @@
-
 /* latest */
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -1070,7 +1069,6 @@ input[type=text]::placeholder {
   border: 1px solid black;
   padding-bottom: 10px; }
 
-.contact
 .school-contact .inside-scoop {
   width: 100%;
   height: 450px;
@@ -1081,6 +1079,10 @@ input[type=text]::placeholder {
   box-sizing: border-box;
   text-align: center;
   padding-top: 15%; }
+
+.inside-scope > input {
+  width: 40px;
+  height: 3vh; }
 
 #nav {
   position: absolute;
@@ -2096,5 +2098,6 @@ html, body {
   height: 100%; }
 
 body {
+  margin: 0px; }
 
 /*# sourceMappingURL=style.css.map*/
