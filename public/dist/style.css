@@ -906,29 +906,35 @@ input[type=text]::placeholder {
     border-right: 1px solid #E4E9EC; }
 
 .about-heading {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .about-heading .about-info {
   text-align: center;
-  border: 10px solid white;
-  padding: 0px 15px 15px 15px;
   width: 35%;
-  margin-left: auto;
-  margin-right: auto; }
+  border: 10px solid white;
+  padding: 0px 15px 15px 15px; }
 
 .about-heading .about-info .hidden-line {
   font-size: 28px;
-  margin-top: -30px;
+  margin-top: -20px;
   background-color: #181818;
   color: #181818;
   display: inline-block;
-  padding: 0px 15px;
-  text-transform: uppercase;
-  margin-bottom: 15px; }
+  text-transform: uppercase; }
 
 .about-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
   font-size: 40pt;
-  color: #F76F70; }
+  color: #F76F70;
+  text-transform: uppercase;
+  font-weight: 900; }
 
 .display-about-us {
   display: -ms-flexbox;
@@ -1002,29 +1008,35 @@ input[type=text]::placeholder {
   height: 50px; }
 
 .partner-heading {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .partner-heading .partner-info {
   text-align: center;
+  width: 40%;
   border: 10px solid white;
-  padding: 0px 15px 15px 15px;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 0px 15px 15px 15px; }
 
 .partner-heading .partner-info .hidden-line {
   font-size: 28px;
-  margin-top: -30px;
+  margin-top: -20px;
   background-color: #181818;
   color: #181818;
   display: inline-block;
-  padding: 0px 15px;
-  text-transform: uppercase;
-  margin-bottom: 15px; }
+  text-transform: uppercase; }
 
 .partner-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
   font-size: 40pt;
-  color: #F76F70; }
+  color: #F76F70;
+  text-transform: uppercase;
+  font-weight: 900; }
 
 .display-partner {
   display: -ms-flexbox;

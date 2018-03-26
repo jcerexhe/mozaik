@@ -7,8 +7,8 @@ export default class AboutApp extends Component {
 		<div>
 			<div className='about-heading'>
 				<div className='about-info'>
-					<h1 className='hidden-line'> Using text to Hidden Line </h1>
-					<h1 className='about-title'> About us </h1>
+					<h1 className='hidden-line'>Using text to Hidden Line </h1>
+					<p className='about-title'>About us</p>
 				</div>
 			</div>
 			<div className="display-about-us">

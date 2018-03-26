@@ -8,7 +8,7 @@ export default class PartnerApp extends Component {
 			<div className='partner-heading'>
 				<div className='partner-info'>
 					<h1 className='hidden-line'>Using text to Hidden Line</h1>
-					<h1 className='partner-title'>Partnering<br/>with mozaik play</h1>
+					<p className='partner-title'>Partnering<br/>with mozaik play</p>
 				</div>
 			</div>
 			<div className="display-partner">
