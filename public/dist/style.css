@@ -1058,7 +1058,7 @@ input[type=text]::placeholder {
 .partner-title {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: 40pt;
+  font-size: 30pt;
   color: #F76F70;
   text-transform: uppercase;
   font-weight: 900; }
@@ -1223,14 +1223,12 @@ contact-field {
   position: relative; }
 
 .navbar > .logo {
-  text-align: center;
+  /*text-align: center;*/
   /*border: 5px solid white;*/
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  /*align-self: center;*/
   height: inherit;
-  margin: 0 auto;
-  padding-left: 45px; }
+  /*margin: 0 auto;*/
+  /*padding-left: 45px;*/ }
 
 .navbar .logo img {
   height: 150px;
