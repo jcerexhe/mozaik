@@ -1,4 +1,3 @@
-
 /* latest */
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -2096,5 +2095,6 @@ html, body {
   height: 100%; }
 
 body {
+  margin: 0px; }
 
 /*# sourceMappingURL=style.css.map*/

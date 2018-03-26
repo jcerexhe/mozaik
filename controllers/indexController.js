@@ -71,6 +71,7 @@ exports.about = (req, res) => {
 exports.studyAreas= (req, res) => {
   const Search = reactHelper.renderComponent('SearchApp');
   res.render('studyArea', {Search });
+}
 
 exports.partner = (req, res) => {
   const Partner = reactHelper.renderComponent('PartnerApp');
