@@ -55,6 +55,23 @@ export default class Search extends Component {
     return false;
   }
 
+  allAreas(){
+        //       interestAreas: ['all areas'],
+        // interestDisciplines: ['all areas'],
+        // interestCountries: ['all areas']
+  const { discipline } = this.state;
+
+      this.setState({
+        discipline: {
+          ...discipline,
+          ['interestAreas']: ['all areas'],
+          ['interestDisciplines']: ['all areas']
+        }
+      });
+
+      return;
+
+  }
   updateDiscipline(area, val) {
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
@@ -104,7 +121,10 @@ export default class Search extends Component {
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
-          <h3>What areas interest you?</h3>
+          <h3>What areas interest yous?</h3>
+          <br />
+          <button className='btn' onClick={ (val) => this.allAreas()}> All Areas</button>
+
           <Filter
             filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
             activeItems={ discipline.interestAreas }
@@ -212,7 +232,6 @@ export default class Search extends Component {
             </div>
           </div>
         </div>
-        <div className={'search-blue-background' + (searchCategory === 'categories' ? ' taller-search' : '')} />
       </div>
     );
   }

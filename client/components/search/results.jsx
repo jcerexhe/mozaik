@@ -24,7 +24,9 @@ export default class Search extends Component {
           <p>No results found. Please try something else</p>
         </div>
       );
-    } else return (
+    } else {
+
+      return (
       <div id='results'>
         <ul className='search-results'>
           { _.map(results, (result) => {
@@ -43,6 +45,7 @@ export default class Search extends Component {
         ) }
       </div>
     );
+    }
   }
 
   renderLoading() {
