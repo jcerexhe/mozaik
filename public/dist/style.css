@@ -219,8 +219,8 @@ input.input-newsletter:focus {
 
 .btn {
   border: 1px solid #FF6D6D;
-  /* border-radius: 7px; */
-  /*padding: 5px 20px 3px 20px;*/
+  border-radius: 7px;
+  padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -229,17 +229,7 @@ input.input-newsletter:focus {
   text-align: center;
   cursor: pointer;
   font-size: 1.2em;
-  letter-spacing: 1px;
-  position: absolute;
-  bottom: 1.5em;
-  width: auto;
-  text-align: center;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-  padding: 0.5em 1em;
-  border: 0.2em solid #FF6D6D;
-  font-size: 2.25em; }
+  letter-spacing: 1px; }
 
 .btn-full-width {
   width: 100%; }
@@ -1058,7 +1048,7 @@ input[type=text]::placeholder {
 .partner-title {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: 40pt;
+  font-size: 30pt;
   color: #F76F70;
   text-transform: uppercase;
   font-weight: 900; }
@@ -1223,18 +1213,23 @@ contact-field {
   position: relative; }
 
 .navbar > .logo {
-  text-align: center;
+  /*text-align: center;*/
   /*border: 5px solid white;*/
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  /*align-self: center;*/
   height: inherit;
-  margin: 0 auto;
-  padding-left: 45px; }
+  /*margin: 0 auto;*/
+  /*padding-left: 45px;*/ }
 
-.navbar .logo img {
-  height: 150px;
-  padding: 10px -2px 0px 80px; }
+.navbar > .logo > a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 3.2em;
+  height: inherit; }
+
+.navbar > .logo > a > img {
+  height: inherit; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -1250,15 +1245,6 @@ contact-field {
 .navbar .discover > a:hover {
   background-color: #181818;
   color: #FF6D6D; }
-
-.navbar .logo > a {
-  -ms-flex-positive: 2;
-      flex-grow: 2;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-size: 3.2em; }
 
 .navbar .links {
   margin-top: 200px;
@@ -1339,11 +1325,11 @@ contact-field {
   display: none; }
 
 .slide-pane__content {
-  /*width: 100%;*/
+  /* width: 100%; */
   position: relative;
   overflow-y: auto;
-  -ms-flex: 1 1 uato;
-      flex: 1 1 uato;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
   padding: 0 !important; }
 
 #menu {
@@ -1370,7 +1356,7 @@ contact-field {
   max-width: 25%;
   min-width: 450px;
   margin: 0 auto;
-  padding: 75px;
+  padding-top: 75px;
   box-sizing: border-box; }
 
 .menu-content h3 {
@@ -1479,7 +1465,6 @@ contact-field {
   width: calc(100% - 80px); }
 
 .slider-body > .slide-text > h1 {
-  color: #FFFFFF;
   font-size: 3.5em;
   font-family: 'Bebas Neue';
   margin-bottom: 0;
@@ -1514,6 +1499,18 @@ contact-field {
   position: absolute;
   width: 100%;
   bottom: 0; }
+
+.slider-body > .btn {
+  position: absolute;
+  bottom: 1.5em;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  padding: 0.5em 1em;
+  border: 0.2em solid #FF6D6D;
+  font-size: 2.25em; }
 
 .modal-close-button {
   text-align: center;
