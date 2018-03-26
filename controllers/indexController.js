@@ -66,3 +66,14 @@ exports.about = (req, res) => {
   const About = reactHelper.renderComponent('AboutApp');
   res.render('about', { About });
 }
+
+
+exports.studyAreas= (req, res) => {
+  const Search = reactHelper.renderComponent('SearchApp');
+  res.render('studyArea', {Search });
+
+exports.partner = (req, res) => {
+  const Partner = reactHelper.renderComponent('PartnerApp');
+  res.render('partner', { Partner });
+
+}

@@ -1,3 +1,4 @@
+
 /* latest */
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -235,13 +236,17 @@ input.input-newsletter:focus {
   width: 100%; }
 
 .filter-btn {
+  box-sizing: border-box;
+  height: 134px;
+  width: 134px;
   padding: 8px;
   margin: 5px;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  font-size: 10px; }
+  font-size: 10px;
+  background-image: url("/images/Built.png"); }
 
 .filter-btn.white {
   background-color: #FFFFFF; }
@@ -251,8 +256,9 @@ input.input-newsletter:focus {
   outline: none; }
 
 .filter-btn:hover, .filter-btn.active {
-  background-color: #FF6D6D;
-  color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #000;
+  opacity: 0.5; }
 
 .filter-buttons li {
   display: inline-block;
@@ -502,6 +508,7 @@ input[type=text]::placeholder {
 .school-heading-container {
   /* background-color: $grey; */
   background-color: blue;
+  background-size: cover;
   width: 100%; }
 
 .school-heading {
@@ -552,6 +559,9 @@ input[type=text]::placeholder {
     margin: 15px 30px;
     font-family: 'Bebas Neue';
     color: #FFFFFF; }
+    .school-heading .video-link img {
+      width: 150px;
+      height: auto; }
 
 .school-courses-link {
   padding: 40px 0px;
@@ -584,7 +594,13 @@ input[type=text]::placeholder {
   -ms-flex-align: top;
       align-items: top;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .school-overview-container .scroll-down {
+    position: absolute;
+    bottom: -25px;
+    left: 46%;
+    width: 100px; }
   .school-overview-container h1 {
     margin: 0; }
   .school-overview-container h2 {
@@ -616,7 +632,8 @@ input[type=text]::placeholder {
       width: 100%;
       margin-bottom: 15px;
       border: 3px solid #FFFFFF;
-      border-radius: 0; }
+      border-radius: 0;
+      background: #000; }
   .school-overview-container .details-box {
     background-color: white;
     width: 100%;
@@ -624,10 +641,11 @@ input[type=text]::placeholder {
     top: -70px;
     padding-top: 40px;
     padding-bottom: 20px;
-    height: 450px; }
+    height: 550px; }
     .school-overview-container .details-box p {
       padding: 0 30px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      font-size: 15px; }
     .school-overview-container .details-box h3 {
       color: #000;
       text-transform: uppercase;
@@ -636,24 +654,47 @@ input[type=text]::placeholder {
     .school-overview-container .details-box ul {
       list-style: none;
       margin: 0px;
-      padding: 0px; }
+      padding: 0px;
+      padding-bottom: 20px; }
     .school-overview-container .details-box ul > li {
       padding: 0 30px;
       padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-bottom: 0px; }
 
-.study-areas {
+.study-areas-box h1 {
+  color: #313131;
+  margin: 0px;
+  font-size: 10vw;
+  line-height: 0.8;
+  font-family: 'Montserrat Black';
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.study-areas-box .study-areas {
   width: 100%;
-  height: 70vh;
+  height: 40vh;
   background-color: #000;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
-  .study-areas .area-box {
-    height: 60%;
+  .study-areas-box .study-areas .area-box {
+    height: 100%;
     width: 11.11%;
-    border: 1px solid #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    background-size: cover;
+    backgroun-position: 100% 150%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .study-areas-box .study-areas .area-box h3 {
+      color: #fff;
+      background: #000;
+      border: 2px solid #fff;
+      padding: 3px 10px;
+      margin: 0 auto; }
 
 .other-section {
   display: -ms-flexbox;
@@ -678,7 +719,11 @@ input[type=text]::placeholder {
         align-items: center; }
     .other-section .other-section-box h2 {
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 50px 0;
+      font-size: 30pt; }
 
 .school-contact .website {
   width: 100%;
@@ -925,6 +970,118 @@ input[type=text]::placeholder {
   text-align: center;
   padding-top: 15%; }
 
+.partner-heading {
+  margin-bottom: 30px; }
+
+.partner-heading .partner-info {
+  text-align: center;
+  border: 10px solid white;
+  padding: 0px 15px 15px 15px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.partner-heading .partner-info .hidden-line {
+  font-size: 28px;
+  margin-top: -30px;
+  background-color: #181818;
+  color: #181818;
+  display: inline-block;
+  padding: 0px 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.partner-title {
+  font-size: 40pt;
+  color: #F76F70; }
+
+.display-partner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.partner-image {
+  background-color: red;
+  height: 80vh;
+  width: 100%;
+  position: absolute; }
+
+.partner-large-container {
+  margin-top: 10%;
+  width: 70%;
+  height: 40%;
+  background-color: #ffffff;
+  border: 1px solid white;
+  opacity: 0.6; }
+
+.partner-large-container > p {
+  text-align: center;
+  margin-top: 5%; }
+
+.partner-small-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  position: relative; }
+
+.square {
+  background-color: #181818;
+  padding: 0px 50px 0px 30px;
+  width: 50%; }
+
+.square > p {
+  color: white;
+  text-align: center;
+  padding-top: 30px; }
+
+.partner-middle-paragraph > p {
+  color: white;
+  text-align: center; }
+
+.partner-contact-form {
+  background-color: white;
+  width: 60%;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 3%;
+  padding-top: 70px; }
+
+.contact-heading {
+  font-family: 'Bebas Neue';
+  color: #F76F70;
+  font-size: 20pt; }
+
+.contact-field > p {
+  font-weight: bold;
+  padding: 5px 0px 10px 0px;
+  margin: 0px; }
+
+.contact-field > input {
+  height: 5vh;
+  border: 1px solid black;
+  padding-bottom: 10px; }
+
+.contact
+.school-contact .inside-scoop {
+  width: 100%;
+  height: 450px;
+  background-image: url(/images/patterns/partoffooter.png);
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 15%; }
+
 #nav {
   position: absolute;
   width: 100%;
@@ -1075,10 +1232,10 @@ input[type=text]::placeholder {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
+  background-image: url("https://res.cloudinary.com/mozaik/image/upload/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain; }
+  background-position: center;
+  background-size: cover; }
 
 .menu-content {
   margin-top: 100px;
@@ -1090,17 +1247,20 @@ input[type=text]::placeholder {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100% - 100px); }
+  height: calc(100% - 100px);
+  background-color: rgba(128, 128, 128, 0.6);
+  width: 25%;
+  margin: 50px auto 0px auto; }
 
 .menu-content h3 {
   text-transform: uppercase;
-  color: #FFFFFF; }
+  color: #FF6D6D; }
 
 .menu-content ul {
   list-style: none;
   padding-left: 0px !important;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #082A3E;
   text-align: center; }
 
 .menu-content ul > li {
@@ -1110,7 +1270,7 @@ input[type=text]::placeholder {
   font-family: 'Gotham Book Regular'; }
 
 .menu-content ul > li > a {
-  color: #FFFFFF;
+  color: #082A3E;
   text-decoration: none;
   padding-bottom: 2px; }
 
@@ -1295,7 +1455,8 @@ input[type=text]::placeholder {
 .search-content {
   position: absolute;
   width: 100%;
-  z-index: 111; }
+  z-index: 111;
+  background-color: #FFFFFF; }
   .search-content h2 {
     /*color: #EAEEF0;*/
     color: #212121;
@@ -1341,7 +1502,6 @@ input[type=text]::placeholder {
   .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
     font-size: 28px;
     margin-top: -30px;
-    background-color: #181818;
     color: #FF6D6D;
     display: inline-block;
     padding: 0px 15px;
@@ -1542,6 +1702,67 @@ input[type=text]::placeholder {
 .category-heading {
   cursor: pointer; }
 
+.art-box-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 200%;
+  cursor: pointer; }
+
+.art-box-img:hover {
+  opacity: 0.8; }
+
+.artwork-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  background-color: blue;
+  height: 50vh; }
+  .artwork-container .art-box {
+    width: 33.33%;
+    border: 1px solid #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative; }
+    .artwork-container .art-box .art-box-1 {
+      border: 2px solid #fff;
+      height: 50%; }
+    .artwork-container .art-box .art-box-2 {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      border-left: 0;
+      background-position: center;
+      background-size: 100%; }
+    .artwork-container .art-box .art-box-2-diagonal {
+      border: 2px solid #fff;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      width: 40%;
+      height: 100%;
+      background-color: yellow;
+      z-index: 0;
+      position: absolute;
+      left: 34%;
+      -ms-transform: skew(-33deg);
+          transform: skew(-33deg);
+      background-position: center;
+      background-size: 200%; }
+    .artwork-container .art-box .art-box-3 {
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex; }
+      .artwork-container .art-box .art-box-3 .art-box-3-img {
+        border: 1px solid #fff;
+        width: 50%;
+        background-position: center;
+        background-size: 200%;
+        border: 2px solid #fff; }
+
 .artworks {
   overflow: hidden; }
 
@@ -1554,13 +1775,13 @@ input[type=text]::placeholder {
   line-height: 0; }
   @media only screen and (min-width: 768px) {
     .artwork-slides {
-      column-count: 3; } }
+      /* column-count: 3; */ } }
 
 .artwork-slides > li {
   list-style: none;
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   position: relative; }
 
@@ -1875,6 +2096,5 @@ html, body {
   height: 100%; }
 
 body {
-  margin: 0px; }
 
 /*# sourceMappingURL=style.css.map*/

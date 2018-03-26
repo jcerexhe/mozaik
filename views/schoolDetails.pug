@@ -1,18 +1,17 @@
 extends layouts/layout
 
 block content
-  .school-heading-container
+  .school-heading-container(style={'background-image': 'url('+ school.facilitiesImages[0] +')'})
     .school-heading
       .school-info
         //- img(src=school.logo)
         h1= school.name
       .school-links.video-link
-        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
-        br
-        p(class="video-text") Play Video
+        img(src="/images/buttons/playvideo.png")
   .student-work
-    p hello world
-  .school-overview-container
+    !=Lightbox
+  .school-overview-container(style={'background-image': 'url('+ school.facilitiesImages[1] +')'})
+    img.scroll-down(src="/images/buttons/Scroll-Down.png")
     .school-logo
       img(src=school.logo)
     .school-overview
@@ -52,26 +51,37 @@ block content
           a(href=school.website, target='_blank' class='btn')
             span Course Guide
       
-  .study-areas
-    .area-box
-    .area-box
-    .area-box
-    .area-box
-    .area-box
-    .area-box
-    .area-box
-    .area-box
-    .area-box
+  .study-areas-box
+    h1 study areas
+    .study-areas
+      .area-box(style="background-image: url('/images/areas/area1.jpg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area2.jpg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area3.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area4.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area5.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area6.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area7.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area8.jpeg')")
+        h3 digital design
+      .area-box(style="background-image: url('/images/areas/area9.jpg')")
+        h3 digital design
   !=Courses
   .other-section
     .locations
-      .other-section-box
+      .other-section-box(style="background-image: url('/images/location.png')")
         h2 locations
     .facilities
-      .other-section-box
+      .other-section-box(style="background-image: url('/images/facilities.png')")
         h2 facilities
     .alumni
-      .other-section-box
+      .other-section-box(style="background-image: url('/images/alumni.png')")
         h2 alumni
   .school-contact
     .website

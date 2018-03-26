@@ -198,20 +198,6 @@ export default class Search extends Component {
       <div>
         <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
-            <h2>
-              <span>q</span>
-              <span>u</span>
-              <span>i</span>
-              <span>c</span>
-              <span>k</span>
-              <span> </span>
-              <span>s</span>
-              <span>e</span>
-              <span>a</span>
-              <span>r</span>
-              <span>c</span>
-              <span>h</span>
-            </h2>
             <div className='search-criteria'>
               <div className='search-category'>
                 <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }

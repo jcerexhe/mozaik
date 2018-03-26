@@ -36,7 +36,7 @@
 
 .partner-image {
   background-color: red;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   position: absolute;
  }
@@ -59,22 +59,35 @@
 .partner-small-container{
  display:flex;
  flex-direction: row;
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
  position: relative;
 }
 
 .square{
     background-color: #181818;
+<<<<<<< HEAD
     width: 250px;
     height: 250px;
     border: 1px solid #181818;
     opacity: 0.9;
     margin: 0px 20px 0px 20px;
+=======
+    padding:0px 50px 0px 30px;
+    width: 50%;
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
 }
 
 .square >p{
     color:white;
     text-align: center;
+<<<<<<< HEAD
     padding: 40px 0px 0px 0px;
+=======
+    padding-top: 30px;
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
 }
 
 .partner-middle-paragraph >p{
@@ -85,7 +98,11 @@
 .partner-contact-form{
   background-color: white;
   width: 60%;
+<<<<<<< HEAD
   height: 110vh;
+=======
+  height: 100vh;
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -99,6 +116,7 @@
     font-size: 20pt;
 }
 
+<<<<<<< HEAD
 contact-field{
     padding: 5px 0px 0px 0px;
 }
@@ -129,6 +147,23 @@ contact-field{
 }
 
 .partner-contact{
+=======
+.contact-field >p{
+    font-weight: bold;
+    padding: 5px 0px 10px 0px;
+    margin: 0px;
+}
+
+.contact-field >input{
+    height: 5vh;
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.contact
+
+.school-contact .inside-scoop {
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
     width: 100%;
     height: 450px;
     background-image: url(/images/patterns/partoffooter.png);
@@ -140,6 +175,7 @@ contact-field{
     padding-top: 15%;
 }
 
+<<<<<<< HEAD
 .inside-scope >input {
     width: 40px;
     height: 3vh;
@@ -148,3 +184,5 @@ contact-field{
 
 
 
+=======
+>>>>>>> 09b699fce4928e2a1633e0d012321f394d2f6689
