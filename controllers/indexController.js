@@ -78,3 +78,9 @@ exports.partner = (req, res) => {
   res.render('partner', { Partner });
 
 };
+
+exports.agency = (req, res) => {
+  const Agency = reactHelper.renderComponent('AgencyApp');
+  res.render('agency', { Agency });
+
+};
