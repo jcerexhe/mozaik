@@ -8,12 +8,14 @@ export default class PartnerApp extends Component {
 			<div className='partner-heading'>
 				<div className='partner-info'>
 					<h1 className='hidden-line'>Using text to Hidden Line</h1>
-					<h1 className='partner-title'>Partnering<br/>with mozaik play</h1>
+					<p className='partner-title'>Partnering<br/>with mozaik play</p>
 				</div>
 			</div>
 			<div className="display-partner">
 				<div className='partner-image'>
-					<p>img src="#" </p>
+				</div>
+				<div className='scroll-down'>
+					<img src="/images/buttons/Scroll-Down.png" />
 				</div>
 				<div className='partner-large-container'>
 					<p>Mozaik Plays regularly partners with quality cretive-institutions across the globe that offer undergraduate<br/>
@@ -61,21 +63,21 @@ export default class PartnerApp extends Component {
 						<p>EMAIL ADDRESS</p>
 						<input />
 					</div>
-					<div className='contact-field'>
-						<p>Message</p>
+					<div className='contact-field-message'>
+						<p>MESSAGE</p>
 						<input />
 					</div><br/>
-					<div>
-						<img alt='submit button' src='' />
+					<div className='submit-button'>
+						<img alt='submit button' src='/images/buttons/Submit_1.png'/>
 					</div>
 				</div>
 			</div>
-			<div className='school-contact'>
+			<div className='partner-contact'>
 				<div className='inside-scoop'>
-					<h3>GET THE INSIDE SCOOP</h3>
-					<input placeholder="Email Address" />
+					<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
+					<input className='email' placeholder="Email" />
 					<br/>
-					<a className='btn' href="#"> Subscribe </a>
+					<img className='subscribe-img' src='/images/buttons/subscribe.png' />
 				</div>
 			</div>
 		</div>

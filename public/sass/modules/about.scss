@@ -1,66 +1,101 @@
 .about-heading {
   margin-bottom: 30px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about-heading .about-info {
-    text-align: center; 
+.about-heading .about-info{
+  text-align: center; 
+    width: 35%;
     border: 10px solid white;
     padding: 0px 15px 15px 15px;
-    width: 35%;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
 .about-heading .about-info .hidden-line {
     font-size: 28px;
-    margin-top: -30px;
+    margin-top: -20px;
     background-color: #181818;
     color: #181818;
     display: inline-block;
-    padding: 0px 15px;
     text-transform: uppercase;
-    margin-bottom: 15px; 
 }
 
- .about-title {
+.about-title {
+  margin-top:5px;
+  margin-bottom: 30px;
   font-size: 40pt;
   color: #F76F70;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.display-about-us{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-image {
-  background-color: red;
-  height: 80vh;
-  margin-bottom: 300px;
- }
- 
- .about-us-container{
-  width: 70%;
-  left: 15%;
-  top: 70%;
   position: absolute;
-  height: 100%;
+  width: 100%;
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/mozaik/image/upload/v1522036059/About_Us_Living_Room_w_Guitar_SplitShire_Free_tdblq7.jpg);
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 15%;
+ }
+  
+.scroll-down >img{
+  position:absolute;
+  width: 50px;
+  margin-top: -20px;
+ }
+
+.about-us-container{
+  margin-top: 8%;
+  margin-bottom: 3%;
+  width: 75%;
+  height: 40%;
   background-color: #ffffff;
   border: 1px solid white;
   opacity: 0.6;
 }
 
-.about-us-container >p {
-  text-align: center;
-  margin-top: 5%;
+.about-us-text{
+  margin-top: 12%;
+  margin-bottom: 10%;
 }
 
-.about-us-container >h1 {
-  padding-top: 70px;
+.about-us-text >p{
   text-align: center;
-  font-family:'Bebas Neue';
+}
+.about-us-text >p >img{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.about-us-text-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.about-us-text-footer >p {
+  font-family: 'Bebas Neue';
   color: #F76F70;
-  }
-
-.about-us-container >img {
-  margin-left: 325px; 
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.about-us-text-footer >img{
+  height: 10vh;
 }
 
-.school-contact .inside-scoop {
+.about-us-contact{
     width: 100%;
     height: 450px;
     background-image: url(/images/patterns/partoffooter.png);
@@ -70,4 +105,19 @@
     box-sizing: border-box;
     text-align: center;
     padding-top: 15%;
+}
+
+.inside-scoop-img {
+  height: 70px;
+}
+
+.email {
+  width: 210px;
+  height: 20px;
+  border: 2px solid #F76F70;
+  background: transparent;
+}
+
+.subscribe-img{
+  height: 50px;
 }
