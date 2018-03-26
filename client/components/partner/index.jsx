@@ -8,7 +8,7 @@ export default class PartnerApp extends Component {
 			<div className='partner-heading'>
 				<div className='partner-info'>
 					<h1 className='hidden-line'>Using text to Hidden Line</h1>
-					<h1 className='partner-title'>Partnering<br/>with mozaik play</h1>
+					<p className='partner-title'>Partnering<br/>with mozaik play</p>
 				</div>
 			</div>
 			<div className="display-partner">
@@ -73,9 +73,9 @@ export default class PartnerApp extends Component {
 			<div className='partner-contact'>
 				<div className='inside-scoop'>
 					<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-					<input placeholder="Email" />
+					<input className='email' placeholder="Email" />
 					<br/>
-					<img className='partner-subscribe' src='/images/buttons/subscribe.png' />
+					<img className='subscribe-img' src='/images/buttons/subscribe.png' />
 				</div>
 			</div>
 		</div>
