@@ -1004,7 +1004,7 @@ input[type=text]::placeholder {
 
 .partner-image {
   background-color: red;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   position: absolute; }
 
@@ -1029,13 +1029,16 @@ input[type=text]::placeholder {
 
 .square {
   background-color: #181818;
-  padding: 0px 50px 0px 30px;
-  width: 50%; }
+  width: 250px;
+  height: 250px;
+  border: 1px solid #181818;
+  opacity: 0.9;
+  margin: 0px 20px 0px 20px; }
 
 .square > p {
   color: white;
   text-align: center;
-  padding-top: 30px; }
+  padding: 40px 0px 0px 0px; }
 
 .partner-middle-paragraph > p {
   color: white;
@@ -1044,7 +1047,7 @@ input[type=text]::placeholder {
 .partner-contact-form {
   background-color: white;
   width: 60%;
-  height: 100vh;
+  height: 110vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1059,17 +1062,33 @@ input[type=text]::placeholder {
   color: #F76F70;
   font-size: 20pt; }
 
+contact-field {
+  padding: 5px 0px 0px 0px; }
+
 .contact-field > p {
   font-weight: bold;
-  padding: 5px 0px 10px 0px;
-  margin: 0px; }
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  width: 250px; }
 
 .contact-field > input {
-  height: 5vh;
+  height: 3vh;
   border: 1px solid black;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 250px; }
 
-.school-contact .inside-scoop {
+.contact-field-message {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.contact-field-message > input {
+  height: 30vh;
+  width: 500px;
+  border: 1px solid black; }
+
+.partner-contact {
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
