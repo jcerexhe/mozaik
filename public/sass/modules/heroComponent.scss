@@ -40,7 +40,6 @@
   width: calc(100% - 80px);
 }
 .slider-body > .slide-text > h1 {
-  color: $white;
   font-size: 3.5em;
   font-family: 'Bebas Neue';
   margin-bottom: 0;
@@ -102,6 +101,17 @@
 //  width: auto;
 //  display: inline;
 //}
+.slider-body > .btn {
+  position: absolute;
+  bottom: 1.5em;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5em 1em;
+  border: 0.2em solid $pink;
+  font-size: 2.25em;
+}
 .modal-close-button {
   text-align: center;
   border: none;
