@@ -94,11 +94,12 @@
 .partner-middle-paragraph >p{
     color: white;
     text-align: center;
+    letter-spacing: 1.5px;
  }
 
 .partner-contact-form{
   background-color: white;
-  width: 60%;
+  width: 55%;
   height: 110vh;
   display: flex;
   flex-direction: column;
@@ -121,19 +122,22 @@ contact-field{
     font-weight: bold;
     padding: 10px 0px 10px 0px;
     margin: 0px;
-    width: 250px;
+    width: 205px;
+    font-size: 15px;
 }
 
 .contact-field >input{
-    height: 3vh;
+    height: 5vh;
     border: 1px solid black;
     padding-bottom: 10px;
-    width:250px;
+    width: 205px;
 }
 
 .contact-field-message{
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .contact-field-message >input{

@@ -64,7 +64,7 @@ export default class PartnerApp extends Component {
 						<input />
 					</div>
 					<div className='contact-field-message'>
-						<p>Message</p>
+						<p>MESSAGE</p>
 						<input />
 					</div><br/>
 					<div className='submit-button'>
