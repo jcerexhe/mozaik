@@ -13,7 +13,9 @@ export default class PartnerApp extends Component {
 			</div>
 			<div className="display-partner">
 				<div className='partner-image'>
-					<p>img src="#" </p>
+				</div>
+				<div className='scroll-down'>
+					<img src="/images/buttons/Scroll-Down.png" />
 				</div>
 				<div className='partner-large-container'>
 					<p>Mozaik Plays regularly partners with quality cretive-institutions across the globe that offer undergraduate<br/>
@@ -62,7 +64,7 @@ export default class PartnerApp extends Component {
 						<input />
 					</div>
 					<div className='contact-field-message'>
-						<p>Message</p>
+						<p>MESSAGE</p>
 						<input />
 					</div><br/>
 					<div className='submit-button'>
