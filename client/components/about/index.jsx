@@ -13,7 +13,9 @@ export default class AboutApp extends Component {
 			</div>
 			<div className="display-about-us">
 				<div className='about-image'>
-					<p>img src="#" </p>
+				</div>
+				<div className='scroll-down'>
+					<img src="/images/buttons/Scroll-Down.png" />
 				</div>
 				<div className='about-us-container'>
 					<div className='about-us-text'>
