@@ -27,40 +27,56 @@
   color: #F76F70;
 }
 
+.display-about-us{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-image {
   background-color: red;
   height: 80vh;
-  margin-bottom: 300px;
- }
- 
- .about-us-container{
-  width: 70%;
-  left: 15%;
-  top: 70%;
+  width: 100%;
   position: absolute;
-  height: 100%;
+ }
+  
+.about-us-container{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+  height: 40%;
   background-color: #ffffff;
   border: 1px solid white;
   opacity: 0.6;
 }
 
-.about-us-container >p {
-  text-align: center;
-  margin-top: 5%;
+.about-us-text{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-.about-us-container >h1 {
-  padding-top: 70px;
+.about-us-text >p{
   text-align: center;
-  font-family:'Bebas Neue';
+}
+.about-us-text >p >img{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.about-us-text-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.about-us-text-footer >p {
+  font-family: 'Bebas Neue';
   color: #F76F70;
-  }
-
-.about-us-container >img {
-  margin-left: 325px; 
+  font-size: 30px;
 }
 
-.school-contact .inside-scoop {
+.about-us-contact{
     width: 100%;
     height: 450px;
     background-image: url(/images/patterns/partoffooter.png);
@@ -70,4 +86,19 @@
     box-sizing: border-box;
     text-align: center;
     padding-top: 15%;
+}
+
+.inside-scoop-img {
+  height: 70px;
+}
+
+.email {
+  width: 210px;
+  height: 20px;
+  border: 2px solid #F76F70;
+  background: transparent;
+}
+
+.subscribe-img{
+  height: 50px;
 }

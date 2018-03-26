@@ -73,9 +73,9 @@ export default class PartnerApp extends Component {
 			<div className='partner-contact'>
 				<div className='inside-scoop'>
 					<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-					<input placeholder="Email" />
+					<input className='email' placeholder="Email" />
 					<br/>
-					<img className='partner-subscribe' src='/images/buttons/subscribe.png' />
+					<img className='subscribe-img' src='/images/buttons/subscribe.png' />
 				</div>
 			</div>
 		</div>
