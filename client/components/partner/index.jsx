@@ -61,21 +61,21 @@ export default class PartnerApp extends Component {
 						<p>EMAIL ADDRESS</p>
 						<input />
 					</div>
-					<div className='contact-field'>
+					<div className='contact-field-message'>
 						<p>Message</p>
 						<input />
 					</div><br/>
-					<div>
-						<img alt='submit button' src='' />
+					<div className='submit-button'>
+						<img alt='submit button' src='/images/buttons/Submit_1.png'/>
 					</div>
 				</div>
 			</div>
-			<div className='school-contact'>
+			<div className='partner-contact'>
 				<div className='inside-scoop'>
-					<h3>GET THE INSIDE SCOOP</h3>
-					<input placeholder="Email Address" />
+					<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
+					<input placeholder="Email" />
 					<br/>
-					<a className='btn' href="#"> Subscribe </a>
+					<img className='partner-subscribe' src='/images/buttons/subscribe.png' />
 				</div>
 			</div>
 		</div>
