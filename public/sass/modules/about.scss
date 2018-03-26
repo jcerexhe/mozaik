@@ -37,16 +37,28 @@
 }
 
 .about-image {
-  background-color: red;
-  height: 80vh;
-  width: 100%;
   position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/mozaik/image/upload/v1522036059/About_Us_Living_Room_w_Guitar_SplitShire_Free_tdblq7.jpg);
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 15%;
  }
   
+.scroll-down >img{
+  position:absolute;
+  width: 50px;
+  margin-top: -20px;
+ }
+
 .about-us-container{
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 3%;
-  width: 70%;
+  width: 75%;
   height: 40%;
   background-color: #ffffff;
   border: 1px solid white;
@@ -54,7 +66,7 @@
 }
 
 .about-us-text{
-  margin-top: 10%;
+  margin-top: 12%;
   margin-bottom: 10%;
 }
 
