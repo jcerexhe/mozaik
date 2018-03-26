@@ -1255,23 +1255,24 @@ contact-field {
   display: none; }
 
 .slide-pane__content {
-  width: 100%; }
+  /*width: 100%;*/
+  position: relative;
+  overflow-y: auto;
+  -ms-flex: 1 1 uato;
+      flex: 1 1 uato;
+  padding: 0 !important; }
 
 #menu {
   position: absolute;
   z-index: 101;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
   background-image: url("https://res.cloudinary.com/mozaik/image/upload/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 .menu-content {
-  margin-top: 100px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1280,10 +1281,13 @@ contact-field {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100% - 100px);
+  height: 100vh;
   background-color: rgba(128, 128, 128, 0.6);
-  width: 25%;
-  margin: 50px auto 0px auto; }
+  max-width: 25%;
+  min-width: 450px;
+  margin: 0 auto;
+  padding: 75px;
+  box-sizing: border-box; }
 
 .menu-content h3 {
   text-transform: uppercase;
