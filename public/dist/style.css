@@ -219,8 +219,8 @@ input.input-newsletter:focus {
 
 .btn {
   border: 1px solid #FF6D6D;
-  border-radius: 7px;
-  padding: 5px 20px 3px 20px;
+  /* border-radius: 7px; */
+  /*padding: 5px 20px 3px 20px;*/
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -229,7 +229,17 @@ input.input-newsletter:focus {
   text-align: center;
   cursor: pointer;
   font-size: 1.2em;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 1.5em;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  padding: 0.5em 1em;
+  border: 0.2em solid #FF6D6D;
+  font-size: 2.25em; }
 
 .btn-full-width {
   width: 100%; }
@@ -1134,7 +1144,9 @@ contact-field {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: inherit; }
+  height: inherit;
+  margin: 0 auto;
+  padding-left: 45px; }
 
 .navbar .logo img {
   height: 150px;
@@ -1338,63 +1350,82 @@ contact-field {
   cursor: pointer; }
 
 .home-hero {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   z-index: 40; }
 
 .hero-container {
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .home-slider {
-  margin-bottom: 0px !important; }
-
-.fa-play-circle-o {
-  color: #FF6D6D;
-  margin-top: 0.2em;
-  font-size: 4em;
-  cursor: pointer; }
-
-.video-text {
-  margin-top: 5px;
-  font-family: 'Montserrat Ultra Light';
-  font-size: 1.3em;
-  text-transform: uppercase;
-  cursor: pointer; }
+  margin-bottom: 0px !important;
+  height: 100vh; }
 
 .slide {
-  width: 100vw !important;
-  height: calc(100vh + 300px) !important;
-  padding-top: 100px;
+  /* width: 100vw !important; */
+  /* height: calc(100vh + 300px) !important; */
+  /* padding-top: 100px; */
   background-size: cover;
-  background-position: 0 -200px; }
+  /* background-position: 0 -200px; */
+  height: 100vh !important;
+  background-position: center; }
 
 .slider-dots {
+  display: none;
   margin-top: -490px;
   margin-left: 3.7%; }
 
 .slider-body {
   padding: 0 40px;
-  color: #FF6D6D; }
+  height: 100%;
+  width: 100vw;
+  position: relative; }
 
-.slider-body > h1 {
+.slide-text {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  width: calc(100% - 80px); }
+
+.slider-body > .slide-text > h1 {
+  color: #FFFFFF;
   font-size: 3.5em;
+  font-family: 'Bebas Neue';
   margin-bottom: 0;
   /* change this margin top */
-  margin-top: 12%;
+  /*margin-top: 12%;*/
   width: 100%; }
   @media only screen and (min-width: 768px) {
-    .slider-body > h1 {
+    .slider-body > .slide-text > h1 {
       width: 55%; } }
 
-.slider-body > p {
-  font-size: 1.1em;
+.slider-body > .slide-text > p {
+  font-size: 1.5em;
   text-transform: none;
-  font-family: 'Montserrat Ultra Light';
+  font-family: 'Bebas Neue';
   margin-top: 10px;
   width: 100%; }
   @media only screen and (min-width: 768px) {
-    .slider-body > p {
+    .slider-body > .slide-text > p {
       width: 45%; } }
+
+.slider-body > .video-div {
+  position: absolute;
+  bottom: 7vh;
+  width: 20vw;
+  text-align: center;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  cursor: pointer; }
+
+.slider-body > .video-div > img {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 .modal-close-button {
   text-align: center;
@@ -1406,6 +1437,7 @@ contact-field {
   position: absolute; }
 
 .scroll-search {
+  display: none;
   margin-top: 31px;
   position: absolute;
   z-index: 60;
@@ -1442,6 +1474,24 @@ contact-field {
   height: 30px;
   width: 30px;
   border-radius: 50%; }
+
+.dot {
+  position: absolute;
+  color: #FFFFFF;
+  right: 40px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  border: 0.2em solid #FFFFFF;
+  border-radius: 50%; }
+
+.dot > img {
+  -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em;
+  padding-top: .15em; }
 
 #search {
   position: absolute;
@@ -2112,6 +2162,9 @@ contact-field {
       .filter-container .refine-button {
         padding: 10px;
         float: left; } }
+
+* {
+  box-sizing: border-box; }
 
 html, body {
   height: 100%; }
