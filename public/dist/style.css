@@ -219,8 +219,8 @@ input.input-newsletter:focus {
 
 .btn {
   border: 1px solid #FF6D6D;
-  /* border-radius: 7px; */
-  /*padding: 5px 20px 3px 20px;*/
+  border-radius: 7px;
+  padding: 5px 20px 3px 20px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -229,17 +229,7 @@ input.input-newsletter:focus {
   text-align: center;
   cursor: pointer;
   font-size: 1.2em;
-  letter-spacing: 1px;
-  position: absolute;
-  bottom: 1.5em;
-  width: auto;
-  text-align: center;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-  padding: 0.5em 1em;
-  border: 0.2em solid #FF6D6D;
-  font-size: 2.25em; }
+  letter-spacing: 1px; }
 
 .btn-full-width {
   width: 100%; }
@@ -650,7 +640,7 @@ input[type=text]::placeholder {
     top: -70px;
     padding-top: 40px;
     padding-bottom: 20px;
-    height: 550px; }
+    height: 580px; }
     .school-overview-container .details-box p {
       padding: 0 30px;
       padding-bottom: 20px;
@@ -664,7 +654,8 @@ input[type=text]::placeholder {
       list-style: none;
       margin: 0px;
       padding: 0px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      font-size: 15px; }
     .school-overview-container .details-box ul > li {
       padding: 0 30px;
       padding-top: 5px;
@@ -1525,9 +1516,16 @@ contact-field {
   /*margin: 0 auto;*/
   /*padding-left: 45px;*/ }
 
-.navbar .logo img {
-  height: 150px;
-  padding: 10px -2px 0px 80px; }
+.navbar > .logo > a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 3.2em;
+  height: inherit; }
+
+.navbar > .logo > a > img {
+  height: inherit; }
 
 .navbar .discover > a {
   text-decoration: none;
@@ -1543,15 +1541,6 @@ contact-field {
 .navbar .discover > a:hover {
   background-color: #181818;
   color: #FF6D6D; }
-
-.navbar .logo > a {
-  -ms-flex-positive: 2;
-      flex-grow: 2;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-size: 3.2em; }
 
 .navbar .links {
   margin-top: 200px;
@@ -1632,11 +1621,11 @@ contact-field {
   display: none; }
 
 .slide-pane__content {
-  /*width: 100%;*/
+  /* width: 100%; */
   position: relative;
   overflow-y: auto;
-  -ms-flex: 1 1 uato;
-      flex: 1 1 uato;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
   padding: 0 !important; }
 
 #menu {
@@ -1663,7 +1652,7 @@ contact-field {
   max-width: 25%;
   min-width: 450px;
   margin: 0 auto;
-  padding: 75px;
+  padding-top: 75px;
   box-sizing: border-box; }
 
 .menu-content h3 {
@@ -1772,7 +1761,6 @@ contact-field {
   width: calc(100% - 80px); }
 
 .slider-body > .slide-text > h1 {
-  color: #FFFFFF;
   font-size: 3.5em;
   font-family: 'Bebas Neue';
   margin-bottom: 0;
@@ -1807,6 +1795,18 @@ contact-field {
   position: absolute;
   width: 100%;
   bottom: 0; }
+
+.slider-body > .btn {
+  position: absolute;
+  bottom: 1.5em;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  padding: 0.5em 1em;
+  border: 0.2em solid #FF6D6D;
+  font-size: 2.25em; }
 
 .modal-close-button {
   text-align: center;
@@ -1875,30 +1875,36 @@ contact-field {
   padding-top: .15em; }
 
 #search {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 950px;
+  height: 2000px;
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
-  /* gradient bg allows slider img to appear in top right */
-  background: linear-gradient(to right top, #FF6D6D, rgba(255, 0, 0, 0)); }
+  /* gradient bg allows slider img to appear in top right 
+  background: -webkit-linear-gradient(right top, $pink, rgba(255,0,0,0)); 
+  background: -o-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
+  background: -moz-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
+  background: linear-gradient(to right top, $pink, rgba(255,0,0,0)); 
+  */
+  background: #fff; }
 
 #search.taller-search {
   height: 1800px; }
 
 #search:before {
-  content: ' ';
-  /*background-color: $white;*/
-  background-color: #181818;
+  /* content: ' ';
+ background-color: $white;
+  background-color: $grey;
   width: calc(100% + 400px);
   margin-left: -200px;
+  // greater hight > smaller triange = greater width
   height: 100%;
   position: absolute;
   display: block;
   z-index: 110;
-  -ms-transform: skewX(45deg);
-      transform: skewX(45deg); }
+  transform: skewX(45deg);
+  */ }
 
 #search.taller-search:before {
   width: calc(100% + 1400px);
@@ -1946,6 +1952,15 @@ contact-field {
       margin: 0 5px; }
     .search-content .search-category .search-btn {
       margin: 0 5px; }
+  .search-content .interest-areas .btn {
+    border-radius: 0;
+    background: #000;
+    width: 150px;
+    border: 0;
+    margin: 30px 0; }
+  .search-content .interest-areas ul {
+    width: 80%;
+    margin: 0 auto; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     margin-top: 50px;
     text-align: center; }
@@ -2048,7 +2063,7 @@ contact-field {
 .results-container {
   background-color: #181818;
   color: white;
-  margin-top: 350px; }
+  margin-top: 0px; }
 
 .no-results {
   display: -ms-flexbox;

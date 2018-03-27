@@ -24,6 +24,7 @@ exports.courses = async (req, res) => {
       const { interestDisciplines, interestCountries } = disc;
       const targets = [];
       const schoollist = [];
+
       if (areas[0] !== 'all areas') {
         // areas is an array of selected areas
         // $all finds a document with all of the els in array
@@ -36,7 +37,7 @@ exports.courses = async (req, res) => {
       switch (targets.length) {
         case 0:
           q = Course.find()
-          schoollist.push();
+          // schoollist.push();
           break;
         case 1:
           q = Course.find(targets[0]);
@@ -44,7 +45,9 @@ exports.courses = async (req, res) => {
         default:
           q = Course.find(targets[1]);
       }
+
       const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
+
       if (interestCountries.includes('all areas')) {
         courses = foundCourses;
         courses.map(course => {
@@ -59,6 +62,7 @@ exports.courses = async (req, res) => {
         // console.log(schoollist);
         console.log(foundSchools.length);
                 console.log(foundSchools[0].slug);
+                console.log('hi');
 
       } else {
         courses = _.filter(foundCourses, (course) => {
@@ -68,18 +72,31 @@ exports.courses = async (req, res) => {
           // if any locations were put into the array for this course then add the course to the returned courses array
           return false;
         });
+        let countItem;
          courses.map(course => {
           if(!schoollist.includes(course.school.slug)){
             schoollist.push(course.school.slug);
           }
 
-          schools = School.find({ slug: { $in: schoollist } });
-
         });
+
+        schools = School.find({ slug: { $in: schoollist } });
+        // , function(err, result){
+    
+        //     if(result.length  <= 0){
+        //       countItem = 0;
+        //     }
+          
+        // }
+
         foundSchools = await schools.populate('school');
         // console.log(schoollist);
         console.log(foundSchools.length);
                 console.log(foundSchools[0].slug);
+                console.log('hello');
+        //         console.log(foundSchools.length);
+                // console.log(schools);
+                // console.log(countItem);
       }
       break;
     case 'categories':
