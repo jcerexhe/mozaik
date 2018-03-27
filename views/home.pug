@@ -7,6 +7,26 @@ append stylesheets
 block content
   .hero-container
     !=Hero
-  
+
+  .home-artworks-container
+    .home-artworks-top
+      img(src='/images/patterns/stripes-top.png')
+      .home-artworks-top-text
+        h1 Search #[span & ] Play
+        a(href='/discover') DISCOVER
+
+    each lightbox in lightboxes
+      !=lightbox
+
+    .home-artworks-bottom
+      img(src='/images/patterns/partoffooter.png')
+      .home-artworks-bottom-text
+        a(href='#')
+          img(src='/images/buttons/Get-the-inside-scoop.png')
+        input(placeholder="Email")
+        br
+        a(href='#')
+          img(src='/images/buttons/subscribe.png')
 
 append javascripts
+  script(src='/javascripts/homescript.js')
