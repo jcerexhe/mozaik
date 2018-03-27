@@ -46,23 +46,21 @@ exports.courses = async (req, res) => {
           q = Course.find(targets[1]);
       }
 
-      const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
+      const foundCourses = await q.populate('school', ['slug', 'locations', 'logo', 'facilitiesImages']);
 
       if (interestCountries.includes('all areas')) {
         courses = foundCourses;
-        courses.map(course => {
-          if(!schoollist.includes(course.school.slug)){
-            schoollist.push(course.school.slug);
-          }
-
+        if(courses.length > 0){
+          courses.map(course => {
+            if(!schoollist.includes(course.school.slug)){
+              schoollist.push(course.school.slug);
+            }
+          });
           schools = School.find({ slug: { $in: schoollist } });
-
-        });
-        foundSchools = await schools.populate('school');
-        // console.log(schoollist);
-        console.log(foundSchools.length);
-                console.log(foundSchools[0].slug);
-                console.log('hi');
+          foundSchools = await schools.populate('school');
+        }else{
+          foundSchools =[];
+        }
 
       } else {
         courses = _.filter(foundCourses, (course) => {
@@ -72,31 +70,21 @@ exports.courses = async (req, res) => {
           // if any locations were put into the array for this course then add the course to the returned courses array
           return false;
         });
-        let countItem;
-         courses.map(course => {
-          if(!schoollist.includes(course.school.slug)){
-            schoollist.push(course.school.slug);
-          }
+      
+      
+        if (courses.length > 0){
+          courses.map(course => {
+            if(!schoollist.includes(course.school.slug)){
+              schoollist.push(course.school.slug);
+            }
+          });
 
-        });
+          schools = School.find({ slug: { $in: schoollist } });
+          foundSchools = await schools.populate('school');
+        }else{
+          foundSchools = [];
+        } 
 
-        schools = School.find({ slug: { $in: schoollist } });
-        // , function(err, result){
-    
-        //     if(result.length  <= 0){
-        //       countItem = 0;
-        //     }
-          
-        // }
-
-        foundSchools = await schools.populate('school');
-        // console.log(schoollist);
-        console.log(foundSchools.length);
-                console.log(foundSchools[0].slug);
-                console.log('hello');
-        //         console.log(foundSchools.length);
-                // console.log(schools);
-                // console.log(countItem);
       }
       break;
     case 'categories':

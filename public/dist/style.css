@@ -240,7 +240,7 @@ input.input-newsletter:focus {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #FFFFFF;
+  background-color: transparent;
   font-size: 11pt;
   font-family: 'Bebas Neue';
   color: #FFFFFF; }
@@ -249,15 +249,16 @@ input.input-newsletter:focus {
   box-sizing: border-box;
   height: 134px;
   width: 134px;
-  background-image: url("/images/Built.png"); }
+  background-image: url("/images/Built.png");
+  background-repeat: no-repeat; }
 
 .discipline {
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #FF6D6D;
   width: 150px; }
 
 .country {
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #000;
   color: #FFFFFF;
   font-size: 15pt;
@@ -1727,7 +1728,7 @@ contact-field {
 #search {
   position: relative;
   width: 100%;
-  height: 2000px;
+  height: 1100px;
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
@@ -1736,8 +1737,7 @@ contact-field {
   background: -o-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
   background: -moz-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
   background: linear-gradient(to right top, $pink, rgba(255,0,0,0)); 
-  */
-  background: #fff; }
+  */ }
 
 #search.taller-search {
   height: 1800px; }
@@ -1763,8 +1763,8 @@ contact-field {
 .search-content {
   position: absolute;
   width: 100%;
-  z-index: 111;
-  background-color: #FFFFFF; }
+  height: 100%;
+  background-color: #181818; }
   .search-content h2 {
     /*color: #EAEEF0;*/
     color: #212121;
@@ -1780,17 +1780,16 @@ contact-field {
     text-transform: uppercase; }
   .search-content .search-criteria {
     width: 80%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center; }
+    padding-top: 50px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+    background-color: rgba(255, 255, 255, 0.8); }
   .search-content .search-category {
     display: -ms-flexbox;
     display: flex;
@@ -1804,6 +1803,7 @@ contact-field {
       margin: 0 5px; }
   .search-content .interest-areas .btn {
     border-radius: 0;
+    border: 3px solid #FFFFFF !important;
     background: #000;
     width: 150px;
     border: 0;
@@ -1817,8 +1817,6 @@ contact-field {
   .search-content .interest-areas, .search-content .interest-disciplines {
     margin-top: 50px;
     text-align: center; }
-  .search-content .interest-disciplines {
-    border: 1px solid white; }
   .search-content .interest-areas > h3, .search-content .interest-disciplines > h3 {
     font-size: 28px;
     margin-top: -30px;
@@ -1932,10 +1930,14 @@ contact-field {
   margin: 0px; }
 
 #results .search-results > li {
+  box-sizing: border-box;
   display: inline-block;
-  width: 100%;
+  width: 50%;
+  height: 500px;
   vertical-align: top;
-  position: relative; }
+  position: relative;
+  border: 3px solid transparent;
+  margin: 20px 0; }
   @media only screen and (min-width: 768px) {
     #results .search-results > li {
       width: 25%; } }

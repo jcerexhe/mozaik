@@ -122,8 +122,6 @@ export default class Search extends Component {
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
-          <h3>What areas interest yous?</h3>
-          <br />
           <button className='btn' onClick={ (val) => this.allAreas()}> All Areas</button>
 
           <Filter
@@ -135,7 +133,6 @@ export default class Search extends Component {
           />
         </div>
         <div className='interest-disciplines'>
-          <h3>Do these disciplines interest you?</h3>
           <Filter
             filterItems={ ['all areas'].concat(interestDisciplines) }
             activeItems={ discipline.interestDisciplines }
@@ -143,9 +140,10 @@ export default class Search extends Component {
             isHome={ true }
             interest='discipline'
           />
+          <br />
+          <hr />
         </div>
         <div className='interest-countries'>
-          <h4>Choose a country?</h4>
           <Filter
             filterItems={ countries }
             activeItems={ discipline.interestCountries }

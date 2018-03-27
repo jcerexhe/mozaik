@@ -24,11 +24,13 @@ const Result = (props) => {
       // <img className='logo' src={ result.school.logo } alt='school logo' />
       // <i onClick={() => likeCourse(result.name)} className={'fa ' + (likedCourses.includes(result.name) ? 'fa-heart ' : 'fa-heart-o ') + 'fa-2x'} aria-hidden="true"></i>
     // </a>
-    <a className='search-result' href={ '/school/'+result.slug+'/details' }>
-      <span className='course-name'>{ result.slug }</span>
+    // http://res.cloudinary.com/mozaik/image/upload/BFA-Acting-course-842x324-3_xjaolt.jpg
+    <a className='search-result' href={ '/school/'+result.slug+'/details' } >
+      <span className='course-name'>{ result.facilitiesImages[0] }</span>
+      <img src={ 'http://res.cloudinary.com/mozaik/image/upload/'+result.facilitiesImages[0]+'.jpg' } alt={ result.name } />
     </a>
 
   );
 }
 
-export default Result;
+export default Result
