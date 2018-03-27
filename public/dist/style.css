@@ -1219,13 +1219,18 @@ contact-field {
   text-transform: uppercase;
   font-weight: 900; }
 
-.display-agency {
+.agency-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%;
+  height: 450vh;
+  /*background-color: red;*/
+  position: relative;
+  margin-bottom: 5%; }
 
 .agency-image {
   position: absolute;
@@ -1236,20 +1241,20 @@ contact-field {
   background-position-y: 20%;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  text-align: center;
   padding-top: 15%; }
 
-.agency-container {
-  margin-top: 21%;
+.agency-text-container {
   width: 75%;
   height: 65vh;
   background-color: #ffffff;
   border: 1px solid white;
-  opacity: 0.8; }
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 21%; }
 
 .agency-text {
-  margin-top: 5%;
-  margin-bottom: 10%; }
+  margin-top: 5%; }
 
 .agency-text > h1 {
   color: black;
@@ -1262,8 +1267,7 @@ contact-field {
   padding-top: 10px; }
 
 .start-text {
-  margin-top: 150px;
-  margin-bottom: 0px; }
+  margin-top: 120px; }
 
 .start-text > p {
   font-weight: 900;
@@ -1271,22 +1275,190 @@ contact-field {
   text-align: center;
   font-family: 'Helvetica'; }
 
-.agency-infographics-container {
+.box-container {
+  width: 100%;
   position: relative;
-  margin-bottom: 3%;
-  width: 75%;
-  height: 200vh;
-  background-color: #ffffff;
-  border: 1px solid white;
-  position: relative; }
+  height: 200vh; }
 
-.agency-timeline > img {
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
+.timeline-container {
+  background-color: white;
+  height: 322vh;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
-  width: 50px; }
+  position: relative; }
+
+.timeline-img > img {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 319vh;
+  padding-top: 20px; }
+
+.rectangle1 {
+  background-color: yellow;
+  position: absolute;
+  top: 15%;
+  width: 90%;
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.discover .discover-title {
+  margin-left: 30%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.discover .discover-box {
+  margin-left: 30%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.selection-course .selection-title {
+  margin-left: 90.5%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.selection-course .selection-box {
+  margin-left: 90.5%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.rectangle2 {
+  background-color: yellow;
+  position: absolute;
+  top: 43%;
+  width: 90%;
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.application .application-title {
+  margin-left: 30%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.application .application-box {
+  margin-left: 30%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.creative-portfolio .creative-title {
+  margin-left: 90.5%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.creative-portfolio .creative-box {
+  margin-left: 90.5%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.rectangle3 {
+  background-color: yellow;
+  position: absolute;
+  top: 71%;
+  width: 90%;
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.visa-submission .visa-title {
+  margin-left: 30%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.visa-submission .visa-box {
+  margin-left: 30%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.travel-arrangements .travel-title {
+  margin-left: 90.5%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.travel-arrangements .travel-box {
+  margin-left: 90.5%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.rectangle4 {
+  background-color: yellow;
+  position: absolute;
+  top: 99%;
+  width: 100%;
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-left: 10%; }
+
+.accomodation .accomodation-title {
+  margin-left: 0%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.accomodation .accomodation-box {
+  margin-left: 0%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.pre-departure .pre-departure-title {
+  margin-left: 60%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.pre-departure .pre-departure-box {
+  margin-left: 60%;
+  background-color: green;
+  width: 400px;
+  height: 35vh; }
+
+.rectangle5 {
+  background-color: yellow;
+  position: absolute;
+  top: 127%;
+  width: 90%;
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.support-study .support-study-title {
+  margin-left: 100%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.internship-placement .internship-placement-title {
+  margin-left: 100%;
+  margin-top: 15%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
 
 .agency-contact {
   width: 100%;
