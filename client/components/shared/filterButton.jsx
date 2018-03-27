@@ -7,7 +7,7 @@ const FilterButton = (props) => {
 
 
   return (
-    <button style={props.hideitem} type='button' className={ classes + (props.active ? ' active' : '') } onClick={ () => props.onClick(props.val) }>{ props.val }</button>
+    <button style={props.hideitem} type='button' className={ props.interest + ' ' + classes + (props.active ? ' active' : '') } onClick={ () => props.onClick(props.val) }>{ props.val}</button>
   );
 }
 

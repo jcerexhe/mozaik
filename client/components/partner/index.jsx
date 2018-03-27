@@ -18,7 +18,7 @@ export default class PartnerApp extends Component {
 					<img src="/images/buttons/Scroll-Down.png" />
 				</div>
 				<div className='partner-large-container'>
-					<p>Mozaik Plays regularly partners with quality cretive-institutions across the globe that offer undergraduate<br/>
+					<p>Mozaik Plays regularly partners with quality creative-institutions across the globe that offer undergraduate<br/>
 					and graduate degrees in study areas such as digital media, film & TV, visual communications, design,<br/>
 					performing arts, fine arts, photography, built environment and business for creatives.</p>
 					<p>
