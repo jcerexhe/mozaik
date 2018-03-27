@@ -97,6 +97,7 @@ exports.courses = async (req, res) => {
       courses = await q.populate('school', ['slug', 'locations', 'logo']);
       break;
     case 'search': {
+      console.log(data.search);
       const regex = new RegExp(`.*${data.search}.*`, 'i');
       // Split - Capitalize then split into array by comma-separated values
       // e.g. 'media, games design' => ['Media', 'Games Design']
@@ -107,9 +108,11 @@ exports.courses = async (req, res) => {
           { school_name: regex },
           { disciplines: { $in: split } },
           { specialisations: { $in: split } },
+          { campus: { $in: split }}
         ],
       }).collation({locale: "en", strength: 2});
       courses = await q.populate('school', ['slug', 'locations', 'logo']);
+      console.log(courses.length);
       break;
     }
     default:

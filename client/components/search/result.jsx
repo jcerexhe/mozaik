@@ -25,10 +25,12 @@ const Result = (props) => {
       // <i onClick={() => likeCourse(result.name)} className={'fa ' + (likedCourses.includes(result.name) ? 'fa-heart ' : 'fa-heart-o ') + 'fa-2x'} aria-hidden="true"></i>
     // </a>
     // http://res.cloudinary.com/mozaik/image/upload/BFA-Acting-course-842x324-3_xjaolt.jpg
-    <a className='search-result' href={ '/school/'+result.slug+'/details' } >
-      <span className='course-name'>{ result.facilitiesImages[0] }</span>
-      <img src={ 'http://res.cloudinary.com/mozaik/image/upload/'+result.facilitiesImages[0]+'.jpg' } alt={ result.name } />
-    </a>
+    <a className='search-result' href={ '/school/'+result.slug+'/details' } style={{backgroundImage: 'url(http://res.cloudinary.com/mozaik/image/upload/'+result.facilitiesImages[0]+'.jpg)'}}>
+       <p className='course-name'>{ result.name }</p>
+       <p className='city'>{ result.locations[0].campus }</p> 
+      
+      {//<img src={ 'http://res.cloudinary.com/mozaik/image/upload/'+result.facilitiesImages[0]+'.jpg' } alt={ result.name } />
+    }</a>
 
   );
 }

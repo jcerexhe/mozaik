@@ -192,17 +192,19 @@ export default class Search extends Component {
   }
 
   renderSearch() {
-    const { search } = this.state;
-    return (
-      <div id='search-search'>
-        <div className='interest-areas'>
-          <h3>What areas interest you?</h3>
-          <div className='search-input'>
-            <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
-          </div>
-        </div>
-      </div>
-    );
+    // const { search } = this.state;
+    // return (
+    //   <div id='search-search'>
+    //     <div className='interest-areas'>
+    //       <h3>What areas interest you?</h3>
+    //       <div className='search-input'>
+    //         <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
+    //       </div>
+    //     </div>
+    //   </div>
+    // );
+    this.setState({ searchCategory: 'search', search: 'canada' });
+
   }
 
   render() {
@@ -218,6 +220,7 @@ export default class Search extends Component {
     }
     return (
       <div>
+        <h1 className="page-heading">What areas interests you?</h1>
         <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
             <div className='search-criteria'>
@@ -228,6 +231,13 @@ export default class Search extends Component {
                   className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
                 <span onClick={ () => this.setState({ searchCategory: 'search' }) }
                   className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
+              </div>
+              <div className="search-input">
+                <input placeholder="Country" />
+                <input placeholder="Country" />
+                <input placeholder="Country" />
+                <button onClick={() => this.renderSearch()}>Search</button>
+                <button className="adv-search">Advance Search</button>
               </div>
               { rendered }
               <p className="results-found">{this.props.resultsAmount} results found</p>

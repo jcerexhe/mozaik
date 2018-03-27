@@ -88,6 +88,33 @@ html, body {
   top: 5px;
   position: absolute; }
 
+.page-footer {
+  width: 100%;
+  height: 450px;
+  background-image: url("/images/patterns/partoffooter.png");
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  margin-top: 100px; }
+
+.page-heading {
+  border: 5px solid #FFFFFF;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  position: relative; }
+
+.page-heading:after {
+  content: '';
+  color: #FFFFFF;
+  width: 70%;
+  height: 5px;
+  background: #181818;
+  position: absolute;
+  top: -5px;
+  left: 15%; }
+
 .content {
   margin-top: -100px; }
 
@@ -1914,7 +1941,9 @@ contact-field {
 .results-container {
   background-color: #181818;
   color: white;
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin: 0 auto;
+  width: 80%; }
 
 .no-results {
   display: -ms-flexbox;
@@ -1933,7 +1962,7 @@ contact-field {
   box-sizing: border-box;
   display: inline-block;
   width: 50%;
-  height: 500px;
+  height: 400px;
   vertical-align: top;
   position: relative;
   border: 3px solid transparent;
@@ -1946,38 +1975,50 @@ contact-field {
   display: block;
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none; }
 
 #results .search-result::before {
   content: ' ';
   display: block;
-  padding-top: 83.3%; }
+  padding-top: 50%; }
 
-#results .search-result > span.course-name {
-  position: absolute;
-  top: auto;
-  left: 1rem;
-  bottom: 1.6rem;
-  right: 2rem;
-  z-index: 10;
+#results .search-result > p.course-name {
+  /*    position: absolute;
+    top: auto;
+    left: 1rem;
+    bottom: 1.6rem;
+    right: 2rem;
+    z-index: 10; */
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 130%;
+  font-size: 120%;
   font-family: 'Bebas Neue';
   color: white;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0 25px; }
 
-#results .search-result > span.city {
-  position: absolute;
-  top: auto;
-  left: 1rem;
-  bottom: 1rem;
-  right: 2rem;
-  z-index: 10;
+#results .search-result > p.city {
+  /* position: absolute;
+    top: auto;
+    left: 1rem;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 10; */
   text-transform: uppercase;
-  color: #949494;
-  font-size: 70%;
-  font-family: 'Montserrat Light'; }
+  font-weight: 700;
+  font-size: 100%;
+  font-family: 'Bebas Neue';
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  border-top: 2px solid #FFFFFF;
+  padding-top: 30px;
+  width: 50%;
+  margin: 0 auto; }
 
 #results .search-result > i {
   position: absolute;
@@ -2023,6 +2064,45 @@ contact-field {
 
 .category-heading {
   cursor: pointer; }
+
+.extend-search {
+  padding-top: 15%;
+  text-align: center; }
+  .extend-search h2 {
+    border: 3px solid #FFFFFF;
+    color: #FF6D6D !important;
+    display: inline-block;
+    padding: 0 5px;
+    padding-top: 5px; }
+  .extend-search a {
+    clear: left;
+    background: #000;
+    border: 3px solid #FFFFFF;
+    border-radius: 0; }
+
+.search-input {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%; }
+  .search-input input, .search-input button {
+    width: 25% !important;
+    font-size: 12px !important;
+    text-align: left !important;
+    margin: 3px;
+    border: 1px solid #000 !important;
+    background-color: transparent; }
+  .search-input button {
+    text-align: center !important;
+    text-transform: uppercase;
+    background: #000;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    font-size: 15px !important;
+    letter-spacing: 2px; }
+  .search-input .adv-search {
+    color: #FF6D6D;
+    font-weight: 700; }
 
 .art-box-img {
   width: 100%;
