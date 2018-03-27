@@ -65,7 +65,8 @@ export default class Search extends Component {
         discipline: {
           ...discipline,
           ['interestAreas']: ['all areas'],
-          ['interestDisciplines']: ['all areas']
+          ['interestDisciplines']: ['all areas'],
+          ['interestCountries']: ['all areas']
         }
       });
 
