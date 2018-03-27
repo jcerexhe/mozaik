@@ -1634,7 +1634,8 @@ contact-field {
       transform: translateX(-50%);
   padding: 0.5em 1em;
   border: 0.2em solid #FF6D6D;
-  font-size: 2.25em; }
+  font-size: 2.25em;
+  border-radius: 0px; }
 
 .modal-close-button {
   text-align: center;

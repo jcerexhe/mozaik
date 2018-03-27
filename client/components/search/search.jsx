@@ -130,6 +130,7 @@ export default class Search extends Component {
             activeItems={ discipline.interestAreas }
             onClick={ (val) => this.updateDiscipline('interestAreas', val) }
             isHome={ true }
+            interest='area'
           />
         </div>
         <div className='interest-disciplines'>
@@ -139,6 +140,7 @@ export default class Search extends Component {
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
             isHome={ true }
+            interest='discipline'
           />
         </div>
         <div className='interest-countries'>
@@ -148,6 +150,7 @@ export default class Search extends Component {
             activeItems={ discipline.interestCountries }
             onClick={ (val) => this.updateDiscipline('interestCountries', val) }
             isHome={ true }
+            interest='country'
           />
         </div>
       </div>
