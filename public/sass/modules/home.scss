@@ -61,3 +61,85 @@
   color: white;
   letter-spacing: 1px;
 }
+
+// For home artworks container
+.home-artworks-container {
+  position: relative;
+}
+.home-artworks-top {
+  position: absolute;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  height: 50vh;
+}
+.home-artworks-top > img {
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+.home-artworks-top-text {
+  position: absolute;
+  margin: 1vh 0 0 5vw;
+}
+.home-artworks-top-text > h1 {
+  font-family: 'Montserrat Extra Bold';
+  font-size: 7vw;
+}
+.home-artworks-top-text > span {
+  color: $white
+}
+.home-artworks-top-text > h1 > span{
+  color: $white;
+  font-family: 'Montserrat Extra Bold';
+  font-size: 7vw;
+}
+.home-artworks-top-text > a {
+  text-decoration: none;
+  border: 5px solid rgba(228, 233, 236, 0.9);
+  background-color: rgba(255, 109, 109, 0.5);
+  padding: 0.5em 1em;
+  font-size: 3.5vw;
+  color: white;
+  font-family: 'Montserrat Bold';
+}
+.home-artworks-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40vh;
+}
+.home-artworks-bottom > img{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.home-artworks-bottom-text{
+  position: absolute;
+  bottom: 5vw;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25vw;
+}
+.home-artworks-bottom-text > a {
+  width: 100%
+}
+.home-artworks-bottom-text > a > img {
+  width: 100%
+}
+.home-artworks-bottom-text > input {
+  width: 100%;
+  margin: 1vw 0;
+  border: 0.25vw solid $pink;
+  background-color: transparent;
+  padding: 1vw;
+  color: $white;
+  font-size: 2vw;
+}
+
+.home-artworks-bottom-text > input::placeholder {
+  color: $white;
+  font-size: 2vw;
+}
