@@ -6,8 +6,20 @@ const Course = mongoose.model('Course');
 
 exports.home = (req, res) => {
   const Hero = reactHelper.renderComponent('HeroApp');
-  const Search = reactHelper.renderComponent('SearchApp');
-  res.render('home', { Hero, Search });
+
+  School.find().then(schools => {
+    if (schools) {
+      let lightboxes = schools.map(school =>{
+        let Lightbox = reactHelper.renderComponent('ArtworkApp', { search: true, artworks: school.artworks});
+        return Lightbox
+      });
+      res.render('home', { Hero, lightboxes, schools });
+    }
+  })
+
+  //const Search = reactHelper.renderComponent('SearchApp');
+  //res.render('home', { Hero, Search });
+
 };
 
 exports.getSchool = async (req, res, next) => {

@@ -29,9 +29,11 @@ export default class HeroApp extends Component {
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
           video: true,
           styles: {
-            h1:{
+            h1:{ 
+              color: 'white',
+              fontFamily: 'Verdana', 
               margin: '0.5em 0',
-              textTransform: 'none',
+              textTransform: 'lowercase',
               fontSize: '6.5em',
               width: '2.7em',
               lineHeight: '1'
