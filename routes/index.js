@@ -27,5 +27,6 @@ router.get('/about-us',indexController.about);
 router.get('/study-areas',indexController.studyAreas);
 router.get('/partner-with-mozaik',indexController.partner);
 router.get('/agency-mozaik',indexController.agency);
+router.get('/study-areas/performing-arts',indexController.performingArts);
 
 module.exports = router;

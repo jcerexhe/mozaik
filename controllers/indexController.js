@@ -96,3 +96,9 @@ exports.agency = (req, res) => {
   res.render('agency', { Agency });
 
 };
+
+exports.performingArts = (req, res) => {
+  const PerformingArts = reactHelper.renderComponent('PerformingArtsApp');
+  res.render('performingArts', { PerformingArts });
+
+};
