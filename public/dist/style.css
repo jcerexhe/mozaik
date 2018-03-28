@@ -831,7 +831,13 @@ input[type=text]::placeholder {
       background: #000;
       border: 2px solid #fff;
       padding: 3px 10px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: 15px;
+      width: 90%;
+      height: 50px;
+      text-align: center; }
+    .study-areas-box .study-areas .area-box .padding {
+      padding-top: 15px; }
 
 .other-section {
   display: -ms-flexbox;

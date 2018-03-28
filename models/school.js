@@ -81,6 +81,8 @@ const schoolSchema = new Schema({
     required: 'Please provide a logo of your school.',
   },
   video: String,
+  header_image: String,
+  header_image_2: String,
 });
 
 schoolSchema.pre('save', async function (next) {
@@ -123,11 +125,13 @@ schoolSchema.pre('findOne', autopopulate);
 schoolSchema.post('find', function (schools) {
   return _.map(schools, (school) => {
     school.logo = cloudinary.url(`${school.logo}`);
+    school.header_image = cloudinary.url(`${school.header_image}`);
     return school;
   });
 });
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}`);
+  school.header_image = cloudinary.url(`${school.header_image}.jpg`);
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
     return cloudinary.url(`${img}.jpg`);
   });

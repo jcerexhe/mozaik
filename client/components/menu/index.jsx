@@ -66,7 +66,7 @@ export default class MenuApp extends Component {
                   <span />
               </div>
               <div>
-                <a href="/#search">
+                <a href="/study-areas">
                   <img className='icon-white' src='/images/menu/Search_1.png' />
                 </a>
               </div>
