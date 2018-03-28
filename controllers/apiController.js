@@ -97,22 +97,44 @@ exports.courses = async (req, res) => {
       courses = await q.populate('school', ['slug', 'locations', 'logo']);
       break;
     case 'search': {
-      console.log(data.search);
-      const regex = new RegExp(`.*${data.search}.*`, 'i');
+      const school_name = new RegExp(`.*${data.school}.*`, 'i');
+      const schoollist = [];
       // Split - Capitalize then split into array by comma-separated values
       // e.g. 'media, games design' => ['Media', 'Games Design']
-      const split = data.search.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
+      const split_area = data.studyArea.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
+      const split_city = data.city.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
+      var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { specialisations: { $in: split_area } }]} : {});
+      var school = ((data.school.trim().length > 0) ? { school_name: school_name } : {});
+      var city = ((data.city.trim().length > 0) ? { campus: { $in: split_city }} : {});
       q = Course.find({
-        $or: [
-          { name: regex },
-          { school_name: regex },
-          { disciplines: { $in: split } },
-          { specialisations: { $in: split } },
-          { campus: { $in: split }}
+        $and: [
+          // { name: regex },
+          school,
+           dis,
+           city,
+          // { specialisations: { $in: split_area } },.length    
+          // { campus: { $in: split_city }}
         ],
       }).collation({locale: "en", strength: 2});
+      console.log(dis);
+      console.log((data.studyArea.trim().length));
+      console.log(data.studyArea);
+
       courses = await q.populate('school', ['slug', 'locations', 'logo']);
+      if(courses.length > 0){
+          courses.map(course => {
+            if(!schoollist.includes(course.school.slug)){
+              schoollist.push(course.school.slug);
+            }
+          });
+          schools = School.find({ slug: { $in: schoollist } });
+          foundSchools = await schools.populate('school');
+        }else{
+          foundSchools =[];
+        }
+
       console.log(courses.length);
+      console.log(foundSchools.length);
       break;
     }
     default:
