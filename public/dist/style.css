@@ -2015,7 +2015,7 @@ contact-field {
 #search {
   position: relative;
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
@@ -2071,7 +2071,7 @@ contact-field {
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
-    padding-top: 50px;
+    padding-top: 10px;
     /*display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2345,7 +2345,7 @@ contact-field {
   display: -ms-flexbox;
   display: flex;
   width: 90%; }
-  .search-input input, .search-input button {
+  .search-input input, .search-input button, .search-input a {
     width: 25% !important;
     font-size: 12px !important;
     text-align: left !important;
@@ -2359,10 +2359,18 @@ contact-field {
     color: #FFFFFF;
     font-family: 'Bebas Neue';
     font-size: 15px !important;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    cursor: pointer; }
   .search-input .adv-search {
     color: #FF6D6D;
-    font-weight: 700; }
+    font-weight: 700;
+    background: #000;
+    font-family: 'Bebas Neue';
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center !important;
+    line-height: 2rem; }
 
 .art-box-img {
   width: 100%;

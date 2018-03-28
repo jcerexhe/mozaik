@@ -23,7 +23,9 @@ export default class Search extends Component {
         interestCountries: ['all areas']
       },
       categories: [],
-      search: '',
+      school: '',
+      studyArea: '',
+      city: '',
       areas: {
         'Digital Media': digMedia,
         'Visual Communication': visComm,
@@ -74,6 +76,7 @@ export default class Search extends Component {
 
   }
   updateDiscipline(area, val) {
+    this.setState({ searchCategory: 'discipline'});
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
     if (val === 'all areas') {
@@ -192,54 +195,62 @@ export default class Search extends Component {
   }
 
   renderSearch() {
-    const { search } = this.state;
-    return (
-      <div id='search-search'>
-        <div className='interest-areas'>
-          <h3>What areas interest you?</h3>
-          <div className='search-input'>
-            <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
-          </div>
-        </div>
-      </div>
-    );
-    // this.setState({ searchCategory: 'search', search: 'sydney' });
+    // const { search } = this.state;
+    // return (
+    //   <div id='search-search'>
+    //     <div className='interest-areas'>
+    //       <h3>What areas interest you?</h3>
+    //       <div className='search-input'>
+    //         <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
+    //       </div>
+    //     </div>
+    //   </div>
+    // );
+    this.setState({ searchCategory: 'search', 
+      school: this.refs.textSchool.value,
+      studyArea: this.refs.textArea.value, 
+      city: this.refs.textCity.value,
+   });
 
   }
 
   render() {
     const { searchCategory, discipline, categories, search } = this.state;
-    let rendered = <div />;
-    switch (searchCategory) {
-      case "discipline": rendered = this.renderDiscipline();
-        break;
-      case 'categories': rendered = this.renderCategories();
-        break;
-      case 'search': rendered = this.renderSearch();
-        break;
-    }
+    // let rendered = this.renderDiscipline();
+    // switch (searchCategory) {
+    //   case "discipline": rendered = this.renderDiscipline();
+    //     break;
+    //   case 'categories': rendered = this.renderCategories();
+    //     break;
+    //   case 'search': rendered = this.renderSearch();
+    //     break;
+    // }
     return (
       <div>
         <h1 className="page-heading">What areas interests you?</h1>
         <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
             <div className='search-criteria'>
-              <div className='search-category'>
-                <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
-                  className={ 'list-btn' + (searchCategory === 'discipline' ? ' active' : '') } />
-                <span onClick={ () => this.setState({ searchCategory: 'categories' }) }
-                  className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
-                <span onClick={ () => this.setState({ searchCategory: 'search' }) }
-                  className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
-              </div>
+            {
+              // <div className='search-category'>
+              //   <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
+              //     className={ 'list-btn' + (searchCategory === 'discipline' ? ' active' : '') } />
+              //   <span onClick={ () => this.setState({ searchCategory: 'categories' }) }
+              //     className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
+              //   <span onClick={ () => this.setState({ searchCategory: 'search' }) }
+              //     className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
+              // </div>
+            }
               <div className="search-input">
-                <input placeholder="Country" />
-                <input placeholder="Country" />
-                <input placeholder="Country" />
+                <input placeholder="School Name" ref="textSchool" />
+                <input placeholder="Study Area" ref="textArea" />
+                <input placeholder="City/Country" ref="textCity"/>
                 <button onClick={() => this.renderSearch()}>Search</button>
-                <button className="adv-search">Advance Search</button>
+                <a href="/discover" className="adv-search">Advance Search</a>
               </div>
-              { rendered }
+              { //rendered 
+                this.renderDiscipline()
+              }
               <p className="results-found">{this.props.resultsAmount} results found</p>
             </div>
           </div>
