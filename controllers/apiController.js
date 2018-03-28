@@ -99,6 +99,7 @@ exports.courses = async (req, res) => {
     case 'search': {
       console.log(data.search);
       const regex = new RegExp(`.*${data.search}.*`, 'i');
+      const schoollist = [];
       // Split - Capitalize then split into array by comma-separated values
       // e.g. 'media, games design' => ['Media', 'Games Design']
       const split = data.search.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
@@ -112,7 +113,20 @@ exports.courses = async (req, res) => {
         ],
       }).collation({locale: "en", strength: 2});
       courses = await q.populate('school', ['slug', 'locations', 'logo']);
+      if(courses.length > 0){
+          courses.map(course => {
+            if(!schoollist.includes(course.school.slug)){
+              schoollist.push(course.school.slug);
+            }
+          });
+          schools = School.find({ slug: { $in: schoollist } });
+          foundSchools = await schools.populate('school');
+        }else{
+          foundSchools =[];
+        }
+
       console.log(courses.length);
+      console.log(foundSchools.length);
       break;
     }
     default:

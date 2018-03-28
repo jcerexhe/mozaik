@@ -192,18 +192,18 @@ export default class Search extends Component {
   }
 
   renderSearch() {
-    // const { search } = this.state;
-    // return (
-    //   <div id='search-search'>
-    //     <div className='interest-areas'>
-    //       <h3>What areas interest you?</h3>
-    //       <div className='search-input'>
-    //         <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
-    //       </div>
-    //     </div>
-    //   </div>
-    // );
-    this.setState({ searchCategory: 'search', search: 'canada' });
+    const { search } = this.state;
+    return (
+      <div id='search-search'>
+        <div className='interest-areas'>
+          <h3>What areas interest you?</h3>
+          <div className='search-input'>
+            <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
+          </div>
+        </div>
+      </div>
+    );
+    // this.setState({ searchCategory: 'search', search: 'sydney' });
 
   }
 
