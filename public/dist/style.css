@@ -2054,7 +2054,7 @@ contact-field {
   height: 50px; }
 
 .art-page-heading {
-  border: 5px solid #FFFFFF;
+  border: 5px solid #181818;
   width: 25%;
   margin: 0 auto;
   text-align: center;
@@ -2065,27 +2065,54 @@ contact-field {
   text-transform: uppercase;
   display: block;
   font-size: 2em;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 1; }
 
 .art-page-heading:after {
   content: '';
   color: #FFFFFF;
   width: 70%;
   height: 5px;
-  background: #181818;
+  background: #FFFFFF;
   position: absolute;
   top: -5px;
   left: 15%; }
 
-.performing-background {
+.performing-background > img {
   width: 100%;
   height: 100vh;
   background-size: 100% 100%;
   background-position-y: 20%;
   background-repeat: no-repeat;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  top: 0px;
+  position: absolute; }
 
-.about-us-contact {
+.careers-container {
+  background-color: red;
+  height: 200vh; }
+
+.careers-category {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  text-align: center; }
+
+.careers-category > p {
+  color: black; }
+
+.career-paragraph-heading {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 20%;
+  text-align: center; }
+
+.career-paragraph-heading > p {
+  color: black; }
+
+.art-contact {
+  margin-top: 10%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
