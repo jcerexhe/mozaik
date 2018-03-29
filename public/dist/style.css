@@ -1049,36 +1049,33 @@ input[type=text]::placeholder {
   .school-footer .school-footer-section:first-child {
     border-right: 1px solid #E4E9EC; }
 
-.about-heading {
-  margin-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.about-heading .about-info {
+.about-page-heading {
+  border: 5px solid #FFFFFF;
+  width: 30%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  width: 35%;
-  border: 10px solid white;
-  padding: 0px 15px 15px 15px; }
-
-.about-heading .about-info .hidden-line {
-  font-size: 28px;
-  margin-top: -20px;
-  background-color: #181818;
-  color: #181818;
-  display: inline-block;
-  text-transform: uppercase; }
-
-.about-title {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 40pt;
-  color: #F76F70;
+  padding: 50px;
+  position: relative;
+  font-family: 'Bebas Neue';
+  color: #FF6D6D;
   text-transform: uppercase;
-  font-weight: 900; }
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+.about-page-heading:after {
+  content: '';
+  color: #FFFFFF;
+  width: 70%;
+  height: 5px;
+  background: #181818;
+  position: absolute;
+  top: -5px;
+  left: 15%; }
 
 .display-about-us {
   display: -ms-flexbox;
@@ -1154,48 +1151,44 @@ input[type=text]::placeholder {
   text-align: center;
   padding-top: 15%; }
 
-.inside-scoop-img {
+.about-inside-scoop-img {
   height: 70px; }
 
-.email {
+.about-email {
   width: 210px;
-  height: 20px;
+  height: 30px;
   border: 2px solid #F76F70;
   background: transparent; }
 
-.subscribe-img {
+.about-subscribe-img {
   height: 50px; }
 
-.partner-heading {
-  margin-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.partner-heading .partner-info {
+.partner-page-heading {
+  border: 5px solid #FFFFFF;
+  width: 30%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  amrgin-bottom: 10px;
   text-align: center;
-  width: 40%;
-  border: 10px solid white;
-  padding: 0px 15px 15px 15px; }
-
-.partner-heading .partner-info .hidden-line {
-  font-size: 28px;
-  margin-top: -20px;
-  background-color: #181818;
-  color: #181818;
-  display: inline-block;
-  text-transform: uppercase; }
-
-.partner-title {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 30pt;
-  color: #F76F70;
+  padding: 50px;
+  position: relative;
+  font-family: 'Bebas Neue';
+  color: #FF6D6D;
   text-transform: uppercase;
-  font-weight: 900; }
+  display: block;
+  font-size: 2em;
+  font-weight: bold; }
+
+.partner-page-heading:after {
+  content: '';
+  color: #FFFFFF;
+  width: 70%;
+  height: 5px;
+  background: #181818;
+  position: absolute;
+  top: -5px;
+  left: 15%; }
 
 .display-partner {
   display: -ms-flexbox;
@@ -1319,48 +1312,45 @@ contact-field {
   text-align: center;
   padding-top: 15%; }
 
-.inside-scoop-img {
+.partner-inside-scoop-img {
   height: 70px; }
 
-.email {
+.partner-email {
   width: 210px;
-  height: 20px;
+  height: 30px;
   border: 2px solid #F76F70;
   background: transparent; }
 
-.subscribe-img {
+.partner-subscribe-img {
   height: 50px; }
 
-.agency-heading {
-  margin-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.agency-heading .agency-info {
+.agency-page-heading {
+  border: 5px solid #FFFFFF;
+  width: 60%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  width: 50%;
-  border: 10px solid white;
-  padding: 0px 15px 15px 15px; }
-
-.agency-heading .agency-info .hidden-line {
-  font-size: 28px;
-  margin-top: -20px;
-  background-color: #181818;
-  color: #181818;
-  display: inline-block;
-  text-transform: uppercase; }
-
-.agency-title {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 20pt;
-  color: #F76F70;
+  padding: 50px;
+  position: relative;
+  font-family: 'Bebas Neue';
+  color: #FF6D6D;
   text-transform: uppercase;
-  font-weight: 900; }
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+.agency-page-heading:after {
+  content: '';
+  color: #FFFFFF;
+  width: 70%;
+  height: 5px;
+  background: #181818;
+  position: absolute;
+  top: -5px;
+  left: 15%; }
 
 .agency-container {
   display: -ms-flexbox;
@@ -2048,53 +2038,44 @@ contact-field {
   position: absolute;
   top: 88%; }
 
-.inside-scoop {
+.agency-inside-scoop {
   margin-top: 15%; }
 
-.inside-scoop-img {
+.agency-inside-scoop-img {
   height: 70px; }
 
-.email {
+.agency-email {
   width: 210px;
   height: 30px;
   border: 2px solid #F76F70;
   background: transparent; }
 
-.subscribe-img {
+.agency-subscribe-img {
   height: 50px; }
 
-.performing-heading {
-  margin-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.performing-heading .performing-info {
+.art-page-heading {
+  border: 5px solid #FFFFFF;
+  width: 25%;
+  margin: 0 auto;
   text-align: center;
-  width: 40%;
-  border: 10px solid #292722;
-  padding: 0px 15px 15px 15px;
-  z-index: 1; }
-
-.performing-heading .performing-info .hidden-line {
-  font-size: 28px;
-  margin-top: -20px;
-  background-color: #181818;
-  color: #181818;
-  display: inline-block;
-  text-transform: uppercase; }
-
-.performing-title {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 40pt;
-  color: #FFFFFF;
+  padding: 50px;
+  position: relative;
+  font-family: 'Bebas Neue';
+  color: #FF6D6D;
   text-transform: uppercase;
-  font-weight: 900;
-  font-family: 'Helvetica'; }
+  display: block;
+  font-size: 2em;
+  font-weight: bold; }
+
+.art-page-heading:after {
+  content: '';
+  color: #FFFFFF;
+  width: 70%;
+  height: 5px;
+  background: #181818;
+  position: absolute;
+  top: -5px;
+  left: 15%; }
 
 .performing-background-img {
   width: 100%;

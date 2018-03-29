@@ -5,15 +5,7 @@ export default class PerformingArtsApp extends Component {
 	render() {
 		return (
 		<div>
-			<div className='performing-heading'>
-				<div className='performing-background-img'>
-				</div>
-				<div className='performing-info'>
-					<h1 className='hidden-line'>Using text to Hidden Line </h1>
-					<p className='performing-title'>Performing Arts</p>
-				</div>
-			</div>
-
+			<h1 className="art-page-heading">Performing Arts</h1>
 			<div className='about-us-contact'>
 				<div className='inside-scoop'>
 					<div className='inside-scoop'>
