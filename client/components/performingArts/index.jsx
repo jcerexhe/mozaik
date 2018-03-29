@@ -14,7 +14,6 @@ export default class PerformingArtsApp extends Component {
 				</div>
 			</div>
 
-			
 			<div className='about-us-contact'>
 				<div className='inside-scoop'>
 					<div className='inside-scoop'>
