@@ -6,6 +6,7 @@ export default class PerformingArtsApp extends Component {
 		return (
 		<div>
 			<h1 className="art-page-heading">Performing Arts</h1>
+			<img className='performing-background' src="https://res.cloudinary.com/mozaik/image/upload/v1522218659/study-areas/Performing_arts.png" />
 			<div className='about-us-contact'>
 				<div className='inside-scoop'>
 					<div className='inside-scoop'>
