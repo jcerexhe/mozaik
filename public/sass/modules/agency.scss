@@ -1,35 +1,32 @@
-.agency-heading {
-  margin-bottom: 30px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.agency-heading .agency-info{
-  text-align: center; 
-    width: 50%;
-    border: 10px solid white;
-    padding: 0px 15px 15px 15px;
-}
-
-.agency-heading .agency-info .hidden-line {
-    font-size: 28px;
-    margin-top: -20px;
-    background-color: #181818;
-    color: #181818;
-    display: inline-block;
+.agency-page-heading {
+    border: 5px solid #FFFFFF;
+    width: 60%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    font-family: 'Bebas Neue';
+    color: #FF6D6D;
     text-transform: uppercase;
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 
-.agency-title {
-  margin-top:5px;
-  margin-bottom: 30px;
-  font-size: 20pt;
-  color: #F76F70;
-  text-transform: uppercase;
-  font-weight: 900;
+.agency-page-heading:after {
+    content: '';
+    color: #FFFFFF;
+    width: 70%;
+    height: 5px;
+    background: #181818;
+    position: absolute;
+    top: -5px;
+    left: 15%;
 }
-
 .agency-container{
   display:flex;
   flex-direction: column;
@@ -801,21 +798,21 @@
     top: 88%;
 }
 
-.inside-scoop{
+.agency-inside-scoop{
   margin-top: 15%;
 }
 
-.inside-scoop-img {
+.agency-inside-scoop-img {
   height: 70px;
 }
 
-.email {
+.agency-email {
   width: 210px;
   height: 30px;
   border: 2px solid #F76F70;
   background: transparent;
 }
 
-.subscribe-img{
+.agency-subscribe-img{
   height: 50px;
 }

@@ -5,12 +5,7 @@ export default class AboutApp extends Component {
 	render() {
 		return (
 		<div>
-			<div className='about-heading'>
-				<div className='about-info'>
-					<h1 className='hidden-line'>Using text to Hidden Line </h1>
-					<p className='about-title'>About us</p>
-				</div>
-			</div>
+			<h1 className="about-page-heading">About Us</h1>
 			<div className="display-about-us">
 				<div className='about-image'>
 				</div>
@@ -37,13 +32,11 @@ export default class AboutApp extends Component {
 				</div>
 			</div>
 			<div className='about-us-contact'>
-				<div className='inside-scoop'>
-					<div className='inside-scoop'>
-					<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-					<input className='email' placeholder="Email" />
+				<div className='about-inside-scoop'>
+					<img className='about-inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
+					<input className='about-email' placeholder="Email" />
 					<br/>
-					<img className='subscribe-img' src='/images/buttons/subscribe.png' />
-				</div>
+					<img className='about-subscribe-img' src='/images/buttons/subscribe.png' />
 				</div>
 			</div>
 		</div>

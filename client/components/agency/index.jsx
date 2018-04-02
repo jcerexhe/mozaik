@@ -5,12 +5,7 @@ export default class AgencyApp extends Component {
 	render() {
 		return (
 		<div>
-			<div className='agency-heading'>
-				<div className='agency-info'>
-					<h1 className='hidden-line'>Using text to Hidden Line </h1>
-					<p className='agency-title'>You make the decision<br/>We help you with the rest</p>
-				</div>
-			</div>
+			<h1 className='agency-page-heading'>You make the decision<br/>We help you with the rest</h1>
 			<div className="agency-container">				
 				<div className='agency-image'>
 				</div>
@@ -188,13 +183,11 @@ export default class AgencyApp extends Component {
 					<img src="/images/buttons/Get-started.png" />
 				</div>
 				<div className='agency-contact'>
-					<div className='inside-scoop'>
-						<div className='inside-scoop'>
-							<img className='inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-							<input className='email' placeholder="Email"/>
+					<div className='agency-inside-scoop'>
+							<img className='agency-inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
+							<input className='agency-email' placeholder="Email"/>
 							<br/>
-							<img className='subscribe-img' src='/images/buttons/subscribe.png' />
-						</div>
+							<img className='agency-subscribe-img' src='/images/buttons/subscribe.png' />
 					</div>
 				</div>
 			</div>				
