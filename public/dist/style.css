@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* latest */
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -2099,18 +2100,19 @@ contact-field {
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 30px;
-  z-index: 1; }
+  z-index: 1;
+  border-top: none; }
 
-.art-page-heading:after {
-  content: '';
-  color: #181818;
-  width: 70%;
-  height: 10px;
-  background: #FFFFFF;
-  position: absolute;
-  top: -10px;
-  left: 15%; }
-
+/*.art-page-heading:after {
+    content: '';
+    color: #181818;
+    width: 70%;
+    height: 10px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    left: 15%;
+}*/
 .performing-background > img {
   width: 100%;
   background-size: 100% 100%;
@@ -2151,21 +2153,39 @@ contact-field {
   letter-spacing: 1px; }
 
 .careers-container {
-  height: 190vh;
+  height: 215vh;
   /*https://uigradients.com/*/
   background: linear-gradient(to left, #3c1053 20%, #4389A2 90%), linear-gradient(to right, #3c1053 20%, #4389A2 90%);
   position: relative;
   margin-top: 9%; }
 
-.careers-container > p {
+.careers-container > h1 {
   text-align: center;
-  font-size: 100px;
-  font-family: 'Bebas Neue';
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Gotham Bold';
   font-weight: bold;
-  color: #181818; }
+  color: #181818;
+  font-size: 15vw;
+  opacity: .6; }
 
-.careers > p {
-  text-align: center; }
+.careers > ul.careers-lists {
+  text-align: center;
+  list-style-type: circle; }
+
+ul.careers-lists > li {
+  display: inline-block;
+  margin-left: 20px; }
+
+ul.careers-lists > li:before {
+  content: '\2022';
+  position: relative;
+  font-size: 2em;
+  font-weight: bold;
+  top: 2px;
+  right: 10px;
+  color: white;
+  list-style-position: inside; }
 
 .careers-link {
   text-decoration: none;
@@ -2174,17 +2194,53 @@ contact-field {
   font-weight: bold;
   font-family: 'Bebas Neue';
   font-size: 20px;
-  letter-spacing: 1px;
-  padding: 0px; }
+  letter-spacing: 1px; }
 
-teacher-img {
-  background-color: red; }
+.alumni {
+  margin-top: 10%; }
+
+.alumni-qoute {
+  position: absolute;
+  left: 70%; }
+
+.alumni-qoute > p {
+  font-family: 'Bebas Neue';
+  color: #FFFFFF;
+  font-size: 5vh; }
+
+.alumni-image {
+  width: 50vw;
+  background-color: red;
+  height: 30vh;
+  margin-left: 10%;
+  margin-right: 20px; }
+
+.alumni-content {
+  padding-top: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-right: 10%; }
+
+.alumni-name, .alumni-degree {
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  padding: 0;
+  margin: 0; }
 
 .enquire-img {
-  margin-left: auto; }
+  margin-top: 5%;
+  margin-bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
-.art-contact {
-  margin-top: 10%;
+.performing-art-contact {
+  margin-top: -3%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
@@ -2193,25 +2249,16 @@ teacher-img {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
-.inside-scoop-img {
-  height: 70px; }
+.performing-art-inside-scoop-img {
+  height: 100px; }
 
-.email {
-  width: 210px;
-  height: 20px;
+.performing-art-email {
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.subscribe-img {
-  height: 50px; }
-
-.dot-circle {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border-radius: 50%; }
 
 #nav {
   position: absolute;
