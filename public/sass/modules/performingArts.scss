@@ -75,7 +75,7 @@
 }
 
 .careers-container{
-  height: 200vh;
+  height: 190vh;
    /*https://uigradients.com/*/
   background:
     linear-gradient(to left, #3c1053 20%, #4389A2 90%), 
@@ -104,13 +104,9 @@
   font-family: 'Bebas Neue';
   font-size: 20px;
   letter-spacing: 1px;
+  padding: 0px;
 }
 
-.fa-circle{
-  color: white;
-  font-size:48px;
-  z-index: 3;
-}
 
 teacher-img{
   background-color: red;  
@@ -118,6 +114,11 @@ teacher-img{
 
 .teacher-content{
   
+}
+
+
+.enquire-img{
+  margin-left: auto;
 }
 
 .art-contact{
@@ -146,4 +147,13 @@ teacher-img{
 
 .subscribe-img{
   height: 50px;
+}
+
+.dot-circle{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+  
+   
 }
