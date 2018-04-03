@@ -179,15 +179,15 @@ export default class ArtworkApp extends Component {
             </div>
             <div className="art-box">
               <div className="art-box-2">
-                <div className="art-box-2-img">
+                <div className="art-box-2-img right">
                   { this.renderImg(images, 3) }
                 </div>
-                <div className="art-box-2-img">
-                  { this.renderImg(images, 4) }
+                <div className="art-box-2-img left">
+                  { this.renderImg(images, 5) }
                 </div>
               </div>
               <div className="art-box-2-diagonal">
-                { this.renderImg(images, 5) }
+                { this.renderImg(images, 4) }
               </div>
             </div>
             <div className="art-box-last">

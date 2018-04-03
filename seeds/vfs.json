@@ -651,6 +651,80 @@
   ],
   "artworks": [
     {
+      "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
+      "name": "Final Perspective Vehicle",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "Fernanda Munoz",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
+      "name": "Character Prosthetic Makeup",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
+      "name": "It's Not A Diary It's A Movie",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
+      "name": "Final Establishing Shot",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "Ana Karen Zamudio Soberanes",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca001_luccamedeiros_estabilishingshot_f",
+      "name": "Establishing Shot",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "Lucca Medeiros",
+      "disciplines": [
+        "Animation",
+        "Concept Art",
+        "Drawing"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
+      "name": "Beauty Fantasy Competition Makeup",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
+      "name": "Supernatural",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+
+    {
       "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
       "name": "Deadzone",
       "school_name": "Vancouver Film School (VFS)",
@@ -670,16 +744,7 @@
         "Performing Arts"
       ]
     },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
-      "name": "It's Not A Diary It's A Movie",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
+
     {
       "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
       "name": "Shortland Street",
@@ -691,54 +756,10 @@
       ]
     },
     {
-      "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
-      "name": "Final Perspective Vehicle",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "Fernanda Munoz",
-      "disciplines": [
-        "Animation",
-        "Concept Art",
-        "Drawing"
-      ]
-    },
-
-    {
       "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
       "name": "Character Variation Hero",
       "school_name": "Vancouver Film School (VFS)",
       "artist": "Jiyeon Han",
-      "disciplines": [
-        "Animation",
-        "Concept Art",
-        "Drawing"
-      ]
-    },
-        {
-      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
-      "name": "Supernatural",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Animation Concept Art/aca001_luccamedeiros_estabilishingshot_f",
-      "name": "Establishing Shot",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "Lucca Medeiros",
-      "disciplines": [
-        "Animation",
-        "Concept Art",
-        "Drawing"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
-      "name": "Final Establishing Shot",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "Ana Karen Zamudio Soberanes",
       "disciplines": [
         "Animation",
         "Concept Art",
@@ -756,26 +777,7 @@
         "Drawing"
       ]
     },
-    {
-      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
-      "name": "Beauty Fantasy Competition Makeup",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Makeup",
-        "Design"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
-      "name": "Character Prosthetic Makeup",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Makeup",
-        "Design"
-      ]
-    },
+
     {
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup",
       "name": "Human-Character Prosthetic Makeup",

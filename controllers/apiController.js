@@ -58,6 +58,7 @@ exports.courses = async (req, res) => {
           });
           schools = School.find({ slug: { $in: schoollist } });
           foundSchools = await schools.populate('school');
+          console.log(foundSchools.length);
         }else{
           foundSchools =[];
         }
