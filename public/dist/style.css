@@ -2113,7 +2113,18 @@ contact-field {
     top: -10px;
     left: 15%;
 }*/
-.performing-background > img {
+/*.performing-background img.header-colored{
+  width: 100%;
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  top: 0px;
+  position: absolute;
+  
+
+}*/
+.performing-background img.header-original {
   width: 100%;
   background-size: 100% 100%;
   background-position-y: 20%;
