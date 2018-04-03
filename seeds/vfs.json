@@ -691,16 +691,6 @@
       ]
     },
     {
-      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
-      "name": "Supernatural",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
       "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
       "name": "Final Perspective Vehicle",
       "school_name": "Vancouver Film School (VFS)",
@@ -711,6 +701,7 @@
         "Drawing"
       ]
     },
+
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
       "name": "Character Variation Hero",
@@ -720,6 +711,16 @@
         "Animation",
         "Concept Art",
         "Drawing"
+      ]
+    },
+        {
+      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
+      "name": "Supernatural",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
       ]
     },
     {

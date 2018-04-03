@@ -3019,8 +3019,6 @@ ul.careers-lists > li:before {
 .art-box-img {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: 200%;
   cursor: pointer; }
 
 .art-box-img:hover {
@@ -3086,9 +3084,10 @@ ul.careers-lists > li:before {
       .artwork-container .art-box-last .art-box-3 .art-box-3-img {
         border: 1px solid #fff;
         width: 100%;
-        background-position: center;
-        background-size: 200%;
         border: 2px solid #fff; }
+        .artwork-container .art-box-last .art-box-3 .art-box-3-img .art-box-img {
+          background-position: right;
+          background-size: 170%; }
 
 .artworks {
   overflow: hidden; }

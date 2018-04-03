@@ -148,7 +148,7 @@ export default class ArtworkApp extends Component {
     // console.log(parseInt(i));
     console.log(img.length);
     return(
-        <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[0].thumb +')'}}>
+        <div onClick={ () => this.openLightbox(i) } className="art-box-img" style={{backgroundImage: 'url('+ img[i].thumb +')'}}>
 
         </div>
       );
@@ -165,14 +165,14 @@ export default class ArtworkApp extends Component {
           { artworks.length > 0 ? this.renderLightbox() : <div /> }
             <div className="art-box">
               <div className="art-box-1">
-                { this.renderImg(allImages, 0) }
+                { this.renderImg(images, 0) }
               </div>  
               <div className="art-box-1">
                 <div className="art-box-1-img">
-                  { this.renderImg(allImages, 1) }
+                  { this.renderImg(images, 1) }
                 </div>
                 <div className="art-box-1-img">
-                  { this.renderImg(allImages, 2) }
+                  { this.renderImg(images, 2) }
                 </div>
               </div>
               
@@ -180,20 +180,20 @@ export default class ArtworkApp extends Component {
             <div className="art-box">
               <div className="art-box-2">
                 <div className="art-box-2-img">
-                  { this.renderImg(allImages, 3) }
+                  { this.renderImg(images, 3) }
                 </div>
                 <div className="art-box-2-img">
-                  { this.renderImg(allImages, 4) }
+                  { this.renderImg(images, 4) }
                 </div>
               </div>
               <div className="art-box-2-diagonal">
-                { this.renderImg(allImages, 5) }
+                { this.renderImg(images, 5) }
               </div>
             </div>
             <div className="art-box-last">
               <div className="art-box-3">
                 <div className="art-box-3-img">
-                  { this.renderImg(allImages, 6) }
+                  { this.renderImg(images, 6) }
                 </div>
               </div>
             </div>
