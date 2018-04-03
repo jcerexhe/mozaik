@@ -3044,10 +3044,16 @@ ul.careers-lists > li:before {
       height: 50%;
       display: -ms-flexbox;
       display: flex; }
+      .artwork-container .art-box .art-box-1 .art-box-img {
+        background-position: center;
+        background-size: 100%; }
       .artwork-container .art-box .art-box-1 .art-box-1-img {
         width: 50%;
         height: 100%;
         border: 1px solid #fff; }
+        .artwork-container .art-box .art-box-1 .art-box-1-img .art-box-img {
+          background-position: center;
+          background-size: 100%; }
     .artwork-container .art-box .art-box-2 {
       width: 100%;
       height: 100%;
@@ -3060,20 +3066,23 @@ ul.careers-lists > li:before {
       .artwork-container .art-box .art-box-2 .art-box-2-img {
         width: 100%;
         height: 100%; }
+        .artwork-container .art-box .art-box-2 .art-box-2-img .art-box-img {
+          background-size: 130%;
+          background-position: left; }
     .artwork-container .art-box .art-box-2-diagonal {
       border: 2px solid #fff;
       border-left: 3px solid #fff;
       border-right: 3px solid #fff;
       width: 40%;
       height: 100%;
-      background-color: yellow;
       z-index: 0;
       position: absolute;
       left: 28%;
       -ms-transform: skew(-33deg);
-          transform: skew(-33deg);
-      background-position: center;
-      background-size: 200%; }
+          transform: skew(-33deg); }
+      .artwork-container .art-box .art-box-2-diagonal .art-box-img {
+        background-size: 130%;
+        background-position: left; }
   .artwork-container .art-box-last {
     width: 20%; }
     .artwork-container .art-box-last .art-box-3 {
@@ -3086,8 +3095,8 @@ ul.careers-lists > li:before {
         width: 100%;
         border: 2px solid #fff; }
         .artwork-container .art-box-last .art-box-3 .art-box-3-img .art-box-img {
-          background-position: right;
-          background-size: 170%; }
+          background-position: center;
+          background-size: 150%; }
 
 .artworks {
   overflow: hidden; }
