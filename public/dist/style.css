@@ -1172,6 +1172,7 @@ input[type=text]::placeholder {
   height: 10vh; }
 
 .about-us-contact {
+  margin-top: -3%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
@@ -1180,19 +1181,16 @@ input[type=text]::placeholder {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
 .about-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .about-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.about-subscribe-img {
-  height: 50px; }
 
 .partner-page-heading {
   border: 5px solid #FFFFFF;
@@ -1333,6 +1331,7 @@ contact-field {
   height: 10vh; }
 
 .partner-contact {
+  margin-top: -3%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
@@ -1341,19 +1340,16 @@ contact-field {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
 .partner-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .partner-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.partner-subscribe-img {
-  height: 50px; }
 
 .agency-page-heading {
   border: 5px solid #FFFFFF;
@@ -2070,19 +2066,16 @@ contact-field {
   top: 88%; }
 
 .agency-inside-scoop {
-  margin-top: 15%; }
+  margin-top: 10%; }
 
 .agency-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .agency-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.agency-subscribe-img {
-  height: 50px; }
 
 .art-page-heading {
   border: 10px solid #181818;
