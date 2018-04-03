@@ -1,7 +1,7 @@
 {
   "school": {
     "name": "Full Sail University (FSU)",
-    "short_name":"FSU",
+    "short_name": "FSU",
     "website": "https://www.fullsail.edu/",
     "disciplines": [
     	"Music & Recording",
@@ -1902,9 +1902,156 @@
   ],
   "artworks": [
     {
-      "image": "",
-      "name": "",
-      "artist": "",
+      "image": "FSU/student_work/andres-castaneda-beautyshot",
+      "name": "Beauty Shot",
+      "artist": "Andres Castaneda",
+      "disciplines": [
+      ]
+    },
+     {
+      "image": "FSU/student_work/Screen_Shot_2018-02-20_at_3.53.24_PM",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/Screen_Shot_2018-02-20_at_3.57.26_PM_1",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/Screen_Shot_2018-02-20_at_4.11.00_PM",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_nrupopdNTV1rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_nspw8k7hHH1rb8rhso3_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_ntgcfmCRxX1rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_nuqmgcurrE1rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_nwzsa8XIQM1rb8rhso3_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_nxkk630WKH1rb8rhso3_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o5iyag8pSW1rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o6axauhTur1rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o7ne1kUyAG1rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o8ixk7HN0S1rb8rhso3_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o9a8bv5AUf1rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o9a8jnHi1x1rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_o9fr4yMHAN1rb8rhso1_400",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_od3d9a0M7k1rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_oklqjscMer1rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_ouc0wg8ll51rb8rhso1_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_ouc0wg8ll51rb8rhso2_1280",
+      "name": "NoName",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "FSU/student_work/tumblr_ouc0wg8ll51rb8rhso3_1280",
+      "name": "NoName",
+      "artist": "NoName",
       "disciplines": [
       ]
     }

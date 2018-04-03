@@ -42,6 +42,7 @@ export default class DiscoverApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      foundation: false,
       certificate: false,
       diploma: false,
       advancedDiploma: false,
@@ -51,6 +52,8 @@ export default class DiscoverApp extends Component {
       master: false,
       phd: false,
       priceRange: [0, 200000],
+      onCampus: false,
+      online: false,
       city: '',
       state: '',
       country: ''
@@ -66,7 +69,8 @@ export default class DiscoverApp extends Component {
 
   render() {
     const { priceRange, university, state, country } = this.state;
-    const quals = ['certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
+    const quals = ['foundation','certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
+    const site = ['on campus', 'online'];
     const inputs = ['city', 'state', 'country'];
     return (
       <div className="map">
@@ -111,6 +115,23 @@ export default class DiscoverApp extends Component {
               dotStyle={ dotStyle }
               marks={ { 0: <strong>$0</strong>, 200000: <strong>$200,000+</strong> } }
             />
+          
+            <div id='sites' className='discover-checkboxes control-group'>
+              { _.map(site, (s, i) => {
+                return (
+                  <label className='control control--checkbox' key={ i }>
+                    <input
+                      name={ s }
+                      type="checkbox"
+                      checked={ this.state[s] }
+                      onChange={ () => this.updateSearchParam(s, !this.state[s]) } />
+                    <div className='control__indicator' />
+                    { s }
+                  </label>
+                );
+              }) }
+            </div>
+
             <h3>LOCATION</h3>
             { _.map(inputs, (inp) => {
               return (
