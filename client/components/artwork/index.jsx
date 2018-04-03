@@ -143,10 +143,12 @@ export default class ArtworkApp extends Component {
     this.setState({ images });
   }
 
-  renderImg(img){
-    let imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+  renderImg(img, i){
+    // let imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+    // console.log(parseInt(i));
+    console.log(img.length);
     return(
-        <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}>
+        <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[0].thumb +')'}}>
 
         </div>
       );
@@ -154,7 +156,7 @@ export default class ArtworkApp extends Component {
 
   render() {
     const { artworks } = this.props;
-    const { disciplineList, disciplines, images } = this.state;
+    const { disciplineList, disciplines, images, allImages } = this.state;
 
     return (
       <div className='grey-bg'>
@@ -163,28 +165,35 @@ export default class ArtworkApp extends Component {
           { artworks.length > 0 ? this.renderLightbox() : <div /> }
             <div className="art-box">
               <div className="art-box-1">
-                { this.renderImg(images) }
+                { this.renderImg(allImages, 0) }
               </div>  
               <div className="art-box-1">
-                { this.renderImg(images) }
+                <div className="art-box-1-img">
+                  { this.renderImg(allImages, 1) }
+                </div>
+                <div className="art-box-1-img">
+                  { this.renderImg(allImages, 2) }
+                </div>
               </div>
               
             </div>
             <div className="art-box">
               <div className="art-box-2">
-                { this.renderImg(images) }
+                <div className="art-box-2-img">
+                  { this.renderImg(allImages, 3) }
+                </div>
+                <div className="art-box-2-img">
+                  { this.renderImg(allImages, 4) }
+                </div>
               </div>
               <div className="art-box-2-diagonal">
-                { this.renderImg(images) }
+                { this.renderImg(allImages, 5) }
               </div>
             </div>
-            <div className="art-box">
+            <div className="art-box-last">
               <div className="art-box-3">
                 <div className="art-box-3-img">
-                  { this.renderImg(images) }
-                </div>
-                <div className="art-box-3-img" >
-                  { this.renderImg(images) }
+                  { this.renderImg(allImages, 6) }
                 </div>
               </div>
             </div>
