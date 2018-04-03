@@ -15,31 +15,59 @@ block content
     .school-logo
       img(src=school.logo)
     .school-overview
-      .details-box
-        h2 overview
-        p=school.overview
-        h3 campus location
-        ul
-            each loc in school.locations
-              li=loc.campus
-        h3 delivery
-        ul
-            each delivery in school.delivery
-              li=delivery
+      if school.slug == 'full-sail-university-fsu'
+        .details-box(style={'height': '1000px'})
+          h2 overview
+          p=school.overview
+          h3 campus location
+          ul
+              each loc in school.locations
+                li=loc.campus
+          h3 delivery
+          ul
+              each delivery in school.delivery
+                li=delivery
+      else
+        .details-box
+          h2 overview
+          p=school.overview
+          h3 campus location
+          ul
+              each loc in school.locations
+                li=loc.campus
+          h3 delivery
+          ul
+              each delivery in school.delivery
+                li=delivery
     .school-fees
-      .details-box
-        h2 fees scholarship
-        h3 price range
-        ul
-          each price in school.prices
-            li
-              =`${price.type}:`
-              br
-              =`AUD ${price.lower} - AUD ${price.upper}`
-        h3 scholarship
-        ul
-          each scholarship in school.scholarships
-            li=scholarship
+      if school.slug == 'full-sail-university-fsu'
+        .details-box(style={'height': '1000px'})
+          h2 fees scholarship
+          h3 price range
+          ul
+            each price in school.prices
+              li
+                =`${price.type}:`
+                br
+                =`AUD ${price.lower} - AUD ${price.upper}`
+          h3 scholarship
+          ul
+            each scholarship in school.scholarships
+              li=scholarship
+      else
+        .details-box
+          h2 fees scholarship
+          h3 price range
+          ul
+            each price in school.prices
+              li
+                =`${price.type}:`
+                br
+                =`AUD ${price.lower} - AUD ${price.upper}`
+          h3 scholarship
+          ul
+            each scholarship in school.scholarships
+              li=scholarship
     .school-links
         .school-link
           a(href='#' onclick="eForm()" class='btn')

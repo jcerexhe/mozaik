@@ -731,10 +731,10 @@ input[type=text]::placeholder {
       justify-content: space-between;
   -ms-flex-align: top;
       align-items: top;
-  height: 100vh;
+  /* height: 100vh; */
   text-align: center;
   position: relative;
-  background-size: 100%;
+  background-size: cover;
   background-position: center; }
   .school-overview-container .scroll-down {
     position: absolute;

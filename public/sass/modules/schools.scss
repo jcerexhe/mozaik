@@ -96,10 +96,10 @@
   display: flex;
   justify-content: space-between;
   align-items: top;
-  height: 100vh;
+  /* height: 100vh; */
   text-align: center;
   position:relative;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 
   .scroll-down{
@@ -161,7 +161,7 @@
     top: -70px;
     padding-top: 40px;
     padding-bottom: 20px;
-    height: 580px;
+    height: 580px; 
 
     p{
       padding: 0 30px;
