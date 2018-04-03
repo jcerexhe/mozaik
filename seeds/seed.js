@@ -16,6 +16,7 @@ const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
 const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
 const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
 const vfs = JSON.parse(fs.readFileSync(__dirname + '/vfs.json', 'utf-8'));
+const fsu = JSON.parse(fs.readFileSync(__dirname + '/fsu.json', 'utf-8'));
 
 const _ait = new School(ait.school);
 const _aitAlumni = _.map(ait.alumni, (alum) => {
@@ -82,6 +83,24 @@ const _vfsCourses = _.map(vfs.courses, (course) => {
 const _vfsArtwork = _.map(vfs.artworks, (artwork) => {
   let _artwork = new Artwork(artwork);
   _artwork.school = _vfs._id;
+  return _artwork;
+});
+
+
+const _fsu = new School(fsu.school);
+const _fsuAlumni = _.map(fsu.alumni, (alum) => {
+  let _alum = new Alumni(alum);
+  _alum.school = _fsu._id;
+  return _alum;
+});
+const _fsuCourses = _.map(fsu.courses, (course) => {
+  let _course = new Course(course);
+  _course.school = _fsu._id;
+  return _course;
+});
+const _fsuArtwork = _.map(fsu.artworks, (artwork) => {
+  let _artwork = new Artwork(artwork);
+  _artwork.school = _fsu._id;
   return _artwork;
 });
 
@@ -160,6 +179,21 @@ async.series([
    }, (err) => {
      if(err) console.log(err);
      callback(null, 'SUCCESS - FINISHED SEEDING VFS DATA');
+   });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving fsu course');
+    async.eachSeries([_fsu].concat(_fsuAlumni).concat(_fsuCourses).concat(_fsuArtwork), (fsuItem, fsuItemSavedCb) =>  {
+      fsuItem.save().then(() => {
+        fsuItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        fsuItemSavedCb(); 
+      });
+   }, (err) => {
+     if(err) console.log(err);
+     callback(null, 'SUCCESS - FINISHED SEEDING FSU DATA');
    });
   },
 ], function(err, results) {
