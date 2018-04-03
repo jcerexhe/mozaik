@@ -654,7 +654,7 @@
       "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
       "name": "Deadzone",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Acting",
         "Performing Arts"
@@ -664,7 +664,7 @@
       "image": "VFS/student_work/Acting Essintials/VFS_Everyone",
       "name": "Everyone",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Acting",
         "Performing Arts"
@@ -674,7 +674,7 @@
       "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
       "name": "It's Not A Diary It's A Movie",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Acting",
         "Performing Arts"
@@ -684,17 +684,7 @@
       "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
       "name": "Shortland Street",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
-      "name": "Supernatural",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Acting",
         "Performing Arts"
@@ -711,6 +701,7 @@
         "Drawing"
       ]
     },
+
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
       "name": "Character Variation Hero",
@@ -720,6 +711,16 @@
         "Animation",
         "Concept Art",
         "Drawing"
+      ]
+    },
+        {
+      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
+      "name": "Supernatural",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
       ]
     },
     {
@@ -759,7 +760,7 @@
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
       "name": "Beauty Fantasy Competition Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Makeup",
         "Design"
@@ -769,7 +770,7 @@
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
       "name": "Character Prosthetic Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Makeup",
         "Design"
@@ -779,7 +780,7 @@
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup",
       "name": "Human-Character Prosthetic Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Makeup",
         "Design"

@@ -1172,6 +1172,7 @@ input[type=text]::placeholder {
   height: 10vh; }
 
 .about-us-contact {
+  margin-top: -3%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
@@ -1180,19 +1181,16 @@ input[type=text]::placeholder {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
 .about-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .about-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.about-subscribe-img {
-  height: 50px; }
 
 .partner-page-heading {
   border: 5px solid #FFFFFF;
@@ -1333,6 +1331,7 @@ contact-field {
   height: 10vh; }
 
 .partner-contact {
+  margin-top: -3%;
   width: 100%;
   height: 450px;
   background-image: url(/images/patterns/partoffooter.png);
@@ -1341,19 +1340,16 @@ contact-field {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
 .partner-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .partner-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.partner-subscribe-img {
-  height: 50px; }
 
 .agency-page-heading {
   border: 5px solid #FFFFFF;
@@ -2070,19 +2066,16 @@ contact-field {
   top: 88%; }
 
 .agency-inside-scoop {
-  margin-top: 15%; }
+  margin-top: 10%; }
 
 .agency-inside-scoop-img {
-  height: 70px; }
+  height: 100px; }
 
 .agency-email {
-  width: 210px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
-
-.agency-subscribe-img {
-  height: 50px; }
 
 .art-page-heading {
   border: 10px solid #181818;
@@ -3026,8 +3019,6 @@ ul.careers-lists > li:before {
 .art-box-img {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: 200%;
   cursor: pointer; }
 
 .art-box-img:hover {
@@ -3041,7 +3032,7 @@ ul.careers-lists > li:before {
   background-color: blue;
   height: 50vh; }
   .artwork-container .art-box {
-    width: 33.33%;
+    width: 40%;
     border: 1px solid #fff;
     display: -ms-flexbox;
     display: flex;
@@ -3050,14 +3041,25 @@ ul.careers-lists > li:before {
     position: relative; }
     .artwork-container .art-box .art-box-1 {
       border: 2px solid #fff;
-      height: 50%; }
+      height: 50%;
+      display: -ms-flexbox;
+      display: flex; }
+      .artwork-container .art-box .art-box-1 .art-box-1-img {
+        width: 50%;
+        height: 100%;
+        border: 1px solid #fff; }
     .artwork-container .art-box .art-box-2 {
       width: 100%;
       height: 100%;
       border: 2px solid #fff;
       border-left: 0;
       background-position: center;
-      background-size: 100%; }
+      background-size: 100%;
+      display: -ms-flexbox;
+      display: flex; }
+      .artwork-container .art-box .art-box-2 .art-box-2-img {
+        width: 100%;
+        height: 100%; }
     .artwork-container .art-box .art-box-2-diagonal {
       border: 2px solid #fff;
       border-left: 3px solid #fff;
@@ -3067,22 +3069,25 @@ ul.careers-lists > li:before {
       background-color: yellow;
       z-index: 0;
       position: absolute;
-      left: 34%;
+      left: 28%;
       -ms-transform: skew(-33deg);
           transform: skew(-33deg);
       background-position: center;
       background-size: 200%; }
-    .artwork-container .art-box .art-box-3 {
+  .artwork-container .art-box-last {
+    width: 20%; }
+    .artwork-container .art-box-last .art-box-3 {
       height: 100%;
       width: 100%;
       display: -ms-flexbox;
       display: flex; }
-      .artwork-container .art-box .art-box-3 .art-box-3-img {
+      .artwork-container .art-box-last .art-box-3 .art-box-3-img {
         border: 1px solid #fff;
-        width: 50%;
-        background-position: center;
-        background-size: 200%;
+        width: 100%;
         border: 2px solid #fff; }
+        .artwork-container .art-box-last .art-box-3 .art-box-3-img .art-box-img {
+          background-position: right;
+          background-size: 170%; }
 
 .artworks {
   overflow: hidden; }
