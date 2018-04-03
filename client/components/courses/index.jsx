@@ -9,7 +9,9 @@ export default class CoursesApp extends Component {
     this.state = {
       disciplines: ['all areas'],
       digitalMedia: ['2D/3D Animation', '3D Design', 'AR/VR', 'Computer Graphics', 'Digital Design', 'Digital Media', 'Games Design', 'Motion Graphics', 'Visual Effects (VFX)', 'Web Design'],
-
+      visualComm: ['Advertising Design', 'Design', 'Graphic Design', 'Illustration', 'Packaging & Branding', 'Photography', 'Typography', 'Visual Arts', 'Visual Communication', 'Web Design',],
+      fineArts: ['2D/3D Art', 'Ceramics', 'Drawing', 'Fine Arts', 'Glass Design', 'Jewellery Design', 'Metalsmithing', 'Painting', 'Sculpture', 'Wood Design'],
+      filmAudio: ['Cinematography', 'Directing', 'Editing', 'Film/TV', 'Music for Screen', 'Producing', 'Production Design', 'Radio', 'Screenwriting', 'Sound Design'],
       activeCourses: props.courses
     };
   }
@@ -53,19 +55,10 @@ export default class CoursesApp extends Component {
         <div className="study-areas-box">
           <h1>study areas</h1>
           <div className="study-areas">
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area1.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3 className="padding">digital media</h3>
               <div className="disciplines">
                 <p>
-                {
-                  // <ul>
-                  //   <li><a href="#">digital design</a></li>
-                  //   <li><a href="#">digital design</a></li>
-                  //   <li><a href="#">digital design</a></li>
-                  //   <li><a href="#">digital design</a></li>
-                  //   <li><a href="#">digital design</a></li>
-                  // </ul> 
-                }
                   <Filter
                     filterItems={ this.state.digitalMedia }
                     activeItems={ disciplines }
@@ -75,28 +68,58 @@ export default class CoursesApp extends Component {
                 </p>
               </div>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area2.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287645/study-areas/pexels-photo-433617.jpg")'}}>
               <h3 >visual communication</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.visualComm }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area3.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287447/study-areas/pexels-photo-262034.jpg")'}}>
               <h3 className="padding">fine arts</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.fineArts }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>              
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area4.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287352/study-areas/chris-murray-563843-unsplash.jpg")'}}>
               <h3 className="padding">film/tv/audio</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.filmAudio }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>    
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area5.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287493/study-areas/pexels-photo-415307.jpg")'}}>
               <h3 className="padding">performing arts</h3>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area6.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
               <h3 className="padding">design</h3>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area7.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
               <h3 className="padding">photography</h3>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area8.jpeg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
               <h3 className="padding">built environment</h3>
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/areas/area9.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3>business for creatives</h3>
             </div>
           </div>

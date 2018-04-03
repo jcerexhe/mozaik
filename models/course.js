@@ -39,7 +39,6 @@ const courseSchema = new Schema({
   }],
   image: {
     type: String,
-    required: 'Please provide an image for the course.',
   },
   intakes: String,
   school: {

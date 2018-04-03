@@ -646,6 +646,7 @@ input[type=text]::placeholder {
   /* background-color: $grey; */
   background-color: blue;
   background-size: cover;
+  background-position: bottom;
   width: 100%; }
 
 .school-heading {
@@ -732,7 +733,9 @@ input[type=text]::placeholder {
       align-items: top;
   height: 100vh;
   text-align: center;
-  position: relative; }
+  position: relative;
+  background-size: 100%;
+  background-position: center; }
   .school-overview-container .scroll-down {
     position: absolute;
     bottom: -25px;
@@ -770,7 +773,8 @@ input[type=text]::placeholder {
       margin-bottom: 15px;
       border: 3px solid #FFFFFF;
       border-radius: 0;
-      background: #000; }
+      background: #000;
+      letter-spacing: 0px; }
   .school-overview-container .details-box {
     background-color: white;
     width: 100%;
@@ -822,7 +826,7 @@ input[type=text]::placeholder {
     width: 11.11%;
     border: 1px solid #FFFFFF;
     background-size: cover;
-    backgroun-position: 100% 150%;
+    background-position: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -883,7 +887,8 @@ input[type=text]::placeholder {
     background-color: red; }
   .other-section .alumni {
     width: 33.33%;
-    background-color: blue; }
+    background-color: blue;
+    margin: 0 !important; }
   .other-section .other-section-box {
     width: 100%;
     height: 60vh;
@@ -3071,8 +3076,8 @@ ul.careers-lists > li:before {
           background-position: left; }
     .artwork-container .art-box .art-box-2-diagonal {
       border: 2px solid #fff;
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
+      border-left: 4px solid #fff;
+      border-right: 4px solid #fff;
       width: 40%;
       height: 100%;
       z-index: 0;
@@ -3091,12 +3096,12 @@ ul.careers-lists > li:before {
       display: -ms-flexbox;
       display: flex; }
       .artwork-container .art-box-last .art-box-3 .art-box-3-img {
-        border: 1px solid #fff;
-        width: 100%;
-        border: 2px solid #fff; }
+        width: 100%; }
         .artwork-container .art-box-last .art-box-3 .art-box-3-img .art-box-img {
           background-position: center;
-          background-size: 150%; }
+          background-size: 150%;
+          border: 3px solid #fff;
+          border-left: 1px solid #fff; }
 
 .artworks {
   overflow: hidden; }

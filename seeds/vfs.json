@@ -58,7 +58,9 @@
     "delivery": [ "On Campus" ],
     "logo": "VFS/VFS_logo",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "VFS/mike-benna-570243-unsplash",
+    "header_image_2": "VFS/school_gallery/VFS_Green_Screen_Room"
   },
   "courses": [
     {

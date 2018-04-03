@@ -1,7 +1,7 @@
 extends layouts/layout
 
 block content
-  .school-heading-container(style={'background-image': 'url('+ school.facilitiesImages[0] +')'})
+  .school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
     .school-heading
       .school-info
         //- img(src=school.logo)
@@ -10,7 +10,7 @@ block content
         img(src="/images/buttons/playvideo.png")
   .student-work
     !=Lightbox
-  .school-overview-container(style={'background-image': 'url('+ school.facilitiesImages[1] +')'})
+  .school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
     img.scroll-down(src="/images/buttons/Scroll-Down.png")
     .school-logo
       img(src=school.logo)

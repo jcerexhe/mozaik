@@ -146,9 +146,15 @@ export default class ArtworkApp extends Component {
   renderImg(img, i){
     // let imgIndex = Math.floor(Math.random() * Math.floor(img.length));
     // console.log(parseInt(i));
+    let imgIndex;
+    if(img.length >= 7){
+      imgIndex = i;
+    }else{
+      imgIndex = 0;
+    }
     console.log(img.length);
     return(
-        <div onClick={ () => this.openLightbox(i) } className="art-box-img" style={{backgroundImage: 'url('+ img[i].thumb +')'}}>
+        <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}>
 
         </div>
       );
