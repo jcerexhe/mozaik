@@ -15,18 +15,30 @@
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 30px;
+    border-top: none;
 }
 
+.agency-page-heading:before {
+    content: '';
+    color: #FFFFFF;
+    width: 20%;
+    height: 5px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
 .agency-page-heading:after {
     content: '';
     color: #FFFFFF;
-    width: 70%;
+    width: 20%;
     height: 5px;
-    background: #181818;
+    background: #FFFFFF;
     position: absolute;
     top: -5px;
-    left: 15%;
+    right: -5px;
 }
+
 .agency-container{
   display:flex;
   flex-direction: column;

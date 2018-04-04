@@ -8,24 +8,34 @@
     text-align: center;
     padding: 50px;
     position: relative;
-    
     font-family: 'Bebas Neue';
     color: #FF6D6D;
     text-transform: uppercase;
     display: block;
     font-size: 2em;
     font-weight: bold;
+    border-top: none;
 }
 
+.partner-page-heading:before {
+    content: '';
+    color: #FFFFFF;
+    width: 20%;
+    height: 5px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
 .partner-page-heading:after {
     content: '';
     color: #FFFFFF;
-    width: 70%;
+    width: 20%;
     height: 5px;
-    background: #181818;
+    background: #FFFFFF;
     position: absolute;
     top: -5px;
-    left: 15%;
+    right: -5px;
 }
 
 .display-partner{
