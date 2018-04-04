@@ -14,6 +14,9 @@ export default class CoursesApp extends Component {
       filmAudio: ['Cinematography', 'Directing', 'Editing', 'Film/TV', 'Music for Screen', 'Producing', 'Production Design', 'Radio', 'Screenwriting', 'Sound Design'],
       performArts: ['Acting', 'Choreography', 'Costume Design', 'Dance', 'Drama', 'Live Production', 'Music', 'Performing Arts', 'Playwriting', 'Singing'],
       design: ['Colour Design', 'Design', 'Digital Design', 'Fashion Design', 'Games Design', 'Graphic Design', 'Industrial Design', 'Interior Design', 'Textile Design', 'UX/UI'],
+      photography: ['Art Photography', 'Commercial Photography', 'Digital Imaging', 'Documentary Photography', 'Fashion Photography', 'Photography', 'Photography Design', 'Photojournalism', 'Photomedia', 'Visual Communication'],
+      builtEnvironment: ['Architecture', 'Building Design', 'Built Environment', 'Digital Architecture', 'Interior Decoration', 'Interior Design', 'Spatial Design', 'Staging', 'Styling', 'Urban Design'],
+      businessCreative: ['Arts Management', 'Creative Leadership', 'Event Management', 'Fashion Business', 'Finance for Creative Industries', 'Live Production', 'Marketing for Entertainment Business', 'Music Business', 'Screen Business','Stage Management'],
       activeCourses: props.courses
     };
   }
@@ -140,7 +143,7 @@ export default class CoursesApp extends Component {
               <div className="disciplines">
                 <p>
                   <Filter
-                    filterItems={ this.state.performArts }
+                    filterItems={ this.state.photography }
                     activeItems={ disciplines }
                     onClick={ (val) => this.updateDiscipline(val) }
                     isHome={true}
@@ -150,9 +153,29 @@ export default class CoursesApp extends Component {
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
               <h3 className="padding">built environment</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.builtEnvironment }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3>business for creatives</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.businessCreative }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>
             </div>
           </div>
         </div>

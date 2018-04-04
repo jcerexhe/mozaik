@@ -828,12 +828,12 @@ input[type=text]::placeholder {
           padding: 2px;
           display: block; }
           .study-areas-box .study-areas .area-box .disciplines ul li .filter-btn {
-            padding: 2px 8px;
+            padding: 0px 8px;
             margin: 0;
             text-decoration: none;
             color: #000;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 10px;
             font-family: 'Bebas Neue';
             letter-spacing: 1px; }
     .study-areas-box .study-areas .area-box .disciplines:hover {

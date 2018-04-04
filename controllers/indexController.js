@@ -55,13 +55,14 @@ exports.schoolArtwork = (req, res) => {
 
 exports.schoolDetails = (req, res) => {
   const school = res.locals.school;
+  const artworks = school.artworks;
   // choose number of images to show: 20
   const Lightbox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: school.artworks.slice(0, 20) });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
   const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
-  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses });
+  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses, artworks });
 };
 
 exports.schoolCourses = (req, res) => {
