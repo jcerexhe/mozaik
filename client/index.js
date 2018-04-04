@@ -29,3 +29,4 @@ reactHelper.register({ AboutApp });
 reactHelper.register({ AgencyApp });
 reactHelper.register({ PartnerApp });
 reactHelper.register({ PerformingArtsApp });
+
