@@ -1080,17 +1080,28 @@ input[type=text]::placeholder {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-top: none; }
+
+.about-page-heading:before {
+  content: '';
+  color: #FFFFFF;
+  width: 20%;
+  height: 5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -5px;
+  left: -5px; }
 
 .about-page-heading:after {
   content: '';
   color: #FFFFFF;
-  width: 70%;
+  width: 20%;
   height: 5px;
-  background: #181818;
+  background: #FFFFFF;
   position: absolute;
   top: -5px;
-  left: 15%; }
+  right: -5px; }
 
 .display-about-us {
   display: -ms-flexbox;
@@ -1351,17 +1362,28 @@ contact-field {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-top: none; }
+
+.agency-page-heading:before {
+  content: '';
+  color: #FFFFFF;
+  width: 20%;
+  height: 5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -5px;
+  left: -5px; }
 
 .agency-page-heading:after {
   content: '';
   color: #FFFFFF;
-  width: 70%;
+  width: 20%;
   height: 5px;
-  background: #181818;
+  background: #FFFFFF;
   position: absolute;
-  top: -5px;
-  left: 15%; }
+  top: -20px;
+  right: -20px; }
 
 .agency-container {
   display: -ms-flexbox;
