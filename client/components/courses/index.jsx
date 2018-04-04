@@ -13,6 +13,7 @@ export default class CoursesApp extends Component {
       fineArts: ['2D/3D Art', 'Ceramics', 'Drawing', 'Fine Arts', 'Glass Design', 'Jewellery Design', 'Metalsmithing', 'Painting', 'Sculpture', 'Wood Design'],
       filmAudio: ['Cinematography', 'Directing', 'Editing', 'Film/TV', 'Music for Screen', 'Producing', 'Production Design', 'Radio', 'Screenwriting', 'Sound Design'],
       performArts: ['Acting', 'Choreography', 'Costume Design', 'Dance', 'Drama', 'Live Production', 'Music', 'Performing Arts', 'Playwriting', 'Singing'],
+      design: ['Colour Design', 'Design', 'Digital Design', 'Fashion Design', 'Games Design', 'Graphic Design', 'Industrial Design', 'Interior Design', 'Textile Design', 'UX/UI'],
       activeCourses: props.courses
     };
   }
@@ -123,9 +124,29 @@ export default class CoursesApp extends Component {
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
               <h3 className="padding">design</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.design }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
               <h3 className="padding">photography</h3>
+              <div className="disciplines">
+                <p>
+                  <Filter
+                    filterItems={ this.state.performArts }
+                    activeItems={ disciplines }
+                    onClick={ (val) => this.updateDiscipline(val) }
+                    isHome={true}
+                  />
+                </p>
+              </div>
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
               <h3 className="padding">built environment</h3>
