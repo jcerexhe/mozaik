@@ -48,6 +48,26 @@ export default class CoursesApp extends Component {
     this.setState({ activeCourses });
   }
 
+  enableTile(area, disciplinesList){
+    const { school } = this.props;
+    const { disciplines } = this.state;
+    if(school.study_areas.includes(area)){
+      return(
+        <div className="disciplines">
+          <p>
+            <Filter
+              filterItems={ disciplinesList }
+              activeItems={ disciplines }
+              onClick={ (val) => this.updateDiscipline(val) }
+              isHome={true}
+            />
+          </p>
+        </div>
+
+        )
+    }
+  }
+
   render() {
     const { courses, school } = this.props;
     const { disciplines, activeCourses } = this.state;
@@ -62,120 +82,39 @@ export default class CoursesApp extends Component {
           <div className="study-areas">
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3 className="padding">digital media</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.digitalMedia }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Digital Media", this.state.digitalMedia)}
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287645/study-areas/pexels-photo-433617.jpg")'}}>
               <h3 >visual communication</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.visualComm }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Visual Communication", this.state.visualComm)}
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287447/study-areas/pexels-photo-262034.jpg")'}}>
               <h3 className="padding">fine arts</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.fineArts }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>              
+              {this.enableTile("Fine Arts", this.state.fineArts)}             
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287352/study-areas/chris-murray-563843-unsplash.jpg")'}}>
               <h3 className="padding">film/tv/audio</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.filmAudio }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>    
+              {this.enableTile("Film/TV/Audio", this.state.filmAudio)}     
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287493/study-areas/pexels-photo-415307.jpg")'}}>
               <h3 className="padding">performing arts</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.performArts }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Film/TV/Audio", this.state.performArts)}  
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
               <h3 className="padding">design</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.design }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Design", this.state.design)} 
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
               <h3 className="padding">photography</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.photography }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Photography", this.state.photography)} 
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
               <h3 className="padding">built environment</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.builtEnvironment }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Built Environment", this.state.builtEnvironment)} 
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3>business for creatives</h3>
-              <div className="disciplines">
-                <p>
-                  <Filter
-                    filterItems={ this.state.businessCreative }
-                    activeItems={ disciplines }
-                    onClick={ (val) => this.updateDiscipline(val) }
-                    isHome={true}
-                  />
-                </p>
-              </div>
+              {this.enableTile("Business for Creatives", this.state.businessCreative)}
             </div>
           </div>
         </div>

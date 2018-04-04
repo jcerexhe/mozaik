@@ -13,6 +13,14 @@
     	"Business",
     	"Sports"
     ],
+    "study_areas": [
+      "Visual Communication",
+      "Digital Media",
+      "Film/TV/Audio",
+      "Design",
+      "Photography",
+      "Business for Creatives"
+    ],
     "overview": "Full Sail University offers campus and online degree programs that are designed for the world of entertainment, media, arts, and technology. Offering associate's, bachelor's, and master's degrees, Full Sail's approach is centered on real-world industry experience and creative problem-solving.",
     "prices": [{
       "type": "Domestic students",

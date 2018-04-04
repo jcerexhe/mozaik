@@ -27,6 +27,7 @@ const schoolSchema = new Schema({
     validate: [validator.isURL, 'Invalid website URL.'],
   },
   disciplines: [String],
+  study_areas: [String],
   courseGuide: String,
   overview: {
     type: String,
