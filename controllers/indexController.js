@@ -6,14 +6,15 @@ const Course = mongoose.model('Course');
 
 exports.home = (req, res) => {
   const Hero = reactHelper.renderComponent('HeroApp');
+  let allArt = [];
 
   School.find().then(schools => {
     if (schools) {
-      let lightboxes = schools.map(school =>{
-        let Lightbox = reactHelper.renderComponent('ArtworkApp', { search: true, artworks: school.artworks});
-        return Lightbox
+      schools.forEach(school =>{
+        allArt = allArt.concat(school.artworks);
       });
-      res.render('home', { Hero, lightboxes, schools });
+      let Lightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
+      res.render('home', { Hero, Lightbox });
     }
   })
 

@@ -24,21 +24,17 @@ export default class HeroApp extends Component {
       currentSlide: 0,
       slides: [
         {
-          heading: 'mozaik play',
+          heading: '',
+          headingImg: "/images/MozaikPlay.png",
           text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
           video: true,
           styles: {
-            h1:{ 
-              color: 'white',
-              fontFamily: 'Verdana', 
-              margin: '0.5em 0',
-              textTransform: 'lowercase',
-              fontSize: '6.5em',
-              width: '2.7em',
-              lineHeight: '1'
-              /* border-top: 10px solid #FF6D6D; */
-              /* border-bottom: 10px solid #FF6D6D; */
+            h1:{
+              margin: '0',
+              position: 'relative',
+              width: '35%',
+              height: '20vw'
             }
           }
         },
@@ -48,9 +44,7 @@ export default class HeroApp extends Component {
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1521860091/tumblr_o6axauhTur1rb8rhso2_1280_tzqrw8.jpg',
           video: false,
           styles: {
-            h1:{
-             color: '#FF6D6D',
-            }
+            h1:{}
           }
         },
         {
@@ -64,10 +58,7 @@ export default class HeroApp extends Component {
           },
           styles: {
             h1:{
-              color: 'black',
-              margin: '0.5em 0px',
-              textTransform: 'uppercase',
-              fontSize: '4em',
+              color: '#082A3E',
               width: '8em',
               lineHeight: '1'
             }
@@ -122,7 +113,7 @@ export default class HeroApp extends Component {
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
                   </ReactModal>
                   <div className="slide-text">
-                    <h1 style={slide.styles.h1}>{ slide.heading }</h1>
+                    { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}</h1> }
                     <p>{ slide.text }</p>
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
@@ -154,6 +145,7 @@ export default class HeroApp extends Component {
           </a>
         </div>*/}
       </div>
+
     );
   }
 }
