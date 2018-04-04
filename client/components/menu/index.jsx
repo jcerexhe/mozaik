@@ -16,6 +16,7 @@ export default class MenuApp extends Component {
             { url: '#', val: 'study areas' },
             { url: '#', val: 'education agency' },
             { url: '#', val: 'sign up' }
+            { url: '#', val: 'test' }
           ]
         },
         {
