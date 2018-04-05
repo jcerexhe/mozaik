@@ -26,7 +26,8 @@ export default class HeroApp extends Component {
         {
           heading: '',
           headingImg: "/images/MozaikPlay.png",
-          text: "Deciding what to study is tricky. We'll help you find the right course in the creative industry.",
+          text: "Deciding what to study is tricky. We'll help",
+          br:"you find the right course in the creative industry.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
           video: true,
           styles: {
@@ -34,22 +35,29 @@ export default class HeroApp extends Component {
               margin: '0',
               position: 'relative',
               width: '35%',
-              height: '20vw'
+              height: '20vw',
+              bottom: '20px'
             }
           }
         },
         {
           heading: 'Let the student work do the talking.',
-          text: "Search for courses by comparing the work of students from creative schools.",
+          text: "Search for courses by comparing the work",
+          br:"of students from creative schools.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1521860091/tumblr_o6axauhTur1rb8rhso2_1280_tzqrw8.jpg',
           video: false,
+          cta: {
+            text: 'Start Searching',
+            link: '#'
+          },
           styles: {
             h1:{}
           }
         },
         {
           heading: 'Personalised application support',
-          text: "From enquiry to enrolment... and throughout your whole student journey.",
+          text: "From enquiry to enrolment...",
+          br:"and throughout your whole student journey.",
           background: 'http://res.cloudinary.com/mozaik/image/upload/v1521860341/kim-carpenter-307030-unsplash_tpekck.jpg',
           video: false,
           cta: {
@@ -114,7 +122,9 @@ export default class HeroApp extends Component {
                   </ReactModal>
                   <div className="slide-text">
                     { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}</h1> }
+                    <br/><br/>
                     <p>{ slide.text }</p>
+                    <p>{ slide.br }</p>
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
