@@ -15,6 +15,13 @@
       "Digital Design",
       "Graphic Design"
     ],
+    "study_areas": [
+      "Visual Communication",
+      "Digital Media",
+      "Film/TV/Audio",
+      "Design",
+      "Performing Arts"
+    ],
     "overview": "VFS, founded in 1987, offers preparatory and advanced programs for students to gain more experience in creative arts, film and television world. Through its notable alumni, VFS has achieved international recognition.",
     "prices": [{
       "type": "Domestic students",
@@ -39,8 +46,8 @@
           "lng": -123.1207
         },
         "type":"Point",
-        "country": "Canada",
-        "campus": "Vancouver"
+        "country": "CANADA",
+        "campus": "VANCOUVER"
       }
     ],
     "facilitiesDescription": "VFS consist of eight state-of-the-art campuses offer lots of workshop and production spaces, green screen room, film sets, studios, screening rooms, theatres, and 24/7 access to computer labs with industry-standard software.",
