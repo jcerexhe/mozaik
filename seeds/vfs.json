@@ -24,7 +24,12 @@
       "upper": 53250,
       "lower": 10500
     }],
-    "scholarships": ["VFS Search Scholarship:  CAD 500 - CAD 10,000","VFS Full Writing Scholarship (Latin America): full tuition fee","VFS + TEC Scholarship: full or half one-year tuition fee","VFS + CasAzul Scholarship: full tuition fee","Brandon Flock Scholarship:  CAD 5,000 - CAD 10,000","VFS-VSB Awards: full one-year tuition fee","VFS-UFV Acting Scholarship: full one-year tuition fee"
+    "scholarships": [
+      "International students:  Not available",
+      "Domestic students: VFS Indigenous Ambassador Award for Acting & Film Production:",
+      "2 awards of fully paid tuiton towards Acting for Film + Television 1-years diploma program awarded to 1",
+      "2 awards of $10,000 towards tuition in Acting for Film + Television 1-year diploma program",
+      "2 awards of $5,000 towards tuition in Acting Essentials 4-month certificate program"
 ],  "locationDescription": "VFS is located in the heart of Vancouver Downtown.",
     "locations": [
       {
@@ -70,7 +75,7 @@
       "campus": ["Vancouver"
       ],
       "length": "4 months | 2 year accelerated",
-      "intakes": "January | February | April | June | August | October",
+      "intakes": "February | April | June | August | October | December",
       "prices": [
         {
           "type": "Domestic students",
@@ -81,10 +86,9 @@
           "fees": 10500
         }
       ],
-      "specialisations": [
-        "Acting",
-        "Improvisation",
-        "Movement"
+      "qualifications": [
+        "Certificate",
+        "Foundation"
       ],
       "disciplines": [
         "Performing Arts",
@@ -98,7 +102,7 @@
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
       "school_name": "Vancouver Film School (VFS)",
-      "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work. ",
+      "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work.",
       "campus": ["Vancouver"
       ],
       "length": "12 months",
@@ -113,39 +117,30 @@
           "fees": 30500
         }
       ],
-      "specialisations": [
-        "Acting",
-        "Voice",
-        "Improvisation",
-        "Movement"
+      "qualifications": [
+        "Foundation"
       ],
       "disciplines": [
         "Digital Media",
-        "Acting",
-        "Performance Art",
-        "Audition",
-        "Voice Techniques",
-        "Voice Coaching",
-        "Voice Acting",
-        "Movement",
-        "Text Analysis",
-        "TV",
-        "Film",
-        "Audio",
-        "Improvisation",
-        "Critical Sensibility",
-        "Sitcom",
-        "Drama",
-        "Motion Capture",
-        "Green Screen",
-        "Audition"
+        "Visual Art",
+        "Design",
+        "Visual Media",
+        "2D Composition",
+        "Film Making",
+        "Documentary",
+        "Writing",
+        "Drawing",
+        "Motion Graphics",
+        "Animation",
+        "Video",
+        "Visual Art"
       ],
       "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
     },
     {
       "name": "ACTING FOR FILM + TELEVISION",
       "school_name": "Vancouver Film School (VFS)",
-      "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range. ",
+      "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range.",
       "campus": ["Vancouver"
       ],
       "length": "12 months",
@@ -160,11 +155,8 @@
           "fees": 30500
         }
       ],
-      "specialisations": [
-        "Acting",
-        "Voice",
-        "Improvisation",
-        "Movement"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -207,12 +199,8 @@
           "fees": 53250
         }
       ],
-      "specialisations": [
-        "Directing",
-        "Cinematography",
-        "Producing",
-        "Production Design",
-        "Post-Production"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -265,11 +253,8 @@
           "fees": 46750
         }
       ],
-      "specialisations": [
-        "Makeup",
-        "Hairstyling",
-        "3D Make Up techniques",
-        "Sculpting"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Makeup",
@@ -356,9 +341,8 @@
           "fees": 28250
         }
       ],
-      "specialisations": [
-        "Writing for Feature Films",
-        "Writing for Television"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -395,12 +379,8 @@
           "fees": 53250
         }
       ],
-      "specialisations": [
-        "3D Animation",
-        "Modelling",
-        "Visual Effects",
-        "Lighting",
-        "Texturing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -437,7 +417,7 @@
       "campus": ["Vancouver"
       ],
       "length": "12 months",
-      "intakes": "February | June | October",
+      "intakes": "June | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -448,11 +428,8 @@
           "fees": 33500
         }
       ],
-      "specialisations": [
-        "Animation",
-        "Visual Concepts",
-        "Concept Art",
-        "Drawing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -486,11 +463,8 @@
           "fees": 30500
         }
       ],
-      "specialisations": [
-        "Animation",
-        "Storytelling",
-        "Digital Art",
-        "Drawing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -525,22 +499,24 @@
           "fees": 42250
         }
       ],
-      "specialisations": [
-        "Interactive User Experience Design",
-        "Motion Design"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
-        "Digital Media", "Design",
+        "Digital Media", 
+        "Design",
         "3D Graphics",
         "Typography",
         "Screen Media",
         "Interactive Design",
         "Motion Design",
-        "Digital Design", "2D Animation", 
+        "Digital Design",
+        "2D Animation", 
         "3D Design",
         "Motion Graphics", 
         "Game Design", 
-        "Multimedia", "Digital Imaging",
+        "Multimedia",
+        "Digital Imaging",
         "Digital images",
         "Computer Graphics",
         "Graphic Design",
@@ -566,7 +542,7 @@
       "campus": ["Vancouver"
       ],
       "length": "12 months",
-      "intakes": "January | April | October",
+      "intakes": "April | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -577,10 +553,8 @@
           "fees": 49250
         }
       ],
-      "specialisations": [
-        "Game Art",
-        "Game Programming",
-        "Unity"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -621,12 +595,8 @@
           "fees": 49250
         }
       ],
-      "specialisations": [
-        "Game Development",
-        "Web Development",
-        "C++",
-        "Object Oriented Programming",
-        "Java"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
