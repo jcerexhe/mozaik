@@ -2306,7 +2306,8 @@ ul.careers-lists > li:before {
 
 .navbar {
   height: 100px;
-  padding: 0 3vw;
+  padding-left: 20px;
+  /*padding: 0 3vw;*/
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -2317,15 +2318,15 @@ ul.careers-lists > li:before {
   position: relative; }
 
 .navbar > .logo {
-  text-align: center;
+  /*text-align: center;*/
   /* border: 5px solid white; */
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  /*-ms-flex-item-align: center;*/
+  /*-ms-grid-row-align: center;*/
+  /*align-self: center;*/
   height: inherit;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: calc(100px + 45px);
-  padding-left: 45px; }
+  /*padding-left: 45px;*/ }
 
 .navbar > .logo > a {
   text-align: center;
@@ -2354,6 +2355,7 @@ ul.careers-lists > li:before {
   color: #FF6D6D; }
 
 .navbar .links {
+  margin-right: 50px;
   margin-top: 200px;
   display: -ms-flexbox;
   display: flex;
@@ -2557,6 +2559,7 @@ ul.careers-lists > li:before {
   /* padding-top: 100px; */
   background-size: cover;
   /* background-position: 0 -200px; */
+  z-index: 1;
   height: 100vh !important;
   background-position: center; }
 
@@ -2574,7 +2577,7 @@ ul.careers-lists > li:before {
 .slide-text {
   color: #FFFFFF;
   position: absolute;
-  top: 50%;
+  top: 55%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
   width: calc(100% - 80px); }
@@ -2593,10 +2596,15 @@ ul.careers-lists > li:before {
   top: 0; }
 
 .slider-body > .slide-text > p {
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-transform: none;
   font-family: 'Bebas Neue';
-  width: 50%; }
+  width: 50%;
+  padding: 0;
+  margin: 0; }
+
+.slide-text .text {
+  margin-top: 10%; }
 
 .slider-body > .video-div {
   position: absolute;
@@ -2624,7 +2632,28 @@ ul.careers-lists > li:before {
   padding: 0.5em 1em;
   border: 0.2em solid #FF6D6D;
   border-radius: 0;
-  font-size: 2.25vw; }
+  font-size: 2.25vw;
+  border-top: none; }
+
+.slider-body > .btn:before {
+  content: '';
+  color: #F76F70;
+  width: 20%;
+  height: 5px;
+  background: #F76F70;
+  position: absolute;
+  top: -5px;
+  left: -5px; }
+
+.slider-body > .btn:after {
+  content: '';
+  color: #F76F70;
+  width: 20%;
+  height: 5px;
+  background: #F76F70;
+  position: absolute;
+  top: -5px;
+  right: -5px; }
 
 .modal-close-button {
   text-align: center;
@@ -2677,20 +2706,23 @@ ul.careers-lists > li:before {
 .dot {
   position: absolute;
   color: #FFFFFF;
-  right: 3vw;
+  right: 4vw;
   top: 50%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
   border: 0.2vw solid #FFFFFF;
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
 
 .dot > img {
   -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
   height: 3vw;
-  width: 3vw;
-  margin: 1vw;
-  padding-top: .15vw; }
+  width: 2vw;
+  position: relative;
+  left: 1vw;
+  top: .2vw; }
 
 #search {
   position: relative;
