@@ -2306,7 +2306,8 @@ ul.careers-lists > li:before {
 
 .navbar {
   height: 100px;
-  padding: 0 3vw;
+  padding-left: 20px;
+  /*padding: 0 3vw;*/
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -2317,15 +2318,15 @@ ul.careers-lists > li:before {
   position: relative; }
 
 .navbar > .logo {
-  text-align: center;
+  /*text-align: center;*/
   /* border: 5px solid white; */
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  /*-ms-flex-item-align: center;*/
+  /*-ms-grid-row-align: center;*/
+  /*align-self: center;*/
   height: inherit;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: calc(100px + 45px);
-  padding-left: 45px; }
+  /*padding-left: 45px;*/ }
 
 .navbar > .logo > a {
   text-align: center;
