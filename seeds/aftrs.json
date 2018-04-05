@@ -17,7 +17,13 @@
       "Screenwriting",
       "Sound"
     ],
-    "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. Their purpose is to empower Australian talent to shape and share their stories with the world by delivering future-focused, industry-relevant education and research. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
+    "study_areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+    ],
+    "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
     "prices": [{
       "type": "Domestic students",
       "upper": 49440,
@@ -64,7 +70,9 @@
     ],
     "logo": "AFTRS/AFTRS_logos",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "AFTRS/facilities/AFTRS_front_building",
+    "header_image_2": "AFTRS/facilities/AFTRS_Studio"
   },
   "courses": [
     {
@@ -82,13 +90,8 @@
           "fees": 39888
         }
       ],
-      "specialisations": [
-        "Story",
-        "Image",
-        "Sound",
-        "Character & Performance",
-        "Rhythm & Juxtaposition",
-        "Screen Business"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Film",
@@ -119,6 +122,7 @@
         "Character Performance",
         "Multimedia",
         "Transmedia",
+        "Animation",
         "Screen Business"
       ],
       "image": "AFTRS/courses/B_Arts_Screen_Prod"
@@ -138,17 +142,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Animation",
-        "Cinematography",
-        "Directing",
-        "Documentary",
-        "Editing",
-        "Producing",
-        "Production Design",
-        "Music",
-        "Screenwriting",
-        "Sound"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -205,11 +200,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "VFX",
-        "3D Animation"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -242,11 +234,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Art of VFX",
-        "Compositing",
-        "Computer Graphics",
-        "2D Matte Painting"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -280,10 +269,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Visual Expression"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -322,9 +309,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Framing",
-        "Lighting"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -344,9 +330,9 @@
         "Clapper",
         "Framing",
         "Lighting",
-        "Gaffer",
-        "Grip",
         "Steadicam Operator"
+        "Gaffer",
+        "Grip"        
       ],
       "image": "AFTRS/courses/Dipl_in_Camera"
     },
@@ -366,10 +352,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Grading Principles",
-        "Grading Practice",
-        "Creative Grading"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -400,10 +384,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Cinematography Practice",
-        "Visual Expression"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -428,7 +410,7 @@
     {
       "name": "Master of Arts Screen: Directing",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The iam of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
+      "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The aim of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
       "campus": [
         "Sydney"
       ],
@@ -440,11 +422,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Directorial Vision",
-        "Research and Development",
-        "Screen Language"
+      "qualifications": [
+        "Masters"
       ],
       "disciplines": [
         "Film",
@@ -453,7 +432,6 @@
         "Screen Production",
         "Directing",
         "Filmmaking",
-        "Cinematography",
         "Screen Performance",
         "Documentary",
         "Cinematic Storytelling",
@@ -479,10 +457,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Storytelling Structures",
-        "Cinematic Principles",
-        "Performance"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -504,7 +480,7 @@
     {
       "name": "Master of Arts Screen: Documentary",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. Your will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
+      "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. You will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
       "campus": [
         "Sydney"
       ],
@@ -516,10 +492,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Directorial Vision"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -547,9 +521,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Documentary",
-        "Collaborative Practice"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -577,11 +550,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Continuity",
-        "Coverage",
-        "Temp Music and Sound"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -613,10 +583,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Sound Editing",
-        "Avid Composer"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -648,9 +616,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Factual Form Storytelling",
-        "Technical Editing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "TV",
@@ -678,10 +645,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Non-linear Editing",
-        "Collaborative Practice"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -712,11 +677,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Story Development",
-        "Leadership and Strategy",
-        "Entrepreneurship"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -737,7 +699,16 @@
         "Production Management",
         "Media Production",
         "Audience Engagement",
-        "Screen Management"
+        "Screen Management",
+        "Entrepreneurship",
+        "Marketing for Creatives",
+        "Audience Engagement",
+        "Reaching Audiences",
+        "Strategic PLanning",
+        "Distribution",
+        "Intellectual Property",
+        "Entertainment Business",
+        "Business Finance"
       ],
       "image": "AFTRS/courses/Mast_Arts_Screen-_Producing"
     },
@@ -756,11 +727,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Story Structure",
-        "Intellectual Property",
-        "Finance Plans",
-        "Marketing and Audience"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -797,10 +765,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Digital Visualisation"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -834,10 +800,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Design Principles",
-        "Design Skills",
-        "Design Practices"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -870,10 +834,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Screen Culture"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -906,10 +868,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Understanding Story",
-        "Crafting Story",
-        "Visual Language"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -941,9 +901,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Creative Writing",
-        "Genre, Format and Development"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "TV",
@@ -972,10 +931,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Screenwriting Principles",
-        "Script Development",
-        "Script Editing"
+      "qualificatons": [
+        "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -1003,10 +960,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Storytelling Principles", 
-        "Incubator",
-        "Collaborative Practice"
+      "qualifications": [
+        "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -1037,10 +992,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Screen Culture"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -1077,10 +1030,8 @@
           "fees": 12360
         }
       ],
-      "specialisations": [
-        "Screen Music Practice",
-        "Composition Workshop",
-        "Music Technologies"
+      "qualifications": [
+       "Graduate Certificate"
       ],
       "disciplines": [
         "Film",
@@ -1117,10 +1068,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Cinematic Storytelling",
-        "Research and Development",
-        "Sound Production and Design"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Film",
@@ -1157,10 +1106,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Production Sound Principles",
-        "Production Sound Skills",
-        "Internship"
+      "qualifications": [
+       "Diploma"
       ],
       "disciplines": [
         "Film",
@@ -1196,10 +1143,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Editorial and Digital Journalism",
-        "Audio and Visual Content",
-        "Project Management"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Radio",
@@ -1228,10 +1173,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Studio Operation and Panelling",
-        "Audio Production",
-        "Announcing and Presentation"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Radio",
@@ -1262,10 +1205,8 @@
           "fees": 24720
         }
       ],
-      "specialisations": [
-        "Advanced Concepts of Radio",
-        "Reach and Relevance",
-        "Innovative Business of Radio"
+      "qualifications": [
+        "Graduate Diploma"
       ],
       "disciplines": [
         "Radio",
@@ -1296,11 +1237,8 @@
           "fees": 49440
         }
       ],
-      "specialisations": [
-        "Creative Leadership",
-        "Strategy and Finance",
-        "Entrepreneurship",
-        "Brand Management"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Screen Production",
@@ -1313,8 +1251,7 @@
         "Entrepreneurship",
         "Brand Management",
         "Freelancing",
-        "Finance for Creative",
-        "dustries",
+        "Finance for Creative Industries",
         "Marketing for Entertainment Business",
         "Fashion Business",
         "Branded Management",
@@ -1349,10 +1286,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Building a Business",
-        "Finance",
-        "Strategic Planning"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Screen Production",
@@ -1364,8 +1299,7 @@
         "Entrepreneurship",
         "Brand Management",
         "Freelancing",
-        "Finance for Creative",
-        "Industries",
+        "Finance for Creative Industries",
         "Marketing for Entertainment Business",
         "Fashion Business",
         "Branded Management",
@@ -1400,10 +1334,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Pre-Production Accounting",
-        "Production Accounting",
-        "Post-Production Accounting"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Production Accounting",
@@ -1412,8 +1344,7 @@
         "Strategy and Finance",
         "Entrepreneurship",
         "Freelancing",
-        "Finance for Creative",
-        "Industries",
+        "Finance for Creative Industries",
         "Business",
         "Screen Management",
         "Production Management"
@@ -1436,10 +1367,8 @@
           "fees": 3900
         }
       ],
-      "specialisations": [
-        "Media Production",
-        "Strategic Audience Engagement",
-        "Social Video Business"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Screen Business",
@@ -1452,7 +1381,8 @@
         "Media Production",
         "Audience Engagement",
         "Social Media",
-        "Production Management"
+        "Production Management",
+        "Digital Marketing"
       ],
       "image": "AFTRS/courses/Dipl_Social_Media"
     },
@@ -1472,9 +1402,8 @@
           "fees": 7800
         }
       ],
-      "specialisations": [
-        "Production Management",
-        "The Evolving Production Landscape"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Screen Business",
@@ -1488,10 +1417,83 @@
   ],
   "artworks": [
     {
-      "image": "placeholder_lkdjum",
-      "name": "Sample",
+      "image": "AFTRS/student_work/A_Boy_Call_Su_Vedrana_Music",
+      "name": "A Boy Call",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Sample",
+      "artist": "Su Vedrana",
+      "disciplines": [
+        "Music"
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/All_Gods_Creatures_Brendon_McDonall",
+      "name": "All Gods Creatures",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Brendon McDonall",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Birthday_Boy_Sejong_Park_2004",
+      "name": "Birthday Boy",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Sejong Park",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Culling_Kerinne_Jenkins",
+      "name": "Culling",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Kerinne Jenkins",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Emily_Benjamin_Mathews",
+      "name": "Emily",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Benjamin Mathews",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/I_am_Emmanuel_Genevieve_Clay-Smith",
+      "name": "I am Emmanuel",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Genevieve Clay-Smith",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Kharisma_Shannon_Murphy",
+      "name": "Kharisma",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Shannon Murphy",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Kiss_Kiss_Samantha_Rebillet",
+      "name": "Kiss Kiss",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Samantha Rebillet",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Like_Breathing_Production_Designer_Grace_Brown",
+      "name": "Like Breathing Production Designer",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Grace Brown",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Recon6_Blake_Fraser",
+      "name": "Recon6",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Blake Fraser",
       "disciplines": [
       ]
     }
@@ -1501,25 +1503,73 @@
       "photo": "placeholder_lkdjum",
       "name": "Jane Campion",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Diploma in Directing",
+      "profession": "Director",
+      "credits": "The Piano, The Portrait of a Lady, Holy Smoke, Bright Star"
     },
     {
       "photo": "placeholder_lkdjum",
       "name": "Andrew Lesnie",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Diploma in Cinematography",
+      "profession": "Cinematographer",
+      "credits": "The Lord of the Rings Trilogy, The Hobbi Trilogy, King Kong, The Rise of the Planet of the Apes, Babe"
     },
     {
       "photo": "placeholder_lkdjum",
       "name": "Alex Proyas",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Certificate Film & TV Cinematoraphy",
+      "profession": "Director, Screenwriter, Producer",
+      "credits": "God of Egypts, The Crow, Dark City, Knowing"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Margaret Sixel",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Editing",
+      "profession": "Editor",
+      "credits": "Mad Max: Fury Road, Happy Feet, Babe"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Gillian Armstrong",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Certificate in Directing",
+      "profession": "Director",
+      "credits": "Charlotte Gray, Oscar and Lucinda, Women He's Undressed"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Dion Beebe",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Bachelor of Arts (Cinematography)",
+      "profession": "Cinematographer",
+      "credits": "Memoirs of a Geisha, Edge of Tomorrow, Chicago, Into the Woods"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Warwick Thornton",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Bachelor of Arts (Cinematography)",
+      "profession": "Director, Screenwriter, Cinematographer",
+      "credits": "Samson & Delilah, The Sapphires, The Turning"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "P.J. Hogan",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Diploma in Scriptwriting",
+      "profession": "Director, Screenwriter",
+      "credits": "Peter Pan, My Best Friend's Wedding, The Dressmaker, Muriel's Wedding"
+    },
+    {
+      "photo": "placeholder_lkdjum",
+      "name": "Jocelyn Moorhouse",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Diploma in Directing",
+      "profession": "Director, Screenwriter",
+      "credits": "The Dressmaker, How to Make an American Quilt, Muriel's Wedding"
     }
   ]
 }
