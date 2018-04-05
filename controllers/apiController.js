@@ -100,6 +100,8 @@ exports.courses = async (req, res) => {
     case 'search': {
       const school_name = new RegExp(`.*${data.school}.*`, 'i');
       const schoollist = [];
+      var schoolCampus;
+      var schoolCountry;
       // Split - Capitalize then split into array by comma-separated values
       // e.g. 'media, games design' => ['Media', 'Games Design']
       const split_area = data.studyArea.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
@@ -107,12 +109,15 @@ exports.courses = async (req, res) => {
       var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { specialisations: { $in: split_area } }]} : {});
       var school = ((data.school.trim().length > 0) ? { school_name: school_name } : {});
       var city = ((data.city.trim().length > 0) ? { campus: { $in: split_city }} : {});
+      var campus = [];
+      campus.push(data.city.toUpperCase());
+
       q = Course.find({
         $and: [
           // { name: regex },
           school,
            dis,
-           city,
+           // city,
           // { specialisations: { $in: split_area } },.length    
           // { campus: { $in: split_city }}
         ],
@@ -121,13 +126,51 @@ exports.courses = async (req, res) => {
       console.log((data.studyArea.trim().length));
       console.log(data.studyArea);
 
-      courses = await q.populate('school', ['slug', 'locations', 'logo']);
+      const foundCourses = await q.populate('school', ['slug', 'locations', 'logo']);
+      courses=foundCourses;
+
+      if(campus[0].trim().length != 0){
+        schoolCountry = _.filter(foundCourses, (course) => {
+            let locationsArray = course.school.locations.filter((location) => campus.includes(location.country))
+            // if there are locations for this school that match the filters selected then put them in an array
+            if (locationsArray.length > 0) { return true }
+            // if any locations were put into the array for this course then add the course to the returned courses array
+            return false;
+          });
+
+        schoolCampus = _.filter(foundCourses, (course) => {
+            let locationsArray = course.school.locations.filter((location) => campus.includes(location.campus))
+            // if there are locations for this school that match the filters selected then put them in an array
+            if (locationsArray.length > 0) { return true }
+            // if any locations were put into the array for this course then add the course to the returned courses array
+            return false;
+          });
+
+          if(schoolCountry.length > 0){
+            courses = schoolCountry;
+          // }else if(schoolCampus.length > 0){
+          //   courses = schoolCampus;
+          }else{
+            if(schoolCampus.length > 0){
+              courses = schoolCampus;
+            // }else if(schoolCampus.length > 0){
+            //   courses = schoolCampus;
+            }else{
+              courses = [];
+            }
+          }
+      }
+
+
+
+
       if(courses.length > 0){
           courses.map(course => {
             if(!schoollist.includes(course.school.slug)){
               schoollist.push(course.school.slug);
             }
           });
+
           schools = School.find({ slug: { $in: schoollist } });
           foundSchools = await schools.populate('school');
         }else{
