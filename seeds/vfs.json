@@ -86,7 +86,7 @@
           "fees": 10500
         }
       ],
-      "qualification": [
+      "qualifications": [
         "Certificate",
         "Foundation"
       ],
@@ -342,8 +342,7 @@
         }
       ],
       "qualifications": [
-        "Writing for Feature Films",
-        "Writing for Television"
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -380,12 +379,8 @@
           "fees": 53250
         }
       ],
-      "specialisations": [
-        "3D Animation",
-        "Modelling",
-        "Visual Effects",
-        "Lighting",
-        "Texturing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -422,7 +417,7 @@
       "campus": ["Vancouver"
       ],
       "length": "12 months",
-      "intakes": "February | June | October",
+      "intakes": "June | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -433,11 +428,8 @@
           "fees": 33500
         }
       ],
-      "specialisations": [
-        "Animation",
-        "Visual Concepts",
-        "Concept Art",
-        "Drawing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -471,11 +463,8 @@
           "fees": 30500
         }
       ],
-      "specialisations": [
-        "Animation",
-        "Storytelling",
-        "Digital Art",
-        "Drawing"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -510,22 +499,24 @@
           "fees": 42250
         }
       ],
-      "specialisations": [
-        "Interactive User Experience Design",
-        "Motion Design"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
-        "Digital Media", "Design",
+        "Digital Media", 
+        "Design",
         "3D Graphics",
         "Typography",
         "Screen Media",
         "Interactive Design",
         "Motion Design",
-        "Digital Design", "2D Animation", 
+        "Digital Design",
+        "2D Animation", 
         "3D Design",
         "Motion Graphics", 
         "Game Design", 
-        "Multimedia", "Digital Imaging",
+        "Multimedia",
+        "Digital Imaging",
         "Digital images",
         "Computer Graphics",
         "Graphic Design",
@@ -551,7 +542,7 @@
       "campus": ["Vancouver"
       ],
       "length": "12 months",
-      "intakes": "January | April | October",
+      "intakes": "April | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -562,10 +553,8 @@
           "fees": 49250
         }
       ],
-      "specialisations": [
-        "Game Art",
-        "Game Programming",
-        "Unity"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
@@ -606,12 +595,8 @@
           "fees": 49250
         }
       ],
-      "specialisations": [
-        "Game Development",
-        "Web Development",
-        "C++",
-        "Object Oriented Programming",
-        "Java"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Digital Media",
