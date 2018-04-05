@@ -98,7 +98,7 @@ export default class CoursesApp extends Component {
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287493/study-areas/pexels-photo-415307.jpg")'}}>
               <h3 className="padding">performing arts</h3>
-              {this.enableTile("Film/TV/Audio", this.state.performArts)}  
+              {this.enableTile("Performing Arts", this.state.performArts)}  
             </div>
             <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
               <h3 className="padding">design</h3>
