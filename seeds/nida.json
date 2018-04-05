@@ -16,6 +16,12 @@
       "Staging",
       "Cultural Leadership"
     ],
+    "study_areas": [
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Built Environment",
+      "Business for Creatives"
+    ],
     "overview": "Since 1958, NIDA has educated students in performance and production for theatre, film and television. NIDA is a powerhouse for the development of Australia’s creative and cultural sector, their sought-after alumni are working all over the world on stage, on screen, behind the scenes and leading major events and organisations.",
     "prices": [
       {
@@ -45,48 +51,51 @@
     ],
     "facilitiesDescription": "NIDA is made up of a range of state-of-the-art rehearsal and performance venues including five theatres: Parade Theatre,  The Playhouse, Studio Theatre, the Space and the Atrium. The NIDA campus includes rehearsal rooms, multimedia and computer-aided design (CAD) studios, a sound stage, a lighting studio, production workshops, audio-visual facilities, and the Reg Grundy Studio film and television training and production facility.",
     "facilitiesImages": [
-      "Atrium-banner-1_lwlgch",
-      "BFA-Acting-course-842x324-3_xjaolt",
-      "BFA-Costume-course-842x324-1_iqnjry",
-      "BFA-Costume-course-842x324-2_ybg7cx",
-      "BFA-Design-for-Performance-course-842x324-1_g997w9",
-      "BFA-Design-for-Performance-course-842x324-2_m8ilhc",
-      "BFA-Design-for-Performance-course-842x324-4_d8sktm",
-      "BFA-Staging-course-842x324-3_ajdayq",
-      "BFA-Staging-course-842x324-4_mh56p4",
-      "BFA-Technical-Theatre-Stage-Management-course-842x324-2_kdubx6",
-      "Costume_yhn3oj",
-      "Diploma-Live-Production-course-842x324-3_w1ohqi",
-      "Diploma-Musical-Theatre-course-842x324-2_aovp3s",
-      "MFA-Design-for-performance-course-842x324-3_iyqbdh",
-      "MFA-Directing-course-842x324-2_n65tnp",
-      "MFA-Writing-for-performance-course-842x324-4_uentrb",
-      "nancy-fairfax-1_vu8bvi",
-      "NIDA_facade_dbrmib",
-      "NIDA_facade2_nyu6zu",
-      "NIDA_facade3_ncvosz",
-      "NNF_qofqe9",
-      "parade-studio-1_mpuswz",
-      "Parade-Theatre-banner_zidacx",
-      "playhouse1_2_ulo8fu",
-      "playhouse3_2_zyeqli",
-      "PT-Venue-Atrium7_zwdbjn",
-      "PT-Venue-Parade-Theatre_2_fphoqy",
-      "PT-Venue-Parade-Theatre2_2_o3euzq",
-      "PTVenues-Atrium2_oxtwld",
-      "PTVenues-Atrium7_zxtvsy",
-      "Reception-Room-2_2_obkbma",
-      "Rehearsal-room2_flyuo5",
-      "Rob-Kelly-Space_2_phwzh5",
-      "Studio-room3_ghc6jl",
-      "Voice-6_wspb12"
-    ],
+      "NIDA/gallery_of_pics/Atrium-banner-1",
+      "NIDA/gallery_of_pics/BFA-Acting-course-842x324-3",
+      "NIDA/gallery_of_pics/BFA-Costume-course-842x324-1",
+      "NIDA/gallery_of_pics/BFA-Costume-course-842x324-2",
+      "NIDA/gallery_of_pics/BFA-Design-for-Performance-course-842x324-1",
+      "NIDA/gallery_of_pics/BFA-Design-for-Performance-course-842x324-2",
+      "NIDA/gallery_of_pics/BFA-Design-for-Performance-course-842x324-4",
+      "NIDA/gallery_of_pics/BFA-Staging-course-842x324-3",
+      "NIDA/gallery_of_pics/BFA-Staging-course-842x324-4",
+      "NIDA/gallery_of_pics/BFA-Technical-Theatre-Stage-Management-course-842x324-2",
+      "NIDA/gallery_of_pics/Costume",
+      "NIDA/gallery_of_pics/Diploma-Live-Production-course-842x324-3",
+      "NIDA/gallery_of_pics/Diploma-Musical-Theatre-course-842x324-2",
+      "NIDA/gallery_of_pics/MFA-Design-for-performance-course-842x324-3",
+      "NIDA/gallery_of_pics/MFA-Directing-course-842x324-2",
+      "NIDA/gallery_of_pics/MFA-Directing-course-842x324-5",
+      "NIDA/gallery_of_pics/MFA-Writing-for-performance-course-842x324-4",
+      "NIDA/gallery_of_pics/nancy-fairfax-1",
+      "NIDA/gallery_of_pics/NIDA_facade",
+      "NIDA/gallery_of_pics/NIDA_facade2",
+      "NIDA/gallery_of_pics/NIDA_facade3",
+      "NIDA/gallery_of_pics/NNF",
+      "NIDA/gallery_of_pics/parade-studio-1",
+      "NIDA/gallery_of_pics/Parade-Theatre-banner",
+      "NIDA/gallery_of_pics/playhouse1_2",
+      "NIDA/gallery_of_pics/PT-Venue-Atrium7",
+      "NIDA/gallery_of_pics/PT-Venue-Parade-Theatre_2",
+      "NIDA/gallery_of_pics/PT-Venue-Parade-Theatre2_2",
+      "NIDA/gallery_of_pics/PTVenues-Atrium2",
+      "NIDA/gallery_of_pics/PTVenues-Atrium7",
+      "NIDA/gallery_of_pics/PTVenues-JamesFairfaxFoyer2_2",
+      "NIDA/gallery_of_pics/Reception-Room-2_2",
+      "NIDA/gallery_of_pics/Rehearsal-room2",
+      "NIDA/gallery_of_pics/Rob-Kelly-Space_2",
+      "NIDA/gallery_of_pics/Studio-room3",
+      "NIDA/gallery_of_pics/Voice-6"
+     ],
     "delivery": [
       "On Campus"
     ],
     "logo": "NIDA-logo_isnvfo",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "NIDA/gallery_of_pics/PTVenues-JamesFairfaxFoyer2_2",
+    "header_image_2": "NIDA/gallery_of_pics/Rehearsal-room2"
   },
   "courses": [
     {
@@ -106,11 +115,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Applied Theatre",
-        "Classical Theatre for the Contemporary Stage",
-        "Music Theatre",
-        "Physical Theatre"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Performing Arts",
@@ -123,7 +129,7 @@
         "Music Theatre",
         "Classical Theatre",
         "Voice",
-        "Charater Performance"
+        "Character Performance"
       ],
       "image": "Bach_Acting_xp6owh"
     },
@@ -146,13 +152,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Costume Construction",
-        "Tailoring",
-        "Period Cutting",
-        "Costume Management",
-        "Millinery",
-        "Leatherwork"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Performing Arts",
@@ -171,6 +172,7 @@
         "Textile Technology",
         "Theatre Costume",
         "Patternmaking",
+        "Tailoring",
         "Production Design"
       ],
       "image": "Bach_Costume_r01dds"
@@ -194,11 +196,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Sets",
-        "Props",
-        "Costumes",
-        "Lighting"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Digital Media",
@@ -238,15 +237,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Metalwork",
-        "Sculpture",
-        "Woodwork",
-        "Scenic Art",
-        "Modelling",
-        "Jewellery",
-        "Puppetry",
-        "Graphics SW"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Fine Arts",
@@ -294,10 +286,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Stage Engineering",
-        "Stage Rigging and Automation",
-        "Risk and Project Management"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Built Environment",
@@ -347,13 +337,8 @@
           "fees": 93060
         }
       ],
-      "specialisations": [
-        "Stage Management",
-        "Lighting",
-        "Audio",
-        "Technical Drawing",
-        "Video for Live Performance",
-        "Event Management"
+      "qualifications": [
+        "Bachelor"
       ],
       "disciplines": [
         "Built Environment",
@@ -363,10 +348,10 @@
         "Music Festivals",
         "Live Events",
         "Set Builders",
-        "Stage Technicians",
+        "Staging Technicians",
         "Event Management",
         "Lighting",
-        "Vieo for Live Performance",
+        "Video for Live Performance",
         "Live Production",
         "Concerts",
         "Events"
@@ -388,17 +373,15 @@
           "fees": 16500
         }
       ],
-      "specialisations": [
-        "Make-Up",
-        "Hair",
-        "Special Effects (SFX)"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Make-Up",
         "Special Effects (SFX)",
-        "Theatre",
         "Film",
         "TV",
+        "Theatre",
         "Performing Arts",
         "Art Department",
         "Production Design",
@@ -421,10 +404,8 @@
           "fees": 18000
         }
       ],
-      "specialisations": [
-        "Singing",
-        "Dancing",
-        "Acting"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Performing Arts",
@@ -453,11 +434,8 @@
           "fees": 12500
         }
       ],
-      "specialisations": [
-        "Lighting",
-        "Sound",
-        "Vision Designs",
-        "Bump In - Bump Out"
+      "qualifications": [
+        "Diploma"
       ],
       "disciplines": [
         "Performing Arts",
@@ -485,15 +463,13 @@
           "fees": 16000
         }
       ],
-      "specialisations": [
-        "Acting for Screen",
-        "Acting for Stage",
-        "Technology in Performance"
+      "qualifications": [
+       "Diploma"
       ],
       "disciplines": [
         "Acting for Screen",
         "Acting for Stage",
-        "Technology in Performance",
+        "Technology Performance",
         "Performance Arts",
         "Voice",
         "Character Performance",
@@ -522,11 +498,8 @@
           "fees": 42682
         }
       ],
-      "specialisations": [
-        "Cultural Transformation",
-        "Leadership and Governance",
-        "Cultural Policy",
-        "International Placement"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Business for Creatives",
@@ -560,11 +533,8 @@
           "fees": 42682
         }
       ],
-      "specialisations": [
-        "Set Designs",
-        "Costumes",
-        "Lighting",
-        "Dramaturgy"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Design",
@@ -603,10 +573,8 @@
           "fees": 42682
         }
       ],
-      "specialisations": [
-        "Directing Practice and Techniques",
-        "Dramaturgy",
-        "Scenography"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Directing",
@@ -646,10 +614,8 @@
           "fees": 42682
         }
       ],
-      "specialisations": [
-        "Vocal Practice and Pedagogy",
-        "Speech Science",
-        "International Placement"
+      "qualificataions": [
+        "Master"
       ],
       "disciplines": [
         "Performing Arts",
@@ -683,11 +649,8 @@
           "fees": 42682
         }
       ],
-      "specialisations": [
-        "Writing with Purpose",
-        "Literature from any Genres",
-        "Creativity in Writing",
-        "Rhetoric"
+      "qualifications": [
+        "Master"
       ],
       "disciplines": [
         "Performing Arts",
@@ -709,25 +672,177 @@
   ],
   "artworks": [
     {
-      "image": "placeholder_lkdjum",
-      "name": "Sample",
+      "image": "NIDA/student_work/2016_Production_Gallery",
+      "name": "2016 Production 1",
       "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "Sample",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2016_Production_Gallery2",
+      "name": "2016 Production 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2017_Production_Gallery",
+      "name": "2017 Production 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2017_Production_Gallery2",
+      "name": "2017 Production 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2017_Production_Gallery3",
+      "name": "2017 Production 3",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2nd_Year_Design_for_Performance",
+      "name": "2nd Year Design for Performance",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/3rd_Year_BFA_Costume",
+      "name": "3rd Year BFA Costume 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/3rd_Year_BFA_Costume2",
+      "name": "3rd Year BFA Costume 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/3rd_Year_BFA_Costume3",
+      "name": "3rd Year BFA Costume 3",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/3rd_Year_Properties_and_Objects",
+      "name": "3rd Year Properties and Objects",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/Directors1",
+      "name": "Directors 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/Directors2",
+      "name": "Directors 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO1",
+      "name": "EXPO 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO2",
+      "name": "EXPO 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO3",
+      "name": "EXPO 3",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO4",
+      "name": "EXPO 3",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO4",
+      "name": "EXPO 4",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/Gallery1",
+      "name": "Gallery 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/Gallery2",
+      "name": "Gallery 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/NIDA_costumes",
+      "name": "Costumes",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
       "disciplines": [
       ]
     }
   ],
   "alumni": [
     {
-      "photo": "NIDA_alumni/Cate_Blanchett",
+      "photo": "NIDA/alumni/Cate_Blanchett",
       "name": "Cate Blanchett",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "course": "Bachelor of Film Arts (BFA)",
-      "profession": "Actor, Film Producer, Voice Acting",
+      "profession": "Actress, Film Producer, Voice Acting",
       "credits": "The Curious Case of Benjamin Button, The Lord of the Rings Trilogy, The Aviator, Elizabeth, Babel, Blue Jasmine"
     },
     {
-      "photo": "NIDA_alumni/Mel_Gibson",
+      "photo": "NIDA/alumni/Mel_Gibson",
       "name": "Mel Gibson",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "course": "Bachelor of Film Arts (BFA)",
@@ -735,12 +850,60 @@
       "credits": "Hacksaw Ridge, Braveheart, Lethal Weapon, Apocalypto, Mad Max, The Passion of Christ"
     },
     {
-      "photo": "NIDA_alumni/Hugo_Weaving",
+      "photo": "NIDA/alumni/Hugo_Weaving",
       "name": "Hugo Weaving",
       "school_name": "National Institute of Dramatic Art (NIDA)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actor",
+      "credits": "The Matrix, Lord of The Rings Trilogy, V for Vendetta, Hacksaw Ridge, Cloud Atlas"
+    },
+    {
+      "photo": "NIDA/alumni/Sam_Worthington",
+      "name": "Sam Worthington",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actor",
+      "credits": "Avatar, Terminator Salvation, Hacksaw Ridge, Everest, The Titan"
+    },
+    {
+      "photo": "NIDA/alumni/Toni_Collette",
+      "name": "Toni Collette",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actress, Singer, Musician",
+      "credits": "The Sixth Sense, Little Miss Sunshine, About a Boy, Emma, Muriel’s Wedding"
+    },
+    {
+      "photo": "NIDA/alumni/Miranda_Otto",
+      "name": "Miranda Otto",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actress",
+      "credits": "The Lord of the Rings, War of the Worlds, What Lies Beneath"
+    },
+    {
+      "photo": "NIDA/alumni/Baz_Luhrmann",
+      "name": "Baz Luhrmann",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Director, Screenwriter, Producer, Actor",
+      "credits": "Romeo + Juliet, Moulin Rouge, The Great Gatsby, Australia, Strictly Ballroom"
+    },
+    {
+      "photo": "NIDA/alumni/Richard_Roxburgh",
+      "name": "Richard Roxburgh",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Bachelor of Film Arts (BFA)",
+      "profession": "Actor, Writer, Producer, Director",
+      "credits": "Moulin Rouge, Mission Impossible 2, Hacksaw Ridge, Van Helsing"
+    },
+    {
+      "photo": "NIDA/alumni/Catherine_Martin",
+      "name": "Catherine Martin",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "course": "Diploma in Design",
+      "profession": "Production Designer, Producer, Costume Designer, Set Designer",
+      "credits": "Romeo + Juliet, Moulin Rouge, The Great Gatsby, Australia"
     }
   ]
 }
