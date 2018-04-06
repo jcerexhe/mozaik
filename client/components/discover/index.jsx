@@ -77,10 +77,10 @@ export default class DiscoverApp extends Component {
         <Map
           coords={ {lat: -33.8688, lng: 151.2093} }
           containerElement={
-            <div style={{ height: 'calc(150vh - 150px)', width: '100vw' }} />
+            <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
           mapElement={
-            <div style={{ height: 'calc(150vh - 150px)', width: '100vw' }} />
+            <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
         />
         <div className='discover-column-container'>
