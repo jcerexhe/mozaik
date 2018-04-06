@@ -38,6 +38,7 @@ export default class ArtworkApp extends Component {
       currentImage: 0,
       currentTitle: images[0].title,
       currentArtist: images[0].artist,
+      indexList: [],
       styles: {
         container: {
           background: 'rgba(255, 255, 255, 0.95)',
@@ -144,15 +145,30 @@ export default class ArtworkApp extends Component {
   }
 
   renderImg(img, i){
-    // let imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+    const { indexList } = this.state;
     // console.log(parseInt(i));
+
     let imgIndex;
-    if(img.length >= 7){
-      imgIndex = i;
-    }else{
-      imgIndex = 0;
-    }
+    // if(img.length >= 7){
+    //   imgIndex = i;
+    // }else{
+    //   imgIndex = 0;
+    // }
+    let check = true;
     console.log(img.length);
+    while(check == true){
+      imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+      if(indexList.includes(imgIndex)){
+        check=true;
+      }else{
+        check=false;
+        indexList.push(imgIndex);
+      }
+    }
+
+    // if(indexList.includes(imgIndex) == false){
+    //   indexList.push(imgIndex);
+    // }
     return(
         <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}>
 
@@ -160,10 +176,14 @@ export default class ArtworkApp extends Component {
       );
   }
 
+  updateIndexList(){
+    this.setState({indexList: []});
+  }
+
   render() {
     const { artworks } = this.props;
     const { disciplineList, disciplines, images, allImages } = this.state;
-
+    let gt = ">";
     return (
       <div className='grey-bg'>
         <div className='artworks'>
@@ -197,6 +217,9 @@ export default class ArtworkApp extends Component {
               </div>
             </div>
             <div className="art-box-last">
+              <div className="artwork-next">
+                <button onClick={()=>this.updateIndexList()} > {gt} </button>
+              </div>
               <div className="art-box-3">
                 <div className="art-box-3-img">
                   { this.renderImg(images, 6) }
