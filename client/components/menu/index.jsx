@@ -13,16 +13,16 @@ export default class MenuApp extends Component {
           links: [
             { url: '#', val: 'why mozaik play?' },
             { url: '/discover', val: 'discover' },
-            { url: '#', val: 'study areas' },
-            { url: '#', val: 'education agency' },
+            { url: '/study-areas', val: 'study areas' },
+            { url: '/agency-mozaik', val: 'education agency' },
             { url: '#', val: 'sign up' }
           ]
         },
         {
           heading: 'for schools',
           links: [
-            { url: '#', val: 'why partner with mozaik' },
-            { url: '#', val: 'education agency' },
+            { url: '/partner-with-mozaik', val: 'why partner with mozaik play' },
+            { url: '/agency-mozaik', val: 'education agency' },
             { url: '#', val: 'sign up' }
           ]
         }
