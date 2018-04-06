@@ -17,11 +17,14 @@ export default class CoursesApp extends Component {
       photography: ['Art Photography', 'Commercial Photography', 'Digital Imaging', 'Documentary Photography', 'Fashion Photography', 'Photography', 'Photography Design', 'Photojournalism', 'Photomedia', 'Visual Communication'],
       builtEnvironment: ['Architecture', 'Building Design', 'Built Environment', 'Digital Architecture', 'Interior Decoration', 'Interior Design', 'Spatial Design', 'Staging', 'Styling', 'Urban Design'],
       businessCreative: ['Arts Management', 'Creative Leadership', 'Event Management', 'Fashion Business', 'Finance for Creative Industries', 'Live Production', 'Marketing for Entertainment Business', 'Music Business', 'Screen Business','Stage Management'],
-      activeCourses: props.courses
+      activeCourses: props.courses,
+      limit: 4
     };
+
   }
 
   updateDiscipline(val) {
+    this.setState({limit: 4}); 
     let { disciplines } = this.state;
     if (val === 'all areas') {
       this.setState({ disciplines: ['all areas'] });
@@ -68,13 +71,28 @@ export default class CoursesApp extends Component {
     }
   }
 
+  renderLimit(){
+    const { limit } = this.state;
+    this.setState({limit: limit + 4}); 
+  }
+
+  renderButton(){
+    const { limit, activeCourses } = this.state;
+      if(limit < activeCourses.length ){
+    return(
+    <button onClick={()=>this.renderLimit()} className="more-courses">v</button>
+    )
+  }
+  }
+
   render() {
     const { courses, school } = this.props;
-    const { disciplines, activeCourses } = this.state;
+    const { disciplines, activeCourses, limit } = this.state;
     let disciplineList = ['all areas'];
     disciplineList.push(this.props.schoolDisciplines);
     // Combine the 'all areas' array with the disciplineList array and flatten it to remove nesting
     disciplineList = _.flatten(disciplineList);
+
     return (
       <div>
         <div className="study-areas-box">
@@ -134,11 +152,44 @@ export default class CoursesApp extends Component {
           </div>  */}
 
               <div className='course-card-container'>
-            { _.map(activeCourses, (course, i) => {
+            {
+            //  _.map(activeCourses, (course, i) => {
+            //   console.log(course);
+            //   return (
+            //     <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
+            //   )
+            // }) 
+
+              // activeCourses.forEach(function(course, i){
+              //   console.log(course.name);
+              //   console.log(i);
+              //   // return (
+              //     // <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
+              //     <h1>HEllow</h1>
+              //   // )
+              // })
+              
+
+
+            _.map(activeCourses, (course, i) => {
+              console.log(course);
+              console.log(i);
+              if(i >= limit){
+                return false;
+              }else{
               return (
                 <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
-              )
-            }) }
+               )
+              }
+
+            }) 
+
+            
+
+          }
+
+          {this.renderButton()}
+
           </div>
         </div>
       </div>

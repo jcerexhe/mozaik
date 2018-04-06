@@ -21,8 +21,8 @@ const CourseCard = (props) => {
     alignclass='course-info-bit-left';
     const disciplines = ( course.disciplines.length > 0 ? (
     <p className={alignclass}>
-      <span className='bold caps'>specialisations:</span>
-      <span className='info-bit-content'>{ course.specialisations.join(', ') }</span>
+      <span className='bold caps'>qualifications:</span>
+      <span className='info-bit-content'>{ course.qualifications.join(', ') }</span>
     </p>
   ) : <div />);
     return(
@@ -75,8 +75,8 @@ const CourseCard = (props) => {
     alignclass='course-info-bit-right';
         const disciplines = ( course.disciplines.length > 0 ? (
     <p className={alignclass}>
-      <span className='bold caps'>specialisations:</span>
-      <span className='info-bit-content'>{ course.specialisations.join(', ') }</span>
+      <span className='bold caps'>qualifications:</span>
+      <span className='info-bit-content'>{ course.qualifications.join(', ') }</span>
     </p>
   ) : <div />);
     return (
