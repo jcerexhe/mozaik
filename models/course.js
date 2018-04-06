@@ -26,6 +26,7 @@ const courseSchema = new Schema({
   },
   campus: [String],
   specialisations: [String],
+  qualifications: [String],
   disciplines: [String],
   length: {
     type: String,
