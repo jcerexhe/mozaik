@@ -1,6 +1,5 @@
 .course-card-container {
   border-top: 1px solid $dark-grey;
-  background: $white;
 }
 .course-card {
   display: flex;
@@ -79,7 +78,7 @@
 }
 .course-bg {
   padding-bottom: 40px;
-  background: $white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .info-bits-container {
   display: flex;

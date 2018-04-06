@@ -3317,8 +3317,7 @@ ul.careers-lists > li:before {
     left: -100px !important; }
 
 .course-card-container {
-  border-top: 1px solid #E4E9EC;
-  background: #FFFFFF; }
+  border-top: 1px solid #E4E9EC; }
 
 .course-card {
   display: -ms-flexbox;
@@ -3406,7 +3405,7 @@ ul.careers-lists > li:before {
 
 .course-bg {
   padding-bottom: 40px;
-  background: #FFFFFF; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .info-bits-container {
   display: -ms-flexbox;
