@@ -95,7 +95,7 @@ export default class FacilitiesApp extends Component {
     return (
 
 
-    <div style={{width: "71vh"}}>
+    <div style={{width: "65vh"}}>
       <h2>
         <a onClick={() => this.setState({ isOpen: true })}>
           Facilities
