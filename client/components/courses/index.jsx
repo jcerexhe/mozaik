@@ -79,10 +79,20 @@ export default class CoursesApp extends Component {
   renderButton(){
     const { limit, activeCourses } = this.state;
       if(limit < activeCourses.length ){
-    return(
-    <button onClick={()=>this.renderLimit()} className="more-courses">v</button>
-    )
+        return(
+        <button onClick={()=>this.renderLimit()} className="more-courses">v</button>
+        )
+      }
   }
+
+  renderNoResult(){
+    const { activeCourses, limit } = this.state;
+
+     if (activeCourses.length <= 0){
+         return(
+            <h1 className="course-filter">No result found.</h1>
+          )
+    }
   }
 
   render() {
@@ -137,54 +147,22 @@ export default class CoursesApp extends Component {
           </div>
         </div>
         <div className='course-bg'>
-          { /* <div className='filter-container'>
-            <div className='filter'>
-              <h2>disciplines</h2>
-              <Filter
-                filterItems={ disciplineList }
-                activeItems={ disciplines }
-                onClick={ (val) => this.updateDiscipline(val) }
-              />
-            </div>
-           <div className='refine-button'>
-              <a href='/discover' className='btn btn-full-width'>refine</a>
-            </div>
-          </div>  */}
-
-              <div className='course-card-container'>
+          <div className='course-card-container'>
+              {this.renderNoResult()}
             {
-            //  _.map(activeCourses, (course, i) => {
-            //   console.log(course);
-            //   return (
-            //     <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
-            //   )
-            // }) 
+          
+                _.map(activeCourses, (course, i) => {
+                  console.log(course);
+                  console.log(i);
+                  if(i >= limit){
+                    return false;
+                  }else{
+                  return (
+                    <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
+                   )
+                  }
 
-              // activeCourses.forEach(function(course, i){
-              //   console.log(course.name);
-              //   console.log(i);
-              //   // return (
-              //     // <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
-              //     <h1>HEllow</h1>
-              //   // )
-              // })
-              
-
-
-            _.map(activeCourses, (course, i) => {
-              console.log(course);
-              console.log(i);
-              if(i >= limit){
-                return false;
-              }else{
-              return (
-                <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
-               )
-              }
-
-            }) 
-
-            
+                }) 
 
           }
 
