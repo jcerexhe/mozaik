@@ -420,7 +420,8 @@ input.input-newsletter:focus {
   width: 12px;
   height: 12px;
   background: #000000;
-  border: 1px solid #FF6D6D; }
+  border: 1px solid #FF6D6D;
+  margin-top: 4px; }
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
@@ -3461,17 +3462,16 @@ ul.careers-lists > li:before {
   color: #000; }
 
 .discover-column-container {
-  height: calc(100vh - 100px);
-  width: 20 0px;
+  height: calc(140vh - 140px);
+  width: 20%;
   position: absolute;
   left: 250px;
   top: 0px;
   background-color: black;
-  overflow: scroll; }
+  /*overflow: scroll;*/ }
 
 .discover-column {
-  padding: 20px;
-  width: 170px; }
+  padding: 20px; }
 
 .discover-column a {
   text-decoration: none;
@@ -3483,9 +3483,8 @@ ul.careers-lists > li:before {
   text-align: center; }
 
 .discover-column > h3 {
-  margin-top: 60px;
-  margin-bottom: 0px;
-  color: white; }
+  color: white;
+  font-size: 2vw; }
 
 .discover-checkboxes {
   display: -ms-flexbox;
@@ -3497,7 +3496,7 @@ ul.careers-lists > li:before {
 
 .discover-checkboxes > label {
   font-size: 13px;
-  margin: 2px 0px;
+  margin: 0px;
   text-transform: uppercase;
   line-height: 1.8; }
 
@@ -3506,6 +3505,9 @@ ul.careers-lists > li:before {
 
 #sites {
   margin-top: 50px; }
+
+.rc-slider {
+  width: 80% !important; }
 
 .grey-bg {
   background-color: #181818; }
