@@ -17,6 +17,17 @@
       "Digital Design",
       "Graphic Design"
     ],
+    "study_areas": [
+      "Digital Media",
+      "Visual Communication",
+      "Fine Arts",
+      "Film / TV / Audio",
+      "Performing Arts",
+      "Design",
+      "Photography",
+      "Built Environment",
+      "Business for Creatives"
+    ],
     "overview": "Founded in 1999, AIT is located in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
     "prices": [{
       "type": "Domestic students",
@@ -53,11 +64,11 @@
     ],
     "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
     "facilitiesImages": [
-      "Entrance_hall_Melb_pqy418",
-      "File_000_mpbswu",
-      "Library_Melb_yjr2x5",
-      "Orange_Agora_Sydney_p7em6v",
-      "Stduent_Lounge1_Melb_oz7pgu"
+      "AIT/facilities/Entrance_hall_Melb_pqy418",
+      "AIT/facilities/File_000_mpbswu",
+      "AIT/facilities/Library_Melb_yjr2x5",
+      "AIT/facilities/Orange_Agora_Sydney_p7em6v",
+      "AIT/facilities/Stduent_Lounge1_Melb_oz7pgu"
     ],
     "delivery": [
       "On Campus",
@@ -65,7 +76,9 @@
     ],
     "logo": "AIT/AIT_logo_png",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "AIT/facilities/Entrance_hall_Melb_pqy418",
+    "header_image_2": "AIT/facilities/File_000_mpbswu"
   },
   "courses": [
     {
@@ -136,6 +149,9 @@
           "type": "International students",
           "fees": 52800
         }
+      ],
+      "qualifications": [
+       ""
       ],
       "specialisations": [
         "2D/3D Animation",
@@ -224,6 +240,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "Cinematography",
         "Screen Production",
@@ -280,6 +299,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "3D Design",
         "2D Interactivity",
@@ -328,6 +350,9 @@
           "fees": 17600
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Pathway to second year of the Bachelor of Interactive Media"
       ],
@@ -372,6 +397,9 @@
           "type": "International students",
           "fees": 52800
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Design Principles",
@@ -429,6 +457,9 @@
           "fees": 17600
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Design Principles",
         "Interface",
@@ -476,6 +507,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Mobile Apps Development",
         "Foundation Networks",
@@ -515,6 +549,9 @@
           "type": "International students",
           "fees": 52800
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Game Engine Programming",
@@ -558,6 +595,9 @@
           "type": "International students",
           "fees": 17600
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Intro to Web",
