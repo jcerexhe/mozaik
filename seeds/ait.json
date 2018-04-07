@@ -101,6 +101,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "2D Animation",
         "3D Design",
@@ -182,6 +185,19 @@
       ],
       "length": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
+      "prices": [
+        {
+          "type": "Domestic students (FEE-HELP approved)",
+          "fees": 
+        },
+        {
+          "type": "International students",
+          "fees": 
+        }
+      ],
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "3D Modelling",
         "2D/3D Animation",
