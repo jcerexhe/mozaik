@@ -118,6 +118,12 @@
       "qualifications": [
         "Bachelor"
       ],
+      "specialisations": [
+        "Applied Theatre",
+        "Classical Theatre for the Contemporary Stage",
+        "Music Theatre",
+        "Physical Theatre"
+      ],
       "disciplines": [
         "Performing Arts",
         "Film",
@@ -154,6 +160,14 @@
       ],
       "qualifications": [
         "Bachelor"
+      ],
+      "specialisations": [
+        "Costume Construction",
+        "Tailoring",
+        "Period Cutting",
+        "Costume Management",
+        "Millinery",
+        "Leatherwork"
       ],
       "disciplines": [
         "Performing Arts",
@@ -199,6 +213,12 @@
       "qualifications": [
         "Bachelor"
       ],
+      "specialisations": [
+        "Sets",
+        "Props",
+        "Costumes",
+        "Lighting"
+      ],
       "disciplines": [
         "Digital Media",
         "Film",
@@ -239,6 +259,16 @@
       ],
       "qualifications": [
         "Bachelor"
+      ],
+      "specialisations": [
+        "Metalwork",
+        "Sculpture",
+        "Woodwork",
+        "Scenic Art",
+        "Modelling",
+        "Jewellery",
+        "Puppetry",
+        "Graphics SW"
       ],
       "disciplines": [
         "Fine Arts",
@@ -288,6 +318,11 @@
       ],
       "qualifications": [
         "Bachelor"
+      ],
+      "specialisations": [
+        "Stage Engineering",
+        "Stage Rigging and Automation",
+        "Risk and Project Management"
       ],
       "disciplines": [
         "Built Environment",
@@ -340,6 +375,14 @@
       "qualifications": [
         "Bachelor"
       ],
+      "specialisations": [
+        "Stage Management",
+        "Lighting",
+        "Audio",
+        "Technical Drawing",
+        "Video for Live Performance",
+        "Event Management"
+      ],
       "disciplines": [
         "Built Environment",
         "Theatre",
@@ -376,6 +419,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Make-Up",
+        "Hair",
+        "Special Effects (SFX)"
+      ],
       "disciplines": [
         "Make-Up",
         "Special Effects (SFX)",
@@ -407,6 +455,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Singing",
+        "Dancing",
+        "Acting"
+      ],
       "disciplines": [
         "Performing Arts",
         "Singing",
@@ -437,6 +490,12 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Lighting",
+        "Sound",
+        "Vision Designs",
+        "Bump In - Bump Out"
+      ],
       "disciplines": [
         "Performing Arts",
         "Lighting",
@@ -465,6 +524,11 @@
       ],
       "qualifications": [
        "Diploma"
+      ],
+      "specialisations": [
+        "Acting for Screen",
+        "Acting for Stage",
+        "Technology in Performance"
       ],
       "disciplines": [
         "Acting for Screen",
@@ -501,6 +565,12 @@
       "qualifications": [
         "Master"
       ],
+      "specialisations": [
+        "Cultural Transformation",
+        "Leadership and Governance",
+        "Cultural Policy",
+        "International Placement"
+      ],
       "disciplines": [
         "Business for Creatives",
         "Cultural Transformation",
@@ -535,6 +605,12 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Set Designs",
+        "Costumes",
+        "Lighting",
+        "Dramaturgy"
       ],
       "disciplines": [
         "Design",
@@ -575,6 +651,11 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Directing Practice and Techniques",
+        "Dramaturgy",
+        "Scenography"
       ],
       "disciplines": [
         "Directing",
@@ -617,6 +698,11 @@
       "qualificataions": [
         "Master"
       ],
+      "specialisations": [
+        "Vocal Practice and Pedagogy",
+        "Speech Science",
+        "International Placement"
+      ],
       "disciplines": [
         "Performing Arts",
         "Speech Science",
@@ -651,6 +737,12 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Writing with Purpose",
+        "Literature from any Genres",
+        "Creativity in Writing",
+        "Rhetoric"
       ],
       "disciplines": [
         "Performing Arts",

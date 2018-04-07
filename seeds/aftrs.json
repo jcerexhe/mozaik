@@ -93,6 +93,14 @@
       "qualifications": [
         "Bachelor"
       ],
+       "specialisations": [
+        "Story",
+        "Image",
+        "Sound",
+        "Character & Performance",
+        "Rhythm & Juxtaposition",
+        "Screen Business"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -144,6 +152,18 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Animation",
+        "Cinematography",
+        "Directing",
+        "Documentary",
+        "Editing",
+        "Producing",
+        "Production Design",
+        "Music",
+        "Screenwriting",
+        "Sound"
       ],
       "disciplines": [
         "Film",
@@ -203,6 +223,12 @@
       "qualifications": [
         "Master"
       ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "VFX",
+        "3D Animation"
+      ],
       "disciplines": [
         "Film",
         "Animation",
@@ -236,6 +262,12 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Art of VFX",
+        "Compositing",
+        "Computer Graphics",
+        "2D Matte Painting"
       ],
       "disciplines": [
         "Film",
@@ -271,6 +303,11 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Visual Expression"
       ],
       "disciplines": [
         "Film",
@@ -311,6 +348,10 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Framing",
+        "Lighting"
       ],
       "disciplines": [
         "Film",
@@ -355,6 +396,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Grading Principles",
+        "Grading Practice",
+        "Creative Grading"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -386,6 +432,11 @@
       ],
       "qualifications": [
         "Graduate Certificate"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Cinematography Practice",
+        "Visual Expression"
       ],
       "disciplines": [
         "Film",
@@ -425,6 +476,12 @@
       "qualifications": [
         "Masters"
       ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Directorial Vision",
+        "Research and Development",
+        "Screen Language"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -459,6 +516,11 @@
       ],
       "qualifications": [
         "Graduate Certificate"
+      ],
+      "specialisations": [
+        "Storytelling Structures",
+        "Cinematic Principles",
+        "Performance"
       ],
       "disciplines": [
         "Film",
@@ -495,6 +557,11 @@
       "qualifications": [
         "Master"
       ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Directorial Vision"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -524,6 +591,10 @@
       "qualifications": [
         "Graduate Certificate"
       ],
+      "specialisations": [
+        "Documentary",
+        "Collaborative Practice"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -552,6 +623,12 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Continuity",
+        "Coverage",
+        "Temp Music and Sound"
       ],
       "disciplines": [
         "Film",
@@ -586,6 +663,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Sound Editing",
+        "Avid Composer"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -619,6 +701,10 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Factual Form Storytelling",
+        "Technical Editing"
+      ],
       "disciplines": [
         "TV",
         "Editing",
@@ -647,6 +733,11 @@
       ],
       "qualifications": [
         "Graduate Certificate"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Non-linear Editing",
+        "Collaborative Practice"
       ],
       "disciplines": [
         "Film",
@@ -679,6 +770,12 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Story Development",
+        "Leadership and Strategy",
+        "Entrepreneurship"
       ],
       "disciplines": [
         "Film",
@@ -730,6 +827,12 @@
       "qualifications": [
         "Graduate Certificate"
       ],
+      "specialisations": [
+        "Story Structure",
+        "Intellectual Property",
+        "Finance Plans",
+        "Marketing and Audience"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -768,6 +871,11 @@
       "qualifications": [
         "Master"
       ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Digital Visualisation"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -803,6 +911,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Design Principles",
+        "Design Skills",
+        "Design Practices"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -836,6 +949,11 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Screen Culture"
       ],
       "disciplines": [
         "Film",
@@ -871,6 +989,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Understanding Story",
+        "Crafting Story",
+        "Visual Language"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -904,6 +1027,10 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Creative Writing",
+        "Genre, Format and Development"
+      ],
       "disciplines": [
         "TV",
         "Screen Production",
@@ -934,6 +1061,11 @@
       "qualificatons": [
         "Diploma"
       ],
+      "specialisations": [
+        "Screenwriting Principles",
+        "Script Development",
+        "Script Editing"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -962,6 +1094,11 @@
       ],
       "qualifications": [
         "Graduate Certificate"
+      ],
+      "specialisations": [
+        "Storytelling Principles", 
+        "Incubator",
+        "Collaborative Practice"
       ],
       "disciplines": [
         "Film",
@@ -994,6 +1131,11 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Screen Culture"
       ],
       "disciplines": [
         "Film",
@@ -1033,6 +1175,11 @@
       "qualifications": [
        "Graduate Certificate"
       ],
+      "specialisations": [
+        "Screen Music Practice",
+        "Composition Workshop",
+        "Music Technologies"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -1070,6 +1217,11 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Cinematic Storytelling",
+        "Research and Development",
+        "Sound Production and Design"
       ],
       "disciplines": [
         "Film",
@@ -1109,6 +1261,11 @@
       "qualifications": [
        "Diploma"
       ],
+      "specialisations": [
+        "Production Sound Principles",
+        "Production Sound Skills",
+        "Internship"
+      ],
       "disciplines": [
         "Film",
         "TV",
@@ -1146,6 +1303,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Editorial and Digital Journalism",
+        "Audio and Visual Content",
+        "Project Management"
+      ],
       "disciplines": [
         "Radio",
         "Broadcasting",
@@ -1175,6 +1337,11 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Studio Operation and Panelling",
+        "Audio Production",
+        "Announcing and Presentation"
       ],
       "disciplines": [
         "Radio",
@@ -1208,6 +1375,11 @@
       "qualifications": [
         "Graduate Diploma"
       ],
+      "specialisations": [
+        "Advanced Concepts of Radio",
+        "Reach and Relevance",
+        "Innovative Business of Radio"
+      ],
       "disciplines": [
         "Radio",
         "Broadcasting",
@@ -1239,6 +1411,12 @@
       ],
       "qualifications": [
         "Master"
+      ],
+      "specialisations": [
+        "Creative Leadership",
+        "Strategy and Finance",
+        "Entrepreneurship",
+        "Brand Management"
       ],
       "disciplines": [
         "Screen Production",
@@ -1289,6 +1467,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Building a Business",
+        "Finance",
+        "Strategic Planning"
+      ],
       "disciplines": [
         "Screen Production",
         "Producing",
@@ -1337,6 +1520,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Pre-Production Accounting",
+        "Production Accounting",
+        "Post-Production Accounting"
+      ],
       "disciplines": [
         "Production Accounting",
         "Producing",
@@ -1369,6 +1557,11 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Media Production",
+        "Strategic Audience Engagement",
+        "Social Video Business"
       ],
       "disciplines": [
         "Screen Business",
@@ -1404,6 +1597,10 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Production Management",
+        "The Evolving Production Landscape"
       ],
       "disciplines": [
         "Screen Business",

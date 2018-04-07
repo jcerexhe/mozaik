@@ -97,6 +97,11 @@
         "Certificate",
         "Foundation"
       ],
+      "specialisations": [
+        "Acting",
+        "Improvisation",
+        "Movement"
+      ],
       "disciplines": [
         "Performing Arts",
         "Acting",
@@ -126,6 +131,12 @@
       ],
       "qualifications": [
         "Foundation"
+      ],
+      "specialisations": [
+        "Acting",
+        "Voice",
+        "Improvisation",
+        "Movement"
       ],
       "disciplines": [
         "Digital Media",
@@ -164,6 +175,12 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Acting",
+        "Voice",
+        "Improvisation",
+        "Movement"
       ],
       "disciplines": [
         "Digital Media",
@@ -208,6 +225,13 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Directing",
+        "Cinematography",
+        "Producing",
+        "Production Design",
+        "Post-Production"
       ],
       "disciplines": [
         "Film",
@@ -263,6 +287,12 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Makeup",
+        "Hairstyling",
+        "3D Make Up techniques",
+        "Sculpting"
+      ],
       "disciplines": [
         "Makeup",
         "TV",
@@ -297,6 +327,9 @@
           "type": "International students",
           "fees": 43250
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Audio",
@@ -351,6 +384,10 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Writing for Feature Films",
+        "Writing for Television"
+      ],
       "disciplines": [
         "Digital Media",
         "Film",
@@ -388,6 +425,13 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "3D Animation",
+        "Modelling",
+        "Visual Effects",
+        "Lighting",
+        "Texturing"
       ],
       "disciplines": [
         "Digital Media",
@@ -438,6 +482,12 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Animation",
+        "Visual Concepts",
+        "Concept Art",
+        "Drawing"
+      ],
       "disciplines": [
         "Digital Media",
         "Animation",
@@ -472,6 +522,12 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Animation",
+        "Storytelling",
+        "Digital Art",
+        "Drawing"
       ],
       "disciplines": [
         "Digital Media",
@@ -508,6 +564,10 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Interactive User Experience Design",
+        "Motion Design"
       ],
       "disciplines": [
         "Digital Media", 
@@ -563,6 +623,11 @@
       "qualifications": [
         "Diploma"
       ],
+      "specialisations": [
+        "Game Art",
+        "Game Programming",
+        "Unity"
+      ],
       "disciplines": [
         "Digital Media",
         "Game Design",
@@ -604,6 +669,13 @@
       ],
       "qualifications": [
         "Diploma"
+      ],
+      "specialisations": [
+        "Game Development",
+        "Web Development",
+        "C++",
+        "Object Oriented Programming",
+        "Java"
       ],
       "disciplines": [
         "Digital Media",
