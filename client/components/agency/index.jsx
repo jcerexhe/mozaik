@@ -182,14 +182,6 @@ export default class AgencyApp extends Component {
 				<div className='get-started'>
 					<img src="/images/buttons/Get-started.png" />
 				</div>
-				<div className='agency-contact'>
-					<div className='agency-inside-scoop'>
-							<img className='agency-inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-							<input className='agency-email' placeholder="Email"/>
-							<br/>
-							<img className='agency-subscribe-img' src='/images/buttons/subscribe.png' />
-					</div>
-				</div>
 			</div>				
 		</div>
 	
