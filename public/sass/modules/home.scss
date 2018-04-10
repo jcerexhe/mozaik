@@ -69,6 +69,7 @@
   height: 190vw;
   overflow-x: hidden;
   background-color: $white;
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 82%);
   svg {
     position: absolute;
     height: 100%;

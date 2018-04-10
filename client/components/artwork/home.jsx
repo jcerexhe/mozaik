@@ -247,17 +247,7 @@ export default class HomeArtworkApp extends Component {
               <polygon points="71,128 71,145 100,141 100,128" fill="#0C2A3E"></polygon>
             </g>
           }
-
-          <image height="190" width="100" preserveAspectRatio="xMinYMax meet" xlinkHref="/images/patterns/stripes.jpg" clipPath="url(#bottom-stripes)"/>
         </svg>
-
-        {/*Home Artworks Footer Text*/}
-        <div className="home-artworks-bottom-text" >
-            <a href='#'><img src='/images/buttons/Get-the-inside-scoop.png'/></a>
-            <input placeholder="Email"/>
-            <br/>
-            <a href='#'><img src='/images/buttons/subscribe.png'/></a>
-        </div>
       </div>
     );
   }
