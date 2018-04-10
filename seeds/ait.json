@@ -4,7 +4,7 @@
     "header_image_2": "Entrance_hall_Melb_pqy418",
     "name": "Academy of Information Technology (AIT)",
     "short_name": "AIT",
-    "website": "http://www.ait.edu.au",
+    "website": "www.ait.edu.au",
     "disciplines": [
       "Digital Media",
       "Animation",
@@ -21,7 +21,7 @@
       "Digital Media",
       "Visual Communication",
       "Fine Arts",
-      "Film / TV / Audio",
+      "Film/TV/Audio",
       "Performing Arts",
       "Design",
       "Photography",
@@ -89,7 +89,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -108,7 +108,7 @@
         "2D Animation",
         "3D Design",
         "Film",
-        "Game Design"
+        "Games Design"
       ],
       "disciplines": [
         "Digital Media",
@@ -122,7 +122,6 @@
         "Film",
         "TV",
         "Screen Media",
-        "Game Design",
         "Games Design",
         "Multimedia",
         "Digital Design",
@@ -142,7 +141,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 year accelerated",
+      "duration": "3 years | 2 year accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -184,7 +183,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "qualifications": [
        ""
@@ -216,7 +215,7 @@
         "Motion Graphics",
         "Computer Graphics",
         "AR/VR",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -235,7 +234,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -294,7 +293,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -323,7 +322,7 @@
         "Motion Graphics",
         "AR/VR",
         "Screen Media",
-        "Game Design",
+        "Games Design",
         "Computer Graphics",
         "Multimedia",
         "Digital Design",
@@ -345,7 +344,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -375,7 +374,7 @@
         "Film",
         "TV",
         "Screen Media",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -393,7 +392,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -421,7 +420,7 @@
         "2D Animation",
         "3D Design",
         "Motion Graphics",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Media",
         "Digital Imaging",
@@ -452,7 +451,7 @@
         "Melbourne",
         "Online"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -502,7 +501,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -545,7 +544,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -573,7 +572,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",
@@ -591,7 +590,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "1 year | Bootcamp 6 months",
+      "duration": "1 year | Bootcamp 6 months",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -618,7 +617,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",

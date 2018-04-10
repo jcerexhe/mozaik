@@ -2,7 +2,7 @@
   "school": {
     "name": "NATIONAL INSTITUTE OF DRAMATIC ART (NIDA)",
     "short_name": "NIDA",
-    "website": "https://www.nida.edu.au/",
+    "website": "www.nida.edu.au",
     "disciplines": [
       "Performing Arts", 
       "Film/TV/Audio", 
@@ -103,7 +103,7 @@
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "description": "This course equips students with the specific knowledge and skills to pursue careers as actors across the breadth of today’s arts and entertainment industries – in main stage and smaller independent theatre companies, radio, film, television and commercial arenas. Through practice-based learning, students develop technical skills in the disciplines of voice, movement, music and acting.",
       "campus": ["Sydney"],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -126,6 +126,7 @@
       ],
       "disciplines": [
         "Performing Arts",
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Radio",
@@ -146,7 +147,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -198,7 +199,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -245,7 +246,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -272,6 +273,7 @@
       ],
       "disciplines": [
         "Fine Arts",
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Built Environment",
@@ -304,7 +306,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -326,6 +328,7 @@
       ],
       "disciplines": [
         "Built Environment",
+        "Film/TV/Audio",
         "Theatre",
         "Film",
         "TV",
@@ -360,7 +363,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -386,6 +389,7 @@
       "disciplines": [
         "Built Environment",
         "Theatre",
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Music Festivals",
@@ -408,7 +412,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "7 months",
+      "duration": "7 months",
       "intakes": "February",
       "prices": [
         {
@@ -425,6 +429,7 @@
         "Special Effects (SFX)"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Make-Up",
         "Special Effects (SFX)",
         "Film",
@@ -444,7 +449,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "7 months",
+      "duration": "7 months",
       "intakes": "February",
       "prices": [
         {
@@ -479,7 +484,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "7 months",
+      "duration": "7 months",
       "intakes": "February",
       "prices": [
         {
@@ -514,7 +519,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "7 months",
+      "duration": "7 months",
       "intakes": "February",
       "prices": [
         {
@@ -550,7 +555,7 @@
       "campus": [
         "Blended: On Campus (Sydney) and Online"
       ],
-      "length": "2.5 years (Part-time)",
+      "duration": "2.5 years (Part-time)",
       "intakes": "January",
       "prices": [
         {
@@ -591,7 +596,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "15 months",
+      "duration": "15 months",
       "intakes": "January",
       "prices": [
         {
@@ -637,7 +642,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "15 months",
+      "duration": "15 months",
       "intakes": "January",
       "prices": [
         {
@@ -658,6 +663,7 @@
         "Scenography"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Directing",
         "Dramaturgy",
         "Scenography",
@@ -683,7 +689,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "15 months",
+      "duration": "15 months",
       "intakes": "January",
       "prices": [
         {
@@ -723,7 +729,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "15 months",
+      "duration": "15 months",
       "intakes": "January",
       "prices": [
         {
