@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-
+import Footer from '../footer/index.jsx';
 export default class AboutApp extends Component {
 	render() {
 		return (
@@ -29,6 +29,10 @@ export default class AboutApp extends Component {
 						<p>Say Hello</p>
 						<img src="/images/buttons/Contact-us.png" />
 					</div>
+					
+				</div>
+				<div>
+					<Footer/>
 				</div>
 			</div>
 			
