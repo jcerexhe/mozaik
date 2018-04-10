@@ -38,17 +38,21 @@ exports.courses = async (req, res) => {
         case 0:
           q = Course.find()
           // schoollist.push();
+          console.log(0);
           break;
         case 1:
           q = Course.find(targets[0]);
+          console.log(1);
           break;
         default:
           q = Course.find(targets[1]);
+          console.log(2);
       }
 
       const foundCourses = await q.populate('school', ['slug', 'locations', 'logo', 'facilitiesImages']);
-
+      console.log("course lenth "+ foundCourses.length);
       if (interestCountries.includes('all areas')) {
+        console.log('country');
         courses = foundCourses;
         if(courses.length > 0){
           courses.map(course => {
@@ -64,6 +68,7 @@ exports.courses = async (req, res) => {
         }
 
       } else {
+        console.log('filter country');
         courses = _.filter(foundCourses, (course) => {
           let locationsArray = course.school.locations.filter((location) => interestCountries.includes(location.country))
           // if there are locations for this school that match the filters selected then put them in an array

@@ -283,20 +283,21 @@ input.input-newsletter:focus {
 .discipline {
   border: 3px solid #FFFFFF;
   background: #FF6D6D;
-  width: 150px; }
+  width: 25vh; }
 
 .country {
   border: 3px solid #FFFFFF;
   background: #000;
   color: #FFFFFF;
   font-size: 15pt;
-  width: 150px; }
+  width: 190px; }
 
 .filter-btn.white {
   background-color: #FFFFFF; }
 
 .filter-btn:focus {
-  border: none;
+  /*
+  border: none; */
   outline: none; }
 
 .filter-btn:hover, .filter-btn.active {
@@ -815,6 +816,11 @@ input[type=text]::placeholder {
     -ms-flex-align: center;
         align-items: center;
     position: relative; }
+    .study-areas-box .study-areas .area-box .disciplines-disable {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute; }
     .study-areas-box .study-areas .area-box .disciplines {
       background: transparent;
       position: absolute;
@@ -841,7 +847,7 @@ input[type=text]::placeholder {
             font-family: 'Bebas Neue';
             letter-spacing: 1px; }
     .study-areas-box .study-areas .area-box .disciplines:hover {
-      background-color: rgba(255, 255, 255, 0.7); }
+      background-color: rgba(176, 171, 171, 0.7); }
     .study-areas-box .study-areas .area-box .disciplines:hover p {
       display: block; }
     .study-areas-box .study-areas .area-box h3 {
@@ -3088,6 +3094,45 @@ ul.careers-lists > li:before {
     text-decoration: none;
     text-align: center !important;
     line-height: 2rem; }
+
+.interest-area-box {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 20px 100px;
+  padding-left: 60px; }
+  .interest-area-box .area-1, .interest-area-box .area-2 {
+    width: 16.6%;
+    height: 100%; }
+  .interest-area-box .area-1, .interest-area-box .area-2 {
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    display: -ms-flexbox;
+    display: flex; }
+
+.interest-disciplines-box {
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+
+.interest-disciplines-box-2 {
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.search-line {
+  width: 50%;
+  border: 1px solid #000; }
 
 .art-box-img {
   width: 100%;
