@@ -29,9 +29,16 @@ html(lang='en')
           div(class=`alert-${ category }`)!= h.dump(message)
 
     div(class=(currentPath === '/' ? 'content' : ''))
-      block content
-
+      block content  
+      
     // TODO footer
+    .inside-btns
+      img.inside-scoop-img(src='/images/buttons/Get-the-inside-scoop.png')
+      input(placeholder="Email" class='input-email')
+      br
+      img.subscribe-img(src='/images/buttons/subscribe.png')
+    .partoffooter
+    
     .footer
       .links
         ul

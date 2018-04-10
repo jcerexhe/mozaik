@@ -74,13 +74,6 @@ export default class PerformingArtsApp extends Component {
 				<div className='performing-art-enquire-img' >
 					<img src="/images/buttons/Enquire.png" />
 				</div>
-				<div className='performing-art-contact'>
-					<div className='performing-art-inside-scoop'>
-						<img className='performing-art-inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-						<input className='performing-art-email' placeholder="Email" /><br/>
-						<img className='performing-art-subscribe-img' src='/images/buttons/subscribe.png' />	
-					</div>
-				</div>
 			</div>
 		
 	</div>

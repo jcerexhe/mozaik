@@ -31,14 +31,7 @@ export default class AboutApp extends Component {
 					</div>
 				</div>
 			</div>
-			<div className='about-us-contact'>
-				<div className='about-inside-scoop'>
-					<img className='about-inside-scoop-img' src='/images/buttons/Get-the-inside-scoop.png' /><br/>
-					<input className='about-email' placeholder="Email" />
-					<br/>
-					<img className='about-subscribe-img' src='/images/buttons/subscribe.png' />
-				</div>
-			</div>
+			
 		</div>
         	      
 		);
