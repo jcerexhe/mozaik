@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slick from 'react-slick';
 import _ from 'lodash';
 import ReactModal from 'react-modal';
+import Footer from '../footer/index.jsx';
 
 const customStyles = {
   overlay : {
@@ -157,6 +158,9 @@ export default class HeroApp extends Component {
             <img src='/images/white-arrow-down.png' alt='arrow-down' />
           </a>
         </div>*/}
+        <div className='home-footer'>
+          <Footer/>
+        </div>
       </div>
 
     );

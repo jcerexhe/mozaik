@@ -561,8 +561,9 @@ input[type=text]::placeholder {
   height: 190vw;
   overflow-x: hidden;
   background-color: #FFFFFF;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 85%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 85%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+          clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+  margin-bottom: 0; }
   .home-artworks-container svg {
     position: absolute;
     height: 100%; }
@@ -2056,6 +2057,11 @@ contact-field {
 .get-started > img {
   width: 70%; }
 
+.agency-footer {
+  position: absolute;
+  top: 481%;
+  z-index: 1; }
+
 .performing-arts-page-heading {
   border: 10px solid #181818;
   width: 40%;
@@ -2232,26 +2238,10 @@ ul.careers-lists > li:before {
   -ms-flex-align: center;
       align-items: center; }
 
-.performing-art-contact {
-  margin-top: -3%;
-  width: 100%;
-  height: 450px;
-  background-image: url(/images/patterns/partoffooter.png);
-  background-size: 100% 100%;
-  background-position-y: 20%;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  text-align: center;
-  padding-top: 10%; }
-
-.performing-art-inside-scoop-img {
-  height: 100px; }
-
-.performing-art-email {
-  width: 300px;
-  height: 40px;
-  border: 2px solid #F76F70;
-  background: transparent; }
+.performing-arts-footer {
+  position: absolute;
+  top: 260%;
+  z-index: 1; }
 
 #nav {
   position: absolute;
@@ -2685,6 +2675,11 @@ ul.careers-lists > li:before {
   position: relative;
   left: 1vw;
   top: .2vw; }
+
+.home-footer {
+  position: absolute;
+  top: 389%;
+  z-index: 1; }
 
 #search {
   position: relative;

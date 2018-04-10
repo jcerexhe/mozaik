@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import Footer from '../footer/index.jsx';
+
 export default class AboutApp extends Component {
 	render() {
 		return (
