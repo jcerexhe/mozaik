@@ -117,7 +117,8 @@ html, body {
   left: 15%; }
 
 .content {
-  margin-top: -100px; }
+  margin-top: -100px;
+  height: 390vh; }
 
 .partoffooter {
   width: 100%;
@@ -616,8 +617,8 @@ input[type=text]::placeholder {
   height: 190vw;
   overflow-x: hidden;
   background-color: #FFFFFF;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0 82%);
-          clip-path: polygon(0 0, 100% 0, 100% 73%, 0 82%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 85%); }
   .home-artworks-container svg {
     position: absolute;
     height: 100%; }

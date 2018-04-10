@@ -55,7 +55,9 @@ export default class HeroApp extends Component {
           }
         },
         {
-          heading: 'Personalised application support',
+          heading: 'Personalised',
+          headingbr1:'application',
+          headingbr2:'support',
           text: "From enquiry to enrolment...",
           br:"and throughout your whole student journey.",
           background: 'http://res.cloudinary.com/mozaik/image/upload/v1521860341/kim-carpenter-307030-unsplash_tpekck.jpg',
@@ -66,9 +68,9 @@ export default class HeroApp extends Component {
           },
           styles: {
             h1:{
-              color: '#082A3E',
+              color: '#000000',
               width: '8em',
-              lineHeight: '1'
+              lineHeight: '1',
             }
           }
         }
@@ -121,7 +123,8 @@ export default class HeroApp extends Component {
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
                   </ReactModal>
                   <div className="slide-text">
-                    { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}</h1> }
+                    { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}
+                    <br/>{slide.headingbr1}<br/>{slide.headingbr2}</h1> }
                     <br/><br/>
                     <p>{ slide.text }</p>
                     <p>{ slide.br }</p>

@@ -177,11 +177,7 @@ export default class HomeArtworkApp extends Component {
             <clipPath id="top-stripes">
               <polygon points="0,0 100,0 100,15 0,40" fill="#0C2A3E"></polygon>
             </clipPath>
-            <clipPath id="bottom-stripes">
-              <polygon points="0,190 100,190 100,140, 0,155" fill="#0C2A3E"></polygon>
-            </clipPath>
-
-            {/*Art Frames: L to R, T to B*/}
+           {/*Art Frames: L to R, T to B*/}
             <clipPath id="home-img-frame-1">
               <polygon points="0,80 0,44 27,37 27,80" fill="#0C2A3E"></polygon>
             </clipPath>
