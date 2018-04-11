@@ -15,11 +15,12 @@
   /* width: 100vw !important; */
   /* height: calc(100vh + 300px) !important; */
   /* padding-top: 100px; */
-  background-size: cover;
+  background-size: 100%;
   /* background-position: 0 -200px; */
   z-index: 1;
   height: 100vh !important;
-  background-position: center;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 .slider-dots {
   display: none;
@@ -40,7 +41,7 @@
   width: calc(100% - 80px);
 }
 .slider-body > .slide-text > h1 {
-  font-size: 6vw;
+  font-size: 8vw;
   font-family: 'Bebas Neue';
   //margin-bottom: 0;
   /* change this margin top */
