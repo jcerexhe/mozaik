@@ -914,17 +914,9 @@ input[type=text]::placeholder {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 15%; }
-  .school-contact .inside-scoop h3 {
-    color: #FFFFFF;
-    background: #FF6D6D;
-    width: 15%;
-    height: 50px;
-    margin: 0 auto;
-    padding: 10px;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    line-height: 33px; }
+  padding-top: 11%; }
+  .school-contact .inside-scoop .inside-scoop-img {
+    background-repeat: no-repeat; }
   .school-contact .inside-scoop input {
     box-sizing: border-box;
     border: 2px solid #FF6D6D;
@@ -3541,11 +3533,8 @@ ul.careers-lists > li:before {
   right: 50%;
   margin-top: 10%; }
 
-.inside-scoop-img {
-  height: 100px; }
-
 .input-email {
-  width: 300px;
+  width: 350px;
   height: 40px;
   border: 2px solid #F76F70;
   background: transparent; }
