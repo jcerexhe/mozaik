@@ -62,8 +62,8 @@ const CourseCard = (props) => {
             <div className='info-bits-container'>
               <div className='info-bits-section'>
                 <p className='course-info-bit-left'>
-                  <span className='bold caps'>length:</span>
-                  <span className='info-bit-content'>{ course.length }</span>
+                  <span className='bold caps'>duration:</span>
+                  <span className='info-bit-content'>{ course.duration }</span>
                 </p>
               </div>
             </div>
@@ -88,8 +88,8 @@ const CourseCard = (props) => {
           <div className='info-bits-container'>
             <div className='info-bits-section'>
               <p className='course-info-bit-left'>
-                <span className='bold caps'>length:</span>
-                <span className='info-bit-content'>{ course.length }</span>
+                <span className='bold caps'>duration:</span>
+                <span className='info-bit-content'>{ course.duration }</span>
               </p>
             </div>
           </div>

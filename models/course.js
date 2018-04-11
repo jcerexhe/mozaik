@@ -32,6 +32,7 @@ const courseSchema = new Schema({
     type: String,
     trim: true,
   },
+  duration: String, 
   prices: [{
     type: {
       type: String,

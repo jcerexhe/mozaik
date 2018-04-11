@@ -766,7 +766,7 @@ input[type=text]::placeholder {
     background-color: white;
     width: 100%;
     position: relative;
-    top: -70px;
+    top: -50px;
     padding-top: 40px;
     padding-bottom: 20px;
     height: 580px; }
@@ -830,7 +830,17 @@ input[type=text]::placeholder {
       width: 100%;
       height: 100%; }
       .study-areas-box .study-areas .area-box .disciplines p {
-        display: none; }
+        display: none;
+        text-align: center;
+        font-size: 12px;
+        color: #FF6D6D;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue'; }
+        .study-areas-box .study-areas .area-box .disciplines p .area-link {
+          font-size: 15px !important;
+          color: #FF6D6D !important;
+          text-decoration: none; }
       .study-areas-box .study-areas .area-box .disciplines ul {
         width: 100%;
         margin: 0;
@@ -844,13 +854,13 @@ input[type=text]::placeholder {
             padding: 0px 8px;
             margin: 0;
             text-decoration: none;
-            color: #000;
+            color: #fff;
             text-transform: uppercase;
-            font-size: 10px;
+            font-size: 12px !important;
             font-family: 'Bebas Neue';
             letter-spacing: 1px; }
     .study-areas-box .study-areas .area-box .disciplines:hover {
-      background-color: rgba(176, 171, 171, 0.7); }
+      background-color: rgba(8, 42, 62, 0.8); }
     .study-areas-box .study-areas .area-box .disciplines:hover p {
       display: block; }
     .study-areas-box .study-areas .area-box h3 {
@@ -3081,7 +3091,27 @@ ul.careers-lists > li:before {
 .art-box-img {
   width: 100%;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+  .art-box-img .img-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .art-box-img .img-details h2, .art-box-img .img-details p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: 'Bebas Neue'; }
 
 .artwork-next {
   width: 50px;
@@ -3105,8 +3135,10 @@ ul.careers-lists > li:before {
     outline: 0;
     cursor: pointer; }
 
-.art-box-img:hover {
-  opacity: 0.8; }
+.art-box-img:hover .img-details {
+  background-color: #082A3E;
+  display: -ms-flexbox;
+  display: flex; }
 
 .artwork-container {
   display: -ms-flexbox;
@@ -3155,6 +3187,17 @@ ul.careers-lists > li:before {
       background-size: 100%;
       display: -ms-flexbox;
       display: flex; }
+      .artwork-container .art-box .art-box-2 .right .art-box-img .img-details {
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        width: 70%;
+        padding-top: 20px; }
+      .artwork-container .art-box .art-box-2 .left .art-box-img .img-details {
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        width: 70%;
+        padding-bottom: 60px;
+        margin-left: 30%; }
       .artwork-container .art-box .art-box-2 .art-box-2-img {
         width: 100%;
         height: 100%; }
@@ -3170,11 +3213,18 @@ ul.careers-lists > li:before {
       z-index: 0;
       position: absolute;
       left: 28%;
-      -ms-transform: skew(-33deg);
-          transform: skew(-33deg); }
+      -ms-transform: skew(-15deg);
+          transform: skew(-15deg); }
       .artwork-container .art-box .art-box-2-diagonal .art-box-img {
-        background-size: 130%;
-        background-position: left; }
+        background-size: 200%;
+        background-position: center; }
+        .artwork-container .art-box .art-box-2-diagonal .art-box-img .img-details {
+          position: absolute;
+          width: 100%;
+          height: 100%; }
+          .artwork-container .art-box .art-box-2-diagonal .art-box-img .img-details h2, .artwork-container .art-box .art-box-2-diagonal .art-box-img .img-details p {
+            -ms-transform: skew(15deg);
+                transform: skew(15deg); }
   .artwork-container .art-box-last {
     width: 20%; }
     .artwork-container .art-box-last .art-box-3 {

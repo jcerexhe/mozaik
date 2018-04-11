@@ -145,32 +145,56 @@ export default class ArtworkApp extends Component {
   }
 
   renderImg(img, i){
-    const { indexList } = this.state;
+    const { indexList, isOpen } = this.state;
     // console.log(parseInt(i));
 
     let imgIndex;
+    let styled;
+    var x = i+1;
+    var y = 5;
     // if(img.length >= 7){
     //   imgIndex = i;
     // }else{
     //   imgIndex = 0;
     // }
-    let check = true;
-    console.log(img.length);
-    while(check == true){
-      imgIndex = Math.floor(Math.random() * Math.floor(img.length));
-      if(indexList.includes(imgIndex)){
-        check=true;
-      }else{
-        check=false;
-        indexList.push(imgIndex);
-      }
-    }
+    
+    // console.log(img.length);  
+
+    // console.log()     // 
+
+      // let check = true;
+      // while(check == true){
+        imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+      //   if(indexList.includes(imgIndex)){
+      //     check=true;
+      //   }else{
+      //     check=false;
+      //     indexList.push(imgIndex);
+      //   }
+      // }
+    
 
     // if(indexList.includes(imgIndex) == false){
     //   indexList.push(imgIndex);
     // }
+
+    // let yellow = "green";
+
+    //   styled = (<style dangerouslySetInnerHTML={{__html: 
+
+    //     '.art-box-2-diagonal .art-box-img{ background-image: none !important; }' 
+
+    //     }} />);
+
+      
+      // style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}
+
     return(
-        <div onClick={ () => this.openLightbox(imgIndex) } className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}>
+        <div  className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}} >
+          <div className="img-details" onClick={ () => this.openLightbox(imgIndex) }>
+            <h2>{ img[imgIndex].title }</h2>
+            <p>{ img[imgIndex].artist }</p>
+          </div>
 
         </div>
       );
