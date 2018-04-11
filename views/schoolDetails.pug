@@ -93,10 +93,13 @@ block content
     .website
       a(href=school.website)=school.website
     .inside-scoop
-      .inside-scoop-img(style="background-image: url('/images/buttons/Get-the-inside-scoop.png')")
-      input(placeholder='Email address')
-      br
-      a.btn(href="#") subscribe
+      .inside-scoop-btn
+        img(src='/images/buttons/Get-the-inside-scoop.png')
+      .input-email
+        input(placeholder='Email')
+      .subscribe-btn
+        img(src='/images/buttons/subscribe.png')
+
         // TODO insert enquiry form; hubspot?
 append stylesheets
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")

@@ -562,8 +562,6 @@ input[type=text]::placeholder {
   height: 190vw;
   overflow-x: hidden;
   background-color: #FFFFFF;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
-          clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
   margin-bottom: 0; }
   .home-artworks-container svg {
     position: absolute;
@@ -923,28 +921,43 @@ input[type=text]::placeholder {
 
 .school-contact .inside-scoop {
   width: 100%;
-  height: 450px;
+  height: 100vh;
   background-image: url("/images/patterns/partoffooter.png");
   background-size: 100% 100%;
   background-position-y: 20%;
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 11%; }
-  .school-contact .inside-scoop .inside-scoop-img {
-    background-repeat: no-repeat; }
+  padding-top: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
   .school-contact .inside-scoop input {
     box-sizing: border-box;
     border: 2px solid #FF6D6D;
-    width: 15%;
+    width: 350px;
+    height: 40px;
     padding: 5px;
     background: transparent;
     margin-bottom: 5px; }
-  .school-contact .inside-scoop .btn {
-    border: 0;
-    color: #000;
-    background: #FFFFFF;
-    border-radius: 0; }
+  .school-contact .inside-scoop input::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
+  .school-contact .inside-scoop input:-ms-input-placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
+  .school-contact .inside-scoop input::placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
 
 .school-details-links {
   display: -ms-flexbox;
@@ -1399,7 +1412,7 @@ contact-field {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  height: 480vh;
+  height: 530vh;
   background-color: black;
   position: relative;
   margin-bottom: 5%;
@@ -2067,7 +2080,7 @@ contact-field {
 
 .agency-footer {
   position: absolute;
-  top: 481%;
+  top: 500%;
   z-index: 1; }
 
 .performing-arts-page-heading {
@@ -2160,7 +2173,7 @@ contact-field {
   letter-spacing: 1px; }
 
 .careers-container {
-  height: 215vh;
+  height: 248vh;
   /*https://uigradients.com/*/
   background: linear-gradient(to left, #3c1053 20%, #4389A2 90%), linear-gradient(to right, #3c1053 20%, #4389A2 90%);
   position: relative;
@@ -2517,11 +2530,12 @@ ul.careers-lists > li:before {
   /* width: 100vw !important; */
   /* height: calc(100vh + 300px) !important; */
   /* padding-top: 100px; */
-  background-size: cover;
+  background-size: 100%;
   /* background-position: 0 -200px; */
   z-index: 1;
   height: 100vh !important;
-  background-position: center; }
+  background-position: right center;
+  background-repeat: no-repeat; }
 
 .slider-dots {
   display: none;
@@ -2543,7 +2557,7 @@ ul.careers-lists > li:before {
   width: calc(100% - 80px); }
 
 .slider-body > .slide-text > h1 {
-  font-size: 6vw;
+  font-size: 8vw;
   font-family: 'Bebas Neue';
   /* change this margin top */
   /*margin-top: 12%;*/
@@ -2686,7 +2700,7 @@ ul.careers-lists > li:before {
 
 .home-footer {
   position: absolute;
-  top: 389%;
+  top: 380%;
   z-index: 1; }
 
 #search {
@@ -3605,7 +3619,7 @@ ul.careers-lists > li:before {
 
 .partoffooter > img {
   width: 100%;
-  height: 450px;
+  height: 100vh;
   /*background-image: url(/images/patterns/partoffooter.png);*/
   background-size: 100% 100%;
   background-position-y: 20%;
@@ -3626,7 +3640,7 @@ ul.careers-lists > li:before {
       align-items: center;
   left: 50%;
   right: 50%;
-  margin-top: 10%; }
+  margin-top: 20%; }
 
 .input-email {
   width: 350px;

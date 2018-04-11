@@ -61,7 +61,7 @@ export default class HeroApp extends Component {
           headingbr2:'support',
           text: "From enquiry to enrolment...",
           br:"and throughout your whole student journey.",
-          background: 'http://res.cloudinary.com/mozaik/image/upload/v1521860341/kim-carpenter-307030-unsplash_tpekck.jpg',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1523264291/HeroSlide3Image_fwxq00.png',
           video: false,
           cta: {
             text: 'Learn More',
