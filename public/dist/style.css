@@ -562,8 +562,6 @@ input[type=text]::placeholder {
   height: 190vw;
   overflow-x: hidden;
   background-color: #FFFFFF;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
-          clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
   margin-bottom: 0; }
   .home-artworks-container svg {
     position: absolute;
@@ -2691,7 +2689,7 @@ ul.careers-lists > li:before {
 
 .home-footer {
   position: absolute;
-  top: 389%;
+  top: 411%;
   z-index: 1; }
 
 #search {
