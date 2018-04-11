@@ -366,27 +366,27 @@
     box-sizing: border-box;
     text-align: center;
     padding-top: 11%;
-
-   .inside-scoop-img{
-    
-    background-repeat: no-repeat;
-   }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     input{
       box-sizing: border-box;
       border: 2px solid $pink;
-      width: 15%;
+      width: 350px;
+      height: 40px;
       padding: 5px;
       background: transparent;
       margin-bottom: 5px;
     }
 
-    .btn{
-      border: 0;
-      color: #000;
-      background: $white;
-      border-radius: 0;
+    input::placeholder{
+      color: $white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px;
     }
+    
   }
 }
 

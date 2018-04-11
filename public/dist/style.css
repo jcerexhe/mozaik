@@ -920,21 +920,36 @@ input[type=text]::placeholder {
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 11%; }
-  .school-contact .inside-scoop .inside-scoop-img {
-    background-repeat: no-repeat; }
+  padding-top: 11%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
   .school-contact .inside-scoop input {
     box-sizing: border-box;
     border: 2px solid #FF6D6D;
-    width: 15%;
+    width: 350px;
+    height: 40px;
     padding: 5px;
     background: transparent;
     margin-bottom: 5px; }
-  .school-contact .inside-scoop .btn {
-    border: 0;
-    color: #000;
-    background: #FFFFFF;
-    border-radius: 0; }
+  .school-contact .inside-scoop input::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
+  .school-contact .inside-scoop input:-ms-input-placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
+  .school-contact .inside-scoop input::placeholder {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 10px; }
 
 .school-details-links {
   display: -ms-flexbox;
