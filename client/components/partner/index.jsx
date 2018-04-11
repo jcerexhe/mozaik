@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import Footer from '../footer/index.jsx';
 
 export default class PartnerApp extends Component {
 	render() {
@@ -66,6 +67,9 @@ export default class PartnerApp extends Component {
 						<img alt='submit button' src='/images/buttons/Submit_1.png'/>
 					</div>
 				</div>
+			</div>
+			<div>
+				<Footer/>
 			</div>
 		</div>
 		);

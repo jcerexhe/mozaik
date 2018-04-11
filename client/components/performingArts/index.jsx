@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import Footer from '../footer/index.jsx';
 
 export default class PerformingArtsApp extends Component {
 	render() {
@@ -75,7 +76,9 @@ export default class PerformingArtsApp extends Component {
 					<img src="/images/buttons/Enquire.png" />
 				</div>
 			</div>
-		
+			<div className='performing-arts-footer'>
+				<Footer/>
+			</div>
 	</div>
         	      
 		);

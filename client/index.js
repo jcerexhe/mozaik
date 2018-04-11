@@ -13,7 +13,7 @@ import AboutApp from './components/about/index.jsx';
 import AgencyApp from './components/agency/index.jsx';
 import PartnerApp from './components/partner/index.jsx';
 import PerformingArtsApp from './components/performingArts/index.jsx';
-
+import FooterApp from './components/footer/index.jsx';
 
 reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
@@ -29,4 +29,4 @@ reactHelper.register({ AboutApp });
 reactHelper.register({ AgencyApp });
 reactHelper.register({ PartnerApp });
 reactHelper.register({ PerformingArtsApp });
-
+reactHelper.register({ FooterApp });

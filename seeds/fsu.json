@@ -2,7 +2,7 @@
   "school": {
     "name": "Full Sail University (FSU)",
     "short_name": "FSU",
-    "website": "https://www.fullsail.edu/",
+    "website": "www.fullsail.edu",
     "disciplines": [
     	"Music & Recording",
     	"Games",
@@ -116,7 +116,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "29 Months",
+      "duration": "29 Months",
       "intakes": "Monthly",
       "prices": [
         {
@@ -156,7 +156,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "20 Months",
+      "duration": "20 Months",
       "intakes": "Monthly",
       "prices": [
         {
@@ -196,7 +196,7 @@
       "campus": [
       	"Winter Park" 
       ],
-      "length": "20 Months",
+      "duration": "20 Months",
       "intakes": "Monthly",
       "prices": [
         {
@@ -240,7 +240,7 @@
       	"Winter Park",
       	"Online" 
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ],
@@ -275,7 +275,7 @@
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
-      	"Game Design",
+      	"Games Design",
       	"Game Development",
       	"Games and Interactivity",
       	"Games Assets",
@@ -302,7 +302,7 @@
       	"Winter Park",
       	"Online" 
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ], 
@@ -337,7 +337,7 @@
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
-      	"Game Design",
+      	"Games Design",
       	"Game Development",
       	"Games and Interactivity",
       	"Games Assets",
@@ -362,7 +362,7 @@
       "campus": [
       	"Winter Park" 
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -387,7 +387,7 @@
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
-      	"Game Design",
+      	"Games Design",
       	"Game Development",
       	"Games and Interactivity",
       	"Games Assets",
@@ -412,7 +412,7 @@
       "campus": [
       	"Winter Park" 
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -437,7 +437,7 @@
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
-      	"Game Design",
+      	"Games Design",
       	"Game Development",
       	"Games and Interactivity",
       	"Games Assets",
@@ -462,7 +462,7 @@
       "campus": [
       	"Online" 
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -489,7 +489,7 @@
       	"Packaging and Branding",
       	"Digital Project Management",
       	"Cross-Platform Apps",
-      	"Game Design",
+      	"Games Design",
       	"Game Development",
       	"Games and Interactivity",
       	"Games Assets",
@@ -505,7 +505,7 @@
       	"Winter Park",
       	"Online" 
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ],
@@ -540,7 +540,7 @@
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
-      	"Game Design",
+      	"Games Design",
       	"Multimedia",
       	"Digital Design",
       	"Digital Imaging",
@@ -568,7 +568,7 @@
       "campus": [
       	"Winter Park" 
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -589,7 +589,7 @@
        	"2D Animation",
       	"3D Design",
       	"Motion Graphics",
-      	"Game Design",
+      	"Games Design",
       	"Multimedia",
       	"Digital Media",
        	"Digital Imaging",
@@ -623,7 +623,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "29 Months", 
+      "duration": "29 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -653,7 +653,7 @@
       	"3D Printing",
       	"Packaging and Branding",
       	"Photomedia",
-      	"Visual Communictions",
+      	"Visual Communications",
       	"Photography Design",
       	"Concept Artist",
       	"Creative Drawing",
@@ -672,7 +672,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -703,7 +703,7 @@
       	"3D Printing",
       	"Packaging and Branding",
       	"Photomedia",
-      	"Visual Communictions",
+      	"Visual Communications",
       	"Photography Design",
       	"Concept Artist",
       	"Creative Drawing",
@@ -724,7 +724,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "29 Months", 
+      "duration": "29 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -740,7 +740,8 @@
       	"Bachelor"
       ],
       "disciplines": [
-      	"Film",
+      	"Film/TV/Audio",
+        "Film",
       	"TV",
       	"Animation",
       	"Screen Production",
@@ -770,7 +771,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -786,6 +787,7 @@
       	"Bachelor"
       ],
       "disciplines": [
+        "Film/TV/Audio",
       	"Film",
       	"Animation",
       	"Screen Production",
@@ -832,7 +834,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -848,6 +850,7 @@
       	"Master"
       ],
       "disciplines": [
+        "Film/TV/Audio",
       	"Film",
       	"Animation",
       	"Screen Production",
@@ -894,7 +897,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -953,7 +956,7 @@
       	"Winter Park",
       	"Online"
       ],
-      "length": "20-Month Bachelor’s", 
+      "duration": "20-Month Bachelor’s", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1011,7 +1014,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1065,7 +1068,7 @@
       "campus": [
       	"Winter Park"
       ],
-      "length": "20 Months", 
+      "duration": "20 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1125,7 +1128,7 @@
       	"Winter Park",
       	"Online"
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ], 
@@ -1187,7 +1190,7 @@
       	"Winter Park",
       	"Online"
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ], 
@@ -1214,6 +1217,7 @@
       	"Bachelor"
       ],
       "disciplines": [
+        "Film/TV/Audio",
       	"Film",
       	"TV",
       	"Screen Production",
@@ -1236,7 +1240,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1252,6 +1256,7 @@
       	"Master"
       ],
       "disciplines": [
+        "Film/TV/Audio",
       	"Film",
       	"TV",
       	"Screen Production",
@@ -1274,7 +1279,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1295,7 +1300,7 @@
       	"Multimedia",
       	"Audience Engagement",
       	"Digital Design",
-      	"Game Design",
+      	"Games Design",
       	"Digital Marketing"
       ],
       "image": ""
@@ -1308,7 +1313,7 @@
       	"Winter Park",
       	"Online"
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ], 
@@ -1368,7 +1373,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1412,7 +1417,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
        "prices": [
         {
@@ -1477,7 +1482,7 @@
       "campus": [
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
        "prices": [
         {
@@ -1526,7 +1531,7 @@
       	"Winter Park",
       	"Online"
       ],
-      "length": [
+      "duration": [
       	"Campus - 12 Months", 
       	"Online - 12 Months"
       ], 
@@ -1615,7 +1620,7 @@
       "campus": [      
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1692,7 +1697,7 @@
       "campus": [      
       	"Online"
       ],
-      "length": "29 Months", 
+      "duration": "29 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1764,7 +1769,7 @@
       "campus": [      
       	"Online"
       ],
-      "length": "12 Months", 
+      "duration": "12 Months", 
       "intakes": "Monthly",
       "prices": [
         {
@@ -1785,8 +1790,8 @@
       	"Entertainment Business",
       	"Marketing",
       	"Digital Marketing",
-		"Social Media",
-		"Integrated Marketing",
+		    "Social Media",
+		    "Integrated Marketing",
       	"Internet Marketing",
       	"Marketing for Creative Industries",
       	"Arts Management",
@@ -1837,7 +1842,7 @@
         "Winter Park",    
       	"Online"
       ],
-      "length": [
+      "duration": [
       	"Campus - 20 Months", 
       	"Online - 29 Months"
       ], 
