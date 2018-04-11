@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 import Filter from '../shared/filter.jsx';
 import Artwork from './artwork.jsx';
+import Footer from '../footer/index.jsx';
 
 export default class HomeArtworkApp extends Component {
   constructor(props) {
@@ -244,7 +245,9 @@ export default class HomeArtworkApp extends Component {
             </g>
           }
         </svg>
+
       </div>
+
     );
   }
 }

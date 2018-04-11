@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import Footer from '../footer/index.jsx';
 
 export default class AgencyApp extends Component {
 	render() {
@@ -182,7 +183,11 @@ export default class AgencyApp extends Component {
 				<div className='get-started'>
 					<img src="/images/buttons/Get-started.png" />
 				</div>
-			</div>				
+				
+			</div>	
+			<div className='agency-footer'>
+					<Footer/>
+				</div>			
 		</div>
 	
         	      
