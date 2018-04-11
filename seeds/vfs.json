@@ -2,7 +2,7 @@
   "school": {
     "name": "Vancouver Film School (VFS)",
     "short_name": "VFS",
-    "website": "https://vfs.edu/",
+    "website": "vfs.edu",
     "disciplines": [
       "Digital Media",
       "Animation",
@@ -81,7 +81,7 @@
       "description": "In this course you will explore introduction to camera, improvisation, and audition, along with the essential actor’s building blocks of voice, movement, text analysis, and acting techniques. ",
       "campus": ["Vancouver"
       ],
-      "length": "4 months | 2 year accelerated",
+      "duration": "4 months | 2 year accelerated",
       "intakes": "February | April | June | August | October | December",
       "prices": [
         {
@@ -117,7 +117,7 @@
       "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -161,7 +161,7 @@
       "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -183,6 +183,7 @@
         "Movement"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Digital Media",
         "Acting",
         "Performance Art",
@@ -211,7 +212,7 @@
       "description": "In this course you will explore the possibilities of storytelling, giving you both the narrative craft and visual techniques necessary to bring a story to life on the screen. You will also expand your range of filmmaking techniques while you learn to work on larger sets and co-create with outside writers.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -234,6 +235,7 @@
         "Post-Production"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Production",
@@ -272,7 +274,7 @@
       "description": "In this course you will learn the fundamentals of beauty makeup, while building a solid understanding of products, colour theory, and facial anatomy. You will recreate classic decade looks and adapt them for contemporary application.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -294,6 +296,7 @@
         "Sculpting"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Makeup",
         "TV",
         "Film",
@@ -316,7 +319,7 @@
       "description": "In this course you will discover the current industry practices in audio, and familiarize yourself with the main audio tool of the industry, Pro Tools and the foundations of game audio. Explore more complex techniques and concepts in post-production audio and game audio. Gain an in-depth understanding of MAXMSP. Expand your post-production skills through sound editing and mixing, while taking frame rates and their practical implications into consideration. Enhance your game audio techniques using Wwise software. Practice large-scale mixing in a 5.1 re-recording theatre with an Avid ICON D-Control ES console.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "February | June | October ",
       "prices": [
         {
@@ -369,7 +372,7 @@
       "description": "In this course you will develop fundamental skills in visual storytelling, structure, character, format, genre as well as  your TV spec script, hone your dialogue skills, and start work on a series of comedy sketches.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -390,6 +393,7 @@
       ],
       "disciplines": [
         "Digital Media",
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Writing",
@@ -411,7 +415,7 @@
       "description": "In this course you will gain experience with traditional arts, computer animation, and cinematic storytelling skills in a professional, studio environment. Advance your 2D and 3D animation skills as you start to delve into the art of Life Drawing. Complete courses in 3D lighting, texturing, and visual storytelling. Having completed, to deadline, all 3D pre-production requirements, get started on production of your project, maintaining a full production schedule under the guidance of your project supervisor.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -450,7 +454,7 @@
         "VFX",
         "Motion Graphics",
         "Computer Graphics",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -467,7 +471,7 @@
       "description": "Learn the fundamentals of translating words and ideas into compelling visual stories.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "June | August | October",
       "prices": [
         {
@@ -508,7 +512,7 @@
       "description": "Create an attention-grabbing reel of animated work that showcases your classical animation techniques, storytelling skills, and grasp of modern digital tools. You will delve into the fundamentals of drawing, animation, and basic art direction.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -550,7 +554,7 @@
       "description": "Understand fundamental design approaches, identify target audiences and leverage your understanding of current tools to tell simple, powerful stories.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -581,7 +585,7 @@
         "2D Animation", 
         "3D Design",
         "Motion Graphics", 
-        "Game Design", 
+        "Games Design", 
         "Multimedia",
         "Digital Imaging",
         "Digital images",
@@ -608,7 +612,7 @@
       "description": "In this course you will build on your game design foundation and start to create your own playable 2D game in Unity. Shift from theoretical to practical with hands-on work on detailed design documentation and front-end interfaces. Expand your role as a designer with online, multiplayer design.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "April | August | October",
       "prices": [
         {
@@ -630,12 +634,12 @@
       ],
       "disciplines": [
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Unity",
         "Design",
         "3D Design",
         "Screen Media",
-        "Game Design",
+        "Games Design",
         "Computer Graphics",
         "Multimedia",
         "Digital Design",
@@ -655,7 +659,7 @@
       "description": "In this course you will learn fundamental theories, key concepts, and processes involved in creating high-quality games, web, and mobile projects. Work with 2D and 3D design tools and discover asset pipelines for large projects. You will also enhance your skill set by utilizing C++ programming language, Object Oriented Programming techniques, and mobile applications for the Apple iPad and iPhone. Create mobile apps and communicate with online networks and payment solution providers, using the Android platform and Java language. Encounter the key features of artificial intelligence in Unity and the building blocks that influence the gaming experience. Utilize Windows and OpenGL with C++ programming to create a simple game engine. Demonstrate knowledge in Winsock and the protocols TCP/IP and UDP. Create a cloud project that utilizes Amazon web services and synthesize all of your work in a professional-quality website showcase.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -689,7 +693,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",

@@ -2,7 +2,7 @@
   "school": {
     "name": "Australian Film Television and Radio School (AFTRS)",
     "short_name": "AFTRS",
-    "website": "http://www.aftrs.edu.au/",
+    "website": "www.aftrs.edu.au",
     "disciplines": [
       "Film/TV",
       "Radio",
@@ -82,7 +82,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -102,6 +102,7 @@
         "Screen Business"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Radio",
@@ -142,7 +143,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -166,6 +167,7 @@
         "Sound"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Radio",
@@ -212,7 +214,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -230,6 +232,7 @@
         "3D Animation"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "Animation",
         "2D Animation",
@@ -252,7 +255,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -270,6 +273,7 @@
         "2D Matte Painting"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "Animation",
         "2D Animation",
@@ -293,7 +297,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -310,6 +314,7 @@
         "Visual Expression"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Animation",
@@ -338,7 +343,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -354,6 +359,7 @@
         "Lighting"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -385,7 +391,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -402,6 +408,7 @@
         "Creative Grading"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Cinematography",
@@ -422,7 +429,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -439,6 +446,7 @@
         "Visual Expression"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -465,7 +473,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -483,6 +491,7 @@
         "Screen Language"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Animation",
@@ -506,7 +515,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -523,6 +532,7 @@
         "Performance"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Animation",
@@ -546,7 +556,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -563,6 +573,7 @@
         "Directorial Vision"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -580,7 +591,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -596,6 +607,7 @@
         "Collaborative Practice"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -613,7 +625,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -631,6 +643,7 @@
         "Temp Music and Sound"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Editing",
@@ -652,7 +665,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -669,6 +682,7 @@
         "Avid Composer"
       ],
       "disciplines": [
+        "Film/TV/Audio", 
         "Film",
         "TV",
         "Editing",
@@ -690,7 +704,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -706,6 +720,7 @@
         "Technical Editing"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "TV",
         "Editing",
         "Post Production",
@@ -723,7 +738,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -740,6 +755,7 @@
         "Collaborative Practice"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Editing",
@@ -760,7 +776,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -778,6 +794,8 @@
         "Entrepreneurship"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Business for Creatives",
         "Film",
         "TV",
         "Screen Production",
@@ -816,7 +834,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -834,6 +852,8 @@
         "Marketing and Audience"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Business for Creatives",
         "Film",
         "TV",
         "Screen Production",
@@ -860,7 +880,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -877,6 +897,7 @@
         "Digital Visualisation"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Production Design",
@@ -900,7 +921,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -917,6 +938,7 @@
         "Design Practices"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Production Design",
@@ -939,7 +961,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -956,6 +978,7 @@
         "Screen Culture"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -973,12 +996,12 @@
     {
       "name": "Advanced Diploma in Screenwriting: Feature Film",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-length drama.",
+      "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-duration drama.",
       "campus": [
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -995,6 +1018,7 @@
         "Visual Language"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -1016,7 +1040,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1032,6 +1056,7 @@
         "Genre, Format and Development"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "TV",
         "Screen Production",
         "Screenwriting",
@@ -1050,7 +1075,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1067,6 +1092,7 @@
         "Script Editing"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -1084,7 +1110,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1101,6 +1127,7 @@
         "Collaborative Practice"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -1121,7 +1148,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1138,6 +1165,9 @@
         "Screen Culture"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Digital Media",
+        "Performing Arts",
         "Film",
         "TV",
         "Screen Production",
@@ -1164,7 +1194,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1181,6 +1211,9 @@
         "Music Technologies"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Digital Media",
+        "Performing Arts",
         "Film",
         "TV",
         "Screen Production",
@@ -1207,7 +1240,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1224,6 +1257,7 @@
         "Sound Production and Design"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -1250,7 +1284,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1267,6 +1301,7 @@
         "Internship"
       ],
       "disciplines": [
+        "Film/TV/Audio",
         "Film",
         "TV",
         "Screen Production",
@@ -1292,7 +1327,7 @@
       "campus": [
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1309,6 +1344,8 @@
         "Project Management"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1327,7 +1364,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1344,6 +1381,8 @@
         "Announcing and Presentation"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1364,7 +1403,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "February",
       "prices": [
         {
@@ -1381,6 +1420,8 @@
         "Innovative Business of Radio"
       ],
       "disciplines": [
+        "Film/TV/Audio",
+        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1401,7 +1442,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1419,6 +1460,7 @@
         "Brand Management"
       ],
       "disciplines": [
+        "Business for Creatives",
         "Screen Production",
         "Producing",
         "Screen Media",
@@ -1456,7 +1498,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1473,6 +1515,7 @@
         "Strategic Planning"
       ],
       "disciplines": [
+        "Business for Creatives",
         "Screen Production",
         "Producing",
         "Screen Media",
@@ -1509,7 +1552,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1526,6 +1569,7 @@
         "Post-Production Accounting"
       ],
       "disciplines": [
+        "Business for Creatives",
         "Production Accounting",
         "Producing",
         "Screen Business",
@@ -1547,7 +1591,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1564,6 +1608,7 @@
         "Social Video Business"
       ],
       "disciplines": [
+        "Business for Creatives",
         "Screen Business",
         "Distribution",
         "Brand Management",
@@ -1587,7 +1632,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1603,6 +1648,7 @@
         "The Evolving Production Landscape"
       ],
       "disciplines": [
+        "Business for Creatives",
         "Screen Business",
         "Distribution",
         "Brand Management",

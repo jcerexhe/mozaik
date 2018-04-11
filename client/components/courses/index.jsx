@@ -68,6 +68,11 @@ export default class CoursesApp extends Component {
         </div>
 
         )
+    }else{
+      return(
+      <div className="disciplines-disable">
+      </div>
+      )
     }
   }
 

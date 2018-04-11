@@ -20,14 +20,14 @@ export default class Filter extends Component {
       <ul className={ classes }>
         { _.map((this.props.isHome ? filterItems : smallerFilterList), (item, i) => {
           const active = activeItems.includes(item);
-            let hide;
-            if(item== 'all areas'){
-              hide = {display: 'none'};
-            }
+            // let hide;
+            // if(item== 'all areas'){
+            //   hide = {display: 'none'};
+            // }
 
           return (
             <li key={ item }>
-              <FilterButton  interest={interest} hideitem={hide} val={ item } active={ active } onClick={ (val) => onClick(val) } />
+              <FilterButton  interest={interest} val={ item } active={ active } onClick={ (val) => onClick(val) } />
             </li>
           );
         }) }

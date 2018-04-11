@@ -6,7 +6,7 @@ import SearchLink from './searchLink.jsx';
 export default class Search extends Component {
   constructor(props) {
     super(props);
-    const digMedia = ["Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
+    const digMedia = ["2D/3D Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
     const visComm = ["Advertising Design", "Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Typography", "Visual Arts", "Visual Communication", "Web Design"];
     const fineArts = ["2D/3D Art", "Ceramics", "Drawing", "Fine Arts", "Glass Design", "Jewellery Design", "Metalsmithing", "Painting", "Sculpture", "Wood Design"];
     const filmTvAudio = ["Cinematography", "Directing", "Editing", "Film/TV", "Music for Screen", "Producing", "Production Design", "Radio", "Screenwriting", "Sound Design"];
@@ -28,9 +28,9 @@ export default class Search extends Component {
       city: '',
       areas: {
         'Digital Media': digMedia,
-        'Visual Communication': visComm,
+        'Visual Comms': visComm,
         'Fine Arts': fineArts,
-        'Film / TV / Audio': filmTvAudio,
+        'Film/TV/Audio': filmTvAudio,
         'Performing Arts': perfArts,
         'Design': design,
         'Photography': photog,
@@ -76,6 +76,7 @@ export default class Search extends Component {
 
   }
   updateDiscipline(area, val) {
+    console.log(val);
     this.setState({ searchCategory: 'discipline'});
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
@@ -88,11 +89,30 @@ export default class Search extends Component {
       });
       return;
     }
+
+    if(area == 'interestAreas'){
+      this.setState({
+        discipline: {
+          ...discipline,
+          ['interestAreas']: [val],
+          ['interestDisciplines']: ['all areas']
+        }
+      });
+      return;
+    }
     _.remove(interests, (v) => { return v.indexOf('all areas') != -1 });
     if (interests.includes(val))
       _.remove(interests, (v) => { return v.indexOf(val) != -1 });
     else
-      interests.push(val);
+      if(area == 'interestCountries'){
+        interests.push(val.toUpperCase());
+        console.log(val.toUpperCase());
+      }else{
+        interests.push(val);
+      }
+
+
+      
     if (interests.length == 0)
       interests.push('all areas');
     this.setState({
@@ -117,35 +137,189 @@ export default class Search extends Component {
 
   renderDiscipline() {
     const { discipline, areas } = this.state;
-    const countries = ['all areas', 'Australia', 'Canada', 'New Zealand', 'Singapore', 'USA'];
+    const countries = ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'SINGAPORE', 'USA'];
     let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
     if (interestDisciplines.length === 0) {
       interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
     }
+
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
           <button className='btn' onClick={ (val) => this.allAreas()}> All Areas</button>
 
-          <Filter
-            filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
-            activeItems={ discipline.interestAreas }
-            onClick={ (val) => this.updateDiscipline('interestAreas', val) }
-            isHome={ true }
-            interest='area'
-          />
+          <div className="interest-area-box">
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Digital Media'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Visual Comms'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Fine Arts'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Film/TV/Audio'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Performing Arts'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Design'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Photography'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Built Environment'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Business for Creatives'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+          </div>
         </div>
+                  <br />
+          <hr className="search-line" />
         <div className='interest-disciplines'>
-          <Filter
-            filterItems={ ['all areas'].concat(interestDisciplines) }
+          <div className="interest-disciplines-box">
+            <Filter
+            filterItems={ ['all areas'] }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
             isHome={ true }
             interest='discipline'
-          />
-          <br />
-          <hr />
+            />
+            <Filter
+            filterItems={ [interestDisciplines[0]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[1]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[2]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
+          <div className="interest-disciplines-box-2">
+            <Filter
+            filterItems={ [interestDisciplines[3]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[4]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[5]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
+          <div className="interest-disciplines-box">
+            <Filter
+            filterItems={ [interestDisciplines[6]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[7]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[8]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[9]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
         </div>
+        <br /><br /><br />
         <div className='interest-countries'>
           <Filter
             filterItems={ countries }
@@ -155,6 +329,7 @@ export default class Search extends Component {
             interest='country'
           />
         </div>
+        <br /><br />
       </div>
     )
   }
@@ -227,7 +402,7 @@ export default class Search extends Component {
     // }
     return (
       <div>
-        <h1 className="page-heading">What areas interests you?</h1>
+        <h1 className="page-heading">What areas interest you?</h1>
         <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
             <div className='search-criteria'>
