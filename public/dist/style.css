@@ -2435,7 +2435,7 @@ ul.careers-lists > li:before {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100vh;
-  background-color: rgba(128, 128, 128, 0.6);
+  background-color: rgba(236, 236, 236, 0.8);
   max-width: 25%;
   min-width: 450px;
   margin: 0 auto;
@@ -2451,6 +2451,7 @@ ul.careers-lists > li:before {
     height: 100%; } }
 
 .menu-content h3 {
+  font-size: 30px;
   text-transform: uppercase;
   color: #FF6D6D; }
 
@@ -2462,10 +2463,10 @@ ul.careers-lists > li:before {
   text-align: center; }
 
 .menu-content ul > li {
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin-top: -20px;
+  margin-bottom: 18px;
   width: 180px;
-  font-family: 'Gotham Book Regular'; }
+  font-family: 'Bebas Neue'; }
 
 .menu-content ul > li > a {
   color: #181818;
@@ -2497,7 +2498,8 @@ ul.careers-lists > li:before {
   display: -ms-flexbox;
   display: flex;
   width: 200px;
-  padding-top: 20px; }
+  padding: 3px 3px 0px 3px;
+  background-color: #181818; }
   .social-nav a {
     margin: 2px; }
 
