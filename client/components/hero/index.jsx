@@ -69,9 +69,11 @@ export default class HeroApp extends Component {
           },
           styles: {
             h1:{
-              color: '#000000',
-              width: '8em',
+              color: '#181818',
+              width: '30vw',
               lineHeight: '1',
+              fontFamily: 'Montserrat Bold',
+              fontSize: '4vw'
             }
           }
         }
@@ -105,6 +107,12 @@ export default class HeroApp extends Component {
 
   render() {
     const { currentSlide, slides, settings, isOpen } = this.state;
+    let navLogo = document.querySelector('.logo');
+    if (this.state.currentSlide == 0) {
+      navLogo.style.margin = '0 auto';
+    } else {
+      navLogo.style.margin = '0';
+    };
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>

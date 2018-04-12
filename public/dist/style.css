@@ -2560,7 +2560,7 @@ ul.careers-lists > li:before {
   width: calc(100% - 80px); }
 
 .slider-body > .slide-text > h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   font-family: 'Bebas Neue';
   /* change this margin top */
   /*margin-top: 12%;*/
