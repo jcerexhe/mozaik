@@ -658,7 +658,8 @@ input[type=text]::placeholder {
     width: 100%;
     font-size: 40pt;
     font-family: 'Gotham Bold';
-    font-weight: bold; }
+    font-weight: bold;
+    color: #FFFFFF; }
   .school-heading .school-info > img {
     margin-right: 20px;
     max-width: 150px;
@@ -2966,7 +2967,7 @@ ul.careers-lists > li:before {
   color: white;
   letter-spacing: 1px;
   text-align: center;
-  border-top: 2px solid #FFFFFF;
+  border-top: 2px solid #FF0000;
   padding-top: 30px;
   width: 50%;
   margin: 0 auto; }
