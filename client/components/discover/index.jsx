@@ -41,7 +41,16 @@ const Map = withGoogleMap(props => (
 export default class DiscoverApp extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    const allLocInfo = _.map(props.schoolsInfo, (schoolInfo) => {
+      return {
+        schoolName: schoolInfo.name,
+        locDes: schoolInfo.locationDescription,
+        locations: schoolInfo.locations
+      }
+    });
+
+   this.state = {
+      allLocInfo,
       foundation: false,
       certificate: false,
       diploma: false,
@@ -72,10 +81,19 @@ export default class DiscoverApp extends Component {
     const quals = ['foundation','certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
     const site = ['on campus', 'online'];
     const inputs = ['city', 'state', 'country'];
+    let coords = [];
+    _.forEach(this.state.allLocInfo, 
+      (locInfo) => {
+        _.forEach(locInfo.locations,
+          (locCoord) => {
+            coords.push(locCoord.coordinates)
+          })
+      });
+    console.log(coords)
     return (
       <div className="map">
         <Map
-          coords={ {lat: -33.8688, lng: 151.2093} }
+         coords={ {lat: -33.8688, lng: 151.2093} }
           containerElement={
             <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
