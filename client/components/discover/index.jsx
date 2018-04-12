@@ -31,10 +31,17 @@ const Map = withGoogleMap(props => (
     zoom={2}
     center={ { lat: 0.0, lng: 150.0 } }
   >
-    <Marker
-      position={ props.coords }
-      clickable={ true }
-    />
+    
+    {_.map(props.coords, (coord, index) => {
+      return (
+        <Marker
+          key = { 'marker-' + index }
+          position={ coord }
+          clickable={ true }
+        />
+      )
+    })}
+
   </GoogleMap>
 ));
 
@@ -93,7 +100,8 @@ export default class DiscoverApp extends Component {
     return (
       <div className="map">
         <Map
-         coords={ {lat: -33.8688, lng: 151.2093} }
+         //coords={ {lat: -33.8688, lng: 151.2093} }
+         coords={ coords }
           containerElement={
             <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
