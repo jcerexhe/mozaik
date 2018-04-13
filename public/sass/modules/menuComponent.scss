@@ -29,7 +29,7 @@
   /*align-self: center;*/
   height: inherit;
   /*margin: 0 auto;*/
-  width: calc(100px + 45px)
+  /*width: calc(100px + 45px)*/
   /*padding-left: 45px;*/
 }
 .navbar > .logo > a {
@@ -60,12 +60,15 @@
   color: $pink;
 }
 .navbar .links {
-  margin-right: 50px;
-  margin-top: 200px;
+ //margin-right: 50px;
+ // margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  position: absolute;
+  right: 3vw;
+  top: 100px;
   /* hide these extra icons for now on mobile */
   @media only screen and (max-width: 768px) {
     .icon-white {
