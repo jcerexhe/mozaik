@@ -11,7 +11,7 @@ export default class MenuApp extends Component {
         {
           heading: 'for students',
           links: [
-            { url: '#', val: 'why mozaik play?' },
+            { url: '/partner-with-mozaik', val: 'why mozaik play?' },
             { url: '/discover', val: 'discover' },
             { url: '/study-areas', val: 'study areas' },
             { url: '/agency-mozaik', val: 'education agency' },
