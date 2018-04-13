@@ -85,10 +85,14 @@ block content
         !=CampusMaps
     .facilities
       .other-section-box(style="background-image: url('/images/facilities.png')")
-        !=Facilities
+        h2 facilities
+        .hover-box
+          p= school.facilitiesDescription
     .alumni
       .other-section-box(style="background-image: url('/images/alumni.png')")
-        !=Alumni
+        h2 alumni
+        .hover-box
+          !=Alumni
   .school-contact
     .website
       a(href=school.website)=school.website

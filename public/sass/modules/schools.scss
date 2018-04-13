@@ -3,8 +3,9 @@
   background-color: blue;
   background-size: cover;
   background-position: bottom;
-  width: 100%;
+  width: 100%; 
 }
+
 .modal-x{
     margin-top: -50%;
 }
@@ -330,6 +331,7 @@
     width: 33.33%;
     background-color: blue;
     margin: 0 !important;
+    overflow-x: hidden;
   }
 
   .other-section-box{
@@ -337,6 +339,15 @@
     height: 60vh;
     display: flex;
     align-items: center;
+
+    .hover-box{
+      position: absolute;
+      z-index: 200;
+      width: 33.33%;
+      height: 60vh;
+      background-color: $black;
+      opacity: 0;
+    }
 
     h2{
       width: 100%;
@@ -349,7 +360,16 @@
     }
   }
 
+    .other-section-box:hover{
+      .hover-box{
+        opacity: 1;
+      }
+    }
+
+  
 }
+
+
 
 //school contact
 .school-contact{

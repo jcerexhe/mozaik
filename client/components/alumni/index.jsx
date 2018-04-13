@@ -1,122 +1,48 @@
 import React, { Component } from 'react';
 import Slick from 'react-slick';
-import Lightbox from 'react-images';
 import _ from 'lodash';
 import { LeftArrow, RightArrow } from '../shared/arrows.jsx';
 
 export default class AlumniApp extends Component {
- constructor(props) {
+  constructor(props) {
     super(props);
-    // this.state = {};
-    const images = _.map(props.images, (alumni) => {
-      return {
-          src: alumni.photo,
-          name: alumni.name,
-          course: alumni.course,
-          credits: alumni.credits
-        };
-      });
-    this.state = {
-      photoIndex: 0,
-      isOpen: false,
-      images,
-      currentImage: 0,
-      currentName: images[0].name,
-      currentCourse: images[0].course,
-      currentCredit: images[0].credits,
-      styles: {
-        container: {
-          background: 'rgba(255, 255, 255, 0.95)',
-          padding: '0px'
-        },
-        image: {
-          maxHeight: 'calc(100vh - 150px) !important'
-        },
-        close: {
-          position: 'fixed',
-          top: '25px',
-          right: '25px',
-          fill: '#000000',
-        },
-        arrow: {
-          backgroundColor: 'transparent',
-          fill: '#000000',
-        },
-        thumbnail__active: {
-          boxShadow: '0 0 0 2px #000000'
-        }
-      }
-    };
-  }
-
-  closeLightbox() {
-    this.setState({ isOpen: false });
-  }
-
-  onClickPrev() {
-    const { images, currentImage } = this.state;
-    const nextImage = images[currentImage - 1];
-    this.setState({
-      currentImage: currentImage - 1,
-      currentName: nextImage.name,
-      currentCourse: nextImage.course,
-      currentCredit: nextImage.credits
-    });
-  }
-
-  onClickNext() {
-    const { images, currentImage } = this.state;
-    const nextImage = images[currentImage + 1];
-    this.setState({
-      currentImage: currentImage + 1,
-      currentName: nextImage.name,
-      currentCourse: nextImage.course,
-      currentCredit: nextImage.credits
-    });
-  }
-
-  renderLightbox() {
-    const { images, isOpen, currentImage, currentName, currentCourse, currentCredit, styles } = this.state;
-    return (
-      <Lightbox
-        images={ images }
-        isOpen={ isOpen }
-        backdropClosesModal={ true }
-        onClickPrev={ () => this.onClickPrev() }
-        onClickNext={ () => this.onClickNext() }
-        onClose={ () => this.closeLightbox() }
-        currentImage={ currentImage }
-        showImageCount={ false }
-        theme={ styles }
-        customControls={ [<p>{ currentName }</p>, <p>{ currentCourse }</p>, <p className='lightbox-credit'>{ currentCredit }</p>] }
-        />
-    );
+    this.state = {};
   }
 
   render() {
-    // const settings = {
-    //   autoplay: true,
-    //   arrows: true,
-    //   dots: false,
-    //   nextArrow: RightArrow,
-    //   prevArrow: LeftArrow,
-    // }
-    const images = this.props.images;
-    console.log(images.length);
-    console.log(images[0]);
-    const { photoIndex, isOpen } = this.state;        
+    const { alumni } = this.props;
+    const settings = {
+      autoplay: false,
+      arrows: true,
+      dots: false,
+      slidesToShow: (alumni.length >= 3 ? 3 : alumni.length),
+      slideToScroll: 1,
+      nextArrow: RightArrow,
+      prevArrow: LeftArrow,
+    }
     return (
-
-
-    <div style={{width: "65vh"}}>
-      <h2>
-        <a onClick={() => this.setState({ isOpen: true })}>
-          Alumni
-        </a>
-      </h2>
-        {this.renderLightbox()}
-    </div>
-
+      <div style={{width: '50vw', height: '60vh', marginTop: '-20px'}}>
+        <div className='alumni-slider'>
+         <h1>ALUMNI</h1>
+          <Slick { ...settings }>
+            { _.map(alumni, (alum) => {
+              return (
+                <div className='alumni-slide'>
+                  <div className='alumni-slide-content'>
+                    <img className='img-circle img-resp' src={ alum.photo } alt={ alum.name } />
+                    {
+                      // <h3>{ alum.name }</h3>
+                    }
+                    <p>Course: { alum.course }</p>
+                    <p>Profession: { alum.profession }</p>
+                    <p>Credits: { alum.credits }</p>
+                  </div>
+                </div>
+              );
+            }) }
+          </Slick>
+        </div>
+      </div>
     );
   }
 }

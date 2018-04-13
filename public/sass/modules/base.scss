@@ -81,6 +81,10 @@ html, body {
   background-color: $grey;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* homepage background */
 .content {
   background-color: $grey;
