@@ -167,9 +167,7 @@ export default class HomeArtworkApp extends Component {
           <h1>Search <span>&</span> Play</h1>
           <a href="/study-areas">DISCOVER</a>
         </div>
-        <div id="home-artworks-changer-arrow" className='dot' onClick={() => this.closeLightbox()}>
-          <img src="/images/white-arrow-down.png" alt="arrow-down"/>
-        </div>
+         <img src='/images/white-arrow-down.png' alt='arrow-down' className='home-right-arrow-button' id="home-artworks-changer-arrow" onClick={() => this.closeLightbox()}/>
         {/*Artworks gallery*/}
         <svg viewBox="0 0 100 190">
           {/*Define polygons for Home Artworks Gallery*/}

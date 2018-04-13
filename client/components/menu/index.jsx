@@ -39,7 +39,24 @@ export default class MenuApp extends Component {
 
   updateMenu() {
     const { menuOpen } = this.state;
-    this.setState({ menuOpen: !menuOpen });
+    this.setState({ menuOpen: !menuOpen }, () => {
+      if (this.state.menuOpen == true) {
+        document.querySelector('.logo').style.margin = '0 auto';
+      } else {
+        document.querySelector('.logo').style.margin = this.state.lastLogoStyle;
+      };
+    });
+  }
+
+  getLogoStyle() {
+    if (this.state.menuOpen == false) {
+      let lastLogoStyle = document.querySelector('.logo').style.margin;
+      this.setState({ lastLogoStyle: lastLogoStyle }, () => {
+        this.updateMenu();
+      });
+    } else {
+      this.updateMenu();
+    };
   }
 
   render() {
@@ -104,25 +121,25 @@ export default class MenuApp extends Component {
               }) }
               <div className="social-nav">
                 <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
-                  <img className="img-resp" src='/images/social-icons/png/Facebook_2.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-facebook.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/Youtube.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-youtube.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/Instagram_1.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-instagram.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/Snapchat.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-snapchat.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/Pinterest.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-pinterest.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/twitter.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-twitter.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/png/Linkedin_1.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-linked-in.png' />
                 </a>
               </div>
             </div>
