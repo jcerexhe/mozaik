@@ -421,7 +421,7 @@ export default class Search extends Component {
                 <input placeholder="Study Area" ref="textArea" />
                 <input placeholder="City/Country" ref="textCity"/>
                 <button onClick={() => this.renderSearch()}>Search</button>
-                <a href="/discover" className="adv-search">Advance Search</a>
+                <a href="/discover" className="adv-search">Advanced Search</a>
               </div>
               { //rendered 
                 this.renderDiscipline()

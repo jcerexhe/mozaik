@@ -69,9 +69,11 @@ export default class HeroApp extends Component {
           },
           styles: {
             h1:{
-              color: '#000000',
-              width: '8em',
+              color: '#181818',
+              width: '30vw',
               lineHeight: '1',
+              fontFamily: 'Montserrat Bold',
+              fontSize: '4vw'
             }
           }
         }
@@ -105,6 +107,12 @@ export default class HeroApp extends Component {
 
   render() {
     const { currentSlide, slides, settings, isOpen } = this.state;
+    let navLogo = document.querySelector('.logo');
+    if (this.state.currentSlide == 0) {
+      navLogo.style.margin = '0 auto';
+    } else {
+      navLogo.style.margin = '0';
+    };
     return (
       <div className='home-hero'>
         <Slick ref='slider' { ...settings }>
@@ -133,10 +141,8 @@ export default class HeroApp extends Component {
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
                     {/*<i onClick={() => this.openModal()} className="fa fa-play fa-3x" aria-hidden="true"></i><p onClick={() => this.openModal()} className="video-text">Play Video</p>*/}</div> : <div /> }
-                  { slide.cta ? <a href={slide.cta.link} className="btn">{slide.cta.text}</a> : '' }
-                  <div className='dot' onClick={ () => this.changeSlide(i+1) }>
-                    <img src='/images/white-arrow-down.png' alt='arrow-down' />
-                  </div>
+                  { slide.cta ? <svg className='hero-cta-container' viewBox='0 0 150 65' preserveAspectRatio='none'><polyline points="40,65 0,65 0,0 40,0" x="0" y="0"/><polyline points="110,0 150,0 150,65 110,65"/><a href={slide.cta.link}><text fill="white" textAnchor="middle" x='75' y='40'>{slide.cta.text}</text></a></svg> : '' }
+                  <img src='/images/white-arrow-down.png' alt='arrow-down' className='home-right-arrow-button' onClick={ () => this.changeSlide(i+1) }/>
                 </div>
               </div>
             );

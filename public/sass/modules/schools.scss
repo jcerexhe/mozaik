@@ -35,6 +35,7 @@
     font-size: 40pt;
     font-family: 'Gotham Bold';
     font-weight: bold;
+    color: $white;
   }
   .school-info > img {
     margin-right: 20px;
@@ -197,9 +198,10 @@
 
 // study areas
 .study-areas-box{
+
   
   h1{
-      color: #313131;
+      color: #636161;
     margin: 0px;
     font-size: 10vw;
     line-height: 0.8;
@@ -209,6 +211,7 @@
     padding-bottom: 10px;
     text-align: center;
   }
+  background-color: rgba(144, 144, 144,0.5);
 
   .study-areas{
     width: 100%;

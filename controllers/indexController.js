@@ -72,8 +72,10 @@ exports.schoolCourses = (req, res) => {
 };
 
 exports.discover = (req, res) => {
-  const Discover = reactHelper.renderComponent('DiscoverApp');
+  School.find().then(schools => {
+    const Discover = reactHelper.renderComponent('DiscoverApp', { schoolsInfo: schools });
   res.render('discover', { Discover });
+  });
 };
 
 exports.about = (req, res) => {

@@ -292,7 +292,7 @@
     color: white;
     letter-spacing: 1px;
     text-align: center;
-    border-top: 2px solid $white;
+    border-top: 2px solid $red;
     padding-top: 30px;
     width: 50%;
     margin: 0 auto;
@@ -345,7 +345,7 @@
 }
 
 .extend-search{
-  padding-top: 15%;
+  padding-top: 20%;
   text-align: center;
 
   h2{
@@ -356,12 +356,8 @@
     padding-top: 5px;
   }
 
-  a{
-    clear: left;
-    background: #000;
-    border: 3px solid $white;
-    border-radius: 0;
-
+  .advance-search-btn{
+    width: 20vw;
   }
 }
 

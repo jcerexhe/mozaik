@@ -29,7 +29,7 @@
   /*align-self: center;*/
   height: inherit;
   /*margin: 0 auto;*/
-  width: calc(100px + 45px);
+  /*width: calc(100px + 45px)*/
   /*padding-left: 45px;*/
 }
 .navbar > .logo > a {
@@ -60,12 +60,15 @@
   color: $pink;
 }
 .navbar .links {
-  margin-right: 50px;
-  margin-top: 200px;
+ //margin-right: 50px;
+ // margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  position: absolute;
+  right: 3vw;
+  top: 100px;
   /* hide these extra icons for now on mobile */
   @media only screen and (max-width: 768px) {
     .icon-white {
@@ -166,7 +169,7 @@
   justify-content: space-around;
   //height: calc(100% - 100px);
   height: 100vh;
-  background-color: rgba(128, 128, 128, .6);
+  background-color: rgba(236, 236, 236, .8);
   //width: 25%;
   //margin: 50px auto 0px auto;
   max-width: 25%;
@@ -188,6 +191,7 @@
   }
 }
 .menu-content h3 {
+  font-size: 30px;
   text-transform: uppercase;
   color: $pink;
 }
@@ -199,10 +203,10 @@
   text-align: center;
 }
 .menu-content ul > li {
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin-top: -20px;
+  margin-bottom: 18px;
   width: 180px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Bebas Neue';
 }
 .menu-content ul > li > a {
   color: $grey;
@@ -238,7 +242,8 @@
 .social-nav {
   display: flex;
   width: 200px;
-  padding-top: 20px;
+  padding: 3px 3px 0px 3px;
+  background-color: $grey;
   a {
     margin: 2px;
   }
