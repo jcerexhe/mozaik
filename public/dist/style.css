@@ -622,7 +622,8 @@ input[type=text]::placeholder {
 #home-artworks-changer-arrow {
   background-color: #ff6d6d80;
   z-index: 1;
-  top: 25%; }
+  top: 25%;
+  right: 2vw; }
 
 .school-heading-container {
   /* background-color: $grey; */
@@ -2612,6 +2613,27 @@ ul.careers-lists > li:before {
   font-size: 2.25vw;
   border-top: none; }
 
+.hero-cta-container {
+  position: absolute;
+  bottom: 6vh;
+  width: 15vw;
+  height: 6.5vw;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+.hero-cta-container > polyline {
+  fill: none;
+  stroke: #FF6D6D;
+  stroke-width: 12px; }
+
+.hero-cta-container > a {
+  cursor: pointer; }
+
+.hero-cta-container > a > text {
+  font-size: 23px;
+  font-family: 'Bebas Neue'; }
+
 .slider-body > .btn:before {
   content: '';
   color: #F76F70;
@@ -2700,6 +2722,21 @@ ul.careers-lists > li:before {
   position: relative;
   left: 1vw;
   top: .2vw; }
+
+.home-right-arrow-button {
+  position: absolute;
+  color: #FFFFFF;
+  right: 4vw;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  border: 0.2vw solid #FFFFFF;
+  border-radius: 50%;
+  -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  height: 5vw;
+  width: 5vw;
+  padding: 1vw; }
 
 .home-footer {
   position: absolute;

@@ -129,6 +129,35 @@
   border-top: none;
 }
 
+.hero-cta-container {
+  position: absolute;
+  bottom: 6vh;
+  width: 15vw;
+  height: 6.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-cta-container > polyline {
+  fill: none;
+  stroke: $pink;
+  stroke-width: 12px;
+}
+
+.hero-cta-container > a {
+  cursor: pointer;
+}
+
+.hero-cta-container > a > text {
+  font-size: 23px;
+  font-family: 'Bebas Neue';
+}
+
+
+
+
+
+
 .slider-body > .btn:before{
     content: '';
     color: #F76F70;
@@ -222,6 +251,23 @@
   left: 1vw;
   top: .2vw;
 }
+
+.home-right-arrow-button {
+  position: absolute;
+  color: $white;
+  right: 4vw;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.2vw solid $white;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  height: 5vw;
+  width: 5vw;
+  padding: 1vw;
+}
+
+
+
 
 .home-footer{
   position: absolute;
