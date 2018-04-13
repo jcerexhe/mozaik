@@ -39,7 +39,24 @@ export default class MenuApp extends Component {
 
   updateMenu() {
     const { menuOpen } = this.state;
-    this.setState({ menuOpen: !menuOpen });
+    this.setState({ menuOpen: !menuOpen }, () => {
+      if (this.state.menuOpen == true) {
+        document.querySelector('.logo').style.margin = '0 auto';
+      } else {
+        document.querySelector('.logo').style.margin = this.state.lastLogoStyle;
+      };
+    });
+  }
+
+  getLogoStyle() {
+    if (this.state.menuOpen == false) {
+      let lastLogoStyle = document.querySelector('.logo').style.margin;
+      this.setState({ lastLogoStyle: lastLogoStyle }, () => {
+        this.updateMenu();
+      });
+    } else {
+      this.updateMenu();
+    };
   }
 
   render() {
