@@ -434,6 +434,12 @@
       padding: 5px;
       background: transparent;
       margin-bottom: 5px;
+      transition: all 0.5s linear;
+      &:focus{
+      color: black;
+      background-color: $white;
+      font-size: 20px;
+      }
     }
 
     input::placeholder{
