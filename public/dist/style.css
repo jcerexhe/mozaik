@@ -74,7 +74,7 @@ body {
   top: 100px;
   right: 0;
   background-color: aqua;
-  z-index: 100;
+  z-index: 102;
   padding: 20px;
   text-align: center;
   background-color: #181818;
@@ -84,6 +84,15 @@ body {
   display: none; }
 
 .hbspt-form button {
+  border: none;
+  background-color: #FF6D6D;
+  margin: 0;
+  padding: 5px;
+  right: 5px;
+  top: 5px;
+  position: absolute; }
+
+.hbspt-form signing {
   border: none;
   background-color: #FF6D6D;
   margin: 0;
@@ -3706,6 +3715,27 @@ ul.careers-lists > li:before {
   left: 50%;
   right: 50%;
   margin-top: 20%; }
+  .inside-btns input {
+    transition: all 0.5s linear; }
+    .inside-btns input:focus {
+      color: black;
+      background-color: #FFFFFF;
+      font-size: 20px; }
+    .inside-btns input::-webkit-input-placeholder {
+      color: white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px; }
+    .inside-btns input:-ms-input-placeholder {
+      color: white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px; }
+    .inside-btns input::placeholder {
+      color: white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px; }
 
 .input-email {
   width: 350px;

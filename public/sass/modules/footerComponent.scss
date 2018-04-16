@@ -21,6 +21,20 @@
   left: 50%;
   right: 50%;
   margin-top: 20%;
+  input {
+    transition: all 0.5s linear;
+    &:focus{
+      color: black;
+      background-color: $white;
+      font-size: 20px;
+    }
+    &::placeholder {
+      color: white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
  }
 
 .input-email {
