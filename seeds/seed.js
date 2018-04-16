@@ -11,12 +11,21 @@ const School = require('../models/school');
 const Course = require('../models/course');
 const Artwork = require('../models/artwork');
 const Alumni = require('../models/alumni');
+const StudyArea = require('../models/studyarea');
 
 const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
 const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
 const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
 const vfs = JSON.parse(fs.readFileSync(__dirname + '/vfs.json', 'utf-8'));
 const fsu = JSON.parse(fs.readFileSync(__dirname + '/fsu.json', 'utf-8'));
+const sa = JSON.parse(fs.readFileSync(__dirname + '/studyarea.json', 'utf-8'));
+
+
+const _sa = _.map(sa.studyarea, (area) => {
+  let _newsa = new StudyArea(area);
+  return _newsa;
+});
+
 
 const _ait = new School(ait.school);
 const _aitAlumni = _.map(ait.alumni, (alum) => {
@@ -108,7 +117,7 @@ const _fsuArtwork = _.map(fsu.artworks, (artwork) => {
 async.series([
   function(callback) {
     console.log('deleting data');
-    const models = [School, Course, Artwork, Alumni];
+    const models = [School, Course, Artwork, Alumni, StudyArea];
     async.eachSeries(models, (model, modelCb) => {
       model.remove().then(() => {
         modelCb();
@@ -194,6 +203,21 @@ async.series([
    }, (err) => {
      if(err) console.log(err);
      callback(null, 'SUCCESS - FINISHED SEEDING FSU DATA');
+   });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving studyareas');
+    async.eachSeries(_sa, (saItem, saItemSavedCb) =>  {
+      saItem.save().then(() => {
+        saItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        saItemSavedCb(); 
+      });
+   }, (err) => {
+     if(err) console.log(err);
+     callback(null, 'SUCCESS - FINISHED SEEDING STUDY AREA DATA');
    });
   },
 ], function(err, results) {
