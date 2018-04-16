@@ -15,7 +15,8 @@ cloudinary.config({
 const studyAreaSchema = new Schema({
   image: String,
   title: String,
-  disciplines: [String],
+  disciplines1: [String],
+  disciplines2: [String],
   description: String,
   keywords: [String],
   alumni_photo: String,
