@@ -49,7 +49,7 @@ export default class HeroApp extends Component {
           video: false,
           cta: {
             text: 'Start Searching',
-            link: '#'
+            link: '/study-areas'
           },
           styles: {
             h1:{}
@@ -65,7 +65,7 @@ export default class HeroApp extends Component {
           video: false,
           cta: {
             text: 'Learn More',
-            link: '#'
+            link: '/partner-with-mozaik'
           },
           styles: {
             h1:{

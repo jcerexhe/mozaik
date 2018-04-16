@@ -15,7 +15,7 @@ export default class MenuApp extends Component {
             { url: '/discover', val: 'discover' },
             { url: '/study-areas', val: 'study areas' },
             { url: '/agency-mozaik', val: 'education agency' },
-            { url: '#', val: 'sign up' }
+            /*{ url: '#', val: 'sign up' }*/
           ]
         },
         {
@@ -23,7 +23,7 @@ export default class MenuApp extends Component {
           links: [
             { url: '/partner-with-mozaik', val: 'why partner with mozaik play' },
             { url: '/agency-mozaik', val: 'education agency' },
-            { url: '#', val: 'sign up' }
+            /*{ url: '#', val: 'sign up' } */
           ]
         }
         /*{
