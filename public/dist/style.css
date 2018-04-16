@@ -896,6 +896,10 @@ input[type=text]::placeholder {
     background-color: blue;
     margin: 0 !important;
     overflow-x: hidden; }
+  .other-section .locations .other-section-box .hover-box p, .other-section .facilities .other-section-box .hover-box p {
+    text-align: center !important;
+    padding: 20px 20px !important;
+    color: #FFFFFF !important; }
   .other-section .other-section-box {
     width: 100%;
     height: 60vh;
@@ -909,7 +913,11 @@ input[type=text]::placeholder {
       width: 33.33%;
       height: 60vh;
       background-color: #082A3E;
-      opacity: 0; }
+      opacity: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
     .other-section .other-section-box h2 {
       width: 100%;
       text-align: center;
@@ -3427,7 +3435,7 @@ ul.careers-lists > li:before {
   .alumni-slider .alumni-slide-content {
     padding: 20px;
     text-align: left;
-    font-size: 0.6em;
+    font-size: 0.7em;
     text-align: center; }
   .alumni-slider .alumni-slide-content > h3 {
     text-transform: uppercase;

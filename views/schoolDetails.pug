@@ -82,7 +82,9 @@ block content
   .other-section
     .locations
       .other-section-box(style="background-image: url('/images/location.png')")
-        !=CampusMaps
+        h2 locations
+        .hover-box
+          p= school.locations[0].address
     .facilities
       .other-section-box(style="background-image: url('/images/facilities.png')")
         h2 facilities
