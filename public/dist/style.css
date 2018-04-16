@@ -975,7 +975,12 @@ input[type=text]::placeholder {
     height: 40px;
     padding: 5px;
     background: transparent;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    transition: all 0.5s linear; }
+    .school-contact .inside-scoop input:focus {
+      color: black;
+      background-color: #FFFFFF;
+      font-size: 20px; }
   .school-contact .inside-scoop input::-webkit-input-placeholder {
     color: #FFFFFF;
     font-style: italic;
