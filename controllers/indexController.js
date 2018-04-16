@@ -3,6 +3,7 @@ const reactHelper = require('react-helper');
 
 const School = mongoose.model('School');
 const Course = mongoose.model('Course');
+const StudyArea = mongoose.model('StudyArea');
 
 exports.home = (req, res) => {
   const Hero = reactHelper.renderComponent('HeroApp');
@@ -30,6 +31,17 @@ exports.getSchool = async (req, res, next) => {
     res.redirect('/');
   } else {
     res.locals.school = school;
+    next();
+  }
+};
+
+exports.getStudyArea = async (req, res, next) => {
+  const area = await StudyArea.findOne({ slug: req.params.areaSlug });
+  if (!area) {
+    // set flash messages
+    res.redirect('/');
+  } else {
+    res.locals.area = area;
     next();
   }
 };
@@ -102,7 +114,8 @@ exports.agency = (req, res) => {
 };
 
 exports.performingArts = (req, res) => {
-  const PerformingArts = reactHelper.renderComponent('PerformingArtsApp');
+  const area = res.locals.area;
+  const PerformingArts = reactHelper.renderComponent('PerformingArtsApp', {studyarea: area});
   res.render('performingArts', { PerformingArts });
 
 };

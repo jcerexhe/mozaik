@@ -1,0 +1,15 @@
+{
+	"studyarea":[
+	{
+	"image": "AFTRS/facilities/AFTRS_Campus_Theatre",
+	"title": "Performing Arts",
+	"disciplines": ["s1", "s2"],
+	"description": "this is a description",
+	"keywords": ["k1", "k2"],
+	"alumni_photo": "AFTRS/alumni/Jane_Campion",
+	"alumni_name": "sample",
+	"alumni_degree": "degree",
+	"alumni_description": "this is a desscription",
+	"alumni_qoute": "time is gold"
+}]
+}

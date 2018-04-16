@@ -54,11 +54,12 @@ export default class CoursesApp extends Component {
   enableTile(area, disciplinesList){
     const { school } = this.props;
     const { disciplines } = this.state;
+    var slug = area.replace(" ", "-").toLowerCase();
     if(school.study_areas.includes(area)){
       return(
         <div className="disciplines">
           <p>
-            <a className="area-link" href="#">{area}</a>
+            <a className="area-link" href={"/study-area/" + slug}>{area}</a>
             <Filter
               filterItems={ disciplinesList }
               activeItems={ disciplines }

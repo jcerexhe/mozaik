@@ -3,7 +3,19 @@ import _ from 'lodash';
 import Footer from '../footer/index.jsx';
 
 export default class PerformingArtsApp extends Component {
+
+constructor(props) {
+    super(props);
+}
 	render() {
+		const { studyarea } = this.props;
+
+		{
+			// to get the value use: 
+			// studyarea.name of field
+
+		}
+
 		return (
 		<div>
 			<div>
@@ -27,9 +39,7 @@ export default class PerformingArtsApp extends Component {
 					</p>
 				</div>
 				<div className='performing-arts-heading-description'>
-					<p>"They say that the world is a stage, that life is a play and all men and women are merely players.<br/>
-					Performing arts involves the learning of skills that require human expression in drama, music or<br/>
-					dance that result in stage performances and play in front of a live audience."</p>
+					<p>" { studyarea.description } "</p>
 				</div>
 				<div className='performing-arts-background'>
 					<img className="header-colored" src="https://res.cloudinary.com/mozaik/image/upload/v1522218659/study-areas/Performing_arts.png" />
