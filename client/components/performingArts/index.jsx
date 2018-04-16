@@ -42,7 +42,7 @@ constructor(props) {
 					<p>" { studyarea.description } "</p>
 				</div>
 				<div className='performing-arts-background'>
-					<img className="header-colored" src="https://res.cloudinary.com/mozaik/image/upload/v1522218659/study-areas/Performing_arts.png" />
+					<img className="header-colored" src={ studyarea.image } />
 					{/*<img className="header-original" src="https://res.cloudinary.com/mozaik/image/upload/v1522806278/study-areas/pexels-photo-415307.jpg" />*/}	
 				</div>
 			</div>
