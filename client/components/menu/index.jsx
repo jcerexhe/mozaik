@@ -123,24 +123,24 @@ export default class MenuApp extends Component {
                 <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
                   <img className="img-resp" src='/images/old-social-icons/sm-facebook.png' />
                 </a>
-                <a href='#'>
+               {/* <a href='#'>
                   <img className="img-resp" src='/images/old-social-icons/sm-youtube.png' />
-                </a>
-                <a href='#'>
+                </a>  */}
+                <a href='https://www.instagram.com/mozaikplay/'>
                   <img className="img-resp" src='/images/old-social-icons/sm-instagram.png' />
                 </a>
-                <a href='#'>
+                {/* <a href='#'>
                   <img className="img-resp" src='/images/old-social-icons/sm-snapchat.png' />
                 </a>
                 <a href='#'>
                   <img className="img-resp" src='/images/old-social-icons/sm-pinterest.png' />
-                </a>
-                <a href='#'>
+                </a> */}
+                <a href='https://twitter.com/MozaikPlay'>
                   <img className="img-resp" src='/images/old-social-icons/sm-twitter.png' />
                 </a>
-                <a href='#'>
+               {/* <a href='#'>
                   <img className="img-resp" src='/images/old-social-icons/sm-linked-in.png' />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
