@@ -3,13 +3,16 @@
 	{
 	"image": "AFTRS/facilities/AFTRS_Campus_Theatre",
 	"title": "Performing Arts",
-	"disciplines": ["s1", "s2"],
+	"disciplines": ["ACTING", "CLASSICAL PERFORMANCE", "CONTEMPORARY PERFORMANCE", "DANCE", "DRAMA","JAZZ", "MUSIC PERFORMANCE", "MUSIC COMPOSITION", "PERFORMING ARTS", "PRODUCTION", "PLAYWRITING","STAGING", "THEATRE", "CUSTOM DESIGN",
+ 	"LIVE PRODUCTION"],
 	"description": "this is a description",
-	"keywords": ["k1", "k2"],
+	"keywords": ["COSTUME DESIGN", "BAND MUSIC", "CIRCUS PERFORMER", "THEATRE DIRECTOR", "BALLET DANCER", 
+		"SET DECORATORS", "PLAYWRITER", "DANCE TEACHER", "CHOREGRAPHER", "MUSIC TEACHER", "BALLET DANCER", 
+		"CLASSIC OR CONTEMPORARY DANCE"],
 	"alumni_photo": "AFTRS/alumni/Jane_Campion",
-	"alumni_name": "sample",
-	"alumni_degree": "degree",
+	"alumni_name": "James Jackson",
+	"alumni_degree": "BACHELOR OF MODERN DANCE",
 	"alumni_description": "this is a desscription",
-	"alumni_qoute": "time is gold"
-}]
+	"alumni_qoute": "I GET TO DO WHAT LOVE EVERYDAY"
+	}]
 }
