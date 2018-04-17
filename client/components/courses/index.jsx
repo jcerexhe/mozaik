@@ -59,7 +59,10 @@ export default class CoursesApp extends Component {
       return(
         <div className="disciplines">
           <p>
-            <a className="area-link" href={"/study-area/" + slug}>{area}</a>
+            {
+              // "/study-area/" + slug
+            }
+            <a className="area-link" >{area}</a>
             <Filter
               filterItems={ disciplinesList }
               activeItems={ disciplines }
