@@ -59,10 +59,7 @@ export default class AgencyApp extends Component {
 						 	<img className='selection-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 						 	<div className='selection-box'>
 						 		<img className='selection-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Personalised Study Plan<br/>
-						 		We understand that many factors influence your course selection: school reputation, fees,<br/>
-						 		graduate outcomes, etc. Our team can assist you with this selection -<br/>
-						 		the aim at this stage is to develop a personalized study plan.</p>
+						 		<p>Personalised Study Plan<br/>We understand that many factors influence your course selection: school reputation, fees, graduate outcomes, etc. Our team can assist you with this selection-the aim at this stage is to develop a personalized study plan.</p>
 						 	</div>
 						 </div>
 					</div>
@@ -75,10 +72,9 @@ export default class AgencyApp extends Component {
 						 	<img className='application-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 						 	<div className='application-box'>
 						 		<img className='application-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Applying to a school requires attention to detail. We help with compiling and<br/>
-						 		submitting all relevant documentation required by each school (these may vary<br/>
-						 		between schools). If English is not your first language then we will "package" an<br/>
-						 		English course with your main course so that you meet the language entry requirements.<br/>
+						 		<p>Applying to a school requires attention to detail. We help with compiling and submitting all relevant documentation required by each school (these may vary
+						 		between schools). If English is not your first language then we will "package" an
+						 		English course with your main course so that you meet the language entry requirements.
 						 		You can then apply for a visa that covers the full length of your study period.</p>
 						 	</div>
 						 </div>
@@ -90,9 +86,7 @@ export default class AgencyApp extends Component {
 						 	<img className='creative-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 						 	<div className='creative-box'>
 						 		<img className='creative-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Imagine if you were able to showcase your creative work on self-promo site.<br/>
-						 		We can assist you with setting up this site and/or prepare a creative portfolio<br/>
-						 		that you can the use as part of your application.</p>
+						 		<p>Imagine if you were able to showcase your creative work on self-promo site. We can assist you with setting up this site and/or prepare a creative portfolio that you can the use as part of your application.</p>
 						 	</div>
 						 </div>
 					</div>
@@ -105,11 +99,7 @@ export default class AgencyApp extends Component {
 						 	<img className='visa-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 						 	<div className='visa-box'>
 						 		<img className='visa-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Each destination country(where you will study)has a different set of visa rules.<br/>
-						 		We provide full Visa documentation support, including assisting with any certification,<br/>
-						 		and translations service required. We also assist with medical insurance<br/>
-						 		application process. We also have partnered with Migration Agencies for those seeking<br/>
-						 		to explore post study migration options.</p>
+						 		<p>Each destination country(where you will study)has a different set of visa rules. We provide full Visa documentation support, including assisting with any certification, and translations service required. We also assist with medical insurance application process. We also have partnered with Migration Agencies for those seeking to explore post study migration options.</p>
 						 	</div>
 						 </div>
 						 <div className='travel-arrangements'>
@@ -148,9 +138,7 @@ export default class AgencyApp extends Component {
 						 	<img className='pre-post-departure-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 						 	<div className='pre-post-departure-box'>
 						 		<img className='pre-post-departure-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>We have a developed a pre-departure pack that includes important information<br/>
-						 		and tips on culture and social norms, emergency contacts, key events, locations<br/>
-						 		of interest, etc. We also arrange to have somebosy welcome you when you arrive<br/>
+						 		<p>We have a developed a pre-departure pack that includes important information and tips on culture and social norms, emergency contacts, key events, locations of interest, etc. We also arrange to have somebosy welcome you when you arrive
 						 		at the airport(optional)</p>
 						 	</div>
 						 </div>
