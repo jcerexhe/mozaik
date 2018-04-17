@@ -2141,7 +2141,7 @@ contact-field {
   top: 500%;
   z-index: 1; }
 
-.performing-arts-page-heading {
+.study-area-page-heading {
   border: 10px solid #181818;
   width: 40%;
   margin-top: 12%;
@@ -2160,7 +2160,7 @@ contact-field {
   z-index: 3;
   border-top: none; }
 
-.performing-arts-page-heading:before {
+.study-area-page-heading:before {
   content: '';
   color: #181818;
   width: 20%;
@@ -2170,7 +2170,7 @@ contact-field {
   top: -10px;
   left: -10px; }
 
-.performing-arts-page-heading:after {
+.study-area-page-heading:after {
   content: '';
   color: #181818;
   width: 20%;
@@ -2180,7 +2180,7 @@ contact-field {
   top: -10px;
   right: -10px; }
 
-.performing-arts-background img.header-colored {
+.study-area-background img.header-colored {
   width: 100%;
   background-size: 100% 100%;
   background-position-y: 20%;
@@ -2200,7 +2200,7 @@ contact-field {
   position: absolute;
   
 }}*/
-.performing-arts-study-disciplines {
+.study-area-disciplines {
   position: relative;
   z-index: 3;
   margin-top: 8%;
@@ -2208,7 +2208,7 @@ contact-field {
   margin-right: auto;
   text-align: center; }
 
-.performing-arts-study-disciplines .study-link {
+.study-area-disciplines .study-link {
   text-decoration: none;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -2217,7 +2217,7 @@ contact-field {
   font-size: 25px;
   letter-spacing: 1px; }
 
-.performing-arts-heading-description {
+.study-area-heading-description {
   position: relative;
   z-index: 3;
   margin-top: 50px;
@@ -2225,7 +2225,7 @@ contact-field {
   margin-right: auto;
   text-align: center; }
 
-.performing-arts-heading-description > p {
+.study-area-heading-description > p {
   color: #FFFFFF;
   font-size: 20px;
   letter-spacing: 1px; }
@@ -2271,29 +2271,32 @@ ul.careers-lists > li:before {
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Bebas Neue';
-  font-size: 20px;
+  font-size: 23px;
   letter-spacing: 1px; }
 
-.performing-art-alumni {
+.study-area-alumni {
   margin-top: 10%; }
 
-.performing-art-alumni-qoute {
+.study-area-alumni-qoute {
   position: absolute;
   left: 70%; }
 
-.performing-art-alumni-qoute > p {
+.study-area-alumni-qoute > p {
   font-family: 'Bebas Neue';
   color: #FFFFFF;
   font-size: 5vh; }
 
-.performing-art-alumni-image {
-  width: 50vw;
-  background-color: red;
-  height: 30vh;
+.study-area-alumni-image {
   margin-left: 10%;
   margin-right: 20px; }
 
-.performing-art-alumni-content {
+.study-area-alumni-image > img {
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  width: 180px;
+  height: 25vh; }
+
+.study-area-alumni-content {
   padding-top: 5%;
   display: -ms-flexbox;
   display: flex;
@@ -2301,13 +2304,13 @@ ul.careers-lists > li:before {
       flex-direction: row;
   margin-right: 10%; }
 
-.performing-art-alumni-name, .performing-art-alumni-degree {
+.study-area-alumni-name, .study-area-alumni-degree {
   font-size: 30px;
   font-family: 'Bebas Neue';
   padding: 0;
   margin: 0; }
 
-.performing-art-enquire-img {
+.study-area-enquire-img {
   margin-top: 5%;
   margin-bottom: 0;
   display: -ms-flexbox;
@@ -2317,7 +2320,7 @@ ul.careers-lists > li:before {
   -ms-flex-align: center;
       align-items: center; }
 
-.performing-arts-footer {
+.study-area-footer {
   position: absolute;
   top: 260%;
   z-index: 1; }

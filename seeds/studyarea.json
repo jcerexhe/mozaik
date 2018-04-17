@@ -1,18 +1,45 @@
 {
 	"studyarea":[
 	{
-	"image": "AFTRS/facilities/AFTRS_Campus_Theatre",
-	"title": "Performing Arts",
-	"disciplines": ["ACTING", "CLASSICAL PERFORMANCE", "CONTEMPORARY PERFORMANCE", "DANCE", "DRAMA","JAZZ", "MUSIC PERFORMANCE", "MUSIC COMPOSITION", "PERFORMING ARTS", "PRODUCTION", "PLAYWRITING","STAGING", "THEATRE", "CUSTOM DESIGN",
- 	"LIVE PRODUCTION"],
-	"description": "this is a description",
-	"keywords": ["COSTUME DESIGN", "BAND MUSIC", "CIRCUS PERFORMER", "THEATRE DIRECTOR", "BALLET DANCER", 
-		"SET DECORATORS", "PLAYWRITER", "DANCE TEACHER", "CHOREGRAPHER", "MUSIC TEACHER", "BALLET DANCER", 
-		"CLASSIC OR CONTEMPORARY DANCE"],
-	"alumni_photo": "AFTRS/alumni/Jane_Campion",
-	"alumni_name": "James Jackson",
-	"alumni_degree": "BACHELOR OF MODERN DANCE",
-	"alumni_description": "this is a desscription",
-	"alumni_qoute": "I GET TO DO WHAT LOVE EVERYDAY"
+		"image": "study-areas/Performing_arts",
+		"title": "Performing Arts",
+		"disciplines1": 
+			["Acting"," / ", 
+			 "Classical Performance"," / ",
+			 "Contemporary Performance"," / ",
+			 "Dance"," / ",
+			 "Drama"," / ",
+			 "Jazz"," / ",
+			 "Music Performance"],
+		"disciplines2":
+			 ["Music Composition"," / ",
+			 "Performing Arts"," / ",
+			 "Production"," / ",
+			 "Playwriting"," / ",
+			 "Staging"," / ",
+			 "Theatre"," / ",
+			 "Costum Design"," / ",
+			 "Live Production"],
+		"description": "They say that the world is a stage, that life is a play and all me and women are merely players.Performing arts involves the learning of skills that require human expression in drama, music or dance that result in stage performance and plays in front of a live audience",
+		"keywords1": 
+			["Costume Design","   •   ", 
+			 "Band Music","   •   ",
+			 "Circus Performer","   •   ",
+			 "Theatre Director","   •   ",
+			 "Ballet Dancer","   •   ",
+			 "Set Decorators","   •   ",
+			 "Playwriter","   •   ",
+			 "Dance Teacher"],
+		"keywords2":
+			 ["Choreographer","   •   ",
+			 "Music Teacher","   •   ",
+			 "Ballet Dancer","   •   ",
+			 "Classic or Contemporary Dance"],
+		"alumni_photo": "AFTRS/alumni/Jane_Campion",
+		"alumni_name": "James Jackson",
+		"alumni_degree": "Bachelor of Modern Dance",
+		"alumni_description": "They say that the world is a stage, that life is a play and all me and women are merely players. Performing arts involves the learning of skills that require human expression in drama, music or dance that result in stage performance and plays in front of a live audience",
+		"alumni_qoute1": "I GET TO DO WHAT ",
+		"alumni_qoute2": "I LOVE EVERYDAY"
 	}]
 }
