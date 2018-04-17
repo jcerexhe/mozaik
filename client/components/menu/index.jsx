@@ -12,8 +12,8 @@ export default class MenuApp extends Component {
           heading: 'for students',
           links: [
             { url: '/about-us', val: 'about us' },
-            { url: '/study-areas', val: 'discover' },
-            { url: '/study-areas', val: 'study areas' },
+            { url: '/search', val: 'discover' },
+            { url: '/search', val: 'study areas' },
             { url: '/agency-mozaik', val: 'education agency' },
             /*{ url: '#', val: 'sign up' }*/
           ]

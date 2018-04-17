@@ -49,7 +49,7 @@ export default class HeroApp extends Component {
           video: false,
           cta: {
             text: 'Start Searching',
-            link: '/study-areas'
+            link: '/search'
           },
           styles: {
             h1:{}
