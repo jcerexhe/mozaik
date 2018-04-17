@@ -1,7 +1,7 @@
 {
 	"studyarea":[
 	{
-		"image": "https://res.cloudinary.com/mozaik/image/upload/v1522806278/study-areas/pexels-photo-415307.jpg",
+		"image": "study-areas/Performing_arts",
 		"title": "Performing Arts",
 		"disciplines1": 
 			["Acting"," / ", 
@@ -22,23 +22,24 @@
 			 "Live Production"],
 		"description": "They say that the world is a stage, that life is a play and all me and women are merely players.Performing arts involves the learning of skills that require human expression in drama, music or dance that result in stage performance and plays in front of a live audience",
 		"keywords1": 
-			["Costume Design", " • ", 
-			 "Band Music","•",
-			 "Circus Performer"," • ",
-			 "Theatre Director"," • ",
-			 "Ballet Dancer"," • ",
-			 "Set Decorators"," • ",
-			 "Playwriter"," • ",
+			["Costume Design","   •   ", 
+			 "Band Music","   •   ",
+			 "Circus Performer","   •   ",
+			 "Theatre Director","   •   ",
+			 "Ballet Dancer","   •   ",
+			 "Set Decorators","   •   ",
+			 "Playwriter","   •   ",
 			 "Dance Teacher"],
 		"keywords2":
-			 ["Choreographer","•",
-			 "Music Teacher","•",
-			 "Ballet Dancer","•",
+			 ["Choreographer","   •   ",
+			 "Music Teacher","   •   ",
+			 "Ballet Dancer","   •   ",
 			 "Classic or Contemporary Dance"],
 		"alumni_photo": "AFTRS/alumni/Jane_Campion",
 		"alumni_name": "James Jackson",
 		"alumni_degree": "Bachelor of Modern Dance",
 		"alumni_description": "They say that the world is a stage, that life is a play and all me and women are merely players. Performing arts involves the learning of skills that require human expression in drama, music or dance that result in stage performance and plays in front of a live audience",
-		"alumni_qoute": "I GET TO DO WHAT I LOVE EVERYDAY"
+		"alumni_qoute1": "I GET TO DO WHAT ",
+		"alumni_qoute2": "I LOVE EVERYDAY"
 	}]
 }

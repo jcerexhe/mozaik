@@ -18,12 +18,14 @@ const studyAreaSchema = new Schema({
   disciplines1: [String],
   disciplines2: [String],
   description: String,
-  keywords: [String],
+  keywords1: [String],
+  keywords2: [String],
   alumni_photo: String,
   alumni_name: String,
   alumni_degree: String,
   alumni_description: String,
-  alumni_qoute: String,
+  alumni_qoute1: String,
+  alumni_qoute2: String,
   slug: String
 });
 
