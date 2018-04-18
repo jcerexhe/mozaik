@@ -62,7 +62,7 @@ export default class CoursesApp extends Component {
             {
               // "/study-area/" + slug
             }
-            <a className="area-link" >{area}</a>
+            <a className="area-link" onClick={ (val) => this.updateDiscipline(val) }>{area}</a>
             <Filter
               filterItems={ disciplinesList }
               activeItems={ disciplines }
