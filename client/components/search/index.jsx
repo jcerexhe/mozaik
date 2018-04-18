@@ -14,7 +14,7 @@ export default class SearchApp extends Component {
         exists: false,
         message: ''
       },
-      limit: 30
+      limit: 8
     };
   }
 
@@ -29,14 +29,14 @@ export default class SearchApp extends Component {
 
   resetLimit() {
     this.setState({
-      limit: 30,
+      limit: 8,
     });
   }
 
   updateLimit() {
     const { limit } = this.state;
     this.setState({
-      limit: limit + 30,
+      limit: limit + 8,
     });
   }
 
