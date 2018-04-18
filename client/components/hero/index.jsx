@@ -65,7 +65,7 @@ export default class HeroApp extends Component {
           video: false,
           cta: {
             text: 'Learn More',
-            link: '/partner-with-mozaik'
+            link: '/agency-mozaik'
           },
           styles: {
             h1:{
