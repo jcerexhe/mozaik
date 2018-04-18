@@ -883,6 +883,28 @@ input[type=text]::placeholder {
               font-size: 12px !important;
               font-family: 'Bebas Neue';
               letter-spacing: 1px; }
+        .study-areas-box .study-areas .area-box .disciplines .area-heading ul {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center; }
+          .study-areas-box .study-areas .area-box .disciplines .area-heading ul li {
+            padding: 2px;
+            display: block; }
+            .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn {
+              padding: 0px 5px;
+              margin: 0;
+              text-decoration: none;
+              color: #FF6D6D;
+              text-transform: uppercase;
+              font-size: 15px !important;
+              font-family: 'Bebas Neue';
+              letter-spacing: 1px; }
+            .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn:hover, .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn.active {
+              /* background-color: $white; */
+              color: #FF6D6D;
+              opacity: 0.5 !important; }
       .study-areas-box .study-areas .area-box .disciplines:hover {
         background-color: rgba(8, 42, 62, 0.8); }
       .study-areas-box .study-areas .area-box .disciplines:hover p {

@@ -303,6 +303,39 @@
           }
          } 
         }
+
+        .area-heading{
+
+        ul{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center;
+
+         li{
+          padding: 2px;
+          display: block; 
+
+          .filter-btn{
+            padding: 0px 5px;
+            margin: 0;
+            text-decoration: none;
+            color: $pink;
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-family: 'Bebas Neue';
+            letter-spacing: 1px;
+          }
+
+          .filter-btn:hover, .filter-btn.active {
+           /* background-color: $white; */
+            color: $pink;
+            opacity: 0.5 !important;
+          }
+         } 
+        }
+        }
       }
 
       .disciplines:hover{
