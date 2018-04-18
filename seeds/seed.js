@@ -27,22 +27,22 @@ const _sa = _.map(sa.studyarea, (area) => {
 });
 
 
-const _ait = new School(ait.school);
-const _aitAlumni = _.map(ait.alumni, (alum) => {
-  let _alum = new Alumni(alum);
-  _alum.school = _ait._id;
-  return _alum;
-});
-const _aitCourses = _.map(ait.courses, (course) => {
-  let _course = new Course(course);
-  _course.school = _ait._id;
-  return _course;
-});
-const _aitArtwork = _.map(ait.artworks, (artwork) => {
-  let _artwork = new Artwork(artwork);
-  _artwork.school = _ait._id;
-  return _artwork;
-});
+// const _ait = new School(ait.school);
+// const _aitAlumni = _.map(ait.alumni, (alum) => {
+//   let _alum = new Alumni(alum);
+//   _alum.school = _ait._id;
+//   return _alum;
+// });
+// const _aitCourses = _.map(ait.courses, (course) => {
+//   let _course = new Course(course);
+//   _course.school = _ait._id;
+//   return _course;
+// });
+// const _aitArtwork = _.map(ait.artworks, (artwork) => {
+//   let _artwork = new Artwork(artwork);
+//   _artwork.school = _ait._id;
+//   return _artwork;
+// });
 
 const _nida = new School(nida.school);
 const _nidaAlumni = _.map(nida.alumni, (alum) => {
@@ -130,21 +130,21 @@ async.series([
       callback(null, 'SUCCESS - FINISHED DELETING DATA');
     });
   },
-  function(callback) {
-    // save schools
-    console.log('saving ait course');
-    async.eachSeries([_ait].concat(_aitAlumni).concat(_aitCourses).concat(_aitArtwork), (aitItem, aitItemSavedCb) => {
-      aitItem.save().then(() => {
-        aitItemSavedCb();
-      }).catch((err) => {
-        console.log(err);
-        aitItemSavedCb();
-      });
-    }, (err) => {
-      if(err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
-    });
-  },
+  // function(callback) {
+  //   // save schools
+  //   console.log('saving ait course');
+  //   async.eachSeries([_ait].concat(_aitAlumni).concat(_aitCourses).concat(_aitArtwork), (aitItem, aitItemSavedCb) => {
+  //     aitItem.save().then(() => {
+  //       aitItemSavedCb();
+  //     }).catch((err) => {
+  //       console.log(err);
+  //       aitItemSavedCb();
+  //     });
+  //   }, (err) => {
+  //     if(err) console.log(err);
+  //     callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
+  //   });
+  // },
   function(callback) {
     // save schools
     console.log('saving nida course');
