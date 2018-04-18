@@ -36,7 +36,8 @@ export default class AgencyApp extends Component {
 						</div>
 						
 					</div>
-					<div className='rectangle1'>
+				</div>
+					{/*<div className='rectangle1'>
 						 <div className='discover'>
 						 	<div className='discover-title'>
 						 		<p>1.&nbsp;&nbsp;&nbsp;DISCOVER</p>
@@ -62,8 +63,8 @@ export default class AgencyApp extends Component {
 						 		<p>Personalised Study Plan<br/>We understand that many factors influence your course selection: school reputation, fees, graduate outcomes, etc. Our team can assist you with this selection-the aim at this stage is to develop a personalized study plan.</p>
 						 	</div>
 						 </div>
-					</div>
-					<div className='rectangle2'>
+					</div>*/}
+					{/*<div className='rectangle2'>
 						 <div className='application'>
 						 	<div className='application-title'>
 						 		<p>3.&nbsp;&nbsp;&nbsp;Application</p>
@@ -89,9 +90,9 @@ export default class AgencyApp extends Component {
 						 		<p>Imagine if you were able to showcase your creative work on self-promo site. We can assist you with setting up this site and/or prepare a creative portfolio that you can the use as part of your application.</p>
 						 	</div>
 						 </div>
-					</div>
-					<div className='rectangle3'>
-						 <div className='visa-medical'>
+					</div>*/}
+					{/*<div className='rectangle3'>*/}
+					{/*	 <div className='visa-medical'>
 						 	<div className='visa-title'>
 						 		<p>5.&nbsp;&nbsp;&nbsp;VISA SUBMISSION AND MEDICAL INSURANCE</p>
 						 		<img className='visa-triangle-right' src="/images/elements/TRIANGLE.png" />
@@ -115,8 +116,8 @@ export default class AgencyApp extends Component {
 						 		reliable and cost effective travel options for you.</p>
 						 	</div>
 						 </div>
-					</div>
-					<div className='rectangle4'>
+					</div>*/}
+					{/*<div className='rectangle4'>
 						 <div className='accommodation'>
 						 	<div className='accommodation-title'>
 						 		<p>7.&nbsp;&nbsp;&nbsp;ACCOMODATION ARRANGEMENTS</p>
@@ -142,32 +143,24 @@ export default class AgencyApp extends Component {
 						 		at the airport(optional)</p>
 						 	</div>
 						 </div>
-					</div>
-					<div className='rectangle5'>
+					</div>*/}
+					{/*<div className='rectangle5'>
 						 <div className='support-study'>
 						 	<div className='support-study-title'>
 						 		<p>9.&nbsp;&nbsp;&nbsp;SUPPORT THROUGOUT YOUR STUDY PERIOD</p>
 						 		<img className='support-study-triangle-right' src="/images/elements/TRIANGLE.png" />
 						 	</div>
 						 	<img className='support-study-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	{/*<div className='support-study-box'>
-						 		<img className='support-study-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p></p>
-						 	</div>*/}
-						 </div>
+						 	</div>
 						 <div className='internships'>
 						 	<div className='internships-title'>
 						 		<p>10.&nbsp;&nbsp;&nbsp;INTERNSHIPS AND JOB PLACEMENT</p>
 						 		<img className='internships-triangle-right' src="/images/elements/TRIANGLE.png" />
 						 	</div>
 						 	<img className='internships-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	{/*<div className='internships-box'>
-						 		<img className='internships-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p></p>
-						 	</div>*/}
 						 </div>
-					</div>
-				</div>
+					</div>*/}
+				{/*</div>*/}
 				<div className='get-started'>
 				 <a href="/search"> <img src="/images/buttons/Get-started.png" /> </a>
 				</div>
