@@ -36,6 +36,7 @@ export default class AgencyApp extends Component {
 						</div>
 						
 					</div>
+					<div className='rectangle1'>
 					<div className="panel-group" id="accordion">
   						<div className="panel panel-default">
     						<div className="panel-heading">
@@ -80,6 +81,7 @@ export default class AgencyApp extends Component {
     </div>
   </div>
 </div>
+			</div>
 			</div>
 					{/*<div className='rectangle1'>
 						 <div className='discover'>
