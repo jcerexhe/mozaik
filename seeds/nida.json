@@ -124,11 +124,15 @@
         "Music Theatre",
         "Physical Theatre"
       ],
-      "areas":[
+      "areas": [
+        "Film/TV/Audio",
         "Performing Arts",
-        "Film/TV/Audio"
+        "Built Environment",
+        "Business for Creatives"
       ],
       "disciplines": [
+        "Performing Arts",
+        "Film/TV",
         "Film",
         "TV",
         "Radio",
@@ -172,8 +176,15 @@
         "Millinery",
         "Leatherwork"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Performing Arts",
+        "Film/TV",
         "Film",
         "TV",
         "Theatre",
@@ -222,8 +233,15 @@
         "Costumes",
         "Lighting"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Digital Media",
+        "Film/TV",
         "Film",
         "TV",
         "Theatre",
@@ -273,9 +291,15 @@
         "Puppetry",
         "Graphics SW"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Fine Arts",
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Built Environment",
@@ -328,9 +352,15 @@
         "Stage Rigging and Automation",
         "Risk and Project Management"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Built Environment",
-        "Film/TV/Audio",
+        "Film/TV",
         "Theatre",
         "Film",
         "TV",
@@ -388,10 +418,16 @@
         "Video for Live Performance",
         "Event Management"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Built Environment",
         "Theatre",
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Music Festivals",
@@ -430,8 +466,14 @@
         "Hair",
         "Special Effects (SFX)"
       ],
-      "disciplines": [
+      "areas": [
         "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
         "Make-Up",
         "Special Effects (SFX)",
         "Film",
@@ -466,6 +508,12 @@
         "Singing",
         "Dancing",
         "Acting"
+      ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
       ],
       "disciplines": [
         "Performing Arts",
@@ -503,6 +551,12 @@
         "Vision Designs",
         "Bump In - Bump Out"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Performing Arts",
         "Lighting",
@@ -537,7 +591,14 @@
         "Acting for Stage",
         "Technology in Performance"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
+        "Film/TV",
         "Acting for Screen",
         "Acting for Stage",
         "Technology Performance",
@@ -577,6 +638,12 @@
         "Leadership and Governance",
         "Cultural Policy",
         "International Placement"
+      ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
       ],
       "disciplines": [
         "Business for Creatives",
@@ -619,7 +686,14 @@
         "Lighting",
         "Dramaturgy"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
+        "Film/TV",
         "Design",
         "Production Design",
         "Set Designs",
@@ -664,8 +738,14 @@
         "Dramaturgy",
         "Scenography"
       ],
-      "disciplines": [
+      "areas": [
         "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
         "Directing",
         "Dramaturgy",
         "Scenography",
@@ -711,6 +791,12 @@
         "Speech Science",
         "International Placement"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Performing Arts",
         "Speech Science",
@@ -752,9 +838,16 @@
         "Creativity in Writing",
         "Rhetoric"
       ],
+      "areas": [
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Built Environment",
+        "Business for Creatives"
+      ],
       "disciplines": [
         "Performing Arts",
         "Creativity in Writing",
+        "Film/TV",
         "Film",
         "TV",
         "Theatre",
