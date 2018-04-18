@@ -128,6 +128,8 @@
         "Multimedia",
         "Digital Design",
         "Web Design",
+        "Visual Comms",
+        "Visual Communication",
         "Digital Imaging",
         "Interactive Media",
         "Interactive Games",
@@ -216,6 +218,8 @@
         "2D/3D Animation",
         "3D Design",
         "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Motion Graphics",
         "Computer Graphics",
         "AR/VR",
@@ -267,6 +271,8 @@
         "Digital Media",
         "Animation",
         "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "SFX",
         "Motion Graphics",
         "Film/TV/Audio",
@@ -327,9 +333,12 @@
         "Digital Media",
         "3D Design",
         "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Motion Graphics",
         "AR/VR",
         "Screen Media",
+        "Screen & Media",
         "Games Design",
         "Computer Graphics",
         "Multimedia",
@@ -375,7 +384,9 @@
         "Animation",
         "2D/3D Animation",
         "3D Design",
-        "Visual Design (VFX)", 
+        "Visual Design (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -437,6 +448,7 @@
         "Packaging & Branding",
         "Photomedia",
         "Visual Communication",
+        "Visual Comms",
         "Photography Design",
         "Concept Artist",
         "Creative Drawing"
@@ -485,6 +497,8 @@
         "Illustration",
         "Typography",
         "Photography",
+        "Visual Comms",
+        "Visual Communication",
         "Web Design",
         "Web Interface",
         "3D Printing",
@@ -529,6 +543,8 @@
         "Multimedia",
         "Digital Media",
         "Web Design",
+        "Visual Comms",
+        "Visual Communication",
         "Mobile Design",
         "Mobile Application",
         "Mobile Development",
@@ -672,7 +688,8 @@
       "artist": "Glen Reiner",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -682,7 +699,8 @@
       "artist": "Marine Lucinne Daniele Ecuyer",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -692,7 +710,8 @@
       "artist": "Nardo Conforti",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -703,6 +722,7 @@
       "disciplines": [
         "Illustration",
         "Visual Communication",
+        "Visual Comms",
         "Photography",
         "Photography Design",
         "Digital Imaging",
@@ -717,8 +737,10 @@
       "disciplines": [
         "Illustration",
         "Visual Communication",
+        "Visual Comms",
         "Photography",
         "Visual Arts",
+        "Visual Art",
         "Digital Imaging",
         "Art Photography",
         "Digital Media",
@@ -732,7 +754,8 @@
       "artist": "PJ Svoboda",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -742,7 +765,8 @@
       "artist": "Berat Akdemir",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
