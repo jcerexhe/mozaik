@@ -1,7 +1,12 @@
 .facilities-slider {
   width: 50%;
  /* margin: 0px auto; */
- margin: 15% 8%;
+ margin: 35% 8%;
+ height: 100%;
+
+.slick-slider .slick-list{
+  height: 40vh;
+}
 
   .slick-arrow:before {
     display: none;

@@ -3476,7 +3476,10 @@ ul.careers-lists > li:before {
 .facilities-slider {
   width: 50%;
   /* margin: 0px auto; */
-  margin: 15% 8%; }
+  margin: 35% 8%;
+  height: 100%; }
+  .facilities-slider .slick-slider .slick-list {
+    height: 40vh; }
   .facilities-slider .slick-arrow:before {
     display: none; }
   .facilities-slider .slick-arrow {
@@ -3508,6 +3511,8 @@ ul.careers-lists > li:before {
     margin-top: 5px;
     margin-bottom: 0px;
     color: #FFFFFF; }
+    .alumni-slider .alumni-slide-content > p span {
+      font-weight: bolder; }
   .alumni-slider .slick-arrow:before {
     display: none; }
   .alumni-slider .slick-arrow {

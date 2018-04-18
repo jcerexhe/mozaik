@@ -129,7 +129,7 @@ export default class FacilitiesApp extends Component {
       prevArrow: LeftArrow,
     }
     return (
-      <div style={{width: '50vw', height: '60vh', marginTop: '-20px'}}>
+      <div style={{width: '50vw', height: '60vh', marginTop: '-110px'}}>
         <div className='facilities-slider'>
           <Slick { ...settings }>
             { _.map(this.props.images, (img) => {

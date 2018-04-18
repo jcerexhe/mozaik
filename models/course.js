@@ -25,6 +25,7 @@ const courseSchema = new Schema({
     required: 'Please provide a short description of the course.',
   },
   campus: [String],
+  areas: [String],
   specialisations: [String],
   qualifications: [String],
   disciplines: [String],

@@ -28,7 +28,7 @@ exports.courses = async (req, res) => {
       if (areas[0] !== 'all areas') {
         // areas is an array of selected areas
         // $all finds a document with all of the els in array
-        targets.push({ disciplines: { $elemMatch:{$in: areas} } });
+        targets.push({ areas: { $elemMatch:{$in: areas} } });
       }
       if (!interestDisciplines.includes('all areas')) {
         targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });

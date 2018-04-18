@@ -24,6 +24,10 @@
     margin-top: 5px;
     margin-bottom: 0px;
     color: $white;
+
+    span{
+      font-weight: bolder;
+    }
   }
   .slick-arrow:before {
     display: none;

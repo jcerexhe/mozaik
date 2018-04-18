@@ -124,9 +124,11 @@
         "Music Theatre",
         "Physical Theatre"
       ],
-      "disciplines": [
+      "areas":[
         "Performing Arts",
-        "Film/TV/Audio",
+        "Film/TV/Audio"
+      ],
+      "disciplines": [
         "Film",
         "TV",
         "Radio",
