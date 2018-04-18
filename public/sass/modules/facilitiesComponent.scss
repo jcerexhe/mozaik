@@ -1,18 +1,19 @@
 .facilities-slider {
-  width: 60%;
-  margin: 0px auto;
+  width: 50%;
+ /* margin: 0px auto; */
+ margin: 15% 8%;
 
   .slick-arrow:before {
     display: none;
   }
   .slick-arrow {
-    width: 75px !important;
-    height: 75px !important;
+    width: 35px !important;
+    height: 35px !important;
   }
   .slick-next {
-    right: -100px !important;
+    right: -50px !important;
   }
   .slick-prev {
-    left: -100px !important;
+    left: -50px !important;
   }
 }
