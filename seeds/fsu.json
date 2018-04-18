@@ -131,6 +131,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Film/TV/Audio",
       	"Sound",
@@ -171,6 +179,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Film/TV/Audio",
       	"Sound",
@@ -210,6 +226,14 @@
       ],
       "qualifications": [
       	"Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Performing Arts",
@@ -266,12 +290,20 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Animation",
       	"2D Animation",
       	"3D Design",
-      	"VFX",
+      	"Visual Effect (VFX)",
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
@@ -289,9 +321,7 @@
       	"Design",
       	"Production Design",
       	"Digital Visualisation",
-        "Visual Comms",
-        "Visual Communication",
-      	"Media Arts",
+        "Media Arts",
       	"Virtual Worlds"
       ],
       "image": ""
@@ -330,12 +360,20 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Animation",
       	"2D Animation",
       	"3D Design",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
@@ -352,9 +390,7 @@
       	"Design",
       	"Production Design",
       	"Digital Visualisation",
-        "Visual Comms",
-        "Visual Communication",
-      	"Media Arts",
+        "Media Arts",
       	"Virtual Worlds"
       ],
       "image": ""
@@ -382,12 +418,20 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Animation",
       	"2D Animation",
       	"3D Design",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
@@ -404,9 +448,7 @@
       	"Design",
       	"Production Design",
       	"Digital Visualisation",
-        "Visual Comms",
-        "Visual Communication",
-      	"Media Arts",
+        "Media Arts",
       	"Virtual Worlds"
       ],
       "image": ""
@@ -434,12 +476,20 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Animation",
       	"2D Animation",
       	"3D Design",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
@@ -456,9 +506,7 @@
       	"Design",
       	"Production Design",
       	"Digital Visualisation",
-        "Visual Comms",
-        "Visual Communication",
-      	"Media Arts",
+       	"Media Arts",
       	"Virtual Worlds"
       ],
       "image": ""
@@ -486,6 +534,14 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Multimedia",
       	"Digital Media",
@@ -495,9 +551,7 @@
       	"Mobile Development",
       	"Web Interface",
       	"Packaging and Branding",
-        "Visual Comms",
-        "Visual Communication",
-      	"Digital Project Management",
+       	"Digital Project Management",
       	"Cross-Platform Apps",
       	"Games Design",
       	"Game Development",
@@ -541,12 +595,20 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Animation",
       	"2D Animation",
       	"3D Design",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Motion Graphics",
       	"Computer Graphics",
       	"AR/VR",
@@ -594,6 +656,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Design",
        	"2D Animation",
@@ -616,13 +686,11 @@
         "Visual Comms",
         "Visual Communication",
       	"Photomedia",
-        "Visual Comms",
-      	"Visual Communication",
+       	"Visual Communication",
        	"Photography Design",
       	"Concept Artist",
       	"Creative Drawing",
       	"Advertising",
-
       	"Arts Marketing",
       	"Creative Advertising",
       	"Marketing",
@@ -652,6 +720,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Design",
       	"Graphic Design",
@@ -667,7 +743,6 @@
       	"3D Printing",
       	"Packaging and Branding",
       	"Photomedia",
-      	"Visual Comms",
         "Visual Communication",
         "Photography Design",
       	"Concept Artist",
@@ -702,6 +777,14 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Design",
       	"Graphic Design",
@@ -718,7 +801,6 @@
       	"3D Printing",
       	"Packaging and Branding",
       	"Photomedia",
-      	"Visual Comms",
         "Visual Communication",
         "Photography Design",
       	"Concept Artist",
@@ -755,8 +837,16 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
-      	"Film/TV/Audio",
+      	"Film/TV",
         "Film",
       	"TV",
       	"Animation",
@@ -768,9 +858,7 @@
       	"Visual Storytelling",
       	"Cinematic Storytelling",
       	"Visual Expression",
-        "Visual Communication",
-        "Visual Comms",
-      	"Photography",
+       	"Photography",
       	"Documentary Photography",
       	"Moving Image",
       	"Gaffer",
@@ -804,8 +892,16 @@
       "qualifications": [
       	"Bachelor"
       ],
-      "disciplines": [
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
         "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
       	"Film",
       	"Animation",
       	"Screen Production",
@@ -822,7 +918,7 @@
       	"Sound Design",
       	"Music",
       	"SFX",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Documentary",
       	"Camera Operator",
       	"Set Designer",
@@ -867,8 +963,16 @@
       "qualifications": [
       	"Master"
       ],
-      "disciplines": [
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
         "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
       	"Film",
       	"Animation",
       	"Screen Production",
@@ -885,7 +989,7 @@
       	"Sound Design",
       	"Music",
       	"SFX",
-      	"VFX",
+      	"Visual Effects (VFX)",
       	"Documentary",
       	"Camera Operator",
       	"Set Designer",
@@ -929,6 +1033,14 @@
       ],
       "qualifications": [
       	"Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Information Technology",
@@ -997,6 +1109,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Multimedia",
       	"Digital Media",
@@ -1006,9 +1126,7 @@
       	"Mobiel Development",
       	"Web Interface",
       	"Packaging and Branding",
-        "Visual Comms",
-        "Visual Communication",
-      	"Digital Project Management",
+        "Digital Project Management",
       	"Cross-Platform Apps",
       	"Systems Management",
       	"Programming",
@@ -1049,13 +1167,19 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Visualization",
       	"Visualisation",
       	"Computer Graphics",
-        "Visual Comms",
-        "Visual Communication",
-      	"Data Visualisation",
+        "Data Visualisation",
       	"Data Visualization",
       	"Simulation Production",
       	"Computer Networks",
@@ -1105,6 +1229,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"SW Engineering",
       	"Software Engineering",
@@ -1114,9 +1246,7 @@
       	"Computer Graphics",
       	"Data Visualisation",
       	"Data Visualization",
-        "Visual Comms",
-        "Visual Communication",
-      	"Simulation Production",
+        "Simulation Production",
       	"Computer Networks",
       	"Virtual Reality",
       	"Augmented Reality",
@@ -1178,6 +1308,14 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Design",
@@ -1202,7 +1340,6 @@
       	"Virtualization Technologies",
       	"Technology in the Entertainment Business",
       	"Digital Logic",
-        "Visual Comms",
       	"Visual Communication"
       ],
       "image": ""
@@ -1241,8 +1378,16 @@
       "qualifications": [
       	"Bachelor"
       ],
-      "disciplines": [
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
         "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
       	"Film",
       	"TV",
       	"Screen Production",
@@ -1280,8 +1425,16 @@
       "qualifications": [
       	"Master"
       ],
-      "disciplines": [
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
         "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Film/TV",
       	"Film",
       	"TV",
       	"Screen Production",
@@ -1319,8 +1472,15 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
-      	"Visual Comms",
         "Visual Communication",
       	"Digital Media",
       	"Multimedia",
@@ -1365,11 +1525,18 @@
       "qualifications": [
       	"Bachelor"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Digital Design",
       	"Graphic Design",
-        "Visual Comms",
       	"Visual Communication",
       	"Brand Management",
       	"Video Production",
@@ -1415,13 +1582,20 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Digital Media",
       	"Digital Design",
       	"New Media",
       	"Graphic Design",
-        "Visual Comms",
-      	"Visual Communication",
+       	"Visual Communication",
       	"Brand Management",
       	"Communication Design",
         "Media Entrepreneurship",
@@ -1460,6 +1634,14 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Public Relations",
       	"New Media & Communications",
@@ -1467,8 +1649,7 @@
       	"Digital Design",
       	"New Media",
       	"Graphic Design",
-        "Visual Comms",
-      	"Visual Communication",
+       	"Visual Communication",
       	"Brand Management",
       	"Communication Design",
       	"Design",
@@ -1525,6 +1706,14 @@
       ],
       "qualifications": [
       	"Master"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Business for Creatives",
@@ -1586,6 +1775,14 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Business for Creatives",
       	"Entertainment Business",
@@ -1638,9 +1835,7 @@
       	"Social Media",
       	"Writing for Interactive Media",
       	"Packaging and Branding",
-        "Visual Comms",
-        "Visual Communication",
-      	"Entrepreneurial Finance"
+       	"Entrepreneurial Finance"
       ],
       "image": ""
     },
@@ -1665,6 +1860,14 @@
       ],
       "qualifications": [
       	"Master"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Business for Creatives",
@@ -1713,9 +1916,7 @@
       	"Social Media",
       	"Writing for Interactive Media",
       	"Packaging and Branding",
-        "Visual Comms",
-        "Visual Communication",
-      	"Design Thinking",
+       	"Design Thinking",
       	"Innovation",
       	"Product Design and Development",
       	"Creativity and Innovation",
@@ -1744,6 +1945,14 @@
       ],
       "qualifications": [
       	"Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Business for Creatives",
@@ -1819,6 +2028,14 @@
       "qualifications": [
       	"Master"
       ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
       "disciplines": [
       	"Business for Creatives",
       	"Business Plan",
@@ -1859,9 +2076,6 @@
       	"Business Technology and Design",
       	"Culture and Media",
       	"Writing for Interactive Media",
-      	"Packaging and Branding",
-        "Visual Comms",
-        "Visual Communication",
       	"SEO",
       	"SEM",
       	"Digital Advertising",
@@ -1904,6 +2118,14 @@
       ],
       "qualifications": [
       	"Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
       ],
       "disciplines": [
       	"Business for Creatives",

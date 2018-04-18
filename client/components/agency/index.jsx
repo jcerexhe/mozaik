@@ -169,7 +169,7 @@ export default class AgencyApp extends Component {
 					</div>
 				</div>
 				<div className='get-started'>
-					<img src="/images/buttons/Get-started.png" />
+				 <a href="/search"> <img src="/images/buttons/Get-started.png" /> </a>
 				</div>
 				
 			</div>	
