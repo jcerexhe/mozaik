@@ -31,7 +31,8 @@ exports.courses = async (req, res) => {
         targets.push({ areas: { $elemMatch:{$in: areas} } });
       }
       if (!interestDisciplines.includes('all areas')) {
-        targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
+        // targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
+        targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: areas } }]});
       }
 
       switch (targets.length) {
