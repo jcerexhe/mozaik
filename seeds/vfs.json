@@ -102,6 +102,14 @@
         "Improvisation",
         "Movement"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Performing Arts",
         "Acting",
@@ -138,6 +146,14 @@
         "Improvisation",
         "Movement"
       ],
+       "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Visual Arts",
@@ -151,8 +167,6 @@
         "Motion Graphics",
         "Animation",
         "Video",
-        "Visual Comms",
-        "Visual Communication",
         "Visual Art"
       ],
       "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
@@ -184,8 +198,15 @@
         "Improvisation",
         "Movement"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
         "Digital Media",
         "Acting",
         "Performance Art",
@@ -197,6 +218,7 @@
         "Text Analysis",
         "TV",
         "Film",
+        "Film/TV",
         "Audio",
         "Improvisation",
         "Critical Sensibility",
@@ -236,8 +258,16 @@
         "Production Design",
         "Post-Production"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Production",
@@ -245,12 +275,11 @@
         "Storytelling",
         "Visual Art",
         "Visual Arts",
-        "Visual Comms",
-        "Visual Communication",
         "Visual Effects",
         "Digital Media",
         "Animation",
         "VFX",
+        "Visual Effects (VFX)",
         "SFX",
         "Motion Graphics",
         "Screen Media",
@@ -300,8 +329,16 @@
         "3D Make Up techniques",
         "Sculpting"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Makeup",
         "TV",
         "Film",
@@ -345,6 +382,14 @@
         "MAXMSP",
         "Post Production"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Visual Media",
@@ -358,6 +403,7 @@
         "Mixing",
         "Film",
         "TV",
+        "Film/TV",
         "Screen Production",
         "Audio Recordist",
         "Boom Operator",
@@ -396,9 +442,17 @@
         "Writing for Feature Films",
         "Writing for Television"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Writing",
@@ -442,11 +496,20 @@
         "Lighting",
         "Texturing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Life Drawing",
         "Visual Effects",
         "Arts",
@@ -457,9 +520,11 @@
         "Texturing",
         "3D Design",
         "VFX",
+        "Visual Effects (VFX)",
         "Motion Graphics",
         "Computer Graphics",
         "Games Design",
+        "Game Design",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -497,11 +562,20 @@
         "Concept Art",
         "Drawing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Concept Art",
         "Drawing",
         "Painting",
@@ -538,10 +612,19 @@
         "Digital Art",
         "Drawing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
+        "2D/3D Animation",
         "Storytelling",
         "Digital Design",
         "Drawing",
@@ -578,6 +661,14 @@
         "Interactive User Experience Design",
         "Motion Design"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media", 
         "Design",
@@ -589,8 +680,10 @@
         "Digital Design",
         "2D Animation",
         "3D Design",
+        "2D/3D Animation",
         "Motion Graphics", 
         "Games Design", 
+        "Game Design",
         "Multimedia",
         "Digital Imaging",
         "Digital images",
@@ -638,13 +731,20 @@
         "Game Programming",
         "Unity"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Games Design",
+        "Game Design",
         "Unity",
         "Design",
-        "Visual Comms",
-        "Visual communication",
         "3D Design",
         "Screen Media",
         "Games Design",
@@ -689,6 +789,14 @@
         "Object Oriented Programming",
         "Java"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Programming",
@@ -702,6 +810,7 @@
         "Multimedia",
         "Digital Media",
         "Games Design",
+        "Game Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",

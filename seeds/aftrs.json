@@ -101,10 +101,17 @@
         "Rhythm & Juxtaposition",
         "Screen Business"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
+        "VFX",
         "Radio",
         "Animation",
         "Screen Production",
@@ -118,15 +125,14 @@
         "Screen Media",
         "Screen Performance",
         "Screenwriting",
-        "Sound Design",
+        "Sound Design", 
         "SFX",
-        "VFX",
+        "Visual Effects (VFX)",
         "Documentary",
         "Camera Operator",
         "Set Designer",
         "Script Editor",
         "DOP",
-        "Broadcasting",
         "Cinematic Storytelling",
         "Character Performance",
         "Multimedia",
@@ -166,10 +172,17 @@
         "Screenwriting",
         "Sound"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
+        "VFX",
         "Radio",
         "Animation",
         "Screen Production",
@@ -186,7 +199,7 @@
         "Sound Design",
         "Music",
         "SFX",
-        "VFX",
+        "Visual Effects (VFX)",
         "Documentary",
         "Camera Operator",
         "Set Designer",
@@ -231,14 +244,22 @@
         "VFX",
         "3D Animation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
+        "TV",
+        "VFX",
         "Animation",
         "2D Animation",
         "3D Animation",
         "Screen Production",
-        "VFX",
+        "Visual Effects (VFX)",
         "Cinematic Storytelling",
         "Multimedia",
         "Transmedia",
@@ -272,14 +293,22 @@
         "Computer Graphics",
         "2D Matte Painting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
+        "TV",
+        "VFX",
         "Animation",
         "2D Animation",
         "3D Animation",
         "Screen Production",
-        "VFX",
+        "Visual Effects (VFX)",
         "Cinematic Storytelling",
         "Multimedia",
         "Transmedia",
@@ -313,8 +342,14 @@
         "Research and Development",
         "Visual Expression"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
@@ -358,8 +393,14 @@
         "Framing",
         "Lighting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -407,8 +448,14 @@
         "Grading Practice",
         "Creative Grading"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Cinematography",
@@ -445,8 +492,14 @@
         "Cinematography Practice",
         "Visual Expression"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -490,8 +543,14 @@
         "Research and Development",
         "Screen Language"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
@@ -531,8 +590,14 @@
         "Cinematic Principles",
         "Performance"
       ],
+             "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
@@ -572,8 +637,14 @@
         "Research and Development",
         "Directorial Vision"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -606,8 +677,14 @@
         "Documentary",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -642,8 +719,14 @@
         "Coverage",
         "Temp Music and Sound"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Editing",
@@ -681,8 +764,14 @@
         "Sound Editing",
         "Avid Composer"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio", 
+        "Film/TV", 
         "Film",
         "TV",
         "Editing",
@@ -719,8 +808,15 @@
         "Factual Form Storytelling",
         "Technical Editing"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
+        "Film",
         "TV",
         "Editing",
         "Post Production",
@@ -754,8 +850,14 @@
         "Non-linear Editing",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Editing",
@@ -793,9 +895,14 @@
         "Leadership and Strategy",
         "Entrepreneurship"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Business for Creatives",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -851,9 +958,14 @@
         "Finance Plans",
         "Marketing and Audience"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Business for Creatives",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -896,8 +1008,14 @@
         "Research and Development",
         "Digital Visualisation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Production Design",
@@ -937,8 +1055,14 @@
         "Design Skills",
         "Design Practices"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Production Design",
@@ -977,8 +1101,14 @@
         "Research and Development",
         "Screen Culture"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1017,8 +1147,14 @@
         "Crafting Story",
         "Visual Language"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1055,8 +1191,15 @@
         "Creative Writing",
         "Genre, Format and Development"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
+        "Film",
         "TV",
         "Screen Production",
         "Screenwriting",
@@ -1091,8 +1234,14 @@
         "Script Development",
         "Script Editing"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1126,8 +1275,14 @@
         "Incubator",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1164,10 +1319,14 @@
         "Research and Development",
         "Screen Culture"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Digital Media",
-        "Performing Arts",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1210,10 +1369,14 @@
         "Composition Workshop",
         "Music Technologies"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Digital Media",
-        "Performing Arts",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1256,8 +1419,14 @@
         "Research and Development",
         "Sound Production and Design"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1300,8 +1469,14 @@
         "Production Sound Skills",
         "Internship"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1343,9 +1518,13 @@
         "Audio and Visual Content",
         "Project Management"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1380,9 +1559,13 @@
         "Audio Production",
         "Announcing and Presentation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1419,9 +1602,13 @@
         "Reach and Relevance",
         "Innovative Business of Radio"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Film/TV/Audio",
-        "Digital Media",
         "Radio",
         "Broadcasting",
         "Digital Journalism",
@@ -1459,8 +1646,13 @@
         "Entrepreneurship",
         "Brand Management"
       ],
+             "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Business for Creatives",
         "Screen Production",
         "Producing",
         "Screen Media",
@@ -1514,8 +1706,13 @@
         "Finance",
         "Strategic Planning"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Business for Creatives",
         "Screen Production",
         "Producing",
         "Screen Media",
@@ -1568,8 +1765,13 @@
         "Production Accounting",
         "Post-Production Accounting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Business for Creatives",
         "Production Accounting",
         "Producing",
         "Screen Business",
@@ -1607,8 +1809,13 @@
         "Strategic Audience Engagement",
         "Social Video Business"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Business for Creatives",
         "Screen Business",
         "Distribution",
         "Brand Management",
@@ -1647,8 +1854,13 @@
         "Production Management",
         "The Evolving Production Landscape"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
-        "Business for Creatives",
         "Screen Business",
         "Distribution",
         "Brand Management",

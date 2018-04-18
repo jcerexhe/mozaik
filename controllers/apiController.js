@@ -111,7 +111,7 @@ exports.courses = async (req, res) => {
       // e.g. 'media, games design' => ['Media', 'Games Design']
       const split_area = data.studyArea.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
       const split_city = data.city.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
-      var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { specialisations: { $in: split_area } }]} : {});
+      var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { areas: { $in: split_area } }]} : {});
       var school = ((data.school.trim().length > 0) ? { school_name: school_name } : {});
       var city = ((data.city.trim().length > 0) ? { campus: { $in: split_city }} : {});
       var campus = [];
