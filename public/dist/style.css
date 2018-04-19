@@ -1557,15 +1557,18 @@ contact-field {
   height: 305vh;
   padding-top: 150px; }
 
-.card1 {
+.card-container-black {
   background-color: #292722;
   position: absolute;
   top: 25%;
   width: 91.5%;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  margin-bottom: 30px; }
 
-.card2 {
+.card-container-white {
   background-color: #FFFFFF;
   position: absolute;
   top: 51%;
@@ -1573,41 +1576,13 @@ contact-field {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
-
-.card3 {
-  background-color: #292722;
-  position: absolute;
-  top: 77%;
-  width: 91.5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.card4 {
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 102%;
-  width: 91.5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
       flex-direction: row;
-  margin-left: 8%; }
+  margin-bottom: 30px; }
 
-.card5 {
-  background-color: #292722;
-  position: absolute;
-  top: 127%;
-  width: 91.5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
+/* white panel */
 .panel-body-white {
-  background-color: white; }
+  background-color: white;
+  height: 30vh; }
 
 .panel-body-white > img {
   margin-top: 20px;
@@ -1618,20 +1593,38 @@ contact-field {
   padding: 50px 20px 20px 20px;
   text-align: justify; }
 
-.panel-group {
-  margin-top: 3%;
-  margin-left: 8%;
-  width: 40%; }
-
-.panel-title > a {
-  text-decoration: none; }
-
-.panel-title > a > p {
+p.panel-title-text-white {
   color: #F5F5F5;
   font-size: 20pt;
   font-family: 'Bebas Neue';
   margin-bottom: 0px;
   padding-bottom: 0px; }
+
+/* black panel */
+.panel-body-black {
+  background-color: #292722;
+  height: 30vh; }
+
+.panel-body-black > p {
+  color: white;
+  padding: 50px 20px 20px 20px;
+  text-align: justify; }
+
+p.panel-title-text-black {
+  color: #000000;
+  font-size: 20pt;
+  font-family: 'Bebas Neue';
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+/* common panel */
+.panel-group {
+  margin-top: 3%;
+  margin-left: 8%;
+  width: 60%; }
+
+.panel-title > a {
+  text-decoration: none; }
 
 .small-line-agency {
   width: 80%;

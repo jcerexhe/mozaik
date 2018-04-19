@@ -36,158 +36,101 @@ export default class AgencyApp extends Component {
 						</div>
 						
 					</div>
-					<div className='card1 card'>
-						<div className='card-body'>
-							<div className="panel-group" id="accordion">
-		    					<div className="panel panel-default" id="panel1">
-		       						<div className="panel-heading">
-		             					<h4 className="panel-title">
-		        							<a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
-		          								<p>1. Discover</p>
-		          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-		       								</a>
-		      							</h4>
-									</div>
-		        					<div id="collapseOne" className="panel-collapse collapse in">
-		            					<div className="panel-body-white panel-body">
-		            						<p>Explore amazing creative student work from our showcase gallery or
-						 						watch one of our MasterClass videos and see what it means to be a
-						 						creative professional in the creative industry.<br/>
-						 						<a href="#">Discover here.</a>
-						 					</p>
-		            					</div>
-		        					</div>
-		    					</div>
+					<div className='card-container-black'>
+						<div className='card1'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel1">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
+			          								<p className="panel-title-text-white">1. Discover</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseOne" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+			            						<p>Explore amazing creative student work from our showcase gallery or
+							 						watch one of our MasterClass videos and see what it means to be a
+							 						creative professional in the creative industry.<br/>
+							 						<a href="#">Discover here.</a>
+							 					</p>
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+						<div className='card2'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel2">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo">
+			          								<p className="panel-title-text-white">2. SELECTION OF COURSE AND SCHOOL</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseTwo" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+							 					<p>Personalised Study Plan<br/>We understand that many factors influence your course selection: school reputation, fees, graduate outcomes, etc. Our team can assist you with this selection-the aim at this stage is to develop a personalized study plan.</p>
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className='card2 card'>
-						<div className='card-body'>
-							<div className="panel-group" id="accordion">
-		    					<div className="panel panel-default" id="panel2">
-		       						<div className="panel-heading">
-		             					<h4 className="panel-title">
-		        							<a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo">
-		          								Collapsible Group Item #1
-		       								</a>
-		      							</h4>
-									</div>
-		        					<div id="collapseTwo" className="panel-collapse collapse in">
-		            					<div className="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-		        					</div>
-		    					</div>
+					<div className='card-container-white'>
+						<div className='card3 card'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel3">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-black panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree">
+			          								<p className="panel-title-text-black">3. APPLICATION</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseThree" className="panel-collapse collapse in">
+			            					<div className="panel-body-black panel-body">
+			            						<p>Do you require flight or any other travel arrangements?
+						 						No problem, through our network of partnerships we can offer the most
+						 						reliable and cost effective travel options for you.</p>	
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className='card3 card'>
-						<div className='card-body'>
-							<div className="panel-group" id="accordion">
-		    					<div className="panel panel-default" id="panel3">
-		       						<div className="panel-heading">
-		             					<h4 className="panel-title">
-		        							<a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree">
-		          								Collapsible Group Item #1
-		       								</a>
-		      							</h4>
-									</div>
-		        					<div id="collapseThree" className="panel-collapse collapse in">
-		            					<div className="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-		        					</div>
-		    					</div>
-							</div>
-						</div>
-					</div>
-					<div className='card4 card'>
-						<div className='card-body'>
-							<div className="panel-group" id="accordion">
-		    					<div className="panel panel-default" id="panel4">
-		       						<div className="panel-heading">
-		             					<h4 className="panel-title">
-		        							<a data-toggle="collapse" data-target="#collapseFour" href="#collapseFour">
-		          								Collapsible Group Item #1
-		       								</a>
-		      							</h4>
-									</div>
-		        					<div id="collapseFour" className="panel-collapse collapse in">
-		            					<div className="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-		        					</div>
-		    					</div>
-							</div>
-						</div>
-					</div>
-					<div className='card5 card'>
-						<div className='card-body'>
-							<div className="panel-group" id="accordion">
-		    					<div className="panel panel-default" id="panel5">
-		       						<div className="panel-heading">
-		             					<h4 className="panel-title">
-		        							<a data-toggle="collapse" data-target="#collapseFive" href="#collapseFive">
-		          								Collapsible Group Item #1
-		       								</a>
-		      							</h4>
-									</div>
-		        					<div id="collapseFive" className="panel-collapse collapse in">
-		            					<div className="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-		        					</div>
-		    					</div>
+						<div className='card4 card'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel4">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-black panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseFour" href="#collapseFour">
+			          								<p className="panel-title-text-black">4. CREATIVE PORTFOLIO PREPARATION</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseFour" className="panel-collapse collapse in">
+			            					<div className="panel-body-black panel-body">
+						 						<p>Imagine if you were able to showcase your creative work on self-promo site. We can assist you with setting up this site and/or prepare a creative portfolio that you can the use as part of your application.</p>
+			            					</div>
+			            				</div>
+			    					</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-					{/*<div className='rectangle1'>
-						 <div className='discover'>
-						 	<div className='discover-title'>
-						 		<p>1.&nbsp;&nbsp;&nbsp;DISCOVER</p>
-						 		<img className='discover-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='discover-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='discover-box'>
-						 		<img className='discover-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Explore amazing creative student work from our showcase gallery or<br/>
-						 		watch one of our MasterClass videos and see what it means to be a<br/>
-						 		creative professional in the creative industry.<br/>
-						 		<a href="#">Discover here.</a></p>
-						 	</div>
-						 </div>
-						 <div className='selection-course'>
-						 	<div className='selection-title'>
-						 		<p>2.&nbsp;&nbsp;&nbsp;SELECTION OF COURSE AND SCHOOL</p>
-						 		<img className='selection-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='selection-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='selection-box'>
-						 		<img className='selection-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Personalised Study Plan<br/>We understand that many factors influence your course selection: school reputation, fees, graduate outcomes, etc. Our team can assist you with this selection-the aim at this stage is to develop a personalized study plan.</p>
-						 	</div>
-						 </div>
-					</div>*/}
-					{/*<div className='rectangle2'>
-						 <div className='application'>
-						 	<div className='application-title'>
-						 		<p>3.&nbsp;&nbsp;&nbsp;Application</p>
-						 		<img className='application-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='application-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='application-box'>
-						 		<img className='application-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Applying to a school requires attention to detail. We help with compiling and submitting all relevant documentation required by each school (these may vary
-						 		between schools). If English is not your first language then we will "package" an
-						 		English course with your main course so that you meet the language entry requirements.
-						 		You can then apply for a visa that covers the full length of your study period.</p>
-						 	</div>
-						 </div>
-						 <div className='creative-portfolio'>
-						 	<div className='creative-title'>
-						 		<p>4.&nbsp;&nbsp;&nbsp;CREATIVE PORTFOLIO PREPARATION</p>
-						 		<img className='creative-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='creative-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='creative-box'>
-						 		<img className='creative-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Imagine if you were able to showcase your creative work on self-promo site. We can assist you with setting up this site and/or prepare a creative portfolio that you can the use as part of your application.</p>
-						 	</div>
-						 </div>
-					</div>*/}
 					{/*<div className='rectangle3'>*/}
 					{/*	 <div className='visa-medical'>
 						 	<div className='visa-title'>
