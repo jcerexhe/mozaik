@@ -129,19 +129,64 @@
   padding-top: 150px;  
 }
 
-.card{
+.card1{
   background-color: #292722;
   position: absolute;
   top: 25%;
   width: 91.5%;
-  
+  flex-direction: row;
+}
+
+
+.card2{
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 51%;
+  width: 91.5%;
   display: flex;
   flex-direction: row;
 }
 
-.panel-body{
-  background-color: white;
+.card3{
+  background-color: #292722;
+  position: absolute;
+  top: 77%;
+  width: 91.5%;
+  display: flex;
+  flex-direction: row;
 }
+
+.card4{
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 102%;
+  width: 91.5%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%
+}
+
+.card5{
+  background-color: #292722;
+  position: absolute;
+  top: 127%;
+  width: 91.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel-body-white{
+  background-color: white;
+   
+}
+
+.panel{
+  width: 40%;
+  
+  margin-left: 10%; 
+
+}
+
 .panel-heading a:after {
     font-family:'Glyphicons Halflings';
     content:"\e114";
