@@ -45,16 +45,20 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
 			          								<p className="panel-title-text-white">1. Discover</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseOne" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
+				            					<a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 			            						<p>Explore amazing creative student work from our showcase gallery or
 							 						watch one of our MasterClass videos and see what it means to be a
 							 						creative professional in the creative industry.<br/>
-							 						<a href="#">Discover here.</a>
+							 						<a href="/search">Discover here.</a>
 							 					</p>
 			            					</div>
 			        					</div>
@@ -70,12 +74,16 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo">
 			          								<p className="panel-title-text-white">2. SELECTION OF COURSE AND SCHOOL</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseTwo" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 							 					<p>Personalised Study Plan<br/>We understand that many factors influence your course selection: school reputation, fees, graduate outcomes, etc. Our team can assist you with this selection-the aim at this stage is to develop a personalized study plan.</p>
 			            					</div>
 			        					</div>
@@ -93,15 +101,21 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-black panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree">
 			          								<p className="panel-title-text-black">3. APPLICATION</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseThree" className="panel-collapse collapse in">
 			            					<div className="panel-body-black panel-body">
-			            						<p>Do you require flight or any other travel arrangements?
-						 						No problem, through our network of partnerships we can offer the most
-						 						reliable and cost effective travel options for you.</p>	
+			            						<a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
+			            						<p>Applying to a school requires attention to detail. We help with compiling and
+			            						submiting all relevant documentation required by each school(these may vary
+			            						between schools). If English is not your first language then we will "package" an
+			            						English course with your main course so that you meet the language entry requirements.
+			            						You can then apply for a visa that covers the full length of yout study period.</p>	
 			            					</div>
 			        					</div>
 			    					</div>
@@ -116,12 +130,16 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-black panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseFour" href="#collapseFour">
 			          								<p className="panel-title-text-black">4. CREATIVE PORTFOLIO PREPARATION</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseFour" className="panel-collapse collapse in">
 			            					<div className="panel-body-black panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseFour" href="#collapseFour">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 						 						<p>Imagine if you were able to showcase your creative work on self-promo site. We can assist you with setting up this site and/or prepare a creative portfolio that you can the use as part of your application.</p>
 			            					</div>
 			            				</div>
@@ -139,12 +157,16 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseFive" href="#collapseFive">
 			          								<p className="panel-title-text-white">5. VISA SUBMISSION AND MEDICAL INSURANCE</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseFive" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseFive" href="#collapseFive">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 						 						<p>Each destination country(where you will study)has a different set of visa rules. We provide full Visa documentation support, including assisting with any certification, and translations service required. We also assist with medical insurance application process. We also have partnered with Migration Agencies for those seeking to explore post study migration options.</p>
 			            					</div>
 			        					</div>
@@ -160,14 +182,18 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseSix" href="#collapseSix">
 			          								<p className="panel-title-text-white">6. TRAVEL ARRANGEMENTS</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseSix" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseSix" href="#collapseSix">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 												<p>Do you require flight or any other travel arrangements?<br/>
-						 							No problem, through our network of partnerships we can offer the most<br/>
+						 							No problem, through our network of partnerships we can offer the most
 						 							reliable and cost effective travel options for you.
 						 						</p>			            					
 						 					</div>
@@ -186,12 +212,16 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-black panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseSeven" href="#collapseSeven">
 			          								<p className="panel-title-text-black">7. ACCOMODATION ARRANGEMENTS</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseSeven" className="panel-collapse collapse in">
 			            					<div className="panel-body-black panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseSeven" href="#collapseSeven">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 			            						<p>Would you like to live on campus, or share a private accomodation
 						 							with other students? Maybe you prefer homestay where you ca live
 						 							with a local family for the first few months of your stay.
@@ -210,12 +240,16 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-black panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseEight" href="#collapseEight">
 			          								<p className="panel-title-text-black">8. PRE AND POST DEPARTURE SUPPORT</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseEight" className="panel-collapse collapse in">
 			            					<div className="panel-body-black panel-body">
+			            						<a data-toggle="collapse" data-target="#collapseEight" href="#collapseEight">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
 												<p>We have a developed a pre-departure pack that includes important information and tips on culture and social norms, emergency contacts, key events, locations of interest, etc. We also arrange to have somebosy welcome you when you arrive
 						 							at the airport(optional)
 						 						</p>			            					
@@ -235,13 +269,17 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseNine" href="#collapseNine">
 			          								<p className="panel-title-text-white">9. SUPPORT THROUGOUT YOUR STUDY PERIOD</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseNine" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
-			            					 <p> Contact us </p>
+			            						<a data-toggle="collapse" data-target="#collapseNine" href="#collapseNine">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
+			            					 	<p>  </p>
 			            					</div>
 			        					</div>
 			    					</div>
@@ -256,13 +294,17 @@ export default class AgencyApp extends Component {
 			             					<h4 className="pane-title-white panel-title">
 			        							<a data-toggle="collapse" data-target="#collapseTen" href="#collapseTen">
 			          								<p className="panel-title-text-white">10. TRAVEL ARRANGEMENTS</p>
+			          								<img className='triangle-right' src="/images/elements/TRIANGLE.png" />
 			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 			       								</a>
 			      							</h4>
 										</div>
 			        					<div id="collapseTen" className="panel-collapse collapse in">
 			            					<div className="panel-body-white panel-body">
-												<p>Contact Us</p>			            					
+			            						<a data-toggle="collapse" data-target="#collapseTen" href="#collapseTen">
+				            						<img className='triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
+	                 							</a>
+												<p></p>			            					
 						 					</div>
 			        					</div>
 			    					</div>
@@ -271,7 +313,8 @@ export default class AgencyApp extends Component {
 						</div>
 					</div>
 				</div>
-				<div className='get-started'>
+				 <p></p>
+    				<div className='get-started'>
 				 <a href="/search"> <img src="/images/buttons/Get-started.png" /> </a>
 				</div>
 				

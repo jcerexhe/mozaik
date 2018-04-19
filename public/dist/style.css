@@ -1641,7 +1641,7 @@ contact-field {
 
 .card8 {
   margin-top: 2%;
-  margin-left: 12%;
+  margin-left: 10%;
   width: 40%;
   border-color: #FFFFFF; }
 
@@ -1678,7 +1678,11 @@ contact-field {
 
 .panel-body-white > p {
   padding: 50px 20px 20px 20px;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 2vh; }
+
+.panel-body-white > p > a {
+  color: #F76F70; }
 
 p.panel-title-text-white {
   color: #F5F5F5;
@@ -1695,7 +1699,8 @@ p.panel-title-text-white {
 .panel-body-black > p {
   color: white;
   padding: 50px 20px 20px 20px;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 2vh; }
 
 p.panel-title-text-black {
   color: #000000;
@@ -1709,17 +1714,16 @@ p.panel-title-text-black {
   text-decoration: none; }
 
 .small-line-agency {
-  width: 80%;
+  width: 85%;
   margin-top: -20px; }
 
-.panel-heading a:after {
-  content: url(/images/elements/TRIANGLE-DOWN.png);
+.triangle-right {
   float: right;
-  position: relative;
-  top: 10%; }
+  margin: -30px 15px -30px 0px; }
 
-.panel-heading a.collapsed:after {
-  content: url(/images/elements/TRIANGLE.png); }
+.triangle-down {
+  float: right;
+  margin: 10px 10px -30px -15px; }
 
 .get-started {
   position: relative;
