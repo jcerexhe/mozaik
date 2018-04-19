@@ -136,8 +136,20 @@
   width: 91.5%;
   display: flex;
   flex-direction: row;
- 
-  margin-bottom: 30px;
+  margin-bottom: 90px;
+}
+
+.card1{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+}
+
+
+.card2{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
 }
 
 .card-container-white1{
@@ -148,6 +160,21 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
+}
+
+.card3{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+  border-color: #FFFFFF;
+}
+
+
+.card4{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
 .card-container-black2{
@@ -161,6 +188,19 @@
   margin-bottom: 30px;
 }
 
+.card5{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+}
+
+
+.card6{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+}
+
 .card-container-white2{
   background-color: #FFFFFF;
   position: absolute;
@@ -169,7 +209,21 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  left: 10%;
+  left: 9%;
+}
+
+.card7{
+  margin-top: 2%;
+  width: 40%;
+  border-color: #FFFFFF;
+}
+
+
+.card8{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
 .card-container-black3{
@@ -181,6 +235,18 @@
   flex-direction: row;
  
   margin-bottom: 30px;
+}
+.card9{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+}
+
+
+.card10{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
 }
 
 /* white panel */
@@ -232,11 +298,7 @@ p.panel-title-text-black {
 }
 
 /* common panel */
-.panel-group{
-  margin-top: 3%;
-  margin-left: 8%;
-  width: 60%;
-}
+
 
 .panel-title >a{
   text-decoration: none;

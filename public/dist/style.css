@@ -1566,7 +1566,17 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 90px; }
+
+.card1 {
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%; }
+
+.card2 {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%; }
 
 .card-container-white1 {
   background-color: #FFFFFF;
@@ -1579,6 +1589,18 @@ contact-field {
       flex-direction: row;
   margin-bottom: 30px; }
 
+.card3 {
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+  border-color: #FFFFFF; }
+
+.card4 {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+  border-color: #FFFFFF; }
+
 .card-container-black2 {
   background-color: #292722;
   position: absolute;
@@ -1590,6 +1612,16 @@ contact-field {
       flex-direction: row;
   margin-bottom: 30px; }
 
+.card5 {
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%; }
+
+.card6 {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%; }
+
 .card-container-white2 {
   background-color: #FFFFFF;
   position: absolute;
@@ -1600,7 +1632,18 @@ contact-field {
   -ms-flex-direction: row;
       flex-direction: row;
   margin-bottom: 30px;
-  left: 10%; }
+  left: 9%; }
+
+.card7 {
+  margin-top: 2%;
+  width: 40%;
+  border-color: #FFFFFF; }
+
+.card8 {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+  border-color: #FFFFFF; }
 
 .card-container-black3 {
   background-color: #292722;
@@ -1612,6 +1655,16 @@ contact-field {
   -ms-flex-direction: row;
       flex-direction: row;
   margin-bottom: 30px; }
+
+.card9 {
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%; }
+
+.card10 {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%; }
 
 /* white panel */
 .panel-body-white {
@@ -1652,11 +1705,6 @@ p.panel-title-text-black {
   padding-bottom: 0px; }
 
 /* common panel */
-.panel-group {
-  margin-top: 3%;
-  margin-left: 8%;
-  width: 60%; }
-
 .panel-title > a {
   text-decoration: none; }
 
