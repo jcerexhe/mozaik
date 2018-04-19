@@ -1557,26 +1557,28 @@ contact-field {
   height: 305vh;
   padding-top: 150px; }
 
-.rectangle1 {
+.card {
   background-color: #292722;
   position: absolute;
   top: 25%;
   width: 91.5%;
-  height: 40vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
 
-/*.panel-heading a:after {
-    font-family:'Glyphicons Halflings';
-    content:"\e114";
-    float: right;
-    color: grey;
-}
+.panel-body {
+  background-color: white; }
+
+.panel-heading a:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\E114";
+  float: right;
+  color: grey; }
+
 .panel-heading a.collapsed:after {
-    content:"\e080";
-}*/
+  content: "\E080"; }
+
 /*.rectangle1{
   background-color: #292722;
   position: absolute;
