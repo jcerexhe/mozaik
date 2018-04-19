@@ -24,15 +24,41 @@ exports.courses = async (req, res) => {
       const { interestDisciplines, interestCountries } = disc;
       const targets = [];
       const schoollist = [];
+      var studyAreas = [
+        'Digital Media',
+        'Visual Comms',
+        'Fine Arts',
+        'Film/TV/Audio',
+        'Performing Arts',
+        'Design',
+        'Photography',
+        'Built Environment',
+        'Business for Creatives'
+      ]
 
       if (areas[0] !== 'all areas') {
         // areas is an array of selected areas
         // $all finds a document with all of the els in array
         targets.push({ areas: { $elemMatch:{$in: areas} } });
       }
-      if (!interestDisciplines.includes('all areas')) {
-        targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
-      }
+
+        if ((!interestDisciplines.includes('all areas')) && (areas[0] !== 'all areas')){
+          // targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
+          targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: areas } }]});
+        }
+        // else{
+        //   targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: studyAreas } }]});
+
+        // }
+
+        if ((!interestDisciplines.includes('all areas')) && (areas[0] === 'all areas')){
+          targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: studyAreas } }]});
+
+        }
+      
+
+
+
 
       switch (targets.length) {
         case 0:
@@ -107,11 +133,12 @@ exports.courses = async (req, res) => {
       const schoollist = [];
       var schoolCampus;
       var schoolCountry;
+
       // Split - Capitalize then split into array by comma-separated values
       // e.g. 'media, games design' => ['Media', 'Games Design']
       const split_area = data.studyArea.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
       const split_city = data.city.replace(/\b[a-z]/g,function(f){return f.toUpperCase();}).split(', ');
-      var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { specialisations: { $in: split_area } }]} : {});
+      var dis = ((data.studyArea.trim().length > 0) ? {$or: [{ disciplines: { $in: split_area } }, { areas: { $in: split_area } }]} : {});
       var school = ((data.school.trim().length > 0) ? { school_name: school_name } : {});
       var city = ((data.city.trim().length > 0) ? { campus: { $in: split_city }} : {});
       var campus = [];
