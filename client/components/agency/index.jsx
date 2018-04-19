@@ -44,14 +44,14 @@ export default class AgencyApp extends Component {
 		             					<h4 className="panel-title">
 		        							<a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
 		          								<p>1. Discover</p>
-		          								<img className='discover-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+		          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
 		       								</a>
 		      							</h4>
 									</div>
 		        					<div id="collapseOne" className="panel-collapse collapse in">
 		            					<div className="panel-body-white panel-body">
-		            						<p>Explore amazing creative student work from our showcase gallery or<br/>
-						 						watch one of our MasterClass videos and see what it means to be a<br/>
+		            						<p>Explore amazing creative student work from our showcase gallery or
+						 						watch one of our MasterClass videos and see what it means to be a
 						 						creative professional in the creative industry.<br/>
 						 						<a href="#">Discover here.</a>
 						 					</p>
