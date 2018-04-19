@@ -1557,7 +1557,7 @@ contact-field {
   height: 305vh;
   padding-top: 150px; }
 
-.card-container-black {
+.card-container-black1 {
   background-color: #292722;
   position: absolute;
   top: 25%;
@@ -1568,10 +1568,44 @@ contact-field {
       flex-direction: row;
   margin-bottom: 30px; }
 
-.card-container-white {
+.card-container-white1 {
   background-color: #FFFFFF;
   position: absolute;
   top: 51%;
+  width: 91.5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-bottom: 30px; }
+
+.card-container-black2 {
+  background-color: #292722;
+  position: absolute;
+  top: 77%;
+  width: 91.5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-bottom: 30px; }
+
+.card-container-white2 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 103%;
+  width: 91.5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-bottom: 30px;
+  left: 10%; }
+
+.card-container-black3 {
+  background-color: #292722;
+  position: absolute;
+  top: 129%;
   width: 91.5%;
   display: -ms-flexbox;
   display: flex;

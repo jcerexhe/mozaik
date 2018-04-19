@@ -36,7 +36,7 @@ export default class AgencyApp extends Component {
 						</div>
 						
 					</div>
-					<div className='card-container-black'>
+					<div className='card-container-black1'>
 						<div className='card1'>
 							<div className='card-body'>
 								<div className="panel-group" id="accordion">
@@ -84,7 +84,7 @@ export default class AgencyApp extends Component {
 							</div>
 						</div>
 					</div>
-					<div className='card-container-white'>
+					<div className='card-container-white1'>
 						<div className='card3 card'>
 							<div className='card-body'>
 								<div className="panel-group" id="accordion">
@@ -130,77 +130,147 @@ export default class AgencyApp extends Component {
 							</div>
 						</div>
 					</div>
+					<div className='card-container-black2'>
+						<div className='card1'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel5">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseFive" href="#collapseFive">
+			          								<p className="panel-title-text-white">5. VISA SUBMISSION AND MEDICAL INSURANCE</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseFive" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+						 						<p>Each destination country(where you will study)has a different set of visa rules. We provide full Visa documentation support, including assisting with any certification, and translations service required. We also assist with medical insurance application process. We also have partnered with Migration Agencies for those seeking to explore post study migration options.</p>
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+						<div className='card6'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel6">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseSix" href="#collapseSix">
+			          								<p className="panel-title-text-white">6. TRAVEL ARRANGEMENTS</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseSix" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+												<p>Do you require flight or any other travel arrangements?<br/>
+						 							No problem, through our network of partnerships we can offer the most<br/>
+						 							reliable and cost effective travel options for you.
+						 						</p>			            					
+						 					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className='card-container-white2'>
+						<div className='card7 card'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel7">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-black panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseSeven" href="#collapseSeven">
+			          								<p className="panel-title-text-black">7. ACCOMODATION ARRANGEMENTS</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseSeven" className="panel-collapse collapse in">
+			            					<div className="panel-body-black panel-body">
+			            						<p>Would you like to live on campus, or share a private accomodation
+						 							with other students? Maybe you prefer homestay where you ca live
+						 							with a local family for the first few months of your stay.
+						 						</p>	
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+						<div className='card8 card'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel8">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-black panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseEight" href="#collapseEight">
+			          								<p className="panel-title-text-black">8. PRE AND POST DEPARTURE SUPPORT</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseEight" className="panel-collapse collapse in">
+			            					<div className="panel-body-black panel-body">
+												<p>We have a developed a pre-departure pack that includes important information and tips on culture and social norms, emergency contacts, key events, locations of interest, etc. We also arrange to have somebosy welcome you when you arrive
+						 							at the airport(optional)
+						 						</p>			            					
+						 					</div>
+			            				</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className='card-container-black3'>
+						<div className='card9'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel9">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseNine" href="#collapseNine">
+			          								<p className="panel-title-text-white">9. SUPPORT THROUGOUT YOUR STUDY PERIOD</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseNine" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+			            					 <p> Contact us </p>
+			            					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+						<div className='card10'>
+							<div className='card-body'>
+								<div className="panel-group" id="accordion">
+			    					<div className="panel panel-default" id="panel10">
+			       						<div className="panel-heading">
+			             					<h4 className="pane-title-white panel-title">
+			        							<a data-toggle="collapse" data-target="#collapseTen" href="#collapseTen">
+			          								<p className="panel-title-text-white">10. TRAVEL ARRANGEMENTS</p>
+			          								<img className='small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
+			       								</a>
+			      							</h4>
+										</div>
+			        					<div id="collapseTen" className="panel-collapse collapse in">
+			            					<div className="panel-body-white panel-body">
+												<p>Contact Us</p>			            					
+						 					</div>
+			        					</div>
+			    					</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-					{/*<div className='rectangle3'>*/}
-					{/*	 <div className='visa-medical'>
-						 	<div className='visa-title'>
-						 		<p>5.&nbsp;&nbsp;&nbsp;VISA SUBMISSION AND MEDICAL INSURANCE</p>
-						 		<img className='visa-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='visa-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='visa-box'>
-						 		<img className='visa-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Each destination country(where you will study)has a different set of visa rules. We provide full Visa documentation support, including assisting with any certification, and translations service required. We also assist with medical insurance application process. We also have partnered with Migration Agencies for those seeking to explore post study migration options.</p>
-						 	</div>
-						 </div>
-						 <div className='travel-arrangements'>
-						 	<div className='travel-title'>
-						 		<p>6.&nbsp;&nbsp;&nbsp;TRAVEL ARRANGEMENTS</p>
-						 		<img className='travel-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='travel-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='travel-box'>
-						 		<img className='travel-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Do you require flight or any other travel arrangements?<br/>
-						 		No problem, through our network of partnerships we can offer the most<br/>
-						 		reliable and cost effective travel options for you.</p>
-						 	</div>
-						 </div>
-					</div>*/}
-					{/*<div className='rectangle4'>
-						 <div className='accommodation'>
-						 	<div className='accommodation-title'>
-						 		<p>7.&nbsp;&nbsp;&nbsp;ACCOMODATION ARRANGEMENTS</p>
-						 		<img className='accommodation-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='accommodation-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='accommodation-box'>
-						 		<img className='accommodation-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>Would you like to live on campus, or share a private accomodation<br/>
-						 		with other students? Maybe you prefer homestay where you ca live<br/>
-						 		with a local family for the first few months of your stay.</p>
-						 	</div>
-						 </div>
-						 <div className='pre-post-departure'>
-						 	<div className='pre-post-departure-title'>
-						 		<p>8.&nbsp;&nbsp;&nbsp;PRE AND POST DEPARTURE SUPPORT</p>
-						 		<img className='pre-post-departure-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='pre-post-departure-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	<div className='pre-post-departure-box'>
-						 		<img className='pre-post-departure-triangle-down' src="/images/elements/TRIANGLE-DOWN.png" />
-						 		<p>We have a developed a pre-departure pack that includes important information and tips on culture and social norms, emergency contacts, key events, locations of interest, etc. We also arrange to have somebosy welcome you when you arrive
-						 		at the airport(optional)</p>
-						 	</div>
-						 </div>
-					</div>*/}
-					{/*<div className='rectangle5'>
-						 <div className='support-study'>
-						 	<div className='support-study-title'>
-						 		<p>9.&nbsp;&nbsp;&nbsp;SUPPORT THROUGOUT YOUR STUDY PERIOD</p>
-						 		<img className='support-study-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='support-study-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 	</div>
-						 <div className='internships'>
-						 	<div className='internships-title'>
-						 		<p>10.&nbsp;&nbsp;&nbsp;INTERNSHIPS AND JOB PLACEMENT</p>
-						 		<img className='internships-triangle-right' src="/images/elements/TRIANGLE.png" />
-						 	</div>
-						 	<img className='internships-small-line-agency' src="/images/elements/Small-pink-line-agency-page.png" />
-						 </div>
-					</div>*/}
-				{/*</div>*/}
 				<div className='get-started'>
 				 <a href="/search"> <img src="/images/buttons/Get-started.png" /> </a>
 				</div>
