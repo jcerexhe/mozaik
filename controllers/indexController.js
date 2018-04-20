@@ -119,3 +119,9 @@ exports.performingArts = (req, res) => {
   res.render('performingArts', { PerformingArts });
 
 };
+
+exports.selectArea = (req, res) => {
+  const SelectArea = reactHelper.renderComponent('SelectAreaApp');
+  res.render('selectArea', { SelectArea });
+
+};

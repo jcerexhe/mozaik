@@ -14,6 +14,7 @@ import AgencyApp from './components/agency/index.jsx';
 import PartnerApp from './components/partner/index.jsx';
 import PerformingArtsApp from './components/performingArts/index.jsx';
 import FooterApp from './components/footer/index.jsx';
+import SelectAreaApp from './components/selectArea/index.jsx';
 
 reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
@@ -30,3 +31,4 @@ reactHelper.register({ AgencyApp });
 reactHelper.register({ PartnerApp });
 reactHelper.register({ PerformingArtsApp });
 reactHelper.register({ FooterApp });
+reactHelper.register({ SelectAreaApp });
