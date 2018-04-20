@@ -665,3 +665,12 @@ a.btn{
 }
 
 
+.hbspt-form{
+  backround-color: red !important;
+  input[type="text"]{
+    background-color: #fff !important;
+  }
+  label{
+    color: #fff !important;
+  }
+}

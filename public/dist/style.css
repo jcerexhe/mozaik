@@ -1168,6 +1168,13 @@ a.btn {
   .school-footer .school-footer-section:first-child {
     border-right: 1px solid #E4E9EC; }
 
+.hbspt-form {
+  backround-color: red !important; }
+  .hbspt-form input[type="text"] {
+    background-color: #fff !important; }
+  .hbspt-form label {
+    color: #fff !important; }
+
 .about-page-heading {
   border: 5px solid #FFFFFF;
   width: 30%;
