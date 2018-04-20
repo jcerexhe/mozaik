@@ -14,12 +14,21 @@ constructor(props) {
 			// to get the value use: 
 			// studyarea.name of field
 
+			//title.replace("","/")
+		    //if title = Film TV Audio	
+			   
 		}
+
+		let studyAreaTitle = studyarea.title;
+
+    	if (studyAreaTitle == "Film TV Audio") {
+      	studyAreaTitle = studyAreaTitle.replace(/\s/g, "/");
+	   	}
 
 		return (
 		<div>
 			<div>
-				<h1 className="study-area-page-heading">{studyarea.title}</h1>
+				<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
 				<div className='study-area-disciplines'>
 					<p>
 					<a className='study-link' href="#">{studyarea.disciplines1}</a><br/>
