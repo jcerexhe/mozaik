@@ -3201,7 +3201,8 @@ ul.careers-lists > li:before {
 
 .course-bg {
   padding-bottom: 40px;
-  background-color: rgba(144, 144, 144, 0.5); }
+  background-color: rgba(144, 144, 144, 0.5);
+  margin-top: -1px; }
 
 .info-bits-container {
   display: -ms-flexbox;
