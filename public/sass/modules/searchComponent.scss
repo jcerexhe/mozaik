@@ -87,7 +87,7 @@
       background: #000;
       width: 150px;
       border: 0;
-      margin: 30px 0;
+     /* margin: 30px 0; */
     }
 
     ul{
@@ -190,8 +190,8 @@
     color: $pink;
   }
   .search-input {
-    margin-top: 100px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .search-input > input {
     width: 80%;

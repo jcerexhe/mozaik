@@ -125,44 +125,45 @@ export default class CoursesApp extends Component {
         <div className="study-areas-box">
           <h1>study areas</h1>
           <div className="study-areas">
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/digitalmedia.png")'}}>
               <h3 className="padding">digital media</h3>
               {this.enableTile("Digital Media", this.state.digitalMedia)}
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287645/study-areas/pexels-photo-433617.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/visualcomm.png")'}}>
               <h3 >visual communication</h3>
               {this.enableTile("Visual Communication", this.state.visualComm)}
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287447/study-areas/pexels-photo-262034.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/finearts.png")'}}>
               <h3 className="padding">fine arts</h3>
               {this.enableTile("Fine Arts", this.state.fineArts)}             
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287352/study-areas/chris-murray-563843-unsplash.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/filmtv.png")'}}>
               <h3 className="padding">film/tv/audio</h3>
               {this.enableTile("Film/TV/Audio", this.state.filmAudio)}     
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287493/study-areas/pexels-photo-415307.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/performingarts.png")'}}>
               <h3 className="padding">performing arts</h3>
               {this.enableTile("Performing Arts", this.state.performArts)}  
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/design.png")'}}>
               <h3 className="padding">design</h3>
               {this.enableTile("Design", this.state.design)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/photography.png")'}}>
               <h3 className="padding">photography</h3>
               {this.enableTile("Photography", this.state.photography)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/builtenvironment.png")'}}>
               <h3 className="padding">built environment</h3>
               {this.enableTile("Built Environment", this.state.builtEnvironment)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/businesscreative.png")'}}>
               <h3>business for creatives</h3>
               {this.enableTile("Business for Creatives", this.state.businessCreative)}
             </div>
           </div>
         </div>
+
         <div className='course-bg'>
           <div className='course-card-container'>
               {this.renderNoResult()}
