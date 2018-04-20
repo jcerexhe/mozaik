@@ -129,675 +129,205 @@
   padding-top: 150px;  
 }
 
-.rectangle1{
+.card-container-black1{
   background-color: #292722;
   position: absolute;
   top: 25%;
   width: 91.5%;
-  height: 40vh;
   display: flex;
   flex-direction: row;
+  margin-bottom: 90px;
 }
 
-.discover-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.discover-title >p{
-  color: #F5F5F5;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.discover-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  margin-left: 74%;
-}
-
-.discover .discover-small-line-agency{
-  width: 30%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.discover .discover-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.discover-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.discover-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-}
-
-.discover-box >p >a{
-  text-decoration: none;
-  color: #F76F70;
-  font-size: 13px;
-}
-
-.selection-course{
-  margin-left: 10.5%;
-}
-
-.selection-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.selection-title >p{
-  color: #F5F5F5;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  
-  
-}
-
-.selection-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 75%;*/
-  position: relative;
-  left: 100px;
-}
-
-.selection-course .selection-small-line-agency{
-  width: 70%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.selection-course .selection-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.selection-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.selection-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
+.card1{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
 }
 
 
-.rectangle2{
+.card2{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+}
+
+.card-container-white1{
   background-color: #FFFFFF;
   position: absolute;
   top: 51%;
   width: 91.5%;
-  height: 40vh;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 
-.application-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.application-title >p{
-  color: #292722;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.application-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  margin-left: 68%;
-}
-
-.application .application-small-line-agency{
-  width: 70%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.application .application-box{  
-  margin-left: 20%;
-  background-color: #292722;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.application-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.application-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-  color: #FFFFFF;
+.card3{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
 
-.creative-portfolio{
-  margin-left: 10.5%;
+.card4{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
-.creative-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.creative-title >p{
-  color: #292722;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  
-  
-}
-
-.creative-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 75%;*/
-  position: relative;
-  left: 100px;
-}
-
-.creative-portfolio .creative-small-line-agency{
-  width: 70%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.creative-portfolio .creative-box{  
-  margin-left: 20%;
-  background-color: #292722;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.creative-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.creative-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-  color: #FFFFFF;
-}
-
-.rectangle3{
+.card-container-black2{
   background-color: #292722;
   position: absolute;
   top: 77%;
   width: 91.5%;
-  height: 40vh;
   display: flex;
   flex-direction: row;
+ 
+  margin-bottom: 30px;
 }
 
-.visa-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.visa-title >p{
-  color: #FFFFFF;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.visa-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 75%;*/
-  position: relative;
-  left: 32px;
-}
-
-.visa-medical .visa-small-line-agency{
-  width: 75%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.visa-medical .visa-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.visa-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.visa-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
+.card5{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
 }
 
 
-.travel-arrangements{
-  margin-left: 10.5%;
+.card6{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
 }
 
-.travel-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.travel-title >p{
-  color: #FFFFFF;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  
-  
-}
-
-.travel-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 68%;*/
-  position: relative;
-  left: 45%;
-}
-
-.travel-arrangements .travel-small-line-agency{
-  width: 75%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.travel-arrangements .travel-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.travel-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.travel-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-}
-
-.rectangle4{
+.card-container-white2{
   background-color: #FFFFFF;
   position: absolute;
-  top: 102%;
+  top: 103%;
   width: 91.5%;
-  height: 40vh;
   display: flex;
   flex-direction: row;
-  margin-left: 8%
+  margin-bottom: 30px;
+  left: 9%;
 }
 
-.accommodation-title {
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.accommodation-title >p{
-  color: #292722;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.accommodation-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 75%;*/
-  position: relative;
-  left: 23%;
-}
-
-.accommodation .accommodation-small-line-agency{
-  width: 70%;
-  height: .5vh;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.accommodation .accommodation-box{  
-  background-color: #292722;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.accommodation-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.accommodation-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-  color: #FFFFFF;
+.card7{
+  margin-top: 2%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
 
-.pre-post-departure{
+.card8{
+  margin-top: 2%;
   margin-left: 10%;
+  width: 40%;
+  border-color: #FFFFFF;
 }
 
-.pre-post-departure-title {
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.pre-post-departure-title >p{
-  color: #292722;
-  font-size: 20pt;
-  font-family: 'Bebas Neue';
-  margin-bottom: 0px;
-  padding-bottom: 0px; 
-}
-
-.pre-post-departure-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 68%;*/
-  position: relative;
-  left: 19%;
-}
-
-.pre-post-departure .pre-post-departure-small-line-agency{
-  width: 70%;
-  height: .5vh;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.pre-post-departure .pre-post-departure-box{  
-  background-color: #292722;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
-}
-
-.pre-post-departure-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.pre-post-departure-box >p{
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify;
-  font-size: 13px;
-  color: #FFFFFF;
-}
-
-.rectangle5{
+.card-container-black3{
   background-color: #292722;
   position: absolute;
-  top: 127%;
+  top: 129%;
   width: 91.5%;
-  height: 30vh;
   display: flex;
   flex-direction: row;
+ 
+  margin-bottom: 30px;
+}
+.card9{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 40%;
 }
 
-.support-study{
-  margin-top: 25px;
+
+.card10{
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 40%;
 }
 
-.support-study-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
+/* white panel */
+.panel-body-white{
+  background-color: white;
+  height: 30vh;
+
 }
 
-.support-study-title >p{
-  color: #FFFFFF;
+.panel-body-white >img{
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+
+}
+.panel-body-white >p{
+  padding: 50px 20px 20px 20px;
+  text-align: justify;
+  font-size: 2vh;
+}
+
+.panel-body-white >p >a{
+  color: #F76F70;
+}
+
+p.panel-title-text-white {
+  color: #F5F5F5;
   font-size: 20pt;
   font-family: 'Bebas Neue';
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
-.support-study-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 75%;*/
-  position: relative;
-  left: 12%;
-}
 
-.support-study .support-study-small-line-agency{
-  width: 75%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
-}
-
-.support-study .support-study-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
+/* black panel */
+.panel-body-black{
+  background-color: #292722;
   height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
 }
 
-.support-study-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.support-study-box >p{
-  margin-top: 30px;
-  margin-left: 20px;
-  font-size: 10px;
+.panel-body-black >p{
+  color: white;
+  padding: 50px 20px 20px 20px;
+  text-align: justify;
+  font-size: 2vh;
 }
 
 
-.internships{
-  margin-left: 10.5%;
-  margin-top: 25px;
-}
-
-.internships-title {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  
-}
-
-.internships-title >p{
-  color: #FFFFFF;
+p.panel-title-text-black {
+  color: #000000;
   font-size: 20pt;
   font-family: 'Bebas Neue';
   margin-bottom: 0px;
   padding-bottom: 0px;
-  
-  
 }
 
-.internships-triangle-right{
-  height: 4vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*margin-left: 68%;*/
-  position: relative;
-  left: 23%;
+/* common panel */
+
+.panel-title >a{
+  text-decoration: none;
 }
 
-.internships .internships-small-line-agency{
-  width: 75%;
-  height: .5vh;
-  margin-left: 20%;
-  padding-top: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
+.small-line-agency{
+  width: 85%;
+  margin-top: -20px;
+ 
 }
 
-.internships .internships-box{  
-  margin-left: 20%;
-  background-color: #FFFFFF;
-  width: 450px;
-  height: 30vh;
-  padding-top: 0px;
-  margin-top: -5px;
+.triangle-right{
+  float: right;
+  margin: -30px 15px -30px 0px;
 }
 
-.internships-triangle-down{
-  margin-left: 90%;
-  padding-top: 10px;
-  height: 5vh;
-}
-
-.internships-box >p{
-  margin-top: 30px;
-  margin-left: 25px;
-  font-size: 10px;
+.triangle-down{
+  float: right;
+  margin: 10px 10px -30px -15px;
 }
 
 .get-started{
   position:relative;
-  left: 3%; 
+  left: 1%; 
   top: 43.5%;
   z-index: 1;
 }
