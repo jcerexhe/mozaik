@@ -1,0 +1,128 @@
+.select-area-heading {
+    border: 5px solid #FFFFFF;
+    width: 30%;
+    height: 25vh;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: 'Bebas Neue';
+    color: #FF6D6D;
+    text-transform: uppercase;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-top: none;
+}
+
+.select-area-heading:before {
+    content: '';
+    color: #FFFFFF;
+    width: 20%;
+    height: 5px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.select-area-heading:after {
+    content: '';
+    color: #FFFFFF;
+    width: 20%;
+    height: 5px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+
+.display-select-area{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-area-image {
+  position: absolute;
+  width: 100%;
+  height: 65vh;
+  background-image: url(https://res.cloudinary.com/mozaik/image/upload/v1522036059/About_Us_Living_Room_w_Guitar_SplitShire_Free_tdblq7.jpg);
+  background-size: 100% 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 15%;
+ }
+  
+.select-area-container{
+  margin-top: 8%;
+  margin-bottom: 3%;
+  width: 70%;
+  height: 60vh;
+  background-color: #ffffff;
+  border: 1px solid white;
+  opacity: 0.6;
+}
+
+.select-area-text{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.select-area-text >h1{
+  text-align: center;
+  color: black;
+}
+
+.select-area-text >p{
+  text-align: center;
+  color: black;
+}
+
+.selected-study-areas{
+   margin-bottom: 10vh;
+     margin-top: -70px;
+}
+
+.selected-area-boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.selected-area{
+  height: 50vh;
+  width: 18%;
+  border-color: black;
+  margin-left: 10px;
+   margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.selected-area >img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected-area >a:hover{
+ color: #F76F70;
+}
+
+.selected-area >a.btn-default{
+  width: 90%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  border-radius: 0px;
+}
