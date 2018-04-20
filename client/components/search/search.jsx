@@ -232,7 +232,6 @@ export default class Search extends Component {
             </div>
           </div>
         </div>
-                  <br />
           <hr className="search-line" />
         <div className='interest-disciplines'>
           <div className="interest-disciplines-box">
@@ -319,7 +318,7 @@ export default class Search extends Component {
             />
           </div>
         </div>
-        <br /><br /><br />
+        <br />
         <div className='interest-countries'>
           <Filter
             filterItems={ countries }
@@ -329,7 +328,7 @@ export default class Search extends Component {
             interest='country'
           />
         </div>
-        <br /><br />
+        <br />
       </div>
     )
   }

@@ -28,7 +28,7 @@ const CourseCard = (props) => {
     return(
       <div className='course-card' id={ course.slug } style={aligncourse}>
         <div className="likesection">
-          <h3><a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true" style={{float: 'left'}}></i></a></h3>
+          <h3><a href={ '/school/'+school.slug+'/details' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true" style={{float: 'left'}}></i></a></h3>
         </div>
         <div className='course-card-right'>
           <div className='course-info'>
@@ -121,7 +121,7 @@ const CourseCard = (props) => {
         </div>
       </div>
       <div className="likesection">
-        <h3><a href={ '/school/'+school.slug+'/courses' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true"></i></a></h3>
+        <h3><a href={ '/school/'+school.slug+'/details' }><i onClick={() => likeCourse(course.name)} className={'fa ' + (likedCourses.includes(course.name) ? 'fa-heart ' : 'fa-heart-o ') + 'card-icon'} aria-hidden="true"></i></a></h3>
       </div>
     </div>
     );
