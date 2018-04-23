@@ -164,9 +164,7 @@ export default class HeroApp extends Component {
             <img src='/images/white-arrow-down.png' alt='arrow-down' />
           </a>
         </div>*/}
-        <div className='home-footer'>
-          <Footer/>
-        </div>
+
       </div>
 
     );

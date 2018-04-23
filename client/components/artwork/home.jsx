@@ -243,7 +243,9 @@ export default class HomeArtworkApp extends Component {
             </g>
           }
         </svg>
-
+        <div className='home-footer'>
+          <Footer/>
+        </div>
       </div>
 
     );
