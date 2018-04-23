@@ -112,7 +112,7 @@ export default class MenuApp extends Component {
                       return (
                         <li>
                           <a href={ link.url }>{ link.val }</a>
-                          <div className='border' />
+                          {/*<div className='border' />*/}
                         </li>
                       );
                     }) }
