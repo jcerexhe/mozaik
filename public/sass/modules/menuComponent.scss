@@ -194,6 +194,7 @@
   font-size: 30px;
   text-transform: uppercase;
   color: $pink;
+  padding-bottom: 10px;  
 }
 .menu-content ul {
   list-style: none;
@@ -242,7 +243,7 @@
 .social-nav {
   display: flex;
   width: 100px;
-  padding: 3px 3px 0px 3px;
+  padding: 3px 3px 3px 3px;
   background-color: $grey;
   a {
     margin: 2px;
