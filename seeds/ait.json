@@ -1,8 +1,10 @@
 {
   "school": {
+    "header_image": "Entrance_hall_Melb_pqy418",
+    "header_image_2": "Entrance_hall_Melb_pqy418",
     "name": "Academy of Information Technology (AIT)",
     "short_name": "AIT",
-    "website": "http://www.ait.edu.au",
+    "website": "www.ait.edu.au",
     "disciplines": [
       "Digital Media",
       "Animation",
@@ -14,6 +16,17 @@
       "Film / TV / Audio",
       "Digital Design",
       "Graphic Design"
+    ],
+    "study_areas": [
+      "Digital Media",
+      "Visual Communication",
+      "Fine Arts",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design",
+      "Photography",
+      "Built Environment",
+      "Business for Creatives"
     ],
     "overview": "Founded in 1999, AIT is located in a lively converted warehouse in the heart of Sydney's design precinct and in cosmopolitan Melbourne CBD. AIT offers a range of courses that prepare students for careers in the creative digital and design industries.",
     "prices": [{
@@ -35,8 +48,8 @@
           "lng": 151.19523779999997
         },
         "type":"Point",
-        "country": "Australia",
-        "campus": "Sydney"
+        "country": "AUSTRALIA",
+        "campus": "SYDNEY"
       },
       {
         "address": "13/120 Spencer St, Melbourne VIC 3000, Australia",
@@ -51,11 +64,11 @@
     ],
     "facilitiesDescription": "AIT has premium facilities including green screen room, voice over room, student lounge, mac and pc labs with latest SW (animation, 3D design, editing), makerspace, library, digital media, photography, film and sound equipment.",
     "facilitiesImages": [
-      "Entrance_hall_Melb_pqy418",
-      "File_000_mpbswu",
-      "Library_Melb_yjr2x5",
-      "Orange_Agora_Sydney_p7em6v",
-      "Stduent_Lounge1_Melb_oz7pgu"
+      "AIT/facilities/Entrance_hall_Melb_pqy418",
+      "AIT/facilities/File_000_mpbswu",
+      "AIT/facilities/Library_Melb_yjr2x5",
+      "AIT/facilities/Orange_Agora_Sydney_p7em6v",
+      "AIT/facilities/Stduent_Lounge1_Melb_oz7pgu"
     ],
     "delivery": [
       "On Campus",
@@ -63,7 +76,9 @@
     ],
     "logo": "AIT/AIT_logo_png",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "AIT/facilities/Entrance_hall_Melb_pqy418",
+    "header_image_2": "AIT/facilities/File_000_mpbswu"
   },
   "courses": [
     {
@@ -74,7 +89,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -86,28 +101,35 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "2D Animation",
         "3D Design",
         "Film",
-        "Game Design"
+        "Games Design"
       ],
       "disciplines": [
         "Digital Media",
+        "Film/TV/Audio",
         "Animation",
-        "2D Animation",
+        "2D/3D Animation",
         "3D Design",
         "VFX",
         "Motion Graphics",
         "Computer Graphics",
         "AR/VR",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Media",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Design",
         "Web Design",
+        "Visual Comms",
+        "Visual Communication",
         "Digital Imaging",
         "Interactive Media",
         "Interactive Games",
@@ -123,7 +145,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 year accelerated",
+      "duration": "3 years | 2 year accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -135,6 +157,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "2D/3D Animation",
         "Motion Graphics",
@@ -144,12 +169,14 @@
       "disciplines": [
         "Digital Media",
         "Animation",
-        "2D Animation",
+        "2D/3D Animation",
         "3D Design",
-        "VFX",
+        "Visula Effects (VFX)",
         "Motion Graphics",
         "Computer Graphics",
         "Digital Imaging",
+        "Film/TV/Audio",
+        "Film/TV",
         "Concept Artist"
       ],
       "image": "AIT/courses/Bachelor_of_Interactive_Media_2D_Animation"
@@ -162,8 +189,11 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
+      "qualifications": [
+       ""
+      ],
       "specialisations": [
         "3D Modelling",
         "2D/3D Animation",
@@ -185,17 +215,21 @@
       "disciplines": [
         "Digital Media",
         "Animation",
-        "2D Animation",
+        "2D/3D Animation",
         "3D Design",
-        "VFX",
+        "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Motion Graphics",
         "Computer Graphics",
         "AR/VR",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
         "3D Printing",
+        "Design",
+        "Industrial Design",
         "Product Design",
         "Concept Artist",
         "Decoding Media"
@@ -210,7 +244,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -221,6 +255,9 @@
           "type": "International students",
           "fees": 52800
         }
+      ],
+      "qualifications": [
+       ""
       ],
       "specialisations": [
         "Cinematography",
@@ -233,9 +270,13 @@
       "disciplines": [
         "Digital Media",
         "Animation",
-        "VFX",
+        "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "SFX",
         "Motion Graphics",
+        "Film/TV/Audio",
+        "Film/TV",
         "Film",
         "TV",
         "Screen Media",
@@ -266,7 +307,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -278,6 +319,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "3D Design",
         "2D Interactivity",
@@ -288,11 +332,14 @@
       "disciplines": [
         "Digital Media",
         "3D Design",
-        "VFX",
+        "Visual Effects (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Motion Graphics",
         "AR/VR",
         "Screen Media",
-        "Game Design",
+        "Screen & Media",
+        "Games Design",
         "Computer Graphics",
         "Multimedia",
         "Digital Design",
@@ -314,7 +361,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -326,22 +373,20 @@
           "fees": 17600
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Pathway to second year of the Bachelor of Interactive Media"
       ],
       "disciplines": [
         "Digital Media",
         "Animation",
-        "2D Animation",
+        "2D/3D Animation",
         "3D Design",
-        "VFX",
-        "Motion Graphics",
-        "Computer Graphics",
-        "AR/VR",
-        "Film",
-        "TV",
-        "Screen Media",
-        "Game Design",
+        "Visual Design (VFX)",
+        "Visual Comms",
+        "Visual Communication",
         "Multimedia",
         "Digital Design",
         "Digital Imaging",
@@ -359,7 +404,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -371,6 +416,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Design Principles",
         "Digital Images",
@@ -381,10 +429,10 @@
       ],
       "disciplines": [
         "Digital Design",
-        "2D Animation",
+        "2D/3D Animation",
         "3D Design",
         "Motion Graphics",
-        "Game Design",
+        "Games Design",
         "Multimedia",
         "Digital Media",
         "Digital Imaging",
@@ -400,6 +448,7 @@
         "Packaging & Branding",
         "Photomedia",
         "Visual Communication",
+        "Visual Comms",
         "Photography Design",
         "Concept Artist",
         "Creative Drawing"
@@ -415,7 +464,7 @@
         "Melbourne",
         "Online"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -426,6 +475,9 @@
           "type": "International students",
           "fees": 17600
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Design Principles",
@@ -445,10 +497,14 @@
         "Illustration",
         "Typography",
         "Photography",
+        "Visual Comms",
+        "Visual Communication",
         "Web Design",
         "Web Interface",
         "3D Printing",
         "Packaging and Branding",
+        "Film/TV/Audio",
+        "Editing",
         "Concept Artist",
         "Creative Drawing"
       ],
@@ -462,7 +518,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -474,6 +530,9 @@
           "fees": 52800
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Mobile Apps Development",
         "Foundation Networks",
@@ -484,6 +543,8 @@
         "Multimedia",
         "Digital Media",
         "Web Design",
+        "Visual Comms",
+        "Visual Communication",
         "Mobile Design",
         "Mobile Application",
         "Mobile Development",
@@ -502,7 +563,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "3 years | 2 years accelerated",
+      "duration": "3 years | 2 years accelerated",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -513,6 +574,9 @@
           "type": "International students",
           "fees": 52800
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Game Engine Programming",
@@ -527,7 +591,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",
@@ -545,7 +609,7 @@
         "Sydney",
         "Melbourne"
       ],
-      "length": "1 year | Bootcamp 6 months",
+      "duration": "1 year | Bootcamp 6 months",
       "intakes": "January | March | May | July | August | October",
       "prices": [
         {
@@ -556,6 +620,9 @@
           "type": "International students",
           "fees": 17600
         }
+      ],
+      "qualifications": [
+        ""
       ],
       "specialisations": [
         "Intro to Web",
@@ -569,7 +636,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
-        "Game Design",
+        "Games Design",
         "Game Development",
         "Mobile Application",
         "Mobile Development",
@@ -621,7 +688,8 @@
       "artist": "Glen Reiner",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -631,7 +699,8 @@
       "artist": "Marine Lucinne Daniele Ecuyer",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -641,7 +710,8 @@
       "artist": "Nardo Conforti",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -652,6 +722,7 @@
       "disciplines": [
         "Illustration",
         "Visual Communication",
+        "Visual Comms",
         "Photography",
         "Photography Design",
         "Digital Imaging",
@@ -666,8 +737,10 @@
       "disciplines": [
         "Illustration",
         "Visual Communication",
+        "Visual Comms",
         "Photography",
         "Visual Arts",
+        "Visual Art",
         "Digital Imaging",
         "Art Photography",
         "Digital Media",
@@ -681,7 +754,8 @@
       "artist": "PJ Svoboda",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {
@@ -691,7 +765,8 @@
       "artist": "Berat Akdemir",
       "disciplines": [
         "Illustration",
-        "Visual Communication"
+        "Visual Communication",
+        "Visual Comms"
       ]
     },
     {

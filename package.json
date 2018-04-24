@@ -37,6 +37,7 @@
     "mongoose": "*",
     "mongoose-autopopulate": "^0.6.0",
     "mongoose-mongodb-errors": "0.0.2",
+    "mquery": "^3.0.0",
     "passport": "*",
     "passport-facebook": "^2.1.1",
     "passport-http": "*",
@@ -49,7 +50,7 @@
     "react-google-maps": "^8.2.0",
     "react-helper": "^2.1.0",
     "react-images": "^0.5.5",
-    "react-modal": "^3.1.0",
+    "react-modal": "^3.3.2",
     "react-slick": "^0.15.4",
     "react-sliding-pane": "^1.2.3",
     "slugs": "^0.1.3"

@@ -27,6 +27,7 @@ const schoolSchema = new Schema({
     validate: [validator.isURL, 'Invalid website URL.'],
   },
   disciplines: [String],
+  study_areas: [String],
   courseGuide: String,
   overview: {
     type: String,
@@ -81,6 +82,8 @@ const schoolSchema = new Schema({
     required: 'Please provide a logo of your school.',
   },
   video: String,
+  header_image_1: String,
+  header_image_2: String,
 });
 
 schoolSchema.pre('save', async function (next) {
@@ -123,11 +126,15 @@ schoolSchema.pre('findOne', autopopulate);
 schoolSchema.post('find', function (schools) {
   return _.map(schools, (school) => {
     school.logo = cloudinary.url(`${school.logo}`);
+    school.header_image_1 = cloudinary.url(`${school.header_image_1}`);
+    school.header_image_2 = cloudinary.url(`${school.header_image_2}`);
     return school;
   });
 });
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}`);
+  school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`);
+  school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`);
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
     return cloudinary.url(`${img}.jpg`);
   });

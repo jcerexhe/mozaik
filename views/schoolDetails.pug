@@ -1,75 +1,84 @@
 extends layouts/layout
 
 block content
-  .school-heading-container
+  .school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
     .school-heading
       .school-info
-        img(src=school.logo)
+        //- img(src=school.logo)
         h1= school.name
       .school-links.video-link
-        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
-        br
-        p(class="video-text") Play Video
-      .school-links
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Enquire
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Apply
-        .school-link
-          a(href=school.website, target='_blank' class='btn btn-full-width')
-            span Visit Website
-  .grey-bg
-    .school-details
-      .overview
+        img(src="/images/buttons/playvideo.png")
+  .student-work
+    !=Lightbox
+  .school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
+    img.scroll-down(src="/images/buttons/Scroll-Down.png")
+    .school-logo
+      img(src=school.logo)
+    .school-overview
+      .details-box
         h2 overview
         p=school.overview
-        a.btn(href=`/school/${school.slug}/courses`) view all courses
-        a.btn(href='#' onclick="cForm()") course guide
-      .fees-scholarships
-        h3 fees scholarship
-        h4 price range
+        h3 campus location
+        ul
+            each loc in school.locations
+              li=loc.campus
+        h3 delivery
+        ul
+            each delivery in school.delivery
+              li=delivery
+    .school-fees
+      .details-box
+        h2 fees scholarship
+        h3 price range
         ul
           each price in school.prices
             li
               =`${price.type}:`
               br
               =`AUD ${price.lower} - AUD ${price.upper}`
-        h4 scholarship
+        h3 scholarship
         ul
           each scholarship in school.scholarships
             li=scholarship
-        .campuses
-          h3 campus locations
-          ul
-            each loc in school.locations
-              li=loc.campus
-        .delivery
-          h3 delivery
-          ul
-            each delivery in school.delivery
-              li=delivery
-      .study-areas
-        h3 study areas
-        ul
-          each area in school.disciplines
-            li=area
-  !=Lightbox
-  .school-locations
-    h2.school-details-subheading locations
-    p=school.locationDescription
-    !=CampusMaps
-  .school-facilities
-    h2.school-details-subheading facilities
-    p=school.facilitiesDescription
-    !=Facilities
-  .school-alumni
-    h2.school-details-subheading alumni
-    !=Alumni
-  .final-links
-    a.btn(href='#' onclick="eForm()") enquire
-    a.btn(href='#' onclick="eForm()") apply
+    .school-links
+        .school-link
+          a(href='#' onclick="eForm()" class='btn')
+            span Apply
+        .school-link
+          a(href='#' onclick="eForm()" class='btn')
+            span Enquire
+        .school-link
+          a(href='#' onclick="cForm()" class='btn')
+            span Course Guide
+  !=Courses
+  .other-section
+    .locations
+      .other-section-box(style="background-image: url('/images/location.png')")
+        h2 locations
+        .hover-box
+          !=CampusMaps
+    .facilities
+      .other-section-box(style="background-image: url('/images/facilities.png')")
+        h2 facilities
+        .hover-box
+          !=Facilities
+    .alumni
+      .other-section-box(style="background-image: url('/images/alumni.png')")
+        h2 alumni
+        .hover-box
+          !=Alumni
+  .school-contact
+    .website
+      a(href="https://"+school.website)=school.website
+    .inside-scoop
+      .inside-scoop-btn
+        img(src='/images/buttons/Get-the-inside-scoop.png')
+      .input-email
+        input(placeholder='Email')
+      .subscribe-btn
+        img(src='/images/buttons/subscribe.png')
+
+        // TODO insert enquiry form; hubspot?
 append stylesheets
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")

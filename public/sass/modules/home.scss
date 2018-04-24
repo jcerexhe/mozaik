@@ -57,7 +57,85 @@
   border-radius: 3px;
 }
 .refine-header {
-  font-size: 1.9em;
+  font-size: 3em;
   color: white;
   letter-spacing: 1px;
 }
+
+// For home artworks container
+.home-artworks-container {
+  position: relative;
+  width: 100%;
+  height: 190vw;
+  overflow: hidden;
+  background-color: $white;
+  margin-bottom: 0;
+  svg {
+    position: absolute;
+    height: 100%;
+    a {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7
+      }
+    }
+  }
+}
+
+.home-artworks-top-text {
+  position: absolute;
+  margin: 1vw 0 0 5vw;
+  z-index: 1;
+  h1 {
+    font-family: 'Montserrat Extra Bold';
+    font-size: 7vw;
+    span {
+      color: $white
+    }
+  }
+  a {
+    text-decoration: none;
+    border: 0.5vw solid rgba(228, 233, 236, 0.9);
+    background-color: rgba(255, 109, 109, 0.5);
+    padding: 0.5em 1em;
+    font-size: 3.5vw;
+    color: white;
+    font-family: 'Montserrat Bold';
+  }
+}
+
+.home-artworks-bottom-text{
+  position: absolute;
+  bottom: 5vw;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25vw;
+  a {
+    width: 100%;
+    img {
+      width: 100%
+    }
+  }
+  input {
+    width: 100%;
+    margin: 1vw 0;
+    border: 0.25vw solid $pink;
+    background-color: transparent;
+    padding: 1vw;
+    color: $white;
+    font-size: 2vw;
+    &::placeholder {
+      color: $white;
+      font-size: 2vw;
+    }
+  }
+}
+
+#home-artworks-changer-arrow {
+  background-color: #ff6d6d80;
+  z-index: 1;
+  top: 25%;
+   right: 2vw;
+}
+

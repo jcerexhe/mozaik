@@ -2,7 +2,7 @@
   "school": {
     "name": "Vancouver Film School (VFS)",
     "short_name": "VFS",
-    "website": "https://vfs.edu/",
+    "website": "vfs.edu",
     "disciplines": [
       "Digital Media",
       "Animation",
@@ -15,6 +15,13 @@
       "Digital Design",
       "Graphic Design"
     ],
+    "study_areas": [
+      "Visual Communication",
+      "Digital Media",
+      "Film/TV/Audio",
+      "Design",
+      "Performing Arts"
+    ],
     "overview": "VFS, founded in 1987, offers preparatory and advanced programs for students to gain more experience in creative arts, film and television world. Through its notable alumni, VFS has achieved international recognition.",
     "prices": [{
       "type": "Domestic students",
@@ -24,7 +31,12 @@
       "upper": 53250,
       "lower": 10500
     }],
-    "scholarships": ["VFS Search Scholarship:  CAD 500 - CAD 10,000","VFS Full Writing Scholarship (Latin America): full tuition fee","VFS + TEC Scholarship: full or half one-year tuition fee","VFS + CasAzul Scholarship: full tuition fee","Brandon Flock Scholarship:  CAD 5,000 - CAD 10,000","VFS-VSB Awards: full one-year tuition fee","VFS-UFV Acting Scholarship: full one-year tuition fee"
+    "scholarships": [
+      "International students:  Not available",
+      "Domestic students: VFS Indigenous Ambassador Award for Acting & Film Production:",
+      "2 awards of fully paid tuiton towards Acting for Film + Television 1-years diploma program awarded to 1",
+      "2 awards of $10,000 towards tuition in Acting for Film + Television 1-year diploma program",
+      "2 awards of $5,000 towards tuition in Acting Essentials 4-month certificate program"
 ],  "locationDescription": "VFS is located in the heart of Vancouver Downtown.",
     "locations": [
       {
@@ -34,8 +46,8 @@
           "lng": -123.1207
         },
         "type":"Point",
-        "country": "Canada",
-        "campus": "Vancouver"
+        "country": "CANADA",
+        "campus": "VANCOUVER"
       }
     ],
     "facilitiesDescription": "VFS consist of eight state-of-the-art campuses offer lots of workshop and production spaces, green screen room, film sets, studios, screening rooms, theatres, and 24/7 access to computer labs with industry-standard software.",
@@ -58,7 +70,9 @@
     "delivery": [ "On Campus" ],
     "logo": "VFS/VFS_logo",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "VFS/mike-benna-570243-unsplash",
+    "header_image_2": "VFS/school_gallery/VFS_Green_Screen_Room"
   },
   "courses": [
     {
@@ -67,8 +81,8 @@
       "description": "In this course you will explore introduction to camera, improvisation, and audition, along with the essential actor’s building blocks of voice, movement, text analysis, and acting techniques. ",
       "campus": ["Vancouver"
       ],
-      "length": "4 months | 2 year accelerated",
-      "intakes": "January | February | April | June | August | October",
+      "duration": "4 months | 2 year accelerated",
+      "intakes": "February | April | June | August | October | December",
       "prices": [
         {
           "type": "Domestic students",
@@ -79,11 +93,23 @@
           "fees": 10500
         }
       ],
+      "qualifications": [
+        "Certificate",
+        "Foundation"
+      ],
       "specialisations": [
         "Acting",
         "Improvisation",
         "Movement"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Performing Arts",
         "Acting",
@@ -96,10 +122,10 @@
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
       "school_name": "Vancouver Film School (VFS)",
-      "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work. ",
+      "description": "In this course you will gain hands-on experience with 2D composition, investigate the history of media, and explore filmmaking, with emphasis on documentaries. You will also broaden your creative skillset through extensive visual art work.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -111,42 +137,47 @@
           "fees": 30500
         }
       ],
+      "qualifications": [
+        "Foundation"
+      ],
       "specialisations": [
         "Acting",
         "Voice",
         "Improvisation",
         "Movement"
       ],
+       "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
-        "Acting",
-        "Performance Art",
-        "Audition",
-        "Voice Techniques",
-        "Voice Coaching",
-        "Voice Acting",
-        "Movement",
-        "Text Analysis",
-        "TV",
-        "Film",
-        "Audio",
-        "Improvisation",
-        "Critical Sensibility",
-        "Sitcom",
-        "Drama",
-        "Motion Capture",
-        "Green Screen",
-        "Audition"
+        "Visual Arts",
+        "Design",
+        "Visual Media",
+        "2D Composition",
+        "Film Making",
+        "Documentary",
+        "Writing",
+        "Drawing",
+        "Motion Graphics",
+        "Animation",
+        "Video",
+        "Visual Art"
       ],
       "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
     },
     {
       "name": "ACTING FOR FILM + TELEVISION",
       "school_name": "Vancouver Film School (VFS)",
-      "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range. ",
+      "description": "In this course you will develop an actor’s instrument and a comprehensive understanding of the craft and business of acting. You will encounter the core principles, including acting technique, camera skills, movement, voice, improvisation, critical sensibilities, and performance range.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -158,12 +189,23 @@
           "fees": 30500
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Acting",
         "Voice",
         "Improvisation",
         "Movement"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Acting",
@@ -176,6 +218,7 @@
         "Text Analysis",
         "TV",
         "Film",
+        "Film/TV",
         "Audio",
         "Improvisation",
         "Critical Sensibility",
@@ -193,7 +236,7 @@
       "description": "In this course you will explore the possibilities of storytelling, giving you both the narrative craft and visual techniques necessary to bring a story to life on the screen. You will also expand your range of filmmaking techniques while you learn to work on larger sets and co-create with outside writers.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -205,6 +248,9 @@
           "fees": 53250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Directing",
         "Cinematography",
@@ -212,17 +258,28 @@
         "Production Design",
         "Post-Production"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Production",
         "Filmmaking",
         "Storytelling",
         "Visual Art",
+        "Visual Arts",
         "Visual Effects",
         "Digital Media",
         "Animation",
         "VFX",
+        "Visual Effects (VFX)",
         "SFX",
         "Motion Graphics",
         "Screen Media",
@@ -251,7 +308,7 @@
       "description": "In this course you will learn the fundamentals of beauty makeup, while building a solid understanding of products, colour theory, and facial anatomy. You will recreate classic decade looks and adapt them for contemporary application.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -263,13 +320,25 @@
           "fees": 46750
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Makeup",
         "Hairstyling",
         "3D Make Up techniques",
         "Sculpting"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
+        "Film/TV",
         "Makeup",
         "TV",
         "Film",
@@ -292,7 +361,7 @@
       "description": "In this course you will discover the current industry practices in audio, and familiarize yourself with the main audio tool of the industry, Pro Tools and the foundations of game audio. Explore more complex techniques and concepts in post-production audio and game audio. Gain an in-depth understanding of MAXMSP. Expand your post-production skills through sound editing and mixing, while taking frame rates and their practical implications into consideration. Enhance your game audio techniques using Wwise software. Practice large-scale mixing in a 5.1 re-recording theatre with an Avid ICON D-Control ES console.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "February | June | October ",
       "prices": [
         {
@@ -304,12 +373,23 @@
           "fees": 43250
         }
       ],
+      "qualifications": [
+        ""
+      ],
       "specialisations": [
         "Audio",
         "Pro Tools",
         "MAXMSP",
         "Post Production"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Visual Media",
@@ -323,6 +403,7 @@
         "Mixing",
         "Film",
         "TV",
+        "Film/TV",
         "Screen Production",
         "Audio Recordist",
         "Boom Operator",
@@ -342,7 +423,7 @@
       "description": "In this course you will develop fundamental skills in visual storytelling, structure, character, format, genre as well as  your TV spec script, hone your dialogue skills, and start work on a series of comedy sketches.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -354,12 +435,24 @@
           "fees": 28250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Writing for Feature Films",
         "Writing for Television"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
+        "Film/TV",
         "Film",
         "TV",
         "Writing",
@@ -381,7 +474,7 @@
       "description": "In this course you will gain experience with traditional arts, computer animation, and cinematic storytelling skills in a professional, studio environment. Advance your 2D and 3D animation skills as you start to delve into the art of Life Drawing. Complete courses in 3D lighting, texturing, and visual storytelling. Having completed, to deadline, all 3D pre-production requirements, get started on production of your project, maintaining a full production schedule under the guidance of your project supervisor.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
@@ -393,6 +486,9 @@
           "fees": 53250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "3D Animation",
         "Modelling",
@@ -400,11 +496,20 @@
         "Lighting",
         "Texturing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Life Drawing",
         "Visual Effects",
         "Arts",
@@ -415,8 +520,10 @@
         "Texturing",
         "3D Design",
         "VFX",
+        "Visual Effects (VFX)",
         "Motion Graphics",
         "Computer Graphics",
+        "Games Design",
         "Game Design",
         "Multimedia",
         "Digital Design",
@@ -434,8 +541,8 @@
       "description": "Learn the fundamentals of translating words and ideas into compelling visual stories.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
-      "intakes": "February | June | October",
+      "duration": "12 months",
+      "intakes": "June | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -446,17 +553,29 @@
           "fees": 33500
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Animation",
         "Visual Concepts",
         "Concept Art",
         "Drawing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Concept Art",
         "Drawing",
         "Painting",
@@ -472,7 +591,7 @@
       "description": "Create an attention-grabbing reel of animated work that showcases your classical animation techniques, storytelling skills, and grasp of modern digital tools. You will delve into the fundamentals of drawing, animation, and basic art direction.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -484,16 +603,28 @@
           "fees": 30500
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Animation",
         "Storytelling",
         "Digital Art",
         "Drawing"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Animation",
         "2D Animation",
+        "2D/3D Animation",
         "Storytelling",
         "Digital Design",
         "Drawing",
@@ -511,7 +642,7 @@
       "description": "Understand fundamental design approaches, identify target audiences and leverage your understanding of current tools to tell simple, powerful stories.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -523,25 +654,43 @@
           "fees": 42250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Interactive User Experience Design",
         "Motion Design"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
-        "Digital Media", "Design",
+        "Digital Media", 
+        "Design",
         "3D Graphics",
         "Typography",
         "Screen Media",
         "Interactive Design",
         "Motion Design",
-        "Digital Design", "2D Animation", 
+        "Digital Design",
+        "2D Animation",
         "3D Design",
+        "2D/3D Animation",
         "Motion Graphics", 
-        "Game Design", 
-        "Multimedia", "Digital Imaging",
+        "Games Design", 
+        "Game Design",
+        "Multimedia",
+        "Digital Imaging",
         "Digital images",
         "Computer Graphics",
         "Graphic Design",
+        "Visual Comms",
+        "Visual Communication",
         "Illustration",
         "Typography",
         "Photography",
@@ -550,7 +699,6 @@
         "3D Printing",
         "Packaging and Branding",
         "Photomedia",
-        "Visual Communications",
         "Photography Design",
         "Concept Artist",
         "Creative Drawing"
@@ -563,8 +711,8 @@
       "description": "In this course you will build on your game design foundation and start to create your own playable 2D game in Unity. Shift from theoretical to practical with hands-on work on detailed design documentation and front-end interfaces. Expand your role as a designer with online, multiplayer design.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
-      "intakes": "January | April | October",
+      "duration": "12 months",
+      "intakes": "April | August | October",
       "prices": [
         {
           "type": "Domestic students",
@@ -575,19 +723,31 @@
           "fees": 49250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Game Art",
         "Game Programming",
         "Unity"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
+        "Games Design",
         "Game Design",
         "Unity",
         "Design",
         "3D Design",
         "Screen Media",
-        "Game Design",
+        "Games Design",
         "Computer Graphics",
         "Multimedia",
         "Digital Design",
@@ -607,7 +767,7 @@
       "description": "In this course you will learn fundamental theories, key concepts, and processes involved in creating high-quality games, web, and mobile projects. Work with 2D and 3D design tools and discover asset pipelines for large projects. You will also enhance your skill set by utilizing C++ programming language, Object Oriented Programming techniques, and mobile applications for the Apple iPad and iPhone. Create mobile apps and communicate with online networks and payment solution providers, using the Android platform and Java language. Encounter the key features of artificial intelligence in Unity and the building blocks that influence the gaming experience. Utilize Windows and OpenGL with C++ programming to create a simple game engine. Demonstrate knowledge in Winsock and the protocols TCP/IP and UDP. Create a cloud project that utilizes Amazon web services and synthesize all of your work in a professional-quality website showcase.",
       "campus": ["Vancouver"
       ],
-      "length": "12 months",
+      "duration": "12 months",
       "intakes": "January | April | August",
       "prices": [
         {
@@ -619,6 +779,9 @@
           "fees": 49250
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Game Development",
         "Web Development",
@@ -626,6 +789,14 @@
         "Object Oriented Programming",
         "Java"
       ],
+      "areas": [
+      "Digital Media",
+      "Visual Comms",
+      "Visual Communication",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Design"
+       ],
       "disciplines": [
         "Digital Media",
         "Programming",
@@ -638,6 +809,7 @@
         "Artificial Intelligence",
         "Multimedia",
         "Digital Media",
+        "Games Design",
         "Game Design",
         "Game Development",
         "Mobile Application",
@@ -651,56 +823,6 @@
   ],
   "artworks": [
     {
-      "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
-      "name": "Deadzone",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_Everyone",
-      "name": "Everyone",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
-      "name": "It's Not A Diary It's A Movie",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
-      "name": "Shortland Street",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
-      "name": "Supernatural",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Acting",
-        "Performing Arts"
-      ]
-    },
-    {
       "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
       "name": "Final Perspective Vehicle",
       "school_name": "Vancouver Film School (VFS)",
@@ -712,10 +834,30 @@
       ]
     },
     {
-      "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
-      "name": "Character Variation Hero",
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
+      "name": "Character Prosthetic Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "Jiyeon Han",
+      "artist": "No Name",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_It_s_not_a_diary__it_s_a_movie",
+      "name": "It's Not A Diary It's A Movie",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
+      "name": "Final Establishing Shot",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "Ana Karen Zamudio Soberanes",
       "disciplines": [
         "Animation",
         "Concept Art",
@@ -734,10 +876,62 @@
       ]
     },
     {
-      "image": "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
-      "name": "Final Establishing Shot",
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
+      "name": "Beauty Fantasy Competition Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "Ana Karen Zamudio Soberanes",
+      "artist": "No Name",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Supernatural",
+      "name": "Supernatural",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Deadzone",
+      "name": "Deadzone",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Everyone",
+      "name": "Everyone",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+
+    {
+      "image": "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
+      "name": "Shortland Street",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Acting",
+        "Performing Arts"
+      ]
+    },
+    {
+      "image": "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
+      "name": "Character Variation Hero",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "Jiyeon Han",
       "disciplines": [
         "Animation",
         "Concept Art",
@@ -755,31 +949,12 @@
         "Drawing"
       ]
     },
-    {
-      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
-      "name": "Beauty Fantasy Competition Makeup",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Makeup",
-        "Design"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
-      "name": "Character Prosthetic Makeup",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
-      "disciplines": [
-        "Makeup",
-        "Design"
-      ]
-    },
+
     {
       "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup",
       "name": "Human-Character Prosthetic Makeup",
       "school_name": "Vancouver Film School (VFS)",
-      "artist": "",
+      "artist": "No Name",
       "disciplines": [
         "Makeup",
         "Design"

@@ -6,6 +6,7 @@
   margin-bottom: 15px;
   padding-left: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .control input {
@@ -20,8 +21,9 @@
   left: 0;
   width: 12px;
   height: 12px;
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #000000;
+  border: 1px solid #FF6D6D;
+  margin-top: 4px;
 }
 
 .control:hover input ~ .control__indicator,
@@ -79,13 +81,16 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid $dark-grey;
   padding: 3px;
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
+  background-color: #000000;
+  color: $white;
 }
 input[type=text]:focus, input[type=text]:active {
   outline: none;
   border-color: $black;
 }
 input[type=text]::placeholder {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  color: $white;
 }
