@@ -129,7 +129,7 @@ export default class HeroApp extends Component {
                       <button className="modal-close-button" onClick={() => this.closeModal()} data-close aria-label="Close modal" type="button">
                       <span aria-hidden="true">&times;</span>
                       </button>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cliuhi-j7Kw" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AngWIawVV6k" frameborder="0" allowfullscreen></iframe>
                   </ReactModal>
                   <div className="slide-text">
                     { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}
@@ -140,7 +140,7 @@ export default class HeroApp extends Component {
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
-                    {/*<i onClick={() => this.openModal()} className="fa fa-play fa-3x" aria-hidden="true"></i><p onClick={() => this.openModal()} className="video-text">Play Video</p>*/}</div> : <div /> }
+                    <i onClick={() => this.openModal()} className="fa fa-play fa-3x" aria-hidden="true"></i><p onClick={() => this.openModal()} className="video-text">Play Video</p></div> : <div /> }
                   { slide.cta ? <svg className='hero-cta-container' viewBox='0 0 150 65' preserveAspectRatio='none'><polyline points="40,65 0,65 0,0 40,0" x="0" y="0"/><polyline points="110,0 150,0 150,65 110,65"/><a href={slide.cta.link}><text fill="white" textAnchor="middle" x='75' y='40'>{slide.cta.text}</text></a></svg> : '' }
                   <img src='/images/white-arrow-down.png' alt='arrow-down' className='home-right-arrow-button' onClick={ () => this.changeSlide(i+1) }/>
                 </div>
