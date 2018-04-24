@@ -38,6 +38,7 @@ export default class ArtworkApp extends Component {
       currentImage: 0,
       currentTitle: images[0].title,
       currentArtist: images[0].artist,
+      indexList: [],
       styles: {
         container: {
           background: 'rgba(255, 255, 255, 0.95)',
@@ -143,40 +144,112 @@ export default class ArtworkApp extends Component {
     this.setState({ images });
   }
 
+  renderImg(img, i){
+    const { indexList, isOpen } = this.state;
+    // console.log(parseInt(i));
+
+    let imgIndex;
+    let styled;
+    var x = i+1;
+    var y = 5;
+    // if(img.length >= 7){
+    //   imgIndex = i;
+    // }else{
+    //   imgIndex = 0;
+    // }
+    
+    // console.log(img.length);  
+
+    // console.log()     // 
+
+      // let check = true;
+      // while(check == true){
+        imgIndex = Math.floor(Math.random() * Math.floor(img.length));
+      //   if(indexList.includes(imgIndex)){
+      //     check=true;
+      //   }else{
+      //     check=false;
+      //     indexList.push(imgIndex);
+      //   }
+      // }
+    
+
+    // if(indexList.includes(imgIndex) == false){
+    //   indexList.push(imgIndex);
+    // }
+
+    // let yellow = "green";
+
+    //   styled = (<style dangerouslySetInnerHTML={{__html: 
+
+    //     '.art-box-2-diagonal .art-box-img{ background-image: none !important; }' 
+
+    //     }} />);
+
+      
+      // style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}
+
+    return(
+        <div  className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}} >
+          <div className="img-details" onClick={ () => this.openLightbox(imgIndex) }>
+            <h2>{ img[imgIndex].title }</h2>
+            <p>{ img[imgIndex].artist }</p>
+          </div>
+
+        </div>
+      );
+  }
+
+  updateIndexList(){
+    this.setState({indexList: []});
+  }
+
   render() {
     const { artworks } = this.props;
-    const { disciplineList, disciplines, images } = this.state;
+    const { disciplineList, disciplines, images, allImages } = this.state;
+    let gt = ">";
     return (
       <div className='grey-bg'>
-        <div className='filter-container'>
-          <div className='filter'>
-            <h2>disciplines</h2>
-            <Filter
-              filterItems={ disciplineList }
-              activeItems={ disciplines }
-              onClick={ (val) => this.updateDiscipline(val) }
-              isHome={ false }
-            />
-          </div>
-          <div className='refine-button'>
-            <a href='/discover' className='btn btn-full-width'>refine</a>
-          </div>
-        </div>
         <div className='artworks'>
           <div className='artwork-container'>
           { artworks.length > 0 ? this.renderLightbox() : <div /> }
-            <ul className='artwork-slides'>
-              { _.map(images, (img, index) => {
-                return (
-                  <li onClick={ () => this.openLightbox(index) }>
-                    <p>{ img.artist }</p>
-                    <p className='artwork-discipline'>{ img.disciplines[0] }</p>
-                    <h4>{ img.title }</h4>
-                    <Artwork src={ img.thumb } />
-                  </li>
-                );
-              }) }
-            </ul>
+            <div className="art-box">
+              <div className="art-box-1">
+                { this.renderImg(images, 0) }
+              </div>  
+              <div className="art-box-1">
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 1) }
+                </div>
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 2) }
+                </div>
+              </div>
+              
+            </div>
+            <div className="art-box">
+              <div className="art-box-2">
+                <div className="art-box-2-img right">
+                  { this.renderImg(images, 3) }
+                </div>
+                <div className="art-box-2-img left">
+                  { this.renderImg(images, 5) }
+                </div>
+              </div>
+              <div className="art-box-2-diagonal">
+                { this.renderImg(images, 4) }
+              </div>
+            </div>
+            <div className="art-box-last">
+              <div className="artwork-next">
+                <button onClick={()=>this.updateIndexList()} > {gt} </button>
+              </div>
+              <div className="art-box-3">
+                <div className="art-box-3-img">
+                  { this.renderImg(images, 6) }
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

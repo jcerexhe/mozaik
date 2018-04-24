@@ -6,7 +6,7 @@ import SearchLink from './searchLink.jsx';
 export default class Search extends Component {
   constructor(props) {
     super(props);
-    const digMedia = ["Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
+    const digMedia = ["2D/3D Animation", "3D Design", "AR/VR", "Computer Graphics", "Digital Design", "Digital Media", "Games Design", "Motion Graphics", "Visual Effects (VFX)", "Web Design"];
     const visComm = ["Advertising Design", "Design", "Graphic Design", "Illustration", "Packaging & Branding", "Photography", "Typography", "Visual Arts", "Visual Communication", "Web Design"];
     const fineArts = ["2D/3D Art", "Ceramics", "Drawing", "Fine Arts", "Glass Design", "Jewellery Design", "Metalsmithing", "Painting", "Sculpture", "Wood Design"];
     const filmTvAudio = ["Cinematography", "Directing", "Editing", "Film/TV", "Music for Screen", "Producing", "Production Design", "Radio", "Screenwriting", "Sound Design"];
@@ -23,12 +23,14 @@ export default class Search extends Component {
         interestCountries: ['all areas']
       },
       categories: [],
-      search: '',
+      school: '',
+      studyArea: '',
+      city: '',
       areas: {
         'Digital Media': digMedia,
-        'Visual Communication': visComm,
+        'Visual Comms': visComm,
         'Fine Arts': fineArts,
-        'Film / TV / Audio': filmTvAudio,
+        'Film/TV/Audio': filmTvAudio,
         'Performing Arts': perfArts,
         'Design': design,
         'Photography': photog,
@@ -55,7 +57,27 @@ export default class Search extends Component {
     return false;
   }
 
+  allAreas(){
+        //       interestAreas: ['all areas'],
+        // interestDisciplines: ['all areas'],
+        // interestCountries: ['all areas']
+  const { discipline } = this.state;
+
+      this.setState({
+        discipline: {
+          ...discipline,
+          ['interestAreas']: ['all areas'],
+          ['interestDisciplines']: ['all areas'],
+          ['interestCountries']: ['all areas']
+        }
+      });
+
+      return;
+
+  }
   updateDiscipline(area, val) {
+    console.log(val);
+    this.setState({ searchCategory: 'discipline'});
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
     if (val === 'all areas') {
@@ -67,11 +89,30 @@ export default class Search extends Component {
       });
       return;
     }
+
+    if(area == 'interestAreas'){
+      this.setState({
+        discipline: {
+          ...discipline,
+          ['interestAreas']: [val],
+          ['interestDisciplines']: ['all areas']
+        }
+      });
+      return;
+    }
     _.remove(interests, (v) => { return v.indexOf('all areas') != -1 });
     if (interests.includes(val))
       _.remove(interests, (v) => { return v.indexOf(val) != -1 });
     else
-      interests.push(val);
+      if(area == 'interestCountries'){
+        interests.push(val.toUpperCase());
+        console.log(val.toUpperCase());
+      }else{
+        interests.push(val);
+      }
+
+
+      
     if (interests.length == 0)
       interests.push('all areas');
     this.setState({
@@ -96,40 +137,198 @@ export default class Search extends Component {
 
   renderDiscipline() {
     const { discipline, areas } = this.state;
-    const countries = ['all areas', 'Australia', 'Canada', 'New Zealand', 'Singapore', 'USA'];
+    const countries = ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'SINGAPORE', 'USA'];
     let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
     if (interestDisciplines.length === 0) {
       interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
     }
+
     return (
       <div id='search-discipline'>
         <div className='interest-areas'>
-          <h3>What areas interest you?</h3>
-          <Filter
-            filterItems={ ['all areas'].concat(_.map(areas, (v, k) => { return k })) }
-            activeItems={ discipline.interestAreas }
-            onClick={ (val) => this.updateDiscipline('interestAreas', val) }
-            isHome={ true }
-          />
+          <button className='btn' onClick={ (val) => this.allAreas()}> All Areas</button>
+
+          <div className="interest-area-box">
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Digital Media'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Visual Comms'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Fine Arts'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Film/TV/Audio'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Performing Arts'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Design'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+            <div className="area-1">
+              <Filter
+                filterItems={ ['Photography'] }
+                activeItems={ discipline.interestAreas }
+                onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                isHome={ true }
+                interest='area'
+              />
+            </div>
+            <div className="area-2">
+              <div>
+                <Filter
+                  filterItems={ ['Built Environment'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+                <Filter
+                  filterItems={ ['Business for Creatives'] }
+                  activeItems={ discipline.interestAreas }
+                  onClick={ (val) => this.updateDiscipline('interestAreas', val) }
+                  isHome={ true }
+                  interest='area'
+                />
+              </div>
+            </div>
+          </div>
         </div>
+          <hr className="search-line" />
         <div className='interest-disciplines'>
-          <h3>Do these disciplines interest you?</h3>
-          <Filter
-            filterItems={ ['all areas'].concat(interestDisciplines) }
+          <div className="interest-disciplines-box">
+            <Filter
+            filterItems={ ['all areas'] }
             activeItems={ discipline.interestDisciplines }
             onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
             isHome={ true }
-          />
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[0]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[1]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[2]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
+          <div className="interest-disciplines-box-2">
+            <Filter
+            filterItems={ [interestDisciplines[3]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[4]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[5]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
+          <div className="interest-disciplines-box">
+            <Filter
+            filterItems={ [interestDisciplines[6]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[7]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[8]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+            <Filter
+            filterItems={ [interestDisciplines[9]] }
+            activeItems={ discipline.interestDisciplines }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+            />
+          </div>
         </div>
+        <br />
         <div className='interest-countries'>
-          <h4>Choose a country?</h4>
           <Filter
             filterItems={ countries }
             activeItems={ discipline.interestCountries }
             onClick={ (val) => this.updateDiscipline('interestCountries', val) }
             isHome={ true }
+            interest='country'
           />
         </div>
+        <br />
       </div>
     )
   }
@@ -170,63 +369,66 @@ export default class Search extends Component {
   }
 
   renderSearch() {
-    const { search } = this.state;
-    return (
-      <div id='search-search'>
-        <div className='interest-areas'>
-          <h3>What areas interest you?</h3>
-          <div className='search-input'>
-            <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
-          </div>
-        </div>
-      </div>
-    );
+    // const { search } = this.state;
+    // return (
+    //   <div id='search-search'>
+    //     <div className='interest-areas'>
+    //       <h3>What areas interest you?</h3>
+    //       <div className='search-input'>
+    //         <input value={ search } placeholder='Search by course name or keywords ...' onChange={ (e) => this.setState({ search: e.target.value }) } />
+    //       </div>
+    //     </div>
+    //   </div>
+    // );
+    this.setState({ searchCategory: 'search', 
+      school: this.refs.textSchool.value,
+      studyArea: this.refs.textArea.value, 
+      city: this.refs.textCity.value,
+   });
+
   }
 
   render() {
     const { searchCategory, discipline, categories, search } = this.state;
-    let rendered = <div />;
-    switch (searchCategory) {
-      case "discipline": rendered = this.renderDiscipline();
-        break;
-      case 'categories': rendered = this.renderCategories();
-        break;
-      case 'search': rendered = this.renderSearch();
-        break;
-    }
+    // let rendered = this.renderDiscipline();
+    // switch (searchCategory) {
+    //   case "discipline": rendered = this.renderDiscipline();
+    //     break;
+    //   case 'categories': rendered = this.renderCategories();
+    //     break;
+    //   case 'search': rendered = this.renderSearch();
+    //     break;
+    // }
     return (
       <div>
+        <h1 className="page-heading">What areas interest you?</h1>
         <div id="search" className={searchCategory === 'categories' ? 'taller-search' : ''}>
           <div className='search-content'>
-            <h2>
-              <span>q</span>
-              <span>u</span>
-              <span>i</span>
-              <span>c</span>
-              <span>k</span>
-              <span> </span>
-              <span>s</span>
-              <span>e</span>
-              <span>a</span>
-              <span>r</span>
-              <span>c</span>
-              <span>h</span>
-            </h2>
             <div className='search-criteria'>
-              <div className='search-category'>
-                <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
-                  className={ 'list-btn' + (searchCategory === 'discipline' ? ' active' : '') } />
-                <span onClick={ () => this.setState({ searchCategory: 'categories' }) }
-                  className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
-                <span onClick={ () => this.setState({ searchCategory: 'search' }) }
-                  className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
+            {
+              // <div className='search-category'>
+              //   <span onClick={ () => this.setState({ searchCategory: 'discipline' }) }
+              //     className={ 'list-btn' + (searchCategory === 'discipline' ? ' active' : '') } />
+              //   <span onClick={ () => this.setState({ searchCategory: 'categories' }) }
+              //     className={ 'refine-btn' + (searchCategory === 'categories' ? ' active' : '') } />
+              //   <span onClick={ () => this.setState({ searchCategory: 'search' }) }
+              //     className={ 'search-btn' + (searchCategory === 'search' ? ' active' : '') } />
+              // </div>
+            }
+              <div className="search-input">
+                <input placeholder="School Name" ref="textSchool" />
+                <input placeholder="Study Area" ref="textArea" />
+                <input placeholder="City/Country" ref="textCity"/>
+                <button onClick={() => this.renderSearch()}>Search</button>
+                <a href="/discover" className="adv-search">Advanced Search</a>
               </div>
-              { rendered }
+              { //rendered 
+                this.renderDiscipline()
+              }
               <p className="results-found">{this.props.resultsAmount} results found</p>
             </div>
           </div>
         </div>
-        <div className={'search-blue-background' + (searchCategory === 'categories' ? ' taller-search' : '')} />
       </div>
     );
   }

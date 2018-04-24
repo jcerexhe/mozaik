@@ -25,12 +25,15 @@ const courseSchema = new Schema({
     required: 'Please provide a short description of the course.',
   },
   campus: [String],
+  areas: [String],
   specialisations: [String],
+  qualifications: [String],
   disciplines: [String],
   length: {
     type: String,
     trim: true,
   },
+  duration: String, 
   prices: [{
     type: {
       type: String,
@@ -39,7 +42,7 @@ const courseSchema = new Schema({
   }],
   image: {
     type: String,
-    required: 'Please provide an image for the course.',
+    //required: 'Please provide an image for the course.',//
   },
   intakes: String,
   school: {

@@ -16,7 +16,7 @@
 .rc-slider-rail {
   position: absolute;
   width: 100%;
-  background-color: #e9e9e9;
+  background-color: #FF6D6D;
   height: 4px;
   border-radius: 6px;
 }
@@ -29,10 +29,10 @@
 }
 .rc-slider-handle {
   position: absolute;
-  margin-left: -7px;
+  margin-left: -4px;
   margin-top: -5px;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
   cursor: -webkit-grab;
   cursor: grab;
@@ -69,7 +69,7 @@
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
-  color: #999;
+  color: #ffffff;
 }
 .rc-slider-mark-text-active {
   color: #666;
@@ -77,19 +77,21 @@
 .rc-slider-step {
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: transparent;
 }
 .rc-slider-dot {
   position: absolute;
   bottom: -2px;
-  margin-left: -4px;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #e9e9e9;
-  background-color: #fff;
+  margin-left: -20px;
+  margin-top: 10px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #FF6D6D;
+  background-color: #FF6D6D;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 0;
+  transform: rotate(45deg);
   vertical-align: middle;
 }
 .rc-slider-dot:first-child {

@@ -13,6 +13,7 @@ require('./models/school');
 require('./models/course');
 require('./models/artwork');
 require('./models/alumni');
+require('./models/studyarea');
 
 const express = require('express');
 const session = require('express-session');

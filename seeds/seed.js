@@ -11,28 +11,38 @@ const School = require('../models/school');
 const Course = require('../models/course');
 const Artwork = require('../models/artwork');
 const Alumni = require('../models/alumni');
+const StudyArea = require('../models/studyarea');
 
 const ait = JSON.parse(fs.readFileSync(__dirname + '/ait.json', 'utf-8'));
 const nida = JSON.parse(fs.readFileSync(__dirname + '/nida.json', 'utf-8'));
 const aftrs = JSON.parse(fs.readFileSync(__dirname + '/aftrs.json', 'utf-8'));
 const vfs = JSON.parse(fs.readFileSync(__dirname + '/vfs.json', 'utf-8'));
+const fsu = JSON.parse(fs.readFileSync(__dirname + '/fsu.json', 'utf-8'));
+const sa = JSON.parse(fs.readFileSync(__dirname + '/studyarea.json', 'utf-8'));
 
-const _ait = new School(ait.school);
-const _aitAlumni = _.map(ait.alumni, (alum) => {
-  let _alum = new Alumni(alum);
-  _alum.school = _ait._id;
-  return _alum;
+
+const _sa = _.map(sa.studyarea, (area) => {
+  let _newsa = new StudyArea(area);
+  return _newsa;
 });
-const _aitCourses = _.map(ait.courses, (course) => {
-  let _course = new Course(course);
-  _course.school = _ait._id;
-  return _course;
-});
-const _aitArtwork = _.map(ait.artworks, (artwork) => {
-  let _artwork = new Artwork(artwork);
-  _artwork.school = _ait._id;
-  return _artwork;
-});
+
+
+// const _ait = new School(ait.school);
+// const _aitAlumni = _.map(ait.alumni, (alum) => {
+//   let _alum = new Alumni(alum);
+//   _alum.school = _ait._id;
+//   return _alum;
+// });
+// const _aitCourses = _.map(ait.courses, (course) => {
+//   let _course = new Course(course);
+//   _course.school = _ait._id;
+//   return _course;
+// });
+// const _aitArtwork = _.map(ait.artworks, (artwork) => {
+//   let _artwork = new Artwork(artwork);
+//   _artwork.school = _ait._id;
+//   return _artwork;
+// });
 
 const _nida = new School(nida.school);
 const _nidaAlumni = _.map(nida.alumni, (alum) => {
@@ -86,10 +96,28 @@ const _vfsArtwork = _.map(vfs.artworks, (artwork) => {
 });
 
 
+const _fsu = new School(fsu.school);
+const _fsuAlumni = _.map(fsu.alumni, (alum) => {
+  let _alum = new Alumni(alum);
+  _alum.school = _fsu._id;
+  return _alum;
+});
+const _fsuCourses = _.map(fsu.courses, (course) => {
+  let _course = new Course(course);
+  _course.school = _fsu._id;
+  return _course;
+});
+const _fsuArtwork = _.map(fsu.artworks, (artwork) => {
+  let _artwork = new Artwork(artwork);
+  _artwork.school = _fsu._id;
+  return _artwork;
+});
+
+
 async.series([
   function(callback) {
     console.log('deleting data');
-    const models = [School, Course, Artwork, Alumni];
+    const models = [School, Course, Artwork, Alumni, StudyArea];
     async.eachSeries(models, (model, modelCb) => {
       model.remove().then(() => {
         modelCb();
@@ -102,21 +130,21 @@ async.series([
       callback(null, 'SUCCESS - FINISHED DELETING DATA');
     });
   },
-  function(callback) {
-    // save schools
-    console.log('saving ait course');
-    async.eachSeries([_ait].concat(_aitAlumni).concat(_aitCourses).concat(_aitArtwork), (aitItem, aitItemSavedCb) => {
-      aitItem.save().then(() => {
-        aitItemSavedCb();
-      }).catch((err) => {
-        console.log(err);
-        aitItemSavedCb();
-      });
-    }, (err) => {
-      if(err) console.log(err);
-      callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
-    });
-  },
+  // function(callback) {
+  //   // save schools
+  //   console.log('saving ait course');
+  //   async.eachSeries([_ait].concat(_aitAlumni).concat(_aitCourses).concat(_aitArtwork), (aitItem, aitItemSavedCb) => {
+  //     aitItem.save().then(() => {
+  //       aitItemSavedCb();
+  //     }).catch((err) => {
+  //       console.log(err);
+  //       aitItemSavedCb();
+  //     });
+  //   }, (err) => {
+  //     if(err) console.log(err);
+  //     callback(null, 'SUCCESS - FINISHED SEEDING AIT DATA');
+  //   });
+  // },
   function(callback) {
     // save schools
     console.log('saving nida course');
@@ -160,6 +188,36 @@ async.series([
    }, (err) => {
      if(err) console.log(err);
      callback(null, 'SUCCESS - FINISHED SEEDING VFS DATA');
+   });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving fsu course');
+    async.eachSeries([_fsu].concat(_fsuAlumni).concat(_fsuCourses).concat(_fsuArtwork), (fsuItem, fsuItemSavedCb) =>  {
+      fsuItem.save().then(() => {
+        fsuItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        fsuItemSavedCb(); 
+      });
+   }, (err) => {
+     if(err) console.log(err);
+     callback(null, 'SUCCESS - FINISHED SEEDING FSU DATA');
+   });
+  },
+  function(callback) {
+    // save schools
+    console.log('saving studyareas');
+    async.eachSeries(_sa, (saItem, saItemSavedCb) =>  {
+      saItem.save().then(() => {
+        saItemSavedCb();
+      }).catch((err) => {
+        console.log(err);
+        saItemSavedCb(); 
+      });
+   }, (err) => {
+     if(err) console.log(err);
+     callback(null, 'SUCCESS - FINISHED SEEDING STUDY AREA DATA');
    });
   },
 ], function(err, results) {

@@ -3,11 +3,25 @@ const reactHelper = require('react-helper');
 
 const School = mongoose.model('School');
 const Course = mongoose.model('Course');
+const StudyArea = mongoose.model('StudyArea');
 
 exports.home = (req, res) => {
   const Hero = reactHelper.renderComponent('HeroApp');
-  const Search = reactHelper.renderComponent('SearchApp');
-  res.render('home', { Hero, Search });
+  let allArt = [];
+
+  School.find().then(schools => {
+    if (schools) {
+      schools.forEach(school =>{
+        allArt = allArt.concat(school.artworks);
+      });
+      let Lightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
+      res.render('home', { Hero, Lightbox });
+    }
+  })
+
+  //const Search = reactHelper.renderComponent('SearchApp');
+  //res.render('home', { Hero, Search });
+
 };
 
 exports.getSchool = async (req, res, next) => {
@@ -17,6 +31,17 @@ exports.getSchool = async (req, res, next) => {
     res.redirect('/');
   } else {
     res.locals.school = school;
+    next();
+  }
+};
+
+exports.getStudyArea = async (req, res, next) => {
+  const area = await StudyArea.findOne({ slug: req.params.areaSlug });
+  if (!area) {
+    // set flash messages
+    res.redirect('/');
+  } else {
+    res.locals.area = area;
     next();
   }
 };
@@ -42,12 +67,14 @@ exports.schoolArtwork = (req, res) => {
 
 exports.schoolDetails = (req, res) => {
   const school = res.locals.school;
+  const artworks = school.artworks;
   // choose number of images to show: 20
   const Lightbox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: school.artworks.slice(0, 20) });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
   const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
-  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni });
+  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
+  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses, artworks });
 };
 
 exports.schoolCourses = (req, res) => {
@@ -57,6 +84,44 @@ exports.schoolCourses = (req, res) => {
 };
 
 exports.discover = (req, res) => {
-  const Discover = reactHelper.renderComponent('DiscoverApp');
+  School.find().then(schools => {
+    const Discover = reactHelper.renderComponent('DiscoverApp', { schoolsInfo: schools });
   res.render('discover', { Discover });
-}
+  });
+};
+
+exports.about = (req, res) => {
+  const About = reactHelper.renderComponent('AboutApp');
+  res.render('about', { About });
+};
+
+
+exports.studyAreas= (req, res) => {
+  const Search = reactHelper.renderComponent('SearchApp');
+  res.render('studyArea', {Search });
+};
+
+exports.partner = (req, res) => {
+  const Partner = reactHelper.renderComponent('PartnerApp');
+  res.render('partner', { Partner });
+
+};
+
+exports.agency = (req, res) => {
+  const Agency = reactHelper.renderComponent('AgencyApp');
+  res.render('agency', { Agency });
+
+};
+
+exports.performingArts = (req, res) => {
+  const area = res.locals.area;
+  const PerformingArts = reactHelper.renderComponent('PerformingArtsApp', {studyarea: area});
+  res.render('performingArts', { PerformingArts });
+
+};
+
+exports.selectArea = (req, res) => {
+  const SelectArea = reactHelper.renderComponent('SelectAreaApp');
+  res.render('selectArea', { SelectArea });
+
+};

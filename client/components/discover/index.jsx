@@ -6,15 +6,15 @@ import _ from 'lodash';
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 const handleStyle = {
-  backgroundColor: '#000000',
+  backgroundColor: '#ffffff',
   border: 'none',
-  borderRadius: 0,
-  transform: 'rotate(45deg)',
-  width: '11px',
-  height: '11px'
+  //borderRadius: 0,
+  //transform: 'rotate(45deg)',
+  width: '10px',
+  height: '10px'
 };
 const trackStyle = {
-  backgroundColor: '#000000',
+  backgroundColor: '#ffffff',
   height: '1px'
 };
 const railStyle = {
@@ -22,8 +22,8 @@ const railStyle = {
 };
 const dotStyle = {
   bottom: '0px',
-  width: '7px',
-  height: '7px'
+  width: '11px',
+  height: '11px'
 };
 
 const Map = withGoogleMap(props => (
@@ -31,17 +31,34 @@ const Map = withGoogleMap(props => (
     zoom={2}
     center={ { lat: 0.0, lng: 150.0 } }
   >
-    <Marker
-      position={ props.coords }
-      clickable={ true }
-    />
+    
+    {_.map(props.coords, (coord, index) => {
+      return (
+        <Marker
+          key = { 'marker-' + index }
+          position={ coord }
+          clickable={ true }
+        />
+      )
+    })}
+
   </GoogleMap>
 ));
 
 export default class DiscoverApp extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    const allLocInfo = _.map(props.schoolsInfo, (schoolInfo) => {
+      return {
+        schoolName: schoolInfo.name,
+        locDes: schoolInfo.locationDescription,
+        locations: schoolInfo.locations
+      }
+    });
+
+   this.state = {
+      allLocInfo,
+      foundation: false,
       certificate: false,
       diploma: false,
       advancedDiploma: false,
@@ -51,6 +68,8 @@ export default class DiscoverApp extends Component {
       master: false,
       phd: false,
       priceRange: [0, 200000],
+      onCampus: false,
+      online: false,
       city: '',
       state: '',
       country: ''
@@ -63,24 +82,36 @@ export default class DiscoverApp extends Component {
     })
   }
 
+
   render() {
     const { priceRange, university, state, country } = this.state;
-    const quals = ['certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
+    const quals = ['foundation','certificate', 'diploma', 'advanced diploma', 'bachelor', 'graduate certificate', 'graduate diploma', 'master', 'phd'];
+    const site = ['on campus', 'online'];
     const inputs = ['city', 'state', 'country'];
+    let coords = [];
+    _.forEach(this.state.allLocInfo, 
+      (locInfo) => {
+        _.forEach(locInfo.locations,
+          (locCoord) => {
+            coords.push(locCoord.coordinates)
+          })
+      });
+    console.log(coords)
     return (
       <div className="map">
         <Map
-          coords={ {lat: -33.8688, lng: 151.2093} }
+         //coords={ {lat: -33.8688, lng: 151.2093} }
+         coords={ coords }
           containerElement={
-            <div style={{ height: 'calc(100vh - 100px)', width: '100vw' }} />
+            <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
           mapElement={
-            <div style={{ height: 'calc(100vh - 100px)', width: '100vw' }} />
+            <div style={{ height: 'calc(140vh - 140px)', width: '100vw' }} />
           }
         />
         <div className='discover-column-container'>
           <div className='discover-column'>
-            <h3>qualification</h3>
+            <h3>QUALIFICATION</h3>
             <div className='discover-checkboxes control-group'>
               { _.map(quals, (q, i) => {
                 return (
@@ -96,7 +127,7 @@ export default class DiscoverApp extends Component {
                 );
               }) }
             </div>
-            <h3>Price Range <span>(aud)</span></h3>
+            <h3>PRICE RANGE <span>(AUD)</span></h3>
             <Range
               defaultValue={ [0, 200000] }
               min={ 0 }
@@ -110,7 +141,24 @@ export default class DiscoverApp extends Component {
               dotStyle={ dotStyle }
               marks={ { 0: <strong>$0</strong>, 200000: <strong>$200,000+</strong> } }
             />
-            <h3>location</h3>
+          
+            <div id='sites' className='discover-checkboxes control-group'>
+              { _.map(site, (s, i) => {
+                return (
+                  <label className='control control--checkbox' key={ i }>
+                    <input
+                      name={ s }
+                      type="checkbox"
+                      checked={ this.state[s] }
+                      onChange={ () => this.updateSearchParam(s, !this.state[s]) } />
+                    <div className='control__indicator' />
+                    { s }
+                  </label>
+                );
+              }) }
+            </div>
+
+            <h3>LOCATION</h3>
             { _.map(inputs, (inp) => {
               return (
                 <input
