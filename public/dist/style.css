@@ -296,7 +296,7 @@ input.input-newsletter:focus {
 .discipline {
   border: 3px solid #FFFFFF;
   background: #FF6D6D;
-  width: 25vh; }
+  width: 27vh; }
 
 .country {
   border: 3px solid #FFFFFF;
@@ -2616,7 +2616,7 @@ ul.careers-lists > li:before {
     width: 80%;
     margin: 0 auto; }
   .search-content .interest-disciplines ul {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     margin-top: 50px;
@@ -2903,8 +2903,7 @@ ul.careers-lists > li:before {
   .interest-area-box .area-1, .interest-area-box .area-2 {
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    /* justify-content: center; */
     display: -ms-flexbox;
     display: flex; }
 
