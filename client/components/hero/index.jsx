@@ -29,7 +29,7 @@ export default class HeroApp extends Component {
           headingImg: "/images/MozaikPlay.png",
           text: "Deciding what to study is tricky. We'll help",
           br:"you find the right course in the creative industry.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/q_auto/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
           video: true,
           styles: {
             h1:{
@@ -45,7 +45,7 @@ export default class HeroApp extends Component {
           heading: 'Let the student work do the talking.',
           text: "Search for courses by comparing the work",
           br:"of students from creative schools.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1521860091/tumblr_o6axauhTur1rb8rhso2_1280_tzqrw8.jpg',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/q_auto/v1521860091/tumblr_o6axauhTur1rb8rhso2_1280_tzqrw8.jpg',
           video: false,
           cta: {
             text: 'Start Searching',
@@ -61,7 +61,7 @@ export default class HeroApp extends Component {
           headingbr2:'support',
           text: "From enquiry to enrolment...",
           br:"and throughout your whole student journey.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/v1523264291/HeroSlide3Image_fwxq00.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/q_auto/v1523264291/HeroSlide3Image_fwxq00.png',
           video: false,
           cta: {
             text: 'Learn More',
