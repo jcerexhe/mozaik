@@ -1,7 +1,7 @@
 .study-area-page-heading {
     border: 10px solid #181818;
     width: 40%;
-    margin-top: 12%;
+    
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -42,32 +42,17 @@
 
 
 
-.study-area-background img.header-colored{
+img.study-area-background{
   width: 100%;
-  background-size: 100% 100%;
-  background-position-y: 20%;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
+  height: 100vh;
   top: 0px;
   position: absolute; 
 }
 
-/*
-.performing-arts-background img.header-original{
-  width: 100%;
-  background-size: 100% 100%;
-  background-position-y: 20%;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  top: 0px;
-  position: absolute;
-  
-}}*/
-
 .study-area-disciplines{
   position: relative;
   z-index: 3;
-  margin-top: 8%;
+  margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -86,7 +71,7 @@
 .study-area-heading-description{
   position: relative;
   z-index: 3;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -97,22 +82,22 @@
   color: #FFFFFF;
   font-size: 20px;
   letter-spacing: 1px;
+  
 }
 
 .careers-container{
-  height: 248vh;
+  height: 200vh;
    /*https://uigradients.com/*/
   background:
     linear-gradient(to left, #3c1053 20%, #4389A2 90%), 
     linear-gradient(to right, #3c1053 20%, #4389A2 90%);
-    position: relative;
-    margin-top: -1%;
+   position: absolute;
+   top: 100%; 
+    z-index: -1;
 }
 
 .careers-container >h1{
   text-align: center;
-  margin-top: 0;
-  padding-top: 0;
   font-family: 'Gotham Bold';
   font-weight: bold;
   color: #181818;
@@ -202,7 +187,6 @@ ul.careers-lists>li:before {
 }
 
 .study-area-footer{
-  position: absolute;
-  top: 260%;
-  z-index: 1;
+  position: relative;
+ margin-top: 80%;
 }
