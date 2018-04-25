@@ -50,12 +50,16 @@ constructor(props) {
 					</ul>
 				</div>
 				<div className='study-area-alumni'>
+					{/*<div className='study-area-alumni-qoute'>
+						<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
+					</div>*/}
 					<div className='study-area-alumni-qoute'>
 						<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
 					</div>
+
 					<div className='study-area-alumni-content'>
 						<div className='study-area-alumni-image'>
-							<img className="header-colored" src={studyarea.alumni_photo}/>
+							<img className="header-colored" src="{studyarea.alumni_photo}" />
 						</div>
 						<div className="study-area-alumni-details">
 							<p className="study-area-alumni-name">{studyarea.alumni_name}</p>
