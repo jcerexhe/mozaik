@@ -29,7 +29,7 @@ export default class HeroApp extends Component {
           headingImg: "/images/MozaikPlay.png",
           text: "Deciding what to study is tricky. We'll help",
           br:"you find the right course in the creative industry.",
-          background: 'https://res.cloudinary.com/mozaik/image/upload/q_auto/v1521858246/cory-gazaille-425907-unsplash_btnvtk.png',
+          background: 'https://res.cloudinary.com/mozaik/image/upload/v1524642297/cory-gazaille-425907-unsplash_yhogbw.png',
           video: true,
           styles: {
             h1:{
