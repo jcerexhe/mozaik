@@ -90,16 +90,16 @@ export default class Search extends Component {
       return;
     }
 
-    if(area == 'interestAreas'){
-      this.setState({
-        discipline: {
-          ...discipline,
-          ['interestAreas']: [val],
-          ['interestDisciplines']: ['all areas']
-        }
-      });
-      return;
-    }
+    // if(area == 'interestAreas'){
+    //   this.setState({
+    //     discipline: {
+    //       ...discipline,
+    //       ['interestAreas']: [val],
+    //       ['interestDisciplines']: ['all areas']
+    //     }
+    //   });
+    //   return;
+    // }
     _.remove(interests, (v) => { return v.indexOf('all areas') != -1 });
     if (interests.includes(val))
       _.remove(interests, (v) => { return v.indexOf(val) != -1 });
