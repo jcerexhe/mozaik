@@ -126,17 +126,17 @@ schoolSchema.pre('findOne', autopopulate);
 schoolSchema.post('find', function (schools) {
   return _.map(schools, (school) => {
     school.logo = cloudinary.url(`${school.logo}`);
-    school.header_image_1 = cloudinary.url(`${school.header_image_1}`);
-    school.header_image_2 = cloudinary.url(`${school.header_image_2}`);
+    school.header_image_1 = cloudinary.url(`${school.header_image_1}`, { quality: 'auto:low'});
+    school.header_image_2 = cloudinary.url(`${school.header_image_2}`, { quality: 'auto:low'});
     return school;
   });
 });
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}`);
-  school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`);
-  school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`);
+  school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`, { quality: 'auto:low'});
+  school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`, { quality: 'auto:low'});
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
-    return cloudinary.url(`${img}.jpg`);
+    return cloudinary.url(`${img}.jpg`, { quality: '10'});
   });
   return school;
 });

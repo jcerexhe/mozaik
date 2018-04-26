@@ -14,12 +14,12 @@ export default class Search extends Component {
     const design = ["Colour Design", "Design", "Digital Design", "Fashion Design", "Games Design", "Graphic Design", "Industrial Design", "Interior Design", "Textile Design", "UX/UI"];
     const photog = ["Art Photography", "Commercial Photography", "Digital Imaging", "Documentary Photography", "Fashion Photography", "Photography", "Photography Design", "Photojournalism", "Photomedia", "Visual Communication"];
     const builtEnv = ["Architecture", "Building Design", "Built Environment", "Digital Architecture", "Interior Decoration", "Interior Design", "Spatial Design", "Staging", "Styling", "Urban Design"];
-    const busCreat = ["Arts Management", "Creative Leadership", "Event Management", "Fashion Business", "Finance for Creative Industries", "Live Production", "Marketing for Entertainment Business", "Music Business", "Screen Business", "Stage Management"];
+    const busCreat = ["Arts Management", "Creative Leadership", "Event Management", "Fashion Business", "Finance for Creative Industries", "Live Production", "Marketing for Entmnt Bus", "Music Business", "Screen Business", "Stage Management"];
     this.state = {
       searchCategory: 'discipline', // options: [discipline, categories, search]
       discipline: {
         interestAreas: ['all areas'],
-        interestDisciplines: ['all areas'],
+        interestDisciplines: ['all disciplines'],
         interestCountries: ['all areas']
       },
       categories: [],
@@ -67,7 +67,7 @@ export default class Search extends Component {
         discipline: {
           ...discipline,
           ['interestAreas']: ['all areas'],
-          ['interestDisciplines']: ['all areas'],
+          ['interestDisciplines']: ['all disciplines'],
           ['interestCountries']: ['all areas']
         }
       });
@@ -75,32 +75,46 @@ export default class Search extends Component {
       return;
 
   }
+
+  renderDisBox(filter, active, start, end){
+      return(
+          <Filter
+            filterItems={ filter.slice(start, end) }
+            activeItems={ active }
+            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
+            isHome={ true }
+            interest='discipline'
+          />
+        );
+
+  }
   updateDiscipline(area, val) {
     console.log(val);
     this.setState({ searchCategory: 'discipline'});
     const { discipline } = this.state;
     let interests = this.state.discipline[area];
-    if (val === 'all areas') {
+    if ((val === 'all areas') || (val === 'all disciplines')) {
       this.setState({
         discipline: {
           ...discipline,
-          [area]: ['all areas']
+          [area]: [val]
         }
       });
       return;
     }
 
-    if(area == 'interestAreas'){
-      this.setState({
-        discipline: {
-          ...discipline,
-          ['interestAreas']: [val],
-          ['interestDisciplines']: ['all areas']
-        }
-      });
-      return;
-    }
+    // if(area == 'interestAreas'){
+    //   this.setState({
+    //     discipline: {
+    //       ...discipline,
+    //       ['interestAreas']: [val],
+    //       ['interestDisciplines']: ['all areas']
+    //     }
+    //   });
+    //   return;
+    // }
     _.remove(interests, (v) => { return v.indexOf('all areas') != -1 });
+        _.remove(interests, (v) => { return v.indexOf('all disciplines') != -1 });
     if (interests.includes(val))
       _.remove(interests, (v) => { return v.indexOf(val) != -1 });
     else
@@ -137,11 +151,23 @@ export default class Search extends Component {
 
   renderDiscipline() {
     const { discipline, areas } = this.state;
-    const countries = ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'SINGAPORE', 'USA'];
+    const countries = ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'];
     let interestDisciplines = _.flatten(_.map(areas, (v, k) => { return (discipline.interestAreas.includes(k) ? v : []) }));
     if (interestDisciplines.length === 0) {
-      interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) })));
+      interestDisciplines = _.uniq(_.flatten(_.map(areas, (v, k) => { return v.slice(0, 2) }))).slice(0, 10);
     }
+    let count = 0;
+    let start = 0;
+    let end = 7;
+    let sss = []
+
+                while(['all disciplines'].concat(interestDisciplines).length >= count){
+              sss.push(this.renderDisBox(['all disciplines'].concat(interestDisciplines), discipline.interestDisciplines, start, end));
+                 
+                    count += 7;
+      start += 7;
+      end += 7;
+            }
 
     return (
       <div id='search-discipline'>
@@ -234,89 +260,14 @@ export default class Search extends Component {
         </div>
           <hr className="search-line" />
         <div className='interest-disciplines'>
-          <div className="interest-disciplines-box">
-            <Filter
-            filterItems={ ['all areas'] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[0]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[1]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[2]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-          </div>
-          <div className="interest-disciplines-box-2">
-            <Filter
-            filterItems={ [interestDisciplines[3]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[4]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[5]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-          </div>
-          <div className="interest-disciplines-box">
-            <Filter
-            filterItems={ [interestDisciplines[6]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[7]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[8]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-            <Filter
-            filterItems={ [interestDisciplines[9]] }
-            activeItems={ discipline.interestDisciplines }
-            onClick={ (val) => this.updateDiscipline('interestDisciplines', val) }
-            isHome={ true }
-            interest='discipline'
-            />
-          </div>
+          { 
+            _.map(sss, (dis) => {
+                return(
+                     dis 
+                  );
+            })
+          }
+        
         </div>
         <br />
         <div className='interest-countries'>
