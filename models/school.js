@@ -136,7 +136,7 @@ schoolSchema.post('findOne', async function (school) {
   school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`, { quality: 'auto:low'});
   school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`, { quality: 'auto:low'});
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
-    return cloudinary.url(`${img}.jpg`, { quality: 'auto:low'});
+    return cloudinary.url(`${img}.jpg`, { quality: 'auto:low', gravity: 'auto', crop: 'fill', height: 400, width: 400 });
   });
   return school;
 });
