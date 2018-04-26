@@ -296,7 +296,7 @@ input.input-newsletter:focus {
 .discipline {
   border: 3px solid #FFFFFF;
   background: #FF6D6D;
-  width: 25vh; }
+  width: 27vh; }
 
 .country {
   border: 3px solid #FFFFFF;
@@ -876,7 +876,7 @@ a.btn {
           list-style-type: none;
           text-align: center; }
           .study-areas-box .study-areas .area-box .disciplines ul li {
-            padding: 2px;
+            padding: 1px;
             display: block; }
             .study-areas-box .study-areas .area-box .disciplines ul li .filter-btn {
               padding: 0px 8px;
@@ -1226,7 +1226,7 @@ a.btn {
   position: absolute;
   width: 100%;
   height: 80vh;
-  background-image: url(https://res.cloudinary.com/mozaik/image/upload/v1522036059/About_Us_Living_Room_w_Guitar_SplitShire_Free_tdblq7.jpg);
+  background-image: url(https://res.cloudinary.com/mozaik/image/upload/q_auto/v1522036059/About_Us_Living_Room_w_Guitar_SplitShire_Free_tdblq7.jpg);
   background-size: 100% 100%;
   background-position-y: 20%;
   background-repeat: no-repeat;
@@ -1504,7 +1504,7 @@ contact-field {
   position: absolute;
   width: 100%;
   height: 90vh;
-  background-image: url(https://res.cloudinary.com/mozaik/image/upload/v1522046952/Abstract_Design_Kaboompics_CCO_ifmyod.jpg);
+  background-image: url(http://res.cloudinary.com/mozaik/image/upload/q_auto/v1522046952/Abstract_Design_Kaboompics_CCO_ifmyod.jpg);
   background-size: 100% 100%;
   background-position-y: 20%;
   background-repeat: no-repeat;
@@ -2189,7 +2189,7 @@ ul.careers-lists > li:before {
   z-index: 101;
   width: 100vw;
   height: 100vh;
-  background-image: url("https://res.cloudinary.com/mozaik/image/upload/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
+  background-image: url("http://res.cloudinary.com/mozaik/image/upload/q_auto/v1521785678/bokeh-2245355_1920_wp86yq.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -2600,7 +2600,7 @@ ul.careers-lists > li:before {
     width: 80%;
     margin: 0 auto; }
   .search-content .interest-disciplines ul {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
   .search-content .interest-areas, .search-content .interest-disciplines {
     margin-top: 50px;
@@ -2887,8 +2887,7 @@ ul.careers-lists > li:before {
   .interest-area-box .area-1, .interest-area-box .area-2 {
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    /* justify-content: center; */
     display: -ms-flexbox;
     display: flex; }
 

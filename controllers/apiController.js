@@ -42,7 +42,7 @@ exports.courses = async (req, res) => {
         targets.push({ areas: { $elemMatch:{$in: areas} } });
       }
 
-        if ((!interestDisciplines.includes('all areas')) && (areas[0] !== 'all areas')){
+        if ((!interestDisciplines.includes('all disciplines')) && (areas[0] !== 'all areas')){
           // targets.push({ disciplines: { $elemMatch:{$in: interestDisciplines }} });
           targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: areas } }]});
         }
@@ -51,7 +51,7 @@ exports.courses = async (req, res) => {
 
         // }
 
-        if ((!interestDisciplines.includes('all areas')) && (areas[0] === 'all areas')){
+        if ((!interestDisciplines.includes('all disciplines')) && (areas[0] === 'all areas')){
           targets.push({$and: [{ disciplines: { $in: interestDisciplines } }, { areas: { $in: studyAreas } }]});
 
         }

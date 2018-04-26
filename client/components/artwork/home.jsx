@@ -164,7 +164,7 @@ export default class HomeArtworkApp extends Component {
       <div>
         {/*Home Artworks Header Text*/}
         <div className="home-artworks-top-text">
-          <h1>Search <span>&</span> Play</h1>
+          <h1>Search <span>&</span> Play</h1><br/><br/><br/>
           <a href="/search">DISCOVER</a>
         </div>
          <img src='/images/white-arrow-down.png' alt='arrow-down' className='home-right-arrow-button' id="home-artworks-changer-arrow" onClick={() => this.closeLightbox()}/>

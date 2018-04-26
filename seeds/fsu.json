@@ -1837,6 +1837,7 @@
       	"Finance for Creatives",
       	"Live Production",
       	"Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
       	"Music Business",
       	"Screen Business",
       	"Stage Management",
@@ -1924,6 +1925,7 @@
       	"Fashion Business",
       	"Finance for Creatives",
       	"Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
       	"Screen Business",
       	"Audience Engagement",
       	"Audience Metric",
@@ -2011,6 +2013,7 @@
       	"Creative Leadership",
       	"Fashion Business",
       	"Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
       	"Screen Business",
       	"Audience Engagement",
       	"Audience Metric",
@@ -2094,6 +2097,7 @@
       	"Creative Leadership",
       	"Fashion Business",
       	"Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
       	"Screen Business",
       	"Audience Engagement",
       	"Audience Metric",
@@ -2188,6 +2192,7 @@
       	"Arts Management",
       	"Creative Leadership",
       	"Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
       	"Screen Business",
       	"Audience Engagement",
       	"Audience Metric",
@@ -2375,7 +2380,7 @@
   ],
   "alumni": [
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "FSU/alumni/Garry_Rizzo",
       "name": "GARY RIZZO",
       "school_name": "Full Sail University (FSU)",
       "course": "Recording Arts",
@@ -2383,7 +2388,7 @@
       "credits": "The Dark Knight, Dunkirk, Interstellar"
     },
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "FSU/alumni/chance-glasco",
       "name": "CHANCE GLASCO",
       "school_name": "Full Sail University (FSU)",
       "course": "Computer Animation",
@@ -2391,7 +2396,7 @@
       "credits": "Medal of Honor:  Allied Assault, Call of Duty 4:  Modern Warfare"
     },
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "FSU/alumni/Leslie_brathwaite",
       "name": "LESLIE BRATHWAITE",
       "school_name": "Full Sail University (FSU)",
       "course": "Recording Arts",
@@ -2399,7 +2404,7 @@
       "credits": "TLC, Pharrel Williams, Michael Jackson, Cher"
     },
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "FSU/alumni/nathaniel-howe",
       "name": "NATHANIEL HOWE",
       "school_name": "Full Sail University (FSU)",
       "course": "Computer Animation",
