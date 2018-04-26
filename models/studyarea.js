@@ -17,6 +17,7 @@ const studyAreaSchema = new Schema({
   title: String,
   disciplines1: [String],
   disciplines2: [String],
+  disciplines3: [String],
   description: String,
   keywords1: [String],
   keywords2: [String],
