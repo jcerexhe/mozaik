@@ -1577,7 +1577,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 90px; }
+  margin-bottom: 100px; }
 
 .card1 {
   margin-top: 2%;
@@ -1598,7 +1598,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card3 {
   margin-top: 2%;
@@ -1621,7 +1621,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card5 {
   margin-top: 2%;
@@ -1642,11 +1642,12 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   left: 9%; }
 
 .card7 {
   margin-top: 2%;
+  margin-bottom: -30px;
   width: 40%;
   border-color: #FFFFFF; }
 
@@ -1665,7 +1666,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card9 {
   margin-top: 2%;
@@ -1727,6 +1728,11 @@ p.panel-title-text-black {
 .small-line-agency {
   width: 85%;
   margin-top: -20px; }
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
 
 .triangle-right {
   float: right;
