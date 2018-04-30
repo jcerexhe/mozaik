@@ -2003,7 +2003,10 @@ ul.careers-lists > li:before {
 
 .select-area-text > p {
   text-align: center;
-  color: black; }
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .selected-study-areas {
   margin-bottom: 10vh;

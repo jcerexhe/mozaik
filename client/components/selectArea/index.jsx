@@ -12,9 +12,12 @@ export default class SelectAreaApp extends Component {
 				</div>
 				<div className='select-area-container'>
 					<div className='select-area-text'>
-						<h1>EXPLORE THE DIFFERENT STUDY AREAS</h1>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
+						<h1>EXPLORE THE DIFFERENT STUDY AREAS</h1><br/>
+						<p>There are many different study areas you can choose from that will set you in the 
+						ight path to pursue a career in the creative industries. To make this process easier 
+						for you, Mozaik Play has categorised these options into 9 Study Areas. Click below 
+						the different options and discover additional disciplines and potential career outcomes 
+						under each study area category.</p>
 					</div>
 				</div>
 				<div className="selected-study-areas">

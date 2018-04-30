@@ -45,14 +45,11 @@ constructor(props) {
   				<h1>CAREERS</h1>
   				<div className='careers'>
 	  				<ul className='careers-lists'>
-	  					<a className='careers-link' href="#">{studyarea.keywords1}</a><br/><br/>
+	  					<a className='careers-link' href="#">{studyarea.keywords1}</a>
 	  					<a className='careers-link' href="#">{studyarea.keywords2}</a>
 					</ul>
 				</div>
-				<div className='study-area-alumni'>
-					{/*<div className='study-area-alumni-qoute'>
-						<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
-					</div>*/}
+				{/*<div className='study-area-alumni'>
 					<div className='study-area-alumni-qoute'>
 						<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
 					</div>
@@ -67,7 +64,7 @@ constructor(props) {
 							<p className="study-area-alumni-description">{studyarea.alumni_description}</p>
 						</div>	
 					</div>
-				</div>
+				</div>*/}
 				<div className='study-area-enquire-img' >
 					<img src="/images/buttons/Enquire.png" />
 				</div>	
