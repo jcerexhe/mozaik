@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import Filter from '../shared/filter.jsx';
 import CourseCard from './courseCard.jsx';
+import HubspotForm from 'react-hubspot-form';
+import RenderForm from '../shared/renderForm';
+import {PortalId, FormId} from '../shared/hbsform';
 
 export default class CoursesApp extends Component {
   constructor(props) {
@@ -18,7 +21,8 @@ export default class CoursesApp extends Component {
       builtEnvironment: ['Architecture', 'Building Design', 'Built Environment', 'Digital Architecture', 'Interior Decoration', 'Interior Design', 'Spatial Design', 'Staging', 'Styling', 'Urban Design'],
       businessCreative: ['Arts Management', 'Creative Leadership', 'Event Management', 'Fashion Business', 'Finance for Creative Industries', 'Live Production', 'Marketing for Entertainment Business', 'Music Business', 'Screen Business','Stage Management'],
       activeCourses: props.courses,
-      limit: 4
+      limit: 4,
+      formClicked: false
     };
 
   }
@@ -163,9 +167,10 @@ export default class CoursesApp extends Component {
             </div>
           </div>
         </div>
-
         <div className='course-bg'>
+
           <div className='course-card-container'>
+
               {this.renderNoResult()}
             {
           

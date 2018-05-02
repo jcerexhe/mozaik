@@ -3356,6 +3356,26 @@ ul.careers-lists > li:before {
   font-weight: 100;
   color: #000; }
 
+.course-form {
+  position: absolute;
+  right: -80px;
+  top: -30px;
+  border: 1px solid #fff;
+  z-index: 100;
+  background-color: #000; }
+  .course-form .hs-form-private {
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 10px; }
+    .course-form .hs-form-private input[type="text"], .course-form .hs-form-private input[type="email"], .course-form .hs-form-private input[type="tel"] {
+      background-color: #fff !important;
+      width: 200px; }
+    .course-form .hs-form-private label {
+      color: #fff !important; }
+
+.course-form-2 {
+  right: -180px !important; }
+
 .discover-column-container {
   height: calc(140vh - 140px);
   width: 20%;
