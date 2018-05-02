@@ -1170,8 +1170,9 @@ a.btn {
 
 .hbspt-form {
   backround-color: red !important; }
-  .hbspt-form input[type="text"] {
-    background-color: #fff !important; }
+  .hbspt-form input[type="text"], .hbspt-form input[type="email"], .hbspt-form input[type="tel"] {
+    background-color: #fff !important;
+    width: 150px; }
   .hbspt-form label {
     color: #fff !important; }
 

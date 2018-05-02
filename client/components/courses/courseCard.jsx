@@ -107,8 +107,8 @@ export default class CourseCard extends Component {
                 </div>
               </div>
               <div className='course-buttons' style={{textAlign: 'left'}}>
-                <a className='btn' href={'#form'+course.slug} onClick={()=>this.tryFunc('60eea35e-8cae-4e5b-990b-3f8b1b403d65')}>enquire</a>
-                <a className='btn' href={'#form'+ course.slug} onClick={()=>this.tryFunc('60eea35e-8cae-4e5b-990b-3f8b1b403d65')}>apply</a>
+                <a className='btn' href={'#form'+course.slug} onClick={()=>this.tryFunc(course.formidce)}>enquire</a>
+                <a className='btn' href={'#form'+ course.slug} onClick={()=>this.tryFunc(course.formidca)}>apply</a>
               </div>
             </div>
           </div>
@@ -173,8 +173,8 @@ export default class CourseCard extends Component {
               </div>
             </div>
             <div className='course-buttons'>
-              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc('60eea35e-8cae-4e5b-990b-3f8b1b403d65')}>enquire</a>
-              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc('60eea35e-8cae-4e5b-990b-3f8b1b403d65')}>apply</a>
+              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc(course.formidce)}>enquire</a>
+              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc(course.formidca)}>apply</a>
             </div>
           </div>
         </div>

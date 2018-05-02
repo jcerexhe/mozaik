@@ -84,6 +84,8 @@ const schoolSchema = new Schema({
   video: String,
   header_image_1: String,
   header_image_2: String,
+  formidse: String,
+  formidsa: String,
 });
 
 schoolSchema.pre('save', async function (next) {
