@@ -667,8 +667,9 @@ a.btn{
 
 .hbspt-form{
   backround-color: red !important;
-  input[type="text"]{
+  input[type="text"], input[type="email"], input[type="tel"]{
     background-color: #fff !important;
+    width: 150px;
   }
   label{
     color: #fff !important;

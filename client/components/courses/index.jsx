@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import Filter from '../shared/filter.jsx';
 import CourseCard from './courseCard.jsx';
+import HubspotForm from 'react-hubspot-form';
+import RenderForm from '../shared/renderForm';
+import {PortalId, FormId} from '../shared/hbsform';
 
 export default class CoursesApp extends Component {
   constructor(props) {
@@ -18,7 +21,8 @@ export default class CoursesApp extends Component {
       builtEnvironment: ['Architecture', 'Building Design', 'Built Environment', 'Digital Architecture', 'Interior Decoration', 'Interior Design', 'Spatial Design', 'Staging', 'Styling', 'Urban Design'],
       businessCreative: ['Arts Management', 'Creative Leadership', 'Event Management', 'Fashion Business', 'Finance for Creative Industries', 'Live Production', 'Marketing for Entertainment Business', 'Music Business', 'Screen Business','Stage Management'],
       activeCourses: props.courses,
-      limit: 4
+      limit: 4,
+      formClicked: false
     };
 
   }
@@ -125,47 +129,48 @@ export default class CoursesApp extends Component {
         <div className="study-areas-box">
           <h1>study areas</h1>
           <div className="study-areas">
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/digitalmedia.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287645/study-areas/pexels-photo-433617.jpg")'}}>
               <h3 className="padding">digital media</h3>
               {this.enableTile("Digital Media", this.state.digitalMedia)}
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/visualcomm.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287309/study-areas/aleks-dorohovich-26-unsplash.jpg")'}}>
               <h3 >visual communication</h3>
               {this.enableTile("Visual Communication", this.state.visualComm)}
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/finearts.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287447/study-areas/pexels-photo-262034.jpg")'}}>
               <h3 className="padding">fine arts</h3>
               {this.enableTile("Fine Arts", this.state.fineArts)}             
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/filmtv.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287352/study-areas/chris-murray-563843-unsplash.jpg")'}}>
               <h3 className="padding">film/tv/audio</h3>
               {this.enableTile("Film/TV/Audio", this.state.filmAudio)}     
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/performingarts.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522806278/study-areas/pexels-photo-415307.jpg")'}}>
               <h3 className="padding">performing arts</h3>
               {this.enableTile("Performing Arts", this.state.performArts)}  
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/design.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
               <h3 className="padding">design</h3>
               {this.enableTile("Design", this.state.design)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/photography.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
               <h3 className="padding">photography</h3>
               {this.enableTile("Photography", this.state.photography)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/builtenvironment.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
               <h3 className="padding">built environment</h3>
               {this.enableTile("Built Environment", this.state.builtEnvironment)} 
             </div>
-            <div className="area-box" style={{backgroundImage: 'url("/images/study-area-tile/businesscreative.png")'}}>
+            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
               <h3>business for creatives</h3>
               {this.enableTile("Business for Creatives", this.state.businessCreative)}
             </div>
           </div>
         </div>
-
         <div className='course-bg'>
+
           <div className='course-card-container'>
+
               {this.renderNoResult()}
             {
           
