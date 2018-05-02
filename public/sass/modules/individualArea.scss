@@ -1,7 +1,6 @@
 .study-area-page-heading {
     border: 10px solid #181818;
     width: 40%;
-    
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -88,9 +87,14 @@ img.study-area-background{
 .careers-container{
   height: 200vh;
    /*https://uigradients.com/*/
-  background:
+  /*background:
     linear-gradient(to left, #3c1053 20%, #4389A2 90%), 
-    linear-gradient(to right, #3c1053 20%, #4389A2 90%);
+    linear-gradient(to right, #3c1053 20%, #4389A2 90%);*/
+    /*background-image: linear-gradient(to right top, #231bc2 40%, #6e00b2, #9100a1, #a90091, #b90983);*/
+    /*background-image: linear-gradient(to right top, #231bc2 40%, #7700c1, #9a00aa, #ae0095, #b90983); */
+    /*background-image: linear-gradient(to right top, #1848cb 30%, #6e40c6, #9c34bd, #bf25af, #dc149f);*/
+    /*background-image: linear-gradient(to right top, #0e4d87 30%, #414e9c, #7249a7, #a339a5, #d11396);*/
+    background-image: linear-gradient(to right top, #1a5799 30%, #4a54a6, #764daa, #9f3ea3, #c42593);
    position: absolute;
    top: 100%; 
     z-index: -1;
