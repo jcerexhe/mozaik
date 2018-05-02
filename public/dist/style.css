@@ -3393,7 +3393,8 @@ ul.careers-lists > li:before {
     padding-top: 10px; }
     .course-form .hs-form-private input[type="text"], .course-form .hs-form-private input[type="email"], .course-form .hs-form-private input[type="tel"] {
       background-color: #fff !important;
-      width: 200px; }
+      width: 200px;
+      color: #000; }
     .course-form .hs-form-private label {
       color: #fff !important; }
 
