@@ -120,8 +120,8 @@
         "Audition"
       ],
       "image": "VFS/course_pics/VFS_Acting_Essentials",
-      "formidsa": "1fac134d-fc71-4a55-a254-e313c166a23c",
-      "formidse": "180fc8f1-bda9-4610-a10b-532a2cce626e"
+      "formidca": "1fac134d-fc71-4a55-a254-e313c166a23c",
+      "formidce": "180fc8f1-bda9-4610-a10b-532a2cce626e"
     },
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
@@ -358,8 +358,8 @@
         "Sculpting"
       ],
       "image": "VFS/course_pics/VFS_Makeup_Design_for_Film_Television",
-      "formidsa": "3bd257a8-2e6c-4df1-9f69-ce35055d4c3f",
-      "formidse": "d50008ca-417f-4b1c-9e22-91397b4961f4"
+      "formidca": "3bd257a8-2e6c-4df1-9f69-ce35055d4c3f",
+      "formidce": "d50008ca-417f-4b1c-9e22-91397b4961f4"
     },
     {
       "name": "SOUND DESIGN FOR VISUAL MEDIA",
@@ -421,7 +421,9 @@
         "Digital Audio",
         "Electronic Sound"
       ],
-      "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media"
+      "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media",
+      "formidca": "01c9659b-5b44-455b-8622-1847d0f6fa8d",
+      "formidce": "f58488c0-5e18-44aa-8b1f-f1e3c5d07346"
     },
     {
       "name": "WRITING FOR FILM  + TELEVISION",
@@ -472,7 +474,9 @@
         "Crafting Story",
         "Creative Writing"
       ],
-      "image": "VFS/course_pics/VFS_Writing_for_Film_and_Television"
+      "image": "VFS/course_pics/VFS_Writing_for_Film_and_Television",
+      "formidca": "8c3ee3b5-bb7e-43b7-865c-34b06e8fea46",
+      "formidce": "a1686a25-f5b5-4c71-b176-2e12249bc23d"
     },
     {
       "name": "3D ANIMATION + VISUAL EFFECTS ",
@@ -833,7 +837,9 @@
         "Digital Project Management",
         "Cross-Platform Apps"
       ],
-      "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile"
+      "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile",
+      "formidca": "a53216e2-9220-4831-b530-545ef0a6980a",
+      "formidce": "464c859d-aab2-445e-b886-129711173872"
     }
   ],
   "artworks": [
