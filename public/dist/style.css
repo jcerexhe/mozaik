@@ -1577,7 +1577,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 90px; }
+  margin-bottom: 100px; }
 
 .card1 {
   margin-top: 2%;
@@ -1598,7 +1598,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card3 {
   margin-top: 2%;
@@ -1621,7 +1621,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card5 {
   margin-top: 2%;
@@ -1642,11 +1642,12 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   left: 9%; }
 
 .card7 {
   margin-top: 2%;
+  margin-bottom: -30px;
   width: 40%;
   border-color: #FFFFFF; }
 
@@ -1665,7 +1666,7 @@ contact-field {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
 
 .card9 {
   margin-top: 2%;
@@ -1727,6 +1728,11 @@ p.panel-title-text-black {
 .small-line-agency {
   width: 85%;
   margin-top: -20px; }
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
 
 .triangle-right {
   float: right;
@@ -1827,7 +1833,14 @@ img.study-area-background {
 .careers-container {
   height: 200vh;
   /*https://uigradients.com/*/
-  background: linear-gradient(to left, #3c1053 20%, #4389A2 90%), linear-gradient(to right, #3c1053 20%, #4389A2 90%);
+  /*background:
+    linear-gradient(to left, #3c1053 20%, #4389A2 90%), 
+    linear-gradient(to right, #3c1053 20%, #4389A2 90%);*/
+  /*background-image: linear-gradient(to right top, #231bc2 40%, #6e00b2, #9100a1, #a90091, #b90983);*/
+  /*background-image: linear-gradient(to right top, #231bc2 40%, #7700c1, #9a00aa, #ae0095, #b90983); */
+  /*background-image: linear-gradient(to right top, #1848cb 30%, #6e40c6, #9c34bd, #bf25af, #dc149f);*/
+  /*background-image: linear-gradient(to right top, #0e4d87 30%, #414e9c, #7249a7, #a339a5, #d11396);*/
+  background-image: linear-gradient(to right top, #1a5799 30%, #4a54a6, #764daa, #9f3ea3, #c42593);
   position: absolute;
   top: 100%;
   z-index: -1; }
@@ -1997,7 +2010,10 @@ ul.careers-lists > li:before {
 
 .select-area-text > p {
   text-align: center;
-  color: black; }
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .selected-study-areas {
   margin-bottom: 10vh;
