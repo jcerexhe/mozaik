@@ -122,9 +122,11 @@ export default class FacilitiesApp extends Component {
 
   render() {
     const settings = {
-      autoplay: true,
+      autoplay: false,
       arrows: true,
       dots: false,
+      slidesToShow: 1,
+      slideToScroll: 1,
       nextArrow: RightArrow,
       prevArrow: LeftArrow,
     }

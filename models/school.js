@@ -84,6 +84,8 @@ const schoolSchema = new Schema({
   video: String,
   header_image_1: String,
   header_image_2: String,
+  formidse: String,
+  formidsa: String,
 });
 
 schoolSchema.pre('save', async function (next) {
@@ -126,17 +128,17 @@ schoolSchema.pre('findOne', autopopulate);
 schoolSchema.post('find', function (schools) {
   return _.map(schools, (school) => {
     school.logo = cloudinary.url(`${school.logo}`);
-    school.header_image_1 = cloudinary.url(`${school.header_image_1}`, { quality: 'auto'});
-    school.header_image_2 = cloudinary.url(`${school.header_image_2}`, { quality: 'auto'});
+    school.header_image_1 = cloudinary.url(`${school.header_image_1}`, { quality: 'auto:low'});
+    school.header_image_2 = cloudinary.url(`${school.header_image_2}`, { quality: 'auto:low'});
     return school;
   });
 });
 schoolSchema.post('findOne', async function (school) {
   school.logo = cloudinary.url(`${school.logo}`);
-  school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`, { quality: 'auto'});
-  school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`, { quality: 'auto'});
+  school.header_image_1 = cloudinary.url(`${school.header_image_1}.jpg`, { quality: 'auto:low'});
+  school.header_image_2 = cloudinary.url(`${school.header_image_2}.jpg`, { quality: 'auto:low'});
   school.facilitiesImages = _.map(school.facilitiesImages, (img) => {
-    return cloudinary.url(`${img}.jpg`, { quality: 'auto'});
+    return cloudinary.url(`${img}.jpg`, { quality: 'auto:low', gravity: 'auto', crop: 'fill', height: 400, width: 400 });
   });
   return school;
 });

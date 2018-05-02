@@ -43,7 +43,7 @@ const alumniSchema = new Schema({
 
 alumniSchema.post('find', async function(alumni) {
   return _.map(alumni, (alum) => {
-    alum.photo = cloudinary.url(`${alum.photo}.jpg`, { quality: 'auto', gravity: 'auto', crop: 'fill', height: 400, width: 400 });
+    alum.photo = cloudinary.url(`${alum.photo}.jpg`, { quality: 'auto:low', gravity: 'auto', crop: 'fill', height: 400, width: 400 });
     return alum;
   });
 });

@@ -17,6 +17,7 @@ const studyAreaSchema = new Schema({
   title: String,
   disciplines1: [String],
   disciplines2: [String],
+  disciplines3: [String],
   description: String,
   keywords1: [String],
   keywords2: [String],
@@ -50,8 +51,8 @@ studyAreaSchema.pre('save', async function (next) {
 //   });
 // });
 studyAreaSchema.post('findOne', async function (area) {
-  area.image = cloudinary.url(`${area.image}.jpg`, { quality: 'auto'});
-  area.alumni_photo = cloudinary.url(`${area.alumni_photo}.jpg`, { quality: 'auto'});
+  area.image = cloudinary.url(`${area.image}.jpg`, { quality: 'auto:low'});
+  area.alumni_photo = cloudinary.url(`${area.alumni_photo}.jpg`, { quality: 'auto:low'});
   return area;
 });
 

@@ -42,13 +42,13 @@ block content
             li=scholarship
     .school-links
         .school-link
-          a(href='#' onclick="eForm()" class='btn')
+          a(href='#' onclick="eForm('"+ school.formidsa +"')" class='btn')
             span Apply
         .school-link
-          a(href='#' onclick="eForm()" class='btn')
+          a(href='#' onclick="eForm('"+ school.formidse +"')" class='btn')
             span Enquire
         .school-link
-          a(href='#' onclick="cForm()" class='btn')
+          a(href='#'  class='btn')
             span Course Guide
   !=Courses
   .other-section
@@ -84,17 +84,16 @@ append stylesheets
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
 
   // if lte IE 8
-  script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2-legacy.js')
-  script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2.js')
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   script.
  
     var btn = document.createElement("button");
     btn.innerHTML = '&times;';
          
-     function eForm(){  
+     function eForm(formId){  
        hbspt.forms.create({
         portalId: '2708822',
-        formId: '8e92d188-4259-4263-b5c8-3865663c6f4d',
+        formId: formId,
          onFormReady: closeForm
         });
       };
@@ -102,7 +101,7 @@ append stylesheets
      function cForm() {
       hbspt.forms.create({
       portalId: '2708822',
-      formId: 'ade15aad-d63b-4d3f-a2ab-f418fe9c136f',
+      formId: formId,
       onFormReady: closeForm
       });
       

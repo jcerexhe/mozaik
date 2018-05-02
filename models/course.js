@@ -51,6 +51,8 @@ const courseSchema = new Schema({
     required: 'You must supply a school!',
   },
   slug: String,
+  formidce: String,
+  formidca: String,
 });
 
 courseSchema.index({course: 1}, {collation: {locale: "en", strength: 2}});

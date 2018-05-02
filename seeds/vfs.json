@@ -72,7 +72,9 @@
     "video": "",
     "courseGuide": "",
     "header_image_1": "VFS/mike-benna-570243-unsplash",
-    "header_image_2": "VFS/school_gallery/VFS_Green_Screen_Room"
+    "header_image_2": "VFS/school_gallery/VFS_Green_Screen_Room",
+    "formidsa": "602b1164-e68d-42bb-900c-832321e0f67e",
+    "formidse": "58e5987b-35cc-463e-8ca1-2c3811b66b93"
   },
   "courses": [
     {
@@ -117,7 +119,9 @@
         "Voice Practice",
         "Audition"
       ],
-      "image": "VFS/course_pics/VFS_Acting_Essentials"
+      "image": "VFS/course_pics/VFS_Acting_Essentials",
+      "formidca": "1fac134d-fc71-4a55-a254-e313c166a23c",
+      "formidce": "180fc8f1-bda9-4610-a10b-532a2cce626e"
     },
     {
       "name": "FOUNDATION VISUAL ART + DESIGN",
@@ -353,7 +357,9 @@
         "3D Design",
         "Sculpting"
       ],
-      "image": "VFS/course_pics/VFS_Makeup_Design_for_Film_Television"
+      "image": "VFS/course_pics/VFS_Makeup_Design_for_Film_Television",
+      "formidca": "3bd257a8-2e6c-4df1-9f69-ce35055d4c3f",
+      "formidce": "d50008ca-417f-4b1c-9e22-91397b4961f4"
     },
     {
       "name": "SOUND DESIGN FOR VISUAL MEDIA",
@@ -415,7 +421,9 @@
         "Digital Audio",
         "Electronic Sound"
       ],
-      "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media"
+      "image": "VFS/course_pics/VFS_Sound_Design_for_Visual_Media",
+      "formidca": "01c9659b-5b44-455b-8622-1847d0f6fa8d",
+      "formidce": "f58488c0-5e18-44aa-8b1f-f1e3c5d07346"
     },
     {
       "name": "WRITING FOR FILM  + TELEVISION",
@@ -466,7 +474,9 @@
         "Crafting Story",
         "Creative Writing"
       ],
-      "image": "VFS/course_pics/VFS_Writing_for_Film_and_Television"
+      "image": "VFS/course_pics/VFS_Writing_for_Film_and_Television",
+      "formidca": "8c3ee3b5-bb7e-43b7-865c-34b06e8fea46",
+      "formidce": "a1686a25-f5b5-4c71-b176-2e12249bc23d"
     },
     {
       "name": "3D ANIMATION + VISUAL EFFECTS ",
@@ -533,7 +543,9 @@
         "Concept Artist",
         "Decoding Media"
       ],
-      "image": "VFS/course_pics/VFS_3D_Animation_Visual_Effects"
+      "image": "VFS/course_pics/VFS_3D_Animation_Visual_Effects",
+      "formidca": "60eea35e-8cae-4e5b-990b-3f8b1b403d65",
+      "formidce": "00ac5223-5dee-4c42-bedb-2a3dbe9b4be0"
     },    
   {
       "name": "ANIMATION CONCEPT ART",
@@ -583,7 +595,9 @@
         "Concept Artist",
         "Visual Storytelling"
       ],
-      "image": "VFS/course_pics/VFS_Animation_Concept_Art"
+      "image": "VFS/course_pics/VFS_Animation_Concept_Art",
+      "formidca": "9647892d-90f3-4816-b4e1-ddc873dd01f4",
+      "formidce": "e4453574-455c-4d74-800f-5cd16a87ccbd"
     },
     {
       "name": "CLASSICAL ANIMATION",
@@ -634,7 +648,9 @@
         "Digital Imaging",
         "Concept Artist"
       ],
-      "image": "VFS/course_pics/VFS_Classical_Animation"
+      "image": "VFS/course_pics/VFS_Classical_Animation",
+      "formidca": "7d4b88e8-212a-4c88-9176-ebe414a3df49",
+      "formidce": "cd1f0102-1a06-4634-99a6-e16047709ac3"
     },
     {
       "name": "DIGITAL DESIGN ",
@@ -759,7 +775,10 @@
         "Virtual Worlds",
         "2D Interactivity"
       ],
-      "image": "VFS/course_pics/VFS_Game_Design"
+      "image": "VFS/course_pics/VFS_Game_Design",
+      "formidca": "483f5834-eec5-41c0-8f6f-b940a0c457c8",
+      "formidce": "624191ca-1c9d-462c-94e8-5c7546e9aa2f"
+
     },
     {
       "name": "PROGRAMMING FOR GAMES, WEB + MOBILE",
@@ -818,7 +837,9 @@
         "Digital Project Management",
         "Cross-Platform Apps"
       ],
-      "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile"
+      "image": "VFS/course_pics/VFS_Programming_for_Games__Web_Mobile",
+      "formidca": "a53216e2-9220-4831-b530-545ef0a6980a",
+      "formidce": "464c859d-aab2-445e-b886-129711173872"
     }
   ],
   "artworks": [

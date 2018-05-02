@@ -136,7 +136,7 @@
   width: 91.5%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .card1{
@@ -159,7 +159,7 @@
   width: 91.5%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .card3{
@@ -185,7 +185,7 @@
   display: flex;
   flex-direction: row;
  
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .card5{
@@ -208,12 +208,13 @@
   width: 91.5%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   left: 9%;
 }
 
 .card7{
   margin-top: 2%;
+  margin-bottom: -30px;
   width: 40%;
   border-color: #FFFFFF;
 }
@@ -234,7 +235,7 @@
   display: flex;
   flex-direction: row;
  
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .card9{
   margin-top: 2%;
@@ -313,6 +314,12 @@ p.panel-title-text-black {
   width: 85%;
   margin-top: -20px;
  
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 .triangle-right{
