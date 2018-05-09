@@ -1838,6 +1838,108 @@
        "formidce": "52b29ec0-b005-4a26-94cd-7390b2e8178c"
     },
     {
+      "name": "BACHELOR OF SCIENCE - ENTERTAINMENT BUSINESS",
+      "school_name": "Full Sail University (FSU)",
+      "description": "In this program, students build a well-rounded understanding of topics specific to the entertainment industry, including media products and distribution, business finance, and entertainment law.",
+      "campus": [
+        "Winter Park",
+        "Online"
+      ],
+      "duration": [
+        "Campus - 20 Months", 
+        "Online - 29 Months"
+      ], 
+      "intakes": "Monthly",
+      "prices": [
+        {
+          "type": "Domestic students (Campus)",
+          "fees": 60000
+        },
+         {
+          "type": "International students (Campus)",
+          "fees": 60000
+        },
+         {
+          "type": "Domestic students (Online)",
+          "fees": 57000
+        },
+         {
+          "type": "International students (Online)",
+          "fees": 57000
+        }
+      ],
+      "qualifications": [
+        "Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Visual Communication",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Business for Creatives",
+        "Entertainment Business",
+        "Marketing",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Finance for Creatives",
+        "Live Production",
+        "Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
+        "Music Business",
+        "Screen Business",
+        "Stage Management",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Business Finance",
+        "Entertainment Law",
+        "Events Management",
+        "Distributor Agent",
+        "Distributor",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Legal Aspects of Media",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Cultural Studies",
+        "Business Law",
+        "Business Technology and Design",
+        "Digital Marketing",
+        "Leadership",
+        "Culture and Media",
+        "Social Media",
+        "Writing for Interactive Media",
+        "Packaging and Branding",
+        "Entrepreneurial Finance"
+      ],
+      "image": "",
+       "formidca": "78eaa646-3cef-4a7a-aca7-2ae7d86f4852",
+       "formidce": "88f11885-b1b7-428f-b49e-800da338f178"
+    },
+    {
       "name": "MASTER OF SCIENCE - ENTERTAINMENT BUSINESS",
       "school_name": "Full Sail University (FSU)",
       "description": "Students use case studies and in-depth industry research to gain a better understanding of what makes a successful business thrive in the entertainment world.",
