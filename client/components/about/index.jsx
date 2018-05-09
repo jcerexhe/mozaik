@@ -3,6 +3,22 @@ import _ from 'lodash';
 import Footer from '../footer/index.jsx';
 
 export default class AboutApp extends Component {
+	
+	componentDidMount() {
+  	const script = document.createElement('script');
+    script.src = 'http://js.hsforms.net/forms/shell.js';
+    document.body.appendChild(script);
+    
+    script.addEventListener('load', () => {
+    	if(window.hbspt) {
+      	window.hbspt.forms.create({
+        	portalId: "2708822",
+			formId: "9452cc7e-8460-4b34-83c3-ea9e23622b86",
+         	target: '#hubspotForm'
+        })
+      }
+    });
+  }
 	render() {
 		return (
 		<div>
@@ -30,7 +46,9 @@ export default class AboutApp extends Component {
 						<p>Say Hello</p>
 						<img src="/images/buttons/Contact-us.png" />
 					</div>
-					
+					<div class="hubspot-about">
+					 <div id="hubspotForm"></div>
+					</div>
 				</div>
 				<div>
 					<Footer/>
