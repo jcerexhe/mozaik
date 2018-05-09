@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Footer from '../footer/index.jsx';
 
 export default class AboutApp extends Component {
-	/*
+
 	componentDidMount() {
   	const script = document.createElement('script');
     script.src = 'http://js.hsforms.net/forms/shell.js';
@@ -18,7 +18,7 @@ export default class AboutApp extends Component {
         })
       }
     });
-  }*/
+  }
 	render() {
 		return (
 		<div>
