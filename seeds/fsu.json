@@ -106,7 +106,9 @@
     "video": "",
     "courseGuide": "",
     "header_image_1": "FSU/campus_photography/Full_Sail_University-14",
-    "header_image_2": "FSU/campus_photography/Full_Sail_University-16"
+    "header_image_2": "FSU/campus_photography/Full_Sail_University-16",
+    "formidsa": "f837d680-bf2a-41fb-9689-453bedb75f3e",
+    "formidse": "e94c6df6-f90a-41f8-9d4e-e79a66a134dd"
   },
   "courses": [
     {
@@ -156,7 +158,9 @@
       	"Electronic Sound",
       	"Radio"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "e87b8c17-a6f2-4255-989e-5f65b4f2fde3",
+      "formidce": "180fc8f1-bda9-4610-a10b-532a2cce626e"
     },
     {
       "name": "BACHELOR OF SCIENCE - RECORDING ARTS",
@@ -205,7 +209,9 @@
       	"Electronic Sound",
       	"Radio"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "eb1b74ce-6dc9-4adb-a2c1-7b07cbd239ce",
+      "formidce": "74474776-583b-4c4a-a39b-db50de0d1f8b"
     },
     {
       "name": "BACHELOR OF SCIENCE - SHOW PRODUCTION",
@@ -257,7 +263,9 @@
       	"Technical Production",
       	"Production Management"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "5b33beff-ca4e-45c6-8cbc-f84d84a71439",
+      "formidce": "54484c69-abdf-4fda-af72-edc5bce111ab"
     },
     {
       "name": "BACHELOR OF SCIENCE - GAME ART",
@@ -330,7 +338,9 @@
         "Media Arts",
       	"Virtual Worlds"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "579d7f90-168a-41ab-9fa1-19388fe6eb3b",
+      "formidce": "cdf1babd-f9df-41e3-b73f-63c59ce197cd"
     },
     {
       "name": "BACHELOR OF SCIENCE - GAME DESIGN",
@@ -402,7 +412,9 @@
         "Media Arts",
       	"Virtual Worlds"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "939d3382-bf7f-4d71-84d7-790469a43e45",
+      "formidce": "b40d579b-4a87-4aa4-be45-42bc1e88e288"
     },
     {
       "name": "MASTER OF SCIENCE - GAME DESIGN",
@@ -463,7 +475,9 @@
         "Media Arts",
       	"Virtual Worlds"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "cb9fc462-737f-492d-8f52-50ea6715d0f6",
+      "formidce": "4148f80d-59d8-4062-86c8-01f246c5a30b"
     },
     {
       "name": "BACHELOR OF SCIENCE - GAME DEVELOPMENT",
@@ -524,7 +538,9 @@
        	"Media Arts",
       	"Virtual Worlds"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "bf6d5b04-3f6a-4675-9d57-8939df8a5749",
+      "formidce": "56525ea0-7699-4ae6-9e29-31bed32b28bc"
     },
     {
       "name": "MASTER OF SCIENCE - MOBILE GAMING",
@@ -575,7 +591,9 @@
       	"Games Assets",
       	"Virtual Worlds"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "5732ae05-50cb-449b-b669-ef0a07377ce7",
+      "formidce": "b36d8bfe-4fa3-45e8-b89d-bd8cb92e0f9b"
     },
     {
       "name": "BACHELOR OF SCIENCE - COMPUTER ANIMATION",
@@ -650,7 +668,9 @@
       	"Compositing",
       	"Rendering"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "7748cd45-851c-4a05-933e-130343ea8ddc",
+      "formidce": "f6b88a8c-828a-4a71-9b36-67f46b9786fb"
     },
     {
       "name": "BACHELOR OF SCIENCE - DIGITAL ARTS & DESIGN",
@@ -717,7 +737,9 @@
       	"Marketing",
       	"Visual Merchandising"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "502bce7d-1635-45d6-9157-ea2c83ea8917",
+      "formidce": "4d014d93-2b5a-4b89-a5cf-0a46f2f0493e"
     },
     {
       "name": "BACHELOR OF SCIENCE - GRAPHIC DESIGN",
@@ -775,7 +797,9 @@
       	"Marketing",
       	"Visual Merchandising"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "c348f3de-7f8e-4162-8790-b677f25a4698",
+      "formidce": "904f1b14-3e05-4992-95f9-9326c979e753"
     },
     {
       "name": "MASTER OF FINE ARTS - MEDIA DESIGN",
@@ -836,7 +860,9 @@
       	"Media Production",
       	"Brand Management"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "3b89f907-96cf-4e1d-87b4-2d79c4aefc00",
+      "formidce": "5b41150e-1913-4171-ae92-f68840e3661a"
     },
     {
       "name": "BACHELOR OF SCIENCE - DIGITAL CINEMATOGRAPHY",
@@ -892,7 +918,9 @@
       	"Digital Cinematographer",
       	"Digital Video"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "fdf48a5b-3161-4f22-969d-92053cf0aef1",
+      "formidce": "a55faf57-3e8f-494e-aedd-608f69c031bf"
     },
     {
       "name": "BACHELOR OF SCIENCE - FILM",
@@ -965,7 +993,9 @@
       	"Transmedia",
       	"Film Production"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "cbc84992-4531-4148-9937-a7dd13a9bb05",
+      "formidce": "077ab397-529b-431d-b6e9-7a5a6bbb4413"
     },
     {
       "name": "MASTER OF FINE ARTS - FILM PRODUCTION",
@@ -1038,7 +1068,9 @@
       	"Transmedia",
       	"Film Production"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "ef49e003-34d4-449b-a066-4871ae69fcd3",
+      "formidce": "c3f7299c-786d-4af4-9a7f-a98e8f5d9cb8"
     },
     {
       "name": "BACHELOR OF SCIENCE - CLOUD TECHNOLIGIES",
@@ -1105,7 +1137,9 @@
       	"Database Systems",
       	"Technology in the Entertainment Business"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "c19535ec-9757-4eff-8a93-526cbf838470",
+      "formidce": "921df388-dfac-49eb-9e74-0a7bd9e3f57f"
     },
     {
       "name": "BACHELOR OF SCIENCE - MOBILE DEVELOPMENT",
@@ -1173,7 +1207,9 @@
       	"Virtualization Technologies",
       	"Technology in the Entertainment Business"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "deb5f8e5-79ca-4015-ac23-92605b5ad544",
+      "formidce": "df8081ec-6267-4871-8ef3-294f5cdc3caf"
     },
     {
       "name": "BACHELOR OF SCIENCE - SIMULATION & VISUALIZATION",
@@ -1236,7 +1272,9 @@
       	"Virtualization Technologies",
       	"Technology in the Entertainment Business"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "832acdc6-9989-4650-8887-0ec1a87cb663",
+      "formidce": "fd534621-5a20-4cac-a048-a3c1da364f07"
     },
     {
       "name": "BACHELOR OF SCIENCE - SOFTWARE DEVELOPMENT",
@@ -1304,7 +1342,9 @@
       	"Technology in the Entertainment Business",
       	"Digital Logic"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "94723db7-eaef-4982-9f7a-9a9229020729",
+      "formidce": "8cd3526a-23bc-4de9-bd47-00801e109b38"
     },
     {
       "name": "BACHELOR OF SCIENCE - WEB DESIGN & DEVELOPMENT",
@@ -1375,7 +1415,9 @@
       	"Digital Logic",
       	"Visual Communication"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "072d3fbc-7c77-4c93-a5ed-ff5d8d8e5066",
+      "formidce": "f2c1f8c4-a5d5-4a5b-a8ea-505ed0c5bbf1"
     },
     {
       "name": "BACHELOR OF FINE ARTS - CREATIVE WRITING FOR ENTERTAINMENT",
@@ -1435,7 +1477,9 @@
       	"Creative Writing",
       	"Audience Engagement"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "a21d1b4c-cb5c-4f5f-80de-b4f7b5fc8b54",
+      "formidce": "766db9aa-4edd-4b5e-81bf-606b4ca0c4b7"
     },
     {
       "name": "MASTER OF FINE ARTS - CREATIVE WRITING",
@@ -1483,7 +1527,9 @@
       	"Creative Writing",
       	"Audience Engagement"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "ca2871d5-c455-457e-a6fa-e72c084d8901",
+      "formidce": "36851117-9d0c-49ee-b4e9-79f2c456aa92"
     },
     {
       "name": "MASTER OF SCIENCE - INSTRUCTIONAL DESIGN",
@@ -1525,7 +1571,9 @@
       	"Games Design",
       	"Digital Marketing"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "b54e5f45-432c-4583-9be0-a9607a880473",
+      "formidce": "84e9614a-a0b9-45c5-bf0d-dbeeb770ccc7"
     },
     {
       "name": "BACHELOR OF SCIENCE - MEDIA COMMUNICATIONS",
@@ -1595,7 +1643,9 @@
         "New Media & Communications",
         "Digital Marketing"
       ],
-      "image": ""
+      "image": "",
+      "formidca": "e3e1ab6f-3dec-4c41-be77-290623b10f02",
+      "formidce": "264b534e-32d8-4a1d-9bc9-806b25fe0c99"
     },
     {
       "name": "MASTER OF ARTS - NEW MEDIA JOURNALISM",
@@ -1648,7 +1698,9 @@
         "New Media & Communications",
         "Digital Marketing"
       ],
-      "image": ""
+       "image": "",
+       "formidca": "b11a7c3a-0bf3-4c06-b5d9-5c1c8c1ce501",
+       "formidce": "547bc5bc-5771-419d-8b26-b97f90659171"
     },
     {
       "name": "MASTER OF ARTS - PUBLIC RELATIONS",
@@ -1722,7 +1774,9 @@
         "Technology in the Entertainment Business",
         "Digital Marketing"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "562473c8-afaf-4e73-8643-de699631b79f",
+       "formidce": "4a1f857e-c092-436f-b326-fce65208727a"
     },
     {
       "name": "MASTER OF SCIENCE - BUSINESS INTELLIGENCE",
@@ -1779,7 +1833,111 @@
       	"Financial Modelling",
       	"Digital Marketing"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "d7110b09-c978-4f2e-9dd7-b6b3e85d3750",
+       "formidce": "52b29ec0-b005-4a26-94cd-7390b2e8178c"
+    },
+    {
+      "name": "BACHELOR OF SCIENCE - ENTERTAINMENT BUSINESS",
+      "school_name": "Full Sail University (FSU)",
+      "description": "In this program, students build a well-rounded understanding of topics specific to the entertainment industry, including media products and distribution, business finance, and entertainment law.",
+      "campus": [
+        "Winter Park",
+        "Online"
+      ],
+      "duration": [
+        "Campus - 20 Months", 
+        "Online - 29 Months"
+      ], 
+      "intakes": "Monthly",
+      "prices": [
+        {
+          "type": "Domestic students (Campus)",
+          "fees": 60000
+        },
+         {
+          "type": "International students (Campus)",
+          "fees": 60000
+        },
+         {
+          "type": "Domestic students (Online)",
+          "fees": 57000
+        },
+         {
+          "type": "International students (Online)",
+          "fees": 57000
+        }
+      ],
+      "qualifications": [
+        "Bachelor"
+      ],
+      "areas":[
+        "Visual Comms",
+        "Visual Communication",
+        "Digital Media",
+        "Film/TV/Audio",
+        "Design",
+        "Photography",
+        "Business for Creatives"
+      ],
+      "disciplines": [
+        "Business for Creatives",
+        "Entertainment Business",
+        "Marketing",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Finance for Creatives",
+        "Live Production",
+        "Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
+        "Music Business",
+        "Screen Business",
+        "Stage Management",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Business Finance",
+        "Entertainment Law",
+        "Events Management",
+        "Distributor Agent",
+        "Distributor",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Legal Aspects of Media",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Cultural Studies",
+        "Business Law",
+        "Business Technology and Design",
+        "Digital Marketing",
+        "Leadership",
+        "Culture and Media",
+        "Social Media",
+        "Writing for Interactive Media",
+        "Packaging and Branding",
+        "Entrepreneurial Finance"
+      ],
+      "image": "",
+       "formidca": "78eaa646-3cef-4a7a-aca7-2ae7d86f4852",
+       "formidce": "88f11885-b1b7-428f-b49e-800da338f178"
     },
     {
       "name": "MASTER OF SCIENCE - ENTERTAINMENT BUSINESS",
@@ -1879,7 +2037,9 @@
       	"Packaging and Branding",
        	"Entrepreneurial Finance"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "e5cb3dcc-3585-46dd-8048-6e3e12b71090",
+       "formidce": "4857643d-b4ce-4179-ba6d-fe1716e38eb1"
     },
     {
       "name": "MASTER OF SCIENCE - INNOVATION & ENTREPRENEURSHIP",
@@ -1966,7 +2126,9 @@
       	"Creativity and Innovation",
       	"Entrepreneurial Finance"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "340a4ebe-062d-4e5d-9a3a-e7a11bbfb8cc",
+       "formidce":  "ce34cb4a-4ca9-4afa-baff-c5338dcfbcb5"
     },
     {
       "name": "BACHELOR OF SCIENCE - INTERNET MARKETING",
@@ -2050,7 +2212,9 @@
       	"Paid Search",
       	"Google Analytics"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "d4d11ffd-e6ec-42b0-ac14-24befbf89bff",
+       "formidce": "cb022aa6-2327-44b9-8520-5364d296aaa5"
     },
     {
       "name": "MASTER OF SCIENCE - INTERNET MARKETING",
@@ -2131,7 +2295,10 @@
       	"Paid Search",
       	"Google Analytics"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "f83d41b3-0200-41f1-8f1c-6e682d701c59",
+       "formidce": "9f761845-5bfb-4922-a11e-c4d27dc7122e"
+
     },
     {
       "name": "BACHELOR OF SCIENCE - MUSIC BUSINES",
@@ -2219,7 +2386,9 @@
       	"Business Technology and Design",
       	"Popular Culture in Media"
       ],
-      "image": ""
+      "image": "",
+       "formidca": "65493582-279c-49c7-8a8e-2e602f4fa52a",
+       "formidce": "931d23ba-4c0c-41c7-a24c-07cb7aa60809"
     }
   ],
   "artworks": [

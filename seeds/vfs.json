@@ -173,7 +173,9 @@
         "Video",
         "Visual Art"
       ],
-      "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design"
+      "image": "VFS/course_pics/VFS_Foundation_Visual_Art_Design",
+      "formidca": "607fcc4c-d6ce-4d59-b9a7-b02b011ca3c7",
+      "formidce": "d38e51db-8167-4838-9743-15d360b2fefc"
     },
     {
       "name": "ACTING FOR FILM + TELEVISION",
@@ -232,10 +234,12 @@
         "Green Screen",
         "Audition"
       ],
-      "image": "VFS/course_pics/VFS_Acting_for_Film_Television"
+      "image": "VFS/course_pics/VFS_Acting_for_Film_Television",
+      "formidca": "7fb68ef5-bf75-48de-b94f-b38f922f6a9c",
+      "formidce": "73991a62-9254-44eb-820c-5e1fbd7bf692"
     },
     {
-      "name": "FILM PRODUCTION ",
+      "name": "FILM PRODUCTION",
       "school_name": "Vancouver Film School (VFS)",
       "description": "In this course you will explore the possibilities of storytelling, giving you both the narrative craft and visual techniques necessary to bring a story to life on the screen. You will also expand your range of filmmaking techniques while you learn to work on larger sets and co-create with outside writers.",
       "campus": ["Vancouver"
@@ -304,7 +308,10 @@
         "Camera Operator",
         "Transmedia"
       ],
-      "image": "VFS/course_pics/VFS_Film_Production"
+      "image": "VFS/course_pics/VFS_Film_Production",
+      "formidca": "7fb68ef5-bf75-48de-b94f-b38f922f6a9c",
+      "formidce": "b3de26d6-7301-40f5-958a-09bd9337b280"
+
     },
     {
       "name": "MAKEUP DESIGN FOR FILM + TELEVISION",
@@ -719,7 +726,10 @@
         "Concept Artist",
         "Creative Drawing"
       ],
-      "image": "VFS/course_pics/VFS_Digital_Design"
+      "image": "VFS/course_pics/VFS_Digital_Design",
+      "formidca": "2a9dd167-6688-4617-9d99-1834df2501d3",
+      "formidce": "d3285862-84dc-4d29-8d21-31260a5cbcda"
+
     },
         {
       "name": "GAME DESIGN",
