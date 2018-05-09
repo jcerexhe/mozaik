@@ -71,35 +71,35 @@ body {
 
 .hbspt-form {
   position: fixed;
-  top: 100px;
+  top: 50px;
   right: 0;
   background-color: aqua;
   z-index: 102;
   padding: 20px;
-  text-align: center;
   background-color: #181818;
-  border: 1px solid #FF6D6D;
+  border: 1px solid #fff;
   padding: 30px 20px;
-  color: white;
   display: none; }
 
-.hbspt-form button {
-  border: none;
-  background-color: #FF6D6D;
-  margin: 0;
-  padding: 5px;
-  right: 5px;
-  top: 5px;
-  position: absolute; }
+/* .hbspt-form button {
+    border: none;
+    background-color: $pink;
+    margin: 0;
+    padding: 5px;
+    right:5px;
+    top: 5px;
+    position: absolute;
 
+} */
 .hbspt-form signing {
   border: none;
-  background-color: #FF6D6D;
+  background-color: transparent;
   margin: 0;
   padding: 5px;
-  right: 5px;
-  top: 5px;
-  position: absolute; }
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  color: #fff; }
 
 .page-footer {
   width: 100%;
@@ -505,6 +505,122 @@ input[type=text]:-ms-input-placeholder {
 input[type=text]::placeholder {
   text-transform: uppercase;
   color: #FFFFFF; }
+
+/* hubspot forms */
+/* All HubSpot Forms
+   ========================================================================== */
+/* Form Field (selector for form field wrapper) */
+.hs-form .hs-form-field {
+  padding-bottom: 30px; }
+
+/* Descriptions (targets class applied to Help Text divs) */
+/* Labels (selects field labels and error messages) */
+.hs-form .hs-form-field > label {
+  font-family: 'Bebas Neue';
+  text-transform: uppercase; }
+
+/* Inputs (selectors for all inputs)  */
+.hs-form input[type="text"],
+.hs-form input[type="password"],
+.hs-form input[type="datetime"],
+.hs-form input[type="datetime-local"],
+.hs-form input[type="date"],
+.hs-form input[type="month"],
+.hs-form input[type="time"],
+.hs-form input[type="week"],
+.hs-form input[type="number"],
+.hs-form input[type="email"],
+.hs-form input[type="url"],
+.hs-form input[type="search"],
+.hs-form input[type="tel"],
+.hs-form input[type="color"],
+.hs-form input[type="file"],
+.hs-form textarea,
+.hs-form select {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  padding: 5px;
+  margin: 0;
+  width: 100% !important; }
+
+.hs-form textarea {
+  height: 150px; }
+
+/* Inputs in focus (selectors for all inputs when clicked)  */
+.hs-form input[type="text"]:focus,
+.hs-form input[type="password"]:focus,
+.hs-form input[type="datetime"]:focus,
+.hs-form input[type="datetime-local"]:focus,
+.hs-form input[type="date"]:focus,
+.hs-form input[type="month"]:focus,
+.hs-form input[type="time"]:focus,
+.hs-form input[type="week"]:focus,
+.hs-form input[type="number"]:focus,
+.hs-form input[type="email"]:focus,
+.hs-form input[type="url"]:focus,
+.hs-form input[type="search"]:focus,
+.hs-form input[type="tel"]:focus,
+.hs-form input[type="color"]:focus,
+.hs-form input[type="file"]:focus,
+.hs-form textarea:focus,
+.hs-form select:focus {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  padding: 5px;
+  margin: 0;
+  width: 100% !important; }
+
+/* Multi-line inputs (selectors to target multi-line fields */
+/* Dropdowns (selectors for dropdowns) */
+/* Multi-select (selectors for multi-select fields) */
+/* Required (selectors for fields, when they do not pass validation) */
+/* Error message (selector for validation messages) */
+.hs-form .hs-error-msgs label {
+  font-size: 12px;
+  line-height: normal;
+  display: block;
+  color: red !important; }
+
+.hs-form .hs-error-msgs {
+  list-style: none;
+  padding: 0; }
+
+/* Placeholder Text (styles the placeholder attribute text) */
+::-webkit-input-placeholder {
+  /* Webkit Browsers */ }
+
+:-moz-placeholder {
+  /* Firefox 18- */ }
+
+::-moz-placeholder {
+  /* Firefox 19+ */ }
+
+:-ms-input-placeholder {
+  /* IE10 */ }
+
+/* Multi Column Form (selectors for fieldsets and field wrappers) 
+   ========================================================================== */
+/* Submit buttons (selectors for all non-CTA buttons) 
+   ========================================================================== */
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {
+  background-color: #000;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 2px 2px #888888;
+  color: #fff;
+  width: 150px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue'; }
+
+.input {
+  padding: 0;
+  margin: 0; }
 
 .extended-search {
   background-color: #FF6D6D;
@@ -3380,24 +3496,28 @@ ul.careers-lists > li:before {
   top: -30px;
   border: 1px solid #fff;
   z-index: 100;
-  background-color: #000; }
+  background-color: #181818;
+  height: auto !important;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box; }
   .course-form button {
-    background-color: #FF6D6D;
+    background-color: transparent;
+    color: #fff;
     cursor: pointer;
     position: absolute;
+    top: 0;
     right: 0;
     border: 0;
     outline: 0; }
-  .course-form .hs-form-private {
-    padding-left: 25px;
-    padding-right: 20px;
-    padding-top: 10px; }
-    .course-form .hs-form-private input[type="text"], .course-form .hs-form-private input[type="email"], .course-form .hs-form-private input[type="tel"] {
-      background-color: #fff !important;
-      width: 200px;
-      color: #000; }
-    .course-form .hs-form-private label {
-      color: #fff !important; }
+  .course-form .hs-form-private input[type="text"], .course-form .hs-form-private input[type="email"], .course-form .hs-form-private input[type="tel"] {
+    background-color: #fff !important;
+    width: 200px;
+    color: #000; }
+  .course-form .hs-form .hs-form-field > label {
+    color: #fff; }
 
 .course-form-2 {
   right: -180px !important; }

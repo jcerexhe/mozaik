@@ -94,21 +94,19 @@ body{
 
 .hbspt-form {
     position: fixed;
-    top: 100px;
+    top: 50px;
     right: 0;
     background-color: aqua;
     z-index: 102;
     padding: 20px;
-    text-align: center;
     background-color: $grey;
-    border: 1px solid $pink;
+    border: 1px solid #fff;
     padding: 30px 20px;
-    color: white;
     display: none;
 
 }
 
-.hbspt-form button {
+/* .hbspt-form button {
     border: none;
     background-color: $pink;
     margin: 0;
@@ -117,16 +115,17 @@ body{
     top: 5px;
     position: absolute;
 
-}
+} */
 
 .hbspt-form signing {
     border: none;
-    background-color: $pink;
+    background-color: transparent;
     margin: 0;
     padding: 5px;
-    right:5px;
-    top: 5px;
+    right:0px;
+    top: 0px;
     position: absolute;
+    color: #fff;
 
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import Footer from '../footer/index.jsx';
+import HubspotForm from 'react-hubspot-form';
 
 export default class PartnerApp extends Component {
 	render() {
@@ -43,29 +44,11 @@ export default class PartnerApp extends Component {
 					<div>
 						<p className='contact-heading'>PLEASE KINDLY CONTACT US IF YOU ARE INTERESTED IN PARTNERING</p>
 					</div>
-					<div className='contact-field'>
-						<p>FIRST NAME</p>
-						<input />
-					</div>
-					<div className='contact-field'>
-						<p>LAST NAME</p>
-						<input />
-					</div>
-					<div className='contact-field'>
-						<p>SCHOOL</p>
-						<input />
-					</div>
-					<div className='contact-field'>
-						<p>EMAIL ADDRESS</p>
-						<input />
-					</div>
-					<div className='contact-field-message'>
-						<p>MESSAGE</p>
-						<input />
-					</div><br/>
-					<div className='submit-button'>
-						<img alt='submit button' src='/images/buttons/Submit_1.png'/>
-					</div>
+		  			<HubspotForm
+		  			  css=''
+		              portalId='2708822'
+		              formId='9452cc7e-8460-4b34-83c3-ea9e23622b86'
+		          />				
 				</div>
 			</div>
 			<div>

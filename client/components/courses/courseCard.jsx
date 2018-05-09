@@ -26,6 +26,7 @@ export default class CourseCard extends Component {
     return(
  <div>
           <HubspotForm
+              css=''
               portalId={portalId}
               formId={formId}
           />
