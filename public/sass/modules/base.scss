@@ -96,7 +96,6 @@ body{
     position: fixed;
     top: 50px;
     right: 0;
-    background-color: aqua;
     z-index: 102;
     padding: 20px;
     background-color: $grey;
@@ -126,7 +125,7 @@ body{
     top: 0px;
     position: absolute;
     color: #fff;
-
+    cursor: pointer;
 }
 
 .page-footer{
