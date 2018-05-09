@@ -47,7 +47,7 @@ export default class PartnerApp extends Component {
 		  			<HubspotForm
 		  			  css=''
 		              portalId='2708822'
-		              formId='9452cc7e-8460-4b34-83c3-ea9e23622b86'
+		              formId='a5525c57-c51b-4b7f-818f-9461f0900087'
 		          />				
 				</div>
 			</div>
