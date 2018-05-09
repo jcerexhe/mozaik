@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import Footer from '../footer/index.jsx';
+import HubspotForm from 'react-hubspot-form';
 
 export default class AboutApp extends Component {
 	render() {
@@ -29,6 +30,12 @@ export default class AboutApp extends Component {
 					<div className="about-us-text-footer">
 						<p>Say Hello</p>
 						<img src="/images/buttons/Contact-us.png" />
+						<HubspotForm
+							css=''
+							portalId= '2708822'
+							formId= '9452cc7e-8460-4b34-83c3-ea9e23622b86'
+   						/>
+
 					</div>
 				</div>
 				<div>
