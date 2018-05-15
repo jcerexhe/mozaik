@@ -12,9 +12,9 @@ block content
           // Modal
           #myModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
            .modal-header
-             button.close(data-dismiss='modal', aria-label='close') &times;
+             button.modal-close-button(type='button', data-dismiss='modal', aria-label='Close', aria-hidden='true') X
            .modal-body
-             iframe(width='100%', height='100%', src=school.video, frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+             iframe(width='100%', height='100%', src= school.video, frameborder='0', allowfullscreen='')
   .student-work
     !=Lightbox
   .school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
@@ -124,4 +124,4 @@ append stylesheets
       });
       form[0].appendChild(btn);
     };
- 
+    
