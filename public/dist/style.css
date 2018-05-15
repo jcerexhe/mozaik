@@ -720,33 +720,42 @@ body input[type="button"] {
 
 .home-artworks-bottom-text {
   position: absolute;
-  bottom: 5vw;
+  bottom: 9vw;
   text-align: center;
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-  width: 25vw; }
+  width: 30vw; }
   .home-artworks-bottom-text a {
     width: 100%; }
     .home-artworks-bottom-text a img {
       width: 100%; }
   .home-artworks-bottom-text input {
     width: 100%;
-    margin: 1vw 0;
-    border: 0.25vw solid #FF6D6D;
+    height: 3.5vw;
+    margin: 0;
+    border: 0.2vw solid #FF6D6D;
     background-color: transparent;
     padding: 1vw;
     color: #FFFFFF;
-    font-size: 2vw; }
+    font-size: 1.75vw;
+    font-style: italic;
+    transition: all 0.5s linear; }
     .home-artworks-bottom-text input::-webkit-input-placeholder {
       color: #FFFFFF;
-      font-size: 2vw; }
+      font-size: 1.75vw; }
     .home-artworks-bottom-text input:-ms-input-placeholder {
       color: #FFFFFF;
-      font-size: 2vw; }
+      font-size: 1.75vw; }
     .home-artworks-bottom-text input::placeholder {
       color: #FFFFFF;
-      font-size: 2vw; }
+      font-size: 1.75vw; }
+    .home-artworks-bottom-text input:focus {
+      color: black;
+      background-color: #FFFFFF;
+      font-size: 1.75vw; }
+  .home-artworks-bottom-text #home-subscribe-button {
+    width: 60%; }
 
 #home-artworks-changer-arrow {
   background-color: #ff6d6d80;

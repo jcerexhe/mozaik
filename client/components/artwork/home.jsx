@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 import Filter from '../shared/filter.jsx';
 import Artwork from './artwork.jsx';
-import Footer from '../footer/index.jsx';
+
 
 export default class HomeArtworkApp extends Component {
   constructor(props) {
@@ -176,6 +176,9 @@ export default class HomeArtworkApp extends Component {
             <clipPath id="top-stripes">
               <polygon points="0,0 100,0 100,15 0,40" fill="#0C2A3E"></polygon>
             </clipPath>
+             <clipPath id="bottom-stripes">
+              <polygon points="0,190 100,190 100,140, 0,155" fill="#0C2A3E"></polygon>
+            </clipPath>
            {/*Art Frames: L to R, T to B*/}
             <clipPath id="home-img-frame-1">
               <polygon points="0,80 0,44 27,37 27,80" fill="#0C2A3E"></polygon>
@@ -242,9 +245,15 @@ export default class HomeArtworkApp extends Component {
               <polygon points="71,128 71,145 100,141 100,128" fill="#0C2A3E"></polygon>
             </g>
           }
+           <image height="190" width="100" preserveAspectRatio="xMinYMax meet" xlinkHref="/images/patterns/stripes.jpg" clipPath="url(#bottom-stripes)"/>
+          
         </svg>
-        <div className='home-footer'>
-          <Footer/>
+        {/*Home Artworks Footer Text*/}
+        <div className="home-artworks-bottom-text" >
+            <a href='#'><img src='/images/buttons/Get-the-inside-scoop.png'/></a>
+            <input placeholder="Email"/>
+            <br/>
+            <a href='#'><img src='/images/buttons/subscribe.png' id="home-subscribe-button"/></a>
         </div>
       </div>
 

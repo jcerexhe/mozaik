@@ -74,7 +74,8 @@ exports.schoolDetails = (req, res) => {
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
   const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
-  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses, artworks });
+  const Video = reactHelper.renderComponent('SchoolVideoApp', {video: school.video});
+  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses, artworks, Video });
 };
 
 exports.schoolCourses = (req, res) => {
