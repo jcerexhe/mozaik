@@ -1174,6 +1174,10 @@ a.btn {
     width: 70px;
     text-align: center; }
 
+.modal-body {
+  height: 90vh;
+  margin-left: 15px; }
+
 .school-details {
   display: -ms-flexbox;
   display: flex;
