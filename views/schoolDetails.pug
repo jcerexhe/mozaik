@@ -7,7 +7,15 @@ block content
         //- img(src=school.logo)
         h1= school.name
       .school-links.video-link
-        img(src="/images/buttons/playvideo.png")
+        a(href='#myModal',data-toggle='modal')
+          img(src="/images/buttons/playvideo.png")
+
+          // Modal
+          #myModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+           .modal-header
+             button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+           .modal-body
+             iframe(width='100%', height='100%', src='https://www.youtube.com/embed/_Sy3rh_lm3c', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
   .student-work
     !=Lightbox
   .school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
