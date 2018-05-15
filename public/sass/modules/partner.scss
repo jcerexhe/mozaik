@@ -88,9 +88,11 @@
     background-color: #181818;
     width: 250px;
     height: 250px;
-    border: 1px solid #181818;
-    opacity: 0.9;
+    /*border: 1px solid #181818;*/
+    /*opacity: 0.9;*/
+    background:rgba(24,24,24, 0.8);
     margin: 0px 20px 0px 20px;
+    z-index: 1;
 }
 
 .square >p{
