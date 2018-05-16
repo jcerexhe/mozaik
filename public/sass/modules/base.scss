@@ -10,6 +10,7 @@ $grey: #181818;
 $dark-green: #273234;
 $grey-text: #949494;
 $red: #FF0000;
+$light-pink: #d0a4a4;
 
 @font-face {
   font-family: 'Gotham Book Regular';
@@ -103,6 +104,11 @@ body{
     padding: 30px 20px;
     display: none;
 
+}
+
+.submitted-message {
+  background-color: $light-pink;
+  padding: 30px;
 }
 
 /* .hbspt-form button {
