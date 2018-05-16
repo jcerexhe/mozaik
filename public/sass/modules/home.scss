@@ -106,29 +106,41 @@
 
 .home-artworks-bottom-text{
   position: absolute;
-  bottom: 5vw;
+  bottom: 9vw;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  width: 25vw;
+  width: 30vw;
   a {
     width: 100%;
     img {
-      width: 100%
+      width: 100%;
     }
   }
   input {
     width: 100%;
-    margin: 1vw 0;
-    border: 0.25vw solid $pink;
+    height: 3.5vw;
+    margin: 0;
+    border: 0.2vw solid $pink;
     background-color: transparent;
     padding: 1vw;
     color: $white;
-    font-size: 2vw;
+    font-size: 1.75vw;
+    font-style: italic;
+    transition: all 0.5s linear;
     &::placeholder {
       color: $white;
-      font-size: 2vw;
+      font-size: 1.75vw;
     }
+    &:focus{
+    color: black;
+    background-color: #FFFFFF;
+    font-size: 1.75vw;  
+    } 
+    
+  }
+  #home-subscribe-button{
+    width: 60%;
   }
 }
 
