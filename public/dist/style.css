@@ -80,6 +80,10 @@ body {
   padding: 30px 20px;
   display: none; }
 
+.submitted-message {
+  background-color: #d0a4a4;
+  padding: 30px; }
+
 /* .hbspt-form button {
     border: none;
     background-color: $pink;
