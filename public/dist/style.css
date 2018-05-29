@@ -1334,6 +1334,16 @@ iframe.school-video {
   .hbspt-form label {
     color: #fff !important; }
 
+.school-forms-modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.25);
+  z-index: 1;
+  display: none; }
+
 .about-page-heading {
   border: 5px solid #FFFFFF;
   width: 30%;

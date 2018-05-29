@@ -47,6 +47,7 @@ block content
           each scholarship in school.scholarships
             li=scholarship
     .school-links
+        .school-forms-modal
         .school-link
           a(href='#' onclick="eForm('"+ school.formidsa +"')" class='btn')
             span Apply
@@ -95,7 +96,7 @@ append stylesheets
  
     var btn = document.createElement("button");
     btn.innerHTML = '&times;';
-         
+    
      function eForm(formId){  
        hbspt.forms.create({
         portalId: '2708822',
@@ -113,14 +114,29 @@ append stylesheets
       
     }; 
 
-
      function closeForm() {
       var form = document.getElementsByClassName("hbspt-form");
+      var formModal = document.getElementsByClassName('school-forms-modal');
+      console.log(formModal[0]);
       console.log(form[0]);
       form[0].style.display = "block";
+      formModal[0].style.display = "block";
       btn.addEventListener("click", function(){
         form[0].style.display = "none";
+        formModal[0].style.display = "none";
       });
       form[0].appendChild(btn);
     };
-    
+
+     window.onclick = function(event) {
+      var form = document.getElementsByClassName("hbspt-form");
+      var formModal = document.getElementsByClassName('school-forms-modal');
+      console.log(formModal[0]);
+      console.log(event.target);
+      if (event.target == formModal[0]) {
+      formModal[0].style.display = "none";
+      form[0].style.display = "none";
+    }
+    };   
+
+   
