@@ -1326,13 +1326,20 @@ iframe.school-video {
     border-right: 1px solid #E4E9EC; }
 
 .hbspt-form {
-  backround-color: red !important; }
+  background-color: #FF6D6D !important; }
   .hbspt-form input[type="text"], .hbspt-form input[type="email"], .hbspt-form input[type="tel"] {
     background-color: #fff !important;
     width: 150px;
     color: #000; }
   .hbspt-form label {
     color: #fff !important; }
+  .hbspt-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    color: white;
+    border: none; }
 
 .school-forms-modal {
   position: fixed;
@@ -1340,8 +1347,8 @@ iframe.school-video {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: rgba(255, 0, 0, 0.25);
-  z-index: 1;
+  background-color: rgba(255, 0, 0, 0);
+  z-index: 102;
   display: none; }
 
 .about-page-heading {
@@ -3554,8 +3561,8 @@ ul.careers-lists > li:before {
   right: -80px;
   top: -30px;
   border: 1px solid #fff;
-  z-index: 100;
-  background-color: #181818;
+  z-index: 1;
+  background-color: #dc6262;
   height: auto !important;
   padding-left: 25px;
   padding-right: 20px;
@@ -3579,7 +3586,28 @@ ul.careers-lists > li:before {
     color: #fff; }
 
 .course-form-2 {
-  right: -180px !important; }
+  right: -180px !important;
+  z-index: 1; }
+
+.course-forms-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: -1; }
+
+.course-forms-modal-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: -1; }
 
 .discover-column-container {
   height: calc(140vh - 140px);
