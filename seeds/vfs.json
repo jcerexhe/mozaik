@@ -24,10 +24,12 @@
     ],
     "overview": "VFS, founded in 1987, offers preparatory and advanced programs for students to gain more experience in creative arts, film and television world. Through its notable alumni, VFS has achieved international recognition.",
     "prices": [{
+      "currency":"CAD",
       "type": "Domestic students",
       "upper": 35250,
       "lower": 7000
-    },{"type": "International students",
+    },{"currency": "CAD",
+      "type": "International students",
       "upper": 53250,
       "lower": 10500
     }],
@@ -87,10 +89,12 @@
       "intakes": "February | April | June | August | October | December",
       "prices": [
         {
+          "currency": "CAD", 
           "type": "Domestic students",
           "fees": 7000
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 10500
         }
@@ -133,10 +137,12 @@
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 20500
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 30500
         }
@@ -187,10 +193,12 @@
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 20500
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 30500
         }
@@ -248,10 +256,12 @@
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 35250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 53250
         }
@@ -323,10 +333,12 @@
       "intakes": "January | April | August",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 29750
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 46750
         }
@@ -378,10 +390,12 @@
       "intakes": "February | June | October ",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 28250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 43250
         }
@@ -442,10 +456,12 @@
       "intakes": "January | April | August",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 20250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 28250
         }
@@ -495,10 +511,12 @@
       "intakes": "January | February | April | June | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 32250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 53250
         }
@@ -564,10 +582,12 @@
       "intakes": "June | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 25500
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 33500
         }
@@ -616,10 +636,12 @@
       "intakes": "January | April | August",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 20500
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 30500
         }
@@ -669,10 +691,12 @@
       "intakes": "January | April | August",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 27250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 42250
         }
@@ -741,10 +765,12 @@
       "intakes": "April | August | October",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 32250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 49250
         }
@@ -800,10 +826,12 @@
       "intakes": "January | April | August",
       "prices": [
         {
+          "currency": "CAD",
           "type": "Domestic students",
           "fees": 32250
         },
         {
+          "currency": "CAD",
           "type": "International students",
           "fees": 49250
         }
