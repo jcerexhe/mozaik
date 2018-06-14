@@ -38,6 +38,7 @@ const schoolSchema = new Schema({
     type: {
       type: String,
     },
+    currency: String,
     lower: Number,
     upper: Number,
   }],

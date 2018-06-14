@@ -41,7 +41,7 @@ block content
             li
               =`${price.type}:`
               br
-              =`AUD ${price.lower} - AUD ${price.upper}`
+              =`${price.currency} ${price.lower} - ${price.currency} ${price.upper}`
         h3 scholarship
         ul
           each scholarship in school.scholarships

@@ -23,10 +23,12 @@
     ],
     "overview": "Full Sail University offers campus and online degree programs that are designed for the world of entertainment, media, arts, and technology. Offering associate's, bachelor's, and master's degrees, Full Sail's approach is centered on real-world industry experience and creative problem-solving.",
     "prices": [{
+      "currency": "USD",
       "type": "Domestic students",
       "upper": 80500,
       "lower": 31000
     },{
+      "currency": "USD",
       "type": "International students",
       "upper": 80500,
       "lower": 31000		
@@ -122,11 +124,13 @@
       "duration": "29 Months",
       "intakes": "Monthly",
       "prices": [
-        {
+        { 
+          "currency":"USD",
           "type": "Domestic students",
           "fees": 57000
         },
         { 
+          "currency":"USD",
           "type": "International students",
           "fees": 57000		
         }
@@ -174,10 +178,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 78000
         },
         { 
+          "currency": "USD", 
           "type": "International students",
           "fees": 78000		
         }
@@ -225,10 +231,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 78000
         },
         { 
+          "currency": "USD", 
           "type": "International students",
           "fees": 78000		
         }
@@ -283,18 +291,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 80500
         },
         { 
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 80500		
         },
         {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
         { 
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000		
         }
@@ -358,18 +370,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 80500
         },
         { 
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 80500		
         },
         {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
         { 
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000		
         }
@@ -428,10 +444,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic",
           "fees": 31800
         },
         {
+          "currency": "USD", 
           "type": "International",
           "fees": 31800
         }
@@ -491,10 +509,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -554,10 +574,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -611,18 +633,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
         {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 57000
         }
@@ -684,10 +710,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -753,10 +781,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students",
           "fees": 57000
         }
@@ -813,10 +843,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 36000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 36000
         }
@@ -876,10 +908,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 57000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 57000
         }
@@ -934,10 +968,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -1009,10 +1045,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1084,10 +1122,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -1154,18 +1194,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students (Campus)" ,
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
         {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 31000
         }
@@ -1223,10 +1267,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -1288,10 +1334,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 80500
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 80500
         }
@@ -1362,18 +1410,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 80500
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 80500
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000
         }
@@ -1435,18 +1487,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000
         }
@@ -1493,10 +1549,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1543,10 +1601,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1591,18 +1651,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000
         }
@@ -1659,10 +1723,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1714,10 +1780,12 @@
       "intakes": "Monthly",
        "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1790,10 +1858,12 @@
       "intakes": "Monthly",
        "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -1853,18 +1923,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000
         }
@@ -1955,18 +2029,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 35280
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 35280
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 31000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 31000
         }
@@ -2053,10 +2131,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -2142,10 +2222,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 57000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 57000
         }
@@ -2228,10 +2310,12 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students",
           "fees": 31000
         },
         {
+          "currency": "USD", 
           "type": "International students",
           "fees": 31000
         }
@@ -2316,18 +2400,22 @@
       "intakes": "Monthly",
       "prices": [
         {
+          "currency": "USD", 
           "type": "Domestic students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "International students (Campus)",
           "fees": 60000
         },
          {
+          "currency": "USD", 
           "type": "Domestic students (Online)",
           "fees": 57000
         },
          {
+          "currency": "USD", 
           "type": "International students (Online)",
           "fees": 57000
         }
