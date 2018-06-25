@@ -142,7 +142,7 @@ export default class HeroApp extends Component {
                     <br/><br/>
                     <p>{ slide.text }</p>
                     <p>{ slide.br }</p>
-                    <p style={slide.styles.p}>{ slide.student}</p><br/>
+                    <p style={slide.styles.p}>{ slide.student}</p> <br/>
                     <p style={slide.styles.p}>{ slide.school}</p>
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
