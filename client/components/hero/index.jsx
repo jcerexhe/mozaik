@@ -46,13 +46,19 @@ export default class HeroApp extends Component {
           text: "Search for courses by comparing the work",
           br:"of students from creative schools.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/q_auto/v1521860091/tumblr_o6axauhTur1rb8rhso2_1280_tzqrw8.jpg',
+          student: 'Ernest Becerra',
+          school: 'Full Sail University',
           video: false,
           cta: {
             text: 'Start Searching',
             link: '/search'
           },
           styles: {
-            h1:{}
+            h1:{},
+            p: {
+              position: 'absolute',
+              left: '85%'
+            }
           }
         },
         {
@@ -137,6 +143,8 @@ export default class HeroApp extends Component {
                     <br/><br/>
                     <p>{ slide.text }</p>
                     <p>{ slide.br }</p>
+                    <p style={slide.styles.p}> { slide.student}</p><br/>
+                    <p style={slide.styles.p}> { slide.school}</p>
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
