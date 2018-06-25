@@ -70,7 +70,7 @@ body {
   background-color: #181818; }
 
 .hbspt-form {
-  position: fixed;
+  position: absolute;
   top: 50px;
   right: 0;
   z-index: 102;
