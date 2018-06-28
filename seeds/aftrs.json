@@ -1891,14 +1891,6 @@
       ]
     },
     {
-      "image": "AFTRS/student_work/All_Gods_Creatures_Brendon_McDonall",
-      "name": "All Gods Creatures",
-      "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Brendon McDonall",
-      "disciplines": [
-      ]
-    },
-    {
       "image": "AFTRS/student_work/Birthday_Boy_Sejong_Park_2004",
       "name": "Birthday Boy",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
@@ -1907,18 +1899,18 @@
       ]
     },
     {
-      "image": "AFTRS/student_work/Culling_Kerinne_Jenkins",
-      "name": "Culling",
+      "image": "AFTRS/student_work/Kiss_Kiss_Samantha_Rebillet",
+      "name": "Kiss Kiss",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Kerinne Jenkins",
+      "artist": "Samantha Rebillet",
       "disciplines": [
       ]
     },
     {
-      "image": "AFTRS/student_work/Emily_Benjamin_Mathews",
-      "name": "Emily",
+      "image": "AFTRS/student_work/Recon6_Blake_Fraser",
+      "name": "Recon6",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Benjamin Mathews",
+      "artist": "Blake Fraser",
       "disciplines": [
       ]
     },
@@ -1939,13 +1931,14 @@
       ]
     },
     {
-      "image": "AFTRS/student_work/Kiss_Kiss_Samantha_Rebillet",
-      "name": "Kiss Kiss",
+      "image": "AFTRS/student_work/Emily_Benjamin_Mathews",
+      "name": "Emily",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Samantha Rebillet",
+      "artist": "Benjamin Mathews",
       "disciplines": [
       ]
     },
+    
     {
       "image": "AFTRS/student_work/Like_Breathing_Production_Designer_Grace_Brown",
       "name": "Like Breathing Production Designer",
@@ -1955,10 +1948,18 @@
       ]
     },
     {
-      "image": "AFTRS/student_work/Recon6_Blake_Fraser",
-      "name": "Recon6",
+      "image": "AFTRS/student_work/All_Gods_Creatures_Brendon_McDonall",
+      "name": "All Gods Creatures",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Blake Fraser",
+      "artist": "Brendon McDonall",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Culling_Kerinne_Jenkins",
+      "name": "Culling",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Kerinne Jenkins",
       "disciplines": [
       ]
     }
