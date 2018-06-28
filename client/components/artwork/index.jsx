@@ -61,14 +61,15 @@ export default class ArtworkApp extends Component {
           boxShadow: '0 0 0 2px #000000'
         }
       },
+      artDisplay: []
     };
   }
 
   closeLightbox() {
     this.setState({ isOpen: false });
-  }
+  
 
-  onClickPrev() {
+ } onClickPrev() {
     const { images, currentImage } = this.state;
     const nextImage = images[currentImage - 1];
     this.setState({
@@ -145,59 +146,26 @@ export default class ArtworkApp extends Component {
   }
 
   renderImg(img, i){
-    const { indexList, isOpen } = this.state;
-    // console.log(parseInt(i));
-
-    let imgIndex;
-    let styled;
-    var x = i+1;
-    var y = 5;
-    // if(img.length >= 7){
-    //   imgIndex = i;
-    // }else{
-    //   imgIndex = 0;
-    // }
-    
-    // console.log(img.length);  
-
-    // console.log()     // 
-
-      // let check = true;
-      // while(check == true){
-        imgIndex = Math.floor(Math.random() * Math.floor(img.length));
-      //   if(indexList.includes(imgIndex)){
-      //     check=true;
-      //   }else{
-      //     check=false;
-      //     indexList.push(imgIndex);
-      //   }
-      // }
-    
-
-    // if(indexList.includes(imgIndex) == false){
-    //   indexList.push(imgIndex);
-    // }
-
-    // let yellow = "green";
-
-    //   styled = (<style dangerouslySetInnerHTML={{__html: 
-
-    //     '.art-box-2-diagonal .art-box-img{ background-image: none !important; }' 
-
-    //     }} />);
-
-      
-      // style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}}
-
-    return(
-        <div  className="art-box-img" style={{backgroundImage: 'url('+ img[imgIndex].thumb +')'}} >
-          <div className="img-details" onClick={ () => this.openLightbox(imgIndex) }>
-            <h2>{ img[imgIndex].title }</h2>
-            <p>{ img[imgIndex].artist }</p>
+    let artDisplayIndex = this.state.artDisplay
+    if (artDisplayIndex[i]) {
+      return(
+          <div  className="art-box-img" style={{backgroundImage: 'url('+ img[artDisplayIndex[i]].thumb +')'}} >
+            <div className="img-details" onClick={ () => this.openLightbox(artDisplayIndex[i]) }>
+              <h2>{ img[artDisplayIndex[i]].title }</h2>
+              <p>{ img[artDisplayIndex[i]].artist }</p>
+            </div>
           </div>
-
-        </div>
-      );
+        );
+    } else {
+      return(
+          <div  className="art-box-img" style={{backgroundImage: 'url('+ img[i].thumb +')'}} >
+            <div className="img-details" onClick={ () => this.openLightbox(i) }>
+              <h2>{ img[i].title }</h2>
+              <p>{ img[i].artist }</p>
+            </div>
+          </div>
+        );
+    }
   }
 
   updateIndexList(){
@@ -205,9 +173,21 @@ export default class ArtworkApp extends Component {
   }
 
   render() {
-    const { artworks } = this.props;
-    const { disciplineList, disciplines, images, allImages } = this.state;
+    const { artworks, displayedArt } = this.props;
+    const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
     let gt = ">";
+    if (artworks.length > 0) {
+      let arts = [];
+      artworks.forEach((i, artwork) => {
+        displayedArt.forEach((display) => {
+          if (display === artwork.image) {
+             arts.push(i);
+            this.setState({artDisplay: arts});
+          }
+        });
+      });
+    }
+
     return (
       <div className='grey-bg'>
         <div className='artworks'>
@@ -216,7 +196,7 @@ export default class ArtworkApp extends Component {
             <div className="art-box">
               <div className="art-box-1">
                 { this.renderImg(images, 0) }
-              </div>  
+              </div>
               <div className="art-box-1">
                 <div className="art-box-1-img">
                   { this.renderImg(images, 1) }
@@ -225,7 +205,7 @@ export default class ArtworkApp extends Component {
                   { this.renderImg(images, 2) }
                 </div>
               </div>
-              
+
             </div>
             <div className="art-box">
               <div className="art-box-2">

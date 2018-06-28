@@ -14,20 +14,17 @@ exports.home = (req, res) => {
       schools.forEach(school =>{
         allArt = allArt.concat(school.artworks);
       });
-      let Lightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
-      res.render('home', { Hero, Lightbox });
+      let homeLightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
+      res.render('home', { Hero, homeLightbox });
     }
   })
 
-  //const Search = reactHelper.renderComponent('SearchApp');
-  //res.render('home', { Hero, Search });
 
 };
 
 exports.getSchool = async (req, res, next) => {
   const school = await School.findOne({ slug: req.params.schoolSlug });
   if (!school) {
-    // set flash messages
     res.redirect('/');
   } else {
     res.locals.school = school;
@@ -38,7 +35,6 @@ exports.getSchool = async (req, res, next) => {
 exports.getStudyArea = async (req, res, next) => {
   const area = await StudyArea.findOne({ slug: req.params.areaSlug });
   if (!area) {
-    // set flash messages
     res.redirect('/');
   } else {
     res.locals.area = area;
@@ -49,7 +45,6 @@ exports.getStudyArea = async (req, res, next) => {
 exports.getCourse = async (req, res, next) => {
   const course = await Course.findOne({ slug: req.params.courseSlug });
   if (!course) {
-    // set flash messages
     res.redirect('/');
   } else {
     res.locals.course = course;
@@ -60,22 +55,20 @@ exports.getCourse = async (req, res, next) => {
 exports.schoolArtwork = (req, res) => {
   const school = res.locals.school;
   const course = res.locals.course;
-  // TODO only pass valid information as props: pass id -> api call get data
-  const Lightbox = reactHelper.renderComponent('ArtworkApp', { search: true, artworks: school.artworks, course });
-  res.render('schoolArtwork', { school, Lightbox });
-};
+ };
+
 
 exports.schoolDetails = (req, res) => {
   const school = res.locals.school;
+  const displayedArt = school.displayedArt;
   const artworks = school.artworks;
-  // choose number of images to show: 20
-  const Lightbox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: school.artworks.slice(0, 20) });
+  const schoolLightBox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: artworks, displayedArt: displayedArt });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
   const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
-  const Video = reactHelper.renderComponent('SchoolVideoApp', {video: school.video});
-  res.render('schoolDetails', { school, Lightbox, CampusMaps, Facilities, Alumni, Courses, artworks, Video });
+
+  res.render('schoolDetails', { school, schoolLightBox, CampusMaps, Facilities, Alumni, Courses });
 };
 
 exports.schoolCourses = (req, res) => {

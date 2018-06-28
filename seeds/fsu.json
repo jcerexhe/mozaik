@@ -4,14 +4,14 @@
     "short_name": "FSU",
     "website": "www.fullsail.edu",
     "disciplines": [
-    	"Music & Recording",
-    	"Games",
-    	"Art & Design",
-    	"Film & Television",
-    	"Technology",
-    	"Media & Communications",
-    	"Business",
-    	"Sports"
+      "Music & Recording",
+      "Games",
+      "Art & Design",
+      "Film & Television",
+      "Technology",
+      "Media & Communications",
+      "Business",
+      "Sports"
     ],
     "study_areas": [
       "Visual Communication",
@@ -31,26 +31,26 @@
       "currency": "USD",
       "type": "International students",
       "upper": 80500,
-      "lower": 31000		
+      "lower": 31000    
     }],
     "scholarships": [
-    	"Dedication Scholarship, new students, $1,000",
-    	"Full Sail Entertainment & Media Scholarship for Women, new students, $2,000",
-    	"Global Achievement Scholarship, new students, $5,000",
-    	"Hall of Fame Scholarship, new students, $10,000",
-    	"Full Sail Merit Scholarship, new students, $3,000",
-    	"Pathway Scholarship, new students, $35,000",
-    	"STEM Scholarship, new students, $5,000",
-    	"Courage and Creativity Scholarship, new students, $18,500",
-    	"Full Sail Educational Media Scholarship, new students $12,000",
-    	"Online Mastery Scholarship, new students, $3,000",
-    	"Momentum Scholarship, new students, $20,000",
-    	"Momentum Scholarship for High School Seniors Scholarship, new students, $20,000",
-    	"Momentum Scholarship for Florida Residents Scholarship, new students, $20,000",
-    	"Technology Assistance Scholarship, new students, $3,000",
-    	"Full Sail Alumni Scholarship, returning students, $3,000",
-    	"Student Support Scholarship, current students, $10,000"
-	],
+      "Dedication Scholarship, new students, $1,000",
+      "Full Sail Entertainment & Media Scholarship for Women, new students, $2,000",
+      "Global Achievement Scholarship, new students, $5,000",
+      "Hall of Fame Scholarship, new students, $10,000",
+      "Full Sail Merit Scholarship, new students, $3,000",
+      "Pathway Scholarship, new students, $35,000",
+      "STEM Scholarship, new students, $5,000",
+      "Courage and Creativity Scholarship, new students, $18,500",
+      "Full Sail Educational Media Scholarship, new students $12,000",
+      "Online Mastery Scholarship, new students, $3,000",
+      "Momentum Scholarship, new students, $20,000",
+      "Momentum Scholarship for High School Seniors Scholarship, new students, $20,000",
+      "Momentum Scholarship for Florida Residents Scholarship, new students, $20,000",
+      "Technology Assistance Scholarship, new students, $3,000",
+      "Full Sail Alumni Scholarship, returning students, $3,000",
+      "Student Support Scholarship, current students, $10,000"
+  ],
     "locationDescription": "",
     "locations": [
       {
@@ -66,39 +66,39 @@
     ],
     "facilitiesDescription": "212 acre campus featuring 110+ studios and collaborative production environments, professional-level recording and game studios, spacious Hollywood-style back lot, and multiple live venues to host events, concerts, and more.",
     "facilitiesImages": [
-    	"FSU/campus_photography/Full_Sail_University-1",
-    	"FSU/campus_photography/Full_Sail_University-2",
-    	"FSU/campus_photography/Full_Sail_University-3",
-    	"FSU/campus_photography/Full_Sail_University-4",
-    	"FSU/campus_photography/Full_Sail_University-5",
-    	"FSU/campus_photography/Full_Sail_University-6",
-    	"FSU/campus_photography/Full_Sail_University-7",
-    	"FSU/campus_photography/Full_Sail_University-8",
-    	"FSU/campus_photography/Full_Sail_University-9",
-    	"FSU/campus_photography/Full_Sail_University-10",
-    	"FSU/campus_photography/Full_Sail_University-11",
-    	"FSU/campus_photography/Full_Sail_University-12",
-    	"FSU/campus_photography/Full_Sail_University-13",
-    	"FSU/campus_photography/Full_Sail_University-14",
-    	"FSU/campus_photography/Full_Sail_University-16",
-    	"FSU/campus_photography/Full_Sail_University-17",
-    	"FSU/campus_photography/Full_Sail_University-18",
-    	"FSU/campus_photography/Full_Sail_University-19",
-    	"FSU/campus_photography/Full_Sail_University-20",
-    	"FSU/campus_photography/Full_Sail_University-21",
-    	"FSU/campus_photography/Full_Sail_University-22",
-    	"FSU/campus_photography/Full_Sail_University-23",
-    	"FSU/campus_photography/Full_Sail_University-24",
-    	"FSU/campus_photography/Full_Sail_University-25",
-    	"FSU/campus_photography/Full_Sail_University-26",
-    	"FSU/campus_photography/Full_Sail_University-27",
-    	"FSU/campus_photography/Full_Sail_University-28",
-    	"FSU/campus_photography/Full_Sail_University-29",
-    	"FSU/campus_photography/Full_Sail_University-30",
-    	"FSU/campus_photography/Full_Sail_University-31",
-    	"FSU/campus_photography/Full_Sail_University-32",
-    	"FSU/campus_photography/Full_Sail_University-33",
-    	"FSU/campus_photography/Full_Sail_University-34"
+      "FSU/campus_photography/Full_Sail_University-1",
+      "FSU/campus_photography/Full_Sail_University-2",
+      "FSU/campus_photography/Full_Sail_University-3",
+      "FSU/campus_photography/Full_Sail_University-4",
+      "FSU/campus_photography/Full_Sail_University-5",
+      "FSU/campus_photography/Full_Sail_University-6",
+      "FSU/campus_photography/Full_Sail_University-7",
+      "FSU/campus_photography/Full_Sail_University-8",
+      "FSU/campus_photography/Full_Sail_University-9",
+      "FSU/campus_photography/Full_Sail_University-10",
+      "FSU/campus_photography/Full_Sail_University-11",
+      "FSU/campus_photography/Full_Sail_University-12",
+      "FSU/campus_photography/Full_Sail_University-13",
+      "FSU/campus_photography/Full_Sail_University-14",
+      "FSU/campus_photography/Full_Sail_University-16",
+      "FSU/campus_photography/Full_Sail_University-17",
+      "FSU/campus_photography/Full_Sail_University-18",
+      "FSU/campus_photography/Full_Sail_University-19",
+      "FSU/campus_photography/Full_Sail_University-20",
+      "FSU/campus_photography/Full_Sail_University-21",
+      "FSU/campus_photography/Full_Sail_University-22",
+      "FSU/campus_photography/Full_Sail_University-23",
+      "FSU/campus_photography/Full_Sail_University-24",
+      "FSU/campus_photography/Full_Sail_University-25",
+      "FSU/campus_photography/Full_Sail_University-26",
+      "FSU/campus_photography/Full_Sail_University-27",
+      "FSU/campus_photography/Full_Sail_University-28",
+      "FSU/campus_photography/Full_Sail_University-29",
+      "FSU/campus_photography/Full_Sail_University-30",
+      "FSU/campus_photography/Full_Sail_University-31",
+      "FSU/campus_photography/Full_Sail_University-32",
+      "FSU/campus_photography/Full_Sail_University-33",
+      "FSU/campus_photography/Full_Sail_University-34"
     ],
     "delivery": [
       "On Campus",
@@ -111,7 +111,16 @@
     "header_image_2": "FSU/campus_photography/Full_Sail_University-16",
     "formidsa": "f837d680-bf2a-41fb-9689-453bedb75f3e",
     "formidse": "e94c6df6-f90a-41f8-9d4e-e79a66a134dd",
-    "formidsc": "ca64730f-0fd2-4fde-95ce-c2be0f251cd5"  
+    "formidsc": "ca64730f-0fd2-4fde-95ce-c2be0f251cd5",
+    "displayedArt": [
+      "FSU/student_work/tumblr_ouc0wg8ll51o3_1280",
+      "FSU/student_work/tumblr_nspw8k7hHH1rb8rhso3_1280",
+      "FSU/student_work/tumblr_o5iyag8pSW1rb8rhso2_1280",
+      "FSU/student_work/tumblr_nxkk630WKH1rb8rhso3_1280",
+      "FSU/student_work/tumblr_nwzsa8XIQM1rb8rhso3_1280",
+      "FSU/student_work/tumblr_o6axauhTur1rb8rhso2_1280",
+      "FSU/student_work/tumblr_o9fr4yMHAN1rb8rhso1_400"    
+    ]  
   },
   "courses": [
     {
@@ -119,7 +128,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program is designed to encourage independence and entrepreneurial thinking as students learn audio essentials and business skills for the audio production industry.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "29 Months",
       "intakes": "Monthly",
@@ -132,11 +141,11 @@
         { 
           "currency":"USD",
           "type": "International students",
-          "fees": 57000		
+          "fees": 57000   
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -148,20 +157,20 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Film/TV/Audio",
-      	"Sound",
-      	"Sound Design",
-      	"Audio Recordist",
-      	"Boom Operator",
-      	"Recording Mixer",
-      	"Audio",
-      	"Audio Engineering",
-      	"Audio Production",
-      	"Sound Technologies",
-      	"Sound Production",
-      	"Digital Audio",
-      	"Electronic Sound",
-      	"Radio"
+        "Film/TV/Audio",
+        "Sound",
+        "Sound Design",
+        "Audio Recordist",
+        "Boom Operator",
+        "Recording Mixer",
+        "Audio",
+        "Audio Engineering",
+        "Audio Production",
+        "Sound Technologies",
+        "Sound Production",
+        "Digital Audio",
+        "Electronic Sound",
+        "Radio"
       ],
       "image": "",
       "formidca": "e87b8c17-a6f2-4255-989e-5f65b4f2fde3",
@@ -172,7 +181,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students get the opportunity to experience the different facets of the audio industry, as they develop the skills they need to get their hands on the controls in professional-level recording facilities.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "20 Months",
       "intakes": "Monthly",
@@ -185,11 +194,11 @@
         { 
           "currency": "USD", 
           "type": "International students",
-          "fees": 78000		
+          "fees": 78000   
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -201,20 +210,20 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Film/TV/Audio",
-      	"Sound",
-      	"Sound Design",
-      	"Audio Recordist",
-      	"Boom Operator",
-      	"Recording Mixer",
-      	"Audio",
-      	"Audio Engineering",
-      	"Audio Production",
-      	"Sound Technologies",
-      	"Sound Production",
-      	"Digital Audio",
-      	"Electronic Sound",
-      	"Radio"
+        "Film/TV/Audio",
+        "Sound",
+        "Sound Design",
+        "Audio Recordist",
+        "Boom Operator",
+        "Recording Mixer",
+        "Audio",
+        "Audio Engineering",
+        "Audio Production",
+        "Sound Technologies",
+        "Sound Production",
+        "Digital Audio",
+        "Electronic Sound",
+        "Radio"
       ],
       "image": "",
       "formidca": "eb1b74ce-6dc9-4adb-a2c1-7b07cbd239ce",
@@ -225,7 +234,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students in this program build experience at concerts and live shows, becoming familiar with concepts such as lighting and sound design.",
       "campus": [
-      	"Winter Park" 
+        "Winter Park" 
       ],
       "duration": "20 Months",
       "intakes": "Monthly",
@@ -238,11 +247,11 @@
         { 
           "currency": "USD", 
           "type": "International students",
-          "fees": 78000		
+          "fees": 78000   
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -254,23 +263,23 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Performing Arts",
-      	"Lighting",
-      	"Sound",
-      	"Vision Designs",
-      	"Theatre",
-      	"Music Festival",
-      	"Opera",
-      	"Concert",
-      	"Live Production",
-      	"Event Production",
-      	"Live Events",
-      	"Music Festivals",
-      	"Music Performance",
-      	"Performance Technology",
-      	"Stage Management",
-      	"Technical Production",
-      	"Production Management"
+        "Performing Arts",
+        "Lighting",
+        "Sound",
+        "Vision Designs",
+        "Theatre",
+        "Music Festival",
+        "Opera",
+        "Concert",
+        "Live Production",
+        "Event Production",
+        "Live Events",
+        "Music Festivals",
+        "Music Performance",
+        "Performance Technology",
+        "Stage Management",
+        "Technical Production",
+        "Production Management"
       ],
       "image": "",
       "formidca": "5b33beff-ca4e-45c6-8cbc-f84d84a71439",
@@ -281,12 +290,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This degree program focuses on the fundamentals of interactive graphics development – including character creation, environment and prop creation, the game production pipeline, in-game effects, and animation.",
       "campus": [
-      	"Winter Park",
-      	"Online" 
+        "Winter Park",
+        "Online" 
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ],
       "intakes": "Monthly",
       "prices": [
@@ -298,7 +307,7 @@
         { 
           "currency": "USD", 
           "type": "International students (Campus)",
-          "fees": 80500		
+          "fees": 80500   
         },
         {
           "currency": "USD", 
@@ -308,11 +317,11 @@
         { 
           "currency": "USD", 
           "type": "International students (Online)",
-          "fees": 57000		
+          "fees": 57000   
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -324,32 +333,32 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Animation",
+        "Digital Media",
+        "Animation",
         "2D/3D Animaton",
-      	"2D Animation",
-      	"3D Design",
+        "2D Animation",
+        "3D Design",
         "VFX",
-      	"Visual Effect (VFX)",
-      	"Motion Graphics",
-      	"Computer Graphics",
-      	"AR/VR",
-      	"Games Design",
-      	"Game Development",
-      	"Games and Interactivity",
-      	"Games Assets",
-      	"Multimedia",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"3D Printing",
-      	"Production Design",
-      	"Concept Artist",
-      	"Decoding Media",
-      	"Design",
-      	"Production Design",
-      	"Digital Visualisation",
+        "Visual Effect (VFX)",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Games Design",
+        "Game Development",
+        "Games and Interactivity",
+        "Games Assets",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "3D Printing",
+        "Production Design",
+        "Concept Artist",
+        "Decoding Media",
+        "Design",
+        "Production Design",
+        "Digital Visualisation",
         "Media Arts",
-      	"Virtual Worlds"
+        "Virtual Worlds"
       ],
       "image": "",
       "formidca": "579d7f90-168a-41ab-9fa1-19388fe6eb3b",
@@ -360,12 +369,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students learn production processes used by today’s studios to design and produce games, while studying the building blocks of narrative design.",
       "campus": [
-      	"Winter Park",
-      	"Online" 
+        "Winter Park",
+        "Online" 
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -377,7 +386,7 @@
         { 
           "currency": "USD", 
           "type": "International students (Campus)",
-          "fees": 80500		
+          "fees": 80500   
         },
         {
           "currency": "USD", 
@@ -387,11 +396,11 @@
         { 
           "currency": "USD", 
           "type": "International students (Online)",
-          "fees": 57000		
+          "fees": 57000   
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -403,31 +412,31 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Animation",
+        "Digital Media",
+        "Animation",
         "2D/3D Animation",
-      	"2D Animation",
-      	"3D Design",
+        "2D Animation",
+        "3D Design",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Motion Graphics",
-      	"Computer Graphics",
-      	"AR/VR",
-      	"Games Design",
-      	"Game Development",
-      	"Games and Interactivity",
-      	"Games Assets",
-      	"Multimedia",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"Production Design",
-      	"Concept Artist",
-      	"Decoding Media",
-      	"Design",
-      	"Production Design",
-      	"Digital Visualisation",
+        "Visual Effects (VFX)",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Games Design",
+        "Game Development",
+        "Games and Interactivity",
+        "Games Assets",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "Production Design",
+        "Concept Artist",
+        "Decoding Media",
+        "Design",
+        "Production Design",
+        "Digital Visualisation",
         "Media Arts",
-      	"Virtual Worlds"
+        "Virtual Worlds"
       ],
       "image": "",
       "formidca": "939d3382-bf7f-4d71-84d7-790469a43e45",
@@ -438,7 +447,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program’s specialized courses focus on core concepts in teamwork and leadership, project development, design and prototyping, and marketing, as well as grounding in different types of software.",
       "campus": [
-      	"Winter Park" 
+        "Winter Park" 
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -456,7 +465,7 @@
 
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -468,31 +477,31 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Animation",
+        "Digital Media",
+        "Animation",
         "2D/3D Animation",
-      	"2D Animation",
-      	"3D Design",
+        "2D Animation",
+        "3D Design",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Motion Graphics",
-      	"Computer Graphics",
-      	"AR/VR",
-      	"Games Design",
-      	"Game Development",
-      	"Games and Interactivity",
-      	"Games Assets",
-      	"Multimedia",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"Production Design",
-      	"Concept Artist",
-      	"Decoding Media",
-      	"Design",
-      	"Production Design",
-      	"Digital Visualisation",
+        "Visual Effects (VFX)",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Games Design",
+        "Game Development",
+        "Games and Interactivity",
+        "Games Assets",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "Production Design",
+        "Concept Artist",
+        "Decoding Media",
+        "Design",
+        "Production Design",
+        "Digital Visualisation",
         "Media Arts",
-      	"Virtual Worlds"
+        "Virtual Worlds"
       ],
       "image": "",
       "formidca": "cb9fc462-737f-492d-8f52-50ea6715d0f6",
@@ -503,7 +512,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "In this program, students master the technology and tools necessary to develop and program single and multiplayer video games for gaming consoles, personal computers, and networks.",
       "campus": [
-      	"Winter Park" 
+        "Winter Park" 
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -521,7 +530,7 @@
 
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -533,31 +542,31 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Animation",
+        "Digital Media",
+        "Animation",
         "2D/3D Animation",
-      	"2D Animation",
-      	"3D Design",
+        "2D Animation",
+        "3D Design",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Motion Graphics",
-      	"Computer Graphics",
-      	"AR/VR",
-      	"Games Design",
-      	"Game Development",
-      	"Games and Interactivity",
-      	"Games Assets",
-      	"Multimedia",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"Production Design",
-      	"Concept Artist",
-      	"Decoding Media",
-      	"Design",
-      	"Production Design",
-      	"Digital Visualisation",
-       	"Media Arts",
-      	"Virtual Worlds"
+        "Visual Effects (VFX)",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Games Design",
+        "Game Development",
+        "Games and Interactivity",
+        "Games Assets",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "Production Design",
+        "Concept Artist",
+        "Decoding Media",
+        "Design",
+        "Production Design",
+        "Digital Visualisation",
+        "Media Arts",
+        "Virtual Worlds"
       ],
       "image": "",
       "formidca": "bf6d5b04-3f6a-4675-9d57-8939df8a5749",
@@ -568,7 +577,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program allows students to explore the production processes used to produce content for mobile gaming platforms, such as character sketches, level design, story development, and other creative elements.",
       "campus": [
-      	"Online" 
+        "Online" 
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -586,7 +595,7 @@
 
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -598,21 +607,21 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Multimedia",
-      	"Digital Media",
-      	"Web Design",
-      	"Mobile Design",
-      	"Mobile Applicaiton",
-      	"Mobile Development",
-      	"Web Interface",
-      	"Packaging and Branding",
-       	"Digital Project Management",
-      	"Cross-Platform Apps",
-      	"Games Design",
-      	"Game Development",
-      	"Games and Interactivity",
-      	"Games Assets",
-      	"Virtual Worlds"
+        "Multimedia",
+        "Digital Media",
+        "Web Design",
+        "Mobile Design",
+        "Mobile Applicaiton",
+        "Mobile Development",
+        "Web Interface",
+        "Packaging and Branding",
+        "Digital Project Management",
+        "Cross-Platform Apps",
+        "Games Design",
+        "Game Development",
+        "Games and Interactivity",
+        "Games Assets",
+        "Virtual Worlds"
       ],
       "image": "",
       "formidca": "5732ae05-50cb-449b-b669-ef0a07377ce7",
@@ -623,12 +632,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "In this program, students build traditional art fundamentals while familiarizing themselves with the techniques and technology behind animated projects in media such as film, television, video games and motion graphics.",
       "campus": [
-      	"Winter Park",
-      	"Online" 
+        "Winter Park",
+        "Online" 
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ],
       "intakes": "Monthly",
       "prices": [
@@ -654,7 +663,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -666,34 +675,34 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Animation",
+        "Digital Media",
+        "Animation",
         "2D/3D Animation",
-      	"2D Animation",
-      	"3D Design",
+        "2D Animation",
+        "3D Design",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Motion Graphics",
-      	"Computer Graphics",
-      	"AR/VR",
-      	"Games Design",
-      	"Multimedia",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"3D Printing",
-      	"Production Design",
-      	"Concept Artist",
-      	"Decoding Media",
-      	"Film",
-      	"Virtual Worlds",
-      	"Screen Production",
-      	"Cinematic Storytelling",
-      	"Transmedia",
-      	"Computer Graphics",
-      	"Digital Media",
-      	"Matte Painting",
-      	"Compositing",
-      	"Rendering"
+        "Visual Effects (VFX)",
+        "Motion Graphics",
+        "Computer Graphics",
+        "AR/VR",
+        "Games Design",
+        "Multimedia",
+        "Digital Design",
+        "Digital Imaging",
+        "3D Printing",
+        "Production Design",
+        "Concept Artist",
+        "Decoding Media",
+        "Film",
+        "Virtual Worlds",
+        "Screen Production",
+        "Cinematic Storytelling",
+        "Transmedia",
+        "Computer Graphics",
+        "Digital Media",
+        "Matte Painting",
+        "Compositing",
+        "Rendering"
       ],
       "image": "",
       "formidca": "7748cd45-851c-4a05-933e-130343ea8ddc",
@@ -704,7 +713,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program combines art fundamentals with the design industry’s current technology – helping students expand their artistic talents to create powerful imagery for entertainment, advertising, branding, and the web.",
       "campus": [
-      	"Winter Park" 
+        "Winter Park" 
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -722,7 +731,7 @@
 
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -734,37 +743,37 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Design",
+        "Digital Design",
         "2D/3D Animation",
-       	"2D Animation",
-      	"3D Design",
-      	"Motion Graphics",
-      	"Games Design",
-      	"Multimedia",
-      	"Digital Media",
-       	"Digital Imaging",
-       	"Digital Images",
-      	"Computer Graphics",
-      	"Graphic Design",
-      	"Illustration",
-      	"Typography",
-      	"Photography",
-      	"Web Design",
-      	"Web Interface",
-      	"3D Printing", 
-      	"Packaging and Branding",
+        "2D Animation",
+        "3D Design",
+        "Motion Graphics",
+        "Games Design",
+        "Multimedia",
+        "Digital Media",
+        "Digital Imaging",
+        "Digital Images",
+        "Computer Graphics",
+        "Graphic Design",
+        "Illustration",
+        "Typography",
+        "Photography",
+        "Web Design",
+        "Web Interface",
+        "3D Printing", 
+        "Packaging and Branding",
         "Visual Comms",
         "Visual Communication",
-      	"Photomedia",
-       	"Visual Communication",
-       	"Photography Design",
-      	"Concept Artist",
-      	"Creative Drawing",
-      	"Advertising",
-      	"Arts Marketing",
-      	"Creative Advertising",
-      	"Marketing",
-      	"Visual Merchandising"
+        "Photomedia",
+        "Visual Communication",
+        "Photography Design",
+        "Concept Artist",
+        "Creative Drawing",
+        "Advertising",
+        "Arts Marketing",
+        "Creative Advertising",
+        "Marketing",
+        "Visual Merchandising"
       ],
       "image": "",
       "formidca": "502bce7d-1635-45d6-9157-ea2c83ea8917",
@@ -775,7 +784,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students learn how to meet deadlines and work within specific creative demands while producing high-end design work in a variety of formats.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "29 Months", 
       "intakes": "Monthly",
@@ -792,7 +801,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -804,29 +813,29 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Design",
-      	"Graphic Design",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"Digital Images",
-      	"Computer Graphics",
-      	"Illustration",
-      	"Typography",
-      	"Photography",
-      	"Web Design",
-      	"Web Interface",
-      	"3D Printing",
-      	"Packaging and Branding",
-      	"Photomedia",
+        "Design",
+        "Graphic Design",
+        "Digital Design",
+        "Digital Imaging",
+        "Digital Images",
+        "Computer Graphics",
+        "Illustration",
+        "Typography",
+        "Photography",
+        "Web Design",
+        "Web Interface",
+        "3D Printing",
+        "Packaging and Branding",
+        "Photomedia",
         "Visual Communication",
         "Photography Design",
-      	"Concept Artist",
-      	"Creative Drawing",
-      	"Advertising",
-      	"Arts Marketing",
-      	"Creative Advertising",
-      	"Marketing",
-      	"Visual Merchandising"
+        "Concept Artist",
+        "Creative Drawing",
+        "Advertising",
+        "Arts Marketing",
+        "Creative Advertising",
+        "Marketing",
+        "Visual Merchandising"
       ],
       "image": "",
       "formidca": "c348f3de-7f8e-4162-8790-b677f25a4698",
@@ -837,7 +846,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "In this program, students go through a full-scale branding project – learning how to identify client needs, develop well-researched creative work, and craft an effective path.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -854,7 +863,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -866,32 +875,32 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Design",
-      	"Graphic Design",
-      	"Media Design",
-      	"Digital Design",
-      	"Digital Imaging",
-      	"Digital Images",
-      	"Computer Graphics",
-      	"Illustration",
-      	"Typography",
-      	"Photography",
-      	"Web Design",
-      	"Web Interface",
-      	"3D Printing",
-      	"Packaging and Branding",
-      	"Photomedia",
+        "Design",
+        "Graphic Design",
+        "Media Design",
+        "Digital Design",
+        "Digital Imaging",
+        "Digital Images",
+        "Computer Graphics",
+        "Illustration",
+        "Typography",
+        "Photography",
+        "Web Design",
+        "Web Interface",
+        "3D Printing",
+        "Packaging and Branding",
+        "Photomedia",
         "Visual Communication",
         "Photography Design",
-      	"Concept Artist",
-      	"Creative Drawing",
-      	"Advertising",
-      	"Arts Marketing",
-      	"Creative Advertising",
-      	"Marketing",
-      	"Visual Merchandising",
-      	"Media Production",
-      	"Brand Management"
+        "Concept Artist",
+        "Creative Drawing",
+        "Advertising",
+        "Arts Marketing",
+        "Creative Advertising",
+        "Marketing",
+        "Visual Merchandising",
+        "Media Production",
+        "Brand Management"
       ],
       "image": "",
       "formidca": "3b89f907-96cf-4e1d-87b4-2d79c4aefc00",
@@ -902,7 +911,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program merges the artistic concepts of traditional filmmaking with the technological tools used in everything from independent news gathering and documentary filmmaking, to commercial production and web video.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "29 Months", 
       "intakes": "Monthly",
@@ -919,7 +928,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -931,27 +940,27 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Film/TV",
+        "Film/TV",
         "Film",
-      	"TV",
-      	"Animation",
-      	"Screen Production",
-      	"Cinematography",
-      	"Camera Operator",
-      	"Director of Photography",
-      	"DOP",
-      	"Visual Storytelling",
-      	"Cinematic Storytelling",
-      	"Visual Expression",
-       	"Photography",
-      	"Documentary Photography",
-      	"Moving Image",
-      	"Gaffer",
-      	"Grip",
-      	"Steadicam Operator",
-      	"Colour Grading",
-      	"Digital Cinematographer",
-      	"Digital Video"
+        "TV",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Camera Operator",
+        "Director of Photography",
+        "DOP",
+        "Visual Storytelling",
+        "Cinematic Storytelling",
+        "Visual Expression",
+        "Photography",
+        "Documentary Photography",
+        "Moving Image",
+        "Gaffer",
+        "Grip",
+        "Steadicam Operator",
+        "Colour Grading",
+        "Digital Cinematographer",
+        "Digital Video"
       ],
       "image": "",
       "formidca": "fdf48a5b-3161-4f22-969d-92053cf0aef1",
@@ -962,7 +971,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students gain hands-on experience working each position on set on a variety of filmmaking projects, enabling them to get a feel for the role that each crew member plays in production.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -979,7 +988,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -992,43 +1001,43 @@
       ],
       "disciplines": [
         "Film/TV",
-      	"Film",
-      	"Animation",
-      	"Screen Production",
-      	"Cinematography",
-      	"Directing",
-      	"Editing",
-      	"Filmaking",
-      	"Post Production",
-      	"Producing",
-      	"Production Design",
-      	"Screen Media",
-      	"Screen Performance",
-      	"Screenwriting",
-      	"Sound Design",
-      	"Music",
-      	"SFX",
+        "Film",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Directing",
+        "Editing",
+        "Filmaking",
+        "Post Production",
+        "Producing",
+        "Production Design",
+        "Screen Media",
+        "Screen Performance",
+        "Screenwriting",
+        "Sound Design",
+        "Music",
+        "SFX",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Documentary",
-      	"Camera Operator",
-      	"Set Designer",
-      	"Script Editor",
-      	"DOP",
-      	"Director of Photography",
-      	"Broadcasting",
-      	"Storytelling",
-      	"Character Performance",
-      	"Multimedia",
-      	"Transmedia",
-      	"Computer Graphics",
-      	"Digital Media",
-      	"Music Composition",
-      	"Production",
-      	"Costume Design",
-      	"Digital Media",
-      	"Transmedia",
-      	"Film Production"
+        "Visual Effects (VFX)",
+        "Documentary",
+        "Camera Operator",
+        "Set Designer",
+        "Script Editor",
+        "DOP",
+        "Director of Photography",
+        "Broadcasting",
+        "Storytelling",
+        "Character Performance",
+        "Multimedia",
+        "Transmedia",
+        "Computer Graphics",
+        "Digital Media",
+        "Music Composition",
+        "Production",
+        "Costume Design",
+        "Digital Media",
+        "Transmedia",
+        "Film Production"
       ],
       "image": "",
       "formidca": "cbc84992-4531-4148-9937-a7dd13a9bb05",
@@ -1039,7 +1048,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students receive an advanced education in behind-the-scenes filmmaking – working in teams to complete real films, while focusing on fundamentals such as storytelling, visual aesthetics, and technical roles.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1056,7 +1065,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1069,43 +1078,43 @@
       ],
       "disciplines": [
         "Film/TV",
-      	"Film",
-      	"Animation",
-      	"Screen Production",
-      	"Cinematography",
-      	"Directing",
-      	"Editing",
-      	"Filmaking",
-      	"Post Production",
-      	"Producing",
-      	"Production Design",
-      	"Screen Media",
-      	"Screen Performance",
-      	"Screenwriting",
-      	"Sound Design",
-      	"Music",
-      	"SFX",
+        "Film",
+        "Animation",
+        "Screen Production",
+        "Cinematography",
+        "Directing",
+        "Editing",
+        "Filmaking",
+        "Post Production",
+        "Producing",
+        "Production Design",
+        "Screen Media",
+        "Screen Performance",
+        "Screenwriting",
+        "Sound Design",
+        "Music",
+        "SFX",
         "VFX",
-      	"Visual Effects (VFX)",
-      	"Documentary",
-      	"Camera Operator",
-      	"Set Designer",
-      	"Script Editor",
-      	"DOP",
-      	"Director of Photography",
-      	"Broadcasting",
-      	"Storytelling",
-      	"Character Performance",
-      	"Multimedia",
-      	"Transmedia",
-      	"Computer Graphics",
-      	"Digital Media",
-      	"Music Composition",
-      	"Production",
-      	"Costume Design",
-      	"Digital Media",
-      	"Transmedia",
-      	"Film Production"
+        "Visual Effects (VFX)",
+        "Documentary",
+        "Camera Operator",
+        "Set Designer",
+        "Script Editor",
+        "DOP",
+        "Director of Photography",
+        "Broadcasting",
+        "Storytelling",
+        "Character Performance",
+        "Multimedia",
+        "Transmedia",
+        "Computer Graphics",
+        "Digital Media",
+        "Music Composition",
+        "Production",
+        "Costume Design",
+        "Digital Media",
+        "Transmedia",
+        "Film Production"
       ],
       "image": "",
       "formidca": "ef49e003-34d4-449b-a066-4871ae69fcd3",
@@ -1116,7 +1125,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program introduces students to various tools and scripting languages involved in managing software-defined data centers (clouds), and explores topics including security, API use, and system management.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -1133,7 +1142,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1145,38 +1154,38 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Information Technology",
-      	"Cloud Technology",
-      	"Multimedia",
-      	"Digital Media",
-      	"Mobile Application",
-      	"Mobile Development",
-      	"Web Interface",
-      	"Digital Project Management",
-      	"Cross-Platform Apps",
-      	"API",
-      	"Security",
-      	"Systems Management",
-      	"Programming",
-      	"C++",
-      	"Creative Technologies",
-      	"Digital Media Technology",
-      	"Java",
-      	"Computing Architecture",
-      	"Big Data",
-      	"Data Mining",
-      	"Data Science",
-      	"Internet of Things",
-      	"IoT",
-      	"Operating Systems",
-      	"Networking Technologies",
-      	"SW Engineering",
-      	"Software Engineering",
-      	"Virtualization Technologies",
-      	"Data Storage",
-      	"Cloud Management",
-      	"Database Systems",
-      	"Technology in the Entertainment Business"
+        "Information Technology",
+        "Cloud Technology",
+        "Multimedia",
+        "Digital Media",
+        "Mobile Application",
+        "Mobile Development",
+        "Web Interface",
+        "Digital Project Management",
+        "Cross-Platform Apps",
+        "API",
+        "Security",
+        "Systems Management",
+        "Programming",
+        "C++",
+        "Creative Technologies",
+        "Digital Media Technology",
+        "Java",
+        "Computing Architecture",
+        "Big Data",
+        "Data Mining",
+        "Data Science",
+        "Internet of Things",
+        "IoT",
+        "Operating Systems",
+        "Networking Technologies",
+        "SW Engineering",
+        "Software Engineering",
+        "Virtualization Technologies",
+        "Data Storage",
+        "Cloud Management",
+        "Database Systems",
+        "Technology in the Entertainment Business"
       ],
       "image": "",
       "formidca": "c19535ec-9757-4eff-8a93-526cbf838470",
@@ -1187,8 +1196,8 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program teaches students the skills to pursue a future in the growing market of mobile development by teaching them how to concept, code, deploy, and market mobile applications for companies and various organizations.",
       "campus": [
-      	"Winter Park",
-      	"Online"
+        "Winter Park",
+        "Online"
       ],
       "duration": "20-Month Bachelor’s", 
       "intakes": "Monthly",
@@ -1215,7 +1224,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1227,30 +1236,30 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Multimedia",
-      	"Digital Media",
-      	"Web Design",
-      	"Mobile Design",
-      	"Mobile Application",
-      	"Mobiel Development",
-      	"Web Interface",
-      	"Packaging and Branding",
+        "Multimedia",
+        "Digital Media",
+        "Web Design",
+        "Mobile Design",
+        "Mobile Application",
+        "Mobiel Development",
+        "Web Interface",
+        "Packaging and Branding",
         "Digital Project Management",
-      	"Cross-Platform Apps",
-      	"Systems Management",
-      	"Programming",
-      	"Apple Programming",
-      	"Mobile User Experience",
-      	"Creative Technologies",
-      	"Digital Media Technology",
-      	"Java",
-      	"Computing Architecture",
-      	"Operating Systems",
-      	"Networking Technologies",
-      	"SW Engineering",
-      	"Software Engineering",
-      	"Virtualization Technologies",
-      	"Technology in the Entertainment Business"
+        "Cross-Platform Apps",
+        "Systems Management",
+        "Programming",
+        "Apple Programming",
+        "Mobile User Experience",
+        "Creative Technologies",
+        "Digital Media Technology",
+        "Java",
+        "Computing Architecture",
+        "Operating Systems",
+        "Networking Technologies",
+        "SW Engineering",
+        "Software Engineering",
+        "Virtualization Technologies",
+        "Technology in the Entertainment Business"
       ],
       "image": "",
       "formidca": "deb5f8e5-79ca-4015-ac23-92605b5ad544",
@@ -1261,7 +1270,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program familiarizes students with the technical and critical thinking skills needed to study, architect, develop, and test simulation and visualization systems.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -1278,7 +1287,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1290,34 +1299,34 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Visualization",
-      	"Visualisation",
-      	"Computer Graphics",
+        "Visualization",
+        "Visualisation",
+        "Computer Graphics",
         "Data Visualisation",
-      	"Data Visualization",
-      	"Simulation Production",
-      	"Computer Networks",
-      	"Virtual Reality",
-      	"Augmented Reality",
-      	"Multimedia",
-      	"Digital Media",
-      	"Web Design",
-      	"Web Interface",
-      	"Packaging and Branding",
-      	"Digital Project Management",
-      	"Cross-Platform Apps",
-      	"Systems Management",
-      	"Programming",
-      	"Creative Technologies",
-      	"Digital Media Technology", 
-      	"Java",
-      	"Computing Architecture",
-      	"Operating Systems",
-      	"Networking Technologies",
-      	"SW Engineering",
-      	"Software Engineering",
-      	"Virtualization Technologies",
-      	"Technology in the Entertainment Business"
+        "Data Visualization",
+        "Simulation Production",
+        "Computer Networks",
+        "Virtual Reality",
+        "Augmented Reality",
+        "Multimedia",
+        "Digital Media",
+        "Web Design",
+        "Web Interface",
+        "Packaging and Branding",
+        "Digital Project Management",
+        "Cross-Platform Apps",
+        "Systems Management",
+        "Programming",
+        "Creative Technologies",
+        "Digital Media Technology", 
+        "Java",
+        "Computing Architecture",
+        "Operating Systems",
+        "Networking Technologies",
+        "SW Engineering",
+        "Software Engineering",
+        "Virtualization Technologies",
+        "Technology in the Entertainment Business"
       ],
       "image": "",
       "formidca": "832acdc6-9989-4650-8887-0ec1a87cb663",
@@ -1328,7 +1337,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program introduces students to the design, development, and implementation of software-based solutions and products for business, entertainment, and consumer markets.",
       "campus": [
-      	"Winter Park"
+        "Winter Park"
       ],
       "duration": "20 Months", 
       "intakes": "Monthly",
@@ -1345,7 +1354,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1357,39 +1366,39 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"SW Engineering",
-      	"Software Engineering",
-      	"Software Development",
-      	"Visualization",
-      	"Visualisation",
-      	"Computer Graphics",
-      	"Data Visualisation",
-      	"Data Visualization",
+        "SW Engineering",
+        "Software Engineering",
+        "Software Development",
+        "Visualization",
+        "Visualisation",
+        "Computer Graphics",
+        "Data Visualisation",
+        "Data Visualization",
         "Simulation Production",
-      	"Computer Networks",
-      	"Virtual Reality",
-      	"Augmented Reality",
-      	"Multimedia", 
-      	"Digital Media",
-      	"Web Design",
-      	"Web Interface",
-      	"Packaging and Branding",
-      	"Digital Project Management",
-      	"Cross-Platform Apps",
-      	"Systems Management",
-      	"Programming",
-      	"Creative Technologies",
-      	"Digital Media Technology",
-      	"Java",
-      	"C++", 
-      	"Game Programming",
-      	"Unity",
-      	"Computing Architecture",
-      	"Operating Systems",
-      	"Networking Technologies",
-      	"Virtualization Technologies",
-      	"Technology in the Entertainment Business",
-      	"Digital Logic"
+        "Computer Networks",
+        "Virtual Reality",
+        "Augmented Reality",
+        "Multimedia", 
+        "Digital Media",
+        "Web Design",
+        "Web Interface",
+        "Packaging and Branding",
+        "Digital Project Management",
+        "Cross-Platform Apps",
+        "Systems Management",
+        "Programming",
+        "Creative Technologies",
+        "Digital Media Technology",
+        "Java",
+        "C++", 
+        "Game Programming",
+        "Unity",
+        "Computing Architecture",
+        "Operating Systems",
+        "Networking Technologies",
+        "Virtualization Technologies",
+        "Technology in the Entertainment Business",
+        "Digital Logic"
       ],
       "image": "",
       "formidca": "94723db7-eaef-4982-9f7a-9a9229020729",
@@ -1400,12 +1409,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program equips students with the essential software, programming, and design knowledge needed to create dynamic websites to meet client needs.",
       "campus": [
-      	"Winter Park",
-      	"Online"
+        "Winter Park",
+        "Online"
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -1431,7 +1440,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1443,30 +1452,30 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Design",
-      	"Web Design",
-      	"Web Development",
-      	"UX",
-      	"User Experience",
-      	"IA",
-      	"Information Architecture",
-      	"Web Interface",
-      	"SW Engineering",
-      	"Software Engineering",
-      	"Software Development",
-      	"Visualization",
-      	"Visualisation",
-      	"Computer Graphics",
-      	"Programming",
-      	"Creative Technologies",
-      	"Digital Media Technology",
-      	"Java",
-      	"C++",
-      	"Virtualization Technologies",
-      	"Technology in the Entertainment Business",
-      	"Digital Logic",
-      	"Visual Communication"
+        "Digital Media",
+        "Design",
+        "Web Design",
+        "Web Development",
+        "UX",
+        "User Experience",
+        "IA",
+        "Information Architecture",
+        "Web Interface",
+        "SW Engineering",
+        "Software Engineering",
+        "Software Development",
+        "Visualization",
+        "Visualisation",
+        "Computer Graphics",
+        "Programming",
+        "Creative Technologies",
+        "Digital Media Technology",
+        "Java",
+        "C++",
+        "Virtualization Technologies",
+        "Technology in the Entertainment Business",
+        "Digital Logic",
+        "Visual Communication"
       ],
       "image": "",
       "formidca": "072d3fbc-7c77-4c93-a5ed-ff5d8d8e5066",
@@ -1477,12 +1486,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "In this program, students hone their writing skills through a variety of exercises, assignments, and projects that prepare them to meet the needs of an industry that is powered by creative visionaries.",
       "campus": [
-      	"Winter Park",
-      	"Online"
+        "Winter Park",
+        "Online"
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -1508,7 +1517,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1521,18 +1530,18 @@
       ],
       "disciplines": [
         "Film/TV",
-      	"Film",
-      	"TV",
-      	"Screen Production",
-      	"Screenwriting",
-      	"Script Editor",
-      	"Cinematic Storytelling",
-      	"Screen Culture",
-      	"Playwriting",
-      	"Visual Language",
-      	"Crafting Story",
-      	"Creative Writing",
-      	"Audience Engagement"
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Playwriting",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing",
+        "Audience Engagement"
       ],
       "image": "",
       "formidca": "a21d1b4c-cb5c-4f5f-80de-b4f7b5fc8b54",
@@ -1543,7 +1552,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program teaches students the necessary skills to pursue professional creative writing careers within the world of entertainment, while exploring the art of storytelling and the language of different media outlets.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1560,7 +1569,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1573,18 +1582,18 @@
       ],
       "disciplines": [
         "Film/TV",
-      	"Film",
-      	"TV",
-      	"Screen Production",
-      	"Screenwriting",
-      	"Script Editor",
-      	"Cinematic Storytelling",
-      	"Screen Culture",
-      	"Playwriting",
-      	"Visual Language",
-      	"Crafting Story",
-      	"Creative Writing",
-      	"Audience Engagement"
+        "Film",
+        "TV",
+        "Screen Production",
+        "Screenwriting",
+        "Script Editor",
+        "Cinematic Storytelling",
+        "Screen Culture",
+        "Playwriting",
+        "Visual Language",
+        "Crafting Story",
+        "Creative Writing",
+        "Audience Engagement"
       ],
       "image": "",
       "formidca": "ca2871d5-c455-457e-a6fa-e72c084d8901",
@@ -1595,7 +1604,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students explore how to create, improve, and implement multimedia instructional tools that will inspire and engage audiences, while also building a solid instructional design foundation.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1612,7 +1621,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1625,12 +1634,12 @@
       ],
       "disciplines": [
         "Visual Communication",
-      	"Digital Media",
-      	"Multimedia",
-      	"Audience Engagement",
-      	"Digital Design",
-      	"Games Design",
-      	"Digital Marketing"
+        "Digital Media",
+        "Multimedia",
+        "Audience Engagement",
+        "Digital Design",
+        "Games Design",
+        "Digital Marketing"
       ],
       "image": "",
       "formidca": "b54e5f45-432c-4583-9be0-a9607a880473",
@@ -1641,12 +1650,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students build skills in interactive content production and brand development as they learn how to navigate current and emerging media channels.",
       "campus": [
-      	"Winter Park",
-      	"Online"
+        "Winter Park",
+        "Online"
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -1672,7 +1681,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -1684,15 +1693,15 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Digital Design",
-      	"Graphic Design",
-      	"Visual Communication",
-      	"Brand Management",
-      	"Video Production",
-      	"Digital Production",
-      	"Communication Design",
-      	"Editing for the Web",
+        "Digital Media",
+        "Digital Design",
+        "Graphic Design",
+        "Visual Communication",
+        "Brand Management",
+        "Video Production",
+        "Digital Production",
+        "Communication Design",
+        "Editing for the Web",
         "Gaming",
         "Media Entrepreneurship",
         "Integrated Marketing",
@@ -1717,7 +1726,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program is designed to give students a practical working knowledge of media delivery channels, allowing them to create the kind of dynamic news content that’s reaching today’s audiences.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1734,7 +1743,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1746,13 +1755,13 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Digital Media",
-      	"Digital Design",
-      	"New Media",
-      	"Graphic Design",
-       	"Visual Communication",
-      	"Brand Management",
-      	"Communication Design",
+        "Digital Media",
+        "Digital Design",
+        "New Media",
+        "Graphic Design",
+        "Visual Communication",
+        "Brand Management",
+        "Communication Design",
         "Media Entrepreneurship",
         "Integrated Marketing",
         "Intellectual Property",
@@ -1774,7 +1783,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program gives students a solid grasp on the foundations of traditional public relations methods, while also helping them plan, research, execute, and evaluate effective media strategies.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1791,7 +1800,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1803,16 +1812,16 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Public Relations",
-      	"New Media & Communications",
-      	"Digital Media",
-      	"Digital Design",
-      	"New Media",
-      	"Graphic Design",
-       	"Visual Communication",
-      	"Brand Management",
-      	"Communication Design",
-      	"Design",
+        "Public Relations",
+        "New Media & Communications",
+        "Digital Media",
+        "Digital Design",
+        "New Media",
+        "Graphic Design",
+        "Visual Communication",
+        "Brand Management",
+        "Communication Design",
+        "Design",
         "Media Entrepreneurship",
         "Integrated Marketing",
         "Intellectual Property",
@@ -1852,7 +1861,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students learn how to collect, analyze, and interpret Big Data using a variety of tools and technologies – allowing them to demonstrate their abilities as business intelligence professionals.",
       "campus": [
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -1869,7 +1878,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -1881,28 +1890,28 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Marketing",
-      	"Integrated Marketing",
-      	"Internet Marketing",
-      	"Audience Engagement",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Enterprise Data Management",
-      	"Business Intelligence",
-      	"Data Visualization",
-      	"Data Mining",
-      	"Big Data",
-      	"Data Science",
-      	"Internet of Things",
-      	"Technology in the Entertainment Business",
-      	"Financial Modelling",
-      	"Digital Marketing"
+        "Business for Creatives",
+        "Marketing",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Audience Engagement",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Enterprise Data Management",
+        "Business Intelligence",
+        "Data Visualization",
+        "Data Mining",
+        "Big Data",
+        "Data Science",
+        "Internet of Things",
+        "Technology in the Entertainment Business",
+        "Financial Modelling",
+        "Digital Marketing"
       ],
       "image": "",
        "formidca": "d7110b09-c978-4f2e-9dd7-b6b3e85d3750",
@@ -2019,12 +2028,12 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students use case studies and in-depth industry research to gain a better understanding of what makes a successful business thrive in the entertainment world.",
       "campus": [
-      	"Winter Park",
-      	"Online"
+        "Winter Park",
+        "Online"
       ],
       "duration": [
-      	"Campus - 12 Months", 
-      	"Online - 12 Months"
+        "Campus - 12 Months", 
+        "Online - 12 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -2050,7 +2059,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -2062,59 +2071,59 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Entertainment Business",
-      	"Marketing",
-      	"Integrated Marketing",
-      	"Internet Marketing",
-      	"Marketing for Creative Industries",
-      	"Arts Management",
-      	"Creative Leadership",
-      	"Fashion Business",
-      	"Finance for Creatives",
-      	"Live Production",
-      	"Marketing for Entertainment Business",
+        "Business for Creatives",
+        "Entertainment Business",
+        "Marketing",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Finance for Creatives",
+        "Live Production",
+        "Marketing for Entertainment Business",
         "Marketing for Entmnt Bus",
-      	"Music Business",
-      	"Screen Business",
-      	"Stage Management",
-      	"Audience Engagement",
-      	"Audience Metric",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Business Finance",
-      	"Entertainment Law",
-      	"Events Management",
-      	"Distributor Agent",
-      	"Distributor",
-      	"Distribution",
-      	"Events and Exhibition",
-      	"Producer",
-      	"Executive Producer",
-      	"Leadership",
-      	"Management",
-      	"Media Business",
-      	"Production Management",
-      	"Legal Aspects of Media",
-      	"Intellectual Property",
-      	"Technology in the Entertainment Business",
-      	"Business Management",
-      	"Global Media Management",
-      	"Cultural Studies",
-      	"Business Law",
-      	"Business Technology and Design",
-      	"Digital Marketing",
-      	"Leadership",
-      	"Culture and Media",
-      	"Social Media",
-      	"Writing for Interactive Media",
-      	"Packaging and Branding",
-       	"Entrepreneurial Finance"
+        "Music Business",
+        "Screen Business",
+        "Stage Management",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Business Finance",
+        "Entertainment Law",
+        "Events Management",
+        "Distributor Agent",
+        "Distributor",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Legal Aspects of Media",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Cultural Studies",
+        "Business Law",
+        "Business Technology and Design",
+        "Digital Marketing",
+        "Leadership",
+        "Culture and Media",
+        "Social Media",
+        "Writing for Interactive Media",
+        "Packaging and Branding",
+        "Entrepreneurial Finance"
       ],
       "image": "",
        "formidca": "e5cb3dcc-3585-46dd-8048-6e3e12b71090",
@@ -2125,7 +2134,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "This program leads students from the initial conceptual stage of a tech or creative product service, all the way to a full-fledged business plan that can be pitched to potential investors.",
       "campus": [      
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -2142,7 +2151,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -2154,58 +2163,58 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Business Plan",
-      	"Entertainment Business",
-      	"Marketing",
-      	"Integrated Marketing",
-      	"Internet Marketing",
-      	"Marketing for Creative Industries",
-      	"Arts Management",
-      	"Creative Leadership",
-      	"Fashion Business",
-      	"Finance for Creatives",
-      	"Marketing for Entertainment Business",
+        "Business for Creatives",
+        "Business Plan",
+        "Entertainment Business",
+        "Marketing",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Finance for Creatives",
+        "Marketing for Entertainment Business",
         "Marketing for Entmnt Bus",
-      	"Screen Business",
-      	"Audience Engagement",
-      	"Audience Metric",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Business Finance",
-      	"Entertainment Law",
-      	"Events Management",
-      	"Distribution",
-      	"Events and Exhibition",
-      	"Producer",
-      	"Executive Producer",
-      	"Leadership",
-      	"Management",
-      	"Media Business",
-      	"Production Management",
-      	"Legal Aspects of Media",
-      	"Intellectual Property",
-      	"Technology in the Entertainment Business",
-      	"Business Management",
-      	"Global Media Management",
-      	"Business Law",
-      	"Business Technology and Design",
-      	"Digital Marketing",
-      	"Leadership",
-      	"Culture and Media",
-      	"Social Media",
-      	"Writing for Interactive Media",
-      	"Packaging and Branding",
-       	"Design Thinking",
-      	"Innovation",
-      	"Product Design and Development",
-      	"Creativity and Innovation",
-      	"Entrepreneurial Finance"
+        "Screen Business",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Business Finance",
+        "Entertainment Law",
+        "Events Management",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Legal Aspects of Media",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Business Law",
+        "Business Technology and Design",
+        "Digital Marketing",
+        "Leadership",
+        "Culture and Media",
+        "Social Media",
+        "Writing for Interactive Media",
+        "Packaging and Branding",
+        "Design Thinking",
+        "Innovation",
+        "Product Design and Development",
+        "Creativity and Innovation",
+        "Entrepreneurial Finance"
       ],
       "image": "",
        "formidca": "340a4ebe-062d-4e5d-9a3a-e7a11bbfb8cc",
@@ -2216,7 +2225,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "Students learn the fundamentals of marketing, plus the tools and tactics to connect with audiences through all online media channels.",
       "campus": [      
-      	"Online"
+        "Online"
       ],
       "duration": "29 Months", 
       "intakes": "Monthly",
@@ -2233,7 +2242,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -2245,55 +2254,55 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Business Plan",
-      	"Entertainment Business",
-      	"Marketing",
-      	"Digital Marketing",
-		    "Social Media",
-		    "Integrated Marketing",
-      	"Internet Marketing",
-      	"Marketing for Creative Industries",
-      	"Arts Management",
-      	"Creative Leadership",
-      	"Fashion Business",
-      	"Marketing for Entertainment Business",
+        "Business for Creatives",
+        "Business Plan",
+        "Entertainment Business",
+        "Marketing",
+        "Digital Marketing",
+        "Social Media",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Marketing for Entertainment Business",
         "Marketing for Entmnt Bus",
-      	"Screen Business",
-      	"Audience Engagement",
-      	"Audience Metric",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Events Management",
-      	"Distribution",
-      	"Events and Exhibition",
-      	"Producer",
-      	"Executive Producer",
-      	"Leadership",
-      	"Management",
-      	"Media Business",
-      	"Production Management",
-      	"Intellectual Property",
-      	"Technology in the Entertainment Business",
-      	"Business Management",
-      	"Global Media Management",
-      	"Business Technology and Design",
-      	"Culture and Media",
-      	"Writing for Interactive Media",
-      	"Packaging and Branding",
+        "Screen Business",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Events Management",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Business Technology and Design",
+        "Culture and Media",
+        "Writing for Interactive Media",
+        "Packaging and Branding",
         "Visual Comms",
         "Visual Communication",
-      	"SEO",
-      	"SEM",
-      	"Digital Advertising",
-      	"Content Strategy",
-      	"Paid Search",
-      	"Google Analytics"
+        "SEO",
+        "SEM",
+        "Digital Advertising",
+        "Content Strategy",
+        "Paid Search",
+        "Google Analytics"
       ],
       "image": "",
        "formidca": "d4d11ffd-e6ec-42b0-ac14-24befbf89bff",
@@ -2304,7 +2313,7 @@
       "school_name": "Full Sail University (FSU)",
       "description": "In this program, students use practical applications and advanced techniques to master search engine optimization, online branding, social networks, and more.",
       "campus": [      
-      	"Online"
+        "Online"
       ],
       "duration": "12 Months", 
       "intakes": "Monthly",
@@ -2321,7 +2330,7 @@
         }
       ],
       "qualifications": [
-      	"Master"
+        "Master"
       ],
       "areas":[
         "Visual Comms",
@@ -2333,52 +2342,52 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Business Plan",
-      	"Entertainment Business",
-      	"Marketing",
-      	"Digital Marketing",
-		    "Social Media",
-		    "Integrated Marketing",
-      	"Internet Marketing",
-      	"Marketing for Creative Industries",
-      	"Arts Management",
-      	"Creative Leadership",
-      	"Fashion Business",
-      	"Marketing for Entertainment Business",
+        "Business for Creatives",
+        "Business Plan",
+        "Entertainment Business",
+        "Marketing",
+        "Digital Marketing",
+        "Social Media",
+        "Integrated Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Fashion Business",
+        "Marketing for Entertainment Business",
         "Marketing for Entmnt Bus",
-      	"Screen Business",
-      	"Audience Engagement",
-      	"Audience Metric",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Events Management",
-      	"Distribution",
-      	"Events and Exhibition",
-      	"Producer",
-      	"Executive Producer",
-      	"Leadership",
-      	"Management",
-      	"Media Business",
-      	"Production Management",
-      	"Intellectual Property",
-      	"Technology in the Entertainment Business",
-      	"Business Management",
-      	"Global Media Management",
-      	"Business Technology and Design",
-      	"Culture and Media",
-      	"Writing for Interactive Media",
-      	"SEO",
-      	"SEM",
-      	"Digital Advertising",
-      	"Content Strategy",
-      	"Paid Search",
-      	"Google Analytics"
+        "Screen Business",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Events Management",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "Media Business",
+        "Production Management",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Business Technology and Design",
+        "Culture and Media",
+        "Writing for Interactive Media",
+        "SEO",
+        "SEM",
+        "Digital Advertising",
+        "Content Strategy",
+        "Paid Search",
+        "Google Analytics"
       ],
       "image": "",
        "formidca": "f83d41b3-0200-41f1-8f1c-6e682d701c59",
@@ -2391,11 +2400,11 @@
       "description": "Students learn about roles in the industry through music-specific subjects like artist management, music copyright and publishing, music business models, and concert management.",
       "campus": [
         "Winter Park",    
-      	"Online"
+        "Online"
       ],
       "duration": [
-      	"Campus - 20 Months", 
-      	"Online - 29 Months"
+        "Campus - 20 Months", 
+        "Online - 29 Months"
       ], 
       "intakes": "Monthly",
       "prices": [
@@ -2421,7 +2430,7 @@
         }
       ],
       "qualifications": [
-      	"Bachelor"
+        "Bachelor"
       ],
       "areas":[
         "Visual Comms",
@@ -2433,47 +2442,47 @@
         "Business for Creatives"
       ],
       "disciplines": [
-      	"Business for Creatives",
-      	"Music Business",
-      	"Music Copyright",
-      	"Music Distribution",
-      	"Music Publishing",
-      	"Concert Management",
-      	"Business Plan",
-      	"Entertainment Business",
-      	"Marketing",
-      	"Digital Marketing",
-      	"Internet Marketing",
-      	"Marketing for Creative Industries",
-      	"Arts Management",
-      	"Creative Leadership",
-      	"Marketing for Entertainment Business",
+        "Business for Creatives",
+        "Music Business",
+        "Music Copyright",
+        "Music Distribution",
+        "Music Publishing",
+        "Concert Management",
+        "Business Plan",
+        "Entertainment Business",
+        "Marketing",
+        "Digital Marketing",
+        "Internet Marketing",
+        "Marketing for Creative Industries",
+        "Arts Management",
+        "Creative Leadership",
+        "Marketing for Entertainment Business",
         "Marketing for Entmnt Bus",
-      	"Screen Business",
-      	"Audience Engagement",
-      	"Audience Metric",
-      	"Advertising",
-      	"Branded Management",
-      	"Business",
-      	"Entrepreneurship",
-      	"Marketing and Audience",
-      	"Reaching Audiences",
-      	"Strategic Planning",
-      	"Events Management",
-      	"Distribution",
-      	"Events and Exhibition",
-      	"Producer",
-      	"Executive Producer",
-      	"Leadership",
-      	"Management",
-      	"MediaBusiness",
-      	"Production Management",
-      	"Intellectual Property",
-      	"Technology in the Entertainment Business",
-      	"Business Management",
-      	"Global Media Management",
-      	"Business Technology and Design",
-      	"Popular Culture in Media"
+        "Screen Business",
+        "Audience Engagement",
+        "Audience Metric",
+        "Advertising",
+        "Branded Management",
+        "Business",
+        "Entrepreneurship",
+        "Marketing and Audience",
+        "Reaching Audiences",
+        "Strategic Planning",
+        "Events Management",
+        "Distribution",
+        "Events and Exhibition",
+        "Producer",
+        "Executive Producer",
+        "Leadership",
+        "Management",
+        "MediaBusiness",
+        "Production Management",
+        "Intellectual Property",
+        "Technology in the Entertainment Business",
+        "Business Management",
+        "Global Media Management",
+        "Business Technology and Design",
+        "Popular Culture in Media"
       ],
       "image": "",
        "formidca": "65493582-279c-49c7-8a8e-2e602f4fa52a",
@@ -2671,4 +2680,3 @@
     }
   ]
 }
-
