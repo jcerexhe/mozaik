@@ -6,6 +6,20 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
+    
+    let displayArry = [];
+    let allArtworks = props.artworks
+
+
+     _.forEach( props.displayedArt, (display) => { 
+      _.forEach( allArtworks, (artwork) => { 
+        if ( display === artwork.image) { 
+          let artworkIndex = allArtworks.indexOf(artwork); 
+          displayArry.push(artworkIndex); 
+        }
+      })
+    })
+      
     const allImages = _.map(props.artworks, (artwork) => {
       return {
         src: artwork.images.src,
@@ -61,7 +75,7 @@ export default class ArtworkApp extends Component {
           boxShadow: '0 0 0 2px #000000'
         }
       },
-      artDisplay: []
+      artDisplay: displayArry
     };
   }
 
@@ -172,22 +186,16 @@ export default class ArtworkApp extends Component {
     this.setState({indexList: []});
   }
 
-  render() {
+ render() {
     const { artworks, displayedArt } = this.props;
     const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
+    console.log('artworks')
+    console.log(artworks)
+    console.log('displayedArt')
+    console.log(displayedArt)
+    console.log('artDisplay')
+    console.log(artDisplay)
     let gt = ">";
-    if (artworks.length > 0) {
-      let arts = [];
-      artworks.forEach((i, artwork) => {
-        displayedArt.forEach((display) => {
-          if (display === artwork.image) {
-             arts.push(i);
-            this.setState({artDisplay: arts});
-          }
-        });
-      });
-    }
-
     return (
       <div className='grey-bg'>
         <div className='artworks'>
