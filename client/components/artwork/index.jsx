@@ -6,6 +6,20 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
+
+    let displayArry = []; /* This will contain the indeces of the artworks that will be displayed */
+    let allArtworks = props.artworks
+
+    // Loop through displayedArt first so that displayArry will follow the order of displayedArt
+    _.forEach( props.displayedArt, (display) => { /* Loop through displayedArt so that each element is compared with all artworks */
+      _.forEach( allArtworks, (artwork) => { /* Loop through all artworks to check if each one matches with current displayed art */
+        if ( display === artwork.image) { /* If there's a match */
+          let artworkIndex = allArtworks.indexOf(artwork); /* Get index of artwork */
+          displayArry.push(artworkIndex); /* Add that index to display array */
+        }
+      })
+    })
+
     const allImages = _.map(props.artworks, (artwork) => {
       return {
         src: artwork.images.src,
@@ -61,13 +75,13 @@ export default class ArtworkApp extends Component {
           boxShadow: '0 0 0 2px #000000'
         }
       },
-      artDisplay: []
+      artDisplay: displayArry
     };
   }
 
   closeLightbox() {
     this.setState({ isOpen: false });
-  
+
 
  } onClickPrev() {
     const { images, currentImage } = this.state;
@@ -146,8 +160,8 @@ export default class ArtworkApp extends Component {
   }
 
   renderImg(img, i){
-    let artDisplayIndex = this.state.artDisplay
-    if (artDisplayIndex[i]) {
+    let artDisplayIndex = this.state.artDisplay /* Contains indeces of artworks to display ordered from L -> R in the page */
+    if (artDisplayIndex[i]) { /* i corresponds to its position in artDisplayIndex, so the art with that index in artworks will show in the artbox that has the i value (in the return function in the render function)*/
       return(
           <div  className="art-box-img" style={{backgroundImage: 'url('+ img[artDisplayIndex[i]].thumb +')'}} >
             <div className="img-details" onClick={ () => this.openLightbox(artDisplayIndex[i]) }>
@@ -156,7 +170,7 @@ export default class ArtworkApp extends Component {
             </div>
           </div>
         );
-    } else {
+    } else { /* If there is no specified art to display, the first 7 in artworks will be displayed */
       return(
           <div  className="art-box-img" style={{backgroundImage: 'url('+ img[i].thumb +')'}} >
             <div className="img-details" onClick={ () => this.openLightbox(i) }>
@@ -175,19 +189,13 @@ export default class ArtworkApp extends Component {
   render() {
     const { artworks, displayedArt } = this.props;
     const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
+    console.log('artworks')
+    console.log(artworks)
+    console.log('displayedArt')
+    console.log(displayedArt)
+    console.log('artDisplay')
+    console.log(artDisplay)
     let gt = ">";
-    if (artworks.length > 0) {
-      let arts = [];
-      artworks.forEach((i, artwork) => {
-        displayedArt.forEach((display) => {
-          if (display === artwork.image) {
-             arts.push(i);
-            this.setState({artDisplay: arts});
-          }
-        });
-      });
-    }
-
     return (
       <div className='grey-bg'>
         <div className='artworks'>
