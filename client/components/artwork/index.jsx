@@ -6,6 +6,7 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
+
     
     let displayArry = [];
     let allArtworks = props.artworks
@@ -81,7 +82,6 @@ export default class ArtworkApp extends Component {
 
   closeLightbox() {
     this.setState({ isOpen: false });
-  
 
  } onClickPrev() {
     const { images, currentImage } = this.state;
@@ -186,7 +186,7 @@ export default class ArtworkApp extends Component {
     this.setState({indexList: []});
   }
 
- render() {
+  render() {
     const { artworks, displayedArt } = this.props;
     const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
     console.log('artworks')

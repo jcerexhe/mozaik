@@ -77,13 +77,14 @@
     "header_image_2": "VFS/school_gallery/VFS_Green_Screen_Room",
     "formidsa": "602b1164-e68d-42bb-900c-832321e0f67e",
     "formidse": "58e5987b-35cc-463e-8ca1-2c3811b66b93",
-    "displayedArt": [      
+
+    "displayedArt": [
       "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
-      "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",      
-      "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",
+      "VFS/student_work/Animation Concept Art/aca01_anakarenzamudiosoberanes_finalestablishingshot_f",
+      "VFS/student_work/Makeup Design for Film + Television/VFS_Beauty___Fantasy_Competition_Makeup",      
       "VFS/student_work/Acting Essintials/VFS_Everyone",
-      "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f",
-      "VFS/student_work/Acting Essintials/VFS_Shortland_Street",
+      "VFS/student_work/Animation Concept Art/aca001_jiyeonhan_charactervariation_hero_02_f", 
+      "VFS/student_work/Acting Essintials/VFS_Shortland_Street",      
       "VFS/student_work/Makeup Design for Film + Television/VFS_Human-Character_Prosthetic_Makeup"
     ]
   },
@@ -890,6 +891,16 @@
     }
   ],
   "artworks": [
+   {
+      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
+      "name": "Character Prosthetic Makeup",
+      "school_name": "Vancouver Film School (VFS)",
+      "artist": "No Name",
+      "disciplines": [
+        "Makeup",
+        "Design"
+      ]
+    },
     {
       "image": "VFS/student_work/Animation Concept Art/aca001_fernandamunoz_final_perspective_vehicle_f",
       "name": "Final Perspective Vehicle",
@@ -899,16 +910,6 @@
         "Animation",
         "Concept Art",
         "Drawing"
-      ]
-    },
-    {
-      "image": "VFS/student_work/Makeup Design for Film + Television/VFS_Character_Prosthetic_Makeup",
-      "name": "Character Prosthetic Makeup",
-      "school_name": "Vancouver Film School (VFS)",
-      "artist": "No Name",
-      "disciplines": [
-        "Makeup",
-        "Design"
       ]
     },
     {
