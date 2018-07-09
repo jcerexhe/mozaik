@@ -25,17 +25,19 @@
     "overview": "Since 1958, NIDA has educated students in performance and production for theatre, film and television. NIDA is a powerhouse for the development of Australia’s creative and cultural sector, their sought-after alumni are working all over the world on stage, on screen, behind the scenes and leading major events and organisations.",
     "prices": [
       {
+      "currency":"A$",  
       "type": "Domestice students",
       "upper": 42834,
       "lower": 12500
       },
       {
+      "currency":"A$",  
       "type": "International students",
       "upper": 93060,
       "lower": 42682
       }
     ],
-    "scholarships": ["Bursaries that assist living cost: AUD 1,500 - 4,000 annually"],
+    "scholarships": ["Bursaries that assist living cost: A$ 1,500 - A$ 4,000 annually"],
     "locationDescription": "NIDA’s main campus is located in Kensington, Sydney, Australia (10 minutes from the CBD)",
     "locations": [
       {
@@ -107,10 +109,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -157,10 +161,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -216,10 +222,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -270,10 +278,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -336,10 +346,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -399,10 +411,12 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 42834
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 93060
         }
@@ -454,6 +468,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 16500
         }
@@ -497,6 +512,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 18000
         }
@@ -538,6 +554,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12500
         }
@@ -579,6 +596,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 16000
         }
@@ -622,10 +640,12 @@
       "intakes": "January",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 30845
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 42682
         }
@@ -669,10 +689,12 @@
       "intakes": "January",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 30845
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 42682
         }
@@ -722,10 +744,12 @@
       "intakes": "January",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 30845
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 42682
         }
@@ -775,10 +799,12 @@
       "intakes": "January",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 30845
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 42682
         }
@@ -821,10 +847,12 @@
       "intakes": "January",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 30845
         },
         {
+          "currency":"A$",
           "type": "International students",
           "fees": 42682
         }
