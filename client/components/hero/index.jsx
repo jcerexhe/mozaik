@@ -59,8 +59,6 @@ export default class HeroApp extends Component {
 
             p:{
 
-              position: 'absolute',
-              left: '85%'
             },
         },
         {
