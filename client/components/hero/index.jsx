@@ -54,12 +54,14 @@ export default class HeroApp extends Component {
             link: '/search'
           },
           styles: {
+
             h1:{},
-            p: {
+
+            p:{
+
               position: 'absolute',
               left: '85%'
-            }
-          }
+            },
         },
         {
           heading: 'Personalised',
@@ -143,8 +145,13 @@ export default class HeroApp extends Component {
                     <br/><br/>
                     <p>{ slide.text }</p>
                     <p>{ slide.br }</p>
+<<<<<<< HEAD
                     <p style={slide.styles.p}> { slide.student}</p><br/>
                     <p style={slide.styles.p}> { slide.school}</p>
+=======
+                    <p style={slide.styles.p}>{ slide.student}</p> <br/>
+                    <p style={slide.styles.p}>{ slide.school}</p>
+>>>>>>> bb14b87e6d0ef886adb298e7ffc89ab888f79884
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
