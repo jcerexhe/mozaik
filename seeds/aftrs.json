@@ -25,17 +25,18 @@
     ],
     "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
     "prices": [{
+      "currency":"A$",
       "type": "Domestic students",
       "upper": 49440,
       "lower": 3900
     }],
     "scholarships": [
-      "Virgin Australia Scholarship (outside NSW) : AUD 20,000",
-      "ABC Selwyn Speight Scholarship (Radio): AUD 14,500 ",
+      "Virgin Australia Scholarship (outside NSW) : A$ 20,000",
+      "ABC Selwyn Speight Scholarship (Radio): A$ 14,500 ",
       "SBS Bilingual Radio Scholarship: Full tuition cost",
-      "Equity Scholarships: AUD 5,000 - AUD 12,500",
-      "Foxtel Diversity Screenwriting Scholarship: AUD 20,000",
-      "Indigenous Scholarships: $500 - $25,000"
+      "Equity Scholarships: AUD 5,000 - A$ 12,500",
+      "Foxtel Diversity Screenwriting Scholarship: A$ 20,000",
+      "Indigenous Scholarships: A$500 - A$25,000"
     ],
     "locationDescription": "AFTRS is located in Sydney.",
     "locations": [
@@ -85,7 +86,8 @@
       "duration": "3 years",
       "intakes": "February",
       "prices": [
-        {
+        { 
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 39888
         }
@@ -101,11 +103,11 @@
         "Rhythm & Juxtaposition",
         "Screen Business"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -154,6 +156,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -173,11 +176,11 @@
         "Screenwriting",
         "Sound"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -233,6 +236,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -246,11 +250,11 @@
         "VFX",
         "3D Animation"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -283,6 +287,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -296,11 +301,11 @@
         "Computer Graphics",
         "2D Matte Painting"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -334,6 +339,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -346,11 +352,11 @@
         "Research and Development",
         "Visual Expression"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -387,6 +393,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -398,11 +405,11 @@
         "Framing",
         "Lighting"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -441,6 +448,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -453,11 +461,11 @@
         "Grading Practice",
         "Creative Grading"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -485,6 +493,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -497,11 +506,11 @@
         "Cinematography Practice",
         "Visual Expression"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -535,6 +544,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -548,11 +558,11 @@
         "Research and Development",
         "Screen Language"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -584,6 +594,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -596,11 +607,11 @@
         "Cinematic Principles",
         "Performance"
       ],
-             "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -632,6 +643,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -644,11 +656,11 @@
         "Research and Development",
         "Directorial Vision"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -673,6 +685,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -684,11 +697,11 @@
         "Documentary",
         "Collaborative Practice"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -713,6 +726,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -726,11 +740,11 @@
         "Coverage",
         "Temp Music and Sound"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -759,6 +773,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -771,11 +786,11 @@
         "Sound Editing",
         "Avid Composer"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV", 
@@ -804,6 +819,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -815,11 +831,11 @@
         "Factual Form Storytelling",
         "Technical Editing"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -845,6 +861,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -857,11 +874,11 @@
         "Non-linear Editing",
         "Collaborative Practice"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -889,6 +906,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -902,11 +920,11 @@
         "Leadership and Strategy",
         "Entrepreneurship"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -952,6 +970,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -965,11 +984,11 @@
         "Finance Plans",
         "Marketing and Audience"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1003,6 +1022,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -1015,11 +1035,11 @@
         "Research and Development",
         "Digital Visualisation"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1050,6 +1070,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -1062,11 +1083,11 @@
         "Design Skills",
         "Design Practices"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1096,6 +1117,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -1108,11 +1130,11 @@
         "Research and Development",
         "Screen Culture"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1142,6 +1164,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1154,11 +1177,11 @@
         "Crafting Story",
         "Visual Language"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1187,6 +1210,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1198,11 +1222,11 @@
         "Creative Writing",
         "Genre, Format and Development"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1229,6 +1253,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1241,11 +1266,11 @@
         "Script Development",
         "Script Editing"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1270,6 +1295,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -1282,11 +1308,11 @@
         "Incubator",
         "Collaborative Practice"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1314,6 +1340,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -1326,11 +1353,11 @@
         "Research and Development",
         "Screen Culture"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1364,6 +1391,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 12360
         }
@@ -1376,11 +1404,11 @@
         "Composition Workshop",
         "Music Technologies"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1414,6 +1442,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -1426,11 +1455,11 @@
         "Research and Development",
         "Sound Production and Design"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1464,6 +1493,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1476,11 +1506,11 @@
         "Production Sound Skills",
         "Internship"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Film/TV",
@@ -1513,6 +1543,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -1525,11 +1556,11 @@
         "Audio and Visual Content",
         "Project Management"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Radio",
@@ -1554,6 +1585,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1566,11 +1598,11 @@
         "Audio Production",
         "Announcing and Presentation"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Radio",
@@ -1597,6 +1629,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 24720
         }
@@ -1609,11 +1642,11 @@
         "Reach and Relevance",
         "Innovative Business of Radio"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Radio",
@@ -1640,6 +1673,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
@@ -1653,11 +1687,11 @@
         "Entrepreneurship",
         "Brand Management"
       ],
-             "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Screen Production",
@@ -1702,6 +1736,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -1714,11 +1749,11 @@
         "Finance",
         "Strategic Planning"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Screen Production",
@@ -1762,6 +1797,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -1774,11 +1810,11 @@
         "Production Accounting",
         "Post-Production Accounting"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Production Accounting",
@@ -1806,6 +1842,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 3900
         }
@@ -1818,11 +1855,11 @@
         "Strategic Audience Engagement",
         "Social Video Business"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Screen Business",
@@ -1853,6 +1890,7 @@
       "intakes": "February",
       "prices": [
         {
+          "currency":"A$",
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 7800
         }
@@ -1864,11 +1902,11 @@
         "Production Management",
         "The Evolving Production Landscape"
       ],
-            "areas": [
-      "Digital Media",
-      "Film/TV/Audio",
-      "Performing Arts",
-      "Business for Creatives"
+      "areas": [
+        "Digital Media",
+        "Film/TV/Audio",
+        "Performing Arts",
+        "Business for Creatives"
        ],
       "disciplines": [
         "Screen Business",
