@@ -12,7 +12,7 @@ block content
           // Modal
           #myModal.modal.modal-school-video
            .modal-body.modal-body-school-video
-             p.button.modal-close-button-school-video &times;
+             p.button.modal-close-button-school-video(onclick="stopSchoolVid('" + school.video + "')") &times;
              iframe.school-video(width='100%', height='100%', src= school.video, frameborder='0', allowfullscreen='')
   .student-work
     !=schoolLightBox
@@ -97,6 +97,13 @@ append stylesheets
     var btn = document.createElement("button");
     btn.innerHTML = '&times;';
     
+
+    // Stop school vid on close
+    function stopSchoolVid (vidSrc){
+      document.getElementsByClassName('school-video')[0].setAttribute('src', vidSrc)
+    };
+
+
     //Main School Forms
      function createSForm(formId){
       hbspt.forms.create({
