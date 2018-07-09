@@ -41,7 +41,7 @@ block content
             li
               =`${price.type}:`
               br
-              =`${price.currency} ${price.lower} - ${price.currency} ${price.upper}`
+              =`${price.currency} ${price.lower.toLocaleString()} - ${price.currency} ${price.upper.toLocaleString()}`
         h3 scholarship
         ul
           each scholarship in school.scholarships

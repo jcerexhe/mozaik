@@ -97,7 +97,7 @@ export default class CourseCard extends Component {
                     <span className='bold caps'>price</span>
                     <span className='info-bit-content'>
                       { _.map(course.prices, (price, i) => {
-                        return <span key={ i }>{ price.type }: {price.currency} { price.fees }</span>;
+                        return <span key={ i }>{ price.type }: {price.currency} { price.fees.toLocaleString() }</span>;
                       }) }
                     </span>
                   </p>
@@ -164,7 +164,7 @@ export default class CourseCard extends Component {
                   <span className='bold caps'>price</span>
                   <span className='info-bit-content'>
                     { _.map(course.prices, (price, i) => {
-                      return <span key={ i }>{ price.type }: { price.currency } { price.fees }</span>;
+                      return <span key={ i }>{ price.type }: { price.currency } { price.fees.toLocaleString() }</span>;
                     }) }
                   </span>
                 </p>
