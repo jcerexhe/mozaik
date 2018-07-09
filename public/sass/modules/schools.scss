@@ -1,15 +1,29 @@
 .school-heading-container {
-  background-color: $grey;
-  width: 100vw;
+  /* background-color: $grey; */
+  background-color: blue;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%; 
+}
+
+a.btn{
+  color: #fff !important;
+}
+
+.modal-x{
+    margin-top: -50%;
 }
 .school-heading {
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding: 50px 0px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -100px;
+  padding-top: 100px;
   width: 100%;
+  box-sizing: border-box;
   @media only screen and (min-width: 768px) {
     width: 60%;
   }
@@ -17,6 +31,15 @@
   .school-info {
     display: flex;
     align-items: center;
+  }
+
+  .school-info h1 {
+    text-align: center !important;
+    width: 100%;
+    font-size: 40pt;
+    font-family: 'Gotham Bold';
+    font-weight: bold;
+    color: $white;
   }
   .school-info > img {
     margin-right: 20px;
@@ -44,11 +67,17 @@
   }
   .video-link {
     margin: 15px 30px;
-    width: 150px;
     font-family: 'Bebas Neue';
     color: $white;
+
+    img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    }
   }
 }
+
 .school-courses-link {
   padding: 40px 0px;
   display: flex;
@@ -61,6 +90,421 @@
 .school-courses-link > p{
   color: $white;
   font-family: 'Gotham Bold';
+}
+
+// student work section
+.student-work{
+  height: 50vh;
+  background-color: red;
+}
+
+.student-work > p{
+  margin: 0;
+}
+
+.school-overview-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  /* height: 100vh; */
+  text-align: center;
+  position:relative;
+  background-size: cover;
+  background-position: center;
+
+  .scroll-down{
+    position: absolute;
+    bottom: -25px;
+    left: 46%;
+    width: 100px;
+  }
+
+  h1{
+    margin: 0;
+  }
+
+      h2{
+      font-size: 30pt;
+      text-align: center;
+    }
+
+  .school-logo{
+    width: 20%;
+    text-align: left;
+
+    img{
+      width: 80%;
+      margin-top: 100px;
+    }
+  }
+  .school-overview{
+    width: 30%;
+    padding: 5px;
+  }
+  .school-fees{
+    width: 30%;
+    padding: 5px;
+  }
+  .school-links{
+    width: 20%;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 100px;
+
+    .school-link{
+      width: 50%;
+      margin-left: 20px;
+    }
+    .btn{
+      width: 100%;
+      margin-bottom: 15px;
+      border: 3px solid $white;
+      border-radius: 0;
+      background: #000; 
+      letter-spacing: 0px;
+    }
+  }
+  .details-box{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 580px; 
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    p{
+      padding: 0 30px;
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+
+    h3{
+      color: #000;
+      text-transform: uppercase;
+      font-size: 15pt;
+      margin: 0;
+    }
+        ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+    ul > li {
+      padding: 0 30px;
+      padding-top: 5px;
+      padding-bottom: 0px;
+    }
+
+  }
+    .details-box::-webkit-scrollbar {
+    width: 7px;
+    }
+
+    .details-box::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        /* border-radius: 10px; */
+    }
+
+    .details-box::-webkit-scrollbar-thumb {
+       /* border-radius: 10px; */
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+
+
+}
+
+// study areas
+.study-areas-box{
+
+  
+  h1{
+      color: #636161;
+    margin: 0px;
+    font-size: 10vw;
+    line-height: 0.8;
+    
+    font-family: 'Montserrat Black';
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  background-color: rgba(144, 144, 144,0.5);
+
+  .study-areas{
+    width: 100%;
+    height: 40vh;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+
+    .area-box{
+      height: 100%;
+      width: 11.11%;
+      border: 1px solid $black;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+
+      .disciplines-disable{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      }
+
+      .disciplines{
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        p{
+          display: none;
+          text-align: center;
+          font-size: 12px;
+          color: $pink;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: 'Bebas Neue';
+
+
+          .area-link{
+            font-size: 15px !important;
+            color: $pink !important;
+            text-decoration: none;
+          }
+
+
+        }
+
+        ul{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center;
+
+         li{
+          padding: 1px;
+          display: block; 
+
+          .filter-btn{
+            padding: 0px 8px;
+            margin: 0;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px !important;
+            font-family: 'Bebas Neue';
+            letter-spacing: 1px;
+          }
+         } 
+        }
+
+        .area-heading{
+
+        ul{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center;
+
+         li{
+          padding: 2px;
+          display: block; 
+
+          .filter-btn{
+            padding: 0px 5px;
+            margin: 0;
+            text-decoration: none;
+            color: $pink;
+            text-transform: uppercase;
+            font-size: 14px !important;
+            font-family: 'Bebas Neue';
+            letter-spacing: 1px;
+          }
+
+          .filter-btn:hover, .filter-btn.active {
+           /* background-color: $white; */
+            color: $pink;
+            opacity: 0.5 !important;
+          }
+         } 
+        }
+        }
+      }
+
+      .disciplines:hover{
+        background-color: rgba(8,42,62, 0.8);
+      }
+
+      .disciplines:hover p{
+        display: block;
+      }
+
+      h3{
+        color: #fff;
+        background: #000;
+        border: 2px solid #fff;
+        padding: 3px 10px;
+        margin: 0 auto;
+        font-size: 15px;
+        width: 90%;
+        height: 50px;
+        text-align: center;
+      }
+
+      .padding{
+        padding-top: 15px;
+      }
+    }
+  }
+  
+}
+
+
+//other section
+.other-section{
+  display: flex;
+  justify-content: space-between;
+
+  .locations{
+    width: 33.33%;
+    background-color: blue;
+  }
+  .facilities{
+    width: 33.33%;
+    background-color: red;
+  }
+  .alumni{
+    width: 33.33%;
+    background-color: blue;
+    margin: 0 !important;
+    overflow-x: hidden;
+  }
+
+  .locations, .facilities{
+
+    .other-section-box{
+
+      .hover-box{
+
+        p{
+          text-align: center !important;
+          padding: 20px 20px !important;
+          color: $white !important;
+        }
+     }
+    }
+  }
+
+  .other-section-box{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+
+    .hover-box{
+      position: absolute;
+      z-index: 200;
+      width: 33.33%;
+      height: 60vh;
+      background-color: $black;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+
+    }
+
+    h2{
+      width: 100%;
+      text-align: center;
+      color: $white;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 50px 0;
+      font-size: 30pt;
+      cursor: pointer;
+    }
+  }
+
+    .other-section-box:hover{
+      .hover-box{
+        opacity: 1;
+      }
+    }
+
+  
+}
+
+
+
+//school contact
+.school-contact{
+
+  .website{
+    width: 100%;
+    text-align: center;
+    height: 280px;
+    padding-top: 150px;
+    box-sizing: border-box;
+
+    a{
+      color: $white;
+      font-family: 'Bebas Neue';
+      font-size: 40pt;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 100px;
+
+    }
+  }
+  .inside-scoop{
+    width: 100%;
+    height:100vh;
+    background-image: url("/images/patterns/partoffooter.png");
+    background-size: 100% 100%;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+      box-sizing: border-box;
+      border: 2px solid $pink;
+      width: 350px;
+      height: 40px;
+      padding: 5px;
+      background: transparent;
+      margin-bottom: 5px;
+      transition: all 0.5s linear;
+      &:focus{
+      color: black;
+      background-color: $white;
+      font-size: 20px;
+      }
+    }
+
+    input::placeholder{
+      color: $white;
+      font-style: italic;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    
+  }
 }
 
 // School Details Page
@@ -91,6 +535,41 @@
     text-align: center;
   }
 }
+
+//School-video-modal
+#myModal.modal.modal-school-video{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100vh;
+}
+
+.modal-body.modal-body-school-video{
+  height: 80vh;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px !important;
+  z-index: 1000;
+  background-color: #181818;
+}
+
+.button.modal-close-button-school-video{
+  border-radius: none;
+  background-color: $pink;
+  margin: 0;
+  right: 16px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  width: 20px;
+  height: 4vh;
+  font-size: 20px;
+}
+
+iframe.school-video{
+  border: 1px solid white;
+}
+
+
 .school-details {
   display: flex;
   justify-content: space-around;
@@ -219,4 +698,37 @@
   .school-footer-section:first-child {
     border-right: 1px solid #E4E9EC;
   }
+}
+
+
+.hbspt-form{
+  background-color: $pink !important;
+  input[type="text"], input[type="email"], input[type="tel"]{
+    background-color: #fff !important;
+    width: 150px;
+      color: #000;
+  }
+  label {
+    color: #fff !important;
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    color: white;
+    border: none;
+  }
+}
+
+
+.school-forms-modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 102;
+    display: none;
 }

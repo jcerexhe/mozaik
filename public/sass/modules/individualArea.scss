@@ -1,0 +1,197 @@
+.study-area-page-heading {
+    border: 10px solid #181818;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    font-family: 'Helvetica';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    z-index: 3;
+    border-top: none;
+}
+
+.study-area-page-heading:before {
+    content: '';
+    color: #181818;
+    width: 20%;
+    height: 10px;
+    background: #181818;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.study-area-page-heading:after {
+    content: '';
+    color: #181818;
+    width: 20%;
+    height: 10px;
+    background: #181818;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+
+
+img.study-area-background{
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  position: absolute; 
+}
+
+.study-area-disciplines{
+  position: relative;
+  z-index: 3;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.study-area-disciplines .study-link{
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.study-area-heading-description{
+  position: relative;
+  z-index: 3;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.study-area-heading-description >p{
+  color: #FFFFFF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  
+}
+
+.careers-container{
+  height: 200vh;
+   /*https://uigradients.com/*/
+  /*background:
+    linear-gradient(to left, #3c1053 20%, #4389A2 90%), 
+    linear-gradient(to right, #3c1053 20%, #4389A2 90%);*/
+    /*background-image: linear-gradient(to right top, #231bc2 40%, #6e00b2, #9100a1, #a90091, #b90983);*/
+    /*background-image: linear-gradient(to right top, #231bc2 40%, #7700c1, #9a00aa, #ae0095, #b90983); */
+    /*background-image: linear-gradient(to right top, #1848cb 30%, #6e40c6, #9c34bd, #bf25af, #dc149f);*/
+    /*background-image: linear-gradient(to right top, #0e4d87 30%, #414e9c, #7249a7, #a339a5, #d11396);*/
+    background-image: linear-gradient(to right top, #1a5799 30%, #4a54a6, #764daa, #9f3ea3, #c42593);
+   position: absolute;
+   top: 100%; 
+    z-index: -1;
+}
+
+.careers-container >h1{
+  text-align: center;
+  font-family: 'Gotham Bold';
+  font-weight: bold;
+  color: #181818;
+  font-size: 15vw;
+  opacity: .6;
+}
+
+.careers >ul.careers-lists{
+ text-align: center;
+list-style-type: circle;
+}
+
+ul.careers-lists >li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+ul.careers-lists>li:before {
+  content: '•';
+  position: relative;
+  font-size: 2em;
+  font-weight: bold;
+  top: 2px;
+  
+  right: 10px;
+  color: white;
+  list-style-position: inside;
+}
+
+.careers-link{
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+.study-area-alumni{
+  margin-top: 10%;
+}
+
+.study-area-alumni-qoute {
+  position: absolute;
+  left: 70%;
+}
+
+.study-area-alumni-qoute >p{
+  font-family: 'Bebas Neue';
+  color: #FFFFFF;
+  font-size: 5vh;
+}
+
+
+.study-area-alumni-image {
+  margin-left: 10%;
+  margin-right: 20px;
+}
+
+.study-area-alumni-image >img{
+  clip-path:polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  width: 180px;
+  height: 25vh;
+  background-color: red;
+}
+
+.study-area-alumni-content{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+}
+
+.study-area-alumni-name, .study-area-alumni-degree{
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  padding: 0;
+  margin: 0;
+}
+
+.study-area-enquire-img{
+  margin-top: 5%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study-area-footer{
+  position: relative;
+ margin-top: 80%;
+}

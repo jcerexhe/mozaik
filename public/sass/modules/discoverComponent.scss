@@ -1,19 +1,18 @@
 .discover-column-container {
-  height: calc(100vh - 100px);
-  width: 20 0px;
+  height: calc(140vh - 140px);
+  width: 20%;
   position: absolute;
   left: 250px;
   top: 0px;
-  background-color: white;
-  overflow: scroll;
+  background-color: black;
+  /*overflow: scroll;*/
 }
 .discover-column {
   padding: 20px;
-  width: 170px;
 }
 .discover-column a {
   text-decoration: none;
-  color: $black;
+  color: $white;
 }
 .discover-column h2 {
   margin-top: 0px;
@@ -21,22 +20,30 @@
   text-align: center;
 }
 .discover-column > h3 {
-  margin-top: 60px;
-  margin-bottom: 0px;
+  color: white;
+  font-size: 2vw;
 }
 .discover-checkboxes {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; 
 }
+
 .discover-checkboxes > label {
   font-size: 13px;
-  margin: 2px 0px;
+  margin:0px;
   text-transform: uppercase;
   line-height: 1.8;
 }
 .map {
   position: relative;
-
-
 }
+
+#sites {
+  margin-top: 50px;
+}
+
+.rc-slider {
+  width: 80% !important;
+}
+

@@ -2,7 +2,7 @@
   "school": {
     "name": "Australian Film Television and Radio School (AFTRS)",
     "short_name": "AFTRS",
-    "website": "http://www.aftrs.edu.au/",
+    "website": "www.aftrs.edu.au",
     "disciplines": [
       "Film/TV",
       "Radio",
@@ -17,7 +17,13 @@
       "Screenwriting",
       "Sound"
     ],
-    "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. Their purpose is to empower Australian talent to shape and share their stories with the world by delivering future-focused, industry-relevant education and research. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
+    "study_areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+    ],
+    "overview": "AFTRS is one of Australia’s leading screen and broadcast film school. The school has state-of-the-art production facilities ants alumni and staff have won or been nominated for a slate of Academy, Golden Globe, Emmy, BAFTA, AACTA and Commercial Radio Awards.",
     "prices": [{
       "type": "Domestic students",
       "upper": 49440,
@@ -40,8 +46,8 @@
           "lng": 151.228433
         },
         "type":"Point",
-        "country": "Australia",
-        "campus": "Sydney"
+        "country": "AUSTRALIA",
+        "campus": "SYDNEY"
       }
     ],
     "facilitiesDescription": "AFTRS has state-of-the art production facilities, located in the Entertainment Quarter, Moore Park (next to Fox Studios Australia).",
@@ -64,7 +70,9 @@
     ],
     "logo": "AFTRS/AFTRS_logos",
     "video": "",
-    "courseGuide": ""
+    "courseGuide": "",
+    "header_image_1": "AFTRS/facilities/Front_signage",
+    "header_image_2": "AFTRS/facilities/AFTRS_Campus_Props"
   },
   "courses": [
     {
@@ -74,7 +82,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "3 years",
+      "duration": "3 years",
       "intakes": "February",
       "prices": [
         {
@@ -82,7 +90,10 @@
           "fees": 39888
         }
       ],
-      "specialisations": [
+      "qualifications": [
+        "Bachelor"
+      ],
+       "specialisations": [
         "Story",
         "Image",
         "Sound",
@@ -90,11 +101,20 @@
         "Rhythm & Juxtaposition",
         "Screen Business"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
+        "VFX",
         "Radio",
         "Animation",
+        "2D/3D Animation",
         "Screen Production",
         "Cinematography",
         "Directing",
@@ -106,19 +126,19 @@
         "Screen Media",
         "Screen Performance",
         "Screenwriting",
-        "Sound Design",
+        "Sound Design", 
         "SFX",
-        "VFX",
+        "Visual Effects (VFX)",
         "Documentary",
         "Camera Operator",
         "Set Designer",
         "Script Editor",
         "DOP",
-        "Broadcasting",
         "Cinematic Storytelling",
         "Character Performance",
         "Multimedia",
         "Transmedia",
+        "Animation",
         "Screen Business"
       ],
       "image": "AFTRS/courses/B_Arts_Screen_Prod"
@@ -130,13 +150,16 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
           "type": "Domestic students (FEE-HELP approved)",
           "fees": 49440
         }
+      ],
+      "qualifications": [
+        "Master"
       ],
       "specialisations": [
         "Animation",
@@ -150,11 +173,20 @@
         "Screenwriting",
         "Sound"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
+        "VFX",
         "Radio",
         "Animation",
+        "2D/3D Animation",
         "Screen Production",
         "Cinematography",
         "Directing",
@@ -169,7 +201,7 @@
         "Sound Design",
         "Music",
         "SFX",
-        "VFX",
+        "Visual Effects (VFX)",
         "Documentary",
         "Camera Operator",
         "Set Designer",
@@ -197,7 +229,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -205,19 +237,32 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "VFX",
         "3D Animation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
+        "TV",
+        "VFX",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Screen Production",
-        "VFX",
+        "Visual Effects (VFX)",
         "Cinematic Storytelling",
         "Multimedia",
         "Transmedia",
@@ -234,7 +279,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -242,19 +287,32 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Art of VFX",
         "Compositing",
         "Computer Graphics",
         "2D Matte Painting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
+        "TV",
+        "VFX",
         "Animation",
         "2D Animation",
         "3D Animation",
+        "2D/3D Animation",
         "Screen Production",
-        "VFX",
+        "Visual Effects (VFX)",
         "Cinematic Storytelling",
         "Multimedia",
         "Transmedia",
@@ -272,7 +330,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -280,15 +338,26 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Visual Expression"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
+        "2D/3D Animation",
         "Screen Production",
         "Cinematography",
         "Camera Operator",
@@ -314,7 +383,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -322,11 +391,21 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Framing",
         "Lighting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -344,9 +423,9 @@
         "Clapper",
         "Framing",
         "Lighting",
+        "Steadicam Operator",
         "Gaffer",
-        "Grip",
-        "Steadicam Operator"
+        "Grip"        
       ],
       "image": "AFTRS/courses/Dipl_in_Camera"
     },
@@ -358,7 +437,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -366,12 +445,22 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Grading Principles",
         "Grading Practice",
         "Creative Grading"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Cinematography",
@@ -392,7 +481,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -400,12 +489,22 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Cinematography Practice",
         "Visual Expression"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -428,11 +527,11 @@
     {
       "name": "Master of Arts Screen: Directing",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The iam of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
+      "description": "A director is a storyteller who brings together the strengths of fellow practitioners to craft a whole screen experience for an audience. The aim of this course is to give you the context and opportunity to resolve and evolve your voice as a professional director within collaborative environments.",
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -440,20 +539,30 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Masters"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Directorial Vision",
         "Research and Development",
         "Screen Language"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
+        "2D/3D Animation",
         "Screen Production",
         "Directing",
         "Filmmaking",
-        "Cinematography",
         "Screen Performance",
         "Documentary",
         "Cinematic Storytelling",
@@ -471,7 +580,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -479,15 +588,26 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Storytelling Structures",
         "Cinematic Principles",
         "Performance"
       ],
+             "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Animation",
+        "2D/3D Animation",
         "Screen Production",
         "Directing",
         "Filmmaking",
@@ -504,11 +624,11 @@
     {
       "name": "Master of Arts Screen: Documentary",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. Your will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
+      "description": "This course seeks to produce dedicated practitioners who aspire to excellence, are versatile, innovative, entrepreneurial and able to negotiate their place in the rapidly evolving non-fiction landscape. You will explore applied documentary practice across different forms and you will work in solo and crewed shoots to complete exercises in various styles.",
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -516,12 +636,22 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Directorial Vision"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -539,7 +669,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -547,11 +677,21 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Documentary",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -569,7 +709,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -577,13 +717,23 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Continuity",
         "Coverage",
         "Temp Music and Sound"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Editing",
@@ -605,7 +755,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -613,12 +763,22 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Sound Editing",
         "Avid Composer"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV", 
         "Film",
         "TV",
         "Editing",
@@ -640,7 +800,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -648,11 +808,22 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Factual Form Storytelling",
         "Technical Editing"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
+        "Film",
         "TV",
         "Editing",
         "Post Production",
@@ -670,7 +841,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -678,12 +849,22 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Non-linear Editing",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Editing",
@@ -704,7 +885,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -712,13 +893,23 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Story Development",
         "Leadership and Strategy",
         "Entrepreneurship"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -737,7 +928,16 @@
         "Production Management",
         "Media Production",
         "Audience Engagement",
-        "Screen Management"
+        "Screen Management",
+        "Entrepreneurship",
+        "Marketing for Creatives",
+        "Audience Engagement",
+        "Reaching Audiences",
+        "Strategic PLanning",
+        "Distribution",
+        "Intellectual Property",
+        "Entertainment Business",
+        "Business Finance"
       ],
       "image": "AFTRS/courses/Mast_Arts_Screen-_Producing"
     },
@@ -748,7 +948,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -756,13 +956,23 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Story Structure",
         "Intellectual Property",
         "Finance Plans",
         "Marketing and Audience"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -789,7 +999,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -797,12 +1007,22 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Digital Visualisation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Production Design",
@@ -826,7 +1046,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -834,12 +1054,22 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Design Principles",
         "Design Skills",
         "Design Practices"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Production Design",
@@ -862,7 +1092,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -870,12 +1100,22 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Screen Culture"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -893,12 +1133,12 @@
     {
       "name": "Advanced Diploma in Screenwriting: Feature Film",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-length drama.",
+      "description": "Build the foundation of your screenwriting craft by exploring the theory and practice of dramatic storytelling. You will extend yourself, creating memorable characters, writing engaging scenes and developing the story outline for a compelling feature-duration drama.",
       "campus": [
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -906,12 +1146,22 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Understanding Story",
         "Crafting Story",
         "Visual Language"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -933,7 +1183,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -941,11 +1191,22 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Creative Writing",
         "Genre, Format and Development"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
+        "Film",
         "TV",
         "Screen Production",
         "Screenwriting",
@@ -964,7 +1225,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -972,12 +1233,22 @@
           "fees": 7800
         }
       ],
+      "qualificatons": [
+        "Diploma"
+      ],
       "specialisations": [
         "Screenwriting Principles",
         "Script Development",
         "Script Editing"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -995,7 +1266,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1003,12 +1274,22 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+        "Graduate Certificate"
+      ],
       "specialisations": [
         "Storytelling Principles", 
         "Incubator",
         "Collaborative Practice"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1029,7 +1310,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1037,12 +1318,22 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Screen Culture"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1069,7 +1360,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1077,12 +1368,22 @@
           "fees": 12360
         }
       ],
+      "qualifications": [
+       "Graduate Certificate"
+      ],
       "specialisations": [
         "Screen Music Practice",
         "Composition Workshop",
         "Music Technologies"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1109,7 +1410,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1117,12 +1418,22 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Cinematic Storytelling",
         "Research and Development",
         "Sound Production and Design"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1149,7 +1460,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1157,12 +1468,22 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+       "Diploma"
+      ],
       "specialisations": [
         "Production Sound Principles",
         "Production Sound Skills",
         "Internship"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
+        "Film/TV",
         "Film",
         "TV",
         "Screen Production",
@@ -1188,7 +1509,7 @@
       "campus": [
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1196,11 +1517,20 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Editorial and Digital Journalism",
         "Audio and Visual Content",
         "Project Management"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Radio",
         "Broadcasting",
@@ -1220,7 +1550,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1228,11 +1558,20 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Studio Operation and Panelling",
         "Audio Production",
         "Announcing and Presentation"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Radio",
         "Broadcasting",
@@ -1254,7 +1593,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "1 year",
+      "duration": "1 year",
       "intakes": "February",
       "prices": [
         {
@@ -1262,11 +1601,20 @@
           "fees": 24720
         }
       ],
+      "qualifications": [
+        "Graduate Diploma"
+      ],
       "specialisations": [
         "Advanced Concepts of Radio",
         "Reach and Relevance",
         "Innovative Business of Radio"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Radio",
         "Broadcasting",
@@ -1288,7 +1636,7 @@
       "campus": [
         "Sydney"
       ],
-      "length": "2 years",
+      "duration": "2 years",
       "intakes": "February",
       "prices": [
         {
@@ -1296,12 +1644,21 @@
           "fees": 49440
         }
       ],
+      "qualifications": [
+        "Master"
+      ],
       "specialisations": [
         "Creative Leadership",
         "Strategy and Finance",
         "Entrepreneurship",
         "Brand Management"
       ],
+             "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Screen Production",
         "Producing",
@@ -1313,9 +1670,9 @@
         "Entrepreneurship",
         "Brand Management",
         "Freelancing",
-        "Finance for Creative",
-        "dustries",
+        "Finance for Creative Industries",
         "Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
         "Fashion Business",
         "Branded Management",
         "Stage Management",
@@ -1341,7 +1698,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1349,11 +1706,20 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Building a Business",
         "Finance",
         "Strategic Planning"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Screen Production",
         "Producing",
@@ -1364,9 +1730,9 @@
         "Entrepreneurship",
         "Brand Management",
         "Freelancing",
-        "Finance for Creative",
-        "Industries",
+        "Finance for Creative Industries",
         "Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
         "Fashion Business",
         "Branded Management",
         "Stage Management",
@@ -1392,7 +1758,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1400,11 +1766,20 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Pre-Production Accounting",
         "Production Accounting",
         "Post-Production Accounting"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Production Accounting",
         "Producing",
@@ -1412,8 +1787,7 @@
         "Strategy and Finance",
         "Entrepreneurship",
         "Freelancing",
-        "Finance for Creative",
-        "Industries",
+        "Finance for Creative Industries",
         "Business",
         "Screen Management",
         "Production Management"
@@ -1428,7 +1802,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "6 months (part-time)",
+      "duration": "6 months (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1436,23 +1810,34 @@
           "fees": 3900
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Media Production",
         "Strategic Audience Engagement",
         "Social Video Business"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Screen Business",
         "Distribution",
         "Brand Management",
         "Marketing for Entertainment Business",
+        "Marketing for Entmnt Bus",
         "Branded Management",
         "Visual Merchandising",
         "Business",
         "Media Production",
         "Audience Engagement",
         "Social Media",
-        "Production Management"
+        "Production Management",
+        "Digital Marketing"
       ],
       "image": "AFTRS/courses/Dipl_Social_Media"
     },
@@ -1464,7 +1849,7 @@
         "Sydney",
         "Online"
       ],
-      "length": "1 year (part-time)",
+      "duration": "1 year (part-time)",
       "intakes": "February",
       "prices": [
         {
@@ -1472,10 +1857,19 @@
           "fees": 7800
         }
       ],
+      "qualifications": [
+        "Diploma"
+      ],
       "specialisations": [
         "Production Management",
         "The Evolving Production Landscape"
       ],
+            "areas": [
+      "Digital Media",
+      "Film/TV/Audio",
+      "Performing Arts",
+      "Business for Creatives"
+       ],
       "disciplines": [
         "Screen Business",
         "Distribution",
@@ -1488,38 +1882,160 @@
   ],
   "artworks": [
     {
-      "image": "placeholder_lkdjum",
-      "name": "Sample",
+      "image": "AFTRS/student_work/A_Boy_Call_Su_Vedrana_Music",
+      "name": "A Boy Call",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "artist": "Sample",
+      "artist": "Su Vedrana",
+      "disciplines": [
+        "Music"
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Birthday_Boy_Sejong_Park_2004",
+      "name": "Birthday Boy",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Sejong Park",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Kiss_Kiss_Samantha_Rebillet",
+      "name": "Kiss Kiss",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Samantha Rebillet",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Recon6_Blake_Fraser",
+      "name": "Recon6",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Blake Fraser",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/I_am_Emmanuel_Genevieve_Clay-Smith",
+      "name": "I am Emmanuel",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Genevieve Clay-Smith",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Kharisma_Shannon_Murphy",
+      "name": "Kharisma",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Shannon Murphy",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Emily_Benjamin_Mathews",
+      "name": "Emily",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Benjamin Mathews",
+      "disciplines": [
+      ]
+    },
+    
+    {
+      "image": "AFTRS/student_work/Like_Breathing_Production_Designer_Grace_Brown",
+      "name": "Like Breathing Production Designer",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Grace Brown",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/All_Gods_Creatures_Brendon_McDonall",
+      "name": "All Gods Creatures",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Brendon McDonall",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "AFTRS/student_work/Culling_Kerinne_Jenkins",
+      "name": "Culling",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "artist": "Kerinne Jenkins",
       "disciplines": [
       ]
     }
   ],
   "alumni": [
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "AFTRS/alumni/Jane_Campion",
       "name": "Jane Campion",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Diploma in Directing",
+      "profession": "Director",
+      "credits": "The Piano, The Portrait of a Lady, Holy Smoke, Bright Star"
     },
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "AFTRS/alumni/Andrew_Lesnie",
       "name": "Andrew Lesnie",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Diploma in Cinematography",
+      "profession": "Cinematographer",
+      "credits": "The Lord of the Rings Trilogy, The Hobbi Trilogy, King Kong, The Rise of the Planet of the Apes, Babe"
     },
     {
-      "photo": "placeholder_lkdjum",
+      "photo": "AFTRS/alumni/Alex_Proyas",
       "name": "Alex Proyas",
       "school_name": "Australian Film Television and Radio School (AFTRS)",
-      "course": "",
-      "profession": "",
-      "credits": ""
+      "course": "Certificate Film & TV Cinematoraphy",
+      "profession": "Director, Screenwriter, Producer",
+      "credits": "God of Egypts, The Crow, Dark City, Knowing"
+    },
+    {
+      "photo": "AFTRS/alumni/Margaret_Sixel",
+      "name": "Margaret Sixel",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Editing",
+      "profession": "Editor",
+      "credits": "Mad Max: Fury Road, Happy Feet, Babe"
+    },
+    {
+      "photo": "AFTRS/alumni/Gillian_Armstrong",
+      "name": "Gillian Armstrong",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Certificate in Directing",
+      "profession": "Director",
+      "credits": "Charlotte Gray, Oscar and Lucinda, Women He's Undressed"
+    },
+    {
+      "photo": "AFTRS/alumni/Dion_Beebe",
+      "name": "Dion Beebe",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Bachelor of Arts (Cinematography)",
+      "profession": "Cinematographer",
+      "credits": "Memoirs of a Geisha, Edge of Tomorrow, Chicago, Into the Woods"
+    },
+    {
+      "photo": "AFTRS/alumni/Warwick_Thornton",
+      "name": "Warwick Thornton",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Bachelor of Arts (Cinematography)",
+      "profession": "Director, Screenwriter, Cinematographer",
+      "credits": "Samson & Delilah, The Sapphires, The Turning"
+    },
+    {
+      "photo": "AFTRS/alumni/PJ_Hogan",
+      "name": "P.J. Hogan",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Diploma in Scriptwriting",
+      "profession": "Director, Screenwriter",
+      "credits": "Peter Pan, My Best Friend's Wedding, The Dressmaker, Muriel's Wedding"
+    },
+    {
+      "photo": "AFTRS/alumni/Jocelyn_Moorhouse",
+      "name": "Jocelyn Moorhouse",
+      "school_name": "Australian Film Television and Radio School (AFTRS)",
+      "course": "Diploma in Directing",
+      "profession": "Director, Screenwriter",
+      "credits": "The Dressmaker, How to Make an American Quilt, Muriel's Wedding"
     }
   ]
 }

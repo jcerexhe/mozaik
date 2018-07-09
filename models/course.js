@@ -25,21 +25,25 @@ const courseSchema = new Schema({
     required: 'Please provide a short description of the course.',
   },
   campus: [String],
+  areas: [String],
   specialisations: [String],
+  qualifications: [String],
   disciplines: [String],
   length: {
     type: String,
     trim: true,
   },
+  duration: String, 
   prices: [{
     type: {
       type: String,
     },
+    currency: String,
     fees: Number,
   }],
   image: {
     type: String,
-    required: 'Please provide an image for the course.',
+    //required: 'Please provide an image for the course.',//
   },
   intakes: String,
   school: {
@@ -48,6 +52,8 @@ const courseSchema = new Schema({
     required: 'You must supply a school!',
   },
   slug: String,
+  formidce: String,
+  formidca: String,
 });
 
 courseSchema.index({course: 1}, {collation: {locale: "en", strength: 2}});

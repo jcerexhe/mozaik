@@ -21,22 +21,25 @@ export default class AlumniApp extends Component {
       prevArrow: LeftArrow,
     }
     return (
-      <div className='alumni-slider'>
-        <Slick { ...settings }>
-          { _.map(alumni, (alum) => {
-            return (
-              <div className='alumni-slide'>
-                <div className='alumni-slide-content'>
-                  <img className='img-circle img-resp' src={ alum.photo } alt={ alum.name } />
-                  <h3>{ alum.name }</h3>
-                  <p>Course: { alum.course }</p>
-                  <p>Profession: { alum.profession }</p>
-                  <p>Credits: { alum.credits }</p>
+      <div style={{width: '50vw', height: '60vh', marginTop: '-20px'}}>
+        <div className='alumni-slider'>
+         <h1>ALUMNI</h1>
+          <Slick { ...settings }>
+            { _.map(alumni, (alum) => {
+              return (
+                <div className='alumni-slide'>
+                  <div className='alumni-slide-content'>
+                    <img className='img-circle img-resp' src={ alum.photo } alt={ alum.name } />
+                    <h3>{ alum.name }</h3>
+                    <p><span>Course:</span> { alum.course }</p>
+                    <p><span>Profession:</span> { alum.profession }</p>
+                    <p><span>Credits:</span> { alum.credits }</p>
+                  </div>
                 </div>
-              </div>
-            );
-          }) }
-        </Slick>
+              );
+            }) }
+          </Slick>
+        </div>
       </div>
     );
   }

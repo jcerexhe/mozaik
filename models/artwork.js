@@ -51,8 +51,8 @@ const artworkSchema = new Schema({
 
 artworkSchema.virtual('images').get(function() {
   return {
-    thumb: cloudinary.url(`${this.image}.jpg`, { gravity: 'auto', crop: 'fill', height: 800, width: 800 }),
-    src: cloudinary.url(`${this.image}.jpg`),
+    thumb: cloudinary.url(`${this.image}.jpg`, { quality: 'auto', gravity: 'auto', crop: 'fill', height: 800, width: 800 }),
+    src: cloudinary.url(`${this.image}.jpg`, {quality: 'auto:low'}),
   };
 });
 

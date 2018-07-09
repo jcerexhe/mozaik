@@ -1,104 +1,153 @@
 extends layouts/layout
 
 block content
-  .school-heading-container
+  .school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
     .school-heading
       .school-info
-        img(src=school.logo)
+        //- img(src=school.logo)
         h1= school.name
       .school-links.video-link
-        i(class="fa fa-play-circle-o fa-3x" aria-hidden="true")
-        br
-        p(class="video-text") Play Video
-      .school-links
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Enquire
-        .school-link
-          a(href='#' onclick="eForm()" class='btn btn-full-width')
-            span Apply
-        .school-link
-          a(href=school.website, target='_blank' class='btn btn-full-width')
-            span Visit Website
-  .grey-bg
-    .school-details
-      .overview
+        a(href='#myModal',data-toggle='modal', data-target='#myModal')
+          img(src="/images/buttons/playvideo.png")
+          // Modal
+          #myModal.modal.modal-school-video
+           .modal-body.modal-body-school-video
+             p.button.modal-close-button-school-video &times;
+             iframe.school-video(width='100%', height='100%', src= school.video, frameborder='0', allowfullscreen='')
+  .student-work
+    !=schoolLightBox
+  .school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
+    img.scroll-down(src="/images/buttons/Scroll-Down.png")
+    .school-logo
+      img(src=school.logo)
+    .school-overview
+      .details-box
         h2 overview
         p=school.overview
-        a.btn(href=`/school/${school.slug}/courses`) view all courses
-        a.btn(href='#' onclick="cForm()") course guide
-      .fees-scholarships
-        h3 fees scholarship
-        h4 price range
+        h3 campus location
+        ul
+            each loc in school.locations
+              li=loc.campus
+        h3 delivery
+        ul
+            each delivery in school.delivery
+              li=delivery
+    .school-fees
+      .details-box
+        h2 fees scholarship
+        h3 price range
         ul
           each price in school.prices
             li
               =`${price.type}:`
               br
-              =`AUD ${price.lower} - AUD ${price.upper}`
-        h4 scholarship
+              =`${price.currency} ${price.lower} - ${price.currency} ${price.upper}`
+        h3 scholarship
         ul
           each scholarship in school.scholarships
             li=scholarship
-        .campuses
-          h3 campus locations
-          ul
-            each loc in school.locations
-              li=loc.campus
-        .delivery
-          h3 delivery
-          ul
-            each delivery in school.delivery
-              li=delivery
-      .study-areas
-        h3 study areas
-        ul
-          each area in school.disciplines
-            li=area
-  !=Lightbox
-  .school-locations
-    h2.school-details-subheading locations
-    p=school.locationDescription
-    !=CampusMaps
-  .school-facilities
-    h2.school-details-subheading facilities
-    p=school.facilitiesDescription
-    !=Facilities
-  .school-alumni
-    h2.school-details-subheading alumni
-    !=Alumni
-  .final-links
-    a.btn(href='#' onclick="eForm()") enquire
-    a.btn(href='#' onclick="eForm()") apply
+    .school-links
+        .school-forms-modal
+        .school-link
+          a(href='#' onclick="createSForm('"+ school.formidsa +"')" class='btn')
+            span Apply
+        .school-link
+          a(href='#' onclick="createSForm('"+ school.formidse +"')" class='btn')
+            span Enquire
+        .school-link
+          a(href='#' onclick="createSForm('"+ school.formidsc +"')" class='btn')
+            span Course Guide
+  !=Courses
+  .other-section
+    .locations
+      .other-section-box(style="background-image: url('/images/location.png')")
+        h2 locations
+        .hover-box
+          !=CampusMaps
+    .facilities
+      .other-section-box(style="background-image: url('/images/facilities.png')")
+        h2 facilities
+        .hover-box
+          !=Facilities
+    .alumni
+      .other-section-box(style="background-image: url('/images/alumni.png')")
+        h2 alumni
+        .hover-box
+          !=Alumni
+  .school-contact
+    .website
+      a(href="https://"+school.website)=school.website
+    .inside-scoop
+      .inside-scoop-btn
+        img(src='/images/buttons/Get-the-inside-scoop.png')
+      .input-email
+        input(placeholder='Email')
+      .subscribe-btn
+        img(src='/images/buttons/subscribe.png')
+
+        // TODO insert enquiry form; hubspot?
 append stylesheets
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
   link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
 
   // if lte IE 8
-  script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2-legacy.js')
-  script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2.js')
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   script.
  
     var btn = document.createElement("button");
     btn.innerHTML = '&times;';
-         
-     function eForm(){  
+    
+    //Main School Forms
+     function createSForm(formId){
+      hbspt.forms.create({
+        portalId: '2708822',
+        formId: formId,
+        onFormReady: showSForm
+      });
+    }; 
+    //Main School Forms
+     function showSForm() {
+      var form = document.getElementsByClassName("hbspt-form");
+      var formModal = document.getElementsByClassName('school-forms-modal');
+      formModal[0].style.display = "block";
+      form[0].style.display = "block";
+      btn.addEventListener("click", function(){
+        form[0].style.display = "none";
+        formModal[0].style.display = "none";
+      });
+      form[0].appendChild(btn);
+    };
+    //Main School Forms
+     window.onclick = function(event) {
+      var clickTarget = event.target;
+      var form = document.getElementsByClassName("hbspt-form");
+      if (form[0]) {
+        var formModal = document.getElementsByClassName('school-forms-modal');
+        if (clickTarget == formModal[0]) {
+          form[0].style.display = "none";
+          formModal[0].style.display = "none";
+        }
+      }
+    };
+
+
+
+     function eForm(formId){  
        hbspt.forms.create({
         portalId: '2708822',
-        formId: '8e92d188-4259-4263-b5c8-3865663c6f4d',
+        formId: formId,
          onFormReady: closeForm
         });
-      };
+      }; 
 
      function cForm() {
       hbspt.forms.create({
       portalId: '2708822',
-      formId: 'ade15aad-d63b-4d3f-a2ab-f418fe9c136f',
+      formId: formId,
       onFormReady: closeForm
       });
       
     }; 
-
 
      function closeForm() {
       var form = document.getElementsByClassName("hbspt-form");
@@ -109,4 +158,7 @@ append stylesheets
       });
       form[0].appendChild(btn);
     };
- 
+
+     
+
+   

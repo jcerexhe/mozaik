@@ -11,35 +11,52 @@ export default class MenuApp extends Component {
         {
           heading: 'for students',
           links: [
-            { url: '#', val: 'why mozaik?' },
-            { url: '/discover', val: 'discover' },
-            { url: '#', val: 'study areas' },
-            { url: '#', val: 'education agency' },
-            { url: '#', val: 'sign up' }
+            { url: '/about-us', val: 'about us' },
+            { url: '/search', val: 'discover' },
+            { url: '/study-area', val: 'study areas' },
+            { url: '/agency-mozaik', val: 'education agency' },
+            /*{ url: '#', val: 'sign up' }*/
           ]
         },
         {
           heading: 'for schools',
           links: [
-            { url: '#', val: 'why partner with mozaik' },
-            { url: '#', val: 'education agency' },
-            { url: '#', val: 'sign up' }
+            { url: '/partner-with-mozaik', val: 'why partner with mozaik play' },
+            { url: '/agency-mozaik', val: 'education agency' },
+            /*{ url: '#', val: 'sign up' } */
           ]
-        },
-        {
+        }
+        /*{
           heading: 'about mozaik',
           links: [
             { url: '#', val: 'who is mozaik?' },
             { url: '#', val: 'contact us' }
           ]
-        }
+        }*/
       ]
     };
   }
 
   updateMenu() {
     const { menuOpen } = this.state;
-    this.setState({ menuOpen: !menuOpen });
+    this.setState({ menuOpen: !menuOpen }, () => {
+      if (this.state.menuOpen == true) {
+        document.querySelector('.logo').style.margin = '0 auto';
+      } else {
+        document.querySelector('.logo').style.margin = this.state.lastLogoStyle;
+      };
+    });
+  }
+
+  getLogoStyle() {
+    if (this.state.menuOpen == false) {
+      let lastLogoStyle = document.querySelector('.logo').style.margin;
+      this.setState({ lastLogoStyle: lastLogoStyle }, () => {
+        this.updateMenu();
+      });
+    } else {
+      this.updateMenu();
+    };
   }
 
   render() {
@@ -48,27 +65,33 @@ export default class MenuApp extends Component {
     return (
       <div>
         <div className='navbar'>
-          <div className='discover'>
-            <a href='/#search'>discover</a>
-          </div>
+          {/*<div className='discover'>
+             <a href='/#search'>discover</a>
+          </div>*/}
           <div className='logo'>
             <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
+            {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
           </div>
           <div className='links'>
-            <a href='#'>
-              <img className='icon-white' src='/images/icons/mozaik-icons-6.png' />
-            </a>
-            <a href="/#search">
-              <img className='icon-white' src='/images/icons/mozaik-icons-5.png' />
-            </a>
-            <div id='open-menu'
-              onClick={ () => this.updateMenu() }
-              className={ menuOpen ? 'open' : '' }>
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
+              <div id='open-menu'
+                  onClick={ () => this.updateMenu() }
+                  className={ menuOpen ? 'open' : '' }>
+                  {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+              </div>
+              <div>
+                <a href="/search">
+                  <img className='icon-white' src='/images/menu/Search_1.png' />
+                </a>
+              </div>
+              <div>
+                <a href='#'>
+                  <img className='icon-white' src='/images/menu/My_Account.png' />
+                </a> 
+              </div>     
           </div>
         </div>
         <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
@@ -89,7 +112,7 @@ export default class MenuApp extends Component {
                       return (
                         <li>
                           <a href={ link.url }>{ link.val }</a>
-                          <div className='border' />
+                          {/*<div className='border' />*/}
                         </li>
                       );
                     }) }
@@ -98,26 +121,26 @@ export default class MenuApp extends Component {
               }) }
               <div className="social-nav">
                 <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
-                  <img className="img-resp" src='/images/social-icons/sm-facebook.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-facebook.png' />
+                </a>
+               {/* <a href='#'>
+                  <img className="img-resp" src='/images/old-social-icons/sm-youtube.png' />
+                </a>  */}
+                <a href='https://www.instagram.com/mozaikplay/'>
+                  <img className="img-resp" src='/images/old-social-icons/sm-instagram.png' />
+                </a>
+                {/* <a href='#'>
+                  <img className="img-resp" src='/images/old-social-icons/sm-snapchat.png' />
                 </a>
                 <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-youtube.png' />
+                  <img className="img-resp" src='/images/old-social-icons/sm-pinterest.png' />
+                </a> */}
+                <a href='https://twitter.com/MozaikPlay'>
+                  <img className="img-resp" src='/images/old-social-icons/sm-twitter.png' />
                 </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-instagram.png' />
-                </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-snapchat.png' />
-                </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-pinterest.png' />
-                </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-twitter.png' />
-                </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/social-icons/sm-linked-in.png' />
-                </a>
+               {/* <a href='#'>
+                  <img className="img-resp" src='/images/old-social-icons/sm-linked-in.png' />
+                </a> */}
               </div>
             </div>
           </div>

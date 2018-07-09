@@ -1,37 +1,49 @@
 #nav {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: $grey;
+  /* background-color: $grey; */
+  background-color: transparent;
 }
 #nav.clear {
   background-color: transparent;
 }
 .navbar {
   height: 100px;
-  padding: 0px 20px;
+  padding-left: 20px;
+  /*padding: 0 3vw;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 102;
   position: relative;
 }
-
 .navbar > .logo {
+  /*text-align: center;*/
+  /* border: 5px solid white; */
+  /*-ms-flex-item-align: center;*/
+  /*-ms-grid-row-align: center;*/
+  /*align-self: center;*/
+  height: inherit;
+  /*margin: 0 auto;*/
+  /*width: calc(100px + 45px)*/
+  /*padding-left: 45px;*/
+}
+.navbar > .logo > a {
+  //flex-grow: 2;
   text-align: center;
-  /*border: 5px solid white;*/
-  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 3.2em;
   height: inherit;
 }
-
-.navbar .logo img {
-   height: 90px;
-   padding: 10px 0px 0 80px;
+.navbar > .logo > a > img {
+   height: inherit;
 }
-
 .navbar .discover > a {
   text-decoration: none;
   text-transform: uppercase;
@@ -47,18 +59,16 @@
   background-color: $grey;
   color: $pink;
 }
-.navbar .logo > a {
-  flex-grow: 2;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white;
-  font-size: 3.2em;
-}
 .navbar .links {
+ //margin-right: 50px;
+ // margin-top: 200px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  position: absolute;
+  right: 3vw;
+  top: 100px;
   /* hide these extra icons for now on mobile */
   @media only screen and (max-width: 768px) {
     .icon-white {
@@ -69,6 +79,7 @@
 .navbar .links > a {
   margin: 0px 5px;
 }
+
 #open-menu {
   width: 30px;
   height: 20px;
@@ -129,50 +140,77 @@
 }
 
 .slide-pane__content {
-    width: 100%;
+    /* width: 100%; */
+    position: relative;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    padding: 0 !important;
 }
 
 
 #menu {
   position: absolute;
   z-index: 101;
-  top: 0;
-  left: 0;
+  //top: 0;
+  //left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
-  /*background-image: url('http://www.pngmart.com/files/3/Ballet-PNG-HD.png');*/
+  //background-color: #000000;
+  background-image: url('http://res.cloudinary.com/mozaik/image/upload/q_auto/v1521785678/bokeh-2245355_1920_wp86yq.jpg');
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 .menu-content {
-  margin-top: 100px;
+  //margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: calc(100% - 100px);
+  //height: calc(100% - 100px);
+  height: 100vh;
+  background-color: rgba(236, 236, 236, .8);
+  //width: 25%;
+  //margin: 50px auto 0px auto;
+  max-width: 25%;
+  min-width: 450px;
+  margin: 0 auto;
+  padding-top: 75px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 450px) {
+  #menu {
+    width: 100%;
+    height: 100%;
+  }
+  .menu-content {
+    width: 100%;
+    height: 100%;
+  }
 }
 .menu-content h3 {
+  font-size: 30px;
   text-transform: uppercase;
-  color: $white;
+  color: $pink;
+  padding-bottom: 10px;  
 }
 .menu-content ul {
   list-style: none;
   padding-left: 0px !important;
   text-transform: uppercase;
-  color: $white;
+  color: $grey;
   text-align: center;
 }
 .menu-content ul > li {
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin-top: -20px;
+  margin-bottom: 18px;
   width: 180px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Bebas Neue';
 }
 .menu-content ul > li > a {
-  color: $white;
+  color: $grey;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -204,9 +242,23 @@
 }
 .social-nav {
   display: flex;
-  width: 200px;
-  padding-top: 20px;
+  width: 100px;
+  padding: 3px 3px 3px 3px;
+  background-color: $grey;
   a {
     margin: 2px;
   }
 }
+
+.icon-white {
+  width: 20px;
+  height: 20px;
+  margin: 15px 0px 0px 15px;
+  filter: brightness(0) invert(1);
+  cursor: pointer; }
+
+.icon {
+  width: 47px;
+  height: 53px;
+  margin: 0px 15px;
+  cursor: pointer; }

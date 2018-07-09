@@ -6,6 +6,20 @@ import Artwork from './artwork.jsx';
 export default class ArtworkApp extends Component {
   constructor(props) {
     super(props);
+
+    let displayArry = []; /* This will contain the indeces of the artworks that will be displayed */
+    let allArtworks = props.artworks
+
+    // Loop through displayedArt first so that displayArry will follow the order of displayedArt
+    _.forEach( props.displayedArt, (display) => { /* Loop through displayedArt so that each element is compared with all artworks */
+      _.forEach( allArtworks, (artwork) => { /* Loop through all artworks to check if each one matches with current displayed art */
+        if ( display === artwork.image) { /* If there's a match */
+          let artworkIndex = allArtworks.indexOf(artwork); /* Get index of artwork */
+          displayArry.push(artworkIndex); /* Add that index to display array */
+        }
+      })
+    })
+
     const allImages = _.map(props.artworks, (artwork) => {
       return {
         src: artwork.images.src,
@@ -38,6 +52,7 @@ export default class ArtworkApp extends Component {
       currentImage: 0,
       currentTitle: images[0].title,
       currentArtist: images[0].artist,
+      indexList: [],
       styles: {
         container: {
           background: 'rgba(255, 255, 255, 0.95)',
@@ -60,14 +75,15 @@ export default class ArtworkApp extends Component {
           boxShadow: '0 0 0 2px #000000'
         }
       },
+      artDisplay: displayArry
     };
   }
 
   closeLightbox() {
     this.setState({ isOpen: false });
-  }
 
-  onClickPrev() {
+
+ } onClickPrev() {
     const { images, currentImage } = this.state;
     const nextImage = images[currentImage - 1];
     this.setState({
@@ -143,40 +159,85 @@ export default class ArtworkApp extends Component {
     this.setState({ images });
   }
 
+  renderImg(img, i){
+    let artDisplayIndex = this.state.artDisplay /* Contains indeces of artworks to display ordered from L -> R in the page */
+    if (artDisplayIndex[i]) { /* i corresponds to its position in artDisplayIndex, so the art with that index in artworks will show in the artbox that has the i value (in the return function in the render function)*/
+      return(
+          <div  className="art-box-img" style={{backgroundImage: 'url('+ img[artDisplayIndex[i]].thumb +')'}} >
+            <div className="img-details" onClick={ () => this.openLightbox(artDisplayIndex[i]) }>
+              <h2>{ img[artDisplayIndex[i]].title }</h2>
+              <p>{ img[artDisplayIndex[i]].artist }</p>
+            </div>
+          </div>
+        );
+    } else { /* If there is no specified art to display, the first 7 in artworks will be displayed */
+      return(
+          <div  className="art-box-img" style={{backgroundImage: 'url('+ img[i].thumb +')'}} >
+            <div className="img-details" onClick={ () => this.openLightbox(i) }>
+              <h2>{ img[i].title }</h2>
+              <p>{ img[i].artist }</p>
+            </div>
+          </div>
+        );
+    }
+  }
+
+  updateIndexList(){
+    this.setState({indexList: []});
+  }
+
   render() {
-    const { artworks } = this.props;
-    const { disciplineList, disciplines, images } = this.state;
+    const { artworks, displayedArt } = this.props;
+    const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
+    console.log('artworks')
+    console.log(artworks)
+    console.log('displayedArt')
+    console.log(displayedArt)
+    console.log('artDisplay')
+    console.log(artDisplay)
+    let gt = ">";
     return (
       <div className='grey-bg'>
-        <div className='filter-container'>
-          <div className='filter'>
-            <h2>disciplines</h2>
-            <Filter
-              filterItems={ disciplineList }
-              activeItems={ disciplines }
-              onClick={ (val) => this.updateDiscipline(val) }
-              isHome={ false }
-            />
-          </div>
-          <div className='refine-button'>
-            <a href='/discover' className='btn btn-full-width'>refine</a>
-          </div>
-        </div>
         <div className='artworks'>
           <div className='artwork-container'>
           { artworks.length > 0 ? this.renderLightbox() : <div /> }
-            <ul className='artwork-slides'>
-              { _.map(images, (img, index) => {
-                return (
-                  <li onClick={ () => this.openLightbox(index) }>
-                    <p>{ img.artist }</p>
-                    <p className='artwork-discipline'>{ img.disciplines[0] }</p>
-                    <h4>{ img.title }</h4>
-                    <Artwork src={ img.thumb } />
-                  </li>
-                );
-              }) }
-            </ul>
+            <div className="art-box">
+              <div className="art-box-1">
+                { this.renderImg(images, 0) }
+              </div>
+              <div className="art-box-1">
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 1) }
+                </div>
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 2) }
+                </div>
+              </div>
+
+            </div>
+            <div className="art-box">
+              <div className="art-box-2">
+                <div className="art-box-2-img right">
+                  { this.renderImg(images, 3) }
+                </div>
+                <div className="art-box-2-img left">
+                  { this.renderImg(images, 5) }
+                </div>
+              </div>
+              <div className="art-box-2-diagonal">
+                { this.renderImg(images, 4) }
+              </div>
+            </div>
+            <div className="art-box-last">
+              <div className="artwork-next">
+                <button onClick={()=>this.updateIndexList()} > {gt} </button>
+              </div>
+              <div className="art-box-3">
+                <div className="art-box-3-img">
+                  { this.renderImg(images, 6) }
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

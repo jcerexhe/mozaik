@@ -1,22 +1,23 @@
 #search {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 950px;
+  /* height: 1200px; */
   /*margin-top: -200px;*/
   z-index: 50;
   overflow: hidden;
-  /* gradient bg allows slider img to appear in top right */
+  /* gradient bg allows slider img to appear in top right 
   background: -webkit-linear-gradient(right top, $pink, rgba(255,0,0,0)); 
   background: -o-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
   background: -moz-linear-gradient(top right, $pink, rgba(255,0,0,0)); 
   background: linear-gradient(to right top, $pink, rgba(255,0,0,0)); 
+  */
 }
 #search.taller-search {
   height: 1800px;
 }
 #search:before {
-  content: ' ';
-  /*background-color: $white;*/
+   /* content: ' ';
+ background-color: $white;
   background-color: $grey;
   width: calc(100% + 400px);
   margin-left: -200px;
@@ -26,15 +27,17 @@
   display: block;
   z-index: 110;
   transform: skewX(45deg);
+  */
 }
 #search.taller-search:before {
   width: calc(100% + 1400px);
   margin-left: -700px;
 }
 .search-content {
-  position: absolute;
+  /* position: absolute;  */
   width: 100%;
-  z-index: 111;
+  /* height: 100%; */
+  background-color: #181818;
 
   h2 {
     /*color: #EAEEF0;*/
@@ -49,14 +52,18 @@
     text-transform: uppercase;
   }
   .search-criteria {
-    width: 55%;
+    width: 80%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
-    display: flex;
+    padding-top: 10px;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
+    background-color: rgba(255, 255, 255, 0.8);
+
   }
   .search-category {
     display: flex;
@@ -72,17 +79,38 @@
       margin: 0 5px;
     }
   }
+
+  .interest-areas{
+    .btn{
+      border-radius: 0;
+      border: 3px solid $white !important;
+      background: #000;
+      width: 150px;
+      border: 0;
+     /* margin: 30px 0; */
+    }
+
+    ul{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .interest-disciplines{
+    ul{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   .interest-areas, .interest-disciplines {
     margin-top: 50px;
     text-align: center;
   }
-  .interest-disciplines {
-    border: 1px solid white;
-  }
+
   .interest-areas > h3, .interest-disciplines > h3 {
     font-size: 28px;
     margin-top: -30px;
-    background-color: $grey;
     color: $pink;
     display: inline-block;
     padding: 0px 15px;
@@ -162,8 +190,8 @@
     color: $pink;
   }
   .search-input {
-    margin-top: 100px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .search-input > input {
     width: 80%;
@@ -192,7 +220,9 @@
 .results-container {
   background-color: $grey;
   color: white;
-  margin-top: 350px;
+  margin-top: 0px;
+  margin: 0 auto;
+  width: 80%;
 }
 .no-results {
   display: flex;
@@ -206,10 +236,14 @@
     margin: 0px;
   }
   .search-results > li {
+    box-sizing: border-box;
     display: inline-block;
-    width: 100%;
+    width: 50%;
+    height: 400px;
     vertical-align: top;
     position: relative;
+    border: 3px solid transparent;
+    margin: 20px 0;
     @media only screen and (min-width: 768px) {
       width: 25%;
     }
@@ -219,37 +253,49 @@
     position: relative;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
   }
   .search-result::before {
     content: ' ';
     display: block;
-    padding-top: 83.3%;
+    padding-top: 50%;
   }
-  .search-result > span.course-name {
-    position: absolute;
+  .search-result > p.course-name {
+/*    position: absolute;
     top: auto;
     left: 1rem;
     bottom: 1.6rem;
     right: 2rem;
-    z-index: 10;
+    z-index: 10; */
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 130%;
+    font-size: 120%;
     font-family: 'Bebas Neue';
     color: white;
     letter-spacing: 1px;
+    text-align: center;
+    padding: 0 25px;
   }
-  .search-result > span.city {
-    position: absolute;
+  .search-result > p.city {
+    /* position: absolute;
     top: auto;
     left: 1rem;
     bottom: 1rem;
     right: 2rem;
-    z-index: 10;
+    z-index: 10; */
     text-transform: uppercase;
-    color: $grey-text;
-    font-size: 70%;
-    font-family: 'Montserrat Light';
+    font-weight: 700;
+    font-size: 100%;
+    font-family: 'Bebas Neue';
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    border-top: 2px solid $red;
+    padding-top: 30px;
+    width: 50%;
+    margin: 0 auto;
   }
   .search-result > i {
     position: absolute;
@@ -296,4 +342,99 @@
 }
 .category-heading{
   cursor: pointer;
+}
+
+.extend-search{
+  padding-top: 20%;
+  text-align: center;
+
+  h2{
+    border: 3px solid $white;
+    color: $pink !important;
+    display: inline-block;
+    padding: 0 5px;
+    padding-top: 5px;
+  }
+
+  .advance-search-btn{
+    width: 20vw;
+  }
+}
+
+.search-input{
+margin: 0 auto;
+display: flex;
+width: 90%;
+
+  input, button, a{
+    width: 25% !important;
+    font-size: 12px !important;
+    text-align: left !important;
+    margin: 3px;
+    border: 1px solid #000 !important;
+    background-color: transparent;
+  }
+
+  button{
+    text-align: center !important;
+    text-transform: uppercase;
+    background: #000;
+    color: $white;
+    font-family: 'Bebas Neue';
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+
+  .adv-search{
+    color: $pink;
+    font-weight: 700;
+    background: #000;
+    font-family: 'Bebas Neue';
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center !important;
+    line-height: 2rem;
+  }
+}
+
+.interest-area-box{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 100px;
+  padding-left: 60px;
+
+  .area-1, .area-2{
+    width: 16.6%;
+    height: 100%;
+  }
+
+  .area-1, .area-2, {
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+  }
+
+}
+
+.interest-disciplines-box{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.interest-disciplines-box-2{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.search-line{
+  width: 50%;
+  border: 1px solid #000;
 }
