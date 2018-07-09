@@ -864,6 +864,14 @@
     }
   ],
   "artworks": [
+     {
+      "image": "NIDA/student_work/2nd_Year_Design_for_Performance",
+      "name": "2nd Year Design for Performance",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
     {
       "image": "NIDA/student_work/2016_Production_Gallery",
       "name": "2016 Production 1",
@@ -873,8 +881,8 @@
       ]
     },
     {
-      "image": "NIDA/student_work/2016_Production_Gallery2",
-      "name": "2016 Production 2",
+      "image": "NIDA/student_work/EXPO2",
+      "name": "EXPO 2",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "artist": "NoName",
       "disciplines": [
@@ -889,29 +897,45 @@
       ]
     },
     {
+      "image": "NIDA/student_work/Directors1",
+      "name": "Directors 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },    
+    {
+      "image": "NIDA/student_work/NIDA_costumes",
+      "name": "Costumes",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/EXPO1",
+      "name": "EXPO 1",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },
+    {
+      "image": "NIDA/student_work/2016_Production_Gallery2",
+      "name": "2016 Production 2",
+      "school_name": "National Institute of Dramatic Art (NIDA)",
+      "artist": "NoName",
+      "disciplines": [
+      ]
+    },    
+    {
       "image": "NIDA/student_work/2017_Production_Gallery2",
       "name": "2017 Production 2",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "artist": "NoName",
       "disciplines": [
       ]
-    },
-    {
-      "image": "NIDA/student_work/2017_Production_Gallery3",
-      "name": "2017 Production 3",
-      "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "NoName",
-      "disciplines": [
-      ]
-    },
-    {
-      "image": "NIDA/student_work/2nd_Year_Design_for_Performance",
-      "name": "2nd Year Design for Performance",
-      "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "NoName",
-      "disciplines": [
-      ]
-    },
+    },   
     {
       "image": "NIDA/student_work/3rd_Year_BFA_Costume",
       "name": "3rd Year BFA Costume 1",
@@ -945,37 +969,13 @@
       ]
     },
     {
-      "image": "NIDA/student_work/Directors1",
-      "name": "Directors 1",
-      "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "NoName",
-      "disciplines": [
-      ]
-    },
-    {
       "image": "NIDA/student_work/Directors2",
       "name": "Directors 1",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "artist": "NoName",
       "disciplines": [
       ]
-    },
-    {
-      "image": "NIDA/student_work/EXPO1",
-      "name": "EXPO 1",
-      "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "NoName",
-      "disciplines": [
-      ]
-    },
-    {
-      "image": "NIDA/student_work/EXPO2",
-      "name": "EXPO 2",
-      "school_name": "National Institute of Dramatic Art (NIDA)",
-      "artist": "NoName",
-      "disciplines": [
-      ]
-    },
+    },    
     {
       "image": "NIDA/student_work/EXPO3",
       "name": "EXPO 3",
@@ -1017,8 +1017,8 @@
       ]
     },
     {
-      "image": "NIDA/student_work/NIDA_costumes",
-      "name": "Costumes",
+      "image": "NIDA/student_work/2017_Production_Gallery3",
+      "name": "2017 Production 3",
       "school_name": "National Institute of Dramatic Art (NIDA)",
       "artist": "NoName",
       "disciplines": [

@@ -54,7 +54,8 @@ export default class HeroApp extends Component {
             link: '/search'
           },
           styles: {
-            p:{
+            h1:{},
+            p: {
               position: 'absolute',
               left: '85%'
             }
@@ -142,8 +143,8 @@ export default class HeroApp extends Component {
                     <br/><br/>
                     <p>{ slide.text }</p>
                     <p>{ slide.br }</p>
-                    <p style={slide.styles.p}>{ slide.student}</p> <br/>
-                    <p style={slide.styles.p}>{ slide.school}</p>
+                    <p style={slide.styles.p}> { slide.student}</p><br/>
+                    <p style={slide.styles.p}> { slide.school}</p>
                   </div>
                   { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
                     <img src='/images/buttons/playvideo.png' alt='arrow-down'/>
