@@ -1981,7 +1981,7 @@ img.study-area-background {
   height: 100vh;
   top: 0px;
   position: absolute; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     img.study-area-background {
       height: auto; } }
 
