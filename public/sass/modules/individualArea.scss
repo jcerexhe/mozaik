@@ -1,3 +1,4 @@
+/* Desktop css */
 .study-area-page-heading {
     border: 10px solid #181818;
     width: 40%;
@@ -46,6 +47,9 @@ img.study-area-background{
   height: 100vh;
   top: 0px;
   position: absolute; 
+    @media only screen and (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .study-area-disciplines{
@@ -195,3 +199,6 @@ ul.careers-lists>li:before {
   position: relative;
  margin-top: 80%;
 }
+
+/* Mobile css */
+    
