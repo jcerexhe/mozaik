@@ -47,6 +47,10 @@ img.study-area-background{
   top: 0px;
   position: absolute; 
 
+    @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
+
 }
 
 .study-area-disciplines{
