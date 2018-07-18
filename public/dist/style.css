@@ -2117,6 +2117,15 @@ ul.careers-lists > li:before {
   margin-top: 80%; }
 
 /* Mobile css */
+h1.mobile-study-area-title {
+  text-align: center;
+  color: #fff;
+  position: relative; }
+
+img.mobile-study-area-background {
+  width: 100%;
+  height: auto; }
+
 .select-area-heading {
   border: 5px solid #FFFFFF;
   width: 30%;
@@ -2238,6 +2247,7 @@ ul.careers-lists > li:before {
   border: 2px solid #FFFFFF;
   border-radius: 0px; }
 
+/* Desktop css*/
 #nav {
   position: absolute;
   width: 100%;
@@ -2263,6 +2273,9 @@ ul.careers-lists > li:before {
       align-items: center;
   z-index: 102;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      height: auto; } }
 
 .navbar > .logo {
   /*text-align: center;*/
@@ -2315,8 +2328,10 @@ ul.careers-lists > li:before {
   top: 100px;
   /* hide these extra icons for now on mobile */ }
   @media only screen and (max-width: 768px) {
-    .navbar .links .icon-white {
-      display: none; } }
+    .navbar .links {
+      position: static; }
+      .navbar .links .icon-white {
+        display: none; } }
 
 .navbar .links > a {
   margin: 0px 5px; }
@@ -2490,6 +2505,19 @@ ul.careers-lists > li:before {
   height: 53px;
   margin: 0px 15px;
   cursor: pointer; }
+
+/* mobile css*/
+.mobile-top-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.mobile-logo {
+  width: 50px;
+  height: auto; }
 
 .home-hero {
   /* width: 100vw; */
