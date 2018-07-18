@@ -35,9 +35,37 @@ html(lang='en')
     div(class=(currentPath === '/' ? 'content' : ''))
       block content  
       
-    // TODO footer DESKTOP
-    div(class='d-none d-lg-block')   
-      .footer
+    // TODO footer
+        
+    .footer(class='d-none d-lg-block')
+      .links
+        ul
+          h4 for students
+          li
+            a(href='/search') Discover
+          li
+            a(href='/study-area') Study Areas
+          li
+            a(href='/agency-mozaik') Education Agent
+          li
+            a(href='#' onclick="eForm()" class='signup') Sign Up
+        ul
+          h4 for schools
+          li
+            a(href='/partner-with-mozaik') Why Mozaik?
+          li
+            a(href='/agency-mozaik') Education Agent
+          li
+            a(href='#' onclick="eForm()" class='signup') Sign Up
+        ul
+          h4 about mozaik
+          li
+            a(href='/about-us') Who is Mozaik
+          li
+            a(href='/partner-with-mozaik') Contact Us  
+      .social
+        // TODO
+
         .links
           ul
             h4 for students

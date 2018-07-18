@@ -64,37 +64,36 @@ export default class MenuApp extends Component {
     const { menuOpen, menu } = this.state;
     return (
       <div>
-        {/*Desktop View*/}
-        <div className="desktop-view d-none d-lg-block">
-          <div className='navbar'>
-            {/*<div className='discover'>
-               <a href='/#search'>discover</a>
-            </div>*/}
-            <div className='logo'>
-              <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
-              {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
-            </div>
-            <div className='links'>
-                <div id='open-menu'
-                    onClick={ () => this.updateMenu() }
-                    className={ menuOpen ? 'open' : '' }>
-                    {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                </div>
-                <div>
-                  <a href="/search">
-                    <img className='icon-white' src='/images/menu/Search_1.png' />
-                  </a>
-                </div>
-                <div>
-                  <a href='#'>
-                    <img className='icon-white' src='/images/menu/My_Account.png' />
-                  </a> 
-                </div>     
-            </div>
+
+        <div className='navbar d-none d-lg-block'>
+          {/*<div className='discover'>
+             <a href='/#search'>discover</a>
+          </div>*/}
+          <div className='logo'>
+            <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
+            {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
+          </div>
+          <div className='links'>
+              <div id='open-menu'
+                  onClick={ () => this.updateMenu() }
+                  className={ menuOpen ? 'open' : '' }>
+                  {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+              </div>
+              <div>
+                <a href="/search">
+                  <img className='icon-white' src='/images/menu/Search_1.png' />
+                </a>
+              </div>
+              <div>
+                <a href='#'>
+                  <img className='icon-white' src='/images/menu/My_Account.png' />
+                </a> 
+              </div>     
+
           </div>
         </div>
           <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
