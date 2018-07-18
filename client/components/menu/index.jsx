@@ -64,36 +64,37 @@ export default class MenuApp extends Component {
     const { menuOpen, menu } = this.state;
     return (
       <div>
-
-        <div className='navbar d-none d-lg-block'>
-          {/*<div className='discover'>
-             <a href='/#search'>discover</a>
-          </div>*/}
-          <div className='logo'>
-            <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
-            {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
-          </div>
-          <div className='links'>
-              <div id='open-menu'
-                  onClick={ () => this.updateMenu() }
-                  className={ menuOpen ? 'open' : '' }>
-                  {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-              </div>
-              <div>
-                <a href="/search">
-                  <img className='icon-white' src='/images/menu/Search_1.png' />
-                </a>
-              </div>
-              <div>
-                <a href='#'>
-                  <img className='icon-white' src='/images/menu/My_Account.png' />
-                </a> 
-              </div>     
-
+        {/*Desktop View*/}
+        <div className="desktop-view d-none d-lg-block">
+          <div className='navbar'>
+            {/*<div className='discover'>
+               <a href='/#search'>discover</a>
+            </div>*/}
+            <div className='logo'>
+              <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
+              {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
+            </div>
+            <div className='links'>
+                <div id='open-menu'
+                    onClick={ () => this.updateMenu() }
+                    className={ menuOpen ? 'open' : '' }>
+                    {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                </div>
+                <div>
+                  <a href="/search">
+                    <img className='icon-white' src='/images/menu/Search_1.png' />
+                  </a>
+                </div>
+                <div>
+                  <a href='#'>
+                    <img className='icon-white' src='/images/menu/My_Account.png' />
+                  </a> 
+                </div>     
+            </div>
           </div>
         </div>
           <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
@@ -149,11 +150,11 @@ export default class MenuApp extends Component {
           </SlidingPane>
         {/*Mobile View*/}
         <div className="mobile-view d-lg-none">
-          <div className='navbar mobile-top-button'>
-            <a href="/search"><button className="top-button-discover">Discover</button></a>
-            <a href="#"><button className="top-button-login">Login</button></a>
-          </div>       
-          <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+          <div>
+            <button>Discover</button>
+            <button>Login</button>
+          </div>
+          <nav className="navbar navbar-light bg-light justify-content-between">
             <a href='/'>
               <img className="mobile-logo" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
             </a>
@@ -167,7 +168,16 @@ export default class MenuApp extends Component {
                     <span />
                     <span />
                 </div>
-                   
+                <div>
+                  <a href="/search">
+                    <img className='icon-white' src='/images/menu/Search_1.png' />
+                  </a>
+                </div>
+                <div>
+                  <a href='#'>
+                    <img className='icon-white' src='/images/menu/My_Account.png' />
+                  </a> 
+                </div>     
             </div>
           </nav>
         </div>

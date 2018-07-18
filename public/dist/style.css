@@ -2698,38 +2698,11 @@ img.mobile-study-area-background {
   cursor: pointer; }
 
 /* mobile css*/
-.mobile-top-button {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  padding: 0; }
-  .mobile-top-button .top-button-discover {
-    height: auto;
-    font-size: 20px;
-    background-color: #FF6D6D;
-    border: 2px solid #FF6D6D;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue'; }
-  .mobile-top-button .top-button-login {
-    height: auto;
-    font-size: 20px;
-    color: #fff;
-    background-color: #343a40;
-    border: 2px solid #343a40;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue'; }
 
 .mobile-logo {
   width: 50px;
   height: auto; }
-  @media only screen and (max-width: 414px) {
-    .mobile-logo {
-      width: 40px;
-      height: auto; } }
+
 
 .home-hero {
   /* width: 100vw; */
