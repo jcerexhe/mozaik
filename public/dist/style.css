@@ -2247,6 +2247,7 @@ img.mobile-study-area-background {
   border: 2px solid #FFFFFF;
   border-radius: 0px; }
 
+/* Desktop css*/
 #nav {
   position: absolute;
   width: 100%;
@@ -2499,6 +2500,11 @@ img.mobile-study-area-background {
   height: 53px;
   margin: 0px 15px;
   cursor: pointer; }
+
+/* mobile css*/
+.mobile-logo {
+  width: 50px;
+  height: auto; }
 
 .home-hero {
   /* width: 100vw; */
