@@ -149,8 +149,8 @@ body {
   @media only screen and (max-width: 768px) {
     .footer {
       display: block;
-      height: 100%;
-      background-color: #fff; } }
+      height: 100%; } }
+
 
 .footer > .links {
   display: -ms-flexbox;
@@ -163,13 +163,7 @@ body {
     .footer > .links {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-      padding-top: 30px; }
-      .footer > .links .ul-footer-left {
-        text-align: left;
-        margin-left: -40px; }
-      .footer > .links .ul-footer-right {
-        text-align: right;
-        margin-left: 10px; } }
+      padding-top: 30px; } }
 
 .footer > .links > ul {
   list-style: none; }
@@ -212,10 +206,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   .footer > .social {
-    text-align: center; }
-    .footer > .social .copyright {
-      color: #212529;
-      font-size: 8px; } }
+    text-align: center; } }
+
 
 .input-newsletter {
   background-color: transparent;
