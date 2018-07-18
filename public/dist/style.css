@@ -146,6 +146,10 @@ body {
   height: 200px;
   background-color: #253336;
   color: #FFFFFF; }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      display: block;
+      height: 100%; } }
 
 .footer > .links {
   display: -ms-flexbox;
@@ -154,6 +158,11 @@ body {
       justify-content: space-around;
   -ms-flex-align: top;
       align-items: top; }
+  @media only screen and (max-width: 768px) {
+    .footer > .links {
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+      padding-top: 30px; } }
 
 .footer > .links > ul {
   list-style: none; }
@@ -185,6 +194,10 @@ body {
   font-size: 11px;
   font-family: 'Montserrat Ultra Light';
   color: #949494; }
+
+@media only screen and (max-width: 768px) {
+  .footer > .social {
+    text-align: center; } }
 
 .input-newsletter {
   background-color: transparent;
