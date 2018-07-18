@@ -80,6 +80,7 @@ constructor(props) {
 				<div>
 					<img className="mobile-study-area-background" src={ studyarea.image } />
 					<h1 className="mobile-study-area-title">{studyAreaTitle}</h1>
+					
 				</div>
 			</div>
 		</div>
