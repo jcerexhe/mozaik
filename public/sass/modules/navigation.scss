@@ -11,11 +11,19 @@
   height: 200px;
   background-color: #253336;
   color: $white;
+    @media only screen and (max-width: 768px) {
+    display: block;
+    height: 100%;
+  }
 }
 .footer > .links {
   display: flex;
   justify-content: space-around;
   align-items: top;
+    @media only screen and (max-width: 768px) {
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
 }
 .footer > .links > ul {
   list-style: none;
@@ -57,6 +65,9 @@
     font-size: 11px;
     font-family: 'Montserrat Ultra Light';
     color: $grey-text;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
   }
 }
 
