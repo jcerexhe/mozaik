@@ -150,11 +150,11 @@ export default class MenuApp extends Component {
           </SlidingPane>
         {/*Mobile View*/}
         <div className="mobile-view d-lg-none">
-          <div>
-            <button>Discover</button>
-            <button>Login</button>
-          </div>
-          <nav className="navbar navbar-light bg-light justify-content-between">
+          <div className='mobile-top-button'>
+            <button className="top-button">Discover</button>
+            <button className="top-button">Login</button> 
+          </div>       
+          <nav className="navbar navbar-expand-md bg-dark navbar-dark">
             <a href='/'>
               <img className="mobile-logo" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
             </a>
@@ -168,16 +168,7 @@ export default class MenuApp extends Component {
                     <span />
                     <span />
                 </div>
-                <div>
-                  <a href="/search">
-                    <img className='icon-white' src='/images/menu/Search_1.png' />
-                  </a>
-                </div>
-                <div>
-                  <a href='#'>
-                    <img className='icon-white' src='/images/menu/My_Account.png' />
-                  </a> 
-                </div>     
+                   
             </div>
           </nav>
         </div>

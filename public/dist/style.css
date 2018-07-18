@@ -2273,6 +2273,9 @@ img.mobile-study-area-background {
       align-items: center;
   z-index: 102;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      height: auto; } }
 
 .navbar > .logo {
   /*text-align: center;*/
@@ -2325,8 +2328,10 @@ img.mobile-study-area-background {
   top: 100px;
   /* hide these extra icons for now on mobile */ }
   @media only screen and (max-width: 768px) {
-    .navbar .links .icon-white {
-      display: none; } }
+    .navbar .links {
+      position: static; }
+      .navbar .links .icon-white {
+        display: none; } }
 
 .navbar .links > a {
   margin: 0px 5px; }
@@ -2502,6 +2507,15 @@ img.mobile-study-area-background {
   cursor: pointer; }
 
 /* mobile css*/
+.mobile-top-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  z-index: 1; }
+
 .mobile-logo {
   width: 50px;
   height: auto; }
