@@ -2513,8 +2513,7 @@ img.mobile-study-area-background {
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: end;
-      justify-content: flex-end;
-  z-index: 1; }
+      justify-content: flex-end; }
 
 .mobile-logo {
   width: 50px;
