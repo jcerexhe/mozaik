@@ -2117,6 +2117,15 @@ ul.careers-lists > li:before {
   margin-top: 80%; }
 
 /* Mobile css */
+h1.mobile-study-area-title {
+  text-align: center;
+  color: #fff;
+  position: relative; }
+
+img.mobile-study-area-background {
+  width: 100%;
+  height: auto; }
+
 .select-area-heading {
   border: 5px solid #FFFFFF;
   width: 30%;

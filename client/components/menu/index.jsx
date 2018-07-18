@@ -64,7 +64,7 @@ export default class MenuApp extends Component {
     const { menuOpen, menu } = this.state;
     return (
       <div>
-        <div className='navbar'>
+        <div className='navbar d-none d-lg-block'>
           {/*<div className='discover'>
              <a href='/#search'>discover</a>
           </div>*/}
