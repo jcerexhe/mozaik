@@ -43,12 +43,12 @@ constructor(props) {
 			</div>
 		{/*Mobile View*/}head
 			<div className="mobile-view d-lg-none">
-				<div>
+				<section>
 					<img className="mobile-study-area-background" src={ studyarea.image } />
 					<h1 className="mobile-study-area-title">{studyAreaTitle}</h1>
-					
-				</div>
-
+				</section>
+				<section className="careers-container">
+				</section>
 			</div>
 	</div>
         	      

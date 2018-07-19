@@ -2225,7 +2225,9 @@ h1.mobile-study-area-title {
 
 img.mobile-study-area-background {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: absolute;
+  top: 0; }
 
 
 .select-area-heading {
