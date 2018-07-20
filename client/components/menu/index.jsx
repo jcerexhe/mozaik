@@ -150,9 +150,9 @@ export default class MenuApp extends Component {
           </SlidingPane>
         {/*Mobile View*/}
         <div className="mobile-view d-lg-none">
-          <div className='mobile-top-button'>
-            <button className="top-button">Discover</button>
-            <button className="top-button">Login</button> 
+          <div className='navbar mobile-top-button'>
+            <a href="/search"><button className="top-button-discover">Discover</button></a>
+            <a href="#"><button className="top-button-login">Login</button></a>
           </div>       
           <nav className="navbar navbar-expand-md bg-dark navbar-dark">
             <a href='/'>
