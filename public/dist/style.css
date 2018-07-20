@@ -163,7 +163,13 @@ body {
     .footer > .links {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-      padding-top: 30px; } }
+      padding-top: 30px; }
+      .footer > .links .ul-footer-left {
+        text-align: left;
+        margin-left: -40px; }
+      .footer > .links .ul-footer-right {
+        text-align: right;
+        margin-left: 10px; } }
 
 .footer > .links > ul {
   list-style: none; }
@@ -183,9 +189,9 @@ body {
       color: #212529; } }
   @media only screen and (max-width: 414px) {
     .footer > .links > ul h4 {
-      font-size: 15px; }
+      font-size: 10px; }
     .footer > .links > ul a, .footer > .links > ul li {
-      font-size: 10px; } }
+      font-size: 8px; } }
 
 .footer > .social > .links > ul li {
   color: #FFFFFF;
@@ -2276,6 +2282,9 @@ img.mobile-study-area-background {
       font-size: 7vw; }
     .mobile-career-list p {
       font-size: 10px; } }
+  @media only screen and (max-width: 320px) {
+    .mobile-career-list p {
+      font-size: 8px; } }
 
 .select-area-heading {
   border: 5px solid #FFFFFF;
