@@ -151,8 +151,8 @@ export default class MenuApp extends Component {
         {/*Mobile View*/}
         <div className="mobile-view d-lg-none">
           <div className='navbar mobile-top-button'>
-            <button className="top-button">Discover</button>
-            <button className="top-button">Login</button> 
+            <a href="/search"><button className="top-button-discover">Discover</button></a>
+            <a href="#"><button className="top-button-login">Login</button></a>
           </div>       
           <nav className="navbar navbar-expand-md bg-dark navbar-dark">
             <a href='/'>
