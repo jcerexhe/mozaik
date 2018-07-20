@@ -150,7 +150,7 @@ export default class MenuApp extends Component {
           </SlidingPane>
         {/*Mobile View*/}
         <div className="mobile-view d-lg-none">
-          <div className='mobile-top-button'>
+          <div className='navbar mobile-top-button'>
             <button className="top-button">Discover</button>
             <button className="top-button">Login</button> 
           </div>       
