@@ -78,8 +78,18 @@ constructor(props) {
 		{/*Mobile View*/}
 			<div className="mobile-view d-lg-none">
 				<div>
+					<h1 className="mobile-study-area-page-heading">{studyAreaTitle}</h1>
 					<img className="mobile-study-area-background" src={ studyarea.image } />
 				</div>
+				<div className="mobile-careers-container">
+					<p className="mobile-sa-description">" { studyarea.description } "</p>
+					<button className="mobile-enquire-button"><p>ENQUIRE</p></button>
+					<div className="mobile-career-list">
+						<h1>CAREERS</h1>
+						<p>{studyarea.keywords1}{studyarea.keywords2}</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
         	      
