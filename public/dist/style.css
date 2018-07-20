@@ -149,7 +149,8 @@ body {
   @media only screen and (max-width: 768px) {
     .footer {
       display: block;
-      height: 100%; } }
+      height: 100%;
+      background-color: #fff; } }
 
 .footer > .links {
   display: -ms-flexbox;
@@ -177,6 +178,13 @@ body {
   .footer > .links > ul li {
     color: #949494;
     font-family: 'Gotham Book Regular'; }
+  @media only screen and (max-width: 768px) {
+    .footer > .links > ul h4 {
+      color: #212529; }
+    .footer > .links > ul a {
+      color: #212529; }
+    .footer > .links > ul li {
+      color: #212529; } }
 
 .footer > .social > .links > ul li {
   color: #FFFFFF;
@@ -197,7 +205,9 @@ body {
 
 @media only screen and (max-width: 768px) {
   .footer > .social {
-    text-align: center; } }
+    text-align: center; }
+    .footer > .social .copyright {
+      color: #212529; } }
 
 .input-newsletter {
   background-color: transparent;
@@ -210,6 +220,12 @@ body {
 
 input.input-newsletter:focus {
   outline: none; }
+
+@media only screen and (max-width: 768px) {
+  .img-resp {
+    background-color: #000;
+    border-radius: 100%;
+    border: 1px solid #000; } }
 
 .hidden {
   display: none; }
@@ -2127,16 +2143,80 @@ ul.careers-lists > li:before {
       margin-top: -20%; } }
 
 /* Mobile css */
-h1.mobile-study-area-title {
+h1.mobile-study-area-page-heading {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  color: #fff;
-  position: relative; }
+  position: relative;
+  font-family: 'Helvetica';
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: block;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 img.mobile-study-area-background {
   width: 100%;
   height: auto;
-  position: fixed;
+  position: absolute;
   top: 0; }
+
+.mobile-careers-container {
+  /*background-image: linear-gradient(to right top, #1a5799 30%, #4a54a6, #764daa, #9f3ea3, #c42593);*/
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 15.9%; }
+
+.mobile-sa-description {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+.mobile-enquire-button {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  background-color: #343a40;
+  height: 50px;
+  border: 2px solid #343a40;
+  border-radius: 50px;
+  width: 150px; }
+  .mobile-enquire-button p {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+.mobile-career-list {
+  width: 100%;
+  height: 20vh;
+  background-color: #212529; }
+  .mobile-career-list h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Gotham Bold';
+    font-weight: bold;
+    font-size: 8vw; }
+  .mobile-career-list p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px; }
 
 .select-area-heading {
   border: 5px solid #FFFFFF;
