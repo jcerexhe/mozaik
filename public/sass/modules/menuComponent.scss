@@ -24,9 +24,6 @@
     @media only screen and (max-width: 768px) {
       height: auto;
     }
-    @media only screen and (max-width: 414px) {
-      height: 30px;
-    }
 }
 .navbar > .logo {
   /*text-align: center;*/
@@ -277,6 +274,12 @@
   cursor: pointer; }
 
 /* mobile css*/
+.mobile-top-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 1;
+}
 
 
 
@@ -284,4 +287,3 @@
   width: 50px;
   height: auto;
 }
-
