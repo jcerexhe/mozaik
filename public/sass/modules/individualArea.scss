@@ -212,6 +212,15 @@ h1.mobile-study-area-page-heading{
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+   @media only screen and (max-width: 414px) {
+      font-size: 2em;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   @media only screen and (max-width: 414px) {
+    font-size: 1.5em;
+   }
 }
 
 img.mobile-study-area-background{
@@ -228,6 +237,18 @@ img.mobile-study-area-background{
   height: auto;
   position: relative;
   margin-top: 15.9%;
+    @media only screen and (max-width: 414px) {
+    margin-top: 18.4%;
+    }
+    @media only screen and (max-width: 375px){
+    margin-top: 17%;
+    }
+    @media only screen and (max-width: 360px) {
+    margin-top: 13%;
+    }
+    @media only screen and (max-width: 360px) {
+    margin-top: 10%;
+    }
 }
 
 .mobile-sa-description{
@@ -239,6 +260,14 @@ img.mobile-study-area-background{
   letter-spacing: 1px;
   margin-right: 15px;
   margin-left: 15px;
+    @media only screen and (max-width: 414px) {
+      font-size: 10px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    @media only screen and (max-width: 414px) {
+      font-size: 8px;
+    }
 }
 
 .mobile-enquire-button{
@@ -257,6 +286,33 @@ img.mobile-study-area-background{
       font-size: 30px;
       padding-left: 30px;
       padding-right: 30px;
+    }
+    @media only screen and (max-width: 414px) {
+      width: 80px;
+      height: 30px;
+      margin-bottom: 30px;
+      p{
+        padding-left: 8px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        position: absolute;
+        top: 107px;
+      }
+    }
+    @media only screen and (max-width: 414px) {
+      width: 60px;
+      height: 25px;
+      p{
+       top: 96px;
+       font-size: 15px;
+       padding-left: 4px;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      p{
+       top: 108px;
+      }
     }
 }
 
@@ -278,5 +334,13 @@ img.mobile-study-area-background{
       padding-left: 50px;
       padding-right: 50px;
     }
+     @media only screen and (max-width: 414px) {
+      h1{
+        font-size: 7vw;
+      }
+      p{
+        font-size: 10px;
+      }
+     }
 }
 
