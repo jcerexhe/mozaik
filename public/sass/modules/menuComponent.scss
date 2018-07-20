@@ -24,6 +24,9 @@
     @media only screen and (max-width: 768px) {
       height: auto;
     }
+    @media only screen and (max-width: 414px) {
+      height: 30px;
+    }
 }
 .navbar > .logo {
   /*text-align: center;*/
@@ -107,6 +110,10 @@
   left: 0;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
+    @media only screen and (max-width: 414px) {
+    height: 2px;
+    width: 90%;
+  }
 }
 #open-menu span:nth-child(1) {
   top: 0px;
@@ -298,4 +305,8 @@
 .mobile-logo{
   width: 50px;
   height: auto;
+    @media only screen and (max-width: 414px) {
+      width: 40px;
+      height: auto;
+    }
 }

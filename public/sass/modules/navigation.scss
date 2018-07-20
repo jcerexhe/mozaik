@@ -24,6 +24,14 @@
     @media only screen and (max-width: 768px) {
     justify-content: space-evenly;
     padding-top: 30px;
+    .ul-footer-left{
+        text-align: left;
+        margin-left: -40px;
+      }
+      .ul-footer-right{
+        text-align: right;
+        margin-left: 10px;
+      }
   }
 }
 .footer > .links > ul {
@@ -44,16 +52,18 @@
     font-family: 'Gotham Book Regular'
   }
     @media only screen and (max-width: 768px) {
-      h4{
-        color: #212529;
-      }
-      a{
-        color: #212529;
-      }
-      li{
+      h4, a, li{
         color: #212529;
       }
     }
+    @media only screen and (max-width: 414px) {
+    h4{
+        font-size: 10px;
+      }
+      a, li{
+        font-size: 8px;
+      }
+  }
 }
 
 .footer > .social > .links > ul {
@@ -80,7 +90,8 @@
   @media only screen and (max-width: 768px) {
     text-align: center;
     .copyright{
-      color: #212529; 
+      color: #212529;
+      font-size: 8px; 
     }
   }
 }
