@@ -107,7 +107,7 @@ export default class SelectAreaApp extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="d-none d-lg-block">
+			<div>
 			 	<Footer/>
 			</div>
 		</div>

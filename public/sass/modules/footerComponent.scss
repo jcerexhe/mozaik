@@ -1,3 +1,4 @@
+//Desktop CSS
 // part of footer
 .partoffooter >img{
     width: 100%;
@@ -36,13 +37,26 @@
       padding-left: 10px;
     }
   }
+   @media only screen and (max-width: 768px) {
+        position: relative;
+        right: 0;
+        left: 0;
+        margin-top: -40px;
+        margin-bottom: 40px;
+      }
  }
 
-.input-email {
+input.input-email {
   width: 350px;
   height: 40px;
   border: 2px solid #F76F70;
   background: transparent;
+     @media only screen and (max-width: 768px) {
+        border-radius: 20px;
+        border: 1px solid gray;
+        background-color: gray;
+        text-indent: 20px !important;
+    }
 }
 
 .input-email::placeholder {
@@ -55,4 +69,21 @@
 .subscribe-img{
   height: 90px;
   width: 250px;
+}
+
+//Mobile CSS
+.inside-scoop-text{
+  color: white;
+}
+
+.button-subscribe-footer{
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 1px solid #FF6D6D;
+  background-color: #FF6D6D;
+  h1{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 10px 0px 10px;
+  }
 }
