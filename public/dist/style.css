@@ -2305,6 +2305,17 @@ img.mobile-study-area-background {
   letter-spacing: 1px;
   margin-bottom: 40px;
   border-top: none; }
+  @media only screen and (max-width: 1024px) {
+    .select-area-heading {
+      height: auto;
+      font-size: 2em; } }
+  @media only screen and (max-width: 768px) {
+    .select-area-heading {
+      margin-top: 40px; } }
+  @media only screen and (max-width: 414px) {
+    .select-area-heading {
+      font-size: 1em;
+      width: 40%; } }
 
 .select-area-heading:before {
   content: '';
@@ -2345,6 +2356,9 @@ img.mobile-study-area-background {
   box-sizing: border-box;
   text-align: center;
   padding-top: 15%; }
+  @media only screen and (max-width: 1024px) {
+    .select-area-image {
+      height: 30vh; } }
 
 .select-area-container {
   margin-top: 8%;
@@ -2356,6 +2370,16 @@ img.mobile-study-area-background {
   /*opacity: 0.6;*/
   background: rgba(255, 255, 255, 0.5);
   z-index: 1; }
+  @media only screen and (max-width: 1024px) {
+    .select-area-container {
+      height: 30vh; } }
+  @media only screen and (max-width: 768px) {
+    .select-area-container {
+      height: auto; } }
+  @media only screen and (max-width: 414px) {
+    .select-area-container {
+      width: 80%;
+      height: 30vh; } }
 
 .select-area-text {
   margin-top: 10%;
@@ -2364,6 +2388,12 @@ img.mobile-study-area-background {
 .select-area-text > h1 {
   text-align: center;
   color: black; }
+  @media only screen and (max-width: 414px) {
+    .select-area-text > h1 {
+      font-size: 1.5em !important; } }
+  @media only screen and (max-width: 320px) {
+    .select-area-text > h1 {
+      font-size: 1em !important; } }
 
 .select-area-text > p {
   text-align: center;
@@ -2371,10 +2401,22 @@ img.mobile-study-area-background {
   margin: 10px;
   padding-left: 5px;
   padding-right: 5px; }
+  @media only screen and (max-width: 414px) {
+    .select-area-text > p {
+      font-size: .6em;
+      margin-top: -15px; } }
+  @media only screen and (max-width: 375px) {
+    .select-area-text > p {
+      font-size: .5em;
+      text-align: justify; } }
 
 .selected-study-areas {
   margin-bottom: 10vh;
   margin-top: -70px; }
+  @media only screen and (max-width: 1024px) {
+    .selected-study-areas {
+      margin-bottom: 5vh;
+      padding-top: 30px; } }
 
 .selected-area-boxes {
   display: -ms-flexbox;
@@ -2392,6 +2434,17 @@ img.mobile-study-area-background {
   margin-right: 10px;
   margin-bottom: 40px;
   z-index: 1; }
+  @media only screen and (max-width: 1024px) {
+    .selected-area {
+      height: 20vh;
+      width: 20%; } }
+  @media only screen and (max-width: 414px) {
+    .selected-area {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      height: 20vh;
+      width: 100%; } }
 
 .selected-area > img {
   width: 100%;
@@ -2406,6 +2459,27 @@ img.mobile-study-area-background {
   background-color: #000000;
   border: 2px solid #FFFFFF;
   border-radius: 0px; }
+  @media only screen and (max-width: 1024px) {
+    .selected-area > a.btn-default {
+      font-size: 15px; } }
+  @media only screen and (max-width: 414px) {
+    .selected-area > a.btn-default {
+      font-size: 9px; } }
+  @media only screen and (max-width: 375px) {
+    .selected-area > a.btn-default {
+      font-size: 7px; } }
+  @media only screen and (max-width: 320px) {
+    .selected-area > a.btn-default {
+      font-size: 5px; } }
+
+@media only screen and (max-width: 414px) {
+  .selected-area a.btn {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
+.padding-15px {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 /* Desktop css*/
 #nav {
