@@ -57,6 +57,10 @@ input.input-email {
         background-color: gray;
         text-indent: 20px !important;
     }
+    @media only screen and (max-width: 414px) {
+        width: 250px;
+        height: 30px;
+    }
 }
 
 .input-email::placeholder {
@@ -64,6 +68,10 @@ input.input-email {
   font-style: italic;
   font-size: 20px;
   padding-left: 10px;
+    @media only screen and (max-width: 414px) {
+        padding-left: 0px !important;
+        font-size: 15px !important;
+    }
 }
 
 .subscribe-img{
@@ -74,6 +82,9 @@ input.input-email {
 //Mobile CSS
 .inside-scoop-text{
   color: white;
+    @media only screen and (max-width: 414px) {
+      font-size: 1.5em;
+    }
 }
 
 .button-subscribe-footer{
@@ -85,5 +96,21 @@ input.input-email {
     color: white;
     font-size: 1.5em;
     padding: 10px 10px 0px 10px;
+  }
+  @media only screen and (max-width: 414px) {
+    margin-top: 15px;
+    height: 4vh;
+    width: 80px;
+    h1{
+      font-size: 1em;
+      padding: 10px 10px 0px 5px;
+      position: absolute;
+      bottom: -2px;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    h1{
+      bottom: -6px;
+    }
   }
 }
