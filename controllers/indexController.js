@@ -6,7 +6,12 @@ const Course = mongoose.model('Course');
 const StudyArea = mongoose.model('StudyArea');
 
 exports.home = (req, res) => {
-  const Hero = reactHelper.renderComponent('HeroApp');
+  // Get device used to view
+  let viewDevice = req.device.type
+  console.log('Device:')
+  console.log(req.device.type)
+
+  
   let allArt = [];
 
   School.find().then(schools => {
@@ -14,8 +19,16 @@ exports.home = (req, res) => {
       schools.forEach(school =>{
         allArt = allArt.concat(school.artworks);
       });
-      let homeLightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
-      res.render('home', { Hero, homeLightbox });
+
+      if (viewDevice == 'desktop') {
+        const Hero = reactHelper.renderComponent('HeroApp');
+        let homeLightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
+        res.render('home', { Hero, homeLightbox });
+      } else {
+        const HeroMob = reactHelper.renderComponent('MobileHomeHero');
+        res.render('mobile/home', {HeroMob});
+      };
+
     }
   })
 

@@ -32,3 +32,13 @@ reactHelper.register({ PartnerApp });
 reactHelper.register({ PerformingArtsApp });
 reactHelper.register({ FooterApp });
 reactHelper.register({ SelectAreaApp });
+
+// MOBILE //
+// Components
+import MobileHomeHero from './components/mobile/home/hero.jsx';
+
+// Register to allow usage in node
+reactHelper.register({ MobileHomeHero });
+
+
+
