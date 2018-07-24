@@ -157,13 +157,14 @@
   @media only screen and (max-width: 768px) {
       color: #fff;
       margin-bottom: 0;
-    }
-  @media only screen and (max-width: 768px) {
       font-size: 25px;
     }
 }
 .about-us-text-footer >img{
   height: 10vh;
+    @media only screen and (max-width: 1024px) {
+        height: 4vh;
+    }
 }
 
 //Mobile CSS

@@ -1535,13 +1535,14 @@ iframe.school-video {
   @media only screen and (max-width: 768px) {
     .about-us-text-footer > p {
       color: #fff;
-      margin-bottom: 0; } }
-  @media only screen and (max-width: 768px) {
-    .about-us-text-footer > p {
+      margin-bottom: 0;
       font-size: 25px; } }
 
 .about-us-text-footer > img {
   height: 10vh; }
+  @media only screen and (max-width: 1024px) {
+    .about-us-text-footer > img {
+      height: 4vh; } }
 
 .mobile-about-us-image {
   width: 100%;
