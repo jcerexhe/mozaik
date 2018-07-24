@@ -16,6 +16,8 @@ import PerformingArtsApp from './components/performingArts/index.jsx';
 import FooterApp from './components/footer/index.jsx';
 import SelectAreaApp from './components/selectArea/index.jsx';
 
+import MobileHomeHero from './components/mobile/home/hero.jsx';
+
 reactHelper.register({ MenuApp });
 reactHelper.register({ HeroApp });
 reactHelper.register({ HomeArtworkApp });
@@ -32,3 +34,5 @@ reactHelper.register({ PartnerApp });
 reactHelper.register({ PerformingArtsApp });
 reactHelper.register({ FooterApp });
 reactHelper.register({ SelectAreaApp });
+
+reactHelper.register({ MobileHomeHero });
