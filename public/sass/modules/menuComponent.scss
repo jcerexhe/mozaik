@@ -1,3 +1,4 @@
+/* Desktop css*/
 #nav {
   position: absolute;
   width: 100%;
@@ -20,6 +21,12 @@
   align-items: center;
   z-index: 102;
   position: relative;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+    }
+    @media only screen and (max-width: 414px) {
+      height: 30px;
+    }
 }
 .navbar > .logo {
   /*text-align: center;*/
@@ -71,6 +78,8 @@
   top: 100px;
   /* hide these extra icons for now on mobile */
   @media only screen and (max-width: 768px) {
+      position: static;
+
     .icon-white {
       display: none;
     }
@@ -101,6 +110,10 @@
   left: 0;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
+    @media only screen and (max-width: 414px) {
+    height: 2px;
+    width: 90%;
+  }
 }
 #open-menu span:nth-child(1) {
   top: 0px;
@@ -262,3 +275,38 @@
   height: 53px;
   margin: 0px 15px;
   cursor: pointer; }
+
+/* mobile css*/
+.mobile-top-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+    .top-button-discover{
+      height: auto;
+      font-size: 20px;
+      background-color: #FF6D6D;
+      border: 2px solid #FF6D6D;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue';
+    }
+    .top-button-login{
+      height: auto;
+      font-size: 20px;
+      color: #fff;
+      background-color:  #343a40;
+      border: 2px solid #343a40;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue';
+    }
+}
+
+.mobile-logo{
+  width: 50px;
+  height: auto;
+    @media only screen and (max-width: 414px) {
+      width: 40px;
+      height: auto;
+    }
+}

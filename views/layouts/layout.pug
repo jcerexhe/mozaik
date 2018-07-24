@@ -35,46 +35,76 @@ html(lang='en')
     div(class=(currentPath === '/' ? 'content' : ''))
       block content  
       
-    // TODO footer
-        
-    .footer
-      .links
-        ul
-          h4 for students
-          li
-            a(href='/search') Discover
-          li
-            a(href='/study-area') Study Areas
-          li
-            a(href='/agency-mozaik') Education Agent
-          li
-            a(href='#' onclick="eForm()" class='signup') Sign Up
-        ul
-          h4 for schools
-          li
-            a(href='/partner-with-mozaik') Why Mozaik?
-          li
-            a(href='/agency-mozaik') Education Agent
-          li
-            a(href='#' onclick="eForm()" class='signup') Sign Up
-        ul
-          h4 about mozaik
-          li
-            a(href='/about-us') Who is Mozaik
-          li
-            a(href='/partner-with-mozaik') Contact Us  
-      .social
-        // TODO
+    // TODO footer DESKTOP
+    div(class='d-none d-lg-block')   
+      .footer
         .links
-          input(placeholder="Sign up to our Newsletter" class='input-newsletter')
+          ul
+            h4 for students
+            li
+              a(href='/search') Discover
+            li
+              a(href='/study-area') Study Areas
+            li
+              a(href='/agency-mozaik') Education Agent
+            li
+              a(href='#' onclick="eForm()" class='signup') Sign Up
+          ul
+            h4 for schools
+            li
+              a(href='/partner-with-mozaik') Why Mozaik?
+            li
+              a(href='/agency-mozaik') Education Agent
+            li
+              a(href='#' onclick="eForm()" class='signup') Sign Up
+          ul
+            h4 about mozaik
+            li
+              a(href='/about-us') Who is Mozaik
+            li
+              a(href='/partner-with-mozaik') Contact Us  
+        .social
+          // TODO
+          .links
+            input(placeholder="Sign up to our Newsletter" class='input-newsletter')
 
-        a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
-          img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
-        a(href='https://www.instagram.com/mozaikplay/')
-          img.img-resp(src='/images/old-social-icons/sm-instagram.png')
-        a(href='https://twitter.com/MozaikPlay')
-          img.img-resp(src='/images/old-social-icons/sm-twitter.png')
-        p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
+          a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
+            img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
+          a(href='https://www.instagram.com/mozaikplay/')
+            img.img-resp(src='/images/old-social-icons/sm-instagram.png')
+          a(href='https://twitter.com/MozaikPlay')
+            img.img-resp(src='/images/old-social-icons/sm-twitter.png')
+          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
+
+    // TODO footer MOBILE
+    div(class='d-lg-none')   
+      .footer
+        .links
+          ul(class='ul-footer-left')
+            h4 for students
+            li
+              a(href='/about-us') ABOUT US
+            li
+              a(href='/search') DISCOVER
+            li
+              a(href='/study-area') STUDY AREAS
+            li
+              a(href='/agency-mozaik') EDUCATION AGENCY 
+          ul(class='ul-footer-right')
+            h4 for schools
+            li
+              a(href='/partner-with-mozaik') WHY PARTNER WITH MOZAIK PLAY
+            li
+              a(href='/agency-mozaik') EDUCATION AGENCY 
+        .social
+          // TODO
+          a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
+            img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
+          a(href='https://www.instagram.com/mozaikplay/')
+            img.img-resp(src='/images/old-social-icons/sm-instagram.png')
+          a(href='https://twitter.com/MozaikPlay')
+            img.img-resp(src='/images/old-social-icons/sm-twitter.png')
+          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
 
     block javascripts
       script(src='/dist/App.bundle.js?rand='+Math.random())

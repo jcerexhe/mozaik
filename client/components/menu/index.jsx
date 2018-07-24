@@ -64,87 +64,114 @@ export default class MenuApp extends Component {
     const { menuOpen, menu } = this.state;
     return (
       <div>
-        <div className='navbar'>
-          {/*<div className='discover'>
-             <a href='/#search'>discover</a>
-          </div>*/}
-          <div className='logo'>
-            <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
-            {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
-          </div>
-          <div className='links'>
-              <div id='open-menu'
-                  onClick={ () => this.updateMenu() }
-                  className={ menuOpen ? 'open' : '' }>
-                  {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-              </div>
-              <div>
-                <a href="/search">
-                  <img className='icon-white' src='/images/menu/Search_1.png' />
-                </a>
-              </div>
-              <div>
-                <a href='#'>
-                  <img className='icon-white' src='/images/menu/My_Account.png' />
-                </a> 
-              </div>     
-          </div>
-        </div>
-        <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
-        </div>
-        <SlidingPane
-          isOpen={ menuOpen }
-          onRequestClosed={ () => this.setState({ menuOpen: false }) }
-          width='100%'
-          className='sliding-menu-pane'
-        >
-          <div id='menu'>
-            <div className='menu-content'>
-              { _.map(menu, (subMenu) => {
-                return (
-                  <ul>
-                    <h3>{ subMenu.heading }</h3>
-                    { _.map(subMenu.links, (link) => {
-                      return (
-                        <li>
-                          <a href={ link.url }>{ link.val }</a>
-                          {/*<div className='border' />*/}
-                        </li>
-                      );
-                    }) }
-                  </ul>
-                );
-              }) }
-              <div className="social-nav">
-                <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-facebook.png' />
-                </a>
-               {/* <a href='#'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-youtube.png' />
-                </a>  */}
-                <a href='https://www.instagram.com/mozaikplay/'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-instagram.png' />
-                </a>
-                {/* <a href='#'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-snapchat.png' />
-                </a>
-                <a href='#'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-pinterest.png' />
-                </a> */}
-                <a href='https://twitter.com/MozaikPlay'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-twitter.png' />
-                </a>
-               {/* <a href='#'>
-                  <img className="img-resp" src='/images/old-social-icons/sm-linked-in.png' />
-                </a> */}
-              </div>
+        {/*Desktop View*/}
+        <div className="desktop-view d-none d-lg-block">
+          <div className='navbar'>
+            {/*<div className='discover'>
+               <a href='/#search'>discover</a>
+            </div>*/}
+            <div className='logo'>
+              <a href='/'><img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" /> </a>
+              {/*<a href='/'><img src="/images/logo/Logo_2.png" /></a>*/}
+            </div>
+            <div className='links'>
+                <div id='open-menu'
+                    onClick={ () => this.updateMenu() }
+                    className={ menuOpen ? 'open' : '' }>
+                    {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                </div>
+                <div>
+                  <a href="/search">
+                    <img className='icon-white' src='/images/menu/Search_1.png' />
+                  </a>
+                </div>
+                <div>
+                  <a href='#'>
+                    <img className='icon-white' src='/images/menu/My_Account.png' />
+                  </a> 
+                </div>     
             </div>
           </div>
-        </SlidingPane>
+        </div>
+          <div id='nav' className={ currentPath === '/' ? 'clear' : '' }>
+          </div>
+          <SlidingPane
+            isOpen={ menuOpen }
+            onRequestClosed={ () => this.setState({ menuOpen: false }) }
+            width='100%'
+            className='sliding-menu-pane'
+          >
+            <div id='menu'>
+              <div className='menu-content'>
+                { _.map(menu, (subMenu) => {
+                  return (
+                    <ul>
+                      <h3>{ subMenu.heading }</h3>
+                      { _.map(subMenu.links, (link) => {
+                        return (
+                          <li>
+                            <a href={ link.url }>{ link.val }</a>
+                            {/*<div className='border' />*/}
+                          </li>
+                        );
+                      }) }
+                    </ul>
+                  );
+                }) }
+                <div className="social-nav">
+                  <a href='https://web.facebook.com/Mozaik-Creative-213677359160166/'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-facebook.png' />
+                  </a>
+                 {/* <a href='#'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-youtube.png' />
+                  </a>  */}
+                  <a href='https://www.instagram.com/mozaikplay/'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-instagram.png' />
+                  </a>
+                  {/* <a href='#'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-snapchat.png' />
+                  </a>
+                  <a href='#'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-pinterest.png' />
+                  </a> */}
+                  <a href='https://twitter.com/MozaikPlay'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-twitter.png' />
+                  </a>
+                 {/* <a href='#'>
+                    <img className="img-resp" src='/images/old-social-icons/sm-linked-in.png' />
+                  </a> */}
+                </div>
+              </div>
+            </div>
+          </SlidingPane>
+        {/*Mobile View*/}
+        <div className="mobile-view d-lg-none">
+          <div className='navbar mobile-top-button'>
+            <a href="/search"><button className="top-button-discover">Discover</button></a>
+            <a href="#"><button className="top-button-login">Login</button></a>
+          </div>       
+          <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href='/'>
+              <img className="mobile-logo" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+            </a>
+            <div className='links'>
+                <div id='open-menu'
+                    onClick={ () => this.updateMenu() }
+                    className={ menuOpen ? 'open' : '' }>
+                    {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                </div>
+                   
+            </div>
+          </nav>
+        </div>
       </div>
     );
   }

@@ -41,36 +41,20 @@ constructor(props) {
 				</div>
 				<img className="study-area-background" src={ studyarea.image } />
 			</div>
-			<div className='careers-container'>
-  				<h1>CAREERS</h1>
-  				<div className='careers'>
-	  				<ul className='careers-lists'>
-	  					<a className='careers-link' href="#">{studyarea.keywords1}</a>
-	  					<a className='careers-link' href="#">{studyarea.keywords2}</a>
-					</ul>
+		{/*Mobile View*/}
+			<div className="mobile-view d-lg-none">
+				<div>
+					<h1 className="mobile-study-area-page-heading">{studyAreaTitle}</h1>
+					<img className="mobile-study-area-background" src={ studyarea.image } />
 				</div>
-				{/*<div className='study-area-alumni'>
-					<div className='study-area-alumni-qoute'>
-						<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
+				<div className="mobile-careers-container">
+					<p className="mobile-sa-description">" { studyarea.description } "</p>
+					<button className="mobile-enquire-button"><p>ENQUIRE</p></button>
+					<div className="mobile-career-list">
+						<h1>CAREERS</h1>
+						<p>{studyarea.keywords1}{studyarea.keywords2}</p>
 					</div>
-
-					<div className='study-area-alumni-content'>
-						<div className='study-area-alumni-image'>
-							<img className="header-colored" src="{studyarea.alumni_photo}" />
-						</div>
-						<div className="study-area-alumni-details">
-							<p className="study-area-alumni-name">{studyarea.alumni_name}</p>
-							<p className="study-area-alumni-degree">{studyarea.alumni_degree}</p><br/>
-							<p className="study-area-alumni-description">{studyarea.alumni_description}</p>
-						</div>	
-					</div>
-				</div>*/}
-				<div className='study-area-enquire-img' >
-					<img src="/images/buttons/Enquire.png" />
-				</div>	
-			</div>
-			<div className='study-area-footer'>
-				<Footer/>
+				</div>
 			</div>
 	</div>
         	      
