@@ -118,7 +118,9 @@ input[type=text]::placeholder {
 .hs-form .hs-form-field > label {
         font-family:'Bebas Neue';
       text-transform: uppercase;
-
+      @media only screen and (max-width: 768px) {
+        color: #fff;
+    } 
 }
 
 /* Inputs (selectors for all inputs)  */
