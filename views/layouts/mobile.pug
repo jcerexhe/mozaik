@@ -13,7 +13,6 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Mozaik
     block stylesheets
-    <link >
       link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css", integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4", crossorigin="anonymous")
       link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
       link(rel='stylesheet' href='/dist/style.css?rand='+Math.random())
@@ -23,89 +22,14 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js')
   body
-    // React component for menu
-    !=menu
-
     if locals.flashes
       - const categories = Object.keys(locals.flashes)
       each category in categories
         each message in flashes[category]
           div(class=`alert-${ category }`)!= h.dump(message)
 
-    div(class=(currentPath === '/' ? 'content' : ''))
-      block content  
-      
-    // TODO footer DESKTOP
-
-    div(class='d-none d-lg-block')   
-      .footer
-
-        .links
-          ul
-            h4 for students
-            li
-              a(href='/search') Discover
-            li
-              a(href='/study-area') Study Areas
-            li
-              a(href='/agency-mozaik') Education Agent
-            li
-              a(href='#' onclick="eForm()" class='signup') Sign Up
-          ul
-            h4 for schools
-            li
-              a(href='/partner-with-mozaik') Why Mozaik?
-            li
-              a(href='/agency-mozaik') Education Agent
-            li
-              a(href='#' onclick="eForm()" class='signup') Sign Up
-          ul
-            h4 about mozaik
-            li
-              a(href='/about-us') Who is Mozaik
-            li
-              a(href='/partner-with-mozaik') Contact Us  
-        .social
-          // TODO
-          .links
-            input(placeholder="Sign up to our Newsletter" class='input-newsletter')
-          a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
-            img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
-          a(href='https://www.instagram.com/mozaikplay/')
-            img.img-resp(src='/images/old-social-icons/sm-instagram.png')
-          a(href='https://twitter.com/MozaikPlay')
-            img.img-resp(src='/images/old-social-icons/sm-twitter.png')
-          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
-
-    // TODO footer MOBILE
-    div(class='d-lg-none')   
-      .footer
-        .links
-          ul
-            h4 for students
-            li
-              a(href='/about-us') ABOUT US
-            li
-              a(href='/search') DISCOVER
-            li
-              a(href='/study-area') STUDY AREAS
-            li
-              a(href='/agency-mozaik') EDUCATION AGENCY 
-          ul
-            h4 for schools
-            li
-              a(href='/partner-with-mozaik') WHY PARTNER WITH MOZAIK PLAY
-            li
-              a(href='/agency-mozaik') EDUCATION AGENCY 
-        .social
-          // TODO
-          a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
-            img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
-          a(href='https://www.instagram.com/mozaikplay/')
-            img.img-resp(src='/images/old-social-icons/sm-instagram.png')
-          a(href='https://twitter.com/MozaikPlay')
-            img.img-resp(src='/images/old-social-icons/sm-twitter.png')
-          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
+    div(class=(currentPath === '/' ? 'mobile-content' : ''))
+      block content
 
     block javascripts
       script(src='/dist/App.bundle.js?rand='+Math.random())
@@ -128,8 +52,8 @@ append stylesheets
 
        var signup = document.createElement("signing");
         signup.innerHTML = '&times;';
-           
-       function eForm(formId){  
+
+       function eForm(formId){
          hbspt.forms.create({
           css: '',
           portalId: '2708822',
@@ -144,7 +68,7 @@ append stylesheets
         formId: 'ade15aad-d63b-4d3f-a2ab-f418fe9c136f',
         onFormReady: closeForm
         });
-       }; 
+       };
 
        function closeForm() {
         var form = document.getElementsByClassName("hbspt-form");
@@ -155,4 +79,3 @@ append stylesheets
         });
         form[0].appendChild(signup);
        };
-   
