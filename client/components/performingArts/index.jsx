@@ -27,71 +27,30 @@ constructor(props) {
 
 		return (
 		<div>
-			{/*Desktop View*/}
-			<div className="desktop-view d-none d-lg-block">
-				<div>
-					<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
-					<div className='study-area-disciplines'>
-						<p>
-						<a className='study-link' href="#">{studyarea.disciplines1}</a><br/>
-						<a className='study-link' href="#">{studyarea.disciplines2}</a><br/>
-						<a className='study-link' href="#">{studyarea.disciplines3}</a>
-						</p>
-					</div>
-					<div className='study-area-heading-description'>
-						<p>" { studyarea.description } "</p>
-					</div>
-					<img className="study-area-background" src={ studyarea.image } />
+			<div>
+				<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
+				<div className='study-area-disciplines'>
+					<p>
+					<a className='study-link' href="#">{studyarea.disciplines1}</a><br/>
+					<a className='study-link' href="#">{studyarea.disciplines2}</a><br/>
+					<a className='study-link' href="#">{studyarea.disciplines3}</a>
+					</p>
 				</div>
-				<div className='careers-container'>
-	  				<h1>CAREERS</h1>
-	  				<div className='careers'>
-		  				<ul className='careers-lists'>
-		  					<a className='careers-link' href="#">{studyarea.keywords1}</a>
-		  					<a className='careers-link' href="#">{studyarea.keywords2}</a>
-						</ul>
-					</div>
-					{/*<div className='study-area-alumni'>
-						<div className='study-area-alumni-qoute'>
-							<p>"{studyarea.alumni_qoute1}<br/>{studyarea.alumni_qoute2}"</p>
-						</div>
-
-						<div className='study-area-alumni-content'>
-							<div className='study-area-alumni-image'>
-								<img className="header-colored" src="{studyarea.alumni_photo}" />
-							</div>
-							<div className="study-area-alumni-details">
-								<p className="study-area-alumni-name">{studyarea.alumni_name}</p>
-								<p className="study-area-alumni-degree">{studyarea.alumni_degree}</p><br/>
-								<p className="study-area-alumni-description">{studyarea.alumni_description}</p>
-							</div>	
-						</div>
-					</div>*/}
-					<div className='study-area-enquire-img' >
-						<img src="/images/buttons/Enquire.png" />
-					</div>	
+				<div className='study-area-heading-description'>
+					<p>" { studyarea.description } "</p>
 				</div>
-				<div className='study-area-footer'>
-					<Footer/>
-				</div>
+				<img className="study-area-background" src={ studyarea.image } />
 			</div>
-		{/*Mobile View*/}
+		{/*Mobile View*/}head
 			<div className="mobile-view d-lg-none">
-				<div>
-					<h1 className="mobile-study-area-page-heading">{studyAreaTitle}</h1>
+				<section>
 					<img className="mobile-study-area-background" src={ studyarea.image } />
-				</div>
-				<div className="mobile-careers-container">
-					<p className="mobile-sa-description">" { studyarea.description } "</p>
-					<button className="mobile-enquire-button"><p>ENQUIRE</p></button>
-					<div className="mobile-career-list">
-						<h1>CAREERS</h1>
-						<p>{studyarea.keywords1}{studyarea.keywords2}</p>
-					</div>
-				</div>
-
+					<h1 className="mobile-study-area-title">{studyAreaTitle}</h1>
+				</section>
+				<section className="careers-container">
+				</section>
 			</div>
-		</div>
+	</div>
         	      
 		);
 	}

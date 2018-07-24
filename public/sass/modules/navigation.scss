@@ -14,7 +14,7 @@
     @media only screen and (max-width: 768px) {
     display: block;
     height: 100%;
-    background-color: #fff;
+
   }
 }
 .footer > .links {
@@ -24,14 +24,6 @@
     @media only screen and (max-width: 768px) {
     justify-content: space-evenly;
     padding-top: 30px;
-    .ul-footer-left{
-        text-align: left;
-        margin-left: -40px;
-      }
-      .ul-footer-right{
-        text-align: right;
-        margin-left: 10px;
-      }
   }
 }
 .footer > .links > ul {
@@ -89,10 +81,6 @@
   }
   @media only screen and (max-width: 768px) {
     text-align: center;
-    .copyright{
-      color: #212529;
-      font-size: 8px; 
-    }
   }
 }
 
