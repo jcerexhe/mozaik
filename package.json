@@ -27,6 +27,7 @@
     "dotenv": "^4.0.0",
     "es6-promisify": "^5.0.0",
     "express": "*",
+    "express-device": "^0.4.2",
     "express-handlebars": "*",
     "express-messages": "*",
     "express-session": "*",
