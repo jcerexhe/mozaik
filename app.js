@@ -29,6 +29,7 @@ const helpers = require('./helpers');
 const errorHandlers = require('./handlers/errorHandlers');
 const cloudinary = require('cloudinary');
 const reactHelper = require('react-helper');
+const expressDevice = require('express-device');
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -87,6 +88,9 @@ app.use((req, res, next) => {
   req.login = promisify(req.login, req);
   next();
 });
+
+// View used viewing device on console
+app.use(expressDevice.capture());
 
 // Routes
 const index = require('./routes/index');
