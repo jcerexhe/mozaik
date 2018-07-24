@@ -3800,7 +3800,7 @@ img.mobile-study-area-background {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   z-index: -1; }
 
 .course-forms-modal-2 {
@@ -3810,7 +3810,7 @@ img.mobile-study-area-background {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   z-index: -1; }
 
 .discover-column-container {
