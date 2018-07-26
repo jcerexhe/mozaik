@@ -112,7 +112,7 @@ export default class MobileHomeHero extends Component {
 
                     { slide.cta ?
                       <div className='cta-container'>
-                        <svg viewBox='‎0 0 110 40' preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><polyline points="30,40 0,40 0,0 30,0" x="0" y="0"/><polyline points="80,0 110,0 110,40 80,40"/></svg>
+                        <svg viewBox="0 0 110 40" preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><polyline points="30,40 0,40 0,0 30,0" x="0" y="0"/><polyline points="80,0 110,0 110,40 80,40"/></svg>
                         <a href={slide.cta.link}>{slide.cta.text}</a>
                       </div> : <div></div> }
                   </div>
