@@ -54,7 +54,15 @@ export default class MobileHomeArtworks extends Component {
           <div className='row'>
             {this.renderImg(artworks, artIndeces[2])}
             {this.renderImg(artworks, artIndeces[3])}
-          </div>          
+          </div>
+          { /* Modal component for artworks with props passed */ }
+          <Modal
+            artworks = {artworks}
+            artIndex = {artIndex}
+            showArtModal = {showArtModal}
+            handleCloseArtModal = {() => this.handleCloseArtModal()}
+          >
+          </Modal>          
         </div>
       </div>
     );
