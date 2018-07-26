@@ -8,9 +8,6 @@ const StudyArea = mongoose.model('StudyArea');
 exports.home = (req, res) => {
   // Get device used to view
   let viewDevice = req.device.type
-  console.log('Device:')
-  console.log(req.device.type)
-
   
   let allArt = [];
 
@@ -26,7 +23,8 @@ exports.home = (req, res) => {
         res.render('home', { Hero, homeLightbox });
       } else {
         const HeroMob = reactHelper.renderComponent('MobileHomeHero');
-        res.render('mobile/home', {HeroMob});
+        const Artworks = reactHelper.renderComponent('MobileHomeArtworks', {artworks: allArt});
+        res.render('mobile/home', {HeroMob, Artworks});
       };
 
     }

@@ -35,10 +35,12 @@ reactHelper.register({ SelectAreaApp });
 
 // MOBILE //
 // Components
-import MobileHomeHero from './components/mobile/home/hero.jsx';
+import MobileHomeHero from './components/mobile/home/hero/index.jsx';
+import MobileHomeArtworks from './components/mobile/home/artworks/index.jsx';
 
 // Register to allow usage in node
 reactHelper.register({ MobileHomeHero });
+reactHelper.register({ MobileHomeArtworks });
 
 
 

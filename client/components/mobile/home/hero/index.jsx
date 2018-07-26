@@ -24,7 +24,7 @@ export default class MobileHomeHero extends Component {
       slides: [
         {
           heading: '',
-          headingImg: "/images/MozaikPlay.png",
+          headingImg: "/images/mobile/home-hero-mozaikplay.png",
           text: "Deciding what to study is tricky. We'll help",
           br:"you find the right course in the creative industry.",
           background: 'https://res.cloudinary.com/mozaik/image/upload/v1524642297/cory-gazaille-425907-unsplash_yhogbw.png',
@@ -32,9 +32,7 @@ export default class MobileHomeHero extends Component {
           styles: {
             h1:{
               position: 'relative',
-              width: '35%',
-              height: '20vw',
-              marginBottom: '1vw'
+              height: '18vw',
             }
           }
         },
@@ -53,17 +51,15 @@ export default class MobileHomeHero extends Component {
             h1:{
               color: '#181818',
               width: '50%',
-              lineHeight: '1',
               fontFamily: "Montserrat Bold",
               fontSize: '3vw',
-              marginBottom: '1.5vw',
               marginTop: '10vw',
             }
           }
         }
       ],
       settings: {
-        className: 'home-slider',
+        className: 'slider',
         autoplay: true,
         autoplaySpeed: 12000,
         arrows: false,
@@ -74,17 +70,20 @@ export default class MobileHomeHero extends Component {
   }
 
   closeModal() {
+    document.querySelector('.ReactModal__Body--open').style.overflow = "scroll" // Without this, you won't be able to scroll the main content for some reason
     this.setState({ isOpen: false });
   }
 
   openModal() {
-    this.setState({ isOpen: true });
+    this.setState({ isOpen: true }, () => {
+      document.querySelector('.ReactModal__Body--open').style.overflow = "hidden" // Prevents scrolling of main content with modal open (needed because this is 'scroll' in mobile home artworks video)
+    });
   }
 
   render() {
     const { slides, settings, isOpen } = this.state;
     return (
-      <div className='mobile-hero-container'>
+      <div className='hero-container'>
         <Slick ref='slider' { ...settings }>
           { _.map(slides, (slide, i) => {
             return (
@@ -104,25 +103,25 @@ export default class MobileHomeHero extends Component {
                   <div className="slide-text">
                     { slide.headingImg ? <h1 style={slide.styles.h1}><img src={slide.headingImg}/></h1> : <h1 style={slide.styles.h1}>{slide.heading}
                     <br/>{slide.headingbr1}<br/>{slide.headingbr2}</h1> }
-                    <p>{ slide.text }</p>
-                    <p>{ slide.br }</p>
-                    <p style={slide.styles.p}> { slide.student}</p><br/>
-                    <p style={slide.styles.p}> { slide.school}</p>
+                    <p>
+                      { slide.text }<br/>
+                      { slide.br }
+                    </p>
 
-                    { slide.video ? <div className="video-div" onClick={() => this.openModal()}>
-                     <i onClick={() => this.openModal()} className="fa fa-play-circle" aria-hidden="true"></i></div> : <div /> }
-                    { slide.cta ? <svg className='hero-cta-container' viewBox='0 0 150 65' preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><polyline points="40,65 0,65 0,0 40,0" x="0" y="0"/><polyline points="110,0 150,0 150,65 110,65"/><a href={slide.cta.link}>
-                      <text fill="white" textAnchor="middle" x="75" y='40'>{slide.cta.text}</text>
-                    </a></svg> : <div></div> }
+                    { slide.video ? <div className="video-play" onClick={() => this.openModal()}></div> : <div></div> }
+
+                    { slide.cta ?
+                      <div className='cta-container'>
+                        <svg viewBox='‎0 0 110 40' preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><polyline points="30,40 0,40 0,0 30,0" x="0" y="0"/><polyline points="80,0 110,0 110,40 80,40"/></svg>
+                        <a href={slide.cta.link}>{slide.cta.text}</a>
+                      </div> : <div></div> }
                   </div>
-
                 </div>
               </div>
             );
           }) }
         </Slick>
       </div>
-
     );
   }
 }
