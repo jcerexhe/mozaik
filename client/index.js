@@ -12,7 +12,7 @@ import DiscoverApp from './components/discover/index.jsx';
 import AboutApp from './components/about/index.jsx';
 import AgencyApp from './components/agency/index.jsx';
 import PartnerApp from './components/partner/index.jsx';
-import PerformingArtsApp from './components/performingArts/index.jsx';
+import IndividualStudyAreaApp from './components/individualArea/index.jsx';
 import FooterApp from './components/footer/index.jsx';
 import SelectAreaApp from './components/selectArea/index.jsx';
 
@@ -29,7 +29,7 @@ reactHelper.register({ DiscoverApp });
 reactHelper.register({ AboutApp });
 reactHelper.register({ AgencyApp });
 reactHelper.register({ PartnerApp });
-reactHelper.register({ PerformingArtsApp });
+reactHelper.register({ IndividualStudyAreaApp });
 reactHelper.register({ FooterApp });
 reactHelper.register({ SelectAreaApp });
 
@@ -37,10 +37,12 @@ reactHelper.register({ SelectAreaApp });
 // Components
 import MobileHomeHero from './components/mobile/home/hero/index.jsx';
 import MobileHomeArtworks from './components/mobile/home/artworks/index.jsx';
+import MobileIndividualStudyArea from'./components/mobile/individualArea/index.jsx';
 
 // Register to allow usage in node
 reactHelper.register({ MobileHomeHero });
 reactHelper.register({ MobileHomeArtworks });
+reactHelper.register({ MobileIndividualStudyArea });
 
 
 

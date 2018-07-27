@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import Footer from '../footer/index.jsx';
 
-export default class PerformingArtsApp extends Component {
+export default class IndividualStudyAreaApp extends Component {
 
 constructor(props) {
     super(props);
@@ -28,7 +28,7 @@ constructor(props) {
 		return (
 		<div>
 			{/*Desktop View*/}
-			<div className="desktop-view d-none d-lg-block">
+			{/*<div className="desktop-view d-none d-lg-block">*/}
 				<div>
 					<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
 					<div className='study-area-disciplines'>
@@ -74,9 +74,9 @@ constructor(props) {
 				<div className='study-area-footer'>
 					<Footer/>
 				</div>
-			</div>
+			{/*</div>*/}
 		{/*Mobile View*/}
-			<div className="mobile-view d-lg-none">
+			{/*<div className="mobile-view d-lg-none">
 				<div>
 					<h1 className="mobile-study-area-page-heading">{studyAreaTitle}</h1>
 					<img className="mobile-study-area-background" src={ studyarea.image } />
@@ -90,7 +90,7 @@ constructor(props) {
 					</div>
 				</div>
 
-			</div>
+			</div>*/}
 		</div>
         	      
 		);

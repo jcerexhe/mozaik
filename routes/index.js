@@ -24,7 +24,7 @@ router.get('/school/:schoolSlug/details',
 // );
 router.get('/study-area/:areaSlug',
   catchErrors(indexController.getStudyArea),
-  indexController.performingArts,
+  indexController.individualArea,
 );
 router.get('/discover', indexController.discover);
 router.get('/about-us',indexController.about);
