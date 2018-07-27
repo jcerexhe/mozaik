@@ -27,20 +27,22 @@ constructor(props) {
 
 		return (
 		<div>
-			<div>
-				<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
-				<div className='study-area-disciplines'>
-					<p>
+			{/*Desktop View*/}
+			{/*<div className="desktop-view d-none d-lg-block">*/}
+				<div>
+					<h1 className="study-area-page-heading">{studyAreaTitle}</h1>
+					<div className='study-area-disciplines'>
+						<p>
 						<a className='study-link' href="#">{studyarea.disciplines1}</a><br/>
 						<a className='study-link' href="#">{studyarea.disciplines2}</a><br/>
 						<a className='study-link' href="#">{studyarea.disciplines3}</a>
-					</p>
+						</p>
+					</div>
+					<div className='study-area-heading-description'>
+						<p>" { studyarea.description } "</p>
+					</div>
+					<img className="study-area-background" src={ studyarea.image } />
 				</div>
-				<div className='study-area-heading-description'>
-					<p>" { studyarea.description } "</p>
-				</div>
-				<img className="study-area-background" src={ studyarea.image } />
-			</div>
 				<div className='careers-container'>
 	  				<h1>CAREERS</h1>
 	  				<div className='careers'>
@@ -72,7 +74,25 @@ constructor(props) {
 				<div className='study-area-footer'>
 					<Footer/>
 				</div>
-		</div>	      
+			{/*</div>*/}
+		{/*Mobile View*/}
+			{/*<div className="mobile-view d-lg-none">
+				<div>
+					<h1 className="mobile-study-area-page-heading">{studyAreaTitle}</h1>
+					<img className="mobile-study-area-background" src={ studyarea.image } />
+				</div>
+				<div className="mobile-careers-container">
+					<p className="mobile-sa-description">" { studyarea.description } "</p>
+					<button className="mobile-enquire-button"><p>ENQUIRE</p></button>
+					<div className="mobile-career-list">
+						<h1>CAREERS</h1>
+						<p>{studyarea.keywords1}{studyarea.keywords2}</p>
+					</div>
+				</div>
+
+			</div>*/}
+		</div>
+        	      
 		);
 	}
 }
