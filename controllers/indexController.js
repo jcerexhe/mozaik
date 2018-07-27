@@ -118,11 +118,19 @@ exports.agency = (req, res) => {
 
 };
 
-exports.performingArts = (req, res) => {
-  const area = res.locals.area;
-  const PerformingArts = reactHelper.renderComponent('PerformingArtsApp', {studyarea: area});
-  res.render('performingArts', { PerformingArts });
+exports.individualArea = (req, res) => {
 
+  let viewDevice = req.device.type
+
+  if (viewDevice == 'desktop') {
+    const area = res.locals.area;
+    const IndividualArea = reactHelper.renderComponent('IndividualStudyAreaApp', {studyarea: area});
+    res.render('individualArea', { IndividualArea });
+  } else {
+    const area = res.locals.area;
+    const IndividualStudyAreaMobile = reactHelper.renderComponent('MobileIndividualStudyArea', {studyarea: area});
+    res.render('mobile/individualArea', { IndividualStudyAreaMobile });
+  };
 };
 
 exports.selectArea = (req, res) => {
