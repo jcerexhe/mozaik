@@ -5,33 +5,37 @@ const School = mongoose.model('School');
 const Course = mongoose.model('Course');
 const StudyArea = mongoose.model('StudyArea');
 
+exports.findSchoolsAndStudyAreas = async (req, res, next) => {
+  res.locals.allSchools = await School.find();
+  res.locals.allStudyAreas = await StudyArea.find();
+  next();
+};
+
+
 exports.home = (req, res) => {
-  // Get device used to view
-  let viewDevice = req.device.type
-  
+  let allSchools = res.locals.allSchools
+  let allStudyAreas = res.locals.allStudyAreas
   let allArt = [];
 
-  School.find().then(schools => {
-    if (schools) {
-      schools.forEach(school =>{
-        allArt = allArt.concat(school.artworks);
-      });
+   // Get device used to view
+  let viewDevice = req.device.type
 
-      if (viewDevice == 'desktop') {
-        const Hero = reactHelper.renderComponent('HeroApp');
-        let homeLightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
-        res.render('home', { Hero, homeLightbox });
-      } else {
-        const HeroMob = reactHelper.renderComponent('MobileHomeHero');
-        const Artworks = reactHelper.renderComponent('MobileHomeArtworks', {artworks: allArt});
-        res.render('mobile/home', {HeroMob, Artworks});
-      };
+  allSchools.forEach(school =>{
+    allArt = allArt.concat(school.artworks);
+  });
 
-    }
-  })
-
-
+  if (viewDevice == 'desktop') {
+    const Hero = reactHelper.renderComponent('HeroApp');
+    let homeLightbox = reactHelper.renderComponent('HomeArtworkApp', { search: true, artworks: allArt});
+  res.render('home', { Hero, homeLightbox });
+  } else {
+    const HeroMob = reactHelper.renderComponent('MobileHomeHero');
+    const Artworks = reactHelper.renderComponent('MobileHomeArtworks', {artworks: allArt});
+    const StudyAreas = reactHelper.renderComponent('MobileHomeStudyAreas', {studyAreas: allStudyAreas});
+    res.render('mobile/home', {HeroMob, Artworks, StudyAreas});
+  };
 };
+
 
 exports.getSchool = async (req, res, next) => {
   const school = await School.findOne({ slug: req.params.schoolSlug });
