@@ -4,7 +4,7 @@ const { catchErrors } = require('../handlers/errorHandlers');
 
 const router = express.Router();
 
-router.get('/', indexController.home);
+router.get('/', catchErrors(indexController.findSchoolsAndStudyAreas), indexController.home);
 // router.get('/school/:schoolSlug/artwork',
 //   catchErrors(indexController.getSchool),
 //   indexController.schoolArtwork,
