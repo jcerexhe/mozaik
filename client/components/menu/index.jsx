@@ -65,7 +65,7 @@ export default class MenuApp extends Component {
     return (
       <div>
         {/*Desktop View*/}
-        <div className="desktop-view d-none d-lg-block">
+        <div className="desktop-view d-none d-xl-block">
           <div className='navbar'>
             {/*<div className='discover'>
                <a href='/#search'>discover</a>
@@ -149,7 +149,7 @@ export default class MenuApp extends Component {
             </div>
           </SlidingPane>
         {/*Mobile View*/}
-        <div className="mobile-view d-lg-none">
+        <div className="mobile-view d-xl-none">
           <div className='navbar mobile-top-button'>
             <a href="/search"><button className="top-button-discover">Discover</button></a>
             <a href="#"><button className="top-button-login">Login</button></a>
