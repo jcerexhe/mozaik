@@ -1,0 +1,133 @@
+.about-container{
+  .mobile-about-us-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+  }
+
+  .m-about-page-heading{
+    position: relative;
+    width: 100%;
+      h1{
+        font-family: 'Bebas Neue';
+        text-align: center;
+        padding: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 5em;
+      }
+      p{
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-left: 90px;
+      }
+      p.m-about-desc{
+        margin-top: 20px;
+        margin-right: 90px;
+      }
+    @media only screen and (max-width: 768px) {
+      h1{
+        font-size: 4em;
+        margin-bottom: -20px;
+      }
+      p{
+        font-size: 1.2em;
+      }
+      p.m-about-desc{
+        margin-top: 10px;
+        font-size: 1em;
+      }
+    }
+    @media only screen and (max-width: 414px) {
+      h1{
+        font-size: 2em;
+        margin-top: -30px;
+        margin-bottom: -40px;
+      }
+      p{
+        font-size: .8em;
+        margin-left: 30px;
+      }
+      p.m-about-desc{
+        margin-top: 2px;
+        font-size: .6em;
+        margin-right: 10px;
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      p{
+        font-size: .7em;
+        margin-left: 20px;
+      }
+
+      p.m-about-desc{
+        margin-top: -10px;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+       h1{
+        font-size: 1em;
+      }
+      p{
+        font-size: .5em;
+      }
+      p.m-about-desc{
+        margin-top: -10px;
+        font-size: .5em;
+      }
+    }
+  }
+  .m-about-us-text-footer{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      font-family: 'Bebas Neue';
+      color: #fff;
+      font-size: 50px;
+      margin-bottom: 0px;
+    }
+     @media only screen and (max-width: 768px) {
+      margin-top: 120px;
+        p{
+          font-size: 40px;
+        }
+     }
+     @media only screen and (max-width: 414px) {
+      margin-top: 40px;
+        p{
+          font-size: 30px;
+        }
+     }
+     @media only screen and (max-width: 375px) {
+      margin-top: 30px;
+        p{
+          font-size: 20px;
+        }
+     }
+  }
+
+  .m-horizontal-line{
+    border: 2px solid #fff;
+    width: 20%;
+    margin-left: 90px;
+    float: left;
+    @media only screen and (max-width: 414px) {
+      margin-left: 30px;
+    }
+    @media only screen and (max-width: 375px) {
+      margin-left: 20px;
+    }
+
+  }
+
+  .m-horizontal-line-form{
+    border: 2px solid #FF6D6D;
+    width: 50%;
+    margin-top: 0px;
+  }
+}

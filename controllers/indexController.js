@@ -100,8 +100,16 @@ exports.discover = (req, res) => {
 };
 
 exports.about = (req, res) => {
-  const About = reactHelper.renderComponent('AboutApp');
-  res.render('about', { About });
+
+  let viewDevice = req.device.type
+
+  if (viewDevice == 'desktop') {
+    const About = reactHelper.renderComponent('AboutApp');
+    res.render('about', { About });
+  } else {
+    const AboutMobile = reactHelper.renderComponent('MobileAbout');
+    res.render('mobile/about', { AboutMobile });
+  };
 };
 
 

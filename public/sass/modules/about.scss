@@ -16,48 +16,6 @@
     letter-spacing: 1px;
     margin-bottom: 30px;
     border-top: none;
-    @media only screen and (max-width: 768px) {
-      z-index: 1;
-      border: 0;
-      width: 100%;
-      height: auto;
-      h1{       
-        font-size: 1em;
-        margin-bottom: 10%;
-      }
-      p{
-        color: #fff;
-        font-size: .5em;
-        text-align: left;
-        margin-bottom: 0px;
-      }
-      p.m-about-desc{
-        font-size: 20px;
-      }
-    }
-    @media only screen and (max-width: 414px) {
-      h1{
-        font-size: 1em;
-      }
-      p{
-        font-size: 12px;
-      }
-      p.m-about-desc{
-        font-size: 8px;
-        margin-top: -15%;
-      }
-    }
-    @media only screen and (max-width: 414px) {
-      h1{
-        font-size: .5em;
-      } 
-    }
-    @media only screen and (max-width: 414px) {
-      padding: 20px;
-      h1{
-        margin-bottom: 5%;
-      }
-    }
 }
 
 .about-page-heading:before {
@@ -100,9 +58,6 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: 15%;
-    @media only screen and (max-width: 1024px) {
-      height: 35vh;
-    }
  }
   
 .scroll-down >img{
@@ -141,12 +96,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
-  @media only screen and (max-width: 768px) {
-      margin-top: 10% !important;
-    }
-   @media only screen and (max-width: 414px) {
-    margin-top: 15% !important;
-  }
 }
 
 .about-us-text-footer >p {
@@ -154,41 +103,8 @@
   color: #F76F70;
   font-size: 30px;
   margin-bottom: 20px;
-  @media only screen and (max-width: 768px) {
-      color: #fff;
-      margin-bottom: 0;
-      font-size: 25px;
-    }
 }
 .about-us-text-footer >img{
   height: 10vh;
-    @media only screen and (max-width: 1024px) {
-        height: 4vh;
-    }
 }
 
-//Mobile CSS
-.mobile-about-us-image{
-  width: 100%;
-  height: 80vh;
-  position: absolute;
-  top: 0;
-    @media only screen and (max-width: 414px) {
-      height: 50vh;
-    }
-    @media only screen and (max-width: 320px) {
-      height: 60vh;
-    }
-}
-
-
-.m-horizontal-line{
-  border: 2px solid #fff;
-  width: 20%;
-  float: left;
-}
-
-.m-horizontal-line-form{
-  border: 2px solid #FF6D6D;
-  width: 50%;
-}
