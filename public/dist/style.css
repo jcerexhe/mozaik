@@ -146,7 +146,7 @@ body {
   height: 200px;
   background-color: #253336;
   color: #FFFFFF; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer {
       display: block;
       height: 100%;
@@ -159,7 +159,7 @@ body {
       justify-content: space-around;
   -ms-flex-align: top;
       align-items: top; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer > .links {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -184,7 +184,7 @@ body {
   .footer > .links > ul li {
     color: #949494;
     font-family: 'Gotham Book Regular'; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer > .links > ul h4, .footer > .links > ul a, .footer > .links > ul li {
       color: #212529; } }
   @media only screen and (max-width: 414px) {
@@ -210,7 +210,7 @@ body {
   font-family: 'Montserrat Ultra Light';
   color: #949494; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .footer > .social {
     text-align: center; }
     .footer > .social .copyright {
@@ -229,7 +229,7 @@ body {
 input.input-newsletter:focus {
   outline: none; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .img-resp {
     background-color: #000;
     border-radius: 100%;
