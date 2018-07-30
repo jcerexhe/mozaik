@@ -11,7 +11,7 @@
   height: 200px;
   background-color: #253336;
   color: $white;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
     display: block;
     height: 100%;
     background-color: #fff;
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-around;
   align-items: top;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
     justify-content: space-evenly;
     padding-top: 30px;
     .ul-footer-left{
@@ -51,7 +51,7 @@
     color: $grey-text;
     font-family: 'Gotham Book Regular'
   }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       h4, a, li{
         color: #212529;
       }
@@ -87,7 +87,7 @@
     font-family: 'Montserrat Ultra Light';
     color: $grey-text;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     text-align: center;
     .copyright{
       color: #212529;
@@ -110,7 +110,7 @@ input.input-newsletter:focus{
   outline: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .img-resp{
       background-color: #000; 
       border-radius: 100%;

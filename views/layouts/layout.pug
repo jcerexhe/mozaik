@@ -36,7 +36,7 @@ html(lang='en')
       block content  
       
     // TODO footer DESKTOP
-    div(class='d-none d-lg-block')   
+    div(class='d-none d-xl-block')   
       .footer
         .links
           ul
@@ -74,7 +74,7 @@ html(lang='en')
             img.img-resp(src='/images/old-social-icons/sm-instagram.png')
           a(href='https://twitter.com/MozaikPlay')
             img.img-resp(src='/images/old-social-icons/sm-twitter.png')
-          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
+          p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner` 
     block javascripts
       script(src='/dist/App.bundle.js?rand='+Math.random())
       script(src='/dist/reactHelper.bundle.js')
