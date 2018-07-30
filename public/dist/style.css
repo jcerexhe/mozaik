@@ -2512,6 +2512,21 @@ ul.careers-lists > li:before {
   cursor: pointer;
   opacity: 1;
   margin-left: 15px; }
+  @media only screen and (max-width: 1024px) {
+    #open-menu {
+      position: absolute;
+      right: 15px;
+      bottom: 30px;
+      width: 50px;
+      height: 30px; } }
+  @media only screen and (max-width: 768px) {
+    #open-menu {
+      bottom: 15px; } }
+  @media only screen and (max-width: 414px) {
+    #open-menu {
+      width: 30px;
+      height: 20px;
+      bottom: 9px; } }
 
 #open-menu span {
   display: inline;
@@ -2684,10 +2699,12 @@ ul.careers-lists > li:before {
       flex-direction: row;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  padding: 0; }
+  padding: 0;
+  margin-top: -22px;
+  margin-bottom: -22px; }
   .mobile-top-button .top-button-discover {
     height: auto;
-    font-size: 20px;
+    font-size: 40px;
     background-color: #FF6D6D;
     border: 2px solid #FF6D6D;
     color: #fff;
@@ -2695,16 +2712,26 @@ ul.careers-lists > li:before {
     font-family: 'Bebas Neue'; }
   .mobile-top-button .top-button-login {
     height: auto;
-    font-size: 20px;
+    font-size: 40px;
     color: #fff;
     background-color: #343a40;
     border: 2px solid #343a40;
     text-transform: uppercase;
     font-family: 'Bebas Neue'; }
+  @media only screen and (max-width: 768px) {
+    .mobile-top-button {
+      margin: 0; }
+      .mobile-top-button .top-button-discover {
+        font-size: 20px; }
+      .mobile-top-button .top-button-login {
+        font-size: 20px; } }
 
 .mobile-logo {
-  width: 50px;
+  width: 100px;
   height: auto; }
+  @media only screen and (max-width: 768px) {
+    .mobile-logo {
+      width: 50px; } }
   @media only screen and (max-width: 414px) {
     .mobile-logo {
       width: 40px;
