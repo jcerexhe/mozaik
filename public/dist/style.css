@@ -3949,6 +3949,16 @@ input.input-email {
     .button-subscribe-footer h1 {
       bottom: -6px; } }
 
+@media (orientation: portrait) {
+  .mobile-menu-sliding-pane-overlay {
+    overflow: fixed; }
+  .mobile-footer li {
+    line-height: 1; } }
+
+@media (orientation: landscape) {
+  .mobile-menu-sliding-pane-overlay {
+    overflow: scroll; } }
+
 .mobile-content .home-container {
   font-family: 'Bebas Neue'; }
   .mobile-content .home-container .slide {
@@ -4125,7 +4135,7 @@ input.input-email {
       .mobile-content .home-container .study-areas-container .image .slick-slider {
         position: static; }
         .mobile-content .home-container .study-areas-container .image .slick-slider .slick-dots {
-          z-index: 1;
+          z-index: 2;
           position: absolute;
           left: 50%;
           -ms-transform: translateX(-50%);
@@ -4149,7 +4159,8 @@ input.input-email {
           transform: translateX(-50%);
       background-color: #FFFFFF;
       width: 70%;
-      padding: 4vw 6vw 0 6vw; }
+      padding: 4vw 6vw 0 6vw;
+      z-index: 1; }
       .mobile-content .home-container .study-areas-container .caption h2 {
         font-size: 3.5vw;
         text-align: center;
@@ -4157,7 +4168,7 @@ input.input-email {
         color: #000; }
       .mobile-content .home-container .study-areas-container .caption p {
         height: 10vw;
-        font-family: sans-serif;
+        font-family: 'Montserrat Ultra Light';
         margin-bottom: 2vw;
         font-size: 2.2vw;
         overflow: scroll; }
@@ -4197,6 +4208,52 @@ input.input-email {
         text-shadow: 0.25vw 0.25vw 2vw rgba(0, 0, 0, 0.5); }
         .mobile-content .home-container .discover-container .discover-content h1 span {
           color: #FF6D6D; }
+  .mobile-content .home-container .footnotes {
+    background-color: #181818;
+    background: linear-gradient(#000000, #181818, #303030);
+    padding: 15vw 10vw 8vw 10vw;
+    text-align: center; }
+    .mobile-content .home-container .footnotes h1.header {
+      font-family: 'Montserrat Light';
+      color: #FFFFFF;
+      font-size: 3.25vw;
+      margin-bottom: 3vw; }
+      .mobile-content .home-container .footnotes h1.header strong {
+        font-family: 'Montserrat Extra Bold'; }
+    .mobile-content .home-container .footnotes .subscribe-header {
+      font-size: 8vw;
+      color: #FFFFFF;
+      margin-bottom: 1vw; }
+    .mobile-content .home-container .footnotes p {
+      font-family: 'Montserrat Light';
+      color: white;
+      font-size: 2.25vw;
+      text-align: left;
+      margin-bottom: 5vw; }
+      .mobile-content .home-container .footnotes p.header {
+        font-size: 2.5vw;
+        text-align: center; }
+    .mobile-content .home-container .footnotes button.button {
+      box-shadow: 0.5vw 0.5vw 0.6vw rgba(0, 0, 0, 0.75); }
+    .mobile-content .home-container .footnotes button.button.subscribe {
+      box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+      background-color: #FF6D6D; }
+    .mobile-content .home-container .footnotes input {
+      width: 75%;
+      border: none;
+      outline: none;
+      border-radius: 1.25vw;
+      display: block;
+      margin: 0 auto 4vw auto;
+      height: 7vw;
+      padding: 1vw 3vw;
+      font-size: 3vw; }
+      .mobile-content .home-container .footnotes input::-webkit-input-placeholder {
+        color: #181818; }
+      .mobile-content .home-container .footnotes input:-ms-input-placeholder {
+        color: #181818; }
+      .mobile-content .home-container .footnotes input::placeholder {
+        color: #181818; }
 
 @media (orientation: portrait) {
   .mobile-content .home-container .hero-container .slider .slide {

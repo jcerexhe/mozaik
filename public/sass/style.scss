@@ -30,7 +30,8 @@
 // @import './modules/slick';
 // @import './modules/slick-theme';
 // Mobile styles
-@import './modules/mobile/home';
+@import './modules/mobile/layout/index';
+@import './modules/mobile/home/index';
 @import './modules/mobile/individualArea';
 @import './modules/mobile/about';
 

@@ -1,0 +1,140 @@
+.mobile-content {
+  .home-container {
+    // General styles for home section
+    font-family: 'Bebas Neue';
+
+    // Reused elements and classes across the entire home sections
+    .slide {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .slick-dots {
+      bottom: 2vw;
+      li {
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+        button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+        }
+        button:before {
+          content: '';
+          border-radius: 50%;
+          background-color: transparent;
+          opacity: 1;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .slick-active button:before {
+        border: none;
+      }
+    }
+
+    .button {
+      border: none;
+      outline: none;
+      background-color: #181818;
+      color: white;
+      padding: 1vw 5vw;
+      border-radius: 5vw;
+      font-size: 3vw;
+    }
+
+    .icon {
+      height: 10vw;
+      width: 10vw;
+      margin: 0 auto;
+      margin-bottom: 2vw;
+    }
+
+
+    // Home sections
+    @import './hero.scss';
+
+    @import './artworks.scss';
+
+    @import './studyAreas.scss';
+
+    @import './discover.scss';
+
+    @import './footnotes.scss';
+ 
+
+  }
+}
+
+
+// Portrait Styles
+@media (orientation: portrait) {
+  .mobile-content {
+    .home-container {
+      .hero-container {
+        .slider {
+          .slide {
+            height: 40vh;
+          }
+        }
+      }
+
+      .artworks-container {
+        height: 60vh;
+      }
+
+      .study-areas-container {
+        height: 70vh;
+
+        .slide {
+          height: calc(70vh * 0.6);
+        }
+      }
+
+      .discover-container {
+        height: 30vh;
+      }
+
+    }
+  }
+}
+
+
+// Landscape Styles
+@media (orientation: landscape) {
+  .mobile-content {
+    .home-container {
+      .hero-container {
+        .slider {
+          .slide {
+            height: 100vh;
+          }
+        }
+      }
+
+      .artworks-container {
+        height: 200vh;
+      }
+
+      .study-areas-container {
+        height: 233vh;
+
+        .slide {
+          height: calc(220vh * 0.6);
+        }
+      }
+
+      .discover-container {
+        height: 100vh;
+      }
+
+    }
+  }
+}
