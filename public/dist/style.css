@@ -4317,19 +4317,8 @@ input.input-email {
         padding-right: 10px;
         margin-bottom: 0px;
         font-size: 20px;
-        position: absolute;
-        top: 107px; } }
-  @media only screen and (max-width: 414px) {
-    .individual-area-container .mobile-enquire-button {
-      width: 60px;
-      height: 25px; }
-      .individual-area-container .mobile-enquire-button p {
-        top: 96px;
-        font-size: 15px;
-        padding-left: 4px; } }
-  @media only screen and (max-width: 320px) {
-    .individual-area-container .mobile-enquire-button p {
-      top: 108px; } }
+        position: relative;
+        bottom: 3px; } }
 
 .individual-area-container .mobile-career-list {
   width: 100%;
