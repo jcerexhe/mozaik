@@ -72,6 +72,9 @@ app.use(passport.session());
 // Connect flash
 app.use(flash());
 
+// View used viewing device on console
+app.use(expressDevice.capture());
+
 app.use((req, res, next) => {
   const menu = reactHelper.renderComponent('MenuApp', { currentPath: req.path });
   res.locals.menu = menu;
@@ -89,8 +92,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// View used viewing device on console
-app.use(expressDevice.capture());
+
 
 // Routes
 const index = require('./routes/index');

@@ -1,0 +1,57 @@
+.artworks-container {
+  position: relative;
+  .container-fluid {
+    height: 100%;
+    .row {
+      height: 50%;
+      .col {
+        padding: 0;
+        div {
+          background-position: center;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .art-modal-image {
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .art-modal-caption {
+    height: 25%;
+    position: relative;
+
+    .caption-text {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 5%;
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin: 0;
+        font-size: 3vw;
+        padding: 0;
+        line-height: 1;
+        font-weight: 900;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 5%;
+      bottom: 50%;
+      transform: translateY(50%);
+      box-shadow: 1px 1px 4vw #000;
+    }
+  }
+}
