@@ -2667,6 +2667,52 @@ ul.careers-lists > li:before {
       width: 40px;
       height: auto; } }
 
+/*mobile modal open-menu*/
+/*slide-left*/
+.modal.left .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  transform: translate3d(0%, 0, 0); }
+
+.modal.left .modal-content {
+  width: 130%;
+  background-color: rgba(52, 58, 64, 0.3); }
+
+.modal-header {
+  background-color: #292722;
+  border-color: #292722; }
+  .modal-header button.close {
+    margin-left: 0px; }
+    .modal-header button.close span {
+      font-size: 60px;
+      color: white; }
+  .modal-header img {
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto; }
+
+.modal-body {
+  background-color: rgba(41, 39, 34, 0.3); }
+  .modal-body .mobile-subMenu {
+    padding: 10px; }
+    .modal-body .mobile-subMenu img {
+      width: 100%;
+      height: auto; }
+    .modal-body .mobile-subMenu .col-md-8 {
+      padding: 20px; }
+      .modal-body .mobile-subMenu .col-md-8 a {
+        font-size: 2em;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 50px; }
+      .modal-body .mobile-subMenu .col-md-8 a:hover {
+        text-decoration: underline;
+        -webkit-text-decoration-color: #FF6D6D;
+                text-decoration-color: #FF6D6D; }
+
 .hero-container .home-hero .home-slider .slide {
   /* width: 100vw !important; */
   /* height: calc(100vh + 300px) !important; */
