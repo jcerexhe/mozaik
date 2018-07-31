@@ -1,0 +1,22 @@
+
+
+
+// Portrait Styles
+@media (orientation: portrait) {
+  .mobile-menu-sliding-pane-overlay {
+    overflow: fixed;
+  }
+  .mobile-footer {
+    li {
+      line-height: 1;
+    }
+  }
+}
+
+
+// Landscape Styles
+@media (orientation: landscape) {
+  .mobile-menu-sliding-pane-overlay {
+    overflow: scroll;
+  }
+}
