@@ -88,7 +88,8 @@ const schoolSchema = new Schema({
   formidse: String,
   formidsa: String,
   formidsc: String,
-  displayedArt: [String]
+  displayedArt: [String],
+  
 });
 
 schoolSchema.pre('save', async function (next) {

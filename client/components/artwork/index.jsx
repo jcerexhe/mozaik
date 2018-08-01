@@ -189,12 +189,6 @@ export default class ArtworkApp extends Component {
   render() {
     const { artworks, displayedArt } = this.props;
     const { disciplineList, disciplines, images, allImages, artDisplay } = this.state;
-    console.log('artworks')
-    console.log(artworks)
-    console.log('displayedArt')
-    console.log(displayedArt)
-    console.log('artDisplay')
-    console.log(artDisplay)
     let gt = ">";
     return (
       <div className='grey-bg'>
