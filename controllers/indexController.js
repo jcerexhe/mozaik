@@ -125,9 +125,16 @@ exports.partner = (req, res) => {
 };
 
 exports.agency = (req, res) => {
-  const Agency = reactHelper.renderComponent('AgencyApp');
-  res.render('agency', { Agency });
-
+  
+  let viewDevice = req.device.type
+  
+  if (viewDevice == 'desktop') {
+    const Agency = reactHelper.renderComponent('AgencyApp');
+    res.render('agency', { Agency });
+  } else {
+    const AgencyMobile = reactHelper.renderComponent('MobileAgency');
+    res.render('mobile/agency', { AgencyMobile });
+  };
 };
 
 exports.individualArea = (req, res) => {
