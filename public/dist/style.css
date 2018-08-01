@@ -146,7 +146,7 @@ body {
   height: 200px;
   background-color: #253336;
   color: #FFFFFF; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer {
       display: block;
       height: 100%;
@@ -159,7 +159,7 @@ body {
       justify-content: space-around;
   -ms-flex-align: top;
       align-items: top; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer > .links {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -184,7 +184,7 @@ body {
   .footer > .links > ul li {
     color: #949494;
     font-family: 'Gotham Book Regular'; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .footer > .links > ul h4, .footer > .links > ul a, .footer > .links > ul li {
       color: #212529; } }
   @media only screen and (max-width: 414px) {
@@ -210,7 +210,7 @@ body {
   font-family: 'Montserrat Ultra Light';
   color: #949494; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .footer > .social {
     text-align: center; }
     .footer > .social .copyright {
@@ -229,7 +229,7 @@ body {
 input.input-newsletter:focus {
   outline: none; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .img-resp {
     background-color: #000;
     border-radius: 100%;
@@ -1409,38 +1409,6 @@ iframe.school-video {
   letter-spacing: 1px;
   margin-bottom: 30px;
   border-top: none; }
-  @media only screen and (max-width: 768px) {
-    .about-page-heading {
-      z-index: 1;
-      border: 0;
-      width: 100%;
-      height: auto; }
-      .about-page-heading h1 {
-        font-size: 1em;
-        margin-bottom: 10%; }
-      .about-page-heading p {
-        color: #fff;
-        font-size: .5em;
-        text-align: left;
-        margin-bottom: 0px; }
-      .about-page-heading p.m-about-desc {
-        font-size: 20px; } }
-  @media only screen and (max-width: 414px) {
-    .about-page-heading h1 {
-      font-size: 1em; }
-    .about-page-heading p {
-      font-size: 12px; }
-    .about-page-heading p.m-about-desc {
-      font-size: 8px;
-      margin-top: -15%; } }
-  @media only screen and (max-width: 414px) {
-    .about-page-heading h1 {
-      font-size: .5em; } }
-  @media only screen and (max-width: 414px) {
-    .about-page-heading {
-      padding: 20px; }
-      .about-page-heading h1 {
-        margin-bottom: 5%; } }
 
 .about-page-heading:before {
   content: '';
@@ -1481,9 +1449,6 @@ iframe.school-video {
   box-sizing: border-box;
   text-align: center;
   padding-top: 15%; }
-  @media only screen and (max-width: 1024px) {
-    .about-image {
-      height: 35vh; } }
 
 .scroll-down > img {
   position: absolute;
@@ -1520,50 +1485,15 @@ iframe.school-video {
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 10%; }
-  @media only screen and (max-width: 768px) {
-    .about-us-text-footer {
-      margin-top: 10% !important; } }
-  @media only screen and (max-width: 414px) {
-    .about-us-text-footer {
-      margin-top: 15% !important; } }
 
 .about-us-text-footer > p {
   font-family: 'Bebas Neue';
   color: #F76F70;
   font-size: 30px;
   margin-bottom: 20px; }
-  @media only screen and (max-width: 768px) {
-    .about-us-text-footer > p {
-      color: #fff;
-      margin-bottom: 0;
-      font-size: 25px; } }
 
 .about-us-text-footer > img {
   height: 10vh; }
-  @media only screen and (max-width: 1024px) {
-    .about-us-text-footer > img {
-      height: 4vh; } }
-
-.mobile-about-us-image {
-  width: 100%;
-  height: 80vh;
-  position: absolute;
-  top: 0; }
-  @media only screen and (max-width: 414px) {
-    .mobile-about-us-image {
-      height: 50vh; } }
-  @media only screen and (max-width: 320px) {
-    .mobile-about-us-image {
-      height: 60vh; } }
-
-.m-horizontal-line {
-  border: 2px solid #fff;
-  width: 20%;
-  float: left; }
-
-.m-horizontal-line-form {
-  border: 2px solid #FF6D6D;
-  width: 50%; }
 
 .partner-page-heading {
   border: 5px solid #FFFFFF;
@@ -4605,19 +4535,8 @@ input.input-email {
         padding-right: 10px;
         margin-bottom: 0px;
         font-size: 20px;
-        position: absolute;
-        top: 107px; } }
-  @media only screen and (max-width: 414px) {
-    .individual-area-container .mobile-enquire-button {
-      width: 60px;
-      height: 25px; }
-      .individual-area-container .mobile-enquire-button p {
-        top: 96px;
-        font-size: 15px;
-        padding-left: 4px; } }
-  @media only screen and (max-width: 320px) {
-    .individual-area-container .mobile-enquire-button p {
-      top: 108px; } }
+        position: relative;
+        bottom: 3px; } }
 
 .individual-area-container .mobile-career-list {
   width: 100%;
@@ -4806,6 +4725,113 @@ input.input-email {
         .mobile-agency-container .agency-modal .modal.modal-size .modal-dialog .modal-content .modal-body p {
           color: #000;
           text-align: center; }
+
+.about-container .mobile-about-us-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0; }
+
+.about-container .m-about-page-heading {
+  position: relative;
+  width: 100%; }
+  .about-container .m-about-page-heading h1 {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 5em; }
+  .about-container .m-about-page-heading p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 90px; }
+  .about-container .m-about-page-heading p.m-about-desc {
+    margin-top: 20px;
+    margin-right: 90px; }
+  @media only screen and (max-width: 768px) {
+    .about-container .m-about-page-heading h1 {
+      font-size: 4em;
+      margin-bottom: -20px; }
+    .about-container .m-about-page-heading p {
+      font-size: 1.2em; }
+    .about-container .m-about-page-heading p.m-about-desc {
+      margin-top: 10px;
+      font-size: 1em; } }
+  @media only screen and (max-width: 414px) {
+    .about-container .m-about-page-heading h1 {
+      font-size: 2em;
+      margin-top: -30px;
+      margin-bottom: -40px; }
+    .about-container .m-about-page-heading p {
+      font-size: .8em;
+      margin-left: 30px; }
+    .about-container .m-about-page-heading p.m-about-desc {
+      margin-top: 2px;
+      font-size: .6em;
+      margin-right: 10px; } }
+  @media only screen and (max-width: 375px) {
+    .about-container .m-about-page-heading p {
+      font-size: .7em;
+      margin-left: 20px; }
+    .about-container .m-about-page-heading p.m-about-desc {
+      margin-top: -10px; } }
+  @media only screen and (max-width: 320px) {
+    .about-container .m-about-page-heading h1 {
+      font-size: 1em; }
+    .about-container .m-about-page-heading p {
+      font-size: .5em; }
+    .about-container .m-about-page-heading p.m-about-desc {
+      margin-top: -10px;
+      font-size: .5em; } }
+
+.about-container .m-about-us-text-footer {
+  margin-top: 170px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .about-container .m-about-us-text-footer p {
+    font-family: 'Bebas Neue';
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 0px; }
+  @media only screen and (max-width: 768px) {
+    .about-container .m-about-us-text-footer {
+      margin-top: 120px; }
+      .about-container .m-about-us-text-footer p {
+        font-size: 40px; } }
+  @media only screen and (max-width: 414px) {
+    .about-container .m-about-us-text-footer {
+      margin-top: 40px; }
+      .about-container .m-about-us-text-footer p {
+        font-size: 30px; } }
+  @media only screen and (max-width: 375px) {
+    .about-container .m-about-us-text-footer {
+      margin-top: 30px; }
+      .about-container .m-about-us-text-footer p {
+        font-size: 20px; } }
+
+.about-container .m-horizontal-line {
+  border: 2px solid #fff;
+  width: 20%;
+  margin-left: 90px;
+  float: left; }
+  @media only screen and (max-width: 414px) {
+    .about-container .m-horizontal-line {
+      margin-left: 30px; } }
+  @media only screen and (max-width: 375px) {
+    .about-container .m-horizontal-line {
+      margin-left: 20px; } }
+
+.about-container .m-horizontal-line-form {
+  border: 2px solid #FF6D6D;
+  width: 50%;
+  margin-top: 0px; }
 
 * {
   box-sizing: border-box; }
