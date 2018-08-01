@@ -76,8 +76,11 @@ app.use(flash());
 app.use(expressDevice.capture());
 
 app.use((req, res, next) => {
-  const menu = reactHelper.renderComponent('MenuApp', { currentPath: req.path });
-  res.locals.menu = menu;
+  if (req.device.type == 'desktop') {
+    res.locals.menu = reactHelper.renderComponent('MenuApp', { currentPath: req.path });
+  } else {
+    res.locals.menu = reactHelper.renderComponent('MobileMenu', { currentPath: req.path }); 
+  }
   res.locals.h = helpers;
   res.locals.flashes = req.flash();
   res.locals.user = req.user || null;
@@ -91,7 +94,6 @@ app.use((req, res, next) => {
   req.login = promisify(req.login, req);
   next();
 });
-
 
 
 // Routes

@@ -65,7 +65,7 @@ export default class MenuApp extends Component {
     return (
       <div>
         {/*Desktop View*/}
-        <div className="desktop-view d-none d-xl-block">
+        <div className="desktop-view d-none d-lg-block">
           <div className='navbar'>
             {/*<div className='discover'>
                <a href='/#search'>discover</a>
@@ -149,7 +149,7 @@ export default class MenuApp extends Component {
             </div>
           </SlidingPane>
         {/*Mobile View*/}
-        <div className="mobile-view d-xl-none">
+        <div className="mobile-view d-lg-none">
           <div className='navbar mobile-top-button'>
             <a href="/search"><button className="top-button-discover">Discover</button></a>
             <a href="#"><button className="top-button-login">Login</button></a>
@@ -159,70 +159,18 @@ export default class MenuApp extends Component {
               <img className="mobile-logo" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
             </a>
             <div className='links'>
-                <div id='open-menu' data-target>
-                  <a href="#mobile-open-menu" data-toggle="modal">
+                <div id='open-menu'
+                    onClick={ () => this.updateMenu() }
+                    className={ menuOpen ? 'open' : '' }>
+                    {/*<img className='icon-white' src='/images/menu/Menu_1.png' />*/}
                     <span />
                     <span />
                     <span />
                     <span />
-                  </a>
                 </div>
+                   
             </div>
           </nav>
-              {/*Modal Left*/}
-                <div className="modal left fade" id="mobile-open-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div className="modal-dialog" role="document">
-                    <div className="modal-content mobile-content">
-                      <div className="modal-header">
-                        <img className="modal-logo" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                      </div>
-                      <div className="modal-body">
-                        <div className="row mobile-subMenu">
-                          <div className="col-md-4">
-                            <img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" alt="icon"/>
-                          </div>
-                          <div className="col-md-8">
-                            <a href="/"><p>Home</p></a>
-                          </div>
-                        </div>
-                        <div className="row mobile-subMenu">
-                          <div className="col-md-4">
-                            <img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" alt="icon"/>
-                          </div>
-                          <div className="col-md-8">
-                            <a href="/search"><p>Discover</p></a>
-                          </div>
-                        </div>
-                        <div className="row mobile-subMenu">
-                          <div className="col-md-4">
-                            <img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" alt="icon"/>
-                          </div>
-                          <div className="col-md-8">
-                            <a href="/study-area"><p>Study Areas</p></a>
-                          </div>
-                        </div>
-                        <div className="row mobile-subMenu">
-                          <div className="col-md-4">
-                            <img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" alt="icon"/>
-                          </div>
-                          <div className="col-md-8">
-                            <a href="/agency-mozaik"><p>Education Agency</p></a>
-                          </div>
-                        </div>
-                        <div className="row mobile-subMenu">
-                          <div className="col-md-4">
-                            <img src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" alt="icon"/>
-                          </div>
-                          <div className="col-md-8">
-                            <a href="/about-us"><p>About Us</p></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>{/*<!-- modal-content -->*/}
-                  </div>{/*<!-- modal-dialog -->*/}
-                </div>{/*<!-- modal -->*/}
-            
         </div>
       </div>
     );

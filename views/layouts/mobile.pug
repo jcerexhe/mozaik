@@ -22,23 +22,23 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js')
   body
-    // React component for menu
-    !=menu
     if locals.flashes
       - const categories = Object.keys(locals.flashes)
       each category in categories
         each message in flashes[category]
           div(class=`alert-${ category }`)!= h.dump(message)
 
-    div(class=(currentPath === '/' ? 'mobile-content' : ''))
+    .mobile-content
+      // React mobile menu component
+      !=menu
+
       block content
-    
-    // TODO footer MOBILE
-    div(class='d-xl-none')   
-      .footer
-        .links
-          ul(class='ul-footer-left')
-            h4 for students
+
+      // Mobile Footer
+      .mobile-footer
+        .list-left
+          h4 for students
+          ul
             li
               a(href='/about-us') ABOUT US
             li
@@ -46,23 +46,28 @@ html(lang='en')
             li
               a(href='/study-area') STUDY AREAS
             li
-              a(href='/agency-mozaik') EDUCATION AGENCY 
+              a(href='/agency-mozaik') EDUCATION AGENCY
+
+        .list-right
+          h4 for schools
           ul(class='ul-footer-right')
-            h4 for schools
             li
               a(href='/partner-with-mozaik') WHY PARTNER WITH MOZAIK PLAY
             li
-              a(href='/agency-mozaik') EDUCATION AGENCY 
-        .social
-          // TODO
-          a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
-            img.img-resp(src='/images/old-social-icons/sm-facebook.png') 
-          a(href='https://www.instagram.com/mozaikplay/')
-            img.img-resp(src='/images/old-social-icons/sm-instagram.png')
-          a(href='https://twitter.com/MozaikPlay')
-            img.img-resp(src='/images/old-social-icons/sm-twitter.png')
+              a(href='/agency-mozaik') EDUCATION AGENCY
+
+        .list-bottom
+          .social-media-icons
+            a(href='https://web.facebook.com/Mozaik-Creative-213677359160166/')
+              img(src='/images/old-social-icons/sm-facebook.png')
+            a(href='https://www.instagram.com/mozaikplay/')
+              img(src='/images/old-social-icons/sm-instagram.png')
+            a(href='https://twitter.com/MozaikPlay')
+              img(src='/images/old-social-icons/sm-twitter.png')
+
           p.copyright= `© copyright ${(new Date()).getFullYear()} mozaik play  |  site design by martina meyner`
-          
+
+
     block javascripts
       script(src='/dist/App.bundle.js?rand='+Math.random())
       script(src='/dist/reactHelper.bundle.js')
@@ -111,4 +116,3 @@ append stylesheets
         });
         form[0].appendChild(signup);
        };
-	
