@@ -40,12 +40,14 @@ import MobileHomeArtworks from './components/mobile/home/artworks/index.jsx';
 import MobileHomeStudyAreas from './components/mobile/home/studyAreas/index.jsx';
 import MobileIndividualStudyArea from'./components/mobile/individualArea/index.jsx';
 import MobileAbout from './components/mobile/about/index.jsx';
+import MobileAgency from './components/mobile/agency/index.jsx';
 // Register to allow usage in node
 reactHelper.register({ MobileHomeHero });
 reactHelper.register({ MobileHomeArtworks });
 reactHelper.register({ MobileHomeStudyAreas });
 reactHelper.register({ MobileIndividualStudyArea });
 reactHelper.register({ MobileAbout });
+reactHelper.register({ MobileAgency });
 
 
 
