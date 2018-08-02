@@ -6,7 +6,7 @@
 	height: auto;
 	margin-bottom: 0px;
 	.container{
-		padding-top: 200px;
+		padding-top: 350px;
 		padding-bottom: 200px;
 		margin-bottom: -200px;
 	}
@@ -45,9 +45,8 @@
 		}
 	}
 	.agency-modal{
-		.modal.modal-size .modal-dialog{
-
-			margin: 0;
+		.modal-lg{
+			max-width: 100%;
 			.modal-content{
 				background-color: #fff;
 				width: 100%;
@@ -56,8 +55,9 @@
 					border: 1px solid #fff;
 					button.agency-close{
 						background-color: #fff;
-						float: right;
 						border: 1px solid #000;
+						position: relative;
+    					left: 900px;
 					}
 				}
 				.modal-body{
