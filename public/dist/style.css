@@ -4728,6 +4728,73 @@ input.input-email {
           color: #000;
           text-align: center; }
 
+.school-details-container .school-heading-container {
+  /* background-color: $grey; */
+  background-color: blue;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%; }
+
+.school-details-container a.btn {
+  color: #fff !important; }
+
+.school-details-container .modal-x {
+  margin-top: -50%; }
+
+.school-details-container .school-heading {
+  /*display: flex;
+	  justify-content: space-between;
+	  align-items: center; */
+  padding: 50px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  padding-top: 100px;
+  width: 100%;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 768px) {
+    .school-details-container .school-heading {
+      width: 60%; } }
+  .school-details-container .school-heading .school-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-details-container .school-heading .school-info h1 {
+    text-align: center !important;
+    width: 100%;
+    font-size: 40pt;
+    font-family: 'Gotham Bold';
+    font-weight: bold;
+    color: #FFFFFF; }
+  .school-details-container .school-heading .school-info > img {
+    margin-right: 20px;
+    max-width: 150px;
+    height: auto;
+    background-color: #181818;
+    /*background: none;*/ }
+  .school-details-container .school-heading .school-name {
+    font-family: 'Montserrat Ultra Light'; }
+  .school-details-container .school-heading .school-link {
+    margin: 10px 0;
+    text-align: center; }
+  .school-details-container .school-heading .school-link > a {
+    /*display: flex;*/
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-details-container .school-heading .school-link img {
+    margin: 0px; }
+  .school-details-container .school-heading .school-links {
+    text-align: center; }
+  .school-details-container .school-heading .video-link {
+    margin: 15px 30px;
+    font-family: 'Bebas Neue';
+    color: #FFFFFF; }
+    .school-details-container .school-heading .video-link img {
+      width: 150px;
+      height: auto;
+      cursor: pointer; }
+
 * {
   box-sizing: border-box; }
 

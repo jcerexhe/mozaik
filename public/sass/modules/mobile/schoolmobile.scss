@@ -1,0 +1,81 @@
+.school-details-container{
+	.school-heading-container {
+	  /* background-color: $grey; */
+	  background-color: blue;
+	  background-size: cover;
+	  background-position: bottom;
+	  width: 100%; 
+	}
+
+	a.btn{
+	  color: #fff !important;
+	}
+
+	.modal-x{
+	    margin-top: -50%;
+	}
+	.school-heading {
+	  /*display: flex;
+	  justify-content: space-between;
+	  align-items: center; */
+	  padding: 50px 0px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: -100px;
+	  padding-top: 100px;
+	  width: 100%;
+	  box-sizing: border-box;
+	  @media only screen and (min-width: 768px) {
+	    width: 60%;
+	  }
+
+	  .school-info {
+	    display: flex;
+	    align-items: center;
+	  }
+
+	  .school-info h1 {
+	    text-align: center !important;
+	    width: 100%;
+	    font-size: 40pt;
+	    font-family: 'Gotham Bold';
+	    font-weight: bold;
+	    color: $white;
+	  }
+	  .school-info > img {
+	    margin-right: 20px;
+	    max-width: 150px;
+	    height: auto;
+	    background-color: $grey;
+	    /*background: none;*/
+	  }
+	  .school-name {
+	    font-family: 'Montserrat Ultra Light';
+	  }
+	  .school-link {
+	    margin: 10px 0;
+	    text-align: center;
+	  }
+	  .school-link > a {
+	    /*display: flex;*/
+	    align-items: center;
+	  }
+	  .school-link img {
+	    margin: 0px;
+	  }
+	  .school-links {
+	    text-align: center;
+	  }
+	  .video-link {
+	    margin: 15px 30px;
+	    font-family: 'Bebas Neue';
+	    color: $white;
+
+	    img{
+	    width: 150px;
+	    height: auto;
+	    cursor: pointer;
+	    }
+	  }
+	}
+}

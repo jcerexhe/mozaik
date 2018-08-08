@@ -74,6 +74,10 @@ exports.schoolArtwork = (req, res) => {
 
 
 exports.schoolDetails = (req, res) => {
+
+  let viewDevice = req.device.type
+
+  if(viewDevice == 'desktop'){
   const school = res.locals.school;
   const displayedArt = school.displayedArt;
   const artworks = school.artworks;
@@ -84,6 +88,10 @@ exports.schoolDetails = (req, res) => {
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
 
   res.render('schoolDetails', { school, schoolLightBox, CampusMaps, Facilities, Alumni, Courses });
+  } else {
+    const mschool = res.locals.school;
+    res.render('mobile/schoolDetails', { mschool });
+  };
 };
 
 exports.schoolCourses = (req, res) => {
