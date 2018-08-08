@@ -203,3 +203,157 @@
 	    }
   	}
 }
+// study areas
+.mobile-courses-card-container{ 
+	.study-areas-box{
+
+	  
+	  h1{
+	      color: #636161;
+	    margin: 0px;
+	    font-size: 10vw;
+	    line-height: 0.8;
+	    
+	    font-family: 'Montserrat Black';
+	    text-transform: uppercase;
+	    padding-bottom: 10px;
+	    text-align: center;
+	  }
+	  background-color: rgba(144, 144, 144,0.5);
+
+	  .study-areas{
+	    width: 100%;
+	    height: 40vh;
+	    background-color: $black;
+	    display: flex;
+	    align-items: center;
+
+	    .area-box{
+	      height: 100%;
+	      width: 11.11%;
+	      border: 1px solid $black;
+	      background-size: cover;
+	      background-position: center;
+	      display: flex;
+	      align-items: center;
+	      position: relative;
+
+
+	      .disciplines-disable{
+	      width: 100%;
+	      height: 100%;
+	      background-color: rgba(0, 0, 0, 0.6);
+	      position: absolute;
+	      }
+
+	      .disciplines{
+	        background: transparent;
+	        position: absolute;
+	        width: 100%;
+	        height: 100%;
+
+	        p{
+	          display: none;
+	          text-align: center;
+	          font-size: 12px;
+	          color: $pink;
+	          font-weight: bold;
+	          text-transform: uppercase;
+	          font-family: 'Bebas Neue';
+
+
+	          .area-link{
+	            font-size: 15px !important;
+	            color: $pink !important;
+	            text-decoration: none;
+	          }
+
+
+	        }
+
+	        ul{
+	          width: 100%;
+	          margin: 0;
+	          padding: 0;
+	          list-style-type: none;
+	          text-align: center;
+
+	         li{
+	          padding: 1px;
+	          display: block; 
+
+	          .filter-btn{
+	            padding: 0px 8px;
+	            margin: 0;
+	            text-decoration: none;
+	            color: #fff;
+	            text-transform: uppercase;
+	            font-size: 12px !important;
+	            font-family: 'Bebas Neue';
+	            letter-spacing: 1px;
+	          }
+	         } 
+	        }
+
+	        .area-heading{
+
+	        ul{
+	          width: 100%;
+	          margin: 0;
+	          padding: 0;
+	          list-style-type: none;
+	          text-align: center;
+
+	         li{
+	          padding: 2px;
+	          display: block; 
+
+	          .filter-btn{
+	            padding: 0px 5px;
+	            margin: 0;
+	            text-decoration: none;
+	            color: $pink;
+	            text-transform: uppercase;
+	            font-size: 14px !important;
+	            font-family: 'Bebas Neue';
+	            letter-spacing: 1px;
+	          }
+
+	          .filter-btn:hover, .filter-btn.active {
+	           /* background-color: $white; */
+	            color: $pink;
+	            opacity: 0.5 !important;
+	          }
+	         } 
+	        }
+	        }
+	      }
+
+	      .disciplines:hover{
+	        background-color: rgba(8,42,62, 0.8);
+	      }
+
+	      .disciplines:hover p{
+	        display: block;
+	      }
+
+	      h3{
+	        color: #fff;
+	        background: #000;
+	        border: 2px solid #fff;
+	        padding: 3px 10px;
+	        margin: 0 auto;
+	        font-size: 15px;
+	        width: 90%;
+	        height: 50px;
+	        text-align: center;
+	      }
+
+	      .padding{
+	        padding-top: 15px;
+	      }
+	    }
+	  }
+	  
+	}
+}
