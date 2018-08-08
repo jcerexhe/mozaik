@@ -15,3 +15,48 @@ block content
            .modal-body.modal-body-school-video
              p.button.modal-close-button-school-video(onclick="stopSchoolVid('" + school.video + "')") &times;
              iframe.school-video(width='100%', height='100%', src= school.video, frameborder='0', allowfullscreen='')
+  .m-student-work
+   !=schoolMobileLightBox
+
+  .m-school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
+    img.scroll-down(src="/images/buttons/Scroll-Down.png")
+    .school-logo
+      img(src=school.logo)
+    .school-overview
+      .details-box
+        h2 overview
+        p=school.overview
+        h3 campus location
+        ul
+            each loc in school.locations
+              li=loc.campus
+        h3 delivery
+        ul
+            each delivery in school.delivery
+              li=delivery
+    .school-fees
+      .details-box
+        h2 fees scholarship
+        h3 price range
+        ul
+          each price in school.prices
+            li
+              =`${price.type}:`
+              br
+              =`${price.currency} ${price.lower.toLocaleString()} - ${price.currency} ${price.upper.toLocaleString()}`
+        h3 scholarship
+        ul
+          each scholarship in school.scholarships
+            li=scholarship
+    .school-links
+        .school-forms-modal
+        .school-link
+          a(href='#' onclick="createSForm('"+ school.formidsa +"')" class='btn')
+            span Apply
+        .school-link
+          a(href='#' onclick="createSForm('"+ school.formidse +"')" class='btn')
+            span Enquire
+        .school-link
+          a(href='#' onclick="createCGForm('"+ school.formidsc +"')" class='btn')
+            span Course Guide
+        a#cg_link(style="display:none;" href=school.courseGuide download target="_blank")

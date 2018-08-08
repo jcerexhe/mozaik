@@ -89,8 +89,11 @@ exports.schoolDetails = (req, res) => {
 
   res.render('schoolDetails', { school, schoolLightBox, CampusMaps, Facilities, Alumni, Courses });
   } else {
-    const mschool = res.locals.school;
-    res.render('mobile/schoolDetails', { mschool });
+    const school = res.locals.school;
+    const displayedArt = school.displayedArt;
+    const artworks = school.artworks;
+    const schoolMobileLightBox = reactHelper.renderComponent('MobileArtwork', { search: false, artworks: artworks, displayedArt: displayedArt });
+    res.render('mobile/schoolDetails', { school, schoolMobileLightBox });
   };
 };
 

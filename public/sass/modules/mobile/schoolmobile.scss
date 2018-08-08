@@ -78,4 +78,128 @@
 	    }
 	  }
 	}
+
+	// student work section
+	.m-student-work{
+	  height: 50vh;
+	  background-color: red;
+	}
+
+	.m-student-work > p{
+	  margin: 0;
+	}
+
+	.m-school-overview-container{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: top;
+	  /* height: 100vh; */
+	  text-align: center;
+	  position:relative;
+	  background-size: cover;
+	  background-position: center;
+
+	  .scroll-down{
+	    position: absolute;
+	    bottom: -25px;
+	    left: 46%;
+	    width: 100px;
+	  }
+
+	  h1{
+	    margin: 0;
+	  }
+
+	  h2{
+	    font-size: 30pt;
+	    text-align: center;
+	  }
+
+	  .school-logo{
+	    width: 20%;
+	    text-align: left;
+
+	    img{
+	      width: 80%;
+	      margin-top: 100px;
+	    }
+	  }
+	  .school-overview{
+	    width: 30%;
+	    padding: 5px;
+	  }
+	  .school-fees{
+	    width: 30%;
+	    padding: 5px;
+	  }
+	  .school-links{
+	    width: 20%;
+	    display: flex;
+	    flex-direction: column; 
+	    padding-top: 100px;
+
+	    .school-link{
+	      width: 50%;
+	      margin-left: 20px;
+	    }
+	    .btn{
+	      width: 100%;
+	      margin-bottom: 15px;
+	      border: 3px solid $white;
+	      border-radius: 0;
+	      background: #000; 
+	      letter-spacing: 0px;
+	    }
+	  }
+	  .details-box{
+	    background-color: white;
+	    width: 100%;
+	    position: relative;
+	    top: -50px;
+	    padding-top: 40px;
+	    padding-bottom: 20px;
+	    height: 580px; 
+	    box-sizing: border-box;
+	    overflow-y: auto;
+
+	    p{
+	      padding: 0 30px;
+	      padding-bottom: 20px;
+	      font-size: 15px;
+	    }
+
+	    h3{
+	      color: #000;
+	      text-transform: uppercase;
+	      font-size: 15pt;
+	      margin: 0;
+	    }
+	        ul {
+	      list-style: none;
+	      margin: 0px;
+	      padding: 0px;
+	      padding-bottom: 20px;
+	      font-size: 15px;
+	    }
+	    ul > li {
+	      padding: 0 30px;
+	      padding-top: 5px;
+	      padding-bottom: 0px;
+	    }
+
+	  }
+	    .details-box::-webkit-scrollbar {
+	    width: 7px;
+	    }
+
+	    .details-box::-webkit-scrollbar-track {
+	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	        /* border-radius: 10px; */
+	    }
+
+	    .details-box::-webkit-scrollbar-thumb {
+	       /* border-radius: 10px; */
+	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	    }
+  	}
 }

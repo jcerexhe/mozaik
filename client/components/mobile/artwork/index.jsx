@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
-import Filter from '../shared/filter.jsx';
+import MobileFilter from '../shared/filter.jsx';
 import Artwork from './artwork.jsx';
 
-export default class ArtworkApp extends Component {
+export default class MobileArtwork extends Component {
   constructor(props) {
     super(props);
 
@@ -197,7 +197,8 @@ export default class ArtworkApp extends Component {
     console.log(artDisplay)
     let gt = ">";
     return (
-        <div className='grey-bg'>
+      <div className='mobile-artwork-container'>
+        <div className='m-grey-bg'>
           <div className='artworks'>
             <div className='artwork-container'>
             { artworks.length > 0 ? this.renderLightbox() : <div /> }
@@ -241,6 +242,7 @@ export default class ArtworkApp extends Component {
             </div>
           </div>
         </div>
+      </div>
     );
   }
 }
