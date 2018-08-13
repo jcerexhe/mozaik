@@ -35,7 +35,21 @@ export default class Modal extends Component {
   }
 
   render() {
-    const { artworks, artIndex, showArtModal, handleCloseArtModal } = this.props; // See 'Modal' props in ./artworks.jsx
+    const { artworks, artIndex, showArtModal, handleCloseArtModal, schoolNames } = this.props; // See 'Modal' props in ./artworks.jsx
+
+    // Get school acronym of artwork
+    let artSchoolName = artworks[artIndex].school_name;
+    let artSchoolAcronym;
+
+    if (artSchoolName) {
+      schoolNames.map(schoolName => {
+        if (schoolName.full.toLowerCase() == artSchoolName.toLowerCase()) {
+          artSchoolAcronym = schoolName.acronym
+        };
+      });
+    };
+
+
     return (
       <ReactModal
         isOpen={showArtModal}
@@ -49,9 +63,9 @@ export default class Modal extends Component {
         <div className="art-modal-caption">
           <div className="caption-text">
             <p>{artworks[artIndex].artist}</p>
-            <p>{artworks[artIndex].school_name}</p>
+            <p>{artSchoolAcronym}</p>
           </div>
-          <button>VIEW MORE</button>
+          <button className="button">VIEW MORE</button>
         </div>
       </ReactModal>
     );
