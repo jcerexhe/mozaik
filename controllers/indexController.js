@@ -158,15 +158,8 @@ exports.schoolCourses = (req, res) => {
 
 
 exports.studyAreas= (req, res) => {
-  let viewDevice = req.device.type
-
-  if (viewDevice == 'desktop') {
-  const Search = reactHelper.renderComponent('SearchApp');
+   const Search = reactHelper.renderComponent('SearchApp');
   res.render('studyArea', {Search });
-  } else {
-    const SearchMob = reactHelper.renderComponent('MobileDiscover');
-    res.render('mobile/searchDiscover', { SearchMob });
-  };
 };
 
 

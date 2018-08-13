@@ -52,10 +52,13 @@
     }
 
     .icon {
-      height: auto;
       margin: 0 auto;
       margin-bottom: 2vw;
-      width: auto;
+      height: auto;
+
+      img {
+        width: 100%;
+      }
     }
 
     // Home sections
@@ -68,7 +71,6 @@
     @import './discover.scss';
 
     @import './footnotes.scss';
-
 
   }
 }
