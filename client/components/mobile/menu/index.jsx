@@ -8,11 +8,11 @@ export default class MobileMenu extends Component {
     this.state = {
       isPaneOpenLeft: false,
       links: [
-        {url: '/', val: 'HOME'},
-        {url: '/search', val: 'DISCOVER'},
-        {url: '/study-area', val: 'STUDY AREAS'},
-        {url: '/agency-mozaik', val: 'EDUCATION AGENCY'},
-        {url: '/about-us', val: 'ABOUT US'},
+        {url: '/', val: 'HOME', img: '/images/mobile/icons/home.png'},
+        {url: '/search', val: 'DISCOVER', img: '/images/mobile/icons/discover.png'},
+        {url: '/study-area', val: 'STUDY AREAS', img: '/images/mobile/icons/study-areas.png'},
+        {url: '/agency-mozaik', val: 'EDUCATION AGENCY', img: '/images/mobile/icons/education-agency.png'},
+        {url: '/about-us', val: 'ABOUT US', img: '/images/mobile/icons/about-us.png'},
       ]
     };
   }
@@ -72,11 +72,11 @@ export default class MobileMenu extends Component {
             {_.map(links, (link, i) => {
               if (currentPath == link.url) {
                 return (
-                  <li key={'mobile-menu-link-' + i}><div className="icon"></div><a className="active" href=''>{link.val}</a></li>
+                  <li key={'mobile-menu-link-' + i}><a href='' className="active" ><div className="icon"><img src={link.img}/></div><p className="active" >{link.val}</p></a></li>
                 )
               } else {
                 return (
-                  <li key={'mobile-menu-link-' + i}><div className="icon"></div><a href={link.url}>{link.val}</a></li>
+                  <li key={'mobile-menu-link-' + i}><a href={link.url}><div className="icon"><img src={link.img}/></div><p>{link.val}</p></a></li>
                 )
               }
             })}
