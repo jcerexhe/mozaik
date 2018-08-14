@@ -3967,20 +3967,24 @@ input.input-email {
       padding: 0 0 2vw 15vw;
       margin: 0; }
       .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li {
-        padding: 5vw 0; }
+        padding: 6vw 0; }
+        .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li a.active {
+          pointer-events: none; }
         .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li .icon {
-          height: 10vw;
+          height: auto;
           width: 10vw;
-          margin: 0 3vw 0 0;
+          margin: 0 4vw 0 0;
           display: inline-block;
           vertical-align: middle; }
-        .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li a {
+          .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li .icon img {
+            width: 100%; }
+        .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li p {
           text-decoration: none;
           color: #FFFFFF;
-          font-size: 3.5vw; }
-          .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li a.active {
+          font-size: 3.5vw;
+          display: inline-block; }
+          .ReactModalPortal .mobile-menu-sliding-pane .slide-pane__content ul li p.active {
             border-bottom: 0.5vw solid #FF6D6D;
-            pointer-events: none;
             cursor: default; }
 
 .ReactModalPortal .mobile-menu-sliding-pane-overlay {
@@ -4158,12 +4162,14 @@ input.input-email {
     color: white;
     padding: 1vw 5vw;
     border-radius: 5vw;
-    font-size: 3vw; }
+    font-size: 3vw;
+    box-shadow: 0.5vw 0.5vw 0.6vw rgba(0, 0, 0, 0.3); }
   .mobile-content .home-container .icon {
-    height: 10vw;
-    width: 10vw;
     margin: 0 auto;
-    margin-bottom: 2vw; }
+    margin-bottom: 2vw;
+    height: auto; }
+    .mobile-content .home-container .icon img {
+      width: 100%; }
   .mobile-content .home-container .hero-container .slider .slide .slide-body {
     padding: 0 5vw;
     height: 100%;
@@ -4256,8 +4262,8 @@ input.input-email {
             align-items: left;
         -ms-flex-direction: column;
             flex-direction: column;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+        -ms-flex-pack: center;
+            justify-content: center;
         padding-left: 5%; }
         .mobile-content .home-container .artworks-container .art-modal-caption .caption-text p {
           margin-top: 0;
@@ -4265,7 +4271,6 @@ input.input-email {
           margin: 0;
           font-size: 3vw;
           padding: 0;
-          line-height: 1;
           font-weight: 900; }
       .mobile-content .home-container .artworks-container .art-modal-caption button {
         position: absolute;
@@ -4302,9 +4307,10 @@ input.input-email {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
           margin: 0;
-          width: 60%; }
+          width: 60%;
+          padding-bottom: 2vw; }
           .mobile-content .home-container .study-areas-container .image .slick-slider .slick-dots li {
-            margin: 0px 1vw; }
+            margin: 0px 0.5vw; }
             .mobile-content .home-container .study-areas-container .image .slick-slider .slick-dots li button:before {
               border: solid 0.2vw #000; }
           .mobile-content .home-container .study-areas-container .image .slick-slider .slick-dots .slick-active button:before {
@@ -4321,26 +4327,24 @@ input.input-email {
       background-color: #FFFFFF;
       width: 70%;
       padding: 4vw 6vw 0 6vw;
-      z-index: 1; }
+      z-index: 1;
+      text-align: center;
+      margin-bottom: 2vw; }
       .mobile-content .home-container .study-areas-container .caption h2 {
         font-size: 3.5vw;
-        text-align: center;
-        margin-bottom: 2vw;
         color: #000; }
       .mobile-content .home-container .study-areas-container .caption p {
         height: 10vw;
         font-family: 'Montserrat Ultra Light';
-        margin-bottom: 2vw;
         font-size: 2.2vw;
+        text-align: left;
         overflow: scroll; }
-      .mobile-content .home-container .study-areas-container .caption .button-container {
-        width: 100%;
-        text-align: center; }
-        .mobile-content .home-container .study-areas-container .caption .button-container button.button {
-          box-shadow: 0.5vw 0.5vw 0.6vw rgba(0, 0, 0, 0.3);
-          font-size: 2.5vw;
-          padding: 1vw 4vw;
-          margin-bottom: 12vw; }
+      .mobile-content .home-container .study-areas-container .caption img {
+        width: 10vw; }
+      .mobile-content .home-container .study-areas-container .caption button.button {
+        font-size: 2.5vw;
+        padding: 1vw 4vw;
+        margin-bottom: 12vw; }
   .mobile-content .home-container .discover-container {
     position: relative;
     text-align: center;
@@ -4350,13 +4354,14 @@ input.input-email {
         flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 5vw 0; }
+    padding: 5vw 0;
+    background: #666; }
     .mobile-content .home-container .discover-container .background {
       position: absolute;
       width: 100%;
       height: 100%;
       opacity: 0.5;
-      background-image: url("https://res.cloudinary.com/mozaik/image/upload/q_auto/v1523264291/HeroSlide3Image_fwxq00.png");
+      background-image: url("https://res.cloudinary.com/mozaik/image/upload/s--Vsx3VT7a--/v1534125144/1363134_st3wgv.jpg");
       background-position: center;
       background-size: cover; }
     .mobile-content .home-container .discover-container .discover-content {
@@ -4394,11 +4399,18 @@ input.input-email {
       .mobile-content .home-container .footnotes p.header {
         font-size: 2.5vw;
         text-align: center; }
-    .mobile-content .home-container .footnotes button.button {
-      box-shadow: 0.5vw 0.5vw 0.6vw rgba(0, 0, 0, 0.75); }
+    .mobile-content .home-container .footnotes button.button.find-out-more {
+      box-shadow: 0.5vw 0.5vw 0.6vw rgba(0, 0, 0, 0.75);
+      position: absolute;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
     .mobile-content .home-container .footnotes button.button.subscribe {
       box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
       background-color: #FF6D6D; }
+    .mobile-content .home-container .footnotes .icon {
+      width: 100%;
+      margin-top: -5vw; }
     .mobile-content .home-container .footnotes input {
       width: 75%;
       border: none;

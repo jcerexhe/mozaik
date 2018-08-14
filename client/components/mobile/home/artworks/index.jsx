@@ -41,7 +41,7 @@ export default class MobileHomeArtworks extends Component {
   }
 
   render() {
-    const { artworks } = this.props;
+    const { artworks, schoolNames } = this.props;
     const { artIndeces, artIndex, showArtModal } = this.state;
     return (
       <div className='artworks-container' id="home-art-modal-parent"> { /* ID needed for modal config */ }
@@ -61,8 +61,9 @@ export default class MobileHomeArtworks extends Component {
             artIndex = {artIndex}
             showArtModal = {showArtModal}
             handleCloseArtModal = {() => this.handleCloseArtModal()}
+            schoolNames = {schoolNames}
           >
-          </Modal>          
+          </Modal>
         </div>
       </div>
     );

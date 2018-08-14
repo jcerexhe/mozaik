@@ -56,10 +56,8 @@ export default class MobileHomeStudyAreas extends Component {
         <div className='content-container caption'>
           { studyAreas[activeSlide].title.toLowerCase() == 'film tv audio' ? <h2>FILM / TV / AUDIO</h2> : <h2>{studyAreas[activeSlide].title}</h2>}
           <p>{ studyAreas[activeSlide].description }</p>
-          <div className='icon'></div>
-          <div className="button-container">
-            <button className='button'>FIND OUT MORE</button>
-          </div>
+          <div className='icon'><img src="/images/mobile/icons/study-areas.png"/></div>
+          <button className='button'>FIND OUT MORE</button>
         </div>
       </div>
     );

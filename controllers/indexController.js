@@ -16,12 +16,14 @@ exports.home = (req, res) => {
   let allSchools = res.locals.allSchools
   let allStudyAreas = res.locals.allStudyAreas
   let allArt = [];
+  let schoolNames = [];
 
    // Get device used to view
   let viewDevice = req.device.type
 
   allSchools.forEach(school =>{
     allArt = allArt.concat(school.artworks);
+    schoolNames = schoolNames.concat({full: school.name, acronym:  school.short_name}); // This will serve as index for finding school acronym
   });
 
   if (viewDevice == 'desktop') {
@@ -30,22 +32,12 @@ exports.home = (req, res) => {
   res.render('home', { Hero, homeLightbox });
   } else {
     const HeroMob = reactHelper.renderComponent('MobileHomeHero');
-    const Artworks = reactHelper.renderComponent('MobileHomeArtworks', {artworks: allArt});
+    const Artworks = reactHelper.renderComponent('MobileHomeArtworks', {artworks: allArt, schoolNames: schoolNames});
     const StudyAreas = reactHelper.renderComponent('MobileHomeStudyAreas', {studyAreas: allStudyAreas});
     res.render('mobile/home', {HeroMob, Artworks, StudyAreas});
   };
 };
 
-
-exports.getSchool = async (req, res, next) => {
-  const school = await School.findOne({ slug: req.params.schoolSlug });
-  if (!school) {
-    res.redirect('/');
-  } else {
-    res.locals.school = school;
-    next();
-  }
-};
 
 exports.getStudyArea = async (req, res, next) => {
   const area = await StudyArea.findOne({ slug: req.params.areaSlug });
@@ -73,6 +65,16 @@ exports.schoolArtwork = (req, res) => {
  };
 
 
+exports.getSchool = async (req, res, next) => {
+  const school = await School.findOne({ slug: req.params.schoolSlug });
+  if (!school) {
+    res.redirect('/');
+  } else {
+    res.locals.school = school;
+    next();
+  }
+};
+
 exports.schoolDetails = (req, res) => {
   const school = res.locals.school;
   const displayedArt = school.displayedArt;
@@ -80,7 +82,7 @@ exports.schoolDetails = (req, res) => {
   const schoolLightBox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: artworks, displayedArt: displayedArt });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
-  const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
+  const Alumni = eactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
 
   res.render('schoolDetails', { school, schoolLightBox, CampusMaps, Facilities, Alumni, Courses });
@@ -112,11 +114,6 @@ exports.about = (req, res) => {
   };
 };
 
-
-exports.studyAreas= (req, res) => {
-  const Search = reactHelper.renderComponent('SearchApp');
-  res.render('studyArea', {Search });
-};
 
 exports.partner = (req, res) => {
   const Partner = reactHelper.renderComponent('PartnerApp');
@@ -151,6 +148,20 @@ exports.individualArea = (req, res) => {
     res.render('mobile/individualArea', { IndividualStudyAreaMobile });
   };
 };
+
+
+exports.schoolCourses = (req, res) => {
+  const school = res.locals.school;
+  const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
+  res.render('schoolCourses', { school, Courses });
+};
+
+
+exports.studyAreas= (req, res) => {
+   const Search = reactHelper.renderComponent('SearchApp');
+  res.render('studyArea', {Search });
+};
+
 
 exports.selectArea = (req, res) => {
   const SelectArea = reactHelper.renderComponent('SelectAreaApp');
