@@ -24,8 +24,11 @@ export default class MobileAgency extends Component {
 					arrangements, help you find accommodation and make your first day less daunting<br/>
 					by providing an arrival welcome pack.
 					</p>
-
+					<div className="paper-plane">
+						<img src="/images/agency-icons/Paperplane.png" />
+					</div>
 					<div className="row mobile-timeline-agency">
+						
 						<div className="col-md-4 m-timeline-img">
 							<img src='/images/elements/timeline.png' />
 						</div>
