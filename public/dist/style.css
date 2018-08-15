@@ -3754,8 +3754,41 @@ ul.careers-lists > li:before {
 #sites {
   margin-top: 50px; }
 
-.rc-slider {
-  width: 80% !important; }
+.discover-column-container .rc-slider {
+  width: 80%;
+  height: auto; }
+  .discover-column-container .rc-slider .rc-slider-rail {
+    background-color: #ff6d6d;
+    height: 1px; }
+  .discover-column-container .rc-slider .rc-slider-track {
+    background-color: white;
+    height: 1px;
+    left: 0%;
+    width: 100%;
+    z-index: 1; }
+  .discover-column-container .rc-slider .rc-slider-handle {
+    border: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    margin-left: -4px;
+    margin-top: -4px; }
+    .discover-column-container .rc-slider .rc-slider-handle:focus {
+      border: none;
+      box-shadow: none;
+      outline: none; }
+  .discover-column-container .rc-slider .rc-slider-dot {
+    width: 10px;
+    height: 10px;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    background-color: #ff6d6d;
+    border: none;
+    border-radius: 0px; }
+  .discover-column-container .rc-slider .rc-slider-mark {
+    color: #FFFFFF; }
+  .discover-column-container .rc-slider .rc-slider-mark-text-active {
+    color: #FFFFFF; }
 
 .grey-bg {
   background-color: #181818; }
@@ -4456,36 +4489,92 @@ input.input-email {
     height: 100vh; } }
 
 .mobile-discover-container {
-  background-color: #181818;
-  padding-top: 20vw; }
+  padding: 20vw 3vw 5vw 3vw;
+  font-family: 'Bebas Neue';
+  font-size: 3vw; }
+  .mobile-discover-container .default-button {
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+    background-color: white;
+    color: #000;
+    width: 100%;
+    padding: 2vw 0;
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5); }
+  .mobile-discover-container .pink-btn {
+    background-color: #FF6D6D;
+    color: #FFFFFF; }
+    .mobile-discover-container .pink-btn.plus {
+      width: 10vw;
+      height: 10vw;
+      border-radius: 50%;
+      padding: 2vw 2.3vw;
+      position: absolute;
+      bottom: -5vw;
+      right: -0.5vw; }
+      .mobile-discover-container .pink-btn.plus hr {
+        width: 4.25vw;
+        border: 0.2vw solid #FFFFFF;
+        background-color: #FFFFFF;
+        margin: 0 auto; }
+        .mobile-discover-container .pink-btn.plus hr.vertical {
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .mobile-discover-container .grid {
+    padding-bottom: 2vw;
+    position: relative; }
+  .mobile-discover-container .col {
+    padding: 1vw; }
+  .mobile-discover-container .header {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5vw; }
+    .mobile-discover-container .header h1 {
+      font-family: 'Montserrat Extra Bold';
+      color: #FFFFFF;
+      font-size: 7vw; }
+  .mobile-discover-container form {
+    text-align: center;
+    margin-bottom: 2vw; }
+    .mobile-discover-container form input {
+      width: 55%;
+      border: none;
+      border-radius: 1vw;
+      padding: 0.5vw 2vw;
+      background-color: #FFFFFF;
+      color: #000; }
+      .mobile-discover-container form input::-webkit-input-placeholder {
+        color: #000; }
+      .mobile-discover-container form input:-ms-input-placeholder {
+        color: #000; }
+      .mobile-discover-container form input::placeholder {
+        color: #000; }
+  .mobile-discover-container .countries-grid {
+    padding: 0 2vw; }
+    .mobile-discover-container .countries-grid .country-button {
+      padding: 0 1vw; }
+  .mobile-discover-container .disciplines-section {
+    text-align: center;
+    padding-bottom: 2vw; }
+    .mobile-discover-container .disciplines-section .clear-filter {
+      border-radius: 0;
+      border: solid 0.25vw #FFFFFF;
+      width: 35%;
+      padding: 1vw 0; }
   .mobile-discover-container .header-discover-container {
-    width: 60vw;
+    width: 50vw;
     padding: 1vw 1vw;
     margin: 2vw auto;
     position: relative;
     color: #FFFFFF;
     font-size: 6vw;
+    font-family: 'Montserrat Bold' !important;
     font-weight: bold;
     text-align: center; }
     .mobile-discover-container .header-discover-container .header-title {
       border-style: solid;
       border-radius: 5px;
       border-color: white; }
-  .mobile-discover-container .searched-container {
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    width: 60vw;
-    padding: 1vw 1vw;
-    margin: 2vw auto;
-    position: relative;
-    font-size: 3vw; }
-  .mobile-discover-container .col-content {
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    font-size: 3vw;
-    text-align: center;
-    padding: 2vw 0;
-    margin-bottom: 1vw; }
   .mobile-discover-container .disciplines-container {
     padding: 2vw -1vw; }
     .mobile-discover-container .disciplines-container .grid-container, .mobile-discover-container .disciplines-container .schs-container {
@@ -4531,7 +4620,7 @@ input.input-email {
       width: 25vw;
       padding: 1vw 0;
       margin: 0 auto 2vw auto;
-      font-size: 3vw;
+      font-size: 2vw;
       text-align: center; }
   .mobile-discover-container .countries-container {
     padding: 2vw 0; }
@@ -4540,16 +4629,16 @@ input.input-email {
       .mobile-discover-container .countries-container .country-section .col-country {
         border-radius: 5px;
         background-color: #FF6D6D;
-        font-size: 3vw;
+        font-size: 2vw;
         color: #FFFFFF;
         text-align: center;
-        padding: 2vw 1vw;
+        padding: 1vw 1vw;
         margin-bottom: 1vw;
         white-space: nowrap; }
   .mobile-discover-container .sch-container {
     background-color: #deb887; }
     .mobile-discover-container .sch-container .col-school {
-      border-radius: 5px;
+      border-radius: 12px;
       background-color: #FFFFFF;
       font-size: 3vw;
       text-align: center;
@@ -4571,7 +4660,7 @@ input.input-email {
       text-align: center;
       padding: 3vh; }
   .mobile-discover-container .quali-container, .mobile-discover-container .location-container {
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: #FFFFFF;
     width: 90vw;
     padding: 1vw 1vw;
@@ -4583,9 +4672,9 @@ input.input-email {
       font-family: 'FontAwesome';
       content: "\F107";
       float: right;
-      color: grey;
+      color: gray;
       font-size: 12vh;
-      margin: -5vh 0 1vh 57vw;
+      margin: -5vh 0 1vh 61vw;
       position: absolute; }
     .mobile-discover-container .quali-container .panel-heading .accordion-toggle.collapsed:after, .mobile-discover-container .location-container .panel-heading .accordion-toggle.collapsed:after {
       content: "\F106"; }
@@ -4595,6 +4684,7 @@ input.input-email {
     margin: 3vw 32vw; }
     .mobile-discover-container .site-container p {
       background-color: #FFFFFF;
+      font-family: Helvetica !important;
       font-size: 2vw;
       text-align: center;
       white-space: nowrap;

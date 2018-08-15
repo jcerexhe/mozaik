@@ -26,7 +26,7 @@
 .discover-checkboxes {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .discover-checkboxes > label {
@@ -43,7 +43,47 @@
   margin-top: 50px;
 }
 
-.rc-slider {
-  width: 80% !important;
+.discover-column-container{
+  .rc-slider {
+    width: 80%;
+    height: auto;
+    .rc-slider-rail {
+      background-color: rgb(255, 109, 109);
+      height: 1px;
+    }
+    .rc-slider-track {
+      background-color: rgb(255, 255, 255);
+      height: 1px;
+      left: 0%;
+      width: 100%;
+      z-index: 1;
+    }
+    .rc-slider-handle {
+      border: none;
+      background-color: rgb(255, 255, 255);
+      width: 10px;
+      height: 10px;
+      margin-left: -4px;
+      margin-top: -4px;
+      &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .rc-slider-dot {
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      background-color: rgb(255, 109, 109);
+      border: none;
+      border-radius: 0px;
+    }
+    .rc-slider-mark {
+      color: $white;
+    }
+    .rc-slider-mark-text-active {
+      color: $white;
+    }
+  }
 }
-
