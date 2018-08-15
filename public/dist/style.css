@@ -4047,10 +4047,14 @@ input.input-email {
             top: 0; }
           .mobile-menu-container .navbar-container .bar-2 .menu-icon-slot #mobile-menu-icon hr:nth-child(2) {
             border: 0.1vw solid;
-            top: 50%; }
+            top: 50%;
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
           .mobile-menu-container .navbar-container .bar-2 .menu-icon-slot #mobile-menu-icon hr:nth-child(3) {
             border: 0.1vw solid;
-            bottom: 50%; }
+            bottom: 50%;
+            -ms-transform: translateY(50%);
+                transform: translateY(50%); }
           .mobile-menu-container .navbar-container .bar-2 .menu-icon-slot #mobile-menu-icon hr:nth-child(4) {
             bottom: 0; }
         .mobile-menu-container .navbar-container .bar-2 .menu-icon-slot #mobile-menu-icon.open hr:nth-child(1), .mobile-menu-container .navbar-container .bar-2 .menu-icon-slot #mobile-menu-icon.open hr:nth-child(4) {
@@ -4167,7 +4171,8 @@ input.input-email {
   .mobile-content .home-container .icon {
     margin: 0 auto;
     margin-bottom: 2vw;
-    height: auto; }
+    height: auto;
+    width: 10vw; }
     .mobile-content .home-container .icon img {
       width: 100%; }
   .mobile-content .home-container .hero-container .slider .slide .slide-body {
@@ -4328,9 +4333,9 @@ input.input-email {
       width: 70%;
       padding: 4vw 6vw 0 6vw;
       z-index: 1;
-      text-align: center;
-      margin-bottom: 2vw; }
+      text-align: center; }
       .mobile-content .home-container .study-areas-container .caption h2 {
+        margin-bottom: 2vw;
         font-size: 3.5vw;
         color: #000; }
       .mobile-content .home-container .study-areas-container .caption p {
@@ -4339,8 +4344,6 @@ input.input-email {
         font-size: 2.2vw;
         text-align: left;
         overflow: scroll; }
-      .mobile-content .home-container .study-areas-container .caption img {
-        width: 10vw; }
       .mobile-content .home-container .study-areas-container .caption button.button {
         font-size: 2.5vw;
         padding: 1vw 4vw;
@@ -4451,6 +4454,174 @@ input.input-email {
       height: calc(220vh * 0.6); }
   .mobile-content .home-container .discover-container {
     height: 100vh; } }
+
+.mobile-discover-container {
+  background-color: #181818;
+  padding-top: 20vw; }
+  .mobile-discover-container .header-discover-container {
+    width: 60vw;
+    padding: 1vw 1vw;
+    margin: 2vw auto;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center; }
+    .mobile-discover-container .header-discover-container .header-title {
+      border-style: solid;
+      border-radius: 5px;
+      border-color: white; }
+  .mobile-discover-container .searched-container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 60vw;
+    padding: 1vw 1vw;
+    margin: 2vw auto;
+    position: relative;
+    font-size: 3vw; }
+  .mobile-discover-container .col-content {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vw 0;
+    margin-bottom: 1vw; }
+  .mobile-discover-container .disciplines-container {
+    padding: 2vw -1vw; }
+    .mobile-discover-container .disciplines-container .grid-container, .mobile-discover-container .disciplines-container .schs-container {
+      position: relative;
+      color: #000;
+      margin-bottom: 2vw; }
+      .mobile-discover-container .disciplines-container .grid-container .plus-button, .mobile-discover-container .disciplines-container .schs-container .plus-button {
+        background-color: #FF6D6D;
+        color: #FFFFFF;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        bottom: -10%;
+        right: -2%;
+        border-radius: 50%; }
+      .mobile-discover-container .disciplines-container .grid-container .plus-button::after, .mobile-discover-container .disciplines-container .schs-container .plus-button::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        height: 5px;
+        margin-top: -4px;
+        top: 50%;
+        left: 25px;
+        right: 25px;
+        z-index: 9; }
+      .mobile-discover-container .disciplines-container .grid-container .plus-button::before, .mobile-discover-container .disciplines-container .schs-container .plus-button::before {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        width: 6px;
+        margin-left: -3px;
+        left: 50%;
+        top: 24px;
+        bottom: 26px;
+        z-index: 9; }
+    .mobile-discover-container .disciplines-container .clear-all-container {
+      border-style: solid;
+      border-radius: 5px;
+      background-color: #FF6D6D;
+      color: #FFFFFF;
+      width: 25vw;
+      padding: 1vw 0;
+      margin: 0 auto 2vw auto;
+      font-size: 3vw;
+      text-align: center; }
+  .mobile-discover-container .countries-container {
+    padding: 2vw 0; }
+    .mobile-discover-container .countries-container .country-section {
+      position: relative; }
+      .mobile-discover-container .countries-container .country-section .col-country {
+        border-radius: 5px;
+        background-color: #FF6D6D;
+        font-size: 3vw;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 2vw 1vw;
+        margin-bottom: 1vw;
+        white-space: nowrap; }
+  .mobile-discover-container .sch-container {
+    background-color: #deb887; }
+    .mobile-discover-container .sch-container .col-school {
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      font-size: 3vw;
+      text-align: center;
+      padding: 11vw 7vw; }
+    .mobile-discover-container .sch-container .sch-name {
+      padding: 2vw;
+      background: #d7e0dd;
+      position: relative;
+      top: -18%;
+      font-size: 1.5rem;
+      text-align: center; }
+  .mobile-discover-container .adv-search-container {
+    margin: 2vw 0;
+    position: relative;
+    background-color: #FF6D6D; }
+    .mobile-discover-container .adv-search-container .adv-search-title {
+      color: #FFFFFF;
+      font-size: 2rem;
+      text-align: center;
+      padding: 3vh; }
+  .mobile-discover-container .quali-container, .mobile-discover-container .location-container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 90vw;
+    padding: 1vw 1vw;
+    margin: 2vw auto;
+    position: relative;
+    font-size: 3vw; }
+    .mobile-discover-container .quali-container .panel-heading .accordion-toggle:after, .mobile-discover-container .location-container .panel-heading .accordion-toggle:after {
+      /* symbol for "opening" panels */
+      font-family: 'FontAwesome';
+      content: "\F107";
+      float: right;
+      color: grey;
+      font-size: 12vh;
+      margin: -5vh 0 1vh 57vw;
+      position: absolute; }
+    .mobile-discover-container .quali-container .panel-heading .accordion-toggle.collapsed:after, .mobile-discover-container .location-container .panel-heading .accordion-toggle.collapsed:after {
+      content: "\F106"; }
+  .mobile-discover-container .location-container .panel-heading .accordion-toggle:after {
+    margin: -5vh 0 1vh 67vw !important; }
+  .mobile-discover-container .site-container {
+    margin: 3vw 32vw; }
+    .mobile-discover-container .site-container p {
+      background-color: #FFFFFF;
+      font-size: 2vw;
+      text-align: center;
+      white-space: nowrap;
+      position: relative;
+      padding: 1vw; }
+  .mobile-discover-container .submit-container {
+    margin: 7vw 32vw;
+    position: relative;
+    background-color: #FF6D6D;
+    border-radius: 110px; }
+    .mobile-discover-container .submit-container .submit-section {
+      color: #FFFFFF;
+      font-size: 2rem;
+      text-align: center;
+      padding: 3vh; }
+  .mobile-discover-container .prange-container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 90vw;
+    padding: 1vw 1vw;
+    margin: 2vw auto;
+    position: relative;
+    font-size: 3vw; }
+    .mobile-discover-container .prange-container .ui-rangeslider-sliders {
+      position: absolute;
+      overflow: visible;
+      margin: -8vh 30vh 0 30vw; }
 
 .individual-area-container h1.mobile-study-area-page-heading {
   margin-right: auto;
