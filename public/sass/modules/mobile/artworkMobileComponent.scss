@@ -67,7 +67,7 @@
     display: flex;
     align-items: top;
     background-color: blue;
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 
@@ -80,7 +80,7 @@
     }
 
     .art-box{
-      width: 40%;
+      width: 100%;
       border: 1px solid #fff;
       display: flex;
       flex-direction: column;
@@ -93,7 +93,7 @@
 
         .art-box-img{
           background-position: center;
-          background-size: 100%;
+          background-size: cover;
         }
 
         .art-box-1-img{

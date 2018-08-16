@@ -2,64 +2,44 @@ extends ../layouts/mobile
 
 block content
  .school-details-container
-  .school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
+  .m-school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
     .school-heading
       .school-info
-        //- img(src=school.logo)
         h1= school.name
-      .school-links.video-link
-        a(href='#myModal',data-toggle='modal', data-target='#myModal')
-          img(src="/images/buttons/playvideo.png")
-          // Modal
-          #myModal.modal.modal-school-video
-           .modal-body.modal-body-school-video
-             p.button.modal-close-button-school-video(onclick="stopSchoolVid('" + school.video + "')") &times;
-             iframe.school-video(width='100%', height='100%', src= school.video, frameborder='0', allowfullscreen='')
+      .school-logo-header
+        img(src=school.logo)
+  .m-school-heading-overview(style={'background-image': 'url('+ school.header_image_1 +')'})
+    //img(src="https://res.cloudinary.com/mozaik/image/upload/s--IWU4EuQR--/v1509766596/VFS/school_gallery/VFS_Entrance.jpg")
+    //img(src="https://res.cloudinary.com/mozaik/image/upload/s--lqt7Aaih--/v1524639984/FSU/campus_photography/Full_Sail_University-1.jpg")
+    //img(src="https://res.cloudinary.com/mozaik/image/upload/v1507266743/AFTRS/facilities/Inside_AFTRS.jpg")
+    //img(src="https://res.cloudinary.com/mozaik/image/upload/v1522938587/NIDA/gallery_of_pics/Atrium-banner-1.jpg")
+    .m-school-overview
+     p=school.overview
+     .m-school-links1
+       .m-school-link
+         a(href='#' class='m-btn')
+          span Price
+          span.caret
+       .m-school-link
+         a(href='#' class='m-btn')
+          span Location
+          span.caret
+     .m-school-links2
+       .school-forms-modal
+       .m-school-link
+         a(href='#' onclick="createCGForm('"+ school.formidsc +"')" class='m-btn')
+          span Course Guide
+       a#cg_link(style="display:none;" href=school.courseGuide download target="_blank")
+       .m-school-link
+         a(href='#' onclick="createSForm('"+ school.formidse +"')" class='m-btn')
+          span Enquire
+       .m-school-link
+         a(href='#' onclick="createSForm('"+ school.formidsa +"')" class='m-btn')
+          span Apply 
+  .m-student-work-header
+   h1 Student Works
   .m-student-work
    !=schoolMobileLightBox
 
-  .m-school-overview-container(style={'background-image': 'url('+ school.header_image_2 +')'})
-    img.scroll-down(src="/images/buttons/Scroll-Down.png")
-    .school-logo
-      img(src=school.logo)
-    .school-overview
-      .details-box
-        h2 overview
-        p=school.overview
-        h3 campus location
-        ul
-            each loc in school.locations
-              li=loc.campus
-        h3 delivery
-        ul
-            each delivery in school.delivery
-              li=delivery
-    .school-fees
-      .details-box
-        h2 fees scholarship
-        h3 price range
-        ul
-          each price in school.prices
-            li
-              =`${price.type}:`
-              br
-              =`${price.currency} ${price.lower.toLocaleString()} - ${price.currency} ${price.upper.toLocaleString()}`
-        h3 scholarship
-        ul
-          each scholarship in school.scholarships
-            li=scholarship
-    .school-links
-        .school-forms-modal
-        .school-link
-          a(href='#' onclick="createSForm('"+ school.formidsa +"')" class='btn')
-            span Apply
-        .school-link
-          a(href='#' onclick="createSForm('"+ school.formidse +"')" class='btn')
-            span Enquire
-        .school-link
-          a(href='#' onclick="createCGForm('"+ school.formidsc +"')" class='btn')
-            span Course Guide
-        a#cg_link(style="display:none;" href=school.courseGuide download target="_blank")
-
-  !=mobileCourses
+  
   
