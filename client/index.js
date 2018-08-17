@@ -43,6 +43,9 @@ import MobileDiscover from './components/mobile/search/discover.jsx';
 import MobileIndividualStudyArea from'./components/mobile/individualArea/index.jsx';
 import MobileAbout from './components/mobile/about/index.jsx';
 import MobileAgency from './components/mobile/agency/index.jsx';
+import MobileArtwork from './components/mobile/artwork/index.jsx';
+import MobileCourses from './components/mobile/courses/index.jsx';
+
 // Register to allow usage in node
 reactHelper.register({ MobileMenu });
 reactHelper.register({ MobileHomeHero });
@@ -52,6 +55,8 @@ reactHelper.register({ MobileDiscover });
 reactHelper.register({ MobileIndividualStudyArea });
 reactHelper.register({ MobileAbout });
 reactHelper.register({ MobileAgency });
+reactHelper.register({ MobileArtwork });
+reactHelper.register({ MobileCourses });
 
 
 
