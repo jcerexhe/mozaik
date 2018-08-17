@@ -197,50 +197,50 @@ export default class ArtworkApp extends Component {
     console.log(artDisplay)
     let gt = ">";
     return (
-        <div className='grey-bg'>
-          <div className='artworks'>
-            <div className='artwork-container'>
-            { artworks.length > 0 ? this.renderLightbox() : <div /> }
-              <div className="art-box">
-                <div className="art-box-1">
-                  { this.renderImg(images, 0) }
+      <div className='grey-bg'>
+        <div className='artworks'>
+          <div className='artwork-container'>
+          { artworks.length > 0 ? this.renderLightbox() : <div /> }
+            <div className="art-box">
+              <div className="art-box-1">
+                { this.renderImg(images, 0) }
+              </div>
+              <div className="art-box-1">
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 1) }
                 </div>
-                <div className="art-box-1">
-                  <div className="art-box-1-img">
-                    { this.renderImg(images, 1) }
-                  </div>
-                  <div className="art-box-1-img">
-                    { this.renderImg(images, 2) }
-                  </div>
+                <div className="art-box-1-img">
+                  { this.renderImg(images, 2) }
                 </div>
+              </div>
 
-              </div>
-              <div className="art-box">
-                <div className="art-box-2">
-                  <div className="art-box-2-img right">
-                    { this.renderImg(images, 3) }
-                  </div>
-                  <div className="art-box-2-img left">
-                    { this.renderImg(images, 5) }
-                  </div>
+            </div>
+            <div className="art-box">
+              <div className="art-box-2">
+                <div className="art-box-2-img right">
+                  { this.renderImg(images, 3) }
                 </div>
-                <div className="art-box-2-diagonal">
-                  { this.renderImg(images, 4) }
+                <div className="art-box-2-img left">
+                  { this.renderImg(images, 5) }
                 </div>
               </div>
-              <div className="art-box-last">
-                <div className="artwork-next">
-                  <button onClick={()=>this.updateIndexList()} > {gt} </button>
-                </div>
-                <div className="art-box-3">
-                  <div className="art-box-3-img">
-                    { this.renderImg(images, 6) }
-                  </div>
+              <div className="art-box-2-diagonal">
+                { this.renderImg(images, 4) }
+              </div>
+            </div>
+            <div className="art-box-last">
+              <div className="artwork-next">
+                <button onClick={()=>this.updateIndexList()} > {gt} </button>
+              </div>
+              <div className="art-box-3">
+                <div className="art-box-3-img">
+                  { this.renderImg(images, 6) }
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     );
   }
 }
