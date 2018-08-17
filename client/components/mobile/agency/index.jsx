@@ -24,62 +24,66 @@ export default class MobileAgency extends Component {
 					arrangements, help you find accommodation and make your first day less daunting<br/>
 					by providing an arrival welcome pack.
 					</p>
+					<div className="paper-plane">
+						<img src="/images/agency-icons/Paperplane.png" />
+					</div>
 					<div className="row mobile-timeline-agency">
+						
 						<div className="col-md-4 m-timeline-img">
 							<img src='/images/elements/timeline.png' />
 						</div>
 						<div className="col-md-8 m-timeline-icons">
 							<a href="#discover" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/discover1.png" />
 									<p className="agency-icon-label">Discover</p>
 								</div>
 							</a>
 							<a href="#selection" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/selection2.png" />
 									<p className="agency-icon-label">Selection of Course and School</p>
 								</div>
 							</a>
 							<a href="#application" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/application3.png" />
 									<p className="agency-icon-label">Application</p>
 								</div>
 							</a>
 							<a href="#creative" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/creative4.png" />
 									<p className="agency-icon-label">Creative Portfolio Preparation</p>
 								</div>
 							</a>
 							<a href="#visa" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/visa5.png" />
 									<p className="agency-icon-label">Visa Submission and Medical Insurance</p>
 								</div>
 							</a>
 							<a href="#travel" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/travel6.png" />
 									<p className="agency-icon-label">Travel Arrangements</p>
 								</div>
 							</a>
 							<a href="#accomodation" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/accomodation7.png" />
 									<p className="agency-icon-label">Accomodation and Arrangements</p>
 								</div>
 							</a>
 							<a href="#departure" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/support8.png" />
 									<p className="agency-icon-label">Pre and Post Departure Support</p>
 								</div>
 							</a>
 							<a href="#study-period" data-toggle="modal">
 								<div className="agency-icon">
-									<img className="agency-icon-img" src="https://res.cloudinary.com/mozaik/image/upload/v1510200548/Mozaik_logo_pink_z9yl2v.png" />
+									<img className="agency-icon-img" src="/images/agency-icons/study_period9.png" />
 									<p className="agency-icon-label">Support throughout your study period</p>
 								</div>
 							</a>

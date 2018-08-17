@@ -54,24 +54,35 @@
         margin: 0;
 
         li {
-          padding: 5vw 0;
+          padding: 6vw 0;
+
+          a.active {
+            pointer-events: none;
+          }
+
           .icon {
-            height: 10vw;
+            height: auto;
             width: 10vw;
-            margin: 0 3vw 0 0;
+            margin: 0 4vw 0 0;
             display: inline-block;
             vertical-align: middle;
+
+            img {
+              width: 100%;
+            }
           }
-          a {
+
+          p {
             text-decoration: none;
             color: $white;
             font-size: 3.5vw;
+            display: inline-block;
             &.active {
               border-bottom: 0.5vw solid $pink;
-              pointer-events: none;
               cursor: default;
             }
           }
+
         }
       }
     }
@@ -150,10 +161,12 @@
             &:nth-child(2) {
               border: 0.1vw solid;
               top: 50%;
+              transform: translateY(-50%);
             }
             &:nth-child(3) {
               border: 0.1vw solid;
               bottom: 50%;
+              transform: translateY(50%);
             }
             &:nth-child(4) {
               bottom: 0;

@@ -1,37 +1,18 @@
 import React, { Component } from 'react';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-import Slider from 'rc-slider';
 import _ from 'lodash';
 
+import '!style-loader!css-loader!rc-slider/assets/index.css';
+import Slider from 'rc-slider';
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
-const handleStyle = {
-  backgroundColor: '#ffffff',
-  border: 'none',
-  //borderRadius: 0,
-  //transform: 'rotate(45deg)',
-  width: '10px',
-  height: '10px'
-};
-const trackStyle = {
-  backgroundColor: '#ffffff',
-  height: '1px'
-};
-const railStyle = {
-  height: '1px'
-};
-const dotStyle = {
-  bottom: '0px',
-  width: '11px',
-  height: '11px'
-};
 
 const Map = withGoogleMap(props => (
   <GoogleMap
     zoom={2}
     center={ { lat: 0.0, lng: 150.0 } }
   >
-    
+
     {_.map(props.coords, (coord, index) => {
       return (
         <Marker
@@ -89,14 +70,13 @@ export default class DiscoverApp extends Component {
     const site = ['on campus', 'online'];
     const inputs = ['city', 'state', 'country'];
     let coords = [];
-    _.forEach(this.state.allLocInfo, 
+    _.forEach(this.state.allLocInfo,
       (locInfo) => {
         _.forEach(locInfo.locations,
           (locCoord) => {
             coords.push(locCoord.coordinates)
           })
       });
-    console.log(coords)
     return (
       <div className="map">
         <Map
@@ -135,13 +115,9 @@ export default class DiscoverApp extends Component {
               value={ priceRange }
               allowCross={ false }
               onChange={ (val) => this.updateSearchParam('priceRange', val) }
-              handleStyle={[handleStyle, handleStyle]}
-              trackStyle={[trackStyle]}
-              railStyle={ railStyle }
-              dotStyle={ dotStyle }
               marks={ { 0: <strong>$0</strong>, 200000: <strong>$200,000+</strong> } }
             />
-          
+
             <div id='sites' className='discover-checkboxes control-group'>
               { _.map(site, (s, i) => {
                 return (

@@ -5,13 +5,14 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 5vw 0;
+  background: #666;
 
   .background {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background-image: url('https://res.cloudinary.com/mozaik/image/upload/q_auto/v1523264291/HeroSlide3Image_fwxq00.png');
+    background-image: url('https://res.cloudinary.com/mozaik/image/upload/s--Vsx3VT7a--/v1534125144/1363134_st3wgv.jpg');
     background-position: center;
     background-size: cover;
   }
@@ -30,7 +31,6 @@
         color: $pink;
       }
     }
+
   }
-
 }
-
