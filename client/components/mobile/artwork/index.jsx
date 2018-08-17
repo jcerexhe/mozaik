@@ -199,8 +199,8 @@ export default class MobileArtwork extends Component {
     return (
       <div className='mobile-artwork-container'>
         <div className='m-grey-bg'>
-          <div className='artworks'>
-            <div className='artwork-container'>
+          <div className='m-artworks'>
+            <div className='m-artwork-container'>
             { artworks.length > 0 ? this.renderLightbox() : <div /> }
               <div className="art-box">
                 <div className="art-box-1">
@@ -221,6 +221,9 @@ export default class MobileArtwork extends Component {
                     { this.renderImg(images, 3) }
                   </div>
                 </div>
+              </div>
+              <div className="m-artwork-next">
+                <button><span>+</span></button>
               </div>
             </div>
           </div>
