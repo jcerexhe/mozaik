@@ -4859,6 +4859,699 @@ input.input-email {
           color: #000;
           text-align: center; }
 
+.school-details-container .m-school-heading-container {
+  /* background-color: $grey; */
+  background-color: blue;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 50vh; }
+
+.school-details-container .school-heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30%;
+  width: 100%;
+  box-sizing: border-box; }
+  .school-details-container .school-heading .school-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .school-details-container .school-heading .school-info h1 {
+    text-align: center !important;
+    width: 100%;
+    font-size: 40pt;
+    font-family: 'Gotham Bold';
+    font-weight: bold;
+    color: #FFFFFF; }
+  .school-details-container .school-heading .school-logo-header img {
+    margin-right: 20px;
+    max-width: 150px;
+    height: auto;
+    background-color: #181818;
+    /*background: none;*/ }
+  .school-details-container .school-heading .school-name {
+    font-family: 'Montserrat Ultra Light'; }
+
+.school-details-container .m-school-heading-overview {
+  /* background-color: $grey; */
+  background-color: blue;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 50vh; }
+
+.school-details-container .m-school-overview {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 50vh;
+  width: 100%; }
+  .school-details-container .m-school-overview p {
+    font-size: 30px;
+    font-color: #000;
+    text-align: center;
+    padding: 30px 150px 0px 150px; }
+
+.school-details-container .m-school-links1 {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding-top: 60px; }
+  .school-details-container .m-school-links1 .m-school-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #000;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px; }
+  .school-details-container .m-school-links1 .m-btn {
+    text-align: center;
+    letter-spacing: 0px;
+    color: white;
+    font-size: 30px; }
+
+.school-details-container .m-school-links2 {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding-top: 60px; }
+  .school-details-container .m-school-links2 .m-school-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #000;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; }
+  .school-details-container .m-school-links2 .m-btn {
+    letter-spacing: 0px;
+    color: white;
+    font-size: 30px; }
+
+.school-details-container .modal-x {
+  margin-top: -50%; }
+
+.school-details-container .m-student-work-header {
+  text-align: center; }
+  .school-details-container .m-student-work-header h1 {
+    padding: 30px;
+    color: #fff;
+    font-size: 4em; }
+
+.school-details-container .m-student-work {
+  height: 90vh;
+  background-color: red; }
+
+.school-details-container .m-student-work > p {
+  margin: 0; }
+
+.school-details-container .m-school-overview-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: top;
+      align-items: top;
+  /* height: 100vh; */
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center; }
+  .school-details-container .m-school-overview-container .scroll-down {
+    position: absolute;
+    bottom: -25px;
+    left: 46%;
+    width: 100px; }
+  .school-details-container .m-school-overview-container h1 {
+    margin: 0; }
+  .school-details-container .m-school-overview-container h2 {
+    font-size: 30pt;
+    text-align: center; }
+  .school-details-container .m-school-overview-container .school-logo {
+    width: 20%;
+    text-align: left; }
+    .school-details-container .m-school-overview-container .school-logo img {
+      width: 80%;
+      margin-top: 100px; }
+  .school-details-container .m-school-overview-container .school-overview {
+    width: 30%;
+    padding: 5px; }
+  .school-details-container .m-school-overview-container .school-fees {
+    width: 30%;
+    padding: 5px; }
+  .school-details-container .m-school-overview-container .details-box {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 580px;
+    box-sizing: border-box;
+    overflow-y: auto; }
+    .school-details-container .m-school-overview-container .details-box p {
+      padding: 0 30px;
+      padding-bottom: 20px;
+      font-size: 15px; }
+    .school-details-container .m-school-overview-container .details-box h3 {
+      color: #000;
+      text-transform: uppercase;
+      font-size: 15pt;
+      margin: 0; }
+    .school-details-container .m-school-overview-container .details-box ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      padding-bottom: 20px;
+      font-size: 15px; }
+    .school-details-container .m-school-overview-container .details-box ul > li {
+      padding: 0 30px;
+      padding-top: 5px;
+      padding-bottom: 0px; }
+  .school-details-container .m-school-overview-container .details-box::-webkit-scrollbar {
+    width: 7px; }
+  .school-details-container .m-school-overview-container .details-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* border-radius: 10px; */ }
+  .school-details-container .m-school-overview-container .details-box::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+.mobile-courses-card-container .study-areas-box {
+  background-color: rgba(144, 144, 144, 0.5); }
+  .mobile-courses-card-container .study-areas-box h1 {
+    color: #636161;
+    margin: 0px;
+    font-size: 10vw;
+    line-height: 0.8;
+    font-family: 'Montserrat Black';
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center; }
+  .mobile-courses-card-container .study-areas-box .study-areas {
+    width: 100%;
+    height: 40vh;
+    background-color: #082A3E;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .mobile-courses-card-container .study-areas-box .study-areas .area-box {
+      height: 100%;
+      width: 11.11%;
+      border: 1px solid #082A3E;
+      background-size: cover;
+      background-position: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      position: relative; }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines-disable {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute; }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines {
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines p {
+          display: none;
+          text-align: center;
+          font-size: 12px;
+          color: #FF6D6D;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: 'Bebas Neue'; }
+          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines p .area-link {
+            font-size: 15px !important;
+            color: #FF6D6D !important;
+            text-decoration: none; }
+        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center; }
+          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul li {
+            padding: 1px;
+            display: block; }
+            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul li .filter-btn {
+              padding: 0px 8px;
+              margin: 0;
+              text-decoration: none;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 12px !important;
+              font-family: 'Bebas Neue';
+              letter-spacing: 1px; }
+        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          text-align: center; }
+          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li {
+            padding: 2px;
+            display: block; }
+            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn {
+              padding: 0px 5px;
+              margin: 0;
+              text-decoration: none;
+              color: #FF6D6D;
+              text-transform: uppercase;
+              font-size: 14px !important;
+              font-family: 'Bebas Neue';
+              letter-spacing: 1px; }
+            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn:hover, .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn.active {
+              /* background-color: $white; */
+              color: #FF6D6D;
+              opacity: 0.5 !important; }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines:hover {
+        background-color: rgba(8, 42, 62, 0.8); }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines:hover p {
+        display: block; }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box h3 {
+        color: #fff;
+        background: #000;
+        border: 2px solid #fff;
+        padding: 3px 10px;
+        margin: 0 auto;
+        font-size: 15px;
+        width: 90%;
+        height: 50px;
+        text-align: center; }
+      .mobile-courses-card-container .study-areas-box .study-areas .area-box .padding {
+        padding-top: 15px; }
+
+.mobile-artwork-container .art-box-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative; }
+  .mobile-artwork-container .art-box-img .img-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .mobile-artwork-container .art-box-img .img-details h2, .mobile-artwork-container .art-box-img .img-details p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: 'Bebas Neue'; }
+
+.mobile-artwork-container .m-artwork-next {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #FF6D6D;
+  position: absolute;
+  right: 2%;
+  top: 85%;
+  border-radius: 50px;
+  z-index: 100;
+  background-color: #FF6D6D; }
+  .mobile-artwork-container .m-artwork-next button {
+    display: block;
+    color: #fff;
+    background: transparent;
+    font-size: 100px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -35%;
+    left: 10%;
+    right: 15%; }
+
+.mobile-artwork-container .art-box-img:hover .img-details {
+  background-color: #082A3E;
+  display: -ms-flexbox;
+  display: flex; }
+
+.mobile-artwork-container .m-artwork-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  background-color: #212529;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  padding-bottom: 15%; }
+  .mobile-artwork-container .m-artwork-container svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .mobile-artwork-container .m-artwork-container .art-box {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative; }
+    .mobile-artwork-container .m-artwork-container .art-box .art-box-1 {
+      height: 50%;
+      display: -ms-flexbox;
+      display: flex; }
+      .mobile-artwork-container .m-artwork-container .art-box .art-box-1 .art-box-img {
+        background-position: center;
+        background-size: cover; }
+      .mobile-artwork-container .m-artwork-container .art-box .art-box-1 .art-box-1-img {
+        width: 50%;
+        height: 100%; }
+        .mobile-artwork-container .m-artwork-container .art-box .art-box-1 .art-box-1-img .art-box-img {
+          background-position: center;
+          background-size: 100%; }
+
+.mobile-artwork-container .m-artworks {
+  overflow: hidden; }
+
+.mobile-artwork-container .artwork-slides {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  column-count: 1;
+  column-gap: 0px;
+  line-height: 0; }
+  @media only screen and (min-width: 768px) {
+    .mobile-artwork-container .artwork-slides {
+      /* column-count: 3; */ } }
+
+.mobile-artwork-container .artwork-slides > li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative; }
+
+.mobile-artwork-container .artwork-slides > li p, .mobile-artwork-container .artwork-slides > li h4 {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #FF6D6D; }
+
+.mobile-artwork-container .artwork-slides > li p {
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-family: 'Gotham Bold';
+  text-transform: uppercase; }
+
+.mobile-artwork-container .artwork-slides > li h4 {
+  bottom: 40%;
+  font-size: 2em;
+  border-top: 1px solid #FF6D6D;
+  border-bottom: 1px solid #FF6D6D;
+  padding: 20px 0;
+  letter-spacing: 1px; }
+
+.mobile-artwork-container .artwork-slides > li .artwork-discipline {
+  color: #FFFFFF;
+  margin-top: 60px;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 1em; }
+
+.mobile-artwork-container .artwork-slides > li:hover img {
+  opacity: 0.15; }
+
+.mobile-artwork-container .artwork-slides > li:hover p, .mobile-artwork-container .artwork-slides > li:hover h4 {
+  opacity: 1; }
+
+.mobile-artwork-container .artwork-image {
+  max-width: 100%;
+  height: auto; }
+
+.mobile-artwork-container .lightbox-social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -30px; }
+
+.mobile-artwork-container #lightboxBackdrop img {
+  max-height: calc(100vh - 150px) !important; }
+
+.mobile-artwork-container .m-grey-bg {
+  background-color: #181818; }
+
+.mobile-artwork-container .filter-container {
+  display: none;
+  padding: 50px 0px;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .mobile-artwork-container .filter-container {
+      /*padding: 25px;*/
+      width: 60%;
+      display: -ms-flexbox;
+      display: flex;
+      /*justify-content: space-between;*/
+      background-color: #181818; }
+      .mobile-artwork-container .filter-container .filter {
+        display: -ms-flexbox;
+        display: flex;
+        /*justify-content: space-between;*/
+        border-right: 1px solid #E4E9EC;
+        margin-right: 10px;
+        padding-right: 40px; }
+      .mobile-artwork-container .filter-container .filter > h2 {
+        font-size: 30px;
+        margin: 7px 10px 0 0; }
+      .mobile-artwork-container .filter-container .filter > .filter-buttons {
+        text-align: left;
+        margin-top: 5px; }
+      .mobile-artwork-container .filter-container .refine-button {
+        padding: 10px;
+        float: left; } }
+
+.mobile-courses-card-container .course-card-container {
+  border-top: 1px solid #E4E9EC; }
+
+.mobile-courses-card-container .course-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: top;
+      align-items: top;
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+  padding: 10px;
+  padding-top: 30px;
+  background: #181818; }
+
+.mobile-courses-card-container .course-card-left {
+  width: 30%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  color: #FFFFFF; }
+
+.mobile-courses-card-container .course-card-left > .course-buttons {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.mobile-courses-card-container .course-buttons > .btn {
+  margin-top: 10px;
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .mobile-courses-card-container .course-buttons > .btn {
+    width: 50%; }
+  .mobile-courses-card-container .course-buttons > .btn:first-child {
+    margin-right: 15px; } }
+
+.mobile-courses-card-container .course-card-right {
+  width: 47.5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.mobile-courses-card-container .course-card-right > h3 {
+  font-size: 25px;
+  margin: 5px 2%; }
+
+.mobile-courses-card-container .course-card-right > .course-info {
+  /*border: 2px solid $dark-grey;*/
+  width: calc(98% - 9px);
+  padding-left: 2%;
+  margin-left: 0%;
+  padding-right: 5px;
+  font-family: 'Montserrat Ultra Light';
+  font-size: 12px;
+  font: justify;
+  color: #FFFFFF;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.mobile-courses-card-container .course-info-bit-right {
+  /*display: flex; */
+  text-align: right; }
+
+.mobile-courses-card-container .course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
+
+.mobile-courses-card-container .course-info-bit-left {
+  /*display: flex; */
+  text-align: left; }
+
+.mobile-courses-card-container .info-bit-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 3px; }
+
+.mobile-courses-card-container .course-bg {
+  padding-bottom: 40px;
+  background-color: rgba(144, 144, 144, 0.5);
+  margin-top: -1px; }
+
+.mobile-courses-card-container .info-bits-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.mobile-courses-card-container .info-bits-section {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.mobile-courses-card-container .card-icon {
+  float: right; }
+
+.mobile-courses-card-container .course-buttons {
+  text-align: right; }
+  .mobile-courses-card-container .course-buttons .btn {
+    background-color: #FF6D6D;
+    border-radius: 0;
+    border: 3px solid #FFFFFF;
+    width: 100px; }
+
+.mobile-courses-card-container .likesection {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 5%; }
+  .mobile-courses-card-container .likesection h3 {
+    margin: 0;
+    top: -20px;
+    position: relative;
+    left: 0; }
+
+.mobile-courses-card-container .more-courses {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #FF6D6D;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #FF6D6D;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+  outline: 0; }
+
+.mobile-courses-card-container .course-filter {
+  text-align: center;
+  font-weight: 100;
+  color: #000; }
+
+.mobile-courses-card-container .course-form {
+  position: absolute;
+  right: -80px;
+  top: -30px;
+  border: 1px solid #fff;
+  z-index: 1;
+  background-color: #dc6262;
+  height: auto !important;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box; }
+  .mobile-courses-card-container .course-form button {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0; }
+  .mobile-courses-card-container .course-form .hs-form-private input[type="text"], .mobile-courses-card-container .course-form .hs-form-private input[type="email"], .mobile-courses-card-container .course-form .hs-form-private input[type="tel"] {
+    background-color: #fff !important;
+    width: 200px;
+    color: #000; }
+  .mobile-courses-card-container .course-form .hs-form .hs-form-field > label {
+    color: #fff; }
+
+.mobile-courses-card-container .course-form-2 {
+  right: -180px !important;
+  z-index: 1; }
+
+.mobile-courses-card-container .course-forms-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: -1; }
+
+.mobile-courses-card-container .course-forms-modal-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: -1; }
+
 * {
   box-sizing: border-box; }
 
