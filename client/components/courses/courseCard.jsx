@@ -192,9 +192,9 @@ export default class CourseCard extends Component {
      const { course } = this.props;
 
     return(
-        <div>
-        {this.renderCourses()}
-        </div>
+      <div>
+      {this.renderCourses()}
+      </div>
     );
   }
 }
