@@ -76,16 +76,28 @@ exports.getSchool = async (req, res, next) => {
 };
 
 exports.schoolDetails = (req, res) => {
+
+  let viewDevice = req.device.type
+
+  if(viewDevice == 'desktop'){
   const school = res.locals.school;
   const displayedArt = school.displayedArt;
   const artworks = school.artworks;
   const schoolLightBox = reactHelper.renderComponent('ArtworkApp', { search: false, artworks: artworks, displayedArt: displayedArt });
   const CampusMaps = reactHelper.renderComponent('CampusApp', { campuses: school.locations });
   const Facilities = reactHelper.renderComponent('FacilitiesApp', { images: school.facilitiesImages });
-  const Alumni = eactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
+  const Alumni = reactHelper.renderComponent('AlumniApp', { alumni: school.alumni });
   const Courses = reactHelper.renderComponent('CoursesApp', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
 
   res.render('schoolDetails', { school, schoolLightBox, CampusMaps, Facilities, Alumni, Courses });
+  } else {
+    const school = res.locals.school;
+    const displayedArt = school.displayedArt;
+    const artworks = school.artworks;
+    const schoolMobileLightBox = reactHelper.renderComponent('MobileArtwork', { search: false, artworks: artworks, displayedArt: displayedArt });
+    const mobileCourses = reactHelper.renderComponent('MobileCourses', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
+    res.render('mobile/schoolDetails', { school, schoolMobileLightBox, mobileCourses });
+  };
 };
 
 exports.schoolCourses = (req, res) => {
