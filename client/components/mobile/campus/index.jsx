@@ -27,7 +27,7 @@ export default class MobileCampus extends Component {
     const { campuses, activeCampus } = this.state;
     return (
       <div className="campus-mobile">
-          <div className='campus-container'>
+          <div className='m-campus-container'>
             {
             // <div className='campus-buttons'>
             //   { _.map(campuses, (campus) => {

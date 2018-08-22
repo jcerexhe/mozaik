@@ -62,4 +62,4 @@ reactHelper.register({ MobileArtwork });
 reactHelper.register({ MobileCourses });
 reactHelper.register({ MobileCampus });
 reactHelper.register({ MobileFacilities });
-
+reactHelper.register({ MobileAlumni });

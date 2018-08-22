@@ -4,7 +4,7 @@ import Lightbox from 'react-images';
 import _ from 'lodash';
 import { LeftArrow, RightArrow } from '../shared/arrows.jsx';
 
-export default class AlumniApp extends Component {
+export default class MobileAlumni extends Component {
  constructor(props) {
     super(props);
     // this.state = {};
