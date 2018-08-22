@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import MobileFilter from '../shared/filter.jsx';
+import Filter from '../shared/filter.jsx';
 import MobileCourseCard from './courseCard.jsx';
 import HubspotForm from 'react-hubspot-form';
 import RenderForm from '../shared/renderForm';
@@ -101,7 +101,7 @@ export default class MobileCourses extends Component {
     const { limit, activeCourses } = this.state;
       if(limit < activeCourses.length ){
         return(
-        <button onClick={()=>this.renderLimit()} className="more-courses">v</button>
+        <button onClick={()=>this.renderLimit()} className="m-more-courses"><span>+</span></button>
         )
       }
   }
@@ -125,75 +125,64 @@ export default class MobileCourses extends Component {
     disciplineList = _.flatten(disciplineList);
 
     return (
-      <div className="mobile-courses-card-container">
-        <div className="study-areas-box">
-          <h1>study areas</h1>
-          <div className="study-areas">
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287645/study-areas/pexels-photo-433617.jpg")'}}>
-              <h3 className="padding">digital media</h3>
-              {this.enableTile("Digital Media", this.state.digitalMedia)}
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287309/study-areas/aleks-dorohovich-26-unsplash.jpg")'}}>
-              <h3 >visual communication</h3>
-              {this.enableTile("Visual Communication", this.state.visualComm)}
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287447/study-areas/pexels-photo-262034.jpg")'}}>
-              <h3 className="padding">fine arts</h3>
-              {this.enableTile("Fine Arts", this.state.fineArts)}             
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287352/study-areas/chris-murray-563843-unsplash.jpg")'}}>
-              <h3 className="padding">film/tv/audio</h3>
-              {this.enableTile("Film/TV/Audio", this.state.filmAudio)}     
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522806278/study-areas/pexels-photo-415307.jpg")'}}>
-              <h3 className="padding">performing arts</h3>
-              {this.enableTile("Performing Arts", this.state.performArts)}  
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287247/study-areas/abstract-art-artistic-226589.jpg")'}}>
-              <h3 className="padding">design</h3>
-              {this.enableTile("Design", this.state.design)} 
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287581/study-areas/pexels-photo-298298.jpg")'}}>
-              <h3 className="padding">photography</h3>
-              {this.enableTile("Photography", this.state.photography)} 
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287362/study-areas/steve-driscoll-106346-unsplash.jpg")'}}>
-              <h3 className="padding">built environment</h3>
-              {this.enableTile("Built Environment", this.state.builtEnvironment)} 
-            </div>
-            <div className="area-box" style={{backgroundImage: 'url("https://res.cloudinary.com/mozaik/image/upload/c_fill,g_auto,h_400,q_auto:low,w_400/v1522287677/study-areas/pexels-photo-669615.jpg")'}}>
-              <h3>business for creatives</h3>
-              {this.enableTile("Business for Creatives", this.state.businessCreative)}
+      <div>
+        <div className="mobile-study-areas">
+          <div className="m-study-areas-box">
+            <h1>study areas</h1>
+          </div>
+          <div className="choose-your-study-areas">
+            <div className="panel-group">
+              <div className="panel panel-default">
+                <div className="panel-heading">
+                  <h4 className="panel-title">
+                    <a data-toggle="collapse" href="#choose-sa">Choose Your Study Areas</a>
+                  </h4>
+                </div>
+                <div id="choose-sa" className="panel-collapse collapse">
+                  <ul className="list-group study-area-group">
+                    <li className="list-group-item study-area-list">Digital Media</li>
+                    <li className="list-group-item study-area-list">Visual Communication</li>
+                    <li className="list-group-item study-area-list">Fine Arts</li>
+                    <li className="list-group-item study-area-list">Film/TV/Audio</li>
+                    <li className="list-group-item study-area-list">Performing Arts</li>
+                    <li className="list-group-item study-area-list">Design</li>
+                    <li className="list-group-item study-area-list">Photography</li>
+                    <li className="list-group-item study-area-list">Built Environment</li>
+                    <li className="list-group-item study-area-list">Business for Creatives</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className='course-bg'>
+        <div className="courses-mobile">
+          <div className='m-course-bg'>
+          <div className='m-course-card-container'>
+            {this.renderNoResult()}
+              {         
+                  _.map(activeCourses, (course, i) => {
+                    console.log(course);
+                    console.log(i);
+                    if(i >= limit){
+                      return false;
+                    }else{
+                    return (
+                      <MobileCourseCard course={ course } school={ school } key={ i } coursekey={ i } />
+                     )
+                    }
 
-          <div className='course-card-container'>
+                  }) 
 
-              {this.renderNoResult()}
-            {
-          
-                _.map(activeCourses, (course, i) => {
-                  console.log(course);
-                  console.log(i);
-                  if(i >= limit){
-                    return false;
-                  }else{
-                  return (
-                    <CourseCard course={ course } school={ school } key={ i } coursekey={ i } />
-                   )
-                  }
+            }
 
-                }) 
-
-          }
-
-          {this.renderButton()}
+            {this.renderButton()}
 
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }
+
+          
