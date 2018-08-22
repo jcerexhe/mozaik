@@ -1,0 +1,33 @@
+.campus-container {
+  background-color: $grey;
+
+  .campus-buttons {
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .campus-buttons a {
+    padding: 0px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat Semi Bold';
+    color: $white;
+  }
+  .campus-buttons a.active {
+    text-decoration: underline;
+  }
+  .campus-buttons a:not(:last-child) {
+    border-right: 1px solid $white;
+  }
+}
+
+.lightbox-credit{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+}
