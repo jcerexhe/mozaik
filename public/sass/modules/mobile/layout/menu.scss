@@ -100,6 +100,11 @@
   z-index: 900;
   width: 100%;
   font-family: 'Montserrat Regular';
+  // If menu needs to stay on the top-most part of the page (used in 'client/components/mobile/menu/index.jsx', line 44)
+  &.top-menu {
+    position: absolute;
+  }
+
   .navbar-container {
     .bar-1 {
       height: 5vw;

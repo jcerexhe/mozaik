@@ -4029,6 +4029,8 @@ input.input-email {
   z-index: 900;
   width: 100%;
   font-family: 'Montserrat Regular'; }
+  .mobile-menu-container.top-menu {
+    position: absolute; }
   .mobile-menu-container .navbar-container .bar-1 {
     height: 5vw; }
     .mobile-menu-container .navbar-container .bar-1 a {
