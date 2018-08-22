@@ -6,7 +6,11 @@ export default class MobileDiscover extends Component {
 	render() {
 		return (
 			<div className="mobile-discover-container">
-				<div className="header"><h1>DISCOVER</h1></div>
+
+				<div className="header">
+					<svg viewBox="0 0 47 13" preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><polyline points="8,13 0,13 0,0 8,0" x="0" y="0"/><polyline points="39,0 47,0 47,13 39,13"/></svg>
+					<h1>DISCOVER</h1>
+				</div>
 				
 				<form>
 					<input type="text" placeholder="SEARCH..." />
@@ -75,10 +79,10 @@ export default class MobileDiscover extends Component {
 						<div className="container-fluid">	
 					   		<div className="row">
 					   	 		<div className="col">
-					        		<div className="col-content">2D/3D ANIMATION</div>
+					        		<button className="default-button">2D/3D ANIMATION</button>
 					        	</div> 
 					        	<div className="col">
-					          		<div className="col-content">3D DESIGN</div>
+					          		<button className="default-button">3D DESIGN</button>
 					        	</div>
 					        </div>	
 					   		<div className="row">
@@ -117,11 +121,55 @@ export default class MobileDiscover extends Component {
 				 	 	<button className="default-button pink-btn plus">
 								<hr/>
 								<hr className="vertical"/>
-							</button>
-						</div>
+						</button>
+					</div>
 
 						<button className="default-button pink-btn clear-filter">CLEAR FILTER</button>
+				</div>
+				<div className="schools-section">
+					<div className="grid">
+						<div className="container-fluid">
+							<div className="row">
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>AIT</p></button>
+									</div>
+								</div>
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>NIDA</p></button>
+									</div>
+								</div>
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>AFTRS</p></button>
+									</div>
+								</div>
+							</div>
+							<div className="row">
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>AIT</p></button>
+									</div>
+								</div>
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>NIDA</p></button>
+									</div>
+								</div>
+								<div className="col">
+									<div className="school-thumb">
+										<button className="default-button school-btn"><p>AFTRS</p></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button className="default-button pink-btn plus">
+							<hr/>
+							<hr className="vertical"/>
+						</button>
 					</div>
+				</div>
 								
 			</div>  
 		);

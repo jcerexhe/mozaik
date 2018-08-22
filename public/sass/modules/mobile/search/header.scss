@@ -1,0 +1,46 @@
+// Title
+.header {
+  margin: auto;
+  text-align: center;
+  width: 47vw;
+  height: 13vw;
+  position: relative;
+  margin-bottom: 2vw;
+
+  polyline {
+    fill: none;
+    stroke: $white;
+    stroke-width: 4%;
+  }
+
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    font-family: 'Montserrat Extra Bold';
+    color: $white;
+    font-size: 7vw;
+  }
+}
+
+// Search Bar
+form {
+  text-align: center;
+  margin-bottom: 2vw;
+  input {
+    width: 60%;
+    border: none;
+    border-radius: 1vw;
+    padding: 0.5vw 2vw;
+    background-color: $white;
+
+    color: #000;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+}
