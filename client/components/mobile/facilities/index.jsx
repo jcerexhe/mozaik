@@ -21,13 +21,13 @@ export default class MobileFacilities extends Component {
     }
     return (
       <div className='facilities-mobile'>
-        <div className='facilities-slider'>
-          <Slick { ...settings }>
-            { _.map(this.props.images, (img) => {
-              return <img src={ img } />
-            }) }
-          </Slick>
-        </div>
+          <div className='m-facilities-slider'>
+            <Slick { ...settings }>
+              { _.map(this.props.images, (img) => {
+                return <img src={ img } />
+              }) }
+            </Slick>
+          </div>
       </div>
     );
   }
