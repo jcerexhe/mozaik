@@ -72,7 +72,7 @@ app.use(passport.session());
 // Connect flash
 app.use(flash());
 
-// View used viewing device on console
+// View used viewing device can be called using req.device.type'
 app.use(expressDevice.capture());
 
 app.use((req, res, next) => {
