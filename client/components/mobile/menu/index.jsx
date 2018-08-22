@@ -9,7 +9,7 @@ export default class MobileMenu extends Component {
       isPaneOpenLeft: false,
       links: [
         {url: '/', val: 'HOME', img: '/images/mobile/icons/home.png'},
-        {url: '/search', val: 'DISCOVER', img: '/images/mobile/icons/discover.png'},
+        {url: '/discover', val: 'DISCOVER', img: '/images/mobile/icons/discover.png'},
         {url: '/study-area', val: 'STUDY AREAS', img: '/images/mobile/icons/study-areas.png'},
         {url: '/agency-mozaik', val: 'EDUCATION AGENCY', img: '/images/mobile/icons/education-agency.png'},
         {url: '/about-us', val: 'ABOUT US', img: '/images/mobile/icons/about-us.png'},
@@ -41,7 +41,7 @@ export default class MobileMenu extends Component {
     const { currentPath } = this.props;
     let { isPaneOpenLeft, links } = this.state;
     return (
-      <div className="mobile-menu-container">
+      <div className={(currentPath != '/') ? "mobile-menu-container top-menu" /*<- menu will be at the top-most part of page; see style in 'public/sass/modules/mobile/layout/menu.scss', line 104*/ : "mobile-menu-container"}>
         <div className="navbar-container">
           <div className="bar-1"><a style={{backgroundColor:'#181818'}} href="#">LOGIN</a><a href="/search">DISCOVER</a></div>
           <div className="bar-2">
