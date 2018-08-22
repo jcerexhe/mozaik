@@ -1,0 +1,26 @@
+.facilities-mobile{
+  .facilities-slider {
+    width: 50%;
+   /* margin: 0px auto; */
+   margin: 35% 8%;
+   height: 100%;
+
+  .slick-slider .slick-list{
+    height: 40vh;
+  }
+
+    .slick-arrow:before {
+      display: none;
+    }
+    .slick-arrow {
+      width: 35px !important;
+      height: 35px !important;
+    }
+    .slick-next {
+      right: -50px !important;
+    }
+    .slick-prev {
+      left: -50px !important;
+    }
+  }
+}

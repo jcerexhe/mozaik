@@ -3432,20 +3432,20 @@ ul.careers-lists > li:before {
 #lightboxBackdrop img {
   max-height: calc(100vh - 150px) !important; }
 
-.campus-container {
+.campus-mobile .campus-container {
   background-color: #181818; }
-  .campus-container .campus-buttons {
+  .campus-mobile .campus-container .campus-buttons {
     padding: 25px;
     text-align: center;
     text-transform: uppercase; }
-  .campus-container .campus-buttons a {
+  .campus-mobile .campus-container .campus-buttons a {
     padding: 0px 20px;
     cursor: pointer;
     font-family: 'Montserrat Semi Bold';
     color: #FFFFFF; }
-  .campus-container .campus-buttons a.active {
+  .campus-mobile .campus-container .campus-buttons a.active {
     text-decoration: underline; }
-  .campus-container .campus-buttons a:not(:last-child) {
+  .campus-mobile .campus-container .campus-buttons a:not(:last-child) {
     border-right: 1px solid #FFFFFF; }
 
 .lightbox-credit {
@@ -5051,114 +5051,99 @@ input.input-email {
     /* border-radius: 10px; */
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
-.mobile-courses-card-container .study-areas-box {
-  background-color: rgba(144, 144, 144, 0.5); }
-  .mobile-courses-card-container .study-areas-box h1 {
-    color: #636161;
-    margin: 0px;
-    font-size: 10vw;
-    line-height: 0.8;
-    font-family: 'Montserrat Black';
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    text-align: center; }
-  .mobile-courses-card-container .study-areas-box .study-areas {
+.school-details-container .m-other-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .school-details-container .m-other-section .locations {
     width: 100%;
-    height: 40vh;
-    background-color: #082A3E;
+    background-color: blue; }
+  .school-details-container .m-other-section .facilities {
+    width: 100%;
+    background-color: red; }
+  .school-details-container .m-other-section .alumni {
+    width: 100%;
+    background-color: blue;
+    margin: 0 !important;
+    overflow-x: hidden; }
+  .school-details-container .m-other-section .locations .other-section-box .hover-box p, .school-details-container .m-other-section .facilities .other-section-box .hover-box p {
+    text-align: center !important;
+    padding: 20px 20px !important;
+    color: #FFFFFF !important; }
+  .school-details-container .m-other-section .other-section-box {
+    width: 100%;
+    height: 60vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-    .mobile-courses-card-container .study-areas-box .study-areas .area-box {
-      height: 100%;
-      width: 11.11%;
-      border: 1px solid #082A3E;
-      background-size: cover;
-      background-position: center;
+    .school-details-container .m-other-section .other-section-box .hover-box {
+      position: absolute;
+      z-index: 200;
+      width: 100%;
+      height: 60vh;
+      background-color: #082A3E;
+      opacity: 0;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
-          align-items: center;
-      position: relative; }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines-disable {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute; }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines {
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        height: 100%; }
-        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines p {
-          display: none;
-          text-align: center;
-          font-size: 12px;
-          color: #FF6D6D;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-family: 'Bebas Neue'; }
-          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines p .area-link {
-            font-size: 15px !important;
-            color: #FF6D6D !important;
-            text-decoration: none; }
-        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          list-style-type: none;
-          text-align: center; }
-          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul li {
-            padding: 1px;
-            display: block; }
-            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines ul li .filter-btn {
-              padding: 0px 8px;
-              margin: 0;
-              text-decoration: none;
-              color: #fff;
-              text-transform: uppercase;
-              font-size: 12px !important;
-              font-family: 'Bebas Neue';
-              letter-spacing: 1px; }
-        .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          list-style-type: none;
-          text-align: center; }
-          .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li {
-            padding: 2px;
-            display: block; }
-            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn {
-              padding: 0px 5px;
-              margin: 0;
-              text-decoration: none;
-              color: #FF6D6D;
-              text-transform: uppercase;
-              font-size: 14px !important;
-              font-family: 'Bebas Neue';
-              letter-spacing: 1px; }
-            .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn:hover, .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines .area-heading ul li .filter-btn.active {
-              /* background-color: $white; */
-              color: #FF6D6D;
-              opacity: 0.5 !important; }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines:hover {
-        background-color: rgba(8, 42, 62, 0.8); }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box .disciplines:hover p {
-        display: block; }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box h3 {
-        color: #fff;
-        background: #000;
-        border: 2px solid #fff;
-        padding: 3px 10px;
-        margin: 0 auto;
-        font-size: 15px;
-        width: 90%;
-        height: 50px;
-        text-align: center; }
-      .mobile-courses-card-container .study-areas-box .study-areas .area-box .padding {
-        padding-top: 15px; }
+          align-items: center; }
+    .school-details-container .m-other-section .other-section-box h2 {
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 50px 0;
+      font-size: 30pt;
+      cursor: pointer; }
+  .school-details-container .m-other-section .other-section-box:hover .hover-box {
+    opacity: 1; }
+
+.school-details-container .m-school-contact .website {
+  width: 100%;
+  text-align: center;
+  height: 280px;
+  padding-top: 150px;
+  box-sizing: border-box; }
+  .school-details-container .m-school-contact .website a {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    font-size: 40pt;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 100px; }
+
+.mobile-study-areas .m-study-areas-box {
+  background-color: #FF6D6D; }
+  .mobile-study-areas .m-study-areas-box h1 {
+    padding: 30px;
+    color: #fff;
+    font-size: 4em;
+    text-align: center; }
+
+.mobile-study-areas .choose-your-study-areas {
+  position: relative;
+  top: -8px;
+  bottom: 0px;
+  background-color: #fff;
+  border-top: 1px solid #fff; }
+  .mobile-study-areas .choose-your-study-areas .panel-heading {
+    padding: 80px; }
+    .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title > a {
+      font-family: 'Bebas Neue';
+      font-size: 4vw;
+      color: #000000; }
+  .mobile-study-areas .choose-your-study-areas .study-area-group {
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .mobile-study-areas .choose-your-study-areas .study-area-group .study-area-list {
+      border: 2px solid #000;
+      background-color: #212529;
+      padding: 20px; }
 
 .mobile-artwork-container .art-box-img {
   width: 100%;
@@ -5354,203 +5339,184 @@ input.input-email {
         padding: 10px;
         float: left; } }
 
-.mobile-courses-card-container .course-card-container {
-  border-top: 1px solid #E4E9EC; }
-
-.mobile-courses-card-container .course-card {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: top;
-      align-items: top;
-  width: 80%;
-  margin: 50px auto;
+.courses-mobile {
   position: relative;
-  padding: 10px;
-  padding-top: 30px;
-  background: #181818; }
-
-.mobile-courses-card-container .course-card-left {
-  width: 30%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  color: #FFFFFF; }
-
-.mobile-courses-card-container .course-card-left > .course-buttons {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex; }
-
-.mobile-courses-card-container .course-buttons > .btn {
-  margin-top: 10px;
-  width: 100%; }
-
-@media only screen and (min-width: 768px) {
-  .mobile-courses-card-container .course-buttons > .btn {
-    width: 50%; }
-  .mobile-courses-card-container .course-buttons > .btn:first-child {
-    margin-right: 15px; } }
-
-.mobile-courses-card-container .course-card-right {
-  width: 47.5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.mobile-courses-card-container .course-card-right > h3 {
-  font-size: 25px;
-  margin: 5px 2%; }
-
-.mobile-courses-card-container .course-card-right > .course-info {
-  /*border: 2px solid $dark-grey;*/
-  width: calc(98% - 9px);
-  padding-left: 2%;
-  margin-left: 0%;
-  padding-right: 5px;
-  font-family: 'Montserrat Ultra Light';
-  font-size: 12px;
-  font: justify;
-  color: #FFFFFF;
-  -ms-flex: 1;
-      flex: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.mobile-courses-card-container .course-info-bit-right {
-  /*display: flex; */
-  text-align: right; }
-
-.mobile-courses-card-container .course-info-bit-left {
-  /*display: flex; */
-  text-align: left; }
-
-.mobile-courses-card-container .course-info-bit-left {
-  /*display: flex; */
-  text-align: left; }
-
-.mobile-courses-card-container .info-bit-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-left: 3px; }
-
-.mobile-courses-card-container .course-bg {
-  padding-bottom: 40px;
-  background-color: rgba(144, 144, 144, 0.5);
-  margin-top: -1px; }
-
-.mobile-courses-card-container .info-bits-container {
-  display: -ms-flexbox;
-  display: flex; }
-
-.mobile-courses-card-container .info-bits-section {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.mobile-courses-card-container .card-icon {
-  float: right; }
-
-.mobile-courses-card-container .course-buttons {
-  text-align: right; }
-  .mobile-courses-card-container .course-buttons .btn {
-    background-color: #FF6D6D;
-    border-radius: 0;
-    border: 3px solid #FFFFFF;
-    width: 100px; }
-
-.mobile-courses-card-container .likesection {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 5%; }
-  .mobile-courses-card-container .likesection h3 {
-    margin: 0;
-    top: -20px;
+  top: -8px; }
+  .courses-mobile .m-course-card-container {
+    border-top: 1px solid #E4E9EC;
+    position: relative; }
+  .courses-mobile .m-course-card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: top;
+        align-items: top;
+    width: 100%;
     position: relative;
-    left: 0; }
-
-.mobile-courses-card-container .more-courses {
-  background-color: transparent;
-  font-size: 20px;
-  font-weight: bolder;
-  color: #FF6D6D;
-  margin: 0 auto;
-  display: block;
-  border: 2px solid #FF6D6D;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  padding: 5px;
-  outline: 0; }
-
-.mobile-courses-card-container .course-filter {
-  text-align: center;
-  font-weight: 100;
-  color: #000; }
-
-.mobile-courses-card-container .course-form {
-  position: absolute;
-  right: -80px;
-  top: -30px;
-  border: 1px solid #fff;
-  z-index: 1;
-  background-color: #dc6262;
-  height: auto !important;
-  padding-left: 25px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-sizing: border-box; }
-  .mobile-courses-card-container .course-form button {
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
-    outline: 0; }
-  .mobile-courses-card-container .course-form .hs-form-private input[type="text"], .mobile-courses-card-container .course-form .hs-form-private input[type="email"], .mobile-courses-card-container .course-form .hs-form-private input[type="tel"] {
-    background-color: #fff !important;
-    width: 200px;
+    padding: 10px;
+    padding-top: 30px;
+    background: #181818; }
+  .courses-mobile .course-card-left {
+    width: 30%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    color: #FFFFFF; }
+  .courses-mobile .course-card-left > .course-buttons {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+  .courses-mobile .course-buttons > .btn {
+    margin-top: 10px;
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .courses-mobile .course-buttons > .btn {
+      width: 50%; }
+    .courses-mobile .course-buttons > .btn:first-child {
+      margin-right: 15px; } }
+  .courses-mobile .course-card-right {
+    width: 47.5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .courses-mobile .course-card-right > h3 {
+    font-size: 25px;
+    margin: 5px 2%; }
+  .courses-mobile .course-card-right > .course-info {
+    /*border: 2px solid $dark-grey;*/
+    width: calc(98% - 9px);
+    padding-left: 2%;
+    margin-left: 0%;
+    padding-right: 5px;
+    font-family: 'Montserrat Ultra Light';
+    font-size: 12px;
+    font: justify;
+    color: #FFFFFF;
+    -ms-flex: 1;
+        flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .courses-mobile .course-info-bit-right {
+    /*display: flex; */
+    text-align: right; }
+  .courses-mobile .course-info-bit-left {
+    /*display: flex; */
+    text-align: left; }
+  .courses-mobile .course-info-bit-left {
+    /*display: flex; */
+    text-align: left; }
+  .courses-mobile .info-bit-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-left: 3px; }
+  .courses-mobile .m-course-bg {
+    padding-bottom: 40px;
+    background-color: rgba(144, 144, 144, 0.5);
+    margin-top: -1px; }
+  .courses-mobile .info-bits-container {
+    display: -ms-flexbox;
+    display: flex; }
+  .courses-mobile .info-bits-section {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .courses-mobile .card-icon {
+    float: right; }
+  .courses-mobile .course-buttons {
+    text-align: right; }
+    .courses-mobile .course-buttons .btn {
+      background-color: #FF6D6D;
+      border-radius: 0;
+      border: 3px solid #FFFFFF;
+      width: 100px; }
+  .courses-mobile .likesection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 5%; }
+    .courses-mobile .likesection h3 {
+      margin: 0;
+      top: -20px;
+      position: relative;
+      left: 0; }
+  .courses-mobile .m-more-courses {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #FF6D6D;
+    border-radius: 50px;
+    z-index: 100;
+    background-color: #FF6D6D;
+    position: relative;
+    left: 905px;
+    top: -40px; }
+    .courses-mobile .m-more-courses span {
+      color: #fff;
+      font-size: 100px;
+      text-align: center;
+      position: relative;
+      top: -30px; }
+  .courses-mobile .course-filter {
+    text-align: center;
+    font-weight: 100;
     color: #000; }
-  .mobile-courses-card-container .course-form .hs-form .hs-form-field > label {
-    color: #fff; }
-
-.mobile-courses-card-container .course-form-2 {
-  right: -180px !important;
-  z-index: 1; }
-
-.mobile-courses-card-container .course-forms-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  background-color: transparent;
-  z-index: -1; }
-
-.mobile-courses-card-container .course-forms-modal-2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  background-color: transparent;
-  z-index: -1; }
+  .courses-mobile .course-form {
+    position: absolute;
+    right: -80px;
+    top: -30px;
+    border: 1px solid #fff;
+    z-index: 1;
+    background-color: #dc6262;
+    height: auto !important;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box; }
+    .courses-mobile .course-form button {
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      outline: 0; }
+    .courses-mobile .course-form .hs-form-private input[type="text"], .courses-mobile .course-form .hs-form-private input[type="email"], .courses-mobile .course-form .hs-form-private input[type="tel"] {
+      background-color: #fff !important;
+      width: 200px;
+      color: #000; }
+    .courses-mobile .course-form .hs-form .hs-form-field > label {
+      color: #fff; }
+  .courses-mobile .course-form-2 {
+    right: -180px !important;
+    z-index: 1; }
+  .courses-mobile .course-forms-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    z-index: -1; }
+  .courses-mobile .course-forms-modal-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    z-index: -1; }
 
 * {
   box-sizing: border-box; }

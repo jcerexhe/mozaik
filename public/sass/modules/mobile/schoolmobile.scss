@@ -223,158 +223,131 @@
 	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 	    }
   	}
-}
-// study areas
-.mobile-courses-card-container{ 
-	.study-areas-box{
-
-	  
-	  h1{
-	      color: #636161;
-	    margin: 0px;
-	    font-size: 10vw;
-	    line-height: 0.8;
-	    
-	    font-family: 'Montserrat Black';
-	    text-transform: uppercase;
-	    padding-bottom: 10px;
-	    text-align: center;
-	  }
-	  background-color: rgba(144, 144, 144,0.5);
-
-	  .study-areas{
+  	//other section
+	.m-other-section{
+	  display: flex;
+	  flex-direction: column;
+	  .locations{
 	    width: 100%;
-	    height: 40vh;
-	    background-color: $black;
+	    background-color: blue;
+	  }
+	  .facilities{
+	    width: 100%;
+	    background-color: red;
+	  }
+	  .alumni{
+	    width: 100%;
+	    background-color: blue;
+	    margin: 0 !important;
+	    overflow-x: hidden;
+	  }
+
+	  .locations, .facilities{
+
+	    .other-section-box{
+	      .hover-box{
+	        p{
+	          text-align: center !important;
+	          padding: 20px 20px !important;
+	          color: $white !important;
+	        }
+	     }
+	    }
+	  }
+
+	  .other-section-box{
+	    width: 100%;
+	    height: 60vh;
 	    display: flex;
 	    align-items: center;
 
-	    .area-box{
-	      height: 100%;
-	      width: 11.11%;
-	      border: 1px solid $black;
-	      background-size: cover;
-	      background-position: center;
+	    .hover-box{
+	      position: absolute;
+	      z-index: 200;
+	      width: 100%;
+	      height: 60vh;
+	      background-color: $black;
+	      opacity: 0;
 	      display: flex;
 	      align-items: center;
-	      position: relative;
 
+	    }
 
-	      .disciplines-disable{
+	    h2{
 	      width: 100%;
-	      height: 100%;
-	      background-color: rgba(0, 0, 0, 0.6);
-	      position: absolute;
-	      }
-
-	      .disciplines{
-	        background: transparent;
-	        position: absolute;
-	        width: 100%;
-	        height: 100%;
-
-	        p{
-	          display: none;
-	          text-align: center;
-	          font-size: 12px;
-	          color: $pink;
-	          font-weight: bold;
-	          text-transform: uppercase;
-	          font-family: 'Bebas Neue';
-
-
-	          .area-link{
-	            font-size: 15px !important;
-	            color: $pink !important;
-	            text-decoration: none;
-	          }
-
-
-	        }
-
-	        ul{
-	          width: 100%;
-	          margin: 0;
-	          padding: 0;
-	          list-style-type: none;
-	          text-align: center;
-
-	         li{
-	          padding: 1px;
-	          display: block; 
-
-	          .filter-btn{
-	            padding: 0px 8px;
-	            margin: 0;
-	            text-decoration: none;
-	            color: #fff;
-	            text-transform: uppercase;
-	            font-size: 12px !important;
-	            font-family: 'Bebas Neue';
-	            letter-spacing: 1px;
-	          }
-	         } 
-	        }
-
-	        .area-heading{
-
-	        ul{
-	          width: 100%;
-	          margin: 0;
-	          padding: 0;
-	          list-style-type: none;
-	          text-align: center;
-
-	         li{
-	          padding: 2px;
-	          display: block; 
-
-	          .filter-btn{
-	            padding: 0px 5px;
-	            margin: 0;
-	            text-decoration: none;
-	            color: $pink;
-	            text-transform: uppercase;
-	            font-size: 14px !important;
-	            font-family: 'Bebas Neue';
-	            letter-spacing: 1px;
-	          }
-
-	          .filter-btn:hover, .filter-btn.active {
-	           /* background-color: $white; */
-	            color: $pink;
-	            opacity: 0.5 !important;
-	          }
-	         } 
-	        }
-	        }
-	      }
-
-	      .disciplines:hover{
-	        background-color: rgba(8,42,62, 0.8);
-	      }
-
-	      .disciplines:hover p{
-	        display: block;
-	      }
-
-	      h3{
-	        color: #fff;
-	        background: #000;
-	        border: 2px solid #fff;
-	        padding: 3px 10px;
-	        margin: 0 auto;
-	        font-size: 15px;
-	        width: 90%;
-	        height: 50px;
-	        text-align: center;
-	      }
-
-	      .padding{
-	        padding-top: 15px;
-	      }
+	      text-align: center;
+	      color: $white;
+	      background-color: rgba(0, 0, 0, 0.3);
+	      padding: 50px 0;
+	      font-size: 30pt;
+	      cursor: pointer;
 	    }
 	  }
-	  
+
+	    .other-section-box:hover{
+	      .hover-box{
+	        opacity: 1;
+	      }
+	    }  
+	}
+
+	//school contact
+	.m-school-contact{
+	  .website{
+	    width: 100%;
+	    text-align: center;
+	    height: 280px;
+	    padding-top: 150px;
+	    box-sizing: border-box;
+	    a{
+	      color: $white;
+	      font-family: 'Bebas Neue';
+	      font-size: 40pt;
+	      text-decoration: none;
+	      font-weight: bold;
+	      margin-top: 100px;
+
+	    }
+	  }  
+	}
+
+}
+// study areas
+.mobile-study-areas{ 
+	.m-study-areas-box{
+	  background-color: #FF6D6D;
+	  h1{
+	    padding: 30px;
+	    color: #fff;
+	    font-size: 4em;
+	    text-align: center;
+	  }
+	}
+	.choose-your-study-areas{
+	  position: relative;
+	  top: -8px;
+	  bottom: 0px;
+	  background-color: #fff;
+	  border-top: 1px solid #fff;
+	  .panel-heading{
+	  	padding: 80px;
+	  	h4.panel-title > a{
+	  	 font-family: 'Bebas Neue';
+    	 font-size: 4vw;
+    	 color: #000000;
+	  	}
+	  }
+	  .study-area-group{
+	  	text-align: center;
+	  	font-size: 3vw;
+	  	color: #fff;
+	  	text-transform: uppercase;
+	  	font-weight: bold;
+	  	.study-area-list{
+	  		border: 2px solid #000;
+	  		background-color: #212529;
+	  		padding: 20px;
+	  	}
+	  }
 	}
 }
