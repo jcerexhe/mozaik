@@ -3432,20 +3432,20 @@ ul.careers-lists > li:before {
 #lightboxBackdrop img {
   max-height: calc(100vh - 150px) !important; }
 
-.campus-container {
+.campus-mobile .campus-container {
   background-color: #181818; }
-  .campus-container .campus-buttons {
+  .campus-mobile .campus-container .campus-buttons {
     padding: 25px;
     text-align: center;
     text-transform: uppercase; }
-  .campus-container .campus-buttons a {
+  .campus-mobile .campus-container .campus-buttons a {
     padding: 0px 20px;
     cursor: pointer;
     font-family: 'Montserrat Semi Bold';
     color: #FFFFFF; }
-  .campus-container .campus-buttons a.active {
+  .campus-mobile .campus-container .campus-buttons a.active {
     text-decoration: underline; }
-  .campus-container .campus-buttons a:not(:last-child) {
+  .campus-mobile .campus-container .campus-buttons a:not(:last-child) {
     border-right: 1px solid #FFFFFF; }
 
 .lightbox-credit {
@@ -5050,6 +5050,69 @@ input.input-email {
   .school-details-container .m-school-overview-container .details-box::-webkit-scrollbar-thumb {
     /* border-radius: 10px; */
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+.school-details-container .m-other-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .school-details-container .m-other-section .locations {
+    width: 100%;
+    background-color: blue; }
+  .school-details-container .m-other-section .facilities {
+    width: 100%;
+    background-color: red; }
+  .school-details-container .m-other-section .alumni {
+    width: 100%;
+    background-color: blue;
+    margin: 0 !important;
+    overflow-x: hidden; }
+  .school-details-container .m-other-section .locations .other-section-box .hover-box p, .school-details-container .m-other-section .facilities .other-section-box .hover-box p {
+    text-align: center !important;
+    padding: 20px 20px !important;
+    color: #FFFFFF !important; }
+  .school-details-container .m-other-section .other-section-box {
+    width: 100%;
+    height: 60vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .school-details-container .m-other-section .other-section-box .hover-box {
+      position: absolute;
+      z-index: 200;
+      width: 100%;
+      height: 60vh;
+      background-color: #082A3E;
+      opacity: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+    .school-details-container .m-other-section .other-section-box h2 {
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 50px 0;
+      font-size: 30pt;
+      cursor: pointer; }
+  .school-details-container .m-other-section .other-section-box:hover .hover-box {
+    opacity: 1; }
+
+.school-details-container .m-school-contact .website {
+  width: 100%;
+  text-align: center;
+  height: 280px;
+  padding-top: 150px;
+  box-sizing: border-box; }
+  .school-details-container .m-school-contact .website a {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    font-size: 40pt;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 100px; }
 
 .mobile-study-areas .m-study-areas-box {
   background-color: #FF6D6D; }

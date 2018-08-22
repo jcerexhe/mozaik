@@ -223,6 +223,94 @@
 	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 	    }
   	}
+  	//other section
+	.m-other-section{
+	  display: flex;
+	  flex-direction: column;
+	  .locations{
+	    width: 100%;
+	    background-color: blue;
+	  }
+	  .facilities{
+	    width: 100%;
+	    background-color: red;
+	  }
+	  .alumni{
+	    width: 100%;
+	    background-color: blue;
+	    margin: 0 !important;
+	    overflow-x: hidden;
+	  }
+
+	  .locations, .facilities{
+
+	    .other-section-box{
+	      .hover-box{
+	        p{
+	          text-align: center !important;
+	          padding: 20px 20px !important;
+	          color: $white !important;
+	        }
+	     }
+	    }
+	  }
+
+	  .other-section-box{
+	    width: 100%;
+	    height: 60vh;
+	    display: flex;
+	    align-items: center;
+
+	    .hover-box{
+	      position: absolute;
+	      z-index: 200;
+	      width: 100%;
+	      height: 60vh;
+	      background-color: $black;
+	      opacity: 0;
+	      display: flex;
+	      align-items: center;
+
+	    }
+
+	    h2{
+	      width: 100%;
+	      text-align: center;
+	      color: $white;
+	      background-color: rgba(0, 0, 0, 0.3);
+	      padding: 50px 0;
+	      font-size: 30pt;
+	      cursor: pointer;
+	    }
+	  }
+
+	    .other-section-box:hover{
+	      .hover-box{
+	        opacity: 1;
+	      }
+	    }  
+	}
+
+	//school contact
+	.m-school-contact{
+	  .website{
+	    width: 100%;
+	    text-align: center;
+	    height: 280px;
+	    padding-top: 150px;
+	    box-sizing: border-box;
+	    a{
+	      color: $white;
+	      font-family: 'Bebas Neue';
+	      font-size: 40pt;
+	      text-decoration: none;
+	      font-weight: bold;
+	      margin-top: 100px;
+
+	    }
+	  }  
+	}
+
 }
 // study areas
 .mobile-study-areas{ 

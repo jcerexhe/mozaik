@@ -45,6 +45,9 @@ import MobileAbout from './components/mobile/about/index.jsx';
 import MobileAgency from './components/mobile/agency/index.jsx';
 import MobileArtwork from './components/mobile/artwork/index.jsx';
 import MobileCourses from './components/mobile/courses/index.jsx';
+import MobileCampus from './components/mobile/campus/index.jsx';
+import MobileFacilities from './components/mobile/facilities/index.jsx';
+import MobileAlumni from './components/mobile/alumni/index.jsx';
 
 // Register to allow usage in node
 reactHelper.register({ MobileMenu });
@@ -57,6 +60,6 @@ reactHelper.register({ MobileAbout });
 reactHelper.register({ MobileAgency });
 reactHelper.register({ MobileArtwork });
 reactHelper.register({ MobileCourses });
-
-
+reactHelper.register({ MobileCampus });
+reactHelper.register({ MobileFacilities });
 

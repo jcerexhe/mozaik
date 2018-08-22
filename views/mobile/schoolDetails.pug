@@ -41,6 +41,135 @@ block content
   .m-student-work
    !=schoolMobileLightBox
   !=CoursesMobile
+  .m-other-section
+    .locations
+      .other-section-box(style="background-image: url('/images/location.png'); background-repeat: no-repeat; background-size: 100%;")
+        h2 locations
+        .hover-box
+          !=CampusMapsMobile
+    .facilities
+      .other-section-box(style="background-image: url('/images/facilities.png'); background-repeat: no-repeat; background-size: 100%;")
+        h2 facilities
+        .hover-box
+          !=FacilitiesMobile
+    .alumni
+      .other-section-box(style="background-image: url('/images/alumni.png'); background-repeat: no-repeat; background-size: 100%;")
+        h2 alumni
+        .hover-box
+          !=AlumniMobile
+  .m-school-contact
+    .website
+      a(href="https://"+school.website)=school.website
+    
 
-  
-  
+        // TODO insert enquiry form; hubspot?
+  append stylesheets
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
+
+  // if lte IE 8
+  script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+  script.
+    var btn = document.createElement("button");
+    btn.innerHTML = '&times;';
+
+    // Stop school vid on close
+    function stopSchoolVid(vidSrc) {
+      document.getElementsByClassName('school-video')[0].setAttribute('src', vidSrc)
+    };
+
+    //Main School Forms
+    function showSForm() {
+      var form = document.getElementsByClassName("hbspt-form");
+      var formModal = document.getElementsByClassName('school-forms-modal');
+      formModal[0].style.display = "block";
+      form[0].style.display = "block";
+      btn.addEventListener("click", function(){
+        form[0].style.display = "none";
+        formModal[0].style.display = "none";
+      });
+      form[0].appendChild(btn);
+    };
+
+    //Main School Forms
+    function createSForm(formId){
+      hbspt.forms.create({
+        portalId: '2708822',
+        formId: formId,
+        onFormReady: showSForm
+      });
+    };
+
+    //Main School Forms
+    window.onclick = function(event) {
+      var clickTarget = event.target;
+      var form = document.getElementsByClassName("hbspt-form");
+      if (form[0]) {
+        var formModal = document.getElementsByClassName('school-forms-modal');
+        if (clickTarget == formModal[0]) {
+          form[0].style.display = "none";
+          formModal[0].style.display = "none";
+        }
+      }
+    };
+
+    // Course Guide Form
+    function dlCourseGuide(){
+      document.getElementById('cg_link').click();
+    }
+
+    function showCGForm(realForm) {
+      console.log(realForm)
+      var form = document.getElementsByClassName("hbspt-form");
+      var formModal = document.getElementsByClassName('school-forms-modal');
+      formModal[0].style.display = "block";
+      form[0].style.display = "block";
+      btn.addEventListener("click", function(){
+        form[0].style.display = "none";
+        formModal[0].style.display = "none";
+      });
+      form[0].appendChild(btn);
+
+    };
+
+    // Course Guide Form
+    function createCGForm(formId){
+      hbspt.forms.create({
+        portalId: '2708822',
+        formId: formId,
+        onFormReady: function($form) {showCGForm($form)},
+        onFormSubmit: dlCourseGuide,
+        inlineMessage: 'Thank you for downloading the course guide!'
+      });
+    }
+
+
+
+
+       function eForm(formId){
+         hbspt.forms.create({
+          portalId: '2708822',
+          formId: formId,
+           onFormReady: closeForm
+          });
+        };
+
+       function cForm() {
+        hbspt.forms.create({
+        portalId: '2708822',
+        formId: formId,
+        onFormReady: closeForm
+        });
+
+      };
+
+       function closeForm() {
+        var form = document.getElementsByClassName("hbspt-form");
+        console.log(form[0]);
+        form[0].style.display = "block";
+        btn.addEventListener("click", function(){
+          form[0].style.display = "none";
+        });
+        form[0].appendChild(btn);
+      };

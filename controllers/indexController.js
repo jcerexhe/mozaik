@@ -96,7 +96,10 @@ exports.schoolDetails = (req, res) => {
     const artworks = school.artworks;
     const schoolMobileLightBox = reactHelper.renderComponent('MobileArtwork', { search: false, artworks: artworks, displayedArt: displayedArt });
     const CoursesMobile = reactHelper.renderComponent('MobileCourses', { courses: school.courses, schoolDisciplines: school.disciplines, school: school });
-    res.render('mobile/schoolDetails', { school, schoolMobileLightBox, CoursesMobile });
+    const CampusMapsMobile = reactHelper.renderComponent('MobileCampus', { campuses: school.locations });
+    const FacilitiesMobile = reactHelper.renderComponent('MobileFacilities', { images: school.facilitiesImages });
+    const AlumniMobile = reactHelper.renderComponent('MobileAlumni', { alumni: school.alumni });
+    res.render('mobile/schoolDetails', { school, schoolMobileLightBox, CoursesMobile, CampusMapsMobile, FacilitiesMobile, AlumniMobile });
   };
 };
 
