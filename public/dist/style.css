@@ -4493,7 +4493,9 @@ input.input-email {
 .mobile-discover-container {
   padding: 20vw 3vw 5vw 3vw;
   font-family: 'Bebas Neue';
-  font-size: 3vw; }
+  font-size: 3vw;
+  background-color: #181818;
+  background: linear-gradient(#000000 0%, #181818 10%); }
   .mobile-discover-container .default-button {
     border: none;
     outline: none;
@@ -4530,8 +4532,21 @@ input.input-email {
   .mobile-discover-container .header {
     margin: auto;
     text-align: center;
-    padding-bottom: 5vw; }
+    width: 47vw;
+    height: 13vw;
+    position: relative;
+    margin-bottom: 2vw; }
+    .mobile-discover-container .header polyline {
+      fill: none;
+      stroke: #FFFFFF;
+      stroke-width: 4%; }
     .mobile-discover-container .header h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      margin: 0;
       font-family: 'Montserrat Extra Bold';
       color: #FFFFFF;
       font-size: 7vw; }
@@ -4539,7 +4554,7 @@ input.input-email {
     text-align: center;
     margin-bottom: 2vw; }
     .mobile-discover-container form input {
-      width: 55%;
+      width: 60%;
       border: none;
       border-radius: 1vw;
       padding: 0.5vw 2vw;
@@ -4563,6 +4578,23 @@ input.input-email {
       border: solid 0.25vw #FFFFFF;
       width: 35%;
       padding: 1vw 0; }
+  .mobile-discover-container .schools-section {
+    padding-bottom: 10vw; }
+    .mobile-discover-container .schools-section .plus {
+      bottom: -3vw; }
+    .mobile-discover-container .schools-section .school-thumb {
+      padding-top: 100%;
+      position: relative;
+      background-color: #666; }
+      .mobile-discover-container .schools-section .school-thumb .school-btn {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+        padding: 1vw 0;
+        position: absolute;
+        bottom: 0; }
+        .mobile-discover-container .schools-section .school-thumb .school-btn p {
+          opacity: 1;
+          margin: 0; }
 
 .individual-area-container h1.mobile-study-area-page-heading {
   margin-right: auto;

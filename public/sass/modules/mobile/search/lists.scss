@@ -1,0 +1,47 @@
+// Countries List
+.countries-grid {
+  padding: 0 2vw;
+  .country-button {
+    padding: 0 1vw;
+  }
+}
+
+// Disciplines List
+.disciplines-section {
+  text-align: center;
+  padding-bottom: 2vw;
+  .clear-filter {
+    border-radius: 0;
+    border: solid 0.25vw $white;
+    width: 35%;
+    padding: 1vw 0;
+  }
+}
+
+// Schools List (or Results List)
+.schools-section {
+  padding-bottom: 10vw;
+
+  .plus {
+    bottom: -3vw;
+  }
+
+  .school-thumb {
+    padding-top: 100%;
+    position: relative;
+    background-color: #666;
+
+    .school-btn {
+      background-color: rgba(255,255,255, 0.5);
+      border-radius: 0;
+      padding: 1vw 0;
+      position: absolute;
+      bottom: 0;
+
+      p {
+        opacity: 1;
+        margin: 0;
+      }
+    }
+  }
+}
