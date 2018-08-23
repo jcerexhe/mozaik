@@ -4595,6 +4595,101 @@ input.input-email {
         .mobile-discover-container .schools-section .school-thumb .school-btn p {
           opacity: 1;
           margin: 0; }
+  .mobile-discover-container .adv-search-section {
+    position: relative;
+    padding: 13vw 2vw 2vw 2vw;
+    text-align: center; }
+    .mobile-discover-container .adv-search-section .adv-search-btn {
+      position: absolute;
+      width: 100vw;
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+      left: 50%;
+      border-radius: 0;
+      top: 0; }
+    .mobile-discover-container .adv-search-section .qpl {
+      padding-bottom: 2vw; }
+      .mobile-discover-container .adv-search-section .qpl .default-button {
+        padding: 2vw 7vw;
+        margin-bottom: 2vw;
+        box-shadow: none;
+        text-align: left; }
+        .mobile-discover-container .adv-search-section .qpl .default-button span {
+          float: right; }
+          .mobile-discover-container .adv-search-section .qpl .default-button span i {
+            font-size: 4vw; }
+        .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn {
+          position: relative; }
+          .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-rail, .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-track, .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-step {
+            top: 50%;
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            height: 0.5vw; }
+          .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-handle, .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-dot, .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark {
+            top: 50%;
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            height: 2vw;
+            width: 2vw;
+            border: none;
+            margin: 0; }
+          .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container {
+            width: 60%;
+            height: calc(100% - 4vw);
+            position: absolute;
+            right: 7vw;
+            top: 2vw; }
+            .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider {
+              width: 60%;
+              height: 100%;
+              padding: 0;
+              margin: auto;
+              -ms-touch-action: none;
+                  touch-action: none; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-rail {
+                background-color: #181818; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-track {
+                background-color: #FF6D6D; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-step {
+                height: auto; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-handle {
+                background-color: #FF6D6D; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-dot {
+                border-radius: 50%;
+                background-color: #181818; }
+              .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark {
+                left: 50%;
+                font-size: 2.2vw;
+                width: 180%;
+                height: 100%; }
+                .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark .rc-slider-mark-text {
+                  position: static;
+                  width: 85% !important;
+                  margin: 0 !important;
+                  color: #000; }
+                  .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark .rc-slider-mark-text .center-text {
+                    position: absolute;
+                    top: 50%;
+                    -ms-transform: translateY(-50%);
+                        transform: translateY(-50%); }
+                    .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark .rc-slider-mark-text .center-text.right-mark {
+                      right: 5%; }
+                .mobile-discover-container .adv-search-section .qpl .default-button.price-range-btn .price-range-slider-container .price-range-slider .rc-slider-mark .rc-slider-mark-text-active {
+                  color: #000; }
+    .mobile-discover-container .adv-search-section .location-btns {
+      margin: 0 auto;
+      padding-bottom: 7vw; }
+      .mobile-discover-container .adv-search-section .location-btns button {
+        width: 20%;
+        margin: 0 2vw;
+        font-family: 'Montserrat Light';
+        font-size: 2vw;
+        padding: 0.5vw 0;
+        background-color: white; }
+    .mobile-discover-container .adv-search-section .submit-btn {
+      width: 60%;
+      border-radius: 5vw;
+      margin-bottom: 2vw; }
 
 .individual-area-container h1.mobile-study-area-page-heading {
   margin-right: auto;
