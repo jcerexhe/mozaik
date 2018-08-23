@@ -4900,6 +4900,9 @@ input.input-email {
   background-position: bottom;
   width: 100%;
   height: 50vh; }
+  @media only screen and (max-width: 320px) {
+    .school-details-container .m-school-heading-container {
+      height: 60vh; } }
 
 .school-details-container .school-heading {
   display: -ms-flexbox;
@@ -4913,6 +4916,12 @@ input.input-email {
   padding-top: 30%;
   width: 100%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 768px) {
+    .school-details-container .school-heading {
+      padding-top: 35%; } }
+  @media only screen and (max-width: 414px) {
+    .school-details-container .school-heading {
+      padding-top: 50%; } }
   .school-details-container .school-heading .school-info {
     display: -ms-flexbox;
     display: flex;
@@ -4925,12 +4934,24 @@ input.input-email {
     font-family: 'Gotham Bold';
     font-weight: bold;
     color: #FFFFFF; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .school-heading .school-info h1 {
+        font-size: 30pt; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .school-heading .school-info h1 {
+        font-size: 15pt; } }
   .school-details-container .school-heading .school-logo-header img {
     margin-right: 20px;
     max-width: 150px;
     height: auto;
     background-color: #181818;
     /*background: none;*/ }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .school-heading .school-logo-header img {
+        max-width: 100px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .school-heading .school-logo-header img {
+        max-width: 60px; } }
   .school-details-container .school-heading .school-name {
     font-family: 'Montserrat Ultra Light'; }
 
@@ -4941,16 +4962,30 @@ input.input-email {
   background-position: bottom;
   width: 100%;
   height: 50vh; }
+  @media only screen and (max-width: 320px) {
+    .school-details-container .m-school-heading-overview {
+      height: 60vh; } }
 
 .school-details-container .m-school-overview {
   background-color: rgba(255, 255, 255, 0.8);
   height: 50vh;
   width: 100%; }
+  @media only screen and (max-width: 320px) {
+    .school-details-container .m-school-overview {
+      height: 60vh; } }
   .school-details-container .m-school-overview p {
     font-size: 30px;
     font-color: #000;
     text-align: center;
     padding: 30px 150px 0px 150px; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .m-school-overview p {
+        font-size: 12px;
+        padding: 30px 100px 0px 100px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .m-school-overview p {
+        font-size: 15px;
+        padding: 30px 20px 0px 20px; } }
 
 .school-details-container .m-school-links1 {
   width: 100%;
@@ -4961,6 +4996,15 @@ input.input-email {
   -ms-flex-direction: row;
       flex-direction: row;
   padding-top: 60px; }
+  @media only screen and (max-width: 768px) {
+    .school-details-container .m-school-links1 {
+      padding-top: 50px; } }
+  @media only screen and (max-width: 414px) {
+    .school-details-container .m-school-links1 {
+      padding-top: 20px; } }
+  @media only screen and (max-width: 414px) {
+    .school-details-container .m-school-links1 {
+      padding-top: 10px; } }
   .school-details-container .m-school-links1 .m-school-link {
     margin-left: 20px;
     margin-right: 20px;
@@ -4968,11 +5012,28 @@ input.input-email {
     width: 30%;
     padding: 20px;
     border-radius: 10px; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .m-school-links1 .m-school-link {
+        padding: 15px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .m-school-links1 .m-school-link {
+        padding: 10px;
+        margin-left: 3px;
+        margin-right: 3px; } }
+    @media only screen and (max-width: 375px) {
+      .school-details-container .m-school-links1 .m-school-link {
+        padding: 5px; } }
   .school-details-container .m-school-links1 .m-btn {
     text-align: center;
     letter-spacing: 0px;
     color: white;
     font-size: 30px; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .m-school-links1 .m-btn {
+        font-size: 20px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .m-school-links1 .m-btn {
+        font-size: 15px; } }
 
 .school-details-container .m-school-links2 {
   width: 100%;
@@ -4983,6 +5044,15 @@ input.input-email {
   -ms-flex-direction: row;
       flex-direction: row;
   padding-top: 60px; }
+  @media only screen and (max-width: 768px) {
+    .school-details-container .m-school-links2 {
+      padding-top: 50px; } }
+  @media only screen and (max-width: 414px) {
+    .school-details-container .m-school-links2 {
+      padding-top: 20px; } }
+  @media only screen and (max-width: 414px) {
+    .school-details-container .m-school-links2 {
+      padding-top: 10px; } }
   .school-details-container .m-school-links2 .m-school-link {
     margin-left: 20px;
     margin-right: 20px;
@@ -4991,10 +5061,33 @@ input.input-email {
     padding: 20px;
     border-radius: 10px;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .m-school-links2 .m-school-link {
+        padding: 15px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .m-school-links2 .m-school-link {
+        padding: 10px;
+        margin-left: 3px;
+        margin-right: 3px; } }
+    @media only screen and (max-width: 375px) {
+      .school-details-container .m-school-links2 .m-school-link {
+        padding: 5px; } }
   .school-details-container .m-school-links2 .m-btn {
     letter-spacing: 0px;
     color: white;
     font-size: 30px; }
+    @media only screen and (max-width: 768px) {
+      .school-details-container .m-school-links2 .m-btn {
+        font-size: 20px; } }
+    @media only screen and (max-width: 414px) {
+      .school-details-container .m-school-links2 .m-btn {
+        font-size: 15px; } }
+    @media only screen and (max-width: 320px) {
+      .school-details-container .m-school-links2 .m-btn {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .school-details-container .modal-x {
   margin-top: -50%; }
