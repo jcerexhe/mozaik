@@ -6,9 +6,9 @@
     position: relative;
   }
   .m-course-bg {
-    padding-bottom: 0px;
-      background-color: rgba(144, 144, 144, 0.5);
-      margin-top: -1px;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    margin-top: -1px;
   }
 
   .m-course-card {
@@ -24,6 +24,9 @@
   .course-mobile-content-black{
     display:flex;
     justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 90px;
+    margin-bottom: 50px;
     .m-course-card-left {
       width: 50%;
       h3{
@@ -65,7 +68,7 @@
       span.Collapsible__trigger, .is-closed{
         font-size: 30px;
         position: absolute;
-        right: 30px;
+        right: 60px;
       }
       .m-course-card-right{
         margin-top: 50px;
@@ -77,6 +80,9 @@
   .course-mobile-content-white{
     display:flex;
     justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 90px;
+    margin-bottom: 50px;
     .m-course-card-left {
       width: 50%;
       h3{
@@ -118,7 +124,7 @@
       span.Collapsible__trigger, .is-closed{
         font-size: 30px;
         position: absolute;
-        right: 30px;
+        right: 60px;
       }
       .m-course-card-right{
         margin-top: 50px;
@@ -160,7 +166,7 @@
     background-color: #FF6D6D;
     position: absolute;
     right: 15px;
-    top: 95%;
+    top: 100%;
     span{
       color: #fff;
       font-size: 100px;

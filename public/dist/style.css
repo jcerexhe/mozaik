@@ -5377,8 +5377,8 @@ input.input-email {
     border-top: 1px solid #E4E9EC;
     position: relative; }
   .courses-mobile .m-course-bg {
-    padding-bottom: 0px;
-    background-color: rgba(144, 144, 144, 0.5);
+    padding-bottom: 5%;
+    background-color: white;
     margin-top: -1px; }
   .courses-mobile .m-course-card {
     display: -ms-flexbox;
@@ -5394,7 +5394,10 @@ input.input-email {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 90px;
+    margin-bottom: 50px; }
     .courses-mobile .course-mobile-content-black .m-course-card-left {
       width: 50%; }
       .courses-mobile .course-mobile-content-black .m-course-card-left h3 {
@@ -5437,7 +5440,7 @@ input.input-email {
       .courses-mobile .course-mobile-content-black .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-black .Collapsible .is-closed {
         font-size: 30px;
         position: absolute;
-        right: 30px; }
+        right: 60px; }
       .courses-mobile .course-mobile-content-black .Collapsible .m-course-card-right {
         margin-top: 50px;
         margin-right: 30px; }
@@ -5445,7 +5448,10 @@ input.input-email {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 90px;
+    margin-bottom: 50px; }
     .courses-mobile .course-mobile-content-white .m-course-card-left {
       width: 50%; }
       .courses-mobile .course-mobile-content-white .m-course-card-left h3 {
@@ -5488,7 +5494,7 @@ input.input-email {
       .courses-mobile .course-mobile-content-white .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-white .Collapsible .is-closed {
         font-size: 30px;
         position: absolute;
-        right: 30px; }
+        right: 60px; }
       .courses-mobile .course-mobile-content-white .Collapsible .m-course-card-right {
         margin-top: 50px;
         margin-right: 30px; }
@@ -5519,7 +5525,7 @@ input.input-email {
     background-color: #FF6D6D;
     position: absolute;
     right: 15px;
-    top: 95%; }
+    top: 100%; }
     .courses-mobile .m-more-courses span {
       color: #fff;
       font-size: 100px;
