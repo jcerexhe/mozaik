@@ -5,7 +5,10 @@
 	  background-size: cover;
 	  background-position: bottom;
 	  width: 100%;
-	  height: 50vh; 
+	  height: 50vh;
+	  @media only screen and (max-width: 320px) {
+	  	height: 60vh;
+	  } 
 	}
 	.school-heading {
 	  display: flex;
@@ -16,6 +19,12 @@
 	  padding-top: 30%;
 	  width: 100%;
 	  box-sizing: border-box;
+	  @media only screen and (max-width: 768px) {
+	    padding-top: 35%;
+	  }
+	  @media only screen and (max-width: 414px) {
+	    padding-top: 50%;
+	  }
 	  .school-info {
 	    display: flex;
 	    align-items: center;
@@ -28,6 +37,12 @@
 	    font-family: 'Gotham Bold';
 	    font-weight: bold;
 	    color: $white;
+	    @media only screen and (max-width: 768px) {
+	     font-size: 30pt;
+	 	}
+	 	@media only screen and (max-width: 414px) {
+	     font-size: 15pt;
+	 	}
 	  }
 	  .school-logo-header img {
 	    margin-right: 20px;
@@ -35,11 +50,18 @@
 	    height: auto;
 	    background-color: $grey;
 	    /*background: none;*/
+	    @media only screen and (max-width: 768px) {
+	     max-width: 100px;
+	 	}
+	 	@media only screen and (max-width: 414px) {
+	     max-width: 60px;
+	 	}
 	  }
 	  .school-name {
 	    font-family: 'Montserrat Ultra Light';
 	  }
 	}
+
 	.m-school-heading-overview {
 	  /* background-color: $grey; */
 	  background-color: blue;
@@ -47,16 +69,30 @@
 	  background-position: bottom;
 	  width: 100%;
 	  height: 50vh;
+	  @media only screen and (max-width: 320px) {
+	  	height: 60vh;
+	  }
 	}
 	.m-school-overview{
 	  background-color: rgba(255, 255, 255, 0.8);
 	  height: 50vh;
 	  width: 100%;
+	  @media only screen and (max-width: 320px) {
+	  	height: 60vh;
+	  }
 	  p{
 	  	font-size: 30px;
 	  	font-color: #000;
 	  	text-align: center;
 	  	padding: 30px 150px 0px 150px;
+	  	@media only screen and (max-width: 768px) {
+	     font-size: 12px;
+	     padding: 30px 100px 0px 100px;
+	 	}
+	 	@media only screen and (max-width: 414px) {
+	     font-size: 15px;
+	     padding: 30px 20px 0px 20px;
+	 	}
 	  }
 	}
 
@@ -65,7 +101,16 @@
 	   display: flex;
 	   justify-content: center;
 	   flex-direction: row;
-	   padding-top: 60px; 
+	   padding-top: 60px;
+	   	 @media only screen and (max-width: 768px) {
+	   	 	padding-top: 50px;
+	   	 }
+	   	 @media only screen and (max-width: 414px) {
+	   	 	padding-top: 20px;
+	   	 }
+	   	 @media only screen and (max-width: 414px) {
+	   	 	padding-top: 10px;
+	   	 }
 	    .m-school-link{
 	      margin-left: 20px;
 	      margin-right: 20px;
@@ -73,21 +118,47 @@
           width: 30%;
           padding: 20px;
     	  border-radius: 10px;
+    	  	@media only screen and (max-width: 768px) {
+	   	 		padding: 15px;
+	   	 	}
+	   	 	@media only screen and (max-width: 414px) {
+	   	 		padding: 10px;
+	   	 		margin-left: 3px;
+	      		margin-right: 3px;
+	   	 	}
+	   	 	@media only screen and (max-width: 375px) {
+	   	 		padding: 5px;
+	   	 	 }
 	    }
 	    .m-btn{
 	      text-align: center;
 	      letter-spacing: 0px;
 	      color: white;
 	      font-size: 30px;
-	      
+	      	@media only screen and (max-width: 768px) {
+	   	 		font-size: 20px;
+	   	 	}
+	   	 	@media only screen and (max-width: 414px) {
+	   	 		font-size: 15px;
+	   	 	}
 	    }
 	 }
+	 
 	 .m-school-links2{
 	   width: 100%;
 	   display: flex;
 	   justify-content: center;
 	   flex-direction: row;
-	   padding-top: 60px; 
+	   padding-top: 60px;
+		    @media only screen and (max-width: 768px) {
+		      padding-top: 50px;
+		    }
+		    @media only screen and (max-width: 414px) {
+	   	 	  padding-top: 20px;
+	   	 	}
+	   	 	@media only screen and (max-width: 414px) {
+	   	 	  padding-top: 10px;
+	   	 	}  
 	    .m-school-link{
 	      margin-left: 20px;
 	      margin-right: 20px;
@@ -95,14 +166,33 @@
           width: 30%;
           padding: 20px;
     	  border-radius: 10px;
-    	  text-align: center
+    	  text-align: center;
+	    	  @media only screen and (max-width: 768px) {
+		      	padding: 15px;
+		      }
+		      @media only screen and (max-width: 414px) {
+	   	 		padding: 10px;
+	   	 		margin-left: 3px;
+    			margin-right: 3px;
+	   	 	  }
+	   	 	  @media only screen and (max-width: 375px) {
+	   	 		padding: 5px;
+	   	 	  }
 	    }
 	    .m-btn{
-
 	      letter-spacing: 0px;
 	      color: white;
 	      font-size: 30px;
-	      
+		      @media only screen and (max-width: 768px) {
+		      	font-size: 20px;
+		      }
+		      @media only screen and (max-width: 414px) {
+	   	 		font-size: 15px;
+	   	 	  }
+	   	 	  @media only screen and (max-width: 320px) {
+	   	 		display: flex;
+	   	 		justify-content: center; 	 	  
+	   	 	}
 	    }
 	 }
 	.modal-x{
