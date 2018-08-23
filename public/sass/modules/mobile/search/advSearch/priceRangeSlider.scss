@@ -1,0 +1,80 @@
+// Extendable styles (%) - extend these to a block to apply its styles
+%price-range-rc-slider-bar {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.5vw;
+}
+
+%price-range-rc-slider-dot {
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 2vw;
+  width: 2vw;
+  border: none;
+  margin: 0;
+}
+
+.price-range-slider-container {
+  width: 60%;
+  height: calc(100% - 4vw);
+  position: absolute;
+  right: 7vw;
+  top: 2vw;
+
+  .price-range-slider {
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    touch-action: none;
+
+    // The classes with 'rc-slider' have default styles which were imported into 'client/components/mobile/search/discover.jsx', line 6
+
+    .rc-slider-rail {
+      @extend %price-range-rc-slider-bar;
+      background-color: $grey;
+    }
+    .rc-slider-track {
+      @extend %price-range-rc-slider-bar;
+      background-color: $pink;
+    }
+    .rc-slider-step {
+      @extend %price-range-rc-slider-bar;
+      height: auto;
+    }
+    .rc-slider-handle {
+      @extend %price-range-rc-slider-dot;
+      background-color: $pink;
+    }
+    .rc-slider-dot {
+      @extend %price-range-rc-slider-dot;
+      border-radius: 50%;
+      background-color: $grey;
+    }
+    .rc-slider-mark {
+      @extend %price-range-rc-slider-dot;
+      left: 50%;
+      font-size: 2.2vw;
+      width: 180%;
+      height: 100%;
+
+      .rc-slider-mark-text{
+        position: static;
+        width: 85% !important; // Without '!important', it'll be overwritten
+        margin: 0 !important; // Without '!important', it'll be overwritten
+        color: #000;
+        .center-text {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          &.right-mark {
+            right: 5%;
+          }
+        }
+      }
+      .rc-slider-mark-text-active {
+          color: #000;
+      }
+    }
+  }
+}

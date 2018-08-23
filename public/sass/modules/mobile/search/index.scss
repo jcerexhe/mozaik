@@ -59,7 +59,8 @@
   @import './header';
   // Lists - contains list-specific styles because not that many lines to need separate files for each
   @import './lists';
-
+  // Advanced Search Section - the styles for the Price Range Slider needed a seperate file that's why an index was created to compile it
+  @import './advSearch/index';
 
 
 }
