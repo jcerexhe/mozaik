@@ -5376,6 +5376,10 @@ input.input-email {
   .courses-mobile .m-course-card-container {
     border-top: 1px solid #E4E9EC;
     position: relative; }
+  .courses-mobile .m-course-bg {
+    padding-bottom: 0px;
+    background-color: rgba(144, 144, 144, 0.5);
+    margin-top: -1px; }
   .courses-mobile .m-course-card {
     display: -ms-flexbox;
     display: flex;
@@ -5386,81 +5390,108 @@ input.input-email {
     padding: 10px;
     padding-top: 30px;
     background: #181818; }
-  .courses-mobile .course-card-left {
-    width: 30%;
+  .courses-mobile .course-mobile-content-black {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
     -ms-flex-pack: justify;
-        justify-content: space-between;
-    color: #FFFFFF; }
-  .courses-mobile .course-card-left > .course-buttons {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex; }
-  .courses-mobile .course-buttons > .btn {
-    margin-top: 10px;
-    width: 100%; }
-  @media only screen and (min-width: 768px) {
-    .courses-mobile .course-buttons > .btn {
+        justify-content: space-between; }
+    .courses-mobile .course-mobile-content-black .m-course-card-left {
       width: 50%; }
-    .courses-mobile .course-buttons > .btn:first-child {
-      margin-right: 15px; } }
-  .courses-mobile .course-card-right {
-    width: 47.5%;
+      .courses-mobile .course-mobile-content-black .m-course-card-left h3 {
+        font-size: 25px;
+        margin: 5px 2%; }
+      .courses-mobile .course-mobile-content-black .m-course-card-left .course-info {
+        /*border: 2px solid $dark-grey;*/
+        width: calc(98% - 9px);
+        padding-left: 2%;
+        margin-left: 0%;
+        padding-right: 5px;
+        font-family: 'Montserrat Ultra Light';
+        font-size: 12px;
+        font: justify;
+        color: #FFFFFF;
+        -ms-flex: 1;
+            flex: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+      .courses-mobile .course-mobile-content-black .m-course-card-left .info-bits-container {
+        display: -ms-flexbox;
+        display: flex; }
+      .courses-mobile .course-mobile-content-black .m-course-card-left .info-bits-section {
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+      .courses-mobile .course-mobile-content-black .m-course-card-left .course-info-bit-left {
+        text-align: left; }
+      .courses-mobile .course-mobile-content-black .m-course-card-left .info-bit-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        margin-left: 3px; }
+    .courses-mobile .course-mobile-content-black .Collapsible {
+      color: #fff; }
+      .courses-mobile .course-mobile-content-black .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-black .Collapsible .is-closed {
+        font-size: 30px;
+        position: absolute;
+        right: 30px; }
+      .courses-mobile .course-mobile-content-black .Collapsible .m-course-card-right {
+        margin-top: 50px;
+        margin-right: 30px; }
+  .courses-mobile .course-mobile-content-white {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .courses-mobile .course-card-right > h3 {
-    font-size: 25px;
-    margin: 5px 2%; }
-  .courses-mobile .course-card-right > .course-info {
-    /*border: 2px solid $dark-grey;*/
-    width: calc(98% - 9px);
-    padding-left: 2%;
-    margin-left: 0%;
-    padding-right: 5px;
-    font-family: 'Montserrat Ultra Light';
-    font-size: 12px;
-    font: justify;
-    color: #FFFFFF;
-    -ms-flex: 1;
-        flex: 1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .courses-mobile .course-info-bit-right {
-    /*display: flex; */
-    text-align: right; }
-  .courses-mobile .course-info-bit-left {
-    /*display: flex; */
-    text-align: left; }
-  .courses-mobile .course-info-bit-left {
-    /*display: flex; */
-    text-align: left; }
-  .courses-mobile .info-bit-content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-left: 3px; }
-  .courses-mobile .m-course-bg {
-    padding-bottom: 0px;
-    background-color: rgba(144, 144, 144, 0.5);
-    margin-top: -1px; }
-  .courses-mobile .info-bits-container {
-    display: -ms-flexbox;
-    display: flex; }
-  .courses-mobile .info-bits-section {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .courses-mobile .card-icon {
-    float: right; }
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .courses-mobile .course-mobile-content-white .m-course-card-left {
+      width: 50%; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left h3 {
+        font-size: 25px;
+        margin: 5px 2%; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left .course-info {
+        /*border: 2px solid $dark-grey;*/
+        width: calc(98% - 9px);
+        padding-left: 2%;
+        margin-left: 0%;
+        padding-right: 5px;
+        font-family: 'Montserrat Ultra Light';
+        font-size: 12px;
+        font: justify;
+        color: #000;
+        -ms-flex: 1;
+            flex: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left .info-bits-container {
+        display: -ms-flexbox;
+        display: flex; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left .info-bits-section {
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left .course-info-bit-left {
+        text-align: left; }
+      .courses-mobile .course-mobile-content-white .m-course-card-left .info-bit-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        margin-left: 3px; }
+    .courses-mobile .course-mobile-content-white .Collapsible {
+      color: #000; }
+      .courses-mobile .course-mobile-content-white .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-white .Collapsible .is-closed {
+        font-size: 30px;
+        position: absolute;
+        right: 30px; }
+      .courses-mobile .course-mobile-content-white .Collapsible .m-course-card-right {
+        margin-top: 50px;
+        margin-right: 30px; }
   .courses-mobile .course-buttons {
     text-align: right; }
     .courses-mobile .course-buttons .btn {

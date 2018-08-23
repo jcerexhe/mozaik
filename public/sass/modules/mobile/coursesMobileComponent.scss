@@ -5,97 +5,128 @@
     border-top: 1px solid $dark-grey;
     position: relative;
   }
-  .m-course-card {
-    display: flex;
-    align-items: top;
-    width: 100%;
-    
-    position: relative;
-    padding: 10px;
-    padding-top: 30px;
-    background: $grey;
-  }
-  .course-card-left {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: $white;
-  }
-  .course-card-left > .course-buttons {
-    width: 100%;
-    display: flex;
-  }
-  .course-buttons > .btn {
-    margin-top: 10px;
-    width: 100%;
-  }
-  @media only screen and (min-width: 768px) {
-    .course-buttons > .btn {
-      width: 50%;
-    }
-    .course-buttons > .btn:first-child {
-      margin-right: 15px;
-    }
-  }
-  .course-card-right {
-    width: 47.5%;
-    display: flex;
-    flex-direction: column;
-  }
-  .course-card-right > h3 {
-    font-size: 25px;
-    margin: 5px 2%;
-  }
-  .course-card-right > .course-info {
-    /*border: 2px solid $dark-grey;*/
-    width: calc(98% - 9px);
-    padding-left: 2%;
-    margin-left: 0%;
-    padding-right: 5px;
-    font-family: 'Montserrat Ultra Light';
-    font-size: 12px;
-    font: justify;
-    color: $white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .course-info-bit-right {
-    /*display: flex; */
-    text-align: right;
-  }
-
-  .course-info-bit-left {
-    /*display: flex; */
-    text-align: left;
-  }
-
-  .course-info-bit-left {
-    /*display: flex; */
-    text-align: left;
-  }
-  .info-bit-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3px;
-  }
   .m-course-bg {
     padding-bottom: 0px;
       background-color: rgba(144, 144, 144, 0.5);
       margin-top: -1px;
   }
-  .info-bits-container {
+
+  .m-course-card {
     display: flex;
-  }
-  .info-bits-section {
-    flex-grow: 1;
-    flex-direction: column;
-  }
-  .card-icon {
-    float: right;
+    align-items: top;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    padding-top: 30px;
+    background: $grey;
   }
 
+  .course-mobile-content-black{
+    display:flex;
+    justify-content: space-between;
+    .m-course-card-left {
+      width: 50%;
+      h3{
+        font-size: 25px;
+        margin: 5px 2%;
+      }
+      .course-info {
+        /*border: 2px solid $dark-grey;*/
+        width: calc(98% - 9px);
+        padding-left: 2%;
+        margin-left: 0%;
+        padding-right: 5px;
+        font-family: 'Montserrat Ultra Light';
+        font-size: 12px;
+        font: justify;
+        color: $white;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .info-bits-container {
+        display: flex;
+      }
+      .info-bits-section {
+        flex-grow: 1;
+        flex-direction: column;
+      }
+      .course-info-bit-left {
+        text-align: left;
+      }
+      .info-bit-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3px;
+      }
+    }
+    .Collapsible{
+      color: #fff;
+      span.Collapsible__trigger, .is-closed{
+        font-size: 30px;
+        position: absolute;
+        right: 30px;
+      }
+      .m-course-card-right{
+        margin-top: 50px;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .course-mobile-content-white{
+    display:flex;
+    justify-content: space-between;
+    .m-course-card-left {
+      width: 50%;
+      h3{
+        font-size: 25px;
+        margin: 5px 2%;
+      }
+      .course-info {
+        /*border: 2px solid $dark-grey;*/
+        width: calc(98% - 9px);
+        padding-left: 2%;
+        margin-left: 0%;
+        padding-right: 5px;
+        font-family: 'Montserrat Ultra Light';
+        font-size: 12px;
+        font: justify;
+        color: #000;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .info-bits-container {
+        display: flex;
+      }
+      .info-bits-section {
+        flex-grow: 1;
+        flex-direction: column;
+      }
+      .course-info-bit-left {
+        text-align: left;
+      }
+      .info-bit-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3px;
+      }
+    }
+    .Collapsible{
+      color: #000;
+      span.Collapsible__trigger, .is-closed{
+        font-size: 30px;
+        position: absolute;
+        right: 30px;
+      }
+      .m-course-card-right{
+        margin-top: 50px;
+        margin-right: 30px;
+      }
+    }
+  }
+    
   .course-buttons{
     text-align: right;
 
