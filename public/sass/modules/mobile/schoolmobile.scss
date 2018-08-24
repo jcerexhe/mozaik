@@ -410,11 +410,17 @@
 	.m-study-areas-box{
 	  background-color: #FF6D6D;
 	  h1{
-	    padding: 20px;
+	    padding: 20px 20px 0px 20px;
 	    color: #fff;
 	    font-size: 4em;
 	    text-align: center;
 	  }
+	   @media only screen and (max-width: 414px) {
+	   	 h1{
+	   	 	padding: 10px 10px 0px 10px;
+	   	 	font-size: 3em;
+	   	 }
+	   }
 	}
 	.choose-your-study-areas{
 	  position: relative;
@@ -429,6 +435,12 @@
     	 font-size: 4vw;
     	 color: #000000;
 	  	}
+	   @media only screen and (max-width: 414px){
+	   	 padding: 60px;
+	     h4.panel-title > a{
+	     	font-size: 7vw;
+	     }
+	   }
 	  }
 	  .study-area-group{
 	  	text-align: center;
@@ -440,6 +452,9 @@
 	  		border: 2px solid #000;
 	  		background-color: #212529;
 	  		padding: 20px;
+	  	}
+	  	@media only screen and (max-width: 414px){
+	  		font-size: 4vw;
 	  	}
 	  }
 	}
