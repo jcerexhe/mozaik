@@ -5194,7 +5194,7 @@ input.input-email {
     color: #fff;
     font-size: 4em; }
     @media only screen and (max-width: 414px) {
-      .school-details-container .m-student-work-header h1 {
+      .school-details-container .m-student-work-header h1 h1 {
         padding: 10px 10px 0px 10px;
         font-size: 3em; } }
 
@@ -5361,7 +5361,7 @@ input.input-email {
       font-family: 'Bebas Neue';
       font-size: 4vw;
       color: #000000; }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 600px) {
       .mobile-study-areas .choose-your-study-areas .panel-heading {
         padding: 60px; }
         .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title > a {

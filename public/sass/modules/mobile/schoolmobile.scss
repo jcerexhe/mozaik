@@ -208,8 +208,10 @@
 	   color: #fff;
 	   font-size: 4em;
 		@media only screen and (max-width: 414px) {
+		   h1{
 		   padding: 10px 10px 0px 10px;
 		   font-size: 3em;
+		   }
 		}
 	   }
 	}
@@ -435,7 +437,7 @@
     	 font-size: 4vw;
     	 color: #000000;
 	  	}
-	   @media only screen and (max-width: 414px){
+	   @media only screen and (max-width: 600px){
 	   	 padding: 60px;
 	     h4.panel-title > a{
 	     	font-size: 7vw;
