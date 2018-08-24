@@ -5322,6 +5322,12 @@ input.input-email {
       cursor: pointer;
       border-radius: 50px;
       margin: auto; }
+      @media only screen and (max-width: 600px) {
+        .school-details-container .m-other-section .other-section-box h2 {
+          padding: 8px 0; } }
+      @media only screen and (max-width: 414px) {
+        .school-details-container .m-other-section .other-section-box h2 {
+          padding: 10px 0; } }
   .school-details-container .m-other-section .other-section-box:hover .hover-box {
     opacity: 1; }
 
