@@ -378,6 +378,9 @@
           cursor: pointer;
           border-radius: 50px;
           margin: auto;
+          @media only screen and (max-width: 414px){
+          	padding: 10px 0;
+          }
 	    }
 	  }
 
