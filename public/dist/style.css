@@ -5340,10 +5340,14 @@ input.input-email {
 .mobile-study-areas .m-study-areas-box {
   background-color: #FF6D6D; }
   .mobile-study-areas .m-study-areas-box h1 {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     color: #fff;
     font-size: 4em;
     text-align: center; }
+  @media only screen and (max-width: 414px) {
+    .mobile-study-areas .m-study-areas-box h1 {
+      padding: 10px 10px 0px 10px;
+      font-size: 3em; } }
 
 .mobile-study-areas .choose-your-study-areas {
   position: relative;
@@ -5357,6 +5361,11 @@ input.input-email {
       font-family: 'Bebas Neue';
       font-size: 4vw;
       color: #000000; }
+    @media only screen and (max-width: 414px) {
+      .mobile-study-areas .choose-your-study-areas .panel-heading {
+        padding: 60px; }
+        .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title > a {
+          font-size: 7vw; } }
   .mobile-study-areas .choose-your-study-areas .study-area-group {
     text-align: center;
     font-size: 3vw;
@@ -5367,6 +5376,9 @@ input.input-email {
       border: 2px solid #000;
       background-color: #212529;
       padding: 20px; }
+    @media only screen and (max-width: 414px) {
+      .mobile-study-areas .choose-your-study-areas .study-area-group {
+        font-size: 4vw; } }
 
 .mobile-artwork-container .art-box-img {
   width: 100%;
