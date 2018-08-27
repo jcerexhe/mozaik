@@ -39,7 +39,7 @@ import MobileMenu from './components/mobile/menu/index.jsx';
 import MobileHomeHero from './components/mobile/home/hero/index.jsx';
 import MobileHomeArtworks from './components/mobile/home/artworks/index.jsx';
 import MobileHomeStudyAreas from './components/mobile/home/studyAreas/index.jsx';
-import MobileDiscover from './components/mobile/search/discover.jsx';
+import MobileDiscover from './components/mobile/search/index.jsx';
 import MobileIndividualStudyArea from'./components/mobile/individualArea/index.jsx';
 import MobileAbout from './components/mobile/about/index.jsx';
 import MobileAgency from './components/mobile/agency/index.jsx';

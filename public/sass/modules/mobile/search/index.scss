@@ -5,7 +5,16 @@
   background-color: $grey;
   background: linear-gradient(#000000 0%, $grey 10%);
 
+  %selected {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+
   // Applicable to all sections
+  button.default-button:active {
+    @extend %selected;
+  }
+
   .default-button {
     border: none;
     outline: none;
@@ -15,7 +24,9 @@
     width: 100%;
     padding: 2vw 0;
     box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+    cursor: pointer;
   }
+
   // 'Special' buttons (create here if special is used in more than one section)
   .pink-btn {
     background-color: $pink;
@@ -44,12 +55,17 @@
     }
   }
 
+  .selected {
+    @extend %selected;
+    //pointer-events: none;
+  }
+
   .grid {
     padding-bottom: 2vw;
     position: relative;
   }
 
-  // Bootstrap class with modified padding
+  
   .col {
     padding: 1vw;
   }

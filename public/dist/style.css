@@ -4496,6 +4496,9 @@ input.input-email {
   font-size: 3vw;
   background-color: #181818;
   background: linear-gradient(#000000 0%, #181818 10%); }
+  .mobile-discover-container button.default-button:active, .mobile-discover-container .selected {
+    opacity: 0.5;
+    box-shadow: none; }
   .mobile-discover-container .default-button {
     border: none;
     outline: none;
@@ -4504,7 +4507,8 @@ input.input-email {
     color: #000;
     width: 100%;
     padding: 2vw 0;
-    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5); }
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
   .mobile-discover-container .pink-btn {
     background-color: #FF6D6D;
     color: #FFFFFF; }
