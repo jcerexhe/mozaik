@@ -10,6 +10,48 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+exports.mobileSchoolsSearchIndex = async (req, res) => {
+  let schools = await School.find(),
+      schoolsIndex = []; // Will serve as a reference for queries and also the source for required data in /search rendering
+
+  schools.forEach(school => {
+    let study_areas = school.study_areas,
+        disciplines = school.disciplines,
+        locations = school.locations,
+        countries = [];
+
+    let courses = school.courses;
+
+    /* Each course has study areas and disciplines assigned to it, which we need to add to their respective arrays */
+    courses.forEach(course => {
+      study_areas = study_areas.concat(course.areas);
+      disciplines = disciplines.concat(course.disciplines);
+    })
+
+    /* After getting all study areas and disciplines, remove duplicates from the 'study_areas' and 'disciplines' arrays */
+    study_areas = _.uniq(study_areas);
+    disciplines = _.uniq(disciplines);
+
+    /* Since schools may have more than one location, get country of each and place it in 'countries' array */
+    locations.forEach(location => {
+      countries = countries.concat(location.country) /* Country is an object of locations */
+    });
+
+    /* Add objects to schoolsIndex */
+    schoolsIndex = schoolsIndex.concat({
+      name: school.name,
+      short_name: school.short_name,
+      study_areas: study_areas,
+      countries: countries,
+      disciplines: disciplines,
+      slug: school.slug,
+      facilitiesImages: school.facilitiesImages
+    });
+  })
+
+  res.json({schoolsIndex: schoolsIndex});
+}
+
 exports.courses = async (req, res) => {
   const data = req.query;
   const limit = Number.parseInt(data.limit, 10);
