@@ -135,7 +135,8 @@ export default class MobileCourses extends Component {
               <div className="panel panel-default">
                 <div className="panel-heading">
                   <h4 className="panel-title">
-                    <a data-toggle="collapse" href="#choose-sa">Choose Your Study Areas</a>
+                    <a className="choose-sa-title" data-toggle="collapse" href="#choose-sa">Choose Your Study Areas</a>
+                    <a className="choose-sa-btn" data-toggle="collapse" href="#choose-sa" aria-expanded="false">></a>
                   </h4>
                 </div>
                 <div id="choose-sa" className="panel-collapse collapse">
