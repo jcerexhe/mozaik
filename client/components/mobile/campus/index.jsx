@@ -43,10 +43,10 @@ export default class MobileCampus extends Component {
             <Map
               coords={ activeCampus.coordinates }
               containerElement={
-                <div style={{ height: '60vh' }} />
+                <div style={{ height: '80vh' }} />
               }
               mapElement={
-                <div style={{ height: '60vh' }} />
+                <div style={{ height: '80vh' }} />
               }
             />
           </div>
