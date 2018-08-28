@@ -195,7 +195,7 @@ export default class MobileArtwork extends Component {
     console.log(displayedArt)
     console.log('artDisplay')
     console.log(artDisplay)
-    let gt = ">";
+    let gt = "+";
     return (
       <div className='mobile-artwork-container'>
         <div className='m-grey-bg'>
@@ -223,7 +223,7 @@ export default class MobileArtwork extends Component {
                 </div>
               </div>
               <div className="m-artwork-next">
-                <button><span>+</span></button>
+                <button onClick={()=>this.updateIndexList()}><span>{gt}</span></button>
               </div>
             </div>
           </div>
