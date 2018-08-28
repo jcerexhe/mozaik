@@ -9,13 +9,15 @@ export default class SchoolResults extends Component {
 
     this.state = {
       schoolsIndex: [],
-      results: null
+      results: null,
+      resultsDisplay: 6,
     }
   }
 
 
   renderResults(results) {
-    let {resultsDisplay, updateParentState, setDisplay} = this.props,
+    let {setDisplay} = this.props,
+        {resultsDisplay} = this.state,
         gIndex=0,
         gCols = [],
         gReturns = [];
@@ -40,7 +42,7 @@ export default class SchoolResults extends Component {
             rowItems = {3}
             display = {resultsDisplay}
           />
-          <button className="default-button pink-btn plus" onClick={() => updateParentState({ resultsDisplay: setDisplay(results, resultsDisplay, 6) })}>
+          <button className="default-button pink-btn plus" onClick={() => this.setState({ resultsDisplay: setDisplay(results, resultsDisplay, 6) })}>
             <hr/>
             <hr className="vertical"/>
           </button>
@@ -85,11 +87,11 @@ export default class SchoolResults extends Component {
   }
 
   
-  compareSrchQueries(searchQuery) {
+  compareSrchQueries(queriedSearch) {
     let {schoolsIndex} = this.state,
         resultIndeces = [],
         results = [],
-        query = searchQuery.trim().replace("\\s{2,}", " ").split(" "); 
+        query = queriedSearch.trim().replace("\\s{2,}", " ").split(" "); 
 
     query = query.filter(queryWord => queryWord.length > 0).join(" "); 
 
@@ -98,8 +100,8 @@ export default class SchoolResults extends Component {
       combiData.push(schoolIndex.name, schoolIndex.short_name); 
       combiData = combiData.concat(schoolIndex.study_areas, schoolIndex.disciplines, schoolIndex.countries);
       combiData.forEach(combiDatum => {
-        let searchQueryReg = "(?:"+ query +")+"
-        if (combiDatum.match(RegExp(searchQueryReg, 'gi'))) { 
+        let queriedSearchReg = "(?:"+ query +")+"
+        if (combiDatum.match(RegExp(queriedSearchReg, 'gi'))) { 
           resultIndeces = resultIndeces.concat(index)
         };
       })
@@ -110,7 +112,7 @@ export default class SchoolResults extends Component {
 
 
   getResults() {
-    let {queriedStudyAreas, queriedCountries, queriedDisciplines, searchQuery} = this.props,
+    let {queriedStudyAreas, queriedCountries, queriedDisciplines, queriedSearch} = this.props,
         {schoolsIndex} = this.state, 
         saResults = [],
         cResults = [], 
@@ -118,8 +120,8 @@ export default class SchoolResults extends Component {
         allResults = [];
 
     
-    if (searchQuery) { 
-      let resultIndeces = this.compareSrchQueries(searchQuery); 
+    if (queriedSearch) { 
+      let resultIndeces = this.compareSrchQueries(queriedSearch); 
       resultIndeces.forEach(resultIndex => {
         allResults = allResults.concat(schoolsIndex[resultIndex])
       })
@@ -185,13 +187,18 @@ export default class SchoolResults extends Component {
 
   
   componentDidUpdate(prevProps){
+
     if (this.props !== prevProps) {
-      this.setState({results: null}, () => {this.getSchoolsIndex()});
+      this.setState({
+        results: null,
+        resultsDisplay: 6
+      }, () => {this.getSchoolsIndex()});
     }
+
   }
 
   render() {
-    let {results, schoolsIndex} = this.state;
+    let {results, schoolsIndex, resultsDisplay} = this.state;
     console.log(results); 
 
     return(
