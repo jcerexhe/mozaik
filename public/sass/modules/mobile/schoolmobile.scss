@@ -131,19 +131,30 @@
 	   	 	 }
 	    }
 	    .m-btn{
+	      display: flex;
+	      justify-content: space-between;
 	      text-align: center;
-	      letter-spacing: 0px;
 	      color: white;
-	      font-size: 30px;
+	     span.btn-label{
+	      	font-size: 30px;
+	      	letter-spacing: 0px;
 	      	@media only screen and (max-width: 768px) {
 	   	 		font-size: 20px;
 	   	 	}
 	   	 	@media only screen and (max-width: 414px) {
 	   	 		font-size: 15px;
 	   	 	}
+	   	  }
+	   	  span.btn-caret{
+	   	  	transform:rotate(90deg);
+	   	  	font-size: 30px;
+	   	  }
 	    }
 	 }
 	 
+	 a.m-btn:link{
+	 	text-decoration: none;
+	 }
 	 .m-school-links2{
 	   width: 100%;
 	   display: flex;
@@ -438,16 +449,33 @@
 	  border-top: 1px solid #fff;
 	  .panel-heading{
 	  	padding: 80px;
-	  	h4.panel-title > a{
-	  	 font-family: 'Bebas Neue';
-    	 font-size: 4vw;
-    	 color: #000000;
-	  	}
+	  	 h4.panel-title{
+		  display:flex;
+	      justify-content: space-between;
+			a.choose-sa-title{
+			 font-family: 'Bebas Neue';
+		     font-size: 4vw;
+		     color: #000;
+		    }
+		    a.choose-sa-btn{
+			 transform: rotate(-90deg);
+			 font-size: 4vw;
+			 color: #000;
+		    }
+		    a.choose-sa-btn[aria-expanded='false']{
+		      transform: rotate(90deg);
+		    }
+	  	 }
 	   @media only screen and (max-width: 600px){
 	   	 padding: 60px;
-	     h4.panel-title > a{
-	     	font-size: 7vw;
-	     }
+	     h4.panel-title{
+	     	a.choose-sa-title{
+		     font-size: 7vw;
+		    }
+		    a.choose-sa-btn{
+			 font-size: 7vw;
+		    }
+	     } 
 	   }
 	  }
 	  .study-area-group{
@@ -465,5 +493,6 @@
 	  		font-size: 4vw;
 	  	}
 	  }
+	  
 	}
 }

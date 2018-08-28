@@ -5123,16 +5123,28 @@ input.input-email {
       .school-details-container .m-school-links1 .m-school-link {
         padding: 5px; } }
   .school-details-container .m-school-links1 .m-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     text-align: center;
-    letter-spacing: 0px;
-    color: white;
-    font-size: 30px; }
-    @media only screen and (max-width: 768px) {
-      .school-details-container .m-school-links1 .m-btn {
-        font-size: 20px; } }
-    @media only screen and (max-width: 414px) {
-      .school-details-container .m-school-links1 .m-btn {
-        font-size: 15px; } }
+    color: white; }
+    .school-details-container .m-school-links1 .m-btn span.btn-label {
+      font-size: 30px;
+      letter-spacing: 0px; }
+      @media only screen and (max-width: 768px) {
+        .school-details-container .m-school-links1 .m-btn span.btn-label {
+          font-size: 20px; } }
+      @media only screen and (max-width: 414px) {
+        .school-details-container .m-school-links1 .m-btn span.btn-label {
+          font-size: 15px; } }
+    .school-details-container .m-school-links1 .m-btn span.btn-caret {
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+      font-size: 30px; }
+
+.school-details-container a.m-btn:link {
+  text-decoration: none; }
 
 .school-details-container .m-school-links2 {
   width: 100%;
@@ -5367,14 +5379,29 @@ input.input-email {
   border-top: 1px solid #fff; }
   .mobile-study-areas .choose-your-study-areas .panel-heading {
     padding: 80px; }
-    .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title > a {
-      font-family: 'Bebas Neue';
-      font-size: 4vw;
-      color: #000000; }
+    .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title a.choose-sa-title {
+        font-family: 'Bebas Neue';
+        font-size: 4vw;
+        color: #000; }
+      .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title a.choose-sa-btn {
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        font-size: 4vw;
+        color: #000; }
+      .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title a.choose-sa-btn[aria-expanded='false'] {
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
     @media only screen and (max-width: 600px) {
       .mobile-study-areas .choose-your-study-areas .panel-heading {
         padding: 60px; }
-        .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title > a {
+        .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title a.choose-sa-title {
+          font-size: 7vw; }
+        .mobile-study-areas .choose-your-study-areas .panel-heading h4.panel-title a.choose-sa-btn {
           font-size: 7vw; } }
   .mobile-study-areas .choose-your-study-areas .study-area-group {
     text-align: center;
@@ -5691,6 +5718,9 @@ input.input-email {
         @media only screen and (max-width: 414px) {
           .courses-mobile .course-mobile-content-black .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-black .Collapsible .is-closed {
             right: 8px; } }
+      .courses-mobile .course-mobile-content-black .Collapsible .is-open {
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
       .courses-mobile .course-mobile-content-black .Collapsible .m-course-card-right {
         margin-top: 50px;
         margin-right: 30px; }
@@ -5784,6 +5814,9 @@ input.input-email {
         @media only screen and (max-width: 414px) {
           .courses-mobile .course-mobile-content-white .Collapsible span.Collapsible__trigger, .courses-mobile .course-mobile-content-white .Collapsible .is-closed {
             right: 8px; } }
+      .courses-mobile .course-mobile-content-white .Collapsible .is-open {
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
       .courses-mobile .course-mobile-content-white .Collapsible .m-course-card-right {
         margin-top: 50px;
         margin-right: 30px; }
