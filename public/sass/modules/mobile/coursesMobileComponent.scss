@@ -294,7 +294,7 @@
     color: #000;
   }
 
-  .course-form{
+  .m-course-form{
     position: absolute;
     right: -80px;
     top: -30px;
@@ -320,28 +320,28 @@
       outline: 0;
     }
     .hs-form-private{
+      input[type="text"], input[type="email"], input[type="tel"]{
+        background-color: #fff !important;
+        width: 200px;
+        color: #000;
+      }
+    }
 
-    input[type="text"], input[type="email"], input[type="tel"]{
-      background-color: #fff !important;
-      width: 200px;
-      color: #000;
+    .hs-form .hs-form-field > label {
+      color: #fff;  
+    }
+    @media only screen and(max-widht: 320px){
+      widht: 100%;
     }
   }
 
-  .hs-form .hs-form-field > label {
-      color: #fff;
-      
-  }
-
-  }
-
-  .course-form-2{
-    right: -180px !important;
+  .m-course-form-2{
+    right: 5px !important;
     z-index: 1;
   }
 
 
-  .course-forms-modal {
+  .m-course-forms-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -352,7 +352,7 @@
     z-index: -1;
   }
 
-  .course-forms-modal-2 {
+  .m-course-forms-modal-2 {
     position: fixed;
     top: 0;
     left: 0;

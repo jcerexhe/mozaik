@@ -5881,7 +5881,7 @@ input.input-email {
     text-align: center;
     font-weight: 100;
     color: #000; }
-  .courses-mobile .course-form {
+  .courses-mobile .m-course-form {
     position: absolute;
     right: -80px;
     top: -30px;
@@ -5894,7 +5894,7 @@ input.input-email {
     padding-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box; }
-    .courses-mobile .course-form button {
+    .courses-mobile .m-course-form button {
       background-color: transparent;
       color: #fff;
       cursor: pointer;
@@ -5903,16 +5903,19 @@ input.input-email {
       right: 0;
       border: 0;
       outline: 0; }
-    .courses-mobile .course-form .hs-form-private input[type="text"], .courses-mobile .course-form .hs-form-private input[type="email"], .courses-mobile .course-form .hs-form-private input[type="tel"] {
+    .courses-mobile .m-course-form .hs-form-private input[type="text"], .courses-mobile .m-course-form .hs-form-private input[type="email"], .courses-mobile .m-course-form .hs-form-private input[type="tel"] {
       background-color: #fff !important;
       width: 200px;
       color: #000; }
-    .courses-mobile .course-form .hs-form .hs-form-field > label {
+    .courses-mobile .m-course-form .hs-form .hs-form-field > label {
       color: #fff; }
-  .courses-mobile .course-form-2 {
-    right: -180px !important;
+    @media only screen and (max-widht: 320px) {
+      .courses-mobile .m-course-form {
+        widht: 100%; } }
+  .courses-mobile .m-course-form-2 {
+    right: 5px !important;
     z-index: 1; }
-  .courses-mobile .course-forms-modal {
+  .courses-mobile .m-course-forms-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -5921,7 +5924,7 @@ input.input-email {
     width: 100vw;
     background-color: transparent;
     z-index: -1; }
-  .courses-mobile .course-forms-modal-2 {
+  .courses-mobile .m-course-forms-modal-2 {
     position: fixed;
     top: 0;
     left: 0;

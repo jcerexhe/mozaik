@@ -77,8 +77,8 @@ export default class MobileCourseCard extends Component {
         <div className='m-course-card' id={ course.slug } style={bgcourse}>
         {
          (this.state.isClicked == true)?
-               <div id={'form'+course.slug} className='course-form'>
-                <div className="course-forms-modal" onClick={()=>{this.setState({isClicked: false})}}></div>
+               <div id={'form'+course.slug} className='m-course-form'>
+                <div className="m-course-forms-modal" onClick={()=>{this.setState({isClicked: false})}}></div>
                 <button onClick={()=>{this.setState({isClicked: false})}}>x</button>
         {this.renderForm('2708822', this.state.formId)}
       </div>
@@ -137,8 +137,8 @@ export default class MobileCourseCard extends Component {
         <div className='m-course-card' id={ course.slug } style={bgcourse}>
         {
          (this.state.isClicked == true)?
-               <div id={'form'+course.slug} className='course-form course-form-2'>
-                <div className="course-forms-modal-2" onClick={()=>{this.setState({isClicked: false})}}></div>
+               <div id={'form'+course.slug} className='m-course-form m-course-form-2'>
+                <div className="m-course-forms-modal-2" onClick={()=>{this.setState({isClicked: false})}}></div>
                 <button onClick={()=>{this.setState({isClicked: false})}}>x</button>
         {this.renderForm('2708822', this.state.formId)}
       </div>
