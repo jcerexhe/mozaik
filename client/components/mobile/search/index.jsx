@@ -63,13 +63,12 @@ export default class MobileDiscover extends Component {
       studyAreas: studyAreasDb,
       disciplinesDisplay: 10,
       countries: ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'],
-      priceRange: [0, 200000],
       queriedStudyAreas: [],
       filteredDisciplines: allDisciplines,
       queriedCountries: [],
       queriedDisciplines: [],
-      searchQuery: '',
-      resultsDisplay: 6,
+      queriedSearch: '',
+      queriedPriceRange: [0, 200000],
     }
     // Bind these functions this way so that it can accept params when a prop
     this.updateParentState = this.updateParentState.bind(this);
@@ -90,13 +89,12 @@ export default class MobileDiscover extends Component {
       studyAreas: studyAreasDb,
       disciplinesDisplay: 10,
       countries: ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'],
-      priceRange: [0, 200000],
       queriedStudyAreas: [],
       filteredDisciplines: allDisciplines,
       queriedCountries: [],
       queriedDisciplines: [],
-      searchQuery: '',
-      resultsDisplay: 6,
+      queriedSearch: '',
+      queriedPriceRange: [0, 200000],
     });
   }
 
@@ -172,7 +170,7 @@ export default class MobileDiscover extends Component {
     this.setState({
       queriedStudyAreas: queriedStudyAreas,
       filteredDisciplines: filteredDisciplines,
-      searchQuery: ''
+      queriedSearch: ''
     }, () => {
       this.toggleSelectedClass(element);
       this.removePrevSelectedDiscs(fDiscIndeces); /* Clear previously selected discipline buttons (the position of the selected positions are the same, but the values selected are different) */
@@ -181,11 +179,11 @@ export default class MobileDiscover extends Component {
   }
 
   handleCtryBtnClick(element, queriedCountries) {
-    this.setState({queriedCountries: queriedCountries, searchQuery: ''}, () => {this.toggleSelectedClass(element)})
+    this.setState({queriedCountries: queriedCountries, queriedSearch: ''}, () => {this.toggleSelectedClass(element)})
   }
 
   handleDiscBtnClick(element, queriedDisciplines) {
-    this.setState({queriedDisciplines: queriedDisciplines, searchQuery: ''}, () => {this.toggleSelectedClass(element)})
+    this.setState({queriedDisciplines: queriedDisciplines, queriedSearch: ''}, () => {this.toggleSelectedClass(element)})
   }
 
   setDisplay(group, display, increment) {
@@ -201,7 +199,7 @@ export default class MobileDiscover extends Component {
   }
 
   render() {
-    let { studyAreas, disciplinesDisplay, countries, priceRange, resultsDisplay, queriedStudyAreas, filteredDisciplines, queriedCountries, queriedDisciplines, searchQuery } = this.state;
+    let { studyAreas, disciplinesDisplay, countries, queriedPriceRange, resultsDisplay, queriedStudyAreas, filteredDisciplines, queriedCountries, queriedDisciplines, queriedSearch } = this.state;
 
     return (
       <div className="mobile-discover-container">
@@ -213,7 +211,7 @@ export default class MobileDiscover extends Component {
 
         <SearchBar
           updateParentState = {this.updateParentState}
-          searchQuery = {searchQuery}
+          queriedSearch = {queriedSearch}
         />
 
         <div className="study-areas-grid">
@@ -270,15 +268,13 @@ export default class MobileDiscover extends Component {
             queriedStudyAreas = {queriedStudyAreas}
             queriedCountries = {queriedCountries}
             queriedDisciplines = {queriedDisciplines}
-            searchQuery = {searchQuery}
-            resultsDisplay = {resultsDisplay}
-            updateParentState = {this.updateParentState}
+            queriedSearch = {queriedSearch}
             setDisplay = {this.setDisplay}
           />
         </div>
 
         <AdvSearch
-          priceRange = {priceRange}
+          queriedPriceRange = {queriedPriceRange}
           updateParentState = {this.updateParentState}
         />
       </div>

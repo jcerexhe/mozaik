@@ -10,10 +10,21 @@ const Range = createSliderWithTooltip(Slider.Range);
 export default class AdvSearch extends Component {
   constructor(props) {
     super(props);
+
+     this.state = {
+      priceRangeVal: this.props.queriedPriceRange
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.queriedPriceRange !== prevProps.queriedPriceRange)
+    this.setState({priceRangeVal: this.props.queriedPriceRange})
   }
 
   render() {
-    let { priceRange, updateParentState } = this.props;
+    let { queriedPriceRange, updateParentState } = this.props,
+        { priceRangeVal } = this.state;
+
     return(
       <div className="adv-search-section">
         <div className="default-button pink-btn adv-search-btn">ADVANCED SEARCH</div>
@@ -27,9 +38,9 @@ export default class AdvSearch extends Component {
                 defaultValue={ [0, 200000] }
                 min={ 0 }
                 max={ 200000 }
-                value={ priceRange }
+                value={ priceRangeVal }
                 allowCross={ false }
-                onChange={ (val) => updateParentState({priceRange: val}) }
+                onChange={ (val) => updateParentState({priceRangeVal: val}) }
                 marks={ { 0: <div className="center-text left-mark"><strong>$0</strong></div>, 200000: <div className="center-text right-mark"><strong>$200,000+</strong></div> } }
               />
             </div>
