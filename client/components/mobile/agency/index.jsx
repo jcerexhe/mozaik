@@ -6,7 +6,13 @@ export default class MobileAgency extends Component {
 		return (
 			<div>
 				<div className="container">
-					<h1 className="mobile-agency-header">You make the decision<br/>We help you with the rest</h1>
+					<div className="mobile-agency-header">
+          				<svg viewBox="0 0 47 13" preserveAspectRatio='none' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+          					<polyline points="8,13 0,13 0,0 8,0" x="0" y="0"/>
+          					<polyline points="39,0 47,0 47,13 39,13"/>
+          				</svg>
+          				<h1>You make the decision<br/>We help you with the rest</h1>
+        			</div>
 					<h1 className="mobile-agency-subheader">We are here to help you</h1>
 					<p className="mobile-agency-subheader-desc">So you have decided to pursue a creative career - way to go! Our goal is to connect<br/>
 					the right student to the right creative school. Choosing what to study and where to<br/>
@@ -30,7 +36,7 @@ export default class MobileAgency extends Component {
 					<div className="row mobile-timeline-agency">
 						
 						<div className="col-md-4 m-timeline-img">
-							<img src='/images/elements/timeline.png' />
+							<img src='/images/elements/timeline-cut.png' />
 						</div>
 						<div className="col-md-8 m-timeline-icons">
 							<a href="#discover" data-toggle="modal">
@@ -98,13 +104,14 @@ export default class MobileAgency extends Component {
 						      <div className="modal-header">
 						        {/*<h5 className="modal-title" id="exampleModalLongTitle">Close</h5>*/}
 						        <button type="button" className="agency-close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">Close&times;</span>
+						          <span aria-hidden="true">Close</span>
+						          <span aria-hidden="true">X</span>
 						        </button>
 						      </div>
 						      <div className="modal-body">
 						      	<h1>Discover</h1>
 						        <p>Explore amazing creative student work from our showcase gallery or watch one of our MasterClass videos and see what it means to be a creative professional in the creative industry.</p>
-								<p>Discover here.</p>
+								<p><a href="/search" style={{ color: ' #FF6D6D' }}>Discover here.</a></p>
 						      </div>
 						    </div>
 						  </div>
@@ -116,7 +123,8 @@ export default class MobileAgency extends Component {
 						      <div className="modal-header">
 						        {/*<h5 className="modal-title" id="exampleModalLongTitle">Close</h5>*/}
 						        <button type="button" className="agency-close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">Close&times;</span>
+						          <span aria-hidden="true">Close</span>
+						          <span aria-hidden="true">&times;</span>
 						        </button>
 						      </div>
 						      <div className="modal-body">
