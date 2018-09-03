@@ -1,30 +1,57 @@
 .mobile-agency-container{
 	background-color: #292722;
-
-
 	width: 100%;
-
 	.container{
 		padding-top: 150px;
+		@media only screen and (max-width: 414px) {
+		  padding-top: 80px;
+	  }
 	}
-	h1.mobile-agency-header{
-		margin-top: 50px;
-		margin-bottom: 50px;
-		color: white;
-		text-align: center;
-		font-family: 'Bebas Neue';
-		font-size: 3em;
-	}
+	.mobile-agency-header{
+		margin: auto;
+	    text-align: center;
+	    width: 90vw;
+	    height: 13vw;
+	    position: relative;
+	    margin-top: 5vw;
+	    margin-bottom: 20vw;
+	    polyline {
+    		fill: none;
+    		stroke: $white;
+    		stroke-width: 4%;
+  		}
+		h1{
+		   position: absolute;
+		   top: 95%;
+		   left: 50%;
+		   transform: translate(-50%,-50%);
+		   margin: 0;
+		   font-family: 'Montserrat Extra Bold';
+		   color: $white;
+		   font-size: 5vw;
+		   width: 90vw; 
+  		}
+    }
 	h1.mobile-agency-subheader{
 		font-family: 'Bebas Neue';
 		color: white;
 		text-align: center;
 		margin-bottom: 30px;
+		font-size: 5vw;
 	}
 	p.mobile-agency-subheader-desc{
 		color: white;
 		text-align: center;
 		font-size: 24px;
+		 @media only screen and (max-width: 768px) {
+			font-size: 15px;
+		}
+		@media only screen and (max-width: 414px) {
+			font-size: 10px;
+	    }
+	    @media only screen and (max-width: 375px) {
+			font-size: 9px;
+	    }
 	}
 
 	.paper-plane{
@@ -34,6 +61,10 @@
 	    	img{
 	    		width: 100vw;
 	    	}
+	    @media only screen and (max-width: 414px) {
+	    	margin-top: -30px;
+			margin-left: -30px;
+	    }
 	}
 	.mobile-timeline-agency{
 		margin-top: -25%;
@@ -57,9 +88,30 @@
 				}
 			}
 		}
+		@media only screen and (max-width: 768px) {
+			.m-timeline-img >img{
+				width: 60%;
+			}
+		}
+		@media only screen and (max-width: 414px) {
+			.m-timeline-img >img{
+				width: 20%;
+			}
+			.m-timeline-icons{
+				margin-top: -400%;
+    			text-align: center;
+    			margin-left: 80px;
+    			.agency-icon{
+    				p.agency-icon-label{
+    				  font-size: 15px;
+    				}
+    			}
+			}
+		}
 	}
 	.agency-modal{
 		.modal-lg{
+		    margin: 0px;
 			max-width: 100%;
 			.modal-content{
 				background-color: #fff;
@@ -69,9 +121,24 @@
 					border: 1px solid #fff;
 					button.agency-close{
 						background-color: #fff;
-						border: 1px solid #000;
+						border: 2px solid #000;
 						position: relative;
-    					left: 900px;
+    					right: -84.5%;
+    					top: -10px;
+    					display: flex;
+    					justify-content: space-between;
+    					width: 170px;
+    					font-size: 3vw;
+    					text-transform: uppercase;
+    					span{
+    						padding: 10px;
+    					}
+    				  @media only screen and (max-width: 768px) {
+    				  	right: -80%;
+    				  }
+    				  @media only screen and (max-width: 414px) {
+    				  	width: 100px;
+    				  }
 					}
 				}
 				.modal-body{
@@ -79,11 +146,29 @@
 					h1{
 						color: #000;
 						text-align: center;
+						font-size: 7vw;
 					}
 					p{
 						color: #000;
 						text-align: center;
+						font-size: 24px;
+    					margin-right: 50px;
+    					margin-left: 50px;
 					}
+				  @media only screen and (max-width: 768px) {
+				  	 h1{
+				  	   font-size: 4vw;
+				  	 }
+				  	 p{
+				  	   font-size: 3vw;
+				  	 }
+				  }
+				  @media only screen and (max-width: 414px) {
+				  	p{
+				  		margin-left: 0;
+				  		margin-right: 0;
+				  	}
+				  }
 				}
 			}
 		}
