@@ -4969,6 +4969,9 @@ input.input-email {
     @media only screen and (max-width: 768px) {
       .mobile-agency-container p.mobile-agency-subheader-desc {
         font-size: 15px; } }
+    @media only screen and (max-width: 600px) {
+      .mobile-agency-container p.mobile-agency-subheader-desc {
+        font-size: 15px; } }
     @media only screen and (max-width: 414px) {
       .mobile-agency-container p.mobile-agency-subheader-desc {
         font-size: 10px; } }
@@ -5006,6 +5009,15 @@ input.input-email {
     @media only screen and (max-width: 768px) {
       .mobile-agency-container .mobile-timeline-agency .m-timeline-img > img {
         width: 60%; } }
+    @media only screen and (max-width: 600px) {
+      .mobile-agency-container .mobile-timeline-agency .m-timeline-img > img {
+        width: 20%; }
+      .mobile-agency-container .mobile-timeline-agency .m-timeline-icons {
+        margin-top: -400%;
+        text-align: center;
+        margin-left: 80px; }
+        .mobile-agency-container .mobile-timeline-agency .m-timeline-icons .agency-icon p.agency-icon-label {
+          font-size: 15px; } }
     @media only screen and (max-width: 414px) {
       .mobile-agency-container .mobile-timeline-agency .m-timeline-img > img {
         width: 20%; }
@@ -5015,6 +5027,9 @@ input.input-email {
         margin-left: 80px; }
         .mobile-agency-container .mobile-timeline-agency .m-timeline-icons .agency-icon p.agency-icon-label {
           font-size: 15px; } }
+    @media only screen and (max-width: 375px) {
+      .mobile-agency-container .mobile-timeline-agency .m-timeline-icons {
+        margin-top: -390%; } }
   .mobile-agency-container .agency-modal .modal-lg {
     margin: 0px;
     max-width: 100%; }
