@@ -46,6 +46,9 @@
 		 @media only screen and (max-width: 768px) {
 			font-size: 15px;
 		}
+		@media only screen and (max-width: 600px) {
+			font-size: 15px;
+	    }
 		@media only screen and (max-width: 414px) {
 			font-size: 10px;
 	    }
@@ -93,6 +96,21 @@
 				width: 60%;
 			}
 		}
+		@media only screen and (max-width: 600px) {
+			.m-timeline-img >img{
+				width: 20%;
+			}
+			.m-timeline-icons{
+				margin-top: -400%;
+    			text-align: center;
+    			margin-left: 80px;
+    			.agency-icon{
+    				p.agency-icon-label{
+    				  font-size: 15px;
+    				}
+    			}
+			}
+		}
 		@media only screen and (max-width: 414px) {
 			.m-timeline-img >img{
 				width: 20%;
@@ -106,6 +124,11 @@
     				  font-size: 15px;
     				}
     			}
+			}
+		}
+		@media only screen and (max-width: 375px) {
+			.m-timeline-icons{
+				margin-top: -390%;
 			}
 		}
 	}
