@@ -4533,6 +4533,15 @@ input.input-email {
     position: relative; }
   .mobile-discover-container .col {
     padding: 1vw; }
+  .mobile-discover-container .clear-filter-btn {
+    width: 35%;
+    margin-left: 50%;
+    margin-bottom: 2vw;
+    border-radius: 0;
+    outline: solid 0.25vw #FFFFFF;
+    padding: 1vw 0;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
   .mobile-discover-container .header {
     margin: auto;
     text-align: center;
@@ -4577,11 +4586,6 @@ input.input-email {
   .mobile-discover-container .disciplines-section {
     text-align: center;
     padding-bottom: 2vw; }
-    .mobile-discover-container .disciplines-section .clear-filter {
-      border-radius: 0;
-      border: solid 0.25vw #FFFFFF;
-      width: 35%;
-      padding: 1vw 0; }
   .mobile-discover-container .schools-section {
     padding-bottom: 10vw; }
     .mobile-discover-container .schools-section .plus {
@@ -4589,7 +4593,10 @@ input.input-email {
     .mobile-discover-container .schools-section .school-thumb {
       padding-top: 100%;
       position: relative;
-      background-color: #666; }
+      background-color: #666;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
       .mobile-discover-container .schools-section .school-thumb .school-btn {
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 0;
@@ -4599,6 +4606,10 @@ input.input-email {
         .mobile-discover-container .schools-section .school-thumb .school-btn p {
           opacity: 1;
           margin: 0; }
+    .mobile-discover-container .schools-section .no-result-text {
+      text-align: center;
+      margin-top: 10vw;
+      color: white; }
   .mobile-discover-container .adv-search-section {
     position: relative;
     padding: 13vw 2vw 2vw 2vw;

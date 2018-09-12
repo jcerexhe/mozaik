@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import axios from 'axios';
-import ButtonsGrid from './buttonsGrid.jsx';
+import DisplayedButtons from './displayedButtons.jsx';
 
 export default class SchoolResults extends Component {
   constructor(props) {
@@ -10,13 +10,12 @@ export default class SchoolResults extends Component {
     this.state = {
       schoolsIndex: [],
       results: null,
-      resultsDisplay: 6,
     }
   }
 
 
   renderResults(results) {
-    let {setDisplay} = this.props,
+    let {setDisplay, updateParentState, reinitialize} = this.props,
         {resultsDisplay} = this.state,
         gIndex=0,
         gCols = [],
@@ -36,17 +35,14 @@ export default class SchoolResults extends Component {
       });
 
       return (
-        <div className="grid">
-          <ButtonsGrid
-            gCols = {gCols}
-            rowItems = {3}
-            display = {resultsDisplay}
-          />
-          <button className="default-button pink-btn plus" onClick={() => this.setState({ resultsDisplay: setDisplay(results, resultsDisplay, 6) })}>
-            <hr/>
-            <hr className="vertical"/>
-          </button>
-        </div>
+        <DisplayedButtons
+          updateParentState = {updateParentState}
+          reinitialize = {reinitialize}
+          gCols = {gCols}
+          rowItems = {3}
+          display = {6}
+          displayCb = {null}
+        />
       );
     } else {
       return <p className="no-result-text">No results found. Please try something else.</p>
