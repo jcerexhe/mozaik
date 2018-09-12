@@ -8,7 +8,7 @@ export default class SearchBar extends Component {
     this.state = {
       inputVal: this.props.queriedSearch
     }
-      
+
     this.handleQueryChange = this.handleQueryChange.bind(this)
     this.handleQuerySubmit = this.handleQuerySubmit.bind(this)
   }
@@ -19,12 +19,16 @@ export default class SearchBar extends Component {
 
   handleQuerySubmit(event) {
     event.preventDefault();
-    this.props.updateParentState({queriedSearch: this.state.inputVal})
+    let queriedSearch = {queriedSearch: this.state.inputVal}
+    this.props.updateParentState({
+      ...(this.props.initialStates), ...queriedSearch
+    }, this.props.removeQryBtnsSelectedClass)
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.queriedSearch !== prevProps.queriedSearch)
-    this.setState({inputVal: this.props.queriedSearch})
+    if (this.props.queriedSearch !== prevProps.queriedSearch) {
+      this.setState({inputVal: this.props.queriedSearch})
+    }
   }
 
   render() {

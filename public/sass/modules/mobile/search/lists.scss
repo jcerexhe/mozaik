@@ -10,12 +10,6 @@
 .disciplines-section {
   text-align: center;
   padding-bottom: 2vw;
-  .clear-filter {
-    border-radius: 0;
-    border: solid 0.25vw $white;
-    width: 35%;
-    padding: 1vw 0;
-  }
 }
 
 // Schools List (or Results List)
@@ -30,6 +24,9 @@
     padding-top: 100%;
     position: relative;
     background-color: #666;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .school-btn {
       background-color: rgba(255,255,255, 0.5);
@@ -43,5 +40,11 @@
         margin: 0;
       }
     }
+  }
+
+  .no-result-text {
+    text-align: center;
+    margin-top: 10vw;
+    color: white;
   }
 }

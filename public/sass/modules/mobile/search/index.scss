@@ -69,7 +69,17 @@
   .col {
     padding: 1vw;
   }
-
+  
+  // 'Clear Filter' button styles
+  .clear-filter-btn {
+    width: 35%;
+    margin-left: 50%;
+    margin-bottom: 2vw;
+    border-radius: 0;
+    outline: solid 0.25vw #FFFFFF;
+    padding: 1vw 0;
+    transform: translateX(-50%);
+  } 
   // Section exclusive
   // Header - includes Search Bar because not that many lines to need a separate file
   @import './header';

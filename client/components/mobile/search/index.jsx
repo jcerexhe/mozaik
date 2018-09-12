@@ -55,151 +55,61 @@ studyAreasDb.map(studyArea =>{
 
 allDisciplines = _.uniq(allDisciplines.sort()) 
 
+
+const initialStates = {
+  studyAreas: studyAreasDb,
+  countries: ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'],
+  filteredDisciplines: allDisciplines,
+  queriedStudyAreas: [],
+  queriedCountries: [],
+  queriedDisciplines: [],
+  queriedSearch: '',
+  queriedPriceRange: [0, 200000],
+  reinitialize: true
+}
 export default class MobileDiscover extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       studyAreas: studyAreasDb,
-      disciplinesDisplay: 10,
       countries: ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'],
-      queriedStudyAreas: [],
       filteredDisciplines: allDisciplines,
+      queriedStudyAreas: [],
       queriedCountries: [],
       queriedDisciplines: [],
       queriedSearch: '',
       queriedPriceRange: [0, 200000],
+      reinitialize: false
     }
     // Bind these functions this way so that it can accept params when a prop
     this.updateParentState = this.updateParentState.bind(this);
-    this.handleSABtnClick = this.handleSABtnClick.bind(this);
-    this.handleCtryBtnClick = this.handleCtryBtnClick.bind(this);
-    this.handleDiscBtnClick = this.handleDiscBtnClick.bind(this);
-    this.setDisplay = this.setDisplay.bind(this);
+    
   }
+
+  /* Remove 'selected' class from all query buttons*/
+  removeQryBtnsSelectedClass() {
+    let selectedElements = document.querySelectorAll('.selected');
+    selectedElements.forEach(element => {
+      element.className = element.className.replace(/\sselected/g, ""); // For IE9 and earlier
+    });
+  }
+  
+  updateParentState(update, callback){
+    this.setState(update, callback);
+  } 
 
   // Return this.state to initial values
   reinitializeState() {
-    let selectedElements = document.querySelectorAll('.selected');
-    selectedElements.forEach(element => {
-      element.className = element.className.replace(/\bselected\b/g, ""); 
-    });
-
     this.setState({
-      studyAreas: studyAreasDb,
-      disciplinesDisplay: 10,
-      countries: ['AUSTRALIA', 'CANADA', 'NEW ZEALAND', 'EUROPE', 'USA'],
-      queriedStudyAreas: [],
-      filteredDisciplines: allDisciplines,
-      queriedCountries: [],
-      queriedDisciplines: [],
-      queriedSearch: '',
-      queriedPriceRange: [0, 200000],
-    });
-  }
-
-  
-  toggleSelectedClass(element) {
-    let eClasses = element.className.split(" "),
-        selectedIndex = eClasses.indexOf("selected");
-    if (selectedIndex == -1) {
-        eClasses.push("selected");
-    } else {
-        eClasses.splice(selectedIndex, 1);
-    }
-    element.className = eClasses.join(" ");
-  }
-
-  
-  reselectQueriedDiscs(){
-    let {filteredDisciplines, queriedDisciplines} = this.state;
-    queriedDisciplines.forEach(queriedDiscipline => {
-      let btnIndex = filteredDisciplines.indexOf(queriedDiscipline),
-          discBtn = document.getElementById('discipline-btn-'+btnIndex);
-      if (discBtn) {
-        let discBtnClasses = discBtn.className.split(" "),
-            selectedIndex = discBtnClasses.indexOf("selected");
-        if (selectedIndex == -1) {
-          discBtn.className += " selected";
-        }
-      }
-    });
-  }
-
-  removePrevSelectedDiscs(prevSelectsIndeces) {
-    let {filteredDisciplines, queriedDisciplines} = this.state;
-    prevSelectsIndeces.forEach(prevSelectIndex => {
-      if (filteredDisciplines[prevSelectIndex]) {
-        let discBtn = document.getElementById('discipline-btn-'+prevSelectIndex);
-        discBtn.className = discBtn.className.replace(/\bselected\b/g, "")
-      };
-    });
-  };
-
-  handleSABtnClick(element, queriedStudyAreas) {
-    let { filteredDisciplines, queriedDisciplines } = this.state, 
-        fDiscIndeces = []; 
-
-    
-    queriedDisciplines.forEach((query, index) => {
-      let fDiscIndex = filteredDisciplines.indexOf(query); 
-      fDiscIndeces = fDiscIndeces.concat(fDiscIndex); 
-    });
-
-    
-    let { studyAreas } = this.state; 
-    filteredDisciplines = []; 
-
-    /* Loop through 'queriedStudyAreas' to get the disciplines from each study area queried */
-    queriedStudyAreas.forEach(queriedSA => {
-      let saIndex;
-      studyAreas.forEach((studyArea, index) => {
-        if (queriedSA == studyArea.name) {
-          saIndex = index; /* Get index of queriedSA (which is equivalent to a studyArea.name) in studyArea */
-        }
-      });
-      filteredDisciplines = filteredDisciplines.concat(studyAreas[saIndex].disciplines); /* studyAreas came from studyAreasDB which is an object that organizes each study area with their corresponding disciplines. This allows us to add the correct disciplines to 'filteredDisciplines' */
-    });
-
-    filteredDisciplines = _.uniq(filteredDisciplines.sort()); /* .uniq() removes any duplicates in the array and .sort() arranges them alphabetically */
-
-    if (filteredDisciplines.length == 0) { /* In this case, no study areas were selected */
-      filteredDisciplines = allDisciplines
-    }
-
-    this.setState({
-      queriedStudyAreas: queriedStudyAreas,
-      filteredDisciplines: filteredDisciplines,
-      queriedSearch: ''
+      ...initialStates
     }, () => {
-      this.toggleSelectedClass(element);
-      this.removePrevSelectedDiscs(fDiscIndeces); /* Clear previously selected discipline buttons (the position of the selected positions are the same, but the values selected are different) */
-      this.reselectQueriedDiscs();
+      this.removeQryBtnsSelectedClass();
     });
-  }
-
-  handleCtryBtnClick(element, queriedCountries) {
-    this.setState({queriedCountries: queriedCountries, queriedSearch: ''}, () => {this.toggleSelectedClass(element)})
-  }
-
-  handleDiscBtnClick(element, queriedDisciplines) {
-    this.setState({queriedDisciplines: queriedDisciplines, queriedSearch: ''}, () => {this.toggleSelectedClass(element)})
-  }
-
-  setDisplay(group, display, increment) {
-    if (group.length < (display + increment)) {
-      return group.length
-    } else {
-      return (display + increment)
-    }
-  }
-
-  updateParentState(update){
-    this.setState(update);
   }
 
   render() {
-    let { studyAreas, disciplinesDisplay, countries, queriedPriceRange, resultsDisplay, queriedStudyAreas, filteredDisciplines, queriedCountries, queriedDisciplines, queriedSearch } = this.state;
+    let { studyAreas, countries, queriedPriceRange, queriedStudyAreas, filteredDisciplines, queriedCountries, queriedDisciplines, queriedSearch, reinitialize } = this.state;
 
     return (
       <div className="mobile-discover-container">
@@ -212,56 +122,67 @@ export default class MobileDiscover extends Component {
         <SearchBar
           updateParentState = {this.updateParentState}
           queriedSearch = {queriedSearch}
+          initialStates = {initialStates}
+          removeQryBtnsSelectedClass = {() => this.removeQryBtnsSelectedClass()}
         />
 
         <div className="study-areas-grid">
           <QueryButtons
+            reinitialize  =  {reinitialize}
+            updateParentState = {this.updateParentState}
             grp = {studyAreas}
             clss = "default-button"
             lblObjKy = "name"
             rwItms = {3}
             dsply = {null}
             idPrfx = "study-area-btn-"
-            clckFxn = {this.handleSABtnClick}
-            queriedGrp = {queriedStudyAreas}
+            clckFxn = "handleSABtnClick"
+            qGrp = {queriedStudyAreas}
+            filteredDisciplines = {filteredDisciplines}
+            queriedDisciplines = {queriedDisciplines}
+            allDisciplines = {allDisciplines}
           />
         </div>
 
         <div className="countries-grid">
           <QueryButtons
+            reinitialize  =  {reinitialize}
+            updateParentState = {this.updateParentState}
             grp = {countries}
             clss = "default-button pink-btn country-button"
             lblObjKy = {null}
             rwItms = {5}
             dsply = {null}
+            displayCb = {null}
             idPrfx = "country-btn-"
-            clckFxn = {this.handleCtryBtnClick}
-            queriedGrp = {queriedCountries}
+            clckFxn = "handleCtryBtnClick"
+            qGrp = {queriedCountries}
           />
         </div>
 
         <div className="disciplines-section">
-          <div className="grid">
+
             <QueryButtons
+              reinitialize  =  {reinitialize}
+              updateParentState = {this.updateParentState}
               grp = {filteredDisciplines}
               clss = "default-button"
               lblObjKy = {null}
               rwItms = {2}
-              dsply = {disciplinesDisplay}
+              dsply = {10}
+              displayCb = "reselectQueriedDiscs"
+              filteredDisciplines = {filteredDisciplines}
+              queriedDisciplines = {queriedDisciplines}
               idPrfx = "discipline-btn-"
-              clckFxn = {this.handleDiscBtnClick}
-              queriedGrp = {queriedDisciplines}
+              clckFxn = "handleDiscBtnClick"
+              qGrp = {queriedDisciplines}
             />
-
-            <button className="default-button pink-btn plus" onClick={() => {this.setState({disciplinesDisplay: this.setDisplay(filteredDisciplines, disciplinesDisplay, 10)}, () => {this.reselectQueriedDiscs()})}}>
-              <hr/>
-              <hr className="vertical"/>
-            </button>
-
-          </div>
-
-          <button className="default-button pink-btn clear-filter" onClick={() => this.reinitializeState()}>CLEAR FILTER</button>
         </div>
+
+        <div className="clear-filter-btn-container">
+          <button className="default-button pink-btn clear-filter-btn" onClick={() => this.reinitializeState()}>CLEAR FILTER</button>
+        </div>
+
 
         <div className="schools-section">
           <SchoolResults
@@ -269,7 +190,8 @@ export default class MobileDiscover extends Component {
             queriedCountries = {queriedCountries}
             queriedDisciplines = {queriedDisciplines}
             queriedSearch = {queriedSearch}
-            setDisplay = {this.setDisplay}
+            updateParentState = {this.updateParentState}
+            reinitialize  =  {reinitialize}
           />
         </div>
 
