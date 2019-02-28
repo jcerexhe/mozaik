@@ -116,27 +116,28 @@ block content
       }
     }
     
-    //- Show form on browser
+      //- Show form on browser
     async function showSchoolForm(interactionType, schoolName, courseName) {
       var form = document.getElementsByClassName("hbspt-form");
       var formModal = document.getElementsByClassName('school-forms-modal');
       var formIframe = document.querySelector('.hbspt-form iframe');
       var formIframeContent = (formIframe.contentWindow || formIframe.contentDocument).document;
-      var interactionInput = formIframeContent.querySelector('#interaction_type-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
-      var schoolInput = formIframeContent.querySelector('#school_name-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
-      var courseInput = formIframeContent.querySelector('#course_name-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
+      var interactionInput = formIframeContent.querySelector('select[name="interaction_type"]');
+      var schoolInput = formIframeContent.querySelector('input[name="school_name"]');
+      var courseInput = formIframeContent.querySelector('input[name="course_name"]');
       
       //- Set values to input
-      interactionInput.value = interactionType;
-      schoolInput.value = schoolName;
-      courseInput.value = courseName;
-      
-      //- Trigger these events so that the value will persist in the form
-      ['change', 'input', 'blur'].forEach(function(event){
+      if (interactionInput && schoolInput && courseInput) {
+        interactionInput.value = interactionType;
+        schoolInput.value = schoolName;
+        courseInput.value = courseName;
+        
+        //- Trigger these events so that the value will persist in the form
+        ['change', 'input', 'blur'].forEach(function(event){
         doFormInputEvent(schoolInput, event);
         doFormInputEvent(courseInput, event);
-      });
-      
+        });
+      }
       
       formModal[0].style.display = "block";
       form[0].style.display = "block";
