@@ -96,13 +96,6 @@ input[type=text]::placeholder {
 }
 
 
-
-
-/* hubspot forms */
-
-/* All HubSpot Forms
-   ========================================================================== */
-
 /* Form Field (selector for form field wrapper) */
 .hs-form .hs-form-field {
   padding-bottom: 30px;
@@ -115,159 +108,52 @@ input[type=text]::placeholder {
 .hs-form label {
 
 }
+
 .hs-form .hs-form-field > label {
-        font-family:'Bebas Neue';
-      text-transform: uppercase;
-
-}
-
-/* Inputs (selectors for all inputs)  */
-.hs-form input[type="text"],
-.hs-form input[type="password"], 
-.hs-form input[type="datetime"], 
-.hs-form input[type="datetime-local"], 
-.hs-form input[type="date"], 
-.hs-form input[type="month"], 
-.hs-form input[type="time"], 
-.hs-form input[type="week"], 
-.hs-form input[type="number"], 
-.hs-form input[type="email"], 
-.hs-form input[type="url"], 
-.hs-form input[type="search"], 
-.hs-form input[type="tel"], 
-.hs-form input[type="color"],
-.hs-form input[type="file"],
-.hs-form textarea,
-.hs-form select {
-  
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-  padding: 5px;
-  margin: 0;
-  width: 100% !important;
-}
-
-.hs-form textarea{
-  height: 150px;
-}
-
-/* Inputs in focus (selectors for all inputs when clicked)  */
-.hs-form input[type="text"]:focus,
-.hs-form input[type="password"]:focus, 
-.hs-form input[type="datetime"]:focus, 
-.hs-form input[type="datetime-local"]:focus, 
-.hs-form input[type="date"]:focus, 
-.hs-form input[type="month"]:focus, 
-.hs-form input[type="time"]:focus, 
-.hs-form input[type="week"]:focus, 
-.hs-form input[type="number"]:focus, 
-.hs-form input[type="email"]:focus, 
-.hs-form input[type="url"]:focus, 
-.hs-form input[type="search"]:focus, 
-.hs-form input[type="tel"]:focus, 
-.hs-form input[type="color"]:focus,
-.hs-form input[type="file"]:focus,
-.hs-form textarea:focus,
-.hs-form select:focus {
-    background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-  padding: 5px;
-  margin: 0;
-  width: 100% !important;
-}
-
-/* Multi-line inputs (selectors to target multi-line fields */
-.hs-form textarea {}
-.hs-form textarea:focus {}
-
-/* Dropdowns (selectors for dropdowns) */
-.hs-form select {}
-.hs-form select:focus {}
-
-/* Multi-select (selectors for multi-select fields) */
-.hs-form form.hs-form .hs-form-field ul.inputs-list {}
-
-.hs-form form.hs-form .hs-form-field ul.inputs-list li input {}
-.hs-form input[type="radio"] {}
-.hs-form input[type="checkbox"] {}
-
-/* Required (selectors for fields, when they do not pass validation) */
-.hs-form input:focus:required:invalid, 
-.hs-form textarea:focus:required:invalid, 
-.hs-form select:focus:required:invalid {
-
-}
-
-.hs-form input:focus:required:invalid:focus, 
-.hs-form textarea:focus:required:invalid:focus, 
-.hs-form select:focus:required:invalid:focus {
-
-}
-
-/* Error message (selector for validation messages) */
-.hs-form .hs-error-msgs label{
-    font-size:12px;
-    line-height:normal;
-    display:block;
-    color:red !important;
-}
-
-.hs-form .hs-error-msgs{
-    list-style: none;
-    padding: 0;
-}
-
-/* Placeholder Text (styles the placeholder attribute text) */
-::-webkit-input-placeholder { /* Webkit Browsers */}
-:-moz-placeholder { /* Firefox 18- */}
-::-moz-placeholder { /* Firefox 19+ */}
-:-ms-input-placeholder { /* IE10 */}
-
-/* Multi Column Form (selectors for fieldsets and field wrappers) 
-   ========================================================================== */
-
-.hs-form .hs-form fieldset.form-columns-1 {}
-.hs-form .hs-form fieldset.form-columns-1 .hs-form-field {}
-
-.hs-form .hs-form fieldset.form-columns-2 {
-}
-.hs-form .hs-form fieldset.form-columns-2 .hs-form-field {
-
-}
-
-.hs-form .hs-form fieldset.form-columns-3 {}
-.hs-form .hs-form fieldset.form-columns-3 .hs-form-field {}
-
-/* Submit buttons (selectors for all non-CTA buttons) 
-   ========================================================================== */
-
-body .hs-button.primary,
-body input[type="submit"],
-body input[type="button"] {
-  background-color: #000;
-  border: 2px solid #fff;
-  box-shadow: 3px 3px 2px 2px #888888;
-  color: #fff;
-  width: 150px;
-  padding: 5px;
-  display: block;
-  margin: 0 auto;
+  font-family:'Bebas Neue';
   text-transform: uppercase;
-      font-family:'Bebas Neue';
 }
 
-body .hs-button.primary:hover,
-body input[type="submit"]:hover,
-body input[type="button"]:hover {}
 
-body .hs-button.primary:focus,
-body input[type="submit"]:focus,
-body input[type="button"]:focus {}
-
-.input{
-  padding: 0;
-  margin: 0;
+input.hs-button.primary.large {
+  background-color: blue;
 }
+
+
+.hs-form input[type="submit"] {
+  .hs-button.primary.large {
+    background-color: blue !important;
+  }
+}
+
+label#label-email-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23 {
+  .hs-form-required {
+   color: none !important;
+  }
+}
+
+///////////////////////////////////
+
+.hbspt-form{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 102;
+  padding: 20px;
+  border: 1px solid #fff;
+  padding: 30px 20px;
+  display: none;
+  background-color: $pink !important;
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    color: white;
+    border: none;
+  }
+}
+
+
+
 

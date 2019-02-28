@@ -700,28 +700,6 @@ iframe.school-video{
   }
 }
 
-
-.hbspt-form{
-  background-color: $pink !important;
-  input[type="text"], input[type="email"], input[type="tel"]{
-    background-color: #fff !important;
-    width: 150px;
-      color: #000;
-  }
-  label {
-    color: #fff !important;
-  }
-  button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    color: white;
-    border: none;
-  }
-}
-
-
 .school-forms-modal {
     position: fixed;
     height: 100vh;
