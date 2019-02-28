@@ -94,16 +94,16 @@ body{
 
 
 .hbspt-form {
-    position: fixed;
+    //position: fixed;
+    position: absolute;
     top: 50px;
     right: 0;
     z-index: 102;
-    padding: 20px;
+    //padding: 20px;
     background-color: $grey;
     border: 1px solid #fff;
-    padding: 30px 20px;
+    padding: 10px 20px;
     display: none;
-
 }
 
 .submitted-message {
@@ -165,4 +165,8 @@ body{
   left: 15%;
 
 }
+
+
+
+
 

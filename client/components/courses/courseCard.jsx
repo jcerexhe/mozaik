@@ -24,7 +24,7 @@ export default class CourseCard extends Component {
 
   renderForm(portalId, formId){
     return(
- <div>
+        <div>
           <HubspotForm
               css=''
               portalId={portalId}
@@ -80,7 +80,7 @@ export default class CourseCard extends Component {
                <div id={'form'+course.slug} className='course-form'>
                 <div className="course-forms-modal" onClick={()=>{this.setState({isClicked: false})}}></div>
                 <button onClick={()=>{this.setState({isClicked: false})}}>x</button>
-        {this.renderForm('2708822', this.state.formId)}
+        {this.renderForm('5513253', this.state.formId)}
       </div>
       :
       <div></div>
@@ -109,10 +109,10 @@ export default class CourseCard extends Component {
                 </div>
               </div>
               <div className='course-buttons' style={{textAlign: 'left'}}>
-                <a className='btn' href={'#form'+course.slug} onClick={()=>this.tryFunc(course.formidce)}>enquire</a>
-                <a className='btn' href={'#form'+ course.slug} onClick={()=>this.tryFunc(course.formidca)}>apply</a>
+                <a className='btn' href="#school-details-anchor" onClick={() => createSchoolForm("Enquiry", course.school_name, course.name)}>enquire</a>
+                <a className='btn' href="#school-details-anchor" onClick={() => createSchoolForm("Apply", course.school_name, course.name)}>apply</a>
               </div>
-            </div>
+            </div>include
           </div>
           <div className='course-card-right'>
             <h3>{ course.name }</h3>
@@ -137,7 +137,7 @@ export default class CourseCard extends Component {
                <div id={'form'+course.slug} className='course-form course-form-2'>
                 <div className="course-forms-modal-2" onClick={()=>{this.setState({isClicked: false})}}></div>
                 <button onClick={()=>{this.setState({isClicked: false})}}>x</button>
-        {this.renderForm('2708822', this.state.formId)}
+        {this.renderForm('5513253', this.state.formId)}
       </div>
       :
       <div></div>
@@ -176,8 +176,8 @@ export default class CourseCard extends Component {
               </div>
             </div>
             <div className='course-buttons'>
-              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc(course.formidce)}>enquire</a>
-              <a className='btn' href={'#form'+ course.slug } onClick={()=>this.tryFunc(course.formidca)}>apply</a>
+              <a className='btn' href="#school-details-anchor" onClick={() => createSchoolForm("Enquiry", course.school_name, course.name)}>enquire</a>
+              <a className='btn' href="#school-details-anchor" onClick={() => createSchoolForm("Apply", course.school_name, course.name)}>apply</a>
             </div>
           </div>
         </div>
@@ -198,5 +198,3 @@ export default class CourseCard extends Component {
     );
   }
 }
-
-

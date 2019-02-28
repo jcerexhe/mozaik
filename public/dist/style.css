@@ -70,14 +70,13 @@ body {
   background-color: #181818; }
 
 .hbspt-form {
-  position: fixed;
+  position: absolute;
   top: 50px;
   right: 0;
   z-index: 102;
-  padding: 20px;
   background-color: #181818;
   border: 1px solid #fff;
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: none; }
 
 .submitted-message {
@@ -515,7 +514,7 @@ input[type=text]::placeholder {
    ========================================================================== */
 /* Form Field (selector for form field wrapper) */
 .hs-form .hs-form-field {
-  padding-bottom: 30px; }
+  padding-bottom: 25px; }
 
 /* Descriptions (targets class applied to Help Text divs) */
 /* Labels (selects field labels and error messages) */
@@ -544,12 +543,12 @@ input[type=text]::placeholder {
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
-  padding: 5px;
+  padding: 3px;
   margin: 0;
   width: 100% !important; }
 
 .hs-form textarea {
-  height: 150px; }
+  height: 100px; }
 
 /* Inputs in focus (selectors for all inputs when clicked)  */
 .hs-form input[type="text"]:focus,
@@ -585,7 +584,8 @@ input[type=text]::placeholder {
   font-size: 12px;
   line-height: normal;
   display: block;
-  color: red !important; }
+  color: #5f1d1f !important;
+  font-style: italic; }
 
 .hs-form .hs-error-msgs {
   list-style: none;
@@ -625,6 +625,18 @@ body input[type="button"] {
 .input {
   padding: 0;
   margin: 0; }
+
+.hubspot-link__container {
+  padding-bottom: 0px !important;
+  display: none !important; }
+
+.actions {
+  /* margin-top: 18px;
+  /* margin-bottom: 18px; */
+  /* padding: 17px 20px 18px 0px; */
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important; }
 
 .extended-search {
   background-color: #FF6D6D;
@@ -1461,7 +1473,7 @@ iframe.school-video {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  amrgin-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
   padding: 50px;
   position: relative;
