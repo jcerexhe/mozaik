@@ -1,7 +1,7 @@
 extends layouts/layout
 
 block content
-  .school-heading-container(style={'background-image': 'url('+ school.header_image_1 +')'})
+  div(class='school-heading-container' style={'background-image': 'url('+ school.header_image_1 +')'} id="school-details-anchor")
     .school-heading
       .school-info
         //- img(src=school.logo)
@@ -9,7 +9,7 @@ block content
       .school-links.video-link
         a(href='#myModal',data-toggle='modal', data-target='#myModal')
           img(src="/images/buttons/playvideo.png")
-          // Modal
+          //- Modal
           #myModal.modal.modal-school-video
            .modal-body.modal-body-school-video
              p.button.modal-close-button-school-video(onclick="stopSchoolVid('" + school.video + "')") &times;
@@ -49,10 +49,10 @@ block content
     .school-links
         .school-forms-modal
         .school-link
-          a(href='#' onclick="createSForm('"+ school.formidsa +"')" class='btn')
+          a(href='#' onclick="createSchoolForm('Apply', '" + school.name + "', '')" class='btn')
             span Apply
         .school-link
-          a(href='#' onclick="createSForm('"+ school.formidse +"')" class='btn')
+          a(href='#' onclick="createSchoolForm('Enquiry', '" + school.name + "', '')" class='btn')
             span Enquire
         .school-link
           a(href='#' onclick="createCGForm('"+ school.formidsc +"')" class='btn')
@@ -87,47 +87,83 @@ block content
       .subscribe-btn
         img(src='/images/buttons/subscribe.png')
 
-        // TODO insert enquiry form; hubspot?
+        //- TODO insert enquiry form; hubspot?
 
   append stylesheets
     link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
     link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
 
-  // if lte IE 8
+  //- if lte IE 8
   script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+  
 
   script.
-    var btn = document.createElement("button");
-    btn.innerHTML = '&times;';
-
-    // Stop school vid on close
+    //- Stop school vid on close
     function stopSchoolVid(vidSrc) {
       document.getElementsByClassName('school-video')[0].setAttribute('src', vidSrc)
     };
-
-    //Main School Forms
-    function showSForm() {
+    
+    //- Trigger events
+    async function doFormInputEvent( obj, name ) {
+      try {
+        var event = new Event( name, {target: obj, bubbles: true} );
+        return obj ? obj.dispatchEvent(event) : false;
+      }
+      catch (e) {
+        var event = document.createEvent('Event');
+        event.initEvent(name, true, true);
+        obj.dispatchEvent(event);
+      }
+    }
+    
+    //- Show form on browser
+    async function showSchoolForm(interactionType, schoolName, courseName) {
       var form = document.getElementsByClassName("hbspt-form");
       var formModal = document.getElementsByClassName('school-forms-modal');
+      var formIframe = document.querySelector('.hbspt-form iframe');
+      var formIframeContent = (formIframe.contentWindow || formIframe.contentDocument).document;
+      var interactionInput = formIframeContent.querySelector('#interaction_type-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
+      var schoolInput = formIframeContent.querySelector('#school_name-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
+      var courseInput = formIframeContent.querySelector('#course_name-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23');
+      
+      //- Set values to input
+      interactionInput.value = interactionType;
+      schoolInput.value = schoolName;
+      courseInput.value = courseName;
+      
+      //- Trigger these events so that the value will persist in the form
+      ['change', 'input', 'blur'].forEach(function(event){
+        doFormInputEvent(schoolInput, event);
+        doFormInputEvent(courseInput, event);
+      });
+      
+      
       formModal[0].style.display = "block";
       form[0].style.display = "block";
+      
+      var btn = document.createElement("button");
+      btn.innerHTML = '&times;';
       btn.addEventListener("click", function(){
         form[0].style.display = "none";
         formModal[0].style.display = "none";
       });
+      
       form[0].appendChild(btn);
+      
     };
 
-    //Main School Forms
-    function createSForm(formId){
+    //- Create School Form from Hubspot
+    function createSchoolForm(interactionType, schoolName, courseName){
       hbspt.forms.create({
-        portalId: '2708822',
-        formId: formId,
-        onFormReady: showSForm
+        portalId: '5513253',
+        formId: '8b3c4267-7058-4ff9-a5cd-2eaf0b271b23',
+        onFormReady: function() {
+          showSchoolForm(interactionType, schoolName, courseName);
+        }
       });
     };
 
-    //Main School Forms
+    //- Allow clicking outside the window
     window.onclick = function(event) {
       var clickTarget = event.target;
       var form = document.getElementsByClassName("hbspt-form");
@@ -140,7 +176,7 @@ block content
       }
     };
 
-    // Course Guide Form
+    //- Course Guide Form
     function dlCourseGuide(){
       document.getElementById('cg_link').click();
     }
@@ -159,43 +195,14 @@ block content
 
     };
 
-    // Course Guide Form
+    //- Course Guide Form
     function createCGForm(formId){
       hbspt.forms.create({
-        portalId: '2708822',
+        portalId: '5513253',
         formId: formId,
         onFormReady: function($form) {showCGForm($form)},
         onFormSubmit: dlCourseGuide,
         inlineMessage: 'Thank you for downloading the course guide!'
       });
     }
-
-
-
-
-       function eForm(formId){
-         hbspt.forms.create({
-          portalId: '2708822',
-          formId: formId,
-           onFormReady: closeForm
-          });
-        };
-
-       function cForm() {
-        hbspt.forms.create({
-        portalId: '2708822',
-        formId: formId,
-        onFormReady: closeForm
-        });
-
-      };
-
-       function closeForm() {
-        var form = document.getElementsByClassName("hbspt-form");
-        console.log(form[0]);
-        form[0].style.display = "block";
-        btn.addEventListener("click", function(){
-          form[0].style.display = "none";
-        });
-        form[0].appendChild(btn);
-      };
+    
