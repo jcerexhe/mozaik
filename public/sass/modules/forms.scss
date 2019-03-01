@@ -106,7 +106,7 @@ input[type=text]::placeholder {
 
 /* Labels (selects field labels and error messages) */
 .hs-form label {
-
+  font-style: italic;
 }
 
 .hs-form .hs-form-field > label {
@@ -115,22 +115,7 @@ input[type=text]::placeholder {
 }
 
 
-input.hs-button.primary.large {
-  background-color: blue;
-}
 
-
-.hs-form input[type="submit"] {
-  .hs-button.primary.large {
-    background-color: blue !important;
-  }
-}
-
-label#label-email-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23 {
-  .hs-form-required {
-   color: none !important;
-  }
-}
 
 ///////////////////////////////////
 
@@ -156,4 +141,14 @@ label#label-email-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23 {
 
 
 
+.hs-form-8b3c4267-7058-4ff9-a5cd-2eaf0b271b23_6ccd9637-2065-4113-85f9-853745915e1b{
+    .hs-button {
+       color: red;
+      }
+}
 
+
+
+.hs-form-required {
+  color: blue;
+}
