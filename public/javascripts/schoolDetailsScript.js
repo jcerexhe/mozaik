@@ -39,6 +39,21 @@ async function showSchoolForm(interactionType, schoolName, courseName) {
   var schoolInput = formIframeContent.querySelector('input[name="school_name"]');
   var courseInput = formIframeContent.querySelector('input[name="course_name"]');
 
+  // This overrides the css from hubspot
+  var css = '.hs-error-msgs label, .hs-form-required { color: #33475b; }',
+      head = formIframeContent.head || formIframeContent.querySelector('head'),
+      style = document.createElement('style');
+
+      style.type = 'text/css';
+      if (style.styleSheet){
+      // This is required for IE8 and below.
+        style.styleSheet.cssText = css;
+      } else {
+        style.appendChild(document.createTextNode(css));
+      }
+
+    head.appendChild(style);
+
   //- Set values to input
   if (interactionInput && schoolInput && courseInput) {
     interactionInput.value = interactionType;
@@ -47,8 +62,8 @@ async function showSchoolForm(interactionType, schoolName, courseName) {
 
     //- Trigger these events so that the value will persist in the form
     ['change', 'input', 'blur'].forEach(function(event){
-    doFormInputEvent(schoolInput, event);
-    doFormInputEvent(courseInput, event);
+      doFormInputEvent(schoolInput, event);
+      doFormInputEvent(courseInput, event);
     });
   }
 
